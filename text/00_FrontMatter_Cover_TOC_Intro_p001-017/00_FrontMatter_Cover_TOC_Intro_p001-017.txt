@@ -1,0 +1,970 @@
+==============================================================================
+SOURCE PDF : 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split\00_FrontMatter_Cover_TOC_Intro_p001-017.pdf
+GLOBAL PDF PAGES: 1-17
+PAGES IN THIS FILE: 17
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T22:56:05+03:00
+STATS: characters=68007, words~=4004
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/17 | GLOBAL PDF p.1 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                            ÅëÝíç Åöñáéµßäïõ   ÅëÝíç Æþç-ÑÝððá    Öéëßôóá ÖñïõæÜêç
+
+
+
+
+                                          Pupil’s Book
+                                                                             LISH 6 h   t
+                                                                                      GRA
+                                                                           G             DE
+                                                                         EN
+
+
+
+
+10-0235
+                                                           Στ
+                                    235
+                                                              ΄∆
+                                                                ηµ
+                 ISBN
+
+
+                                                                  οτι                            Pupil’s Book
+                                                                     κού
+                                                            35
+                                                         10-02
+          (01) 000000 0 10 0235 5
+
+==============================================================================
+[PAGE 2/17 | GLOBAL PDF p.2 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+10-0147_AGGLIKA.indb 1   1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 3/17 | GLOBAL PDF p.3 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+10-0147_AGGLIKA.indb 2   1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 4/17 | GLOBAL PDF p.4 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                         AΓΓΛIKA ΣT´ ΔΗΜΟΤΙΚΟY
+
+
+                               Βιβλίο μαθητή
+
+
+
+
+10-0147_AGGLIKA.indb 3                           1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 5/17 | GLOBAL PDF p.5 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                     ΣΤΟΙΧΕΙΑ ΑΡΧΙΚΗΣ ΕΚ∆ΟΣΗΣ
+                                                ΣΥΓΓΡΑΦΕΙΣ                       Ελένη Εφραιμίδου, Εκπαιδευτικός ΠΕ6
+                                                                                 Ελένη Ζώη- Ρέππα, Σχολ. Σύμβουλος ΠΕ6
+                                                                                 Φιλίτσα Φρουζάκη, Εκπαιδευτικός ΠΕ6
+
+                                                ΚΡΙΤΕΣ-ΑΞΙΟΛΟΓΗΤΕΣ               Ελένη Μανωλοπούλου-Σέργη, Σχολ. Σύμβουλος
+                                                                                 Διονυσία Παπαδοπούλου, Σχολ. Σύμβουλος
+                                                                                 Ελένη Ζωγράφου, Εκπαιδευτικός ΠΕ6
+
+                                                ΕΙΚΟΝΟΓΡΑΦΗΣΗ                    Μαριάνθη Βουτσά, Εικονογράφος
+
+                                                ΦΙΛΟΛΟΓΙΚΗ ΕΠΙΜΕΛΕΙΑ             Σωτήριος Καραούλιας, Εκπαιδευτικός ΠΕ6
+
+                                                ΥΠΕΥΘΥΝΟΣ                        Ιωσήφ Ε. Χρυσοχόος
+                                                ΤΟΥ ΜΑΘΗΜΑΤΟΣ                    Πάρεδρος ε.θ. του Παιδαγωγικού Ινστιτούτου
+                                                ΚΑΤΑ ΤΗ ΣΥΓΓΡΑΦΗ
+
+                                                ΥΠΕΥΘΥΝΟΣ ΥΠΟΕΡΓΟΥ               Κλεοπάτρα Κοσοβίτσα- Βαρελά, Εκπαιδευτικός ΠΕ70
+
+
+                                                ΑΝΑΔΟΧΟΣ                         Μιχαήλ Λεβής ΑΕΤΕΝ. ΑΕ
+
+
+                                                ΠΡΟΕΚΤΥΠΩΤΙΚΕΣ ΕΡΓΑΣΙΕΣ ΒΙΒΛΙΟΣΥΝΕΡΓΑΤΙΚΗ Α.Ε.Π.Ε.Ε
+
+
+                                                Στην επεξεργασία του υλικού συνεργάστηκε ο κ. Θανάσης Πυργαρούσης
+
+
+
+
+                                    Γ΄ Κ.Π.Σ. / ΕΠΕΑΕΚ ΙΙ / Ενέργεια 2.2.1 / Κατηγορία Πράξεων 2.2.1.α:
+                            «Αναμόρφωση των προγραμμάτων σπουδών και συγγραφή νέων εκπαιδευτικών πακέτων»
+                           				
+                                           ΠΑΙΔΑΓΩΓΙΚΟ ΙΝΣΤΙΤΟΥΤΟ
+                                           Δημήτριος Γ. Βλάχος
+                                           Ομότιμος Καθηγητής του Α.Π.Θ
+                                           Πρόεδρος του Παιδαγωγικού Ινστιτούτου
+
+                           Πράξη με τίτλο:                     «Συγγραφή νέων βιβλίων και παραγωγή
+                                                               υποστηρικτικού εκπαιδευτικού υλικού με βάση
+                                                               το ΔΕΠΠΣ και τα ΑΠΣ για το Δημοτικό και το Νηπιαγωγείο»
+
+                                                               Επιστημονικός Υπεύθυνος Έργου
+                                                               Γεώργιος Τύπας
+                                                               Σύμβουλος Παιδαγωγικού Ινστιτούτου
+
+                                                               Αναπληρωτής Επιστημονικός Υπεύθυνος Έργου
+                                                               Γεώργιος Οικονόμου
+                                                               Σύμβουλος Παιδαγωγικού Ινστιτούτου
+
+                                          Έργο συγχρηματοδοτούμενο 75% από το Ευρωπαϊκό Κοινωνικό Ταμείο και 25% από εθνικούς πόρους.
+
+
+
+
+                                                                        ΣΤΟΙΧΕΙΑ ΕΠΑΝΕΚ∆ΟΣΗΣ
+                  Η επανέκδοση του παρόντος βιβλίου πραγματοποιήθηκε
+                  από το Ινστιτούτο Τεχνολογίας Υπολογιστών & Εκδόσεων
+                  «Διόφαντος» μέσω ψηφιακής μακέτας, η οποία δημιουργή-
+                  θηκε με χρηματοδότηση από το ΕΣΠΑ / ΕΠ «Εκπαίδευση
+                  & Διά Βίου Μάθηση» / Πράξη «ΣΤΗΡΙΖΩ».
+
+                                Οι διορθώσεις πραγματοποιήθηκαν κατόπιν έγκρισης του Δ.Σ. του Ινστιτούτου Εκπαιδευτικής Πολιτικής
+
+
+
+
+6th Pupil's Book first_(001-006).indd 4                                                                                                 1/26/15 2:11 PM
+
+==============================================================================
+[PAGE 6/17 | GLOBAL PDF p.6 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                          ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ
+                                                 ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ
+
+
+
+
+                                              Ελένη Εφραιμίδου, Εκπαιδευτικός ΠΕ6
+                                            Ε λ έ ν η Ζ ώ η - Ρ έ π π α , Σχ ο λ . Σ ύ μ β ο υ λ ο ς Π Ε 6
+                                             Φιλίτσα Φρουζάκη, Εκπαιδευτικός ΠΕ6
+
+
+
+                                          ΑΝΑΔΟΧΟΣ ΣΥΓΓΡΑΦΗΣ: Μιχαήλ Λεβής Α.Ε.
+
+                                          Η συγγραφή και η επιστηµονική επιµέλεια του βιβλίου πραγµατοποιήθηκε
+                                                      υπό την αιγίδα του Παιδαγωγικού Ινστιτούτου
+
+
+
+                                               AΓΓΛIKA ΣΤ´ ΔΗΜΟΤΙΚΟY
+
+
+                                                                 Βιβλίο μαθητή
+
+
+
+
+                            ΙΝΣΤΙΤΟΥΤΟ ΤΕΧΝΟΛΟΓΙΑΣ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΕΚΔΟΣΕΩΝ «ΔΙΟΦΑΝΤΟΣ»
+
+
+
+
+6th Pupil's Book first_(001-006).indd 5                                                                          1/28/16 12:53 PM
+
+==============================================================================
+[PAGE 7/17 | GLOBAL PDF p.7 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+            6
+
+
+
+
+10-0147_AGGLIKA.indb 6   1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 8/17 | GLOBAL PDF p.8 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+              Table of Contents
+               UNIT 1: Our Multicultural Class
+                                         Communication, Culture, Interaction, Information, Multiculturalism, Tradition, Similarities and
+               Crosscurricular notions
+                                         Differences
+               Related subjects          Science, Computer Science, Mathematics, Geography, History
+               Project                   A report about a European project
+                                         Can read maps and reports about countries; can talk about countries and school subjects; can
+               Self-assessment
+                                         listen to pupils talking about school projects; can write reports about countries and people’s
+               (Can-do statements)
+                                         everyday activities; can express habits, routines and present situations
+                                                                                          LANGUAGE             LANGUAGE
+               LESSON                    SKILLS / STRATEGIES
+                                                                                          (Functions)          (Structures/Lexis)
+
+                                         Reading: Ss’ reports about their country
+                                                                                                             Present Simple
+                                         Reading for gist; Reading for specific
+                                                                                                             Adverbs of frequency
+                                         information                                   Describing habits
+                                                                                                             Words related to nationalities,
+                    Meeting the          Speaking: asking and answering about          and routines;
+               1                                                                                             countries, landforms/
+                    Newcomers            nationalities and habits                      Giving personal
+                                                                                                             geography
+                                         Writing: Filling-in a diagram about what      information
+                                         pupils do in schools in Greece and in
+                                         Great Britain
+
+
+                                         Listening to a conversation at the school
+                                         lab; Listening for gist and specific          Describing            Present Continuous
+               2    At the school lab    information                                   present situations;   Words related to school
+                                         Speaking: A Game: Charades                    Exchanging ideas      subjects, activities, facilities
+                                         Writing: Mr Badluck’s day
+
+                                         Reading: a report                             Talking /writing      Simple Present Tense
+                    A Geography
+               3                         Writing a report and editing                  about a report;       Vocabulary about countries,
+                    Project
+                                         a text                                        Paragraphing          nationalities, geography
+
+
+               UNIT 2: Going shopping
+               Crosscurricular notions   Organization, Categories, Decision Making, Reasoning, Information
+
+                                         Mathematics, Computer Science, Internet, Poetry, Health Education, Consumer Education,
+               Related subjects
+                                         Citizenship
+               Project                   An on-line order
+                                         Can read a supermarket flyer, a canteen menu, an internet site, a receipt; can listen to people
+               Self-assessment
+                                         talking in supermarkets and department stores; can talk and write about shopping goods, prices
+               (Can-do statements)
+                                         and online orders
+
+
+
+
+                                                                                                                                                v
+
+
+
+
+10-0147_AGGLIKA.indb 5                                                                                                                              1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 9/17 | GLOBAL PDF p.9 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                                           LANGUAGE             LANGUAGE
+                  LESSON                     SKILLS / STRATEGIES
+                                                                                           (Functions)          (Structures/Lexis)
+
+                                             Reading: a supermarket flyer, a school
+                                             canteen menu, an internet site                                     Countable, uncountable
+                                             Reading to locate specific information;                            nouns, a/an, some, any, how
+                                             Reading for gist                              Expressing           much, how many
+                  1     At the supermarket
+                                             Listening: A dialogue at the supermarket      quantity             Words related to containers,
+                                             Speaking: Role play of shopkeepers/                                units of weight, size, shape,
+                                             assistants and customers                                           shopping goods etc.
+                                             Writing: What to buy at the school canteen
+
+
+                                             Listening: a dialogue in
+                                                                                                                Verbs of senses: it looks, it
+                                             a department store;
+                                                                                                                feels, it tastes etc.
+                                             Listening for specific information
+                                                                                           Describing senses    a little/little, a few/few
+                                             Reading: a Receipt
+                  2     At the mall                                                        Expressing           Order of adjectives
+                                             Speaking: Class-work: The fashion show;
+                                                                                           quantity             Words related to colours,
+                                             The school bazaar
+                                                                                                                material, size etc.
+                                             Writing: a poem describing a favourite
+                                             thing using the senses
+
+                                                                                           Ordering and
+                                             Reading: an internet site                     buying goods         Words related to toys, goods
+                  3     E-shopping
+                                             Writing: a toy order                          Filling an online    etc.
+                                                                                           order
+
+
+                  UNIT 3: Imaginary creatures
+                  Crosscurricular notions    Similarities and Differences, Self-Awareness, Information, Communication, Culture
+
+                  Related subjects           Mythology, Literature, Theatre Education
+                  Project                    Act out a scene from Midsummer Night’s Dream
+                                             Can read an acrostic poem, a literature extract, reports about creatures and monsters; can
+                  Self-assessment
+                                             talk and write about people’s appearance and personality; can listen to a ghost story; can use
+                  (Can-do statements)
+                                             adjectives and adverbs
+                                                                                            LANGUAGE              LANGUAGE
+                  LESSON                     SKILLS / STRATEGIES
+                                                                                            (Functions)           (Structures/Lexis)
+
+                                             Reading: An acrostic poem,
+                                             a literature extract.                                              Comparisons of adjectives
+                                             Reading about monsters and creatures                               (comparative, superlative),
+                                                                                           Describing and
+                                             Reading for gist, understanding text                               irregular adjectives, opposites,
+                                                                                           comparing people
+                                             cohesion and completing gaps                                       opposites with suffixes
+                        Old and Modern                                                     and things
+                  1                          Speaking: Talking about fairy-tale heroes                          Words related to fairy tales,
+                        Creatures                                                          Describing
+                                             What am I like? Talking about people’s                             heroes, monsters
+                                                                                           people’s
+                                             appearance and personality                                         Adjectives describing
+                                                                                           personality
+                                             Writing: Filling-in ID cards                                       characteristics, personality
+                                             Writing about the appearance of monsters                           and skills
+                                             / creatures and comparing them
+
+
+
+
+                vi
+
+
+
+
+6th Pupil's Book TBofC_(007-016).indd 6                                                                                                            2/3/15 4:16 PM
+
+==============================================================================
+[PAGE 10/17 | GLOBAL PDF p.10 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                                                               Comparisons of adjectives
+                                         Listening: a ghost story in play form
+                                                                                        Describing and         (as/as, not so as)
+                    Do you believe in    Listening for gist
+               2                                                                        comparing people       Comparison of adverbs
+                    ghosts?              Reading: The Monster Quiz
+                                                                                        and things             Words describing a place and
+                                         Speaking: A Game: Do it our Way
+                                                                                                               a house.
+                                         Reading: a literature extract                  Adapting,
+                                         Shakespeare’s play: Midsummer Night’s          preparing and
+                                                                                                               Words related to theatre
+               3    Classroom theatre    Dream                                          acting out
+                                                                                                               performance
+                                         Project: Perform a Scene from                  a scene from
+                                         “Midsummer Night’s Dream”                      a play
+
+
+               UNIT 4: The history of the aeroplane
+               Crosscurricular notions   Time and Place, Information, Interaction, Communication, Culture, Progress, Change
+
+               Related subjects          Science, Mythology, History, Environmental Education, Career Guidance, Poetry, Arts and Craft
+
+               Project                   Poems, paintings, pictures and information about the fall of Icarus
+
+               Self-assessment           Can read emails and attached files, a poem & biographies of inventors; can talk and write about
+               (Can-do statements)       paintings, biographies and poems; can talk about events in the past; can use linking words
+
+                                                                                        LANGUAGE               LANGUAGE
+               LESSON                    SKILLS / STRATEGIES
+                                                                                        (Functions)            (Structures/Lexis)
+
+                                         Listening: the myth of Daedalus and
+                                         Icarus                                                                Past simple, Regular and
+                                         Reading: e-mail messages and attached                                 Irregular verbs (affirmative,
+                                                                                        Talking about
+                    A Day at the         files, museum worksheets                                              interrogative, negative)
+               1                                                                        events in the past
+                    Museum               Reading for specific information / for gist                           Words related to planes and
+                                         Speaking: Role-play: Talking about Icarus                             flights
+                                         and the Wright Brothers
+                                         Mediation: Από τη Γη στη Σελήνη
+
+
+                                                                                                               Past Continuous (talking
+                                         Listening: a dialogue about an air-pocket
+                                                                                                               about interrupted past states,
+                                         Listening for gist, for specific information
+                                                                                                               narrating past events)
+                                         Reading: Information about types of planes
+                                                                                        Narrating past         Linking words: when, as,
+               2    An air-pocket        Information about Igor Sikorsky
+                                                                                        events.                after that, while, then, later,
+                                         Speaking: Talking about the missing
+                                                                                                               first, second, finally
+                                         luggage
+                                                                                                               Words related to planes and
+                                         Writing: a biography
+                                                                                                               forces of flight
+
+
+                                         Reading: a poem about the fall of Icarus       Describing
+                    The Fall
+               3                         Speaking: about a painting                     paintings and          Revision of tenses taught
+                    of Icarus
+                                         Writing: a poem                                pictures
+
+
+               UNIT 5: Travelling through time
+                                         Communication, Culture, Information, Multiculturalism, Internet, Tradition, Similarities and
+               Crosscurricular notions
+                                         Differences
+               Related subjects          Music, History, Local History, Road Safety
+               Project                   A Museum Leaflet
+
+
+
+                                                                                                                                               vii
+
+
+
+
+10-0147_AGGLIKA.indb 7                                                                                                                               1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 11/17 | GLOBAL PDF p.11 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                          Can read a diary, a museum leaflet, lyrics of songs; can talk about the past/habits in the past/
+                Self-assessment
+                                          memories; can ask for/give information or directions; can talk about transportation; can listen to a
+                (Can-do statements)
+                                          song, a museum guide; can write an informal letter
+                                                                                         LANGUAGE             LANGUAGE
+                LESSON                    SKILLS / STRATEGIES
+                                                                                         (Functions)          (Structures/Lexis)
+                                          Reading: a questionnaire, diaries, lyrics
+                                          of songs, a museum leaflet, street maps,
+                                          transportation rules and signs
+                                          Reading for specific information                 Expressing             Used to
+                1    Diaries              Speaking: Talking about present and past         Present and Past       Words related to clothes and
+                                          habits                                           habits                 hair styles
+                                          Listening to the song: “Yesterday”
+                                          Writing: use a photo to write about the
+                                          past
+                                          Listening: a museum-recorded message
+                                          and a museum guide                               Asking for
+                                          Listening for specific information               directions and         Expressions and words related
+                                          Listening for gist                               information;           to asking for and giving
+                                          Speaking: Visiting the museum: giving            Giving directions      information and directions
+                     Trans-portation
+                2                         information and street directions                and information;       Words related to means
+                                          Reading: Recognizing signs and rules on          Familiarization        of transport
+                                          trains & buses                                   with the layout of     Set phrases and expressions
+                                          Writing: a list of rules and signs for trains    informal letters;      for letter writing
+                                          and buses                                        Paragraphing
+                                          Writing an informal letter
+                                                                                           Talking /
+                     The Museum           Reading: a museum leaflet                        writing about          Words related to museum
+                3
+                     Leaflet              Project: A Museum Leaflet                        the Transport          visits
+                                                                                           Museum Leaflet
+
+
+                UNIT 6: Me, myself and my future job
+                                          Self-Awareness, Personal Development, Information, Communication, Interaction, Change,
+                Crosscurricular notions
+                                          Progress, Reasoning
+                Related subjects          Career Guidance, Citizenship
+                Project                   A job profile
+
+                                          Can read job profiles, job advertisements, safety rules at work, a job interview questionnaire, can
+                Self-assessment           talk about skills/abilities, interests, personal traits, future careers and a job interview; can express
+                (Can-do statements)       ability, possibility, permission, advice, predictions, promises, warnings, requests, offers; can
+                                          listen to professionals at work, can write new year resolutions, safety rules and job profiles
+
+                                                                                           LANGUAGE               LANGUAGE
+                LESSON                    SKILLS / STRATEGIES
+                                                                                           (Functions)            (Structures/Lexis)
+                                          Reading a self esteem quiz, job
+                                          advertisements, job profiles;                                           Modal verbs: can, may,
+                                                                                           Expressing ability,
+                                          Reading for specific information                                        should
+                     Talking about jobs                                                    permission,
+                1                         Speaking: A telephone dialogue: Asking for                              Words related to personal
+                     & careers                                                             possibility
+                                          and giving job information;                                             traits, skills/abilities, school
+                                          Talking about pupils’ interests, skills/                                subjects
+                                          abilities, future jobs
+
+
+
+
+              viii
+
+
+
+
+10-0147_AGGLIKA.indb 8                                                                                                                               1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 12/17 | GLOBAL PDF p.12 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                         Listening: A dialogue: What do they do?
+                                                                                       Giving advice,
+                                         Guessing people’s jobs;
+                                                                                       expressing            Future tense: will, going to
+                                         Listening for specific information
+                                                                                       prediction,           Words related to skills/
+               2    What do they do?     Speaking: Talking about pupils’ interests,
+                                                                                       warning, promise,     abilities, school subjects,
+                                         skills/abilities, goals
+                                                                                       offer, decision on    safety rules
+                                         Talking about safety rules
+                                                                                       the spot, intention
+                                         Reading: Safety rules at work
+                                         Reading: a job questionnaire
+                    What the future                                                    Expressing            Words related to jobs, skills,
+               3                         Speaking: Talking about future jobs
+                    holds for you                                                      prediction            abilities etc.
+                                         Project: A job profile
+
+
+               UNIT 7: Share your experiences
+                                         Sports, Olympic Spirit, Information, Communication, Progress, Team Spirit, Differences &
+               Crosscurricular notions
+                                         Similarities
+               Related subjects          Physical Education, Citizenship, Environmental Education, Theatre Education
+               Project                   A poster about your personal record
+                                         Can read a questionnaire, newspaper extracts and a poster; can talk about swimming styles,
+               Self-assessment           theatre shows, world and Olympic record and past experience connected to the present; can
+               (Can-do statements)       listen to a radio programme; can write a report about a Paralympics Champion, a page of the
+                                         class book of records and about personal records
+                                                                                       LANGUAGE             LANGUAGE
+               LESSON                    SKILLS / STRATEGIES
+                                                                                       (Functions)          (Structures/Lexis)
+
+                                         Reading: A questionnaire: Share your
+                                                                                       Describing past
+                                         experiences
+                                                                                       experiences;          Present Perfect Simple
+                                         Newspaper reports: “Famous record
+                                                                                       Comparing             Present Perfect vs. Past
+                    Famous               holders”
+                                                                                       general               Simple
+               1    Record               Reading for specific information
+                                                                                       experiences           Words related to sport events
+                    Holders              Speaking: Talking about swimming styles;
+                                                                                       and events that       Words related to
+                                         The hot air balloon competition: Talk about
+                                                                                       happened at a         performances and theatre
+                                         what you have done in your life so far;
+                                                                                       specific time
+                                         Let’s play: Have you ever…?
+
+                                         Listening: A radio programme: “Top
+                                         stories”
+                                         Listening for gist / Listening for details
+                                         Speaking: Interview with a famous
+                                         Paralympics champion
+                                         Act out a dialogue: What have you been                              Present Perfect Continuous
+                    Top Stories on the                                                 Expressing
+               2                         doing?                                                              The use of for and since
+                    Radio                                                              duration
+                                         Writing a page for the class book of                                Words related to world records
+                                         records;
+                                         Writing a report about a champion to
+                                         appear in the local newspaper
+                                         Mediation: a newspaper extract about K.
+                                         Fykas
+                                         Reading: a poster: a great opportunity for
+                                         students
+                                                                                       Expressing
+                                         Speaking: Talking about accomplishments                             Words related to personal
+               3    Going for the Gold                                                 experience and
+                                         and personal bests                                                  bests and achievements
+                                                                                       achievement
+                                         Project: A poster about your personal
+                                         record
+
+
+
+
+                                                                                                                                              ix
+
+
+
+
+10-0147_AGGLIKA.indb 9                                                                                                                             1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 13/17 | GLOBAL PDF p.13 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                  UNIT 8: Blow your own trumpet
+                  Crosscurricular
+                                            Information, Communication, Culture, Personal Safety, Stereotypes, Conflict
+                  notions
+                  Related subjects          Music, Consumer Education , Mathematics, Citizenship
+                  Project                   An advice letter
+                                            Can read a music festival leaflet, a magazine article about pocket money; can talk about musical
+                                            instruments, festivals, money, personal safety, how to express something likely to happen now or
+                  Self-assessment
+                                            in the future, how to express something impossible or unlikely to happen now or in future, how
+                  (Can-do
+                                            to give advice; can listen to different musical instruments, a song about money, people talking
+                  statements)
+                                            about what they would spend their money on; can write an e-mail about a museum of musical
+                                            instruments and a letter to a magazine advice page
+                                                                                           LANGUAGE           LANGUAGE
+                  LESSON                    SKILLS / STRATEGIES
+                                                                                           (Functions)        (Structures/Lexis)
+
+                                            Reading a leaflet about Music Education
+                                            Series;                                        Talking about
+                                            Reading a leaflet about festival activities;   events that
+                       Harmony,             Reading for gist / for specific information    depend on a        Type1 Conditional sentences
+                  1    Melody and           Speaking: Talking about the story of the       condition;         Words related to music,
+                       Rhythm               Little Red Riding Hood;                        Expressing         concerts, festivals, events
+                                            Persuading a friend to choose a festival       possibility/
+                                            Writing: an email: the museum of folk          probability
+                                            instruments
+
+                                            Listening: A song: A rich man’s world
+                                            Listening to a dialogue on how you would
+                                            spend your money;
+                                            Listening for specific information
+                                                                                           Expressing
+                       Feel the             Reading: A magazine article about pocket                          Type 2 conditional sentences
+                  2                                                                        imaginary
+                       Rhythm               money and pester power                                            Words related to money
+                                                                                           situations
+                                            Speaking: Talking about what you would
+                                            spend your money on
+                                            Writing: A class survey: how Ss spend
+                                            their pocket money
+                                            Reading: a letter from a problem page
+                                                                                                              Words and set phrases
+                                            magazine                                       Asking for and
+                       The Problem                                                                            related to letter writing:
+                  3                         Speaking: talking about children’s             giving advice
+                       Page                                                                                   greeting, opening and closing
+                                            problems                                       Paragraphing
+                                                                                                              paragraphs, singing off
+                                            Project: An advice letter
+
+
+                  UNIT 9: Earth Day everyday
+                  Crosscurricular notions   Information, Communication, Culture, Time and Place
+
+                  Related subjects          Environmental Education, Science, Literature, Art, Geography, Biology
+                  Project                   Acting: The Awful 5
+                                            Can read a questionnaire, an earth day story and a play about pollutants; can talk about
+                                            pollution, endangered species and protection of the environment; can understand activities
+                  Self-assessment
+                                            that happened before another action in the past; can listen to a presentation about endangered
+                  (Can-do statements)
+                                            species; can write e-mails about environmental problems and a poster; can express the result of
+                                            an action or a situation
+
+
+
+
+              x
+
+
+
+
+10-0147_AGGLIKA.indb 10                                                                                                                        1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 14/17 | GLOBAL PDF p.14 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                                           LANGUAGE            LANGUAGE
+               LESSON                     SKILLS / STRATEGIES
+                                                                                           (Functions)         (Structures/Lexis)
+                                          Reading: A story: An Earth Day Story
+                                          Reading for gist/ reading for specific
+                                          information; making inferences
+                                                                                           Sequencing past     Past Perfect Simple
+                                          Speaking: Asking about events;
+               1    An Earth Day Story                                                     actions             Words related to environment
+                                          Giving advice about the protection
+                                          of the environment
+                                          Writing: write an e-mail about a day trip to
+                                          the beach
+
+
+                                          Listening: a presentation at an
+                                          environmental centre
+                                          Listening for gist / for Specific Information.
+                    Save the                                                               Expressing result   Clauses of Reason
+                                          Speaking: Information gap: Talking about
+               2    Endangered                                                             and deduction;      Clauses of Result
+                                          endangered animals
+                    Species                                                                Expressing reason   Words related to animals
+                                          Writing: e-mails about an Environmental
+                                          centre and about endangered animals
+                                          Making a poster about the environment
+
+
+                                                                                                               Words related to pollution
+                                          Reading: A part of a play: “The Awful Five”
+               3    The Awful 5                                                            Improvising         Words related to setting up
+                                          Project: Acting: The Awful Five
+                                                                                                               part of a play
+
+
+               UNIT 10: Time for fun
+               Crosscurricular notions    Culture, Communication, Self-Awareness, Information, Organisation
+
+               Related subjects           Art and Literature
+               Project                    A Film Review
+                                          Can read a questionnaire, an article about James Bond, signs and notices, film reviews; can
+               Self-assessment            talk about films and books; can listen to dialogues about films and books; can write an e-mail
+               (Can-do statements)        about a book, a poster, signs and notices and a film review; can express suggestions and can
+                                          emphasize the action rather than the doer
+                                                                                         LANGUAGE             LANGUAGE
+               LESSON                     SKILLS / STRATEGIES
+                                                                                         (Functions)          (Structures/Lexis)
+                                          Reading: A questionnaire;
+                                          An article about James Bond;
+                                          Reading signs and notices;
+                                          Reading for gist; Reading for specific                               Simple Present Passive
+                    The Different Faces                                                    Emphasizing
+               1                          information                                                          Words related to films
+                    of a Super Spy                                                         actions
+                                          Speaking about films and books                                       and books
+                                          Writing an e-mail about a book
+                                          Making a poster
+                                          Writing signs and notices
+
+
+
+
+                                                                                                                                              xi
+
+
+
+
+10-0147_AGGLIKA.indb 11                                                                                                                            1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 15/17 | GLOBAL PDF p.15 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                                   Describing films /
+                                        Listening: Listening to a dialogue about
+                                                                                   books;
+                                        going to the cinema                                             Expressions of preference
+                                                                                   Talking about
+                                        Listening for specific information                              ..ing/ed Adjectives
+                                                                                   one’s feelings;
+                2   The Film Festival   Speaking: Making /responding to                                 adjectives to describe films
+                                                                                   Expressing
+                                        suggestions about going to the cinema                           and books
+                                                                                   suggestions;
+                                        Mediation: an e-mail: information about                         adjectives to describe feelings
+                                                                                   responding to
+                                        a book
+                                                                                   suggestions
+
+                                        Reading: an outline of a film review                            Words related to writing
+                3   A Film Review                                                  Describing a film
+                                        Project: A Film Review                                          a film review
+
+                Appendix I                 It’s your choice!
+                Appendix II                Resource materials
+                Appendix III               Grammar
+                Appendix IV                Irregular verbs
+                Appendix V                 Vocabulary list
+                Appendix VI                Maps
+
+
+
+
+              xii
+
+
+
+
+10-0147_AGGLIKA.indb 12                                                                                                                   1/21/14 10:50 AM
+
+==============================================================================
+[PAGE 16/17 | GLOBAL PDF p.16 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                A. Εισαγωγή για τον μαθητή
+
+                                                     ή μαθήτρια,
+                              Αγαπητέ μαθητή, αγαπητ
+                                                                                                                                         ινωνία σε
+                                                               ώσ   σα     πο   υ   μπ  ορ    είς  να    χρησιμοποιείς για επικο
+                                    Η Αγγλική είναι η       γλ                                                                     λαδή μια σύγ-
+                                                         δε  ν ομ    ιλε  ίτα   ι  η  μη    τρ ική σου γλώσσα. Είναι δη
+                               περιβάλλοντα όπ      ου
+                                                                            το   ύν   πο    λίτ ες   απ  ό   όλ   ες τις γωνιές του πλανήτη για
+                                                                 υιοθε
+                               χρονη γλώσσα την οποία                                     ιρί ες   κα  ι γνώσεις, γραπτά ή προφ
+                                                                                                                                          ορικά. Εί-
+                                                                 ,  ιδέ   ες  , εμ   πε
+                               να ανταλλάξουν απόψεις                                       πο  υ  χρ ησιμοποιείται στην πραγ
+                                                                                                                                        ματική ζωή
+                                                              σα     - ‘ερ   γα   λε  ίο’
+                               ναι με άλλα λόγια γλώσ                                       α, δηλαδή στο διαδίκτυο. Απ
+                                                                                                                                    ό εκεί μπορείς
+                                                     ον  ική  πρ   αγ   μα   τικ   ότ  ητ                                                       ς και
+                                αλλά και στην εικ                                         αν  τα  λλ  άσ    σε  ις  γραπτά μηνύματα, καθώ
+                                                                  αλλά       κα   ι να
+                                να αντλείς πληροφορίες                                    πρ   αγ  μα  τικ   ό   χρόνο με συμμαθητές κα
+                                                                                                                                               ι συμ-
+                                                                εν    το  ύλ  ες    σε
+                                να συμμετέχεις σε κουβ                                      Η  εκ  μά  θησή της Αγγλικής γλώσ
+                                                                                                                                         σας λοιπόν
+                                                              ον    το   ν  κό   σμ   ο.
+                                μαθήτριες σου από όλ
+                                                                  αίτητη στην εποχή μας.
+                                 είναι αναγκαία και απαρ                                    υ  έχ ει  στ   όχ  ο   να σε βοηθήσει να βελτιώσε
+                                                                                                                                                    ις
+                                                                          χέ  ρια     σο
+                                      Το βιβλίο που έχεις στα                                        κα   ι  να οικοδομήσεις νέες γν
+                                                                                                                                           ώσεις όχι
+                                                                   η   απ  οκ   τή   σε   ι αλ  λά
+                                 τις γνώσεις που έχεις ήδ                                  ν  κό  σμ  ο γύρω σου. Γι’ αυτό η συ
+                                                                                                                                         γγραφή του
+                                                             αλ λά      κα  ι  για    το
+                                  μόνο για τη γλώσσα                                                                               ι τις λεξιλογικές
+                                                      ηκ  ε  όχ ι  μό    νο     στ  ου  ς    γρ  αμματικούς κανόνες κα                             θή-
+                                  βιβλίου στηρίχτ
+                                                                                 πο   υ   έχ  εις   ή πο    υ  απ   οκτάς μέσα από όλα τα μα
+                                                                     ώσεις
+                                  ασκήσεις αλλά και σε γν                                   Άλ  λω   στ  ε,   όπως έχεις κιόλας συνειδη
+                                                                                                                                               τοποιή-
+                                                                     ρά   μμ    ατ  ος  .
+                                  ματα του σχολικού προγ                                     νε  ύο  ντ  ας και επαναλαμβάνοντ
+                                                                                                                                        ας μηχανικά,
+                                                              απ   λά    απ   ομ    νη μο
+                                   σει, δεν μαθαίνουμε                                       τις  πληροφορίες που παίρνου
+                                                                                                                                       με με κάποιον
+                                                      τα  ς  κα ι  αν   αλ   ύο   ντ  ας                                                            δεν
+                                   αλλά κατανοών
+                                                                              ς   μέ  σω     τη  ς Αγ  γλ   ική   ς γλώσσας. Επιπλέον, επειδή
+                                                                      ν μα
+                                   τρόπο από το περιβάλλο                                      στ  ο  σπ    ίτι , στο σχολείο ή σε κάπο
+                                                                                                                                             ια βιβλιο-
+                                                                     βρ   ισκ   όμ   ασ   τε
+                                   μαθαίνουμε μόνο όταν                                       ργ  αζ  όμαστε σε ομάδες, με άλ
+                                                                                                                                          λα άτομα με
+                                                             λά    κα   ι  ότ  αν    συ    νε
+                                    θήκη μόνοι μας, αλ                                                                              κούς στόχους, το
+                                                       ζό  μα  στ  ε   κο   ινά     εν δια    φέροντα, κοινούς μαθησια
+                                    τα οποία μοιρα
+                                                                          αδικές δραστηριότητες.
+                                    βιβλίο περιέχει πολλές ομ                                   γλ  ική  ς   γλ  ώσ  σας βασίστηκε σε βιώμα
+                                                                                                                                                  τα που
+                                                                           λίο   υ  τη  ς   Αγ
+                                         Ο σχεδιασμός του βιβ                                          ει    τη συνεχή συνεργασία με
+                                                                                                                                              τους συμ-
+                                                               ικί  ας     σο   υ   κα  ι  πρ  οτ  είν
+                                     έχουν παιδιά της ηλ                                                                                τητες που πρέ-
+                                                               στ  ις   εν  ότ  ητ   ες   το   υ βιβ  λίου θα βρεις δραστηριό
+                                     μαθητές σου. Έτ      σι,
+                                                                           ν στο πλαίσιο μιας
+                                     πει να πραγματοποιηθού
+                                                                        ία με κάποιο/α συμ-
+                                      ομάδας ή σε συνεργασ
+                                                                             ό να επικοινωνήσε-
+                                      μαθητή/τριά σου, με σκοπ
+                                                                                γλώσσα. Θα χρειαστεί
+                                      τε με εργαλείο την Αγγλική                                                        ι να το
+                                                                            διαβάσεις ένα κείμενο κα
+                                      λοιπόν κάποιες φορές να                                                                 ετε και
+                                                εις με   το  υς   συ   νε  ργ   άτ   ες σου ή, ακόμη, να γράψ
+                                       σχολιάσ                                                                         να συνθέσετε
+                                          βε λτ ιώ σετε   μα  ζί   μια     διαφήμιση, ένα γράμμα,
+                                       να                                                                                τε αποφάσεις
+                                                                             ύ ταχυδρομείου, να πάρε
+                                       ένα μήνυμα ηλεκτρονικο                                                                       γλικής
+                                                    ζή  τη  μα  κλ    π.  Πι  ο    συ  γκ   εκ  ριμένα, στο βιβλίο της Αγ
+                                       για κάποιο
+                                                                            ρακάτω στοιχεία:
+                                        γλώσσας θα βρεις τα πα
+
+
+
+
+                                                                                                                                                           xiii
+
+
+
+
+6th Pupil's Book TBofC_(007-016).indd 13                                                                                                                          2/3/15 4:22 PM
+
+==============================================================================
+[PAGE 17/17 | GLOBAL PDF p.17 | SOURCE: 00_FrontMatter_Cover_TOC_Intro_p001-017.pdf]
+==============================================================================
+                                                                                                           η σελίδα της,
+                                              ιες πο υ δια  τρ έχ ου  ν  τη ν κάθε ενότητα στην πρώτ                  στη
+                               •	Τις έννο                                         ου ς  πο υ πρέπει να κατακτήσεις
+                                                           θη  σια  κο  ύς  στ όχ
+                                    καθώς και τους μα
+                                                                     ς
+                                     διάρκεια της διδασκαλία                                                  τύξεις στη
+                                                  γικές   μά  θη ση  ς   κα ι συ  νεργασίας που θα αναπ
+                                •	Τις στρατη
+                                                                      ας
+                                     διάρ­κεια της κάθε ενότητ                         αν αλ  άβεις να πραγματοποιήσ
+                                                                                                                       εις
+                                                           (p ro jec  ts)  πο υ   θα
+                                 •	Σχέδια εργασίας                                  το  υς/τις συμμαθητές/τριέ
+                                                                                                                  ς σου
+                                                        αδ ική ς  ερ  γα  σία ς  με
+                                      στο πλαίσιο ομ                                                            υταίο τμή-
+                                                   τητε ς  δια φο   ρε  τικού   βα  θμού δυσκολίας στο τελε
+                                  •	Δραστηριό                                                              όταν βρίσκεις
+                                             υ  βιβλίο υ  σο υ   πο  υ  μπ  ορείς να χρησιμοποιήσεις
+                                      μα το                                                           τα μιας ενότητας
+                                                  λη  ή πο λύ  δύ  σκ  ολη κάποια δραστηριότη
+                                      πο λύ εύ  κο                                                               νοήματος
+                                                      τε ς δια  με  σο  λά  βη ση  ς,  δηλαδή μεταφοράς του
+                                   •	Δραστηριότη                                                            και το αντίθε-
+                                                   νο υ απ  ό τη  ν Ελ  λη  νικ ή στην Αγγλική γλώσσα ή/
+                                       ενός κειμέ
+                                                                                                                         σι-
+                                       το
+                                                                το -α  ξιο λό γη  ση  ς, δη λα δή αξιολόγησης της μαθη
+                                    •	Δραστηριότητες       αυ
+                                                                         ένα τον/την ίδιο/α.
+                                        ακής πορείας σου από εσ                                               τό, ελπίζουμε
+                                                    τω ν δρ  ασ  τη  ριο  τή τω ν  που προσφέρονται σ’ αυ
+                          Τελειώνοντας, μέσω                                                               ο που μαθαίνεις.
+                                                    βο  ηθ ήσ ει  να   γν  ωρ ίσεις καλύτερα τον τρόπ
+                          το βιβλίο σου να       σε                                                                   υ πρό-
+                                                             να  δια   μο  ρφ ών  εις  ο/ η  ίδιος/α το μαθησιακό σο
+                          Έτσι, σταδιακά θα μπορείς                        κε ς  κα ι να  εδραιώνεις την ανεξαρτη
+                                                                                                                     σία σου
+                                                         ές  σο  υ  αν  άγ
+                           γραμμα με βάση τις δικ                            λλ ετ αι   και απαιτεί διαρκή ενημ
+                                                                                                                  έρωση και
+                                                    συ  νε χώ ς   με τα  βά
+                           σ’ έναν κόσμο που
+                                                            νθήκες.
+                           προσαρμογή στις νέες συ                                                    θηση!
+                                                    να  απ  ολ αύ  σε  ις την πορεία προς τη μά
+                               Σου ευ    χό μα  στε                                                    Η συγγραφική ομάδα
+
+
+               B. Ο 10-λογος για την αυτονόμηση του μαθητή
+               Do you want to be an Independent Learner? Then you should…
+               •     …know why you’re learning English
+               •     …develop a learning plan (this plan changes according to your
+                       current needs)
+               •     …take part in group-work
+               •     …do self-evaluation tests to see what your weak points are
+               •     …ask the teacher for information when you need it
+               •     …look up words you don’t know in a dictionary
+               •     …read or listen to a text to get the general idea first
+               •     …use the learning strategies in every unit to understand English
+                       and communicate better
+               •     …always have in mind who you’re writing
+                      a letter or an e-mail to and why
+               •     …use books, magazines, the Internet, etc. to find the information
+                       you need
+
+
+              xiv
+
+
+
+
+10-0147_AGGLIKA.indb 14                                                                                                        1/21/14 10:50 AM

@@ -1,0 +1,174 @@
+window.COURSEBOOK_CATALOG = {
+  "title": "English 6th Grade — Digital Coursebook Companion (ΣΤ΄ Δημοτικού)",
+  "curriculum": "Greek Ministry of Education (DEPPS-APS) / ITYE Diophantus",
+  "level": "CEFR A2 / A2+",
+  "target_audience": "11-12 year old EFL Primary Learners & Teachers",
+  "teacher_syllabus_notice": "Note for Teachers & Authors: Unit titles, grammatical foci, and themes for Units 2–10 represent preliminary syllabus mapping and should be verified against the physical 6th Grade Coursebook and Teacher's Book before authoring content for those units.",
+  "total_units": 10,
+  "units": [
+    {
+      "unit": 1,
+      "title": "Our Multicultural Class",
+      "slug": "unit1",
+      "status": "ready",
+      "tagline": "Meeting newcomers, European geography, habits vs. present situations, country reports",
+      "theme": "Multiculturalism, Culture, Communication, Geography, History",
+      "grammar": "Present Simple, Adverbs of Frequency, Present Continuous",
+      "cross_curricular": [
+        "Geography",
+        "History",
+        "Science",
+        "Computer Science"
+      ],
+      "v1_url": "unit1/index.html",
+      "v2_url": "unit1/v2.html",
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#dd6b20"
+    },
+    {
+      "unit": 2,
+      "title": "Going Shopping",
+      "slug": "unit2",
+      "status": "planned",
+      "tagline": "Supermarkets, malls, canteen menus, expressing quantity, and e-shopping",
+      "theme": "Consumer Education, Health Education, Decision Making",
+      "grammar": "Countable/Uncountable Nouns, a/an, Some/Any, How much/many, Verbs of the Senses, a little/a few, Order of Adjectives",
+      "cross_curricular": [
+        "Mathematics",
+        "Health Education",
+        "Computer Science"
+      ],
+      "badge": "Next in Pipeline",
+      "accent_color": "#319795"
+    },
+    {
+      "unit": 3,
+      "title": "Imaginary Creatures",
+      "slug": "unit3",
+      "status": "planned",
+      "tagline": "Fairy tale heroes, monsters, Shakespeare's Midsummer Night's Dream, personality traits",
+      "theme": "Mythology, Literature, Theatre Education, Self-Awareness",
+      "grammar": "Comparison of Adjectives & Adverbs, Opposites with Suffixes",
+      "cross_curricular": [
+        "Literature",
+        "Theatre",
+        "Art"
+      ],
+      "badge": "Planned",
+      "accent_color": "#805ad5"
+    },
+    {
+      "unit": 4,
+      "title": "The History of the Aeroplane",
+      "slug": "unit4",
+      "status": "planned",
+      "tagline": "Daedalus & Icarus, Wright Brothers, aviation history, narrating past events",
+      "theme": "Progress, Change, Inventions, Forces of Flight",
+      "grammar": "Past Simple, Past Continuous, Time Linkers (when, while, after that)",
+      "cross_curricular": [
+        "History",
+        "Science",
+        "Technology"
+      ],
+      "badge": "Planned",
+      "accent_color": "#3182ce"
+    },
+    {
+      "unit": 5,
+      "title": "Travelling Through Time",
+      "slug": "unit5",
+      "status": "planned",
+      "tagline": "Diaries, songs, museum visits, transportation rules, and asking for directions",
+      "theme": "Time & Place, Local History, Music, Road Safety",
+      "grammar": "Used to (past habits), Asking for & Giving Directions, Informal Letter Phrases",
+      "cross_curricular": [
+        "Music",
+        "Local History",
+        "Civics"
+      ],
+      "badge": "Planned",
+      "accent_color": "#d69e2e"
+    },
+    {
+      "unit": 6,
+      "title": "Me, Myself and My Future Job",
+      "slug": "unit6",
+      "status": "planned",
+      "tagline": "Careers, job interviews, personal traits, safety rules, and future goals",
+      "theme": "Career Guidance, Citizenship, Personal Development",
+      "grammar": "Modal Verbs (can, may, should), Future Tenses (will, going to)",
+      "cross_curricular": [
+        "Career Guidance",
+        "Citizenship"
+      ],
+      "badge": "Planned",
+      "accent_color": "#e53e3e"
+    },
+    {
+      "unit": 7,
+      "title": "Share Your Experiences",
+      "slug": "unit7",
+      "status": "planned",
+      "tagline": "Life experiences, world records, Paralympics champions, personal bests, and duration of events",
+      "theme": "Physical Education, Resilience, Achievement",
+      "grammar": "Present Perfect Simple & Continuous, For & Since",
+      "cross_curricular": [
+        "Physical Education",
+        "Citizenship",
+        "Environmental Education",
+        "Theatre Education"
+      ],
+      "badge": "Planned",
+      "accent_color": "#38a169"
+    },
+    {
+      "unit": 8,
+      "title": "Blow Your Own Trumpet",
+      "slug": "unit8",
+      "status": "planned",
+      "tagline": "Music festivals, instruments, pocket money survey, and giving advice",
+      "theme": "Music, Financial Literacy, Stereotypes, Conflict Resolution",
+      "grammar": "Conditionals Type 1 & Type 2, Advice Formulations",
+      "cross_curricular": [
+        "Music",
+        "Consumer Education",
+        "Mathematics"
+      ],
+      "badge": "Planned",
+      "accent_color": "#d53f8c"
+    },
+    {
+      "unit": 9,
+      "title": "Earth Day Everyday",
+      "slug": "unit9",
+      "status": "planned",
+      "tagline": "Environmental protection, endangered species, pollutants, and green action",
+      "theme": "Environmental Education, Ecology, Biology, Activism",
+      "grammar": "Past Perfect Simple, Clauses of Reason & Result",
+      "cross_curricular": [
+        "Ecology",
+        "Biology",
+        "Geography"
+      ],
+      "badge": "Planned",
+      "accent_color": "#2f855a"
+    },
+    {
+      "unit": 10,
+      "title": "Time for Fun",
+      "slug": "unit10",
+      "status": "planned",
+      "tagline": "Cinema, books, film reviews, super spies, and expressing preferences",
+      "theme": "Cinema, Literature, Cultural Media, Leisure",
+      "grammar": "Present Simple Passive, -ed / -ing Participial Adjectives",
+      "cross_curricular": [
+        "Media Studies",
+        "Literature",
+        "Art"
+      ],
+      "badge": "Planned",
+      "accent_color": "#4a5568"
+    }
+  ]
+}
+;

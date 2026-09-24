@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Vocabulary Companion for 6th Grade (ΣΤ' Δημοτικού) Unit 1: Our Multicultural Class, featuring pre-recorded audio pronunciations, definitions, and contextual examples.">
+  <title>Unit 1: Our Multicultural Class | 6th Grade English Vocabulary Companion</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background subtle animated gradients -->
+  <div class="bg-decoration">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <div class="header-badge-row" style="margin-bottom: 0;">
+          <a href="../portal.html" style="text-decoration: none; font-size: 0.82rem; font-weight: 700; color: #2b6cb0; background: #ebf8ff; border: 1px solid #bee3f8; padding: 4px 10px; border-radius: 9999px;">
+            🏠 Coursebook Portal
+          </a>
+          <span class="badge curriculum-badge">🇬🇷 English 6th Grade (ΣΤ' Δημοτικού)</span>
+          <span class="badge cefr-badge">CEFR A1+ / A2</span>
+          <span class="badge unit-badge">Unit 1: Lessons 1-3</span>
+        </div>
+        <div>
+          <a href="v2.html" style="text-decoration: none; font-size: 0.84rem; font-weight: 800; color: #ffffff; background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%); padding: 6px 14px; border-radius: 9999px; box-shadow: 0 2px 8px rgba(221,107,32,0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>🚀</span> Launch Version 2.0 (Story Dossiers & CLIL Lab) ➔
+          </a>
+        </div>
+      </div>
+      
+      <div class="header-title-row">
+        <div class="title-wrap">
+          <h1 class="main-title">Our Multicultural Class</h1>
+          <p class="sub-title">Interactive Picture Vocabulary Companion & Audio Pronunciation Lab</p>
+        </div>
+        
+        <div class="quick-stats">
+          <div class="stat-card">
+            <span class="stat-num" id="totalWordsCount">35</span>
+            <span class="stat-label">Lexical Items</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" id="audioCount">280</span>
+            <span class="stat-label">Pre-recorded MP3s (2 Voices)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Nav Row -->
+      <div class="controls-bar">
+        <!-- View Mode Switcher -->
+        <div class="view-modes" role="tablist" aria-label="Learning View Modes">
+          <button class="mode-btn active" data-mode="table" id="btnModeTable" role="tab" aria-selected="true">
+            <span class="icon">📋</span> Table Companion
+          </button>
+          <button class="mode-btn" data-mode="cards" id="btnModeCards" role="tab" aria-selected="false">
+            <span class="icon">🗂️</span> Visual Cards
+          </button>
+          <button class="mode-btn" data-mode="quiz" id="btnModeQuiz" role="tab" aria-selected="false">
+            <span class="icon">🎯</span> Listening Challenge
+          </button>
+          <button class="mode-btn" data-mode="defQuiz" id="btnModeDefQuiz" role="tab" aria-selected="false">
+            <span class="icon">💡</span> Definition Challenge
+          </button>
+          <button class="mode-btn" data-mode="printable" id="btnModePrintable" role="tab" aria-selected="false">
+            <span class="icon">🖨️</span> Printable Study Sheet
+          </button>
+          <button class="mode-btn" data-mode="tts" id="btnModeTTS" role="tab" aria-selected="false">
+            <span class="icon">📝</span> TTS Script & Export
+          </button>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="search-filter-group">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search word, Greek meaning, or definition..." aria-label="Search vocabulary">
+            <button class="clear-search" id="clearSearchBtn" aria-label="Clear search">✕</button>
+          </div>
+          
+          <div class="voice-select-wrap">
+            <label for="voiceSelect" class="speed-label">AI Voice:</label>
+            <select id="voiceSelect" class="speed-select" aria-label="Audio voice model">
+              <option value="neural" selected>✨ Sonia (Natural Neural AI)</option>
+              <option value="standard">🔊 Google Standard (Classic)</option>
+            </select>
+          </div>
+
+          <div class="audio-speed-wrap">
+            <label for="speedSelect" class="speed-label">Speed:</label>
+            <select id="speedSelect" class="speed-select" aria-label="Playback speed">
+              <option value="0.8">0.8x (Slow)</option>
+              <option value="1.0" selected>1.0x (Normal)</option>
+              <option value="1.2">1.2x (Fast)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-pills" id="categoryPills">
+        <button class="pill-btn active" data-category="all">All Words (35)</button>
+        <!-- dynamically populated -->
+      </div>
+    </div>
+  </header>
+
+  <main class="content-container">
+    <!-- Active Audio Player HUD (Floats when audio plays) -->
+    <div class="audio-hud" id="audioHud" style="display: none;">
+      <div class="hud-content">
+        <div class="hud-indicator">
+          <span class="hud-waves">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </span>
+          <div class="hud-text-block">
+            <span class="hud-type" id="hudAudioType">Pronunciation</span>
+            <span class="hud-title" id="hudAudioTitle">ancient</span>
+          </div>
+        </div>
+        <div class="hud-actions">
+          <button class="hud-btn" id="hudPauseBtn" title="Pause / Play">⏸</button>
+          <button class="hud-btn" id="hudStopBtn" title="Stop">⏹</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 1: TABLE COMPANION (Exact Screenshot Match) -->
+    <section id="viewTable" class="view-panel active">
+      <div class="table-card">
+        <div class="table-header-meta">
+          <span class="meta-label">Pupil's Book • Unit 1 • Page 8</span>
+          <span class="meta-info">Click any audio button (🔊) to hear authentic pre-rendered speech.</span>
+        </div>
+        
+        <div class="table-responsive">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th class="col-word" scope="col">Word</th>
+                <th class="col-meaning" scope="col">Meaning</th>
+                <th class="col-example" scope="col">Example</th>
+                <th class="col-actions" scope="col">Play All</th>
+              </tr>
+            </thead>
+            <tbody id="vocabTableBody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: VISUAL FLASHCARDS -->
+    <section id="viewCards" class="view-panel">
+      <div class="cards-toolbar">
+        <div class="cards-counter">
+          Card <span id="currentCardIndex">1</span> of <span id="totalCardsCount">35</span>
+        </div>
+        <div class="cards-nav-btns">
+          <button class="nav-arrow-btn" id="prevCardBtn" aria-label="Previous card">◀ Previous</button>
+          <button class="nav-arrow-btn" id="nextCardBtn" aria-label="Next card">Next ▶</button>
+          <button class="shuffle-btn" id="shuffleCardsBtn">🔀 Shuffle</button>
+        </div>
+      </div>
+
+      <div class="flashcard-container">
+        <div class="flashcard" id="activeFlashcard">
+          <!-- Front Face -->
+          <div class="card-face card-front">
+            <div class="card-category-badge" id="cardCategory">Category</div>
+            <div class="card-visual-box" id="cardVisual">
+              <!-- Emoji or visual representation -->
+            </div>
+            <h2 class="card-word" id="cardWord">ancient</h2>
+            <div class="card-ipa" id="cardIpa">[ˈeɪnʃənt]</div>
+            <div class="card-pos" id="cardPos">(adj)</div>
+            <div class="card-audio-group">
+              <button class="card-audio-btn" id="cardPlayWordBtn">🔊 Pronounce Word</button>
+            </div>
+            <div class="card-hint">Tap card or spacebar to flip ↷</div>
+          </div>
+
+          <!-- Back Face -->
+          <div class="card-face card-back">
+            <span class="card-back-label">Definition & Context</span>
+            <div class="card-meaning-gr" id="cardMeaningGr">αρχαίος, πανάρχαιος</div>
+            <div class="card-def-box">
+              <div class="def-header">
+                <strong>English Definition:</strong>
+                <button class="mini-audio-btn" id="cardPlayDefBtn" title="Hear definition">🔊</button>
+              </div>
+              <p class="card-def-en" id="cardDefEn">belonging to the distant past</p>
+            </div>
+            <div class="card-example-box">
+              <div class="example-header">
+                <strong>Example Sentence:</strong>
+                <button class="mini-audio-btn" id="cardPlayExBtn" title="Hear example">🔊</button>
+              </div>
+              <p class="card-example" id="cardExample">The Parthenon is an ancient monument.</p>
+            </div>
+            <div class="card-hint">Tap card to flip back ↶</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: LISTENING CHALLENGE / QUIZ -->
+    <section id="viewQuiz" class="view-panel">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <div class="quiz-score-badge">Score: <span id="quizScore">0</span> / <span id="quizTotal">0</span></div>
+          <div class="quiz-streak-badge">Streak: <span id="quizStreak">🔥 0</span></div>
+          <button class="quiz-restart-btn" id="restartQuizBtn">🔄 Restart Challenge</button>
+        </div>
+
+        <div class="quiz-prompt-box">
+          <span class="quiz-instruction">Listen to the word and select the matching Greek translation:</span>
+          <div class="quiz-audio-trigger-row">
+            <button class="quiz-play-btn" id="quizPlayPromptBtn">
+              <span class="big-icon">🔊</span>
+              <span class="quiz-play-text">Listen to Word</span>
+            </button>
+            <div class="quiz-clue" id="quizClue">Mode: Spoken Word Clue</div>
+          </div>
+        </div>
+
+        <div class="quiz-options-grid" id="quizOptionsGrid">
+          <!-- 4 choice buttons -->
+        </div>
+
+        <div class="quiz-feedback-box" id="quizFeedback" style="display: none;">
+          <div class="feedback-icon" id="feedbackIcon">🎉</div>
+          <div class="feedback-text" id="feedbackText">Correct! Well done.</div>
+          <button class="next-question-btn" id="nextQuestionBtn">Next Question ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: DEFINITION CHALLENGE (HEAR WORD -> CHOOSE ENGLISH DEFINITION) -->
+    <section id="viewDefQuiz" class="view-panel">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <div class="quiz-score-badge">Score: <span id="defQuizScore">0</span> / <span id="defQuizTotal">0</span></div>
+          <div class="quiz-streak-badge">Streak: <span id="defQuizStreak">🔥 0</span></div>
+          <button class="quiz-restart-btn" id="restartDefQuizBtn">🔄 Restart Challenge</button>
+        </div>
+
+        <div class="quiz-prompt-box">
+          <span class="quiz-instruction">Listen to the word and select the matching English definition:</span>
+          <div class="quiz-audio-trigger-row">
+            <button class="quiz-play-btn" id="defQuizPlayPromptBtn">
+              <span class="big-icon">🔊</span>
+              <span class="quiz-play-text">Listen to Word</span>
+            </button>
+            <div class="quiz-clue" id="defQuizClue">Mode: Spoken English Word</div>
+          </div>
+        </div>
+
+        <div class="def-quiz-options-grid" id="defQuizOptionsGrid">
+          <!-- 4 choice buttons with English definitions -->
+        </div>
+
+        <div class="quiz-feedback-box" id="defQuizFeedback" style="display: none;">
+          <div class="feedback-icon" id="defFeedbackIcon">🎉</div>
+          <div class="feedback-text" id="defFeedbackText">Correct! Well done.</div>
+          <button class="next-question-btn" id="defNextQuestionBtn">Next Question ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: PRINTABLE STUDY SHEET (WORD, DEFINITION & EXAMPLE) -->
+    <section id="viewPrintable" class="view-panel">
+      <div class="printable-toolbar no-print">
+        <div class="printable-toolbar-info">
+          <h2 class="printable-toolbar-title">🖨️ Printable Study Guide (Word, Definition & Example)</h2>
+          <p class="printable-toolbar-desc">Complete classroom study sheet with English words, parts of speech, English definitions, and contextual example sentences. Pre-formatted for clean A4 printing and PDF export.</p>
+        </div>
+        <div class="printable-toolbar-actions">
+          <button class="print-action-btn primary" id="printPageBtn">
+            <span>🖨️</span> Print / Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="printable-sheet-container" id="printableSheetContainer">
+        <div class="printable-paper-header">
+          <div class="paper-kicker">Photodentro • English 6th Grade Primary School • Unit 1</div>
+          <h1 class="paper-title">Our Multicultural Class — Vocabulary Study Guide</h1>
+          <p class="paper-subtitle">Words, English Definitions, and Contextual Example Sentences</p>
+          <div class="paper-meta-row">
+            <span class="paper-meta-field"><strong>Student Name:</strong> ___________________________________</span>
+            <span class="paper-meta-field"><strong>Class:</strong> ________</span>
+            <span class="paper-meta-field"><strong>Date:</strong> __________________</span>
+          </div>
+        </div>
+
+        <div class="printable-words-list" id="printableWordsList">
+          <!-- Dynamically populated from vocabList -->
+        </div>
+
+        <div class="printable-paper-footer">
+          <span>Unit 1: Our Multicultural Class • Printable Vocabulary Reference</span>
+          <span>Photodentro Interactive Vocabulary Companion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: TTS SCRIPT & TEXT EXPORT -->
+    <section id="viewTTS" class="view-panel">
+      <div class="export-card">
+        <div class="export-header">
+          <div>
+            <h2 class="export-title">Plaintext Vocabulary & TTS Synthesis Script</h2>
+            <p class="export-subtitle">This structured plaintext file is pre-formatted for external Text-to-Speech engines, screen readers, or printing flashcard lists.</p>
+          </div>
+          <div class="export-actions">
+            <button class="export-btn" id="copyTtsBtn">📋 Copy Script</button>
+            <a class="export-btn primary" id="downloadTtsBtn" href="vocabulary_unit1_tts.txt" download="vocabulary_unit1_tts.txt">⬇️ Download .TXT</a>
+            <button class="export-btn secondary" id="downloadJsonBtn">💾 Download JSON Data</button>
+          </div>
+        </div>
+
+        <div class="tts-script-preview-wrap">
+          <pre class="tts-script-content" id="ttsScriptPreview">Loading script...</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Word Detail Modal -->
+  <div class="modal-overlay" id="wordModal" style="display: none;" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p class="footer-brand">6th Grade English Curriculum • Unit 1: Our Multicultural Class</p>
+      <p class="footer-note">Developed for Greek Elementary School (ΣΤ' Δημοτικού) • All audio recordings pre-rendered in offline MP3 format.</p>
+    </div>
+  </footer>
+
+  <!-- Vocabulary Data & App Script -->
+  <script src="data/vocabulary_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

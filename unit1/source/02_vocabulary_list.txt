@@ -1,0 +1,44 @@
+==============================================================================
+Unit 1 official vocabulary list (36 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+ancient
+border
+brave
+citrus fruit
+coal mines
+coast
+comprise
+connect
+copper
+copy
+earthquake
+flow
+golden fleece
+instrument
+landmark
+landscape
+mild
+molecule
+mountain
+multicultural
+natural disaster
+nuclear power
+plant
+oil well
+outgoing
+paste
+peninsula
+plain
+print
+race
+river
+search
+split in
+temperature
+underwater
+water supplies
+
+----- CHECK (known print errors / wraps) -----
+nuclear power  ->  line wrap in print: the item is 'nuclear power plant' (next line 'plant')

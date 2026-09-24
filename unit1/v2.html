@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1: Our Multicultural Class — Version 2 (CLIL & Portfolio Lab)</title>
+  <meta name="description" content="Modernized interactive companion for Unit 1 of English 6th Grade. Story dossiers, grammar in action, collocations crossword, 5-paragraph country report builder, and printable worksheets.">
+  <link rel="stylesheet" href="style_v2.css">
+</head>
+<body data-unit="1">
+
+  <!-- Background decorative ambient orbs -->
+  <div class="bg-decoration" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Audio Player Floating HUD -->
+  <div class="audio-hud" id="audioHud" style="display: none;" role="region" aria-label="Audio Playback Controller">
+    <div class="hud-content">
+      <div class="hud-info">
+        <span class="hud-label" id="hudAudioType">Story Narration</span>
+        <strong class="hud-title" id="hudAudioTitle">Sasha's Ukraine</strong>
+      </div>
+      <div class="hud-controls">
+        <button class="hud-btn" id="hudPauseBtn" title="Pause / Resume" aria-label="Pause audio">⏸️</button>
+        <button class="hud-btn" id="hudStopBtn" title="Stop" aria-label="Stop audio">⏹️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Navigation & Application Bar -->
+  <header class="app-header no-print">
+    <div class="header-container">
+      
+      <div class="top-nav-row">
+        <div class="nav-breadcrumbs">
+          <a href="../portal.html" class="hub-link">
+            <span>🏠</span> Coursebook Portal
+          </a>
+          <span class="separator">/</span>
+          <span class="current-unit">Unit 1: Our Multicultural Class</span>
+          <span class="badge v2-badge">Version 2.0 (Modernized)</span>
+        </div>
+
+        <div class="nav-actions">
+          <button class="v1-switch-btn" id="topTeacherNotesBtn" title="Teacher Pedagogical Notes & Fact-Checks" style="cursor: pointer;">
+            <span>🧑‍🏫</span> Teacher Notes
+          </button>
+          <a href="index.html" class="v1-switch-btn" title="Switch to Version 1 (Quick Vocabulary & Cards)">
+            <span>📖</span> Switch to Version 1 (Vocabulary Lab)
+          </a>
+          <button class="print-pack-top-btn" id="topPrintPackBtn" title="Print Full 5-Worksheet Classroom Pack">
+            <span>🖨️</span> Print Worksheets Pack
+          </button>
+        </div>
+      </div>
+
+      <div class="header-hero">
+        <div class="hero-text-wrap">
+          <h1 class="main-title">Our Multicultural Class</h1>
+          <p class="sub-title">Intercultural Story Dossiers, Grammar Lab, Geography Quests & Portfolio Writing</p>
+        </div>
+
+        <div class="audio-settings-bar">
+          <div class="setting-item">
+            <label for="v2VoiceSelect">AI Voice:</label>
+            <select id="v2VoiceSelect" class="v2-select">
+              <option value="neural" selected>✨ Sonia (Natural Neural AI)</option>
+              <option value="standard">🔊 Classic Google TTS</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label for="v2SpeedSelect">Speed:</label>
+            <select id="v2SpeedSelect" class="v2-select">
+              <option value="0.8">0.8x (Slow)</option>
+              <option value="1.0" selected>1.0x (Normal)</option>
+              <option value="1.2">1.2x (Fast)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Module Navigation Tabs -->
+      <nav class="v2-nav-tabs" role="tablist" aria-label="Version 2 Learning Modules">
+        <button class="v2-tab active" data-tab="stories" role="tab" aria-selected="true">
+          <span class="tab-icon">🌍</span> Country Dossiers
+        </button>
+        <button class="v2-tab" data-tab="grammar" role="tab" aria-selected="false">
+          <span class="tab-icon">🧪</span> Grammar Lab
+        </button>
+        <button class="v2-tab" data-tab="collocations" role="tab" aria-selected="false">
+          <span class="tab-icon">🧩</span> Collocations & Geography Clues
+        </button>
+        <button class="v2-tab" data-tab="report" role="tab" aria-selected="false">
+          <span class="tab-icon">✍️</span> 5-Paragraph Report Builder
+        </button>
+        <button class="v2-tab" data-tab="challenges" role="tab" aria-selected="false">
+          <span class="tab-icon">🎧</span> Challenge Arena
+        </button>
+        <button class="v2-tab" data-tab="worksheets" role="tab" aria-selected="false">
+          <span class="tab-icon">🖨️</span> Printable Worksheets
+        </button>
+        <button class="v2-tab" data-tab="passport" role="tab" aria-selected="false">
+          <span class="tab-icon">🎖️</span> Can-Do Passport
+        </button>
+        <button class="v2-tab" data-tab="workbook" role="tab" aria-selected="false">
+          <span class="tab-icon">📓</span> Workbook
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main Content Panels -->
+  <main class="main-content">
+    <div class="content-container">
+
+      <!-- ========================================== -->
+      <!-- MODULE 1: COUNTRY DOSSIERS (STORY EXPLORER)-->
+      <!-- ========================================== -->
+      <section id="panel-stories" class="v2-panel active">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🌍 Meeting the Newcomers: Interactive Country Dossiers</h2>
+            <p class="panel-desc">Listen to Sasha, Christina, Georgi, and Gwen introduce their homelands, geography, and cultures. Click map landmarks and vocabulary callouts to hear authentic pronunciations.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn-print-module" data-sheet="1">
+              <span>📄</span> Print Story Worksheet 1
+            </button>
+          </div>
+        </div>
+
+        <!-- Country Selector Pills -->
+        <div class="country-pills-row no-print" id="countryPills">
+          <button class="country-pill active" data-country="ukraine">
+            <span class="flag">🇺🇦</span> Sasha • Ukraine
+          </button>
+          <button class="country-pill" data-country="albania">
+            <span class="flag">🇦🇱</span> Christina • Albania
+          </button>
+          <button class="country-pill" data-country="georgia">
+            <span class="flag">🇬🇪</span> Georgi • Georgia
+          </button>
+          <button class="country-pill" data-country="uk">
+            <span class="flag">🇬🇧</span> Gwen • United Kingdom
+          </button>
+        </div>
+
+        <!-- Country Dossier Card Container -->
+        <div class="story-dossier-card" id="storyDossierCard">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Teacher's Critical Thinking & Pedagogical Notes Callout (§H) -->
+        <div class="teacher-notes-card no-print" style="margin-top: 24px; background: #ebf8ff; border: 1px solid #bee3f8; border-radius: var(--radius-lg); padding: 18px 24px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;" id="btnToggleTeacherNotes">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.4rem;">🧑‍🏫</span>
+              <div>
+                <h4 style="margin: 0; font-size: 1rem; color: #2b6cb0; font-family: 'Outfit', sans-serif;">Teacher's Pedagogical & Critical Thinking Notes</h4>
+                <span style="font-size: 0.8rem; color: #4a5568;">Classroom fact-checks & source resolutions (Click to expand)</span>
+              </div>
+            </div>
+            <span id="teacherNotesChevron" style="font-size: 1.1rem; color: #2b6cb0;">▼</span>
+          </div>
+          <div id="teacherNotesContent" style="display: none; margin-top: 14px; border-top: 1px solid #bee3f8; padding-top: 14px;">
+            <div style="margin-bottom: 12px;">
+              <strong style="color: #2c5282; font-size: 0.9rem;">1. Coursebook Fidelity (Christina - Albania):</strong>
+              <p style="margin: 4px 0; font-size: 0.86rem; color: #2d3748; line-height: 1.5;">
+                <strong>Authentic coursebook wording:</strong> Christina's narrative retains the authentic 2006 lexis (<em>"natural disasters, such as earthquakes or tsunamis that happen along the South coast"</em>) matching Pupil's Book p. 2 and Lesson 1 Quiz #4 verbatim. This ensures exact correspondence between what pupils see in their printed coursebook and what they experience on screen.
+              </p>
+            </div>
+            <div style="margin-bottom: 12px;">
+              <strong style="color: #2c5282; font-size: 0.9rem;">2. Computer Lab Dialogue: Printing vs. Saving Source Discrepancy:</strong>
+              <p style="margin: 4px 0; font-size: 0.86rem; color: #2d3748; line-height: 1.5;">
+                <strong>Source resolution:</strong> In the original printed Teacher's Book, the recording script wrote <em>"I'm saving some photos"</em> for Markos, but its own answer key corrected statement 2 with <em>"he is printing some photos"</em>. In this digital companion, we resolve this discrepancy to <strong>"printing"</strong> to directly practice the target curriculum verb <em>print</em> alongside <em>search, copy, paste</em>.
+              </p>
+            </div>
+            <div>
+              <strong style="color: #2c5282; font-size: 0.9rem;">3. Geography Clues & Extended Lexis:</strong>
+              <p style="margin: 4px 0; font-size: 0.86rem; color: #2d3748; line-height: 1.5;">
+                <strong>Lexical scope:</strong> Several clue answers (FORESTS, EAST, WEST, NORTH, SOUTH, LANDFORMS, CAPITAL) are geographical concepts extending beyond the 35 core vocabulary items. This activity is clearly framed as <em>"Geography Terms & Clues"</em> to distinguish it from the 35 core syllabus items.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 2: GRAMMAR LAB (HABITS VS. RIGHT NOW)-->
+      <!-- ========================================== -->
+      <section id="panel-grammar" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🧪 Grammar in Action: Routines vs. Right Now</h2>
+            <p class="panel-desc">Master the contrast between the Present Simple (habits, frequency adverbs) and the Present Continuous (actions happening right now in the school lab).</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn-print-module" data-sheet="2">
+              <span>📄</span> Print Grammar Worksheet 2
+            </button>
+          </div>
+        </div>
+
+        <div class="grammar-layout">
+          <!-- Sub-module A: At the Modern School Lab (Authentic Listening Activity) -->
+          <div class="grammar-card full-width">
+            <div class="grammar-card-header">
+              <span class="badge lab-badge">Lesson 2 • Authentic Listening Task</span>
+              <h3>🎧 At the School Computer Lab (Listening Activity & Computer Verbs)</h3>
+              <p>Listen to the authentic dialogue between the teacher and students. Track Maria, Markos, Anne, and Sophia using the four core computer verbs (<strong>search, print, copy, paste</strong>), then complete the listening comprehension check!</p>
+            </div>
+
+            <!-- Audio Player Row & Transcript Toggle -->
+            <div style="margin: 16px 0 20px; padding: 14px 18px; background: #fffaf0; border-radius: var(--radius-md); border: 1px solid rgba(221,107,32,0.25); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+              <button class="play-full-story-btn" id="btnPlayLabDialogue">
+                <span>🔊</span> Listen to Computer Lab Dialogue
+              </button>
+              <button class="v1-switch-btn" id="btnToggleLabTranscript" style="margin: 0;">
+                <span>📜</span> Toggle Script Transcript
+              </button>
+            </div>
+
+            <!-- Collapsible Script Box -->
+            <div id="labTranscriptBox" style="display: none; margin-bottom: 20px; padding: 16px 20px; background: #f8fafc; border-radius: var(--radius-md); border-left: 4px solid var(--primary-color); font-size: 0.92rem; line-height: 1.65;">
+              <!-- Transcript populated by JS -->
+            </div>
+
+            <!-- Student Project Stations -->
+            <div class="lab-scene-container" id="labSceneContainer">
+              <!-- Dynamically populated student lab stations -->
+            </div>
+
+            <!-- Authentic Listening Comprehension True/False Check -->
+            <div style="margin-top: 24px; padding: 20px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <h4 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #1a202c;">✅ Listening Comprehension Check (Tick True or False)</h4>
+                <span id="labQuizScore" style="font-size: 0.85rem; font-weight: 700; color: #2b6cb0; background: #ebf8ff; padding: 3px 10px; border-radius: var(--radius-full);">Score: 0 / 5</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-medium); margin-bottom: 16px;">Based on the dialogue you heard, decide whether each statement is True or False:</p>
+              <div id="labQuizList" style="display: flex; flex-direction: column; gap: 10px;">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-module B: Mr. Badluck's Day Comic Challenge -->
+          <div class="grammar-card">
+            <div class="grammar-card-header">
+              <span class="badge badluck-badge">Lesson 2.4B • Contrast Game</span>
+              <h3>☔ Mr. Badluck's Day: Routines vs. Today's Misadventures</h3>
+              <p>Every day Mr. Badluck has a smooth routine, but today everything is going wrong! Notice the contrast between routine habits and temporary actions.</p>
+            </div>
+
+            <div class="badluck-timeline" id="badluckTimeline">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Sub-module C: Adverbs of Frequency Spectrum -->
+          <div class="grammar-card">
+            <div class="grammar-card-header">
+              <span class="badge freq-badge">Lesson 1.2C • Frequency Spectrum</span>
+              <h3>📊 Adverbs of Frequency: How Often? (0% to 100%)</h3>
+              <p>Click adverbs along the frequency spectrum to see unit sentences in action.</p>
+            </div>
+
+            <div class="frequency-spectrum-bar" id="frequencySpectrumBar">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Sub-module D: Classroom Charades Interactive (§C4) -->
+          <div class="grammar-card full-width">
+            <div class="grammar-card-header">
+              <span class="badge lab-badge">Lesson 2 • Communicative Game</span>
+              <h3>🎭 Classroom Charades: Present Continuous in Action</h3>
+              <p>Practice short forms (<em>"Are you ...? Yes, I am! / No, I'm not!"</em>) in pairs or groups as designed in the Teacher's Book.</p>
+            </div>
+
+            <div style="padding: 16px 20px; background: #fffaf0; border-radius: var(--radius-md); border: 1px solid rgba(221,107,32,0.25); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+              <div>
+                <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 800; color: var(--primary-color);">Action to Mime:</div>
+                <strong style="font-size: 1.1rem; color: #1a202c;" id="charadeActionDisplay">Click "Draw Charade Card" to start!</strong>
+                <div style="font-size: 0.88rem; color: var(--text-medium); margin-top: 6px;" id="charadeQuestionPrompt">The class asks: <em>"Are you ...?"</em></div>
+              </div>
+              <button class="play-full-story-btn" id="btnNextCharade" style="padding: 10px 20px; font-size: 0.9rem;">
+                <span>🎲</span> Draw Charade Card
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 3: COLLOCATIONS & GEOGRAPHY CLUES -->
+      <!-- ========================================== -->
+      <section id="panel-collocations" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🧩 Geography Collocations & Clue Challenge</h2>
+            <p class="panel-desc">English words live in partnerships! Connect verbs with their natural noun partners, and solve the Geography Clue Challenge (Guess the Word from its Definition).</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn-print-module" data-sheet="3">
+              <span>📄</span> Print Vocabulary Worksheet 3
+            </button>
+          </div>
+        </div>
+
+        <div class="collocations-layout">
+          <!-- Collocation Matcher Game -->
+          <div class="collocation-game-card">
+            <div class="game-header">
+              <h3>🔗 Collocation Partner Matcher</h3>
+              <p>Match each verb on the left with its correct geographical partner on the right:</p>
+            </div>
+            <div class="collocation-matcher-grid" id="collocationMatcher">
+              <!-- Populated by JS -->
+            </div>
+            <div class="matcher-feedback" id="collocationFeedback" style="display: none;"></div>
+          </div>
+
+          <!-- Digital Clue Challenge Card (Guess the Word from its Definition) -->
+          <div class="crossword-game-card">
+            <div class="game-header">
+              <div class="crossword-title-row">
+                <h3>🗺️ Geography Terms: Guess the Word from its Definition</h3>
+                <span class="crossword-score" id="crosswordScore">Solved: 0 / 12</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-medium); margin-top: 2px;">Geography terms and clues extending beyond the 35 core vocabulary items. Read the clue and click "💡 Reveal Word" or audio!</p>
+            </div>
+            
+            <div class="crossword-clues-columns">
+              <div class="clues-block">
+                <h4>Across Clues ➔</h4>
+                <ul class="clues-list" id="acrossCluesList"></ul>
+              </div>
+              <div class="clues-block">
+                <h4>Down Clues ⬇</h4>
+                <ul class="clues-list" id="downCluesList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 4: 5-PARAGRAPH REPORT BUILDER -->
+      <!-- ========================================== -->
+      <section id="panel-report" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">✍️ The 5-Paragraph Country Report Builder</h2>
+            <p class="panel-desc">Follow Gwen's model (Lesson 3) to compose an official European Class Portfolio report. Use guided connectors, paragraph checklists, and export your completed report to PDF/Print!</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn-print-module" data-sheet="4">
+              <span>📄</span> Print Portfolio Template 4
+            </button>
+          </div>
+        </div>
+
+        <div class="report-builder-wrap">
+          <!-- Country Target Selector -->
+          <div class="report-target-selector no-print">
+            <label for="reportCountryInput">Country Subject:</label>
+            <input type="text" id="reportCountryInput" value="Greece" placeholder="e.g. Greece, Italy, France...">
+            <label for="reportStudentInput">Author:</label>
+            <input type="text" id="reportStudentInput" placeholder="Your Name">
+            <button class="btn-preview-report" id="btnPreviewReport">📋 Preview Formatted Report</button>
+            <button class="btn-print-report primary" id="btnPrintReport">🖨️ Print Final Report</button>
+          </div>
+
+          <!-- 5-Paragraph Step Builder -->
+          <div class="paragraphs-step-accordion" id="reportStepsContainer">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Live Formatted Output Preview -->
+          <div class="report-live-preview-card" id="reportPreviewCard">
+            <div class="preview-paper-header">
+              <span class="paper-kicker">European Class Portfolio • English 6th Grade</span>
+              <h2 class="preview-report-title" id="previewTitle">Report on Greece</h2>
+              <div class="preview-meta">
+                <span id="previewAuthor">By: Student</span> • <span>Class: 6th Grade Primary</span> • <span>Unit 1 Project</span>
+              </div>
+            </div>
+            <div class="preview-paragraphs-body" id="previewParagraphsBody">
+              <!-- Live updated text -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 5: 4-MODE CHALLENGE ARENA -->
+      <!-- ========================================== -->
+      <section id="panel-challenges" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🎧 Challenge Arena: 4 Formative Ear-Training Games</h2>
+            <p class="panel-desc">Hone your listening comprehension and geographical deduction across four interactive game modes.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="btn-print-module" data-sheet="5">
+              <span>📄</span> Print Mastery Quiz Sheet 5
+            </button>
+          </div>
+        </div>
+
+        <!-- Mode Selector Buttons -->
+        <div class="challenge-mode-selector no-print">
+          <button class="ch-mode-btn active" data-cmode="greek">
+            <span>🇬🇷</span> 1. Spoken Word ➔ Greek Meaning
+          </button>
+          <button class="ch-mode-btn" data-cmode="def">
+            <span>📖</span> 2. Spoken Word ➔ English Definition
+          </button>
+          <button class="ch-mode-btn" data-cmode="gapfill">
+            <span>🧩</span> 3. Audio Sentence Gap-Fill
+          </button>
+          <button class="ch-mode-btn" data-cmode="fact">
+            <span>⚡</span> 4. Geography Fact-Buster (True/False)
+          </button>
+        </div>
+
+        <!-- Active Game Card Container -->
+        <div class="challenge-game-card">
+          <div class="ch-header">
+            <div class="ch-score-box">Score: <strong id="chScore">0</strong> / <span id="chTotal">0</span></div>
+            <div class="ch-streak-box">Streak: <strong id="chStreak">🔥 0</strong></div>
+            <button class="ch-restart-btn" id="chRestartBtn">🔄 Restart</button>
+          </div>
+
+          <div class="ch-prompt-box">
+            <div class="ch-instruction" id="chInstruction">Listen carefully and select the matching choice:</div>
+            <div class="ch-audio-row">
+              <button class="quiz-play-btn" id="chPlayBtn">
+                <span class="big-icon">🔊</span>
+                <span id="chPlayBtnText">Listen to Prompt</span>
+              </button>
+              <span class="ch-sub-clue" id="chSubClue">Audio ready</span>
+            </div>
+          </div>
+
+          <!-- Options Grid -->
+          <div class="ch-options-grid" id="chOptionsGrid"></div>
+
+          <!-- Feedback Box -->
+          <div class="quiz-feedback-box" id="chFeedback" style="display: none;">
+            <div class="feedback-icon" id="chFeedbackIcon">🎉</div>
+            <div class="feedback-text" id="chFeedbackText">Correct!</div>
+            <button class="next-question-btn" id="chNextBtn">Next Question ➔</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 6: PRINTABLE WORKSHEETS PACK (5 SHEETS)-->
+      <!-- ========================================== -->
+      <section id="panel-worksheets" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🖨️ Complete Printable Classroom Worksheets Pack</h2>
+            <p class="panel-desc">All 5 activity worksheets formatted for crisp A4 paper printing and PDF download. Perfect for classroom handouts, homework assignments, and physical student portfolios.</p>
+          </div>
+          <div class="panel-actions">
+            <button class="print-action-btn primary" id="btnPrintAllSheets">
+              <span>🖨️</span> Print Complete 5-Worksheet Pack
+            </button>
+          </div>
+        </div>
+
+        <!-- Sheet Selector Tabs -->
+        <div class="sheet-tabs-row no-print" id="sheetTabsRow">
+          <button class="sheet-tab active" data-sheet-idx="1">Worksheet 1: Country Dossiers</button>
+          <button class="sheet-tab" data-sheet-idx="2">Worksheet 2: Grammar in Action</button>
+          <button class="sheet-tab" data-sheet-idx="3">Worksheet 3: Crossword & Collocations</button>
+          <button class="sheet-tab" data-sheet-idx="4">Worksheet 4: 5-Paragraph Report</button>
+          <button class="sheet-tab" data-sheet-idx="5">Worksheet 5: Unit 1 Mastery Test</button>
+        </div>
+
+        <!-- Worksheets Content Area -->
+        <div class="worksheets-display-container" id="worksheetsDisplayContainer">
+          <!-- Rendered dynamically -->
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- MODULE 7: CAN-DO PASSPORT & LEARNER AUTONOMY -->
+      <!-- ========================================== -->
+      <section id="panel-passport" class="v2-panel">
+        <div class="panel-header-box no-print">
+          <div>
+            <h2 class="panel-title">🎖️ CEFR Learner Autonomy & "Can-Do" Passport</h2>
+            <p class="panel-desc">Track your mastery of the four official Unit 1 learning milestones. Complete the checklist to unlock your personalized Junior Linguist & Geographer Certificate!</p>
+          </div>
+          <div class="panel-actions">
+            <button class="print-action-btn" id="btnPrintCertificate">
+              <span>🏆</span> Print Official Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="passport-layout">
+          <!-- Can-Do Checklist -->
+          <div class="passport-checklist-card">
+            <h3>📋 My Unit 1 Can-Do Statements</h3>
+            <p>Tick each statement as you demonstrate mastery during classroom or home study:</p>
+
+            <div class="can-do-list" id="canDoList">
+              <label class="can-do-item">
+                <input type="checkbox" id="check1" data-badge="geo">
+                <div class="can-do-content">
+                  <strong>1. Geographical Literacy & Maps:</strong>
+                  <span>I can read physical maps, identify landforms (plains, rivers, mountains, peninsulas), and talk about European countries and their borders.</span>
+                </div>
+              </label>
+              <label class="can-do-item">
+                <input type="checkbox" id="check2" data-badge="grammar">
+                <div class="can-do-content">
+                  <strong>2. Grammatical Precision (Habits vs. Right Now):</strong>
+                  <span>I can use the Present Simple with frequency adverbs (always, usually, often, sometimes, rarely, never) for routines, and the Present Continuous for actions happening now.</span>
+                </div>
+              </label>
+              <label class="can-do-item">
+                <input type="checkbox" id="check3" data-badge="colloc">
+                <div class="can-do-content">
+                  <strong>3. Lexical Partnerships & Collocations:</strong>
+                  <span>I can naturally use key collocations like "share borders", "temperature drops below zero", "split in two parts", and "grow citrus fruit".</span>
+                </div>
+              </label>
+              <label class="can-do-item">
+                <input type="checkbox" id="check4" data-badge="writing">
+                <div class="can-do-content">
+                  <strong>4. Structured Genre Writing:</strong>
+                  <span>I can write a structured 5-paragraph country report using connectors like "and", "but", and "so" for my European school portfolio.</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="passport-progress-bar-wrap">
+              <div class="progress-bar-label">
+                <span>Unit Mastery:</span>
+                <strong id="passportProgressPct">0% Complete</strong>
+              </div>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="passportProgressFill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate Preview Card -->
+          <div class="certificate-card" id="certificateCard">
+            <div class="cert-border">
+              <div class="cert-header">
+                <span class="cert-crest">🇬🇷 🇪🇺</span>
+                <h4>Greek Ministry of Education • English 6th Grade Primary</h4>
+                <h3>Certificate of Unit Mastery</h3>
+              </div>
+              <p class="cert-body">
+                This is to certify that
+                <span class="cert-student-name" id="certStudentName">_______________________</span>
+                has successfully achieved all CEFR A2+ learning milestones for
+                <strong>Unit 1: Our Multicultural Class</strong>.
+              </p>
+              <div class="cert-badges-row">
+                <span class="cert-badge" id="badgeGeo">🗺️ Geographer</span>
+                <span class="cert-badge" id="badgeGrammar">🧪 Linguist</span>
+                <span class="cert-badge" id="badgeColloc">🔗 Lexis Master</span>
+                <span class="cert-badge" id="badgeWriting">✍️ Writer</span>
+              </div>
+              <div class="cert-signatures">
+                <div class="sig-line">Class Teacher Signature: _______________</div>
+                <div class="sig-line">Date: _______________</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULE 8: WORKBOOK (Printed pp. 6–13) -->
+      <section id="panel-workbook" class="v2-panel" role="tabpanel" aria-labelledby="tab-workbook" hidden>
+        <div class="panel-header-box">
+          <div class="header-left">
+            <span class="panel-tag">Interactive Activity Book • All 15 Activities</span>
+            <h2 class="panel-title">Unit 1 Workbook Companion</h2>
+            <p class="panel-desc">All 15 official activities in printed book order (pp. 6–13) with instant self-checking, rule validation, writing scaffolding checklists, and clean A4 printable worksheets.</p>
+          </div>
+          <div class="header-right-actions">
+            <div class="wb-legend-box">
+              <span class="wb-legend-pill closed">Closed: Instant Check</span>
+              <span class="wb-legend-pill semi">Semi-Open: Rule Check</span>
+              <span class="wb-legend-pill open">Open: Scaffolding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick filter pills -->
+        <div class="workbook-filters-bar no-print">
+          <span class="filter-label">Quick Jump:</span>
+          <button class="wb-filter-btn active" data-filter="all">All (15)</button>
+          <button class="wb-filter-btn" data-filter="lesson1">Lesson 1: Vocabulary (Opening, A1–A3)</button>
+          <button class="wb-filter-btn" data-filter="lesson2">Lesson 2: Grammar (B1–B5)</button>
+          <button class="wb-filter-btn" data-filter="lesson3">Lesson 3: Reading &amp; Writing (C1–E)</button>
+        </div>
+
+        <!-- Workbook Activities Container -->
+        <div id="workbookCardsContainer" class="workbook-cards-container">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Hidden standalone print container for single A4 workbook activity printing -->
+  <div id="workbookPrintArea" class="workbook-print-area no-screen" style="display: none;"></div>
+
+  <footer class="app-footer no-print">
+    <div class="footer-container">
+      <div>Photodentro Interactive Vocabulary Companion • Unit 1: Our Multicultural Class (Version 2.0)</div>
+      <div class="footer-sub">Greek Ministry of Education Primary Coursebook Modernization Project • 100% Asset Reuse</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/vocabulary_data.js"></script>
+  <script src="data/unit1_v2_data.js"></script>
+  <script src="data/unit1_workbook_data.js"></script>
+  <script src="app_v2.js"></script>
+</body>
+</html>

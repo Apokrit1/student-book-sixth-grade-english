@@ -1,0 +1,1392 @@
+
+
+-- 1 of 28 --
+
+
+
+-- 2 of 28 --
+
+AΓ ΓΛIK A Σ T´ ∆Η ΜΟΤΙΚΟ Y
+Βιβλίο μαθητή
+
+-- 3 of 28 --
+
+ΣΥΓΓΡΑΦΕΙΣ 	Ελένη Εφραιμίδου, Εκπαιδευτικός ΠΕ6
+Ελένη Ζώη- Ρέππα, Σχολ. Σύμβουλος ΠΕ6
+Φιλίτσα Φρουζάκη, Εκπαιδευτικός ΠΕ6
+ΚΡΙΤΕΣ-ΑΞΙΟΛΟΓΗΤΕΣ 	Ελένη Μανωλοπούλου-Σέργη, Σχολ. Σύμβουλος
+Διονυσία Παπαδοπούλου, Σχολ. Σύμβουλος
+Ελένη Ζωγράφου, Εκπαιδευτικός ΠΕ6
+ΕΙΚΟΝΟΓΡΑΦΗΣΗ 	Μαριάνθη Βουτσά, Εικονογράφος
+ΦΙΛΟΛΟΓΙΚΗ ΕΠΙΜΕΛΕΙΑ 	Σωτήριος Καραούλιας, Εκπαιδευτικός ΠΕ6
+ΥΠΕΥΘΥΝΟΣ 	Ιωσήφ Ε. Χρυσοχόος
+ΤΟΥ ΜΑΘΗΜΑΤΟΣ 	Πάρεδρος ε.θ. του Παιδαγωγικού Ινστιτούτου
+ΚΑΤΑ ΤΗ ΣΥΓΓΡΑΦΗ
+ΥΠΕΥΘΥΝΟΣ ΥΠΟΕΡΓΟΥ 	Κλεοπάτρα Κοσοβίτσα- Βαρελά, Εκπαιδευτικός ΠΕ70
+ΑΝΑΔΟΧΟΣ 	Μιχαήλ Λεβής ΑΕΤΕΝ. ΑΕ
+ΠΡΟΕΚΤΥΠΩΤΙΚΕΣ ΕΡΓΑΣΙΕΣ ΒΙΒΛΙΟΣΥΝΕΡΓΑΤΙΚΗ Α.Ε.Π.Ε.Ε
+Στην επεξεργασία του υλικού συνεργάστηκε ο κ. Θανάσης Πυργαρούσης
+Γ΄ Κ.Π.Σ. / ΕΠΕΑΕΚ ΙΙ / Ενέργεια 2.2.1 / Κατηγορία Πράξεων 2.2.1.α:
+«Αναμόρφωση των προγραμμάτων σπουδών και συγγραφή νέων εκπαιδευτικών πακέτων»
+ΠΑΙΔΑΓΩΓΙΚΟ ΙΝΣΤΙΤΟΥΤΟ
+Δημήτριος Γ. Βλάχος
+Ομότιμος Καθηγητής του Α.Π.Θ
+Πρόεδρος του Παιδαγωγικού Ινστιτούτου
+Πράξη με τίτλο: 	«Συγγραφή νέων βιβλίων και παραγωγή
+υποστηρικτικού εκπαιδευτικού υλικού με βάση
+το ΔΕΠΠΣ και τα ΑΠΣ για το Δημοτικό και το Νηπιαγωγείο»
+Επιστημονικός Υπεύθυνος Έργου
+Γεώργιος Τύπας
+Σύμβουλος Παιδαγωγικού Ινστιτούτου
+Αναπληρωτής Επιστημονικός Υπεύθυνος Έργου
+Γεώργιος Οικονόμου
+Σύμβουλος Παιδαγωγικού Ινστιτούτου
+Έργο συγχρηματοδοτούμενο 75% από το Ευρωπαϊκό Κοινωνικό Ταμείο και 25% από εθνικούς πόρους.
+ΣΤΟΙΧΕΙΑΑΡΧΙΚΗΣΕΚ∆ΟΣΗΣ
+ΣΤΟΙΧΕΙΑΕΠΑΝΕΚ∆ΟΣΗΣ
+Η 	επανέκδοση 	του 	παρόντος 	βιβλίου 	πραγματοποιήθηκε
+απότοΙνστιτούτοΤεχνολογίαςΥπολογιστών&Εκδόσεων
+«Διόφαντος»μέσωψηφιακήςμακέτας,ηοποίαδημιουργή-
+θηκεμεχρηματοδότησηαπότοΕΣΠΑ/ΕΠ«Εκπαίδευση
+&ΔιάΒίουΜάθηση»/Πράξη«ΣΤΗΡΙΖΩ».
+ΟιδιορθώσειςπραγματοποιήθηκανκατόπινέγκρισηςτουΔ.Σ.τουΙνστιτούτουΕκπαιδευτικήςΠολιτικής
+
+-- 4 of 28 --
+
+Ε λ έ ν η Ε φ ρ α ι μ ί δ ο υ , Ε κ π α ι δ ε υ τ ι κ ό ς Π Ε 6
+Ε λ έ ν η Ζ ώ η - Ρ έ π π α , Σ χ ο λ . Σ ύ μ β ο υ λ ο ς Π Ε 6
+Φ ι λ ί τ σ α Φ ρ ο υ ζ ά κ η , Ε κ π α ι δ ε υ τ ι κ ό ς Π Ε 6
+ΑΝΑΔΟΧΟΣ ΣΥΓΓΡΑΦΗΣ: Μιχαήλ Λεβής Α.Ε.
+A ΓΓΛ I KA ΣΤ ´ Δ ΗΜΟΤΙ ΚΟY
+Βιβλίο μαθητή
+ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ ΘΡΗΣΚΕΥΜΑΤΩΝ
+ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ
+ΙΝΣΤΙΤΟΥΤΟ ΤΕΧΝΟΛΟΓΙΑΣ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΕΚΔΟΣΕΩΝ «ΔΙΟΦΑΝΤΟΣ»
+Η συγγραφή και η επιστημονική επιμέλεια του βιβλίου πραγματοποιήθηκε
+υπό την αιγίδα του Παιδαγωγικού Ινστιτούτου
+
+-- 5 of 28 --
+
+6
+
+-- 6 of 28 --
+
+v
+Table of Contents
+UNIT 1: Our Multicultural Class
+Crosscurricular notions Communication, Culture, Interaction, Information, Multiculturalism, Tradition, Similarities and
+Differences
+Related subjects 	Science, Computer Science, Mathematics, Geography, History
+Project 	A report about a European project
+Self-assessment
+(Can-do statements)
+Can read maps and reports about countries; can talk about countries and school subjects; can
+listen to pupils talking about school projects; can write reports about countries and people’s
+everyday activities; can express habits, routines and present situations
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 Meeting the
+Newcomers
+Reading: 	Ss’ reports about their country
+Readingforgist;Readingforspeci𿿿c
+information
+Speaking: 	asking and answering about
+nationalities and habits
+Writing: 	Filling-in a diagram about what
+pupils do in schools in Greece and in
+Great Britain
+Describing habits
+and routines;
+Giving personal
+information
+Present Simple
+Adverbs of frequency
+Words related to nationalities,
+countries, landforms/
+geography
+2 At the school lab
+Listening 	to a conversation at the school
+lab;Listeningforgistandspeci𿿿c
+information
+Speaking: 	A Game: Charades
+Writing: 	Mr Badluck’s day
+Describing
+present situations;
+Exchanging ideas
+Present Continuous
+Words related to school
+subjects, activities, facilities
+3 A Geography
+Project
+Reading: 	a report
+Writing 	a report and editing
+a text
+Talking /writing
+about a report;
+Paragraphing
+Simple Present Tense
+Vocabulary about countries,
+nationalities, geography
+UNIT 2: Going shopping
+Crosscurricular notions Organization, Categories, Decision Making, Reasoning, Information
+Related subjects Mathematics, Computer Science, Internet, Poetry, Health Education, Consumer Education,
+Citizenship
+Project 	An on-line order
+Self-assessment
+(Can-do statements)
+CanreadasupermarketÁyer,acanteenmenu,aninternetsite,areceipt;canlistentopeople
+talking in supermarkets and department stores; can talk and write about shopping goods, prices
+and online orders
+
+-- 7 of 28 --
+
+vi
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 At the supermarket
+Reading: 	asupermarketÁyer,aschool
+canteenmenu,aninternetsite
+Readingtolocatespeci𿿿cinformation;
+Readingforgist
+Listening:Adialogueatthesupermarket
+Speaking:Roleplayofshopkeepers/
+assistants and customers
+Writing:Whattobuyattheschoolcanteen
+Expressing
+quantity
+Countable,uncountable
+nouns,a/an,some,any,how
+much,howmany
+Wordsrelatedtocontainers,
+unitsofweight,size,shape,
+shoppinggoodsetc.
+2 At the mall
+Listening:adialoguein
+adepartmentstore;
+Listeningforspeci𿿿cinformation
+Reading: 	a Receipt
+Speaking:Class-work:Thefashionshow;
+Theschoolbazaar
+Writing:apoemdescribingafavourite
+thingusingthesenses
+Describingsenses
+Expressing
+quantity
+Verbsofsenses:itlooks,it
+feels,ittastesetc.
+alittle/little,afew/few
+Orderofadjectives
+Wordsrelatedtocolours,
+material,sizeetc.
+3 E-shopping Reading: 	an internet site
+Writing:atoyorder
+Ordering and
+buyinggoods
+Fillinganonline
+order
+Wordsrelatedtotoys,goods
+etc.
+UNIT 3: Imaginary creatures
+Crosscurricular notions SimilaritiesandDifferences,Self-Awareness,Information,Communication,Culture
+Related subjects 	Mythology,Literature,TheatreEducation
+Project 	ActoutascenefromMidsummerNight’sDream
+Self-assessment
+(Can-do statements)
+Canreadanacrosticpoem,aliteratureextract,reportsaboutcreaturesandmonsters;can
+talkandwriteaboutpeople’sappearanceandpersonality;canlistentoaghoststory;canuse
+adjectivesandadverbs
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 Old and Modern
+Creatures
+Reading:Anacrosticpoem,
+aliteratureextract.
+Readingaboutmonstersandcreatures
+Readingforgist,understandingtext
+cohesionandcompletinggaps
+Speaking:Talkingaboutfairy-taleheroes
+What am I like? Talking about people’s
+appearance and personality
+Writing:Filling-inIDcards
+Writingabouttheappearanceofmonsters
+/creaturesandcomparingthem
+Describingand
+comparingpeople
+andthings
+Describing
+people’s
+personality
+Comparisonsofadjectives
+(comparative,superlative),
+irregularadjectives,opposites,
+oppositeswithsuf𿿿xes
+Wordsrelatedtofairytales,
+heroes,monsters
+Adjectivesdescribing
+characteristics,personality
+andskills
+
+-- 8 of 28 --
+
+vii
+2 Do you believe in
+ghosts?
+Listening: 	a ghost story in play form
+Listening for gist
+Reading: 	The Monster Quiz
+Speaking: 	A Game: Do it our Way
+Describing and
+comparing people
+and things
+Comparisons of adjectives
+(as/as, not so as)
+Comparison of adverbs
+Words describing a place and
+a house.
+3 Classroom theatre
+Reading: 	a literature extract
+Shakespeare’s play: Midsummer Night’s
+Dream
+Project: 	Perform a Scene from
+“Midsummer Night’s Dream”
+Adapting,
+preparing and
+acting out
+a scene from
+a play
+Words related to theatre
+performance
+UNIT 4: The history of the aeroplane
+Crosscurricular notions Time and Place, Information, Interaction, Communication, Culture, Progress, Change
+Related subjects 	Science, Mythology, History, Environmental Education, Career Guidance, Poetry, Arts and Craft
+Project 	Poems, paintings, pictures and information about the fall of Icarus
+Self-assessment
+(Can-do statements)
+Canreademailsandattached𿿿les,apoem&biographiesofinventors;cantalkandwriteabout
+paintings, biographies and poems; can talk about events in the past; can use linking words
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 A Day at the
+Museum
+Listening: 	the myth of Daedalus and
+Icarus
+Reading: 	e-mail messages and attached
+𿿿les,museumworksheets
+Readingforspeci𿿿cinformation/forgist
+Speaking: 	Role-play: Talking about Icarus
+and the Wright Brothers
+Mediation: 	Από τη Γη στη Σελήνη
+Talking about
+events in the past
+Past simple, Regular and
+Irregularverbs(af𿿿rmative,
+interrogative, negative)
+Words related to planes and
+Áights
+2 An air-pocket
+Listening: 	a dialogue about an air-pocket
+Listeningforgist,forspeci𿿿cinformation
+Reading: 	Information about types of planes
+Information about Igor Sikorsky
+Speaking: 	Talking about the missing
+luggage
+Writing: 	a biography
+Narrating past
+events.
+Past Continuous (talking
+about interrupted past states,
+narrating past events)
+Linking words: when, as,
+after that, while, then, later,
+𿿿rst,second,𿿿nally
+Words related to planes and
+forcesofÁight
+3 The Fall
+of Icarus
+Reading: 	a poem about the fall of Icarus
+Speaking: 	about a painting
+Writing: 	a poem
+Describing
+paintings and
+pictures
+Revision of tenses taught
+UNIT 5: Travelling through time
+Crosscurricular notions Communication, Culture, Information, Multiculturalism, Internet, Tradition, Similarities and
+Differences
+Related subjects 	Music, History, Local History, Road Safety
+Project 	AMuseumLeaÁet
+
+-- 9 of 28 --
+
+viii
+Self-assessment
+(Can-do statements)
+Canreadadiary,amuseumleaÁet,lyricsofsongs;cantalkaboutthepast/habitsinthepast/
+memories; can ask for/give information or directions; can talk about transportation; can listen to a
+song, a museum guide; can write an informal letter
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 Diaries
+Reading: 	a questionnaire, diaries, lyrics
+ofsongs,amuseumleaÁet,streetmaps,
+transportation rules and signs
+Readingforspeci𿿿cinformation
+Speaking: 	Talking about present and past
+habits
+Listening 	to the song: “Yesterday”
+Writing: 	use a photo to write about the
+past
+Expressing
+Present and Past
+habits
+Used to
+Words related to clothes and
+hair styles
+2 Trans-portation
+Listening: 	a museum-recorded message
+and a museum guide
+Listeningforspeci𿿿cinformation
+Listening for gist
+Speaking: 	Visiting the museum: giving
+information and street directions
+Reading: 	Recognizing signs and rules on
+trains&buses
+Writing: 	a list of rules and signs for trains
+and buses
+Writing an informal letter
+Asking for
+directions and
+information;
+Giving directions
+and information;
+Familiarization
+with the layout of
+informal letters;
+Paragraphing
+Expressions and words related
+to asking for and giving
+information and directions
+Words related to means
+of transport
+Set phrases and expressions
+for letter writing
+3 The Museum
+Lea￿et
+Reading:amuseumleaÁet
+Project:AMuseumLeaÁet
+Talking /
+writing about
+the Transport
+MuseumLeaÁet
+Words related to museum
+visits
+UNIT 6: Me, myself and my future job
+Crosscurricular notions Self-Awareness, Personal Development, Information, Communication, Interaction, Change,
+Progress, Reasoning
+Related subjects 	Career Guidance, Citizenship
+Project 	Ajobpro𿿿le
+Self-assessment
+(Can-do statements)
+Canreadjobpro𿿿les,jobadvertisements,safetyrulesatwork,ajobinterviewquestionnaire,can
+talk about skills/abilities, interests, personal traits, future careers and a job interview; can express
+ability, possibility, permission, advice, predictions, promises, warnings, requests, offers; can
+listentoprofessionalsatwork,canwritenewyearresolutions,safetyrulesandjobpro𿿿les
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 Talking about jobs
+& careers
+Reading 	a self esteem quiz, job
+advertisements,jobpro𿿿les;
+Readingforspeci𿿿cinformation
+Speaking: 	A telephone dialogue: Asking for
+and giving job information;
+Talking about pupils’ interests, skills/
+abilities, future jobs
+Expressing ability,
+permission,
+possibility
+Modal verbs: can, may,
+should
+Words related to personal
+traits, skills/abilities, school
+subjects
+
+-- 10 of 28 --
+
+ix
+2 What do they do?
+Listening: 	A dialogue: What do they do?
+Guessing people’s jobs;
+Listeningforspeci𿿿cinformation
+Speaking: 	Talking about pupils’ interests,
+skills/abilities, goals
+Talking about safety rules
+Reading: 	Safety rules at work
+Giving advice,
+expressing
+prediction,
+warning, promise,
+offer, decision on
+the spot, intention
+Future tense: will, going to
+Words related to skills/
+abilities, school subjects,
+safety rules
+3 What the future
+holds for you
+Reading: 	a job questionnaire
+Speaking: 	Talking about future jobs
+Project:Ajobpro𿿿le
+Expressing
+prediction
+Words related to jobs, skills,
+abilities etc.
+UNIT 7: Share your experiences
+Crosscurricular notions Sports,OlympicSpirit,Information,Communication,Progress,TeamSpirit,Differences&
+Similarities
+Related subjects 	Physical Education, Citizenship, Environmental Education, Theatre Education
+Project 	A poster about your personal record
+Self-assessment
+(Can-do statements)
+Can read a questionnaire, newspaper extracts and a poster; can talk about swimming styles,
+theatre shows, world and Olympic record and past experience connected to the present; can
+listen to a radio programme; can write a report about a Paralympics Champion, a page of the
+class book of records and about personal records
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1
+Famous
+Record
+Holders
+Reading: 	A questionnaire: Share your
+experiences
+Newspaper reports: “Famous record
+holders”
+Readingforspeci𿿿cinformation
+Speaking: 	Talking about swimming styles;
+The hot air balloon competition: Talk about
+what you have done in your life so far;
+Let’s play: Have you ever…?
+Describing past
+experiences;
+Comparing
+general
+experiences
+and events that
+happened at a
+speci𿿿ctime
+Present Perfect Simple
+Present Perfect vs. Past
+Simple
+Words related to sport events
+Words related to
+performances and theatre
+2 Top Stories on the
+Radio
+Listening: 	A radio programme: “Top
+stories”
+Listening for gist / Listening for details
+Speaking: 	Interview with a famous
+Paralympics champion
+Act out a dialogue: What have you been
+doing?
+Writing 	a page for the class book of
+records;
+Writing a report about a champion to
+appear in the local newspaper
+Mediation: 	a newspaper extract about K.
+Fykas
+Expressing
+duration
+Present Perfect Continuous
+The use of for and since
+Words related to world records
+3 Going for the Gold
+Reading: 	a poster: a great opportunity for
+students
+Speaking: 	Talking about accomplishments
+and personal bests
+Project: 	A poster about your personal
+record
+Expressing
+experience and
+achievement
+Words related to personal
+bests and achievements
+
+-- 11 of 28 --
+
+x
+UNIT 8: Blow your own trumpet
+Crosscurricular
+notions Information,Communication,Culture,PersonalSafety,Stereotypes,ConÁict
+Related subjects Music, Consumer Education , Mathematics, Citizenship
+Project 	An advice letter
+Self-assessment
+(Can-do
+statements)
+CanreadamusicfestivalleaÁet,amagazinearticleaboutpocketmoney;cantalkaboutmusical
+instruments, festivals, money, personal safety, how to express something likely to happen now or
+in the future, how to express something impossible or unlikely to happen now or in future, how
+to give advice; can listen to different musical instruments, a song about money, people talking
+about what they would spend their money on; can write an e-mail about a museum of musical
+instruments and a letter to a magazine advice page
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1
+Harmony,
+Melody and
+Rhythm
+ReadingaleaÁetaboutMusicEducation
+Series;
+ReadingaleaÁetaboutfestivalactivities;
+Readingforgist/forspeci𿿿cinformation
+Speaking: 	Talking about the story of the
+Little Red Riding Hood;
+Persuading a friend to choose a festival
+Writing: 	an email: the museum of folk
+instruments
+Talking about
+events that
+depend on a
+condition;
+Expressing
+possibility/
+probability
+Type1 Conditional sentences
+Words related to music,
+concerts, festivals, events
+2 Feel the
+Rhythm
+Listening: 	A song: A rich man’s world
+Listening to a dialogue on how you would
+spend your money;
+Listeningforspeci𿿿cinformation
+Reading: 	A magazine article about pocket
+money and pester power
+Speaking: 	Talking about what you would
+spend your money on
+Writing: 	A class survey: how Ss spend
+their pocket money
+Expressing
+imaginary
+situations
+Type 2 conditional sentences
+Words related to money
+3 The Problem
+Page
+Reading: 	a letter from a problem page
+magazine
+Speaking: 	talking about children’s
+problems
+Project: 	An advice letter
+Asking for and
+giving advice
+Paragraphing
+Words and set phrases
+related to letter writing:
+greeting, opening and closing
+paragraphs, singing off
+UNIT 9: Earth Day everyday
+Crosscurricular notions Information, Communication, Culture, Time and Place
+Related subjects 	Environmental Education, Science, Literature, Art, Geography, Biology
+Project 	Acting: The Awful 5
+Self-assessment
+(Can-do statements)
+Can read a questionnaire, an earth day story and a play about pollutants; can talk about
+pollution, endangered species and protection of the environment; can understand activities
+that happened before another action in the past; can listen to a presentation about endangered
+species; can write e-mails about environmental problems and a poster; can express the result of
+an action or a situation
+
+-- 12 of 28 --
+
+xi
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 An Earth Day Story
+Reading: 	A story: An Earth Day Story
+Readingforgist/readingforspeci𿿿c
+information; making inferences
+Speaking: 	Asking about events;
+Giving advice about the protection
+of the environment
+Writing: 	write an e-mail about a day trip to
+the beach
+Sequencing past
+actions
+Past Perfect Simple
+Words related to environment
+2
+Save the
+Endangered
+Species
+Listening: 	a presentation at an
+environmental centre
+Listeningforgist/forSpeci𿿿cInformation.
+Speaking: 	Information gap: Talking about
+endangered animals
+Writing: 	e-mails about an Environmental
+centre and about endangered animals
+Making a poster about the environment
+Expressing result
+and deduction;
+Expressing reason
+Clauses of Reason
+Clauses of Result
+Words related to animals
+3 The Awful 5 Reading: 	A part of a play: “The Awful Five”
+Project: 	Acting: The Awful Five Improvising
+Words related to pollution
+Words related to setting up
+part of a play
+UNIT 10: Time for fun
+Crosscurricular notions Culture, Communication, Self-Awareness, Information, Organisation
+Related subjects 	Art and Literature
+Project 	A Film Review
+Self-assessment
+(Can-do statements)
+Canreadaquestionnaire,anarticleaboutJamesBond,signsandnotices,𿿿lmreviews;can
+talkabout𿿿lmsandbooks;canlistentodialoguesabout𿿿lmsandbooks;canwriteane-mail
+aboutabook,aposter,signsandnoticesanda𿿿lmreview;canexpresssuggestionsandcan
+emphasize the action rather than the doer
+LESSON 	SKILLS / STRATEGIES LANGUAGE
+(Functions)
+LANGUAGE
+(Structures/Lexis)
+1 The Different Faces
+of a Super Spy
+Reading: 	A questionnaire;
+An article about James Bond;
+Reading signs and notices;
+Readingforgist;Readingforspeci𿿿c
+information
+Speakingabout𿿿lmsandbooks
+Writing 	an e-mail about a book
+Making a poster
+Writing signs and notices
+Emphasizing
+actions
+Simple Present Passive
+Wordsrelatedto𿿿lms
+and books
+
+-- 13 of 28 --
+
+xii
+2 The Film Festival
+Listening: 	Listening to a dialogue about
+going to the cinema
+Listeningforspeci𿿿cinformation
+Speaking: 	Making /responding to
+suggestions about going to the cinema
+Mediation: 	an e-mail: information about
+a book
+Describing𿿿lms/
+books;
+Talking about
+one’s feelings;
+Expressing
+suggestions;
+responding to
+suggestions
+Expressions of preference
+..ing/ed Adjectives
+adjectivestodescribe𿿿lms
+and books
+adjectives to describe feelings
+3 A Film Review Reading: 	anoutlineofa𿿿lmreview
+Project: 	A Film Review Describinga𿿿lm Words related to writing
+a𿿿lmreview
+Appendix I 	It’s your choice!
+Appendix II 	Resource materials
+Appendix III 	Grammar
+Appendix IV 	Irregular verbs
+Appendix V 	Vocabulary list
+Appendix VI 	Maps
+
+-- 14 of 28 --
+
+xiii
+A. Εισαγωγή για τον μαθητή
+Αγαπητέ μαθητή, αγαπητή μαθήτρια,
+Η Αγγλική είναι η γλώσσα που μπορείς να χρησιμοποιείς για επικοινωνία σε
+περιβάλλοντα όπου δεν ομιλείται η μητρική σου γλώσσα. Είναι δηλαδή μια σύγ
+-
+χρονη γλώσσα την οποία υιοθετούν πολίτες από όλες τις γωνιές του πλανήτη για
+να ανταλλάξουν απόψεις, ιδέες, εμπειρίες και γνώσεις, γραπτά ή προφορικά. Εί
+-
+ναι με άλλα λόγια γλώσσα - ‘εργαλείο’ που χρησιμοποιείται στην πραγματική ζωή
+αλλά και στην εικονική πραγματικότητα, δηλαδή στο διαδίκτυο. Από εκεί μπορείς
+να αντλείς πληροφορίες αλλά και να ανταλλάσσεις γραπτά μηνύματα, καθώς και
+να συμμετέχεις σε κουβεντούλες σε πραγματικό χρόνο με συμμαθητές και συμ
+-
+μαθήτριες σου από όλον τον κόσμο. Η εκμάθησή της Αγγλικής γλώσσας λοιπόν
+είναι αναγκαία και απαραίτητη στην εποχή μας.
+Το βιβλίο που έχεις στα χέρια σου έχει στόχο να σε βοηθήσει να βελτιώσεις
+τις γνώσεις που έχεις ήδη αποκτήσει αλλά και να οικοδομήσεις νέες γνώσεις όχι
+μόνο για τη γλώσσα αλλά και για τον κόσμο γύρω σου. Γι’ αυτό η συγγραφή του
+βιβλίου στηρίχτηκε όχι μόνο στους γραμματικούς κανόνες και τις λεξιλογικές
+ασκήσεις αλλά και σε γνώσεις που έχεις ή που αποκτάς μέσα από όλα τα μαθή
+-
+ματα του σχολικού προγράμματος. Άλλωστε, όπως έχεις κιόλας συνειδητοποιή
+-
+σει, δεν μαθαίνουμε απλά απομνημονεύοντας και επαναλαμβάνοντας μηχανικά,
+αλλά κατανοώντας και αναλύοντας τις πληροφορίες που παίρνουμε με κάποιον
+τρόπο από το περιβάλλον μας μέσω της Αγγλικής γλώσσας. Επιπλέον, επειδή δεν
+μαθαίνουμε μόνο όταν βρισκόμαστε στο σπίτι, στο σχολείο ή σε κάποια βιβλιο
+-
+θήκη μόνοι μας, αλλά και όταν συνεργαζόμαστε σε ομάδες, με άλλα άτομα με
+τα οποία μοιραζόμαστε κοινά ενδιαφέροντα, κοινούς μαθησιακούς στόχους, το
+βιβλίο περιέχει πολλές ομαδικές δραστηριότητες.
+Ο σχεδιασμός του βιβλίου της Αγγλικής γλώσσας βασίστηκε σε βιώματα που
+έχουν παιδιά της ηλικίας σου και προτείνει τη συνεχή συνεργασία με τους συμ
+-
+μαθητές σου. Έτσι, στις ενότητες του βιβλίου θα βρεις δραστηριότητες που πρέ
+-
+πει να πραγματοποιηθούν στο πλαίσιο μιας
+ομάδας ή σε συνεργασία με κάποιο/α συμ-
+μαθητή/τριά σου, με σκοπό να επικοινωνήσε-
+τε με εργαλείο την Αγγλική γλώσσα. Θα χρειαστεί
+λοιπόν κάποιες φορές να διαβάσεις ένα κείμενο και να το
+σχολιάσεις με τους συνεργάτες σου ή, ακόμη, να γράψετε και
+να βελτιώσετε μαζί μια διαφήμιση, ένα γράμμα, να συνθέσετε
+ένα μήνυμα ηλεκτρονικού ταχυδρομείου, να πάρετε αποφάσεις
+για κάποιο ζήτημα κλπ. Πιο συγκεκριμένα, στο βιβλίο της Αγγλικής
+γλώσσας θα βρεις τα παρακάτω στοιχεία:
+
+-- 15 of 28 --
+
+xiv
+• 	Τις έννοιες που διατρέχουν την κάθε ενότητα στην πρώτη σελίδα της,
+καθώς και τους μαθησιακούς στόχους που πρέπει να κατακτήσεις στη
+διάρκεια της διδασκαλίας
+• 	Τις 	στρατηγικές μάθησης και συνεργασίας που θα αναπτύξεις στη
+διάρκεια της κάθε ενότητας
+• 	Σχέδια εργασίας (projects) που θα αναλάβεις να πραγματοποιήσεις
+στο πλαίσιο ομαδικής εργασίας με τους/τις συμμαθητές/τριές σου
+• 	Δραστηριότητες διαφορετικού βαθμού δυσκολίας στο τελευταίο τμή
+-
+μα του βιβλίου σου που μπορείς να χρησιμοποιήσεις όταν βρίσκεις
+πολύ εύκολη ή πολύ δύσκολη κάποια δραστηριότητα μιας ενότητας
+• 	Δραστηριότητες διαμεσολάβησης, δηλαδή μεταφοράς του νοήματος
+ενός κειμένου από την Ελληνική στην Αγγλική γλώσσα ή/και το αντίθε
+-
+το
+• 	Δραστηριότητες αυτο-αξιολόγησης, δηλαδή αξιολόγησης της μαθησι
+-
+ακής πορείας σου από εσένα τον/την ίδιο/α.
+Τελειώνοντας, μέσω των δραστηριοτήτων που προσφέρονται σ’ αυτό, ελπίζουμε
+το βιβλίο σου να σε βοηθήσει να γνωρίσεις καλύτερα τον τρόπο που μαθαίνεις.
+Έτσι, σταδιακά θα μπορείς να διαμορφώνεις ο/η ίδιος/α το μαθησιακό σου πρό
+-
+γραμμα με βάση τις δικές σου ανάγκες και να εδραιώνεις την ανεξαρτησία σου
+σ’ έναν κόσμο που συνεχώς μεταβάλλεται και απαιτεί διαρκή ενημέρωση και
+προσαρμογή στις νέες συνθήκες.
+Σου ευχόμαστε να απολαύσεις την πορεία προς τη μάθηση!	
+Η συγγραφική ομάδα
+B. Ο 	10-λογος για την αυτονόμηση του μαθητή
+Do you want to be an Independent Learner? Then you should…
+• …know why you’re learning English
+• …develop a learning plan (this plan changes according to your
+current needs)
+• …take part in group-work
+• …do self-evaluation tests to see what your weak points are
+• …ask the teacher for information when you need it
+• …look up words you don’t know in a dictionary
+• …read or listen to a text to get the general idea first
+• …use the learning strategies in every unit to understand English
+and communicate better
+• …always have in mind who you’re writing
+a letter or an e-mail to and why
+• …use books, magazines, the Internet, etc. to find the information
+you need
+
+-- 16 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class 	1
+Unit Our multicultural class	1
+GREECE TURKEY
+BULGARIA
+ITALY
+Unit Our multicultural class	1
+A Geography quiz
+KEY: 1 True, 2 False, 3 True, 4 True, 5 True, 6 False, 7 True
+You are here to READ
+maps and do a geography quiz,
+reports about countries, landforms
+and nationalities
+and TALK about
+countries and their culture,
+school subjects and every day
+activities
+and LISTEN TO
+pupils talking about school
+projects
+and WRITE
+reports about countries and
+people’s everyday activities
+and LEARN
+how to use the Present Simple
+and the Present Continuous
+tense
+plain
+river
+mountain
+peninsula
+Are these TRUE or FALSE? Tick Q the correct box. 	TRUE 	FALSE
+1. Ukraine is the second largest country in Europe. 	9
+2. Ukraine borders the Aegean Sea.
+3. The accident in Chernobyl, in 1986, is still causing serious
+environmental problems.
+4. Earthquakes or tsunamis sometimes happen along the South coast
+of Albania.
+5. Albania is in the Balkan Peninsula.
+6. The Carpathians are large plains.
+7. Mother Teresa is of Albanian origin.
+9
+
+-- 17 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 1	2
+UNIT 1
+I come from Ukraine, the second largest country in Europe.
+It is between Poland and Moldavia in the west and Russia in
+the east. I don’t come from the capital, Kiev. My hometown is
+Odessa, on the coast of the Black Sea. Ukraine has got large
+plains but also high mountains, such as the Carpathians. The
+River Dnipo flows across the country splitting it in two parts.
+In winter the weather gets very cold. Summers are warm
+across the greater part of the country and cool along the
+Black Sea, so we spend much more time outdoors.
+A nuclear power plant accident in Chernobyl, in 1986, is
+still causing serious environmental problems which worry
+Ukrainian people. Today we don’t have enough drinking water
+supplies because of that accident.
+Despite these problems, I believe Ukraine is a beautiful
+country with outgoing and brave people. I love it very much.
+Sasha
+Albania, the ancient Illyria, is where I come from.
+My hometown is Tirana, the capital of Albania. Albania shares
+borders with Serbia, Montenegro and Greece.
+On the west, it is bordering the Adriatic Sea and the Ionian Sea.
+The beaches are beautiful and during the hot,
+dry summers we swim in the clear sea, but in winter
+the temperature usually drops and it often rains heavily, so
+there are a lot of forests. 	We often have problems with natural
+disasters, such as earthquakes or tsunamis that happen along
+the South coast.
+Mother Teresa, the popular nun and humanitarian Nobel Prize
+winner, is of Albanian origin.
+My country is not very rich and our parents sometimes go to
+other countries, such as Italy, France or Greece, and work there.
+However, we miss our homeland.
+Christina
+Do you remember the ancient
+Colchis and the myth of Jason
+and the Golden Fleece? That is
+where I come from, Georgia! It
+is in the West Asia, bordering
+the Black Sea, which the Greeks
+called Pontus Euxinos, Turkey
+and Russia. The temperature is
+mild and it is usually sunny and
+warm.
+The country is mountainous, but
+along the coast we grow vines,
+tea and citrus fruit. In this area
+the temperature rarely drops
+below zero. Many people work in
+copper and coal mines, or in oil
+wells. Others sometimes leave
+their hometown to find work. My
+uncle works in T’blisi, the capital
+of Georgia.
+Georgi
+OUR
+NEWCOMERS
+TO SCHOOL
+Lesson 1 Meeting the newcomers
+1. Reading
+This year the 6th Class of our International
+School welcomes some new pupils from different countries.
+All the other pupils want to know them better.
+They are reading the newcomers’ reports about
+their countries in the school newsletter. Read the
+reports below to find answers in the Geography quiz:
+UNIT 1
+
+-- 18 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 1 	3
+LEARNING STRATEGIES
+When I learn new words…
+I listen carefully and try to imitate.
+I repeat new words many times and try to
+remember them.
+I write them down.
+I may write them down with the translation
+in Greek.
+I group the words by topic.
+I write them down in an example sentence.
+A. Read the text and write
+the capital city next
+to each country. Then
+write in the relevant
+nationality.
+Country 	Capital 	Nationality
+Georgia 	T’blisi 	Georgian
+Albania
+Ukraine
+B. Work in pairs. Use the information in the reports to fill in the table below:
+Country 	Terrain 	Weather 	Problems
+Albania
+Georgia
+Ukraine
+
+-- 19 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 1	4
+UNIT 1
+2. Grammar
+A. LOOK AT THE EXAMPLES:
+a. It often rains heavily in winter. 	b. My uncle works in a coal mine.
+Which example a or b refers to:
+something that happens regularly? 	[___]
+something true in general? 	[___]
+B. STUDY THESE TABLES
+Grammar Box
+Affirmative 	Interrogative 	Negative
+I
+you
+we
+they
+swim
+go
+watch
+worry
+wash
+Do
+I
+you
+we
+they swim ?
+go ?
+watch ?
+worry ?
+wash ?
+I
+you
+we
+they
+don’t
+swim
+go
+watch
+worry
+wash	he
+she
+it
+swims
+goes
+watches
+worries
+washes
+Does
+he
+she
+it
+he
+she
+it
+doesn’t
+C. Look at the words sometimes, often, usually, always
+(ADVERBS OF FREQUENCY) in the following examples.
+People sometimes leave their hometown to find work.
+The temperature usually drops in winter.
+It often rains heavily in winter.
+My brother is always early for school.
+We use an adverb of frequency to say how ______
+something happens. It comes ______ the verb in
+the Present Simple. When we have the verb to be
+we put the adverb ______ the verb.
+Now complete the rule:
+Now write true sentences about
+your habits:
+I 	sometimes
+I 	usually
+I
+I
+Do you remember?
+Present Simple Tense
+
+-- 20 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 1 	5
+3. Practice
+A. Alice, your pen-friend from Great Britain has sent you some pictures with her daily
+activities. Look at the pictures below and write what she does every day:
+In Greece 	Both 	In Gr. Britain
+They do their
+homework at home
+B. ROLE-PLAY: AN INTERVIEW
+Pupil A
+You are a reporter. You are interviewing a pupil
+from another country. Look at the back of your
+book (p.135) for more information.
+Pupil B
+You are a pupil from another country.
+Look at the back of your book (p.138)
+for information and answer the reporter’s
+questions.
+Now fill in the diagram about what pupils do in Greece and in Great Britain:
+It’s your choice: You can find a different version on page 121
+
+-- 21 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 2	6
+UNIT 1
+Lesson 2 At the school lab
+1. Speaking
+A. Work in pairs. Look at the pictures below and tell your partner
+what your favourite school subjects are and why?
+B. Do you agree with your partner’s opinion? Give your reasons.
+2. Listening
+Today the pupils
+are at the school
+lab, working on
+different projects
+on their compu-
+ters. The teacher
+is checking their
+work.
+– I like History
+because I like
+learning about
+past events.
+UNIT 1
+Example:
+A. Look at the picture and listen to the pupils talking. What subjects are they working on? Tick Q
+the right picture in Activity 1A above.
+9
+
+-- 22 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 2 	7
+Pupil 	Subject
+Maria
+Markos
+Anne, Sophie
+B. Who’s working on what?
+Do you remember?
+Fill in the table:
+Explore the Taj Mahal online at
+http://www.taj-mahal.net
+1. Maria is searching for some information on musical instruments. ______________________________________Q
+2. Markos is printing some photos of New Delhi. ____________________________________________________________________Q
+3. Markos is copying a photo of Taj Mahal. _____________________________________________________________________________Q
+4. Sophia is printing a text for the science project. _________________________________________________________________Q
+5. Anne is pasting a photo of molecular structure. __________________________________________________________________Q
+9
+C. Now listen again and tick Q the activities the pupils are doing
+in the computer lab:
+9
+
+-- 23 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 2	8
+UNIT 1
+3. Grammar
+A. LOOK AT THE EXAMPLES:
+Which example a or b refers to:
+something that happens regularly? 	[___]
+something that is happening right now? 	[___]
+a. Look! They’re working on
+a Geography project.
+b. My uncle works in a coal mine.
+Grammar Box
+B. STUDY THESE TABLES
+Affirmative 	Interrogative 	Negative
+I 	am
+working
+swimming
+Am I
+working?
+swimming?
+I’m 	not
+working
+swimming
+he
+she
+it
+is 	Is
+he
+she
+it
+he
+she
+it
+isn’t
+we
+you
+they
+are 	Are
+we
+you
+they
+we
+you
+they
+aren’t
+Do you remember
+Present Continuous Tense
+Now complete the rule: We use the _______________ Tense to talk about something
+that happens regularly.
+We use the _______________ Tense to talk about something
+that is happening now.
+
+-- 24 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 2 	9
+4. Practice
+A. A GAME: Charades
+Work in groups to play the game. Your teacher will give you cards
+with the activities you need to mime.
+The first pupil to guess the activity correctly wins
+a point for his/her team and acts out the next activity.
+If a group cannot guess the activity after asking
+7 questions, they lose a point and choose their player
+to continue the game.
+GROUP A
+Your teacher will give you a card with the
+activity you have to mime. Choose a player
+from your group and tell him/her to act out
+the activity. Answer Group B’s questions only
+using “Yes” or “No”.
+GROUP B
+Ask the pupil from Group A 7 questions to find
+out what he/she is miming. His/her answer can
+only be “Yes” or “No”. The first pupil to guess
+correctly wins a point for the team and acts
+out the next activity.
+B. Mr. Badluck’s day
+Look at the comic strip below and write a story about
+Mr. Badluck’s day; write what he does every day and how different it is today.
+You can start like this:
+Mr. Badluck gets up at 7:00 every day but today…
+7.30 am 	8.15 am 	4.15 pm	7.00 am
+Every day…
+Are you selling flowers in the
+street? No, I’m not.
+Are you holding an umbrella?
+Yes, I am.
+…but today…
+Example:
+Bus drivers
+on strike
+
+-- 25 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 3	10
+UNIT 1
+Lesson 3 A Geography project
+1. Some information
+A. Pupils from different European countries are taking part
+in a project. The pupils are presenting themselves and their
+own country. This is Gwen’s report. Read her report and
+match the topics with the paragraphs:
+1. 	My name is Gwen 	and I 	am ten years old. It is a Welsh name, because my
+father comes from Wales, but now I live in Oxford, England. The official
+name of my country is 	The United Kingdom of Great Britain and Northern Ireland 	and 	it includes Great
+Britain (England, Wales and Scotland) and Northern Ireland. Great Britain is actually an island. An underwater
+channel, the Channel Tunnel, connects Great Britain to France in the South. The North Sea in the East
+separates it from the rest of Europe.
+2. 	The country is mostly mountainous in Scotland and Wales but with green plains and hills in the South. Rivers
+flow across this part of the country. The famous river Thames runs through London, the capital of England.
+3. 	The weather is cold in winter and warm in summer time, but it is also wet. It rains most of the time.
+4. 	The people of Britain are multicultural, coming from different countries and races, so here you can meet
+British people from Asia, Africa or the Caribbean. They speak English and the language of their fathers as
+well.
+5. 	I think it’s exciting to live in Great Britain because it opens its doors to everyone!
+Landscape ...........................................Paragraph [___]
+Name of country, borders .............Paragraph [___]
+The writer’s opinion .........................Paragraph [___]
+People ...................................................Paragraph [___]
+Weather ................................................Paragraph [___]
+C. Your class is taking part in a similar project: work in groups and write a report about
+Greece for the pupils of a European school who are visiting your country.
+Put this report in your portfolio. Follow the steps below:
+Step a Write a plan
+Paragraph 1: Introduction, name
+of country, borders
+Paragraph 2: landscape
+Paragraph 3: the weather
+Paragraph 4: the people
+Paragraph 5: your opinion
+Step b Decide what other things (photos,
+drawings, maps)
+you can attach to your report
+Step c Write your report. Use
+and
+to join your sentences.
+Step d Work in pairs. Check each other’s
+report for correct spelling, correct
+tense (Present Simple), capital letters
+and full stops, use of and
+Step e In groups read out your reports.
+Finally, put your
+work up on the class
+announcement board.
+B. Notice how and is used in the report. Underline 3 examples in the report.
+
+-- 26 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 3 	11
+Check yourself
+A. The Geography Crossword Puzzle
+___ / 2 ½ points
+Pupil’s Book . UNIT 1 - Our multicultural class . Check yourself 	11
+1
+2
+3 4W
+E
+5
+S
+6
+T
+7
+8 	9
+10
+11
+12
+1. 	I’m on holiday now. I ____ a great time.
+Q have 	Q am having
+2. 	She’s Italian. She ____ from Rome.
+Q comes 	Q is coming
+3. 	—’_____ your meal?’ —’Yes, it’s very good.’
+Q Are you enjoying 	Q Do you enjoy
+4. 	This term, I ____ German for the first time.
+Q study 	Q am studying
+5. 	Water ____ at a hundred degrees.
+Q boils 	Q is boiling
+B. Match
+1. share 	a. in the coal mine
+2. drop 	b. citrus fruit
+3. swim 	c . in the river
+4. work 	d. below zero
+5. grow 	e. in two parts
+6. split 	f. borders
+___ / 3 points
+Across:
+2. The Carpathians are high ___________________
+3. Greece ____________________ Albania.
+5. It often rains heavily, so there are a lot of
+__________________________
+8. Albania is in the Balkan _____________________
+11. Odessa is on the _______________________
+of the Black Sea.
+12. The opposite of West.
+Down:
+1. On a map we can spot __________________
+like rivers, lakes, mountains.
+4. The opposite of East
+6. The ________________ city of Greece is Athens.
+7. People in Georgia grow tea in the large
+___________________
+9. Thessaloniki is in the ___________________
+of Greece.
+10. The opposite of North
+___ / 6 points
+C. Tick Q the suitable verb:	9
+
+-- 27 of 28 --
+
+Pupil’s Book . UNIT 1 - Our multicultural class . Lesson 1	12
+UNIT 1	UNIT 2
+NOW TICK
+WHAT YOU CAN DO
+Pupil’s Book • UNIT 1 - Our multicultural class • Check yourself	12
+___ / 2 ½ points
+I can talk about
+• Countries and their culture_____________________________________________
+• School subjects _______________________________________________________________
+I can read
+• Maps and do geography quizzes ____________________________________
+• Reports about countries/ landforms/ nationalities_________
+I can listen to
+• Pupils talking about school projects _______________________________
+I can write
+• Reports about countries/ daily activities ________________________
+REMEMBER when you learn new
+words in English:
+• 	Group them by topic and
+repeat them as many times
+as you can.
+1. A pupil is in the library.
+a. He is reading a book.
+b. He reads a book.
+2. About my hobby?
+a. I am collecting stamps.
+b. I collect stamps.
+3. Some children are at the fast food
+restaurant.
+a. They are eating a burger.
+b. They eat a burger.
+4. Usually at the concert hall…
+a. we listen to music.
+b. we are listening to music.
+5. Alice comes from Great Britain.
+a. It is raining heavily there.
+b. It rains heavily there.
+E. Look at John’s weekly routine. Write what he always, sometimes, usually, often, rarely
+or never does.
+John always
+He often
+He
+0
+1
+2
+3
+4
+5
+6
+7
+8
+look after
+dog
+phone
+friends
+have French
+lessons
+play
+basketball
+listen to
+rock music
+play
+baseball
+See p. 46 Workbook
+___ / 6 points
+My total score
+is ___ / 20 points
+D. Tick Q the correct sentence:	9
+
+-- 28 of 28 --
+

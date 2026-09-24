@@ -1,0 +1,75 @@
+==============================================================================
+Unit 8 official vocabulary list (66 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+adaptation
+allowance
+approximately
+artist
+attendsinger
+background
+band
+bill
+brochure
+chaperones
+chore
+chorus
+consumer
+dazzling
+downtown
+drum
+educational
+fairy tale
+folk music
+forgive
+generation
+guitar
+handouts
+harmony
+income
+inspire
+instructor
+instrument
+instumental
+intelligent
+length
+look forward to
+lyrics
+melody
+millionaire
+oboe
+originate
+owe
+passionate
+percussion
+perfomance
+perform
+persuade
+pester
+pocket money
+provide
+register
+research
+reservation
+rhythm
+simply
+source
+stage
+string
+toiletries
+trumpet
+trust
+venue
+verse
+violin
+vocal
+waste
+wealthy
+wedding
+wind
+wolf
+
+----- CHECK (known print errors / wraps) -----
+instumental  ->  typo in book: instrumental
+perfomance  ->  typo in book: performance

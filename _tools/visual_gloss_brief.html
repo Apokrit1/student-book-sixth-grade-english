@@ -1,0 +1,502 @@
+<title>Visual Gloss Brief</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ink:#171c22; --ink-soft:#4a565c; --ink-faint:#76837f;
+    --ground:#f4f6f3; --surface:#ffffff; --surface-2:#eceee9;
+    --line:#d7dcd5; --line-strong:#b9c2ba;
+    --accent:#1f6f6b; --accent-ink:#0f3d3b; --accent-wash:#e2eeec;
+    --flag:#a8551f; --flag-wash:#f6e9df;
+    --ok:#3f6b34;
+    --radius:3px;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --display:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --ink:#e7ebe7; --ink-soft:#a9b4ae; --ink-faint:#7d8a85;
+      --ground:#11161a; --surface:#181f23; --surface-2:#202a2e;
+      --line:#2b3733; --line-strong:#3d4b46;
+      --accent:#5ec0b6; --accent-ink:#bfe6e0; --accent-wash:#16302e;
+      --flag:#e09256; --flag-wash:#33241a;
+      --ok:#8fc07e;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --ink:#e7ebe7; --ink-soft:#a9b4ae; --ink-faint:#7d8a85;
+    --ground:#11161a; --surface:#181f23; --surface-2:#202a2e;
+    --line:#2b3733; --line-strong:#3d4b46;
+    --accent:#5ec0b6; --accent-ink:#bfe6e0; --accent-wash:#16302e;
+    --flag:#e09256; --flag-wash:#33241a;
+    --ok:#8fc07e;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+  .wrap{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px;padding-block:28px 56px}
+  header.top{border-bottom:1px solid var(--line-strong);padding-bottom:18px;margin-bottom:26px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,4.4vw,40px);line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.015em}
+  .lede{color:var(--ink-soft);margin:10px 0 0;max-width:62ch}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px;align-items:start}
+  section.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+  h2{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.01em;margin:0 0 4px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  h2 .count{font-family:var(--mono);font-size:11px;color:var(--ink-faint);font-weight:400;letter-spacing:.04em}
+  .hint{color:var(--ink-faint);font-size:12.5px;margin:0 0 14px}
+  label{display:block;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--ink-soft);margin-bottom:5px}
+  textarea,input,select{width:100%;font-family:var(--mono);font-size:13px;color:var(--ink);background:var(--ground);border:1px solid var(--line-strong);border-radius:var(--radius);padding:9px 10px}
+  textarea{min-height:230px;line-height:1.55;resize:vertical}
+  select{font-family:var(--body);font-size:13.5px}
+  input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 14px}
+  .fields .full{grid-column:1/-1}
+  fieldset{border:0;border-top:1px solid var(--line);margin:18px 0 0;padding:14px 0 0}
+  legend{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);padding:0 8px 0 0}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip{font-family:var(--mono);font-size:11px;padding:3px 7px;border-radius:2px;background:var(--surface-2);color:var(--ink-soft);border:1px solid var(--line)}
+  .chip.flagged{background:var(--flag-wash);color:var(--flag);border-color:var(--flag)}
+  .note{border-left:2px solid var(--flag);background:var(--flag-wash);color:var(--ink);padding:10px 12px;font-size:13px;margin-top:14px;border-radius:0 var(--radius) var(--radius) 0}
+  .note b{color:var(--flag)}
+  .out{margin-top:24px}
+  .outhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+  button{font-family:var(--body);font-size:13px;font-weight:600;color:var(--surface);background:var(--accent);border:1px solid var(--accent);border-radius:var(--radius);padding:8px 14px;cursor:pointer}
+  button.ghost{background:transparent;color:var(--accent);border-color:var(--line-strong)}
+  button:hover{filter:brightness(1.08)}
+  pre.prompt{font-family:var(--mono);font-size:12.5px;line-height:1.6;background:var(--surface);color:var(--ink);border:1px solid var(--line-strong);border-radius:var(--radius);padding:16px;margin:0;white-space:pre-wrap;word-break:break-word;max-height:560px;overflow-y:auto}
+  .urls{margin-top:20px}
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;background:var(--surface)}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);background:var(--surface-2)}
+  tr:last-child td{border-bottom:0}
+  td.n{font-variant-numeric:tabular-nums;color:var(--ink-faint);font-family:var(--mono)}
+  td.w{font-weight:600;white-space:nowrap}
+  td a{color:var(--accent);font-family:var(--mono);font-size:11.5px;word-break:break-all}
+  footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--ink-faint);font-size:12.5px}
+  .toast{font-size:12px;color:var(--ok);font-weight:600}
+  @media (prefers-reduced-motion:no-preference){button{transition:filter .15s ease}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Coursebook v2 &middot; build-time utility</p>
+    <h1>Visual Gloss Brief</h1>
+    <p class="lede">Takes a vocabulary list, adds the settings, and writes the prompt an agent needs to fetch
+      freely licensed pictures from Wikimedia Commons: one query per item, the licence policy, the attribution
+      fields to keep, and the checks it must pass before anything ships.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel">
+      <h2>Word list <span class="count" id="itemCount">&mdash;</span></h2>
+      <p class="hint">One item per line: <code>id | word | search hint</code>. The id and hint are optional, so a
+        bare word works. Write the hint the way Commons titles files, one to three keywords
+        (<code>pumpjack</code>, not <code>an oil well pump in a field</code>): every word must match, so a
+        described scene returns nothing. Where the definition names a place, put that place in the hint. A pasted JSON array of <code>{"id","word"}</code> objects is detected automatically.</p>
+      <label for="words">Items</label>
+      <textarea id="words" spellcheck="false"></textarea>
+      <div class="chips" id="chips"></div>
+      <div class="note" id="namedNote" hidden>
+        <b>Named things ahead.</b> <span id="namedList"></span> &mdash; a real photograph of a named place is fine
+        here, unlike a generated one, but the brief will tell the agent to confirm the file actually depicts it
+        and to keep the photographer&rsquo;s credit.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Settings</h2>
+      <p class="hint">These become the API parameters and the acceptance rules in the brief.</p>
+      <div class="fields">
+        <div>
+          <label for="width">Delivered width (px)</label>
+          <input id="width" type="number" min="128" max="2048" step="32" value="768">
+        </div>
+        <div>
+          <label for="candidates">Candidates per item</label>
+          <input id="candidates" type="number" min="3" max="30" value="8">
+        </div>
+        <div>
+          <label for="format">File format</label>
+          <select id="format">
+            <option value="webp" selected>webp</option>
+            <option value="jpg">jpg</option>
+            <option value="png">png</option>
+          </select>
+        </div>
+        <div>
+          <label for="maxkb">Size ceiling (KB)</label>
+          <input id="maxkb" type="number" min="20" max="600" step="10" value="90">
+        </div>
+        <div class="full">
+          <label for="quality">Commons quality filter</label>
+          <select id="quality">
+            <option value="Quality images" selected>incategory:"Quality images"</option>
+            <option value="Featured pictures">incategory:"Featured pictures"</option>
+            <option value="Valued images">incategory:"Valued images"</option>
+            <option value="">no category filter (widest, noisiest)</option>
+          </select>
+        </div>
+        <div class="full">
+          <label for="licence">Licence policy</label>
+          <select id="licence">
+            <option value="strict">CC0 and public domain only</option>
+            <option value="standard">CC0, public domain, CC BY</option>
+            <option value="sa" selected>CC0, public domain, CC BY, CC BY-SA (recommended)</option>
+            <option value="any">any Commons licence (all are free)</option>
+          </select>
+        </div>
+        <div>
+          <label for="printmm">Print width (mm)</label>
+          <input id="printmm" type="number" min="15" max="120" value="35">
+        </div>
+        <div>
+          <label for="grey">Grayscale check</label>
+          <select id="grey">
+            <option value="yes" selected>required</option>
+            <option value="no">skip</option>
+          </select>
+        </div>
+        <div class="full">
+          <label for="extra">Extra query terms, every item</label>
+          <input id="extra" type="text" value="filetype:bitmap" spellcheck="false">
+        </div>
+      </div>
+      <fieldset>
+        <legend>Destination</legend>
+        <div class="fields">
+          <div>
+            <label for="unit">Unit</label>
+            <input id="unit" type="number" min="1" max="10" value="1">
+          </div>
+          <div>
+            <label for="level">CEFR level for alt text</label>
+            <select id="level">
+              <option>A1</option><option selected>A2</option><option>B1</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="imgdir">Image folder</label>
+            <input id="imgdir" type="text" value="assets/images_v2/vocab" spellcheck="false">
+          </div>
+          <div class="full">
+            <label for="datafile">Data file to update</label>
+            <input id="datafile" type="text" value="data/vocabulary_data.json" spellcheck="false">
+          </div>
+        </div>
+      </fieldset>
+    </section>
+  </div>
+
+  <div class="out">
+    <div class="outhead">
+      <h2 style="margin:0">Ready-to-paste brief <span class="count" id="promptSize"></span></h2>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="toast" id="toast" hidden>copied</span>
+        <button class="ghost" id="selectBtn" type="button">Select all</button>
+        <button id="copyBtn" type="button">Copy brief</button>
+      </div>
+    </div>
+    <pre class="prompt" id="prompt"></pre>
+  </div>
+
+  <div class="urls">
+    <div class="outhead"><h2 style="margin:0">Query per item</h2></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>id</th><th>word</th><th>search string</th><th>target file</th><th>check in browser</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    Commons hosts only freely licensed files, so every hit is reusable with credit; the judgement the agent
+    cannot skip is whether the picture reads as the concept at
+    <span id="ftmm">35</span>&nbsp;mm on a photocopier. Nothing here calls the network: the page writes text.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var SEED = [
+    "04 | citrus fruit | citrus fruit",
+    "05 | coal mines | coal mine",
+    "06 | coast | rocky coast",
+    "09 | copper | copper wire",
+    "13 | golden fleece | Jason golden fleece",
+    "14 | instrument | musical instruments",
+    "16 | landscape | countryside landscape",
+    "19 | mountain | Mount Olympus",
+    "23 | oil well | pumpjack",
+    "26 | peninsula | Peloponnese satellite",
+    "27 | plain | Thessaly plain",
+    "30 | river | river meadow",
+    "34 | underwater | underwater seabed",
+    "35 | water supplies | drinking water tap"
+  ].join("\n");
+
+  var $ = function(id){ return document.getElementById(id); };
+  var els = ["words","width","candidates","format","maxkb","quality","licence","printmm","grey","extra","unit","level","imgdir","datafile"].map($);
+  $("words").value = SEED;
+
+  var LICENCE = {
+    strict: {
+      title: "CC0 and public domain only",
+      accept: 'LicenseShortName matching CC0, "Public domain", PD-*, or PDM',
+      reject: "anything requiring attribution or share-alike; skip the item rather than settle"
+    },
+    standard: {
+      title: "CC0, public domain, CC BY",
+      accept: 'LicenseShortName matching CC0, "Public domain", PD-*, PDM, or "CC BY <version>"',
+      reject: 'share-alike (CC BY-SA), GFDL-only files, and anything whose UsageTerms you cannot parse. Expect many empty items: most Commons Quality Images are BY-SA'
+    },
+    sa: {
+      title: "CC0, public domain, CC BY, CC BY-SA",
+      accept: 'CC0, "Public domain", PD-*, PDM, "CC BY <version>", "CC BY-SA <version>"',
+      reject: 'GFDL-only files, and anything whose UsageTerms you cannot parse. BY-SA is the Commons default licence, so excluding it empties most searches. Scaling and format conversion are technical modifications under the CC 4.0 licences and do not create adapted material; placing an unmodified picture in the app or on a worksheet does not make the app or worksheet share-alike. A crop may count as an adaptation: then the cropped file itself is BY-SA, which is fine, and must say so in image_modified'
+    },
+    any: {
+      title: "any Commons licence",
+      accept: "every file Commons hosts (the project rejects non-free uploads)",
+      reject: "nothing on licence grounds, but record the exact licence for each file"
+    }
+  };
+
+  function slug(s){
+    return s.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
+  }
+  function pad(n){ return String(n).replace(/^0+(?=\d)/,"").padStart(2,"0"); }
+
+  function parseItems(raw){
+    var text = raw.trim();
+    if(!text) return [];
+    if(text.charAt(0) === "[" || text.charAt(0) === "{"){
+      try{
+        var data = JSON.parse(text);
+        var arr = Array.isArray(data) ? data : (data.vocabulary || []);
+        return arr.map(function(o,i){
+          return { id: pad(o.id || (i+1)), word: String(o.word || "").trim(), hint: String(o.image_prompt || o.hint || "").trim() };
+        }).filter(function(o){ return o.word; });
+      }catch(e){ /* fall through to line parsing */ }
+    }
+    var auto = 0;
+    return text.split("\n").map(function(line){
+      var parts = line.split(/\s*(?:\||::)\s*/).filter(function(p){ return p !== ""; });
+      if(!parts.length) return null;
+      var id = "", word = "", hint = "";
+      if(parts.length >= 2 && /^\d{1,3}$/.test(parts[0])){
+        id = pad(parts[0]); word = parts[1]; hint = parts[2] || "";
+      } else {
+        word = parts[0]; hint = parts[1] || "";
+      }
+      if(!word) return null;
+      if(!id){ auto += 1; id = pad(auto); }
+      return { id: id, word: word.trim(), hint: hint.trim() };
+    }).filter(Boolean);
+  }
+
+  function queryFor(item){
+    var bits = [];
+    var cat = $("quality").value;
+    if(cat) bits.push('incategory:"' + cat + '"');
+    var extra = $("extra").value.trim();
+    if(extra) bits.push(extra);
+    bits.push(item.hint || item.word);
+    return bits.join(" ");
+  }
+
+  function apiUrl(q){
+    var w = $("width").value, n = $("candidates").value;
+    return "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2"
+      + "&generator=search&gsrsearch=" + encodeURIComponent(q)
+      + "&gsrnamespace=6&gsrlimit=" + n
+      + "&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=" + w
+      + "&iiextmetadatafilter=Artist%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CCredit%7CAttribution%7CObjectName%7CImageDescription";
+  }
+
+  function namedIn(item){
+    var s = (item.word + " " + item.hint).split(/\s+/).slice(1);
+    return s.filter(function(w){ return /^[A-Z][a-z]{2,}/.test(w); });
+  }
+
+  function buildPrompt(items){
+    var w = $("width").value, n = $("candidates").value, fmt = $("format").value,
+        kb = $("maxkb").value, mm = $("printmm").value, unit = $("unit").value,
+        dir = $("imgdir").value.replace(/\/+$/,""), data = $("datafile").value,
+        lic = LICENCE[$("licence").value], grey = $("grey").value === "yes",
+        cat = $("quality").value;
+    var L = [];
+    L.push("Task: fetch a freely licensed picture from Wikimedia Commons for each vocabulary item below, for");
+    L.push("Unit " + unit + " of the coursebook app. Read");
+    L.push(".agents/skills/coursebook-unit-extender/references/visual_glossary.md first: it carries the style");
+    L.push("contract, the print rules and the data fields. Nothing here is generated; every picture is a real");
+    L.push("photograph or artwork that somebody licensed for reuse.");
+    L.push("");
+    L.push("SEARCH (build-time only, never a runtime call)");
+    L.push("For each item, request " + n + " candidates:");
+    L.push("");
+    L.push("```");
+    L.push("https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2");
+    L.push("  &generator=search&gsrsearch=<QUERY>&gsrnamespace=6&gsrlimit=" + n);
+    L.push("  &prop=imageinfo&iiprop=url|extmetadata|size|mime&iiurlwidth=" + w);
+    L.push("  &iiextmetadatafilter=Artist|LicenseShortName|LicenseUrl|UsageTerms|Credit|Attribution|ObjectName|ImageDescription");
+    L.push("```");
+    L.push("");
+    L.push("`iiurlwidth=" + w + "` returns a pre-scaled thumbnail URL, which is what you download; never the");
+    L.push("full original. If a title is known and search is not needed,");
+    L.push("https://commons.wikimedia.org/wiki/Special:FilePath/<File>?width=" + w + " does the same job.");
+    if(cat){
+      L.push("Every query is scoped to incategory:\"" + cat + "\", because Commons relevance ranking is poor and");
+      L.push("that category is peer-reviewed. If an item returns nothing, retry once without the category and say");
+      L.push("in your report that you did.");
+    } else {
+      L.push("No category filter is set, so expect noise and be stricter when you look at the candidates.");
+    }
+    L.push("");
+    L.push("QUERY LADDER: try these in order and stop at the first rung that yields an acceptable picture.");
+    L.push("Record in your report which rung succeeded for each item.");
+    L.push("1. the item's query as listed below" + (cat ? " (quality category included)" : "") + ";");
+    if(cat){ L.push("2. the same keywords without the category;"); }
+    L.push((cat ? "3" : "2") + ". incategory:\"<English plural of the item>\" (for example incategory:\"Pumpjacks\"): Commons categories are");
+    L.push("   curated by people and are often far better than full-text search;");
+    L.push((cat ? "4" : "3") + ". one synonym or a more common name, then stop.");
+    L.push("Send an identifying User-Agent with every request (tool name and a contact), one request at a time,");
+    L.push("as the Wikimedia API policy asks.");
+    L.push("");
+    L.push("ANCHOR RULE");
+    L.push("Before choosing, read the item's definition_en and example in " + data + ". If the definition names a");
+    L.push("specific place or thing (\"like Mount Olympus\", \"like the Peloponnese\"), the picture must show that very");
+    L.push("place or thing, or the item stays empty. A picture printed beside \"like Mount Olympus\" will be read as");
+    L.push("Mount Olympus, so a handsome Himalayan peak there teaches something false.");
+    L.push("");
+    L.push("LICENCE POLICY: " + lic.title);
+    L.push("Accept: " + lic.accept + ".");
+    L.push("Reject: " + lic.reject + ".");
+    L.push("Read the licence from extmetadata, not from the file name or your expectations. If the fields are");
+    L.push("missing or contradictory, treat the file as unusable and move on.");
+    L.push("");
+    L.push("CHOOSING (the part that is judgement, not fetching)");
+    L.push("Look at the candidates before choosing. For each item, keep the one that:");
+    L.push("- shows the concept as a pupil of 11 would recognise it, one clear subject, uncluttered background;");
+    L.push("- survives being printed " + mm + " mm wide on a school photocopier" + (grey ? ", converted to grayscale: test this, and reject anything whose subject dissolves without colour" : "") + ";");
+    L.push("- carries no text, watermark, logo or visible brand;");
+    L.push("- shows no identifiable child, and no person in danger or distress;");
+    L.push("- is not a map, a chart or a diagram unless the item is itself abstract.");
+    L.push("If no candidate clears that bar, leave the item without a picture and list it in your report. An");
+    L.push("approximate picture teaches the wrong word, and that is worse than no picture.");
+    L.push("");
+    L.push("SCRATCH");
+    L.push("Download candidates into a scratch folder outside the unit (../_scratch/commons_unit" + unit + "/) and delete it");
+    L.push("when you finish. No candidate image, grayscale test file or helper script may remain inside unit" + unit + "/.");
+    L.push("If fetching needs code, it belongs in the skill's scripts/ as one reusable tool, not in the unit.");
+    L.push("");
+    L.push("SAVING");
+    L.push("- Download the " + w + " px thumbnail, convert to " + fmt + ", keep each file under " + kb + " KB.");
+    L.push("- Save as " + dir + "/<id>_<slug>." + fmt + " with the ids and slugs in the table below.");
+    L.push("- Local files only. No remote image URL may appear in any runtime file, ever.");
+    L.push("");
+    L.push("RECORDING, in " + data + ", per item:");
+    L.push("```json");
+    L.push('"image": "' + dir + '/04_citrus_fruit.' + fmt + '",');
+    L.push('"image_alt": "An orange and a cut lemon",');
+    L.push('"image_source": "Wikimedia Commons, <ObjectName>, <Artist>, <LicenseShortName>, <LicenseUrl>",');
+    L.push('"image_credit": "<Artist> / Wikimedia Commons / <LicenseShortName>",');
+    L.push('"image_file": "<the Commons File: title>",');
+    L.push('"image_modified": "scaled to ' + w + 'px, converted to ' + fmt + '"');
+    L.push("```");
+    L.push("- `image_credit` is what the card shows the pupil: small, legible, author and licence. It is the");
+    L.push("  licence condition, and it is also a worked example of licensing in front of a class.");
+    L.push("- `image_alt` is a plain-English line at " + $("level").value + " or below, following");
+    L.push("  references/defining_vocabulary.md. It is a gloss in its own right, not a file description.");
+    L.push("- If you crop, say so in `image_modified`. A crop of a share-alike file inherits share-alike.");
+    L.push("");
+    L.push("ITEMS (" + items.length + ")");
+    L.push("");
+    items.forEach(function(it){
+      L.push(it.id + "  " + it.word);
+      L.push("    query: " + queryFor(it));
+      L.push("    file:  " + dir + "/" + it.id + "_" + slug(it.word) + "." + fmt);
+      var named = namedIn(it);
+      if(named.length){
+        L.push("    note:  names a specific thing (" + named.join(", ") + "). A photograph of it is acceptable,");
+        L.push("           unlike a generated picture, but confirm from the file page that it really depicts");
+        L.push("           that thing before you keep it.");
+      }
+    });
+    L.push("");
+    L.push("REPORT BACK");
+    L.push("A table of item, chosen Commons file, licence, and why you rejected the runner-up; then the items you");
+    L.push("left empty and what was wrong with the candidates. Add the same to BUILD_NOTES.md, with the full");
+    L.push("credit list. The teacher reviews every picture before it ships: a file nobody looked at is not");
+    L.push("evidence of anything.");
+    return L.join("\n");
+  }
+
+  function render(){
+    var items = parseItems($("words").value);
+    $("itemCount").textContent = items.length ? items.length + " items" : "empty";
+    $("ftmm").textContent = $("printmm").value;
+
+    var chips = $("chips"); chips.textContent = "";
+    var named = [];
+    items.forEach(function(it){
+      var c = document.createElement("span");
+      var n = namedIn(it);
+      c.className = "chip" + (n.length ? " flagged" : "");
+      c.textContent = it.id + " " + it.word;
+      chips.appendChild(c);
+      if(n.length) named.push(it.word);
+    });
+    $("namedNote").hidden = named.length === 0;
+    $("namedList").textContent = named.join(", ");
+
+    var rows = $("rows"); rows.textContent = "";
+    var dir = $("imgdir").value.replace(/\/+$/,""), fmt = $("format").value;
+    items.forEach(function(it){
+      var q = queryFor(it), tr = document.createElement("tr");
+      var td1 = document.createElement("td"); td1.className = "n"; td1.textContent = it.id;
+      var td2 = document.createElement("td"); td2.className = "w"; td2.textContent = it.word;
+      var td3 = document.createElement("td"); td3.textContent = q;
+      var td4 = document.createElement("td"); td4.style.fontFamily = "var(--mono)"; td4.style.fontSize = "11.5px";
+      td4.textContent = dir + "/" + it.id + "_" + slug(it.word) + "." + fmt;
+      var td5 = document.createElement("td");
+      var a = document.createElement("a");
+      a.href = "https://commons.wikimedia.org/w/index.php?search=" + encodeURIComponent(q) + "&ns6=1";
+      a.target = "_blank"; a.rel = "noopener"; a.textContent = "search Commons";
+      td5.appendChild(a);
+      [td1,td2,td3,td4,td5].forEach(function(td){ tr.appendChild(td); });
+      rows.appendChild(tr);
+    });
+
+    var text = buildPrompt(items);
+    $("prompt").textContent = text;
+    $("promptSize").textContent = text.length.toLocaleString() + " characters";
+  }
+
+  els.forEach(function(el){
+    el.addEventListener("input", render);
+    el.addEventListener("change", render);
+  });
+
+  $("copyBtn").addEventListener("click", function(){
+    var text = $("prompt").textContent;
+    var done = function(){
+      var t = $("toast"); t.hidden = false;
+      setTimeout(function(){ t.hidden = true; }, 1600);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, selectPrompt);
+    } else { selectPrompt(); }
+  });
+  function selectPrompt(){
+    var node = $("prompt"), r = document.createRange();
+    r.selectNodeContents(node);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  $("selectBtn").addEventListener("click", selectPrompt);
+
+  render();
+})();
+</script>

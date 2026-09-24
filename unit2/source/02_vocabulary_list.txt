@@ -1,0 +1,58 @@
+==============================================================================
+Unit 2 official vocabulary list (48 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+baggy
+bakery
+beef
+budget
+catwalk
+cotton
+cute
+dairy
+delicious
+denim
+department store
+dessert
+elegant
+fashion model
+flavour
+flyer
+fruit flans
+item
+lamb ribs
+leather
+loose
+match
+menu
+mince
+muffins
+organic products
+pair of snickers
+pastry
+pork chops
+poultry
+quantity
+receipt
+selection
+silk
+skirt
+smart
+space shuttle
+subtotal
+suit
+sweater
+tempting
+tight
+total
+track suit
+treat
+turkey
+unit pice
+woolen
+
+----- CHECK (known print errors / wraps) -----
+pair of snickers  ->  typo in book: pair of sneakers (Snickers is a chocolate bar)
+unit pice  ->  typo in book: unit price
+woolen  ->  US spelling; the book is British English elsewhere: woollen

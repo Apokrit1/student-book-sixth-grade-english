@@ -1,0 +1,966 @@
+==============================================================================
+Teacher's Book: introduction, methodology, portfolio task list
+SOURCE: 10-0149-01_Agglika_ST-Dimotikou_Vivlio-Ekpaideutikou.pdf PDF pp.1-15
+==============================================================================
+
+===== [Teacher's Book | PDF p.1] =====
+Βιβλίο καθηγητή
+
+ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ ΚΑΙ ΘΡΗΣΚΕΥΜΑΤΩΝ
+ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ
+
+Ελένη Εφραιμίδου
+
+Φιλίτσα Φρουζάκη
+
+Κωδικός Βιβλίου: 0-10-0149
+ISBN 978-960-06-2614-8
+
+Στ΄ Δημοτικού
+
+ΑΓΓΛΙΚΑ
+
+ΙΚ Α
+Λ
+Γ
+ΑΓ
+
+Ελένη Ζώη - Ρέππα
+
+ΣΤ΄ ΔΗΜΟΤ
+ΙΚ
+ΟΥ
+th
+
+LISH
+G
+EN
+
+6 GR
+AD
+E
+
+Βιβλίο καθηγητή
+
+(01) 000000 0 10 0149 5
+ΙΝΣΤΙΤΟΥΤΟ ΤΕΧΝΟΛΟΓΙΑΣ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΕΚΔΟΣΕΩΝ
+«ΔΙΟΦΑΝΤΟΣ»
+
+===== [Teacher's Book | PDF p.2] =====
+ENGLISH 6 th GRADE
+Teacher’s book
+
+===== [Teacher's Book | PDF p.3] =====
+ΣΥΓΓΡΑΦΕΙΣ
+
+Ελένη Εφραιμίδου, Εκπαιδευτικός ΠΕ6
+Ελένη Ζώη-Ρέππα, Σχολ. Σύμβουλος ΠΕ6
+Φιλίτσα Φρουζάκη, Εκπαιδευτικός ΠΕ6
+
+ΚΡΙΤΕΣ-ΑΞΙΟΛΟΓΗΤΕΣ
+
+Ελένη Μανωλοπούλου-Σέργη, Σχολ. Σύμβουλος
+Διονυσία Παπαδοπούλου, Σχολ. Σύμβουλος
+Ελένη Ζωγράφου, Εκπαιδευτικός ΠΕ6
+
+ΕΙΚΟΝΟΓΡΑΦΗΣΗ
+
+Μαριάνθη Βουτσά, Εικονογράφος
+
+ΦΙΛΟΛΟΓΙΚΗ ΕΠΙΜΕΛΕΙΑ
+
+Σωτήριος Καραούλιας, Eκπαιδευτικός ΠΕ6
+
+ΥΠΕΥΘΥΝΟΣ
+ΤΟΥ ΜΑΘΗΜΑΤΟΣ
+ΚΑΤΑ ΤΗ ΣΥΓΓΡΑΦΗ
+
+Iωσήφ Ε. Χρυσοχόος
+Πάρεδρος ε.θ. του Παιδαγωγικού Ινστιτούτου
+
+ΥΠΕΥΘΥΝΟΣ ΥΠΟΕΡΓΟΥ
+
+Κλεοπάτρα Κοσοβίτσα-Βαρελά, Εκπαιδευτικός ΠΕ70
+
+ΑΝΑΔΟΧΟΣ
+
+Μιχαήλ Λεβής ΑΕΤΕΝ, Α.Ε.
+
+ΠΡΟΕΚΤΥΠΩΤΙΚΕΣ ΕΡΓΑΣΙΕΣ
+
+ΒΙΒΛΙΟΣΥΝΕΡΓΑΤΙΚΗ Α.Ε.Π.Ε.Ε
+
+Γ΄ Κ.Π.Σ. / ΕΠΕΑΕΚ ΙΙ / Ενέργεια 2.2.1 / Κατηγορία Πράξεων 2.2.1.α: «Αναμόρφωση των
+προγραμμάτων σπουδών και συγγραφή νέων εκπαιδευτικών πακέτων»
+				
+ΠΑΙΔΑΓΩΓΙΚΟ ΙΝΣΤΙΤΟΥΤΟ
+Δημήτριος Γ. Βλάχος
+Ομότιμος Καθηγητής του Α.Π.Θ
+Πρόεδρος του Παιδαγωγικού Ινστιτούτου
+Πράξη με τίτλο:
+
+«Συγγραφή νέων βιβλίων και παραγωγή
+υποστηρικτικού εκπαιδευτικού υλικού με βάση
+το ΔΕΠΠΣ και τα ΑΠΣ για το Δημοτικό και το Νηπιαγωγείο»
+Επιστημονικός Υπεύθυνος Έργου
+Γεώργιος Τύπας
+Σύμβουλος Παιδαγωγικού Ινστιτούτου
+Αναπληρωτής Επιστημονικός Υπεύθυνος Έργου
+Γεώργιος Οικονόμου
+Σύμβουλος Παιδαγωγικού Ινστιτούτου
+
+Έργο συγχρηματοδοτούμενο 75% από το Ευρωπαϊκό Κοινωνικό Ταμείο και 25% από
+εθνικούς πόρους.
+
+===== [Teacher's Book | PDF p.4] =====
+ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ ΔΙΑ ΒΙΟΥ ΜΑΘΗΣΗΣ ΚΑΙ ΘΡΗΣΚΕΥΜΑΤΩΝ
+ΙΝΣΤΙΤΟΥΤΟ ΤΕΧΝΟΛΟΓΙΑΣ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΕΚΔΟΣΕΩΝ «ΔΙΟΦΑΝΤΟΣ»
+
+Ελένη Εφραιμίδου, Εκπαιδευτικός ΠΕ6
+Ελένη Ζώη-Ρέππα, Σχολ. Σύμβουλος ΠΕ6
+Φιλίτσα Φρουζάκη, Εκπαιδευτικός ΠΕ6
+ΑΝΑΔΟΧΟΣ ΣΥΓΓΡΑΦΗΣ: Μιχαήλ Λεβής Α.Ε.
+
+AΓΓΛIKA ΣΤ΄ ΔΗΜΟΤΙΚΟY
+Βιβλίο καθηγητή
+
+===== [Teacher's Book | PDF p.5] =====
+
+
+===== [Teacher's Book | PDF p.6] =====
+TO THE TEACHER
+INTRODUCTION
+
+N
+
+COMPONENTS
+1. Pupils’ book
+The pupils’ book comprises the
+following:
+• A Table of contents presenting
+the topics, vocabulary, grammar,
+structures, functions and cross
+curricular notions dealt with in each
+unit
+• 10 twelve-page Units, each divided
+into 3 lessons, followed by a
+self-evaluation test and can do
+statements
+• 2 Revision units
+• Information for pair-work/speaking
+activities (information gap)
+• Grammar section with tables,
+examples and rules of the structures
+dealt with in each unit.
+• Vocabulary section with the
+most important expressions and
+vocabulary dealt with in each unit.
+• Differentiated instruction activities /
+graded tasks (It’s your choice!)
+• Extra Activities
+• Bibliographical data and Internet
+sources.
+2. Recordings
+The cassette/ audio-CD contains the
+recordings of texts, dialogues and
+listening activities of the pupils’ book. It
+is intended to be used in the classroom.
+3. Workbook
+The workbook provides support for the
+pupil’s book. It comprises
+10 units, which correspond to the 10
+units in the pupil’s book.
+The units contain vocabulary exercises
+as well as strucctural and functional
+exercises for further practice of the main
+language areas dealt with in the book.
+The workbook exercises are meant to be
+assigned as homework but some of them
+N
+
+This course addresses the 6th Class pupils
+of the Greek Primary School (11-12
+years old). It is intended for learners at
+Pre-Intermediate level (corresponding
+roughly to Level A2 of the Common
+European Framework – CEF) and enables
+them to use English in real life situations.
+The pupils’ age, needs, interests and
+prior knowledge have been taken into
+consideration in the design and planning
+of this course. Its material aims to distil
+the best of current classroom practice.
+The material is divided into 10 wellorganized units each of which is based
+on a general topic and is divided into
+3 lessons. The units balance different
+elements: both inductive and deductive
+approaches to grammar awareness;
+vocabulary, developed and practised
+through attractive topics and extracts
+from authentic reading and listening
+texts. Such texts are effective in
+motivating learners to speak and write.
+Apart from that, the texts are carefully
+chosen so as to disseminate aspects
+from other subjects and encourage
+pupils to expand their knowledge (crosscurricular approach). All language skills
+(reading, listening, speaking and writing)
+are developed through communicative
+activities that encourage learnerindependence and critical thinking. In
+addition, graphs, pictures, maps etc.
+enable learners to realize the present
+social and cultural environment. Finally,
+learning strategies, can do statements
+and self-evaluation tests encourage
+learners to realize their own style of
+learning as well as to lead them towards
+learning autonomy.
+The material of this book can be covered
+in approximately 75 - 80 classroom
+hours. This, of course, depends on the
+level of the pupils.
+
+Teacher’s Book • Introduction
+
+1
+
+===== [Teacher's Book | PDF p.7] =====
+can be used for further support in class.
+4. Teacher’s book
+The teacher’s book contains:
+• The Introduction
+• A Table of contents, the same as in
+the pupils’ book
+• Teacher’s notes corresponding to the
+10 units in the pupils’ book.
+The notes include:
+• The didactic aims of each unit
+• Tables with the vocabulary, structures/
+functions, reading/listening texts,
+as well as the speaking and writing
+activities of each unit. Information
+is also given about the relation of
+the units to CEF (Common European
+Framework)
+• The individual aims of every lesson in
+each unit
+• A suggested approach for the
+presentation of the material in each
+lesson
+The book provides:
+• Ideas and useful information on the
+various language areas presented in
+each lesson
+• An answer key to exercises and
+activities.
+• The recording scripts for the listening
+texts
+• Information and support for the
+project pages.
+• Answer keys to workbook exercises
+and to self-evaluation tests.
+• Notes on the differentiated
+pedagogy activities.
+• Section with extra activities
+• Informational material for some
+activities
+• Portfolio section
+• 3 revision tests
+STRUCTURE FO THE UNITS
+
+N
+
+Each one of the 10 Units is divided into 3
+Lessons as below:
+
+2
+
+Lesson 1
+The lesson is presented in 5 pages. Page 1
+contains the aims of the lesson, in a way
+that is meaningful to pupils. It combines the
+unit’s didactic features based on the crosscultural and cross-curricular approaches. In
+addition, it may be used as warm-up for
+the reading text that follows. Pages 2 and
+3 introduce the reading text followed by
+comprehension questions. Pages 4 and 5
+contain the corresponding grammar and
+practice sections.
+Most of the reading texts are authentic
+or semi-authentic (adapted or simplified).
+The main purpose is to expose learners
+to as much real language as possible and
+to develop reading confidence by giving
+practice in the main sub-skills e.g. reading
+for gist, reading for specific information,
+reading for details. The texts help learners
+to develop new language from a variety of
+sources and to consolidate the language,
+which they already know.
+Pupils are asked to do warm-up activities
+before they read the text. The purpose is
+to introduce the topic smoothly, present
+some of the new vocabulary as well as
+the structures/functions of the lesson. In
+addition, the warm up activities motivate
+and give learners a purpose to read.
+The comprehension questions that follow
+aim to help them develop their reading
+ability as well as to train their reading skills.
+The lexical items presented in the texts are
+always related to the topic of the unit.
+They are also related to the vocabulary
+pupil’s may come across in other subjects
+taught at this level. Pupils are asked
+(particularly in the workbook) to do tasks
+such as grouping, classifying, matching etc.
+These tasks enable them to understand,
+build up as well as retrieve vocabulary.
+
+Grammar is presented in the grammar
+section of the pupil’s book. Its formation
+and usage are illustrated through tables
+and examples usually taken from the
+texts. Learners are actively involved
+in understanding the grammatical
+phenomena. They are usually asked to fill in
+
+Teacher’s Book • Methodological Tips
+
+===== [Teacher's Book | PDF p.8] =====
+the table or to complete the rule and to find
+more examples from the text on their own.
+Pupils may find a more detailed presentation
+of the grammatical phenomena or function
+at the back of the book (Appendix III –
+Grammar & Structures).
+The practice section contains speaking
+and writing activities. Speaking practice
+is fostered through real life purposeful
+activities. The aim is to put learners into
+real life situations, to motivate them to use
+the language they learnt in the lesson as
+well as to extend it. The activities attempt
+to provide balance between accuracy
+and fluency. Learners are encouraged to
+participate in pairs, groups discussing or
+exchanging information so as to achieve
+the goal of the activity. Emphasis has been
+given to information gap activities. Pupils
+can find additional information at the
+special section at the back of the book.
+Writing activities are promoted through
+meaningful contexts, too. Pupils are asked
+to produce a few sentences, a paragraph,
+a story etc. related to the topic of the
+lesson and using the language they have
+been exposed to. It is very important
+that learners understand what they have
+to write. Their work should always be
+corrected and feedback given. The teacher
+should try to save time and do some of the
+writing tasks in class where pupils can be
+given more attention with problems that
+may arise. This will encourage them to
+develop their writing skills further. If time is
+short, the writing activities can be assigned
+for homework; however, it is mandatory
+that all pupils get feedback in due time.
+Lesson 2
+Lesson 2 is presented in 4 pages. Warm-up
+activities for the listening which follows
+are presented on page 1. Page 2 contains
+the while-listening activities. Learners
+are instructed to look at and understand
+the activities first, before they listen to the
+recording. There are visual and verbal clues,
+which stimulate the pupils’ background
+knowledge and prepare them for what
+
+they are about to hear or the task they
+have to do.
+Listening texts relate to the topic of the
+lesson and they also present a structure or
+function. Pupils are usually asked to listen
+for gist and/or for specific information,
+which both develop their listening ability.
+Pupils are encouraged to use listening
+strategies. The recordings should be played
+once or twice according to the tasks pupils
+have to do or according to the difficulty
+learners find. Pupils should be asked
+to justify their answers and recordings
+should be played again until all questions
+are clarified. Recording scripts can be
+photocopied and distributed to the pupils
+for further exploitation.
+Pages 3 and 4 feature the grammar &
+practice sections in the same way as in
+lesson 1.
+Lesson 3
+Lesson 3 is spread over one page only
+and it refers to a project related to the
+topic and language taught in the Unit.
+The purpose of the project is to motivate
+pupils to be creative and use the language
+in a communicative and meaningful way.
+Pupils are asked to produce a written text
+enriched with photographs, drawings,
+maps etc. Alternatively, they may produce
+a dialogue or a play that the pupils have to
+learn, rehearse and present either in class
+or in front of an audience.
+The project information contained in
+the Pupil’s book is meant to familiarize
+and guide learners in order to produce
+something similar or to give them ideas
+about the task. Project work can be done
+either in class (pair-work or group-work),
+or if there is not enough time, at home.
+In both cases, pupils should be given
+guidance about what they are expected to
+do. It is also important that all attempts
+should be encouraged and praised! Pupils’
+work can be exhibited on boards or walls.
+This will give them confidence and will
+motivate them to use the language more!
+
+Teacher’s Book • Methodological Tips
+
+3
+
+===== [Teacher's Book | PDF p.9] =====
+LEARNING STRATEGIES
+
+N
+
+All language learners use language
+learning strategies either consciously
+or unconsciously when processing new
+information and performing tasks in the
+language classroom.
+Wenden and Rubin (1987:19) define
+learning strategies as “... any sets of
+operations, steps, plans, routines used
+by the learner to facilitate the obtaining,
+storage, retrieval, and use of information.”
+According to Stern (1992:261), “the
+concept of learning strategy is dependent
+on the assumption that learners
+consciously engage in activities to achieve
+certain goals and learning strategies can be
+regarded as broadly conceived intentional
+directions and learning techniques”.
+There are three main types of learning
+strategies contributing directly to the
+development of the language system
+constructed by the learner:
+• Cognitive Learning Strategies
+• Metacognitive Learning Strategies
+• Social Affective Strategies.
+Cognitive Strategies
+Cognitive strategies involve direct
+manipulation of the learning
+material. Repetition, resourcing,
+translation, grouping, note taking,
+deduction, recombination, imagery,
+auditory representation, key word,
+contextualization, elaboration, transfer,
+inferencing are among the most important
+cognitive strategies.
+Metacognitive Learning Strategies
+These strategies are used to oversee, regulate
+or self-direct language learning. They involve
+various processes as planning, prioritising,
+setting goals, and self-evaluation.
+Social Affective Strategies
+These strategies involve interacting with
+another person to assist learning, or using
+affective control to assist a learning task.
+Cooperation and question for clarification
+are the main social affective strategies All
+language learners use language learning
+
+4
+
+strategies in the learning process. Since
+factors such as age, gender, personality,
+motivation, self-concept, life-experience,
+learning style, excitement, anxiety, etc.
+affect the way in which language learners
+learn the target language, teachers should
+provide a wide range of the above learning
+strategies in order to meet the needs and
+expectations of his/her pupils.
+
+DIFFERENTIATED INSTRUCTION IT΄S YOUR CHOICEN
+
+N
+
+“If a man does not keep pace with his
+companions, perhaps it is because he
+hears a different drummer”
+Henry David Thoreau
+Differentiated pedagogy: a process
+where the teacher respects and takes
+into consideration the diversity and
+the heterogeneousness of the class. It
+implements diversity into the methods of
+learning and represents the different ways
+of teaching, according to the needs of the
+pupil, while also ensuring that all pupils
+follow. The best differentiated pedagogy
+is proposing different ways of achieving
+a new competence so that pupils can
+discover new abilities for themselves.
+Principles of Differentiated Teaching/
+Learning
+• Differentiation aims at maximising
+learning and development of each pupil.
+Differentiation is qualitative rather than
+quantitative. Differentiation does not
+mean giving some pupils more work to
+do, and others less.
+• In a differentiated classroom pupils are
+matched with tasks according to their
+individual learner needs.
+• Pupils are offered individual choice,
+which, inevitably, needs to be guided.
+• Learner differences are celebrated rather
+than seen as a problem.
+• Closed tasks can be turned into ‘tiered
+tasks’, that is, to provide versions of
+the task that are of different levels of
+
+Teacher’s Book • Methodological Tips
+
+===== [Teacher's Book | PDF p.10] =====
+difficulty for the pupils to choose from.
+• On the contrary, open-ended tasks
+i.e. tasks that allow for multiple right
+answers, such as ‘predict the content of
+a text from its title’, ‘write a paragraph’,
+‘role-play’, ‘put the items in order of
+importance or preference’, ‘projects’ etc.
+are particularly appropriate for mixedability classes because pupils can produce
+language at their own level.
+• flexible classroom organization is a
+‘must’ for differentiation
+• Teachers are diagnosticians, using their
+findings to guide each pupil’s learning
+choices.
+• Giving all pupils equal opportunities does
+not mean teaching all learners in the
+same way. It means meeting the diverse
+needs of all pupils.
+It’s your choice tasks
+“It’s your choice tasks” in the Appendix
+are to be used by groups of pupils,
+individuals or the whole class instead of
+their versions in the main part of the book.
+If the class, or some pupils find a task in
+the lesson too easy or too difficult, they
+can choose not to do this task and try a
+more difficult or easier version of the task
+in the Appendix.
+When doing “it’s your choice tasks” it is
+advisable for the teacher to split the class
+in more or less homogeneous groups i.e.
+groups of pupils of similar competence
+level in the specific area and objective on
+which the task focuses.
+Projects
+Projects are open-ended and therefore
+provide an excellent basis for differentiated
+teaching/learning without the need to
+design different versions of the project.
+For example, at the research stage of a
+project, more competent learners can
+work on more difficult texts, or with less
+teacher support. Also, some pupils might
+prefer to work alone, while others might
+work in groups. Or at other stages, if the
+teacher wants to guide the pupils towards
+
+working on their weaknesses, learners who
+tend to neglect editing their written work
+could prepare the final written product and
+learners who need to practise speaking
+could conduct interviews or do an oral
+presentation of the final product.
+Language Focus
+In comparison to more traditional grammar
+and vocabulary exercises, language
+awareness activities are more appropriate
+for mixed-ability classes. Language
+awareness activities guide pupils in
+noticing useful language forms in the text
+used in the specific lesson or in texts read
+in previous lessons.
+Examples of language awareness
+activities:
+• t he pupils underline in the text(s) words
+that end in -s or -’s and put them in
+categories e.g. plural nouns, simple
+present, is, has, genitive
+• t he pupils underline in the text(s)
+words that end in -ing and put them in
+categories
+• t he pupils circle in the text(s) phrases
+with the preposition ‘in’ and put them in
+two categories: time and place
+• t he pupils highlight in the text(s) the
+adjectives that are used to describe the
+nouns
+• the pupils highlight in the text(s) words
+and phrases related to the topic of the text
+• t he pupils circle in the text(s) all the
+phrases containing the verb ‘have’ and
+discuss its meaning in each case
+• t he pupils underline in the text(s) all the
+phrases used to express disagreement
+Homework
+It is obvious that homework provides an
+excellent platform for differentiation.
+Teachers can assign different homework to
+different pupils in response to their needs.
+Assessment
+Differentiation and alternative assessment
+• Differentiation is compatible with
+alternative assessment and selfassessment e.g. portfolio, learner
+
+Teacher’s Book • Methodological Tips
+
+5
+
+===== [Teacher's Book | PDF p.11] =====
+diaries, can-do-statements etc. In the
+book there are sections for portfolio,
+self-evaluation, “Now I can do…” and
+learning strategies. These forms of
+assessment give feedback to learners,
+make them active participants in the
+assessment process and encourage
+them to be aware of their strengths
+and weaknesses. These types of
+assessment are growth-referenced,
+that is, they function as a progress
+map recording and monitoring a pupil’s
+improvement over time, and are not
+based on a comparison of each learner’s
+performance with that of the other
+pupils (norm-referenced assessment).
+• In the self-evaluation section learners
+check their own performance by
+completing some exercises and then
+reflecting on their own performance.
+• In the learning strategies section, the
+pupils are encouraged to be aware of
+how they learn. They focus on their own
+preferences and performance.
+• In the Now I can do section, the pupils
+tick the things they can do or cannot
+do at the end of each unit. Thus, they
+become aware of what they have learned
+throughout the unit. You may ask the
+pupils to photocopy the lists and include
+them in their portfolio.
+
+6
+
+REFERENCESN
+Bramfit, C. J. Moon and R. Tongue (1991)
+Teaching English to children, London:
+Collins ELT
+CEF (2001) Common European Framework
+fo Reference for Languages: Learning,
+teaching, assessment. Cambridge: CUP.
+Little, D. (1999) The European Language
+Portfolio and self-assesment.
+Strasbourg: Council of Europe
+publications
+Oxford, R.L. (1990) Language Learning
+Strategies. NY: Newbury House.
+Tomlinson, C.A. (2001) How to
+differentiate instruction in mixed-ability
+classrooms. Alexandria V.A: ASCD.
+Stern, H.H. (1992) Language Learning
+Strategies in Foreign Language
+Learning. Oxford OUP.
+Wenden, A. and J. Rubin (1987) Learner
+Strategies in Language Learning NY:
+Prentice Hall.
+ΦΕΚ 303 και 304/13-3-2003 The Revised
+Unifled Curriculum. Athens: the
+Pedagogical Institute at: www.pischool.gr
+
+Teacher’s Book • Methodological Tips
+
+===== [Teacher's Book | PDF p.12] =====
+EARNER AUTONOMY - PORTFOLIO
+ASSESSMENT
+
+Towards Learner Autonomy
+The use of portfolios in educational
+settings has increased tremendously in
+many countries around the world during
+the last years – from pre-school to upper
+secondary school and also university level.
+Teachers have recognized the portfolio as
+a powerful learning tool, which helps to
+develop the learners’ metacognitive skills
+and strengthens learner autonomy. By
+learner autonomy, we mean the capacity
+for active, independent learning. The
+basis of learner autonomy is that the
+learner accepts responsibility for his/her
+learning. This acceptance of responsibility
+has both socio-affective and cognitive
+implications: it entails at once a positive
+attitude to learning and the development
+of a capacity to reflect on the content and
+process of learning with a view to bringing
+them as far as possible under conscious
+control. Pupils who are encouraged to
+take responsibility for their own work - by
+being given some control over what, how
+and when they learn - are more likely to be
+able to set realistic goals, plan programs
+of work, develop strategies for coping
+with new and unforeseen situations, and
+evaluate and assess their own work. They
+are able to learn how to learn from their
+own successes and failures in ways, which
+will help them to be more efficient learners
+in the future.
+What is a Portfolio?
+A portfolio is an organised collection of
+documents, in which individual learners
+can assemble over a period of time, and
+display in a systematic way, a record of
+
+their qualifications, achievements and
+experiences in language learning, together
+with samples of work they have themselves
+produced. (Council of Europe 1997:7)
+When designing a portfolio system it is
+important to ask the following questions:
+• What is the purpose of the portfolio?
+• What should the portfolio look like – a
+binder, a folder, or could it be digital?
+• What should the contents be?
+• How should it be organized?
+• Who is the audience?
+It is also essential to determine who owns
+the portfolio, the pupil or the teacher,
+since it will determine the purpose and the
+content.
+In view of the fact that portfolios are
+thoughtful collections of pupil work, they
+are useful tools for active and long-term
+review. The teacher is initially responsible
+for introducing the structure of what to
+collect and why. The pupils must be actively
+involved when choosing the contents
+and the teacher should discuss criteria for
+selection with individual pupils. For each
+entry, the pupil must motivate his or her
+selection of work by a reflection tag (e.g. I
+have chosen this piece of work because…).
+The transfer of ownership from teacher to
+pupil is a gradual process that evolves over
+time.
+No matter what is in the portfolio, the
+teacher has to communicate the contents
+clearly to pupils in the beginning of classes
+to avoid confusion and frustration. At the
+same time, the teacher has to be sensitive
+to pupils’ adjustments to the idea of
+the portfolio. Therefore, he / she needs
+
+Teacher’s Book • Methodological Tips
+
+7
+
+===== [Teacher's Book | PDF p.13] =====
+to introduce the use of portfolios and
+the materials to be put in the portfolio
+step by step and should expect some
+misunderstanding from pupils at the very
+beginning.
+Younger learners naturally need more
+support and guidance than older learners
+do. Parents can also be part of the
+portfolio selection and become involved in
+their child’s learning process. The parents
+are usually invited to be the audience at
+pupil-led portfolio conferences at school.
+This is when the pupils take the lead in
+telling their story of learning.
+Types of Portfolio Content
+For the contents of the portfolio, there is
+not necessarily a set of fixed components
+to be included. The decision on the
+components of the portfolio can be made
+by the teachers, the pupils, or through an
+agreement between teachers and pupils.
+As a general guideline, there are five
+different groups of materials that may be
+included in the portfolio of pupils:
+a) Class assignments
+b) Pupil work that is previously graded by
+the teacher
+c) Revisions of pupil work that are graded
+and then revised, edited, and rewritten
+
+d) R
+ eflections that are associated with
+the work attached in the portfolio (e.g.
+Why have I chosen to put this piece of
+work in my folder? Has this work helped
+me improve my skills? e.t.c). These
+reflections give pupils opportunities
+to identify their own strengths and
+weaknesses
+e) Projects that include work mainly
+designed for pupils to put into their
+portfolios.
+As a matter of fact, the portfolios could
+also include materials that have special
+meaning for the pupils in the process of
+learning, such as newspaper or magazine
+articles and pictures, drawings and photos
+from school activities, school reports, CDs
+/ DVDs with audio or video recordings. As
+a guide for the organisation and content
+of your pupils’ portfolio, at this level, we
+have included some sample pages at the
+back of the PUPIL’S BOOK. (They can be
+cut off or photocopied). Below, you can
+find tasks and activities, from each unit of
+this book that we suggest being included
+in the pupils’ portfolios. In their book, the
+pupils are also reminded to put the specific
+pieces of work in their portfolios, with this
+clipart sign:
+
+WORK TO BE INCLUDED IN THE PUPILS’ PORTFOLIOS
+Unit 1 – lesson 3 – C Report about Greece
+Unit 2 – lesson 2 – 5. Writing a poem
+Unit 2 – Workbook – D. A shopping list for your birthday party
+Unit 3 – lesson 1 – 3. C What am I like?
+Unit 3 – lesson 3 Photos of the performance / Recording (DC/DVD)
+Unit 4 - lesson 2 – 3. B Biography
+Unit 4 – lesson 3 – Project / pictures / poem
+Unit 5 – lesson 1 – 3. D
+Unit 5 – lesson 2 – 3. E. A letter
+Unit 5 – lesson 3 – B. leaflet
+Unit 6 – lesson 2 – 3. C New year’s resolutions
+Unit 6 – lesson 3 – Project
+
+8
+
+A profile of your favourite job
+
+Teacher’s Book • Methodological Tips
+
+===== [Teacher's Book | PDF p.14] =====
+Unit 7 – lesson 3 – C. Your personal record
+Unit 8 – lesson 1 – 3. C An e-mail
+Unit 8 – lesson 2 – 3. C Class survey
+Unit 8 – lesson 3 – The advice letter
+Unit 9 – lesson 1 – 3. B What had happened (a copy of the letter)
+Unit 9 – lesson 2 – 3. B & D
+Unit 9 – lesson 3 – Project (photos of the performance / Video recording)
+Unit 10 – lesson 1 – 3. D Signs for an evening event at school
+Unit 10 – lesson 3 – A film review
+
+Portfolio as an Assessment Tool
+Portfolios are a form of alternative
+assessment in which a pupil’s progress is
+measured over a period of time in various
+language learning contexts. Portfolios
+can include evidence of specific skills
+and other items at one particular time
+and language performance and progress
+over time, in all four skills (reading,
+writing, listening, and speaking) Portfolio
+assessment is closely linked to instruction,
+which has two educational benefits. First,
+linking assessment to instruction means
+that you are sure that you are measuring
+what you have taught. Second, portfolios
+reveal various weaknesses in instructional
+practices.
+Assessment portfolios promote positive
+pupil involvement. As pupils create their
+portfolios, they are actively involved in and
+reflecting on their own learning. Increased
+metacognition has a positive impact on a
+pupil’s self-confidence, facilitates pupil use
+of learning strategies, and increases the
+pupil’s ability to assess and revise work.
+Pupil motivation to continue studying and
+succeeding in language learning tends to
+grow in such an environment.
+Portfolios offer the teacher and pupil an
+
+in-depth knowledge of the pupil as a
+learner. This means that the teacher can
+individualize instruction for the pupil.
+Weak areas can be strengthened and
+areas of mastery built upon. Learners are
+involved in this process of tracking their
+learning and can take control of their
+learning.
+Using assessment portfolios gives the
+teacher opportunities to involve parents in
+their children’s language learning. Parental
+involvement is an important factor in
+educational success.
+Portfolios can also be a tool for effective
+teacher development and be used as an
+instrument to help evaluate teacher’s
+teaching. They provide means for teachers
+to reflect deeply about their teaching
+methods and curriculum. When listening
+to pupils talk about their collections of
+work a teacher gets a better sense of
+what his or her pupils are learning, how
+they are learning and how to help them in
+that process.
+In conclusion, comparing traditional
+assessment to portfolio assessment, we
+can undoubtedly produce the differences
+shown in the table that follows:
+
+Teacher’s Book • Methodological Tips
+
+9
+
+===== [Teacher's Book | PDF p.15] =====
+Traditional Assessment
+Portfolio Assessment
+Measures pupil’s ability at one time
+Measures pupil’s ability over time
+Done by teacher alone; pupil
+Done by teacher and pupil; both aware
+often unaware of criteria
+of the criteria
+Conducted outside instruction
+Embedded in instruction
+Involves pupil in own assessment
+Assigns the pupil a grade
+Does not capture the range
+Captures many facets of language
+of a pupil’s language ability	learning performance
+Does not include the teacher’s
+Allows for expression of the teacher’s
+knowledge of the pupil as learner
+knowledge of the pupil as a learner
+Pupil learns how to take responsibility
+Does not give the pupil responsibility
+
+10
+
+Teacher’s Book • Methodological Tips

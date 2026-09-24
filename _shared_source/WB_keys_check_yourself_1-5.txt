@@ -1,0 +1,201 @@
+==============================================================================
+SOURCE PDF : WB07_Keys_CheckYourself_Units1-5_p053-055.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split_workbook\WB07_Keys_CheckYourself_Units1-5_p053-055.pdf
+ORIGINAL WORKBOOK: 10-0148-02_V2_Agglika_ST-Dimotikou_Tetradio-Ergasion.pdf
+GLOBAL PDF PAGES: 53-55
+PAGES IN THIS FILE: 3
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T23:00:08+03:00
+STATS: characters=12713, words~=1178
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/3 | GLOBAL PDF p.53 | SOURCE: WB07_Keys_CheckYourself_Units1-5_p053-055.pdf]
+==============================================================================
+                               Key to “Check Yourself” tests in the Pupil’s Book (Unit 1-5)
+             Unit 1                                                   a. They are eating a burger.
+             Key to Check yourself Test                               4. Usually at the concert hall…
+                                                                      a. We listen to music.
+             A. Geography Crossword Puzzle
+                                                                      5. Alice comes from Great Britain.
+                                                                      b. It rains heavily there.
+                                           L
+                                                                      E. Look at John’s weekly routine.
+               M      O    U       N   T   A   I   N   S               8
+                                                                       7
+                                           N
+                                                                       6
+
+                           B       O   R   D   E   R   S        W      5
+                                                                       4
+                                           F                      E    3
+                                                                       2
+                                       F   O   R   E   S    T     S    1
+                                                                       0
+               C                           R                      T        look after   phone     have French  play     listen to     play
+                                                                              dog       friends     lessons basketball rock music   baseball
+               A                           M       P
+                                                                      CORRECT ANSWERS
+               P      E    N       I   N   S   U   L   A              John always looks after his dog
+                                                                      He often phones his friends.
+                  I        O                       A                  He usually has French lessons
+                                                                      He sometimes plays basketball
+               T           R                       I                  He rarely listens to rock music.
+               A           T               S       N                  He never plays baseball.
+
+               L           H           C   O   A   S   T              Unit 2
+                                           U                          Key to Check yourself Test
+                                                                      A. At the super market
+                           E       A   S   T                          3 cans of cider
+                                                                      one carton of milk
+                                           H                          3 bars of chocolate
+                                                                      a box of ice cream
+             B. Match                                                 a jar of jam
+             1. share borders		                                       a loaf of bread
+             2. drop below zero                                       a packet of cereals
+                                                                      a box of doughnuts
+             3. swim in the river		
+                                                                      a dozen of eggs
+             4. work in the coal mine		
+                                                                      half pound of mince.
+             5. grow citrus fruit		
+             6. split in two parts                                    B. Match
+                                                                      a. 4, b. 1, c. 5, d. 3, e. 2
+             C. Tick the suitable verb
+                                                                      C. Complete using the correct form of the verbs in the
+             1. I am having a great time on this holiday.
+                                                                      box:
+             2. She’s Italian- she comes from Rome.
+                                                                      a. fit, b. match, c. looks, d. suits, e. goes with
+             3. —’Are you enjoying your meal?’ —’Yes, it’s very
+                                                                      D. The bubbles are mixed up. Put them in the correct
+             good.’
+                                                                      order to complete the dialogue:
+             4. This term, I am studying German.                      Customer:         Excuse me!
+             5. Water boils at a hundred degrees.                     Assistant:        Can I help?
+             D. Tick the correct sentence:                            Customer:         Do you have any gloves?
+             1. A pupil is in the library.                            Assistant:        Yes, in the glove department.
+             a. He is reading a book.                                 Customer:         How much are they?
+             2. About my hobby?                                       Assistant:        They are 20 €
+             b. I collect stamps.                                     Customer:         I’ll take them
+             3. Some children are at the fast food restaurant.        Assistant:        Cash or credit?
+
+
+
+             46                                        Pupil’s Workbook • REVIEW 1-5
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 46                                                                                                               1/9/14 2:55 PM
+
+==============================================================================
+[PAGE 2/3 | GLOBAL PDF p.54 | SOURCE: WB07_Keys_CheckYourself_Units1-5_p053-055.pdf]
+==============================================================================
+             Customer:      Here is the cash                          Unit 4
+             Assistant:     Here is your change and…                  Key to Check yourself Test
+             E. Choose the correct answer:                            A. The riddles
+             1 a lot of, 2 little, 3 some, 4 A few, 5 many, 6 How     1. cockpit     2. nose             3. tail
+             much, 7 How many, 8 any, 9 a little, 10 any              4. wings       5. gravity          6. lift
+                                                                      B. The Montgolfier Brothers
+             Unit 3                                                   invented, launched, was, made, burnt, filled, began,
+             Key to Check yourself Test                               were, sent, lasted, survived, watched
+                                                                      C. Join the sentences
+                            U G L Y                                   1c       2f      3g          4h
+                        C   N                                         5e       6a      7b          8d
+                    F   U   F                                         D. Mr Badluck’s story
+                    I   N   R                               D   V     Mr Badluck was packing his suitcase to go to the
+              M     E   N   I     S                         A   I     airport when he realised that he was very late. He
+                                                                      left in a hurry. While he was driving for the airport a
+              O V E R S I Z E D   A                         N   C     bicycle ran into him. Mr Badluck got out of his car to
+              N     C   N   N     V                         G   I     help the bicyclist. The cyclist had a bad injury, so Mr.
+              S     E   G   D     A                         E   O     Badluck took him to the nearest hospital. After that,
+              T             L     G                         R   U     he got into his car and then rushed to the airport.
+                                                                      As he was approaching the airport, he saw a plane
+              E           M Y S T E R I                     O U S     taking off. He thought: this can’t be my plane!! When
+              R                                             U         he arrived they informed him that he was very late….
+              S U P E R N A T U R A L                       S         Finally, he changed his ticket for the next flight.
+                                                                      Tick what you can do
+             B:
+                                                                      Tell your pupils that they have now completed unit 4
+             kind / unkind, predictable / unpredictable, sensitive/   and remind them of all the things they had the chance
+             insensitive, friendly / unfriendly, expensive /          to learn. Did they enjoy the unit? Do they have any
+             inexpensive, attractive / unattractive                   questions? Instruct them to tick the things that they
+             C:                                                       are able to do now.
+             1. Monday is warmer than Friday.
+             2. Thursday is cooler than Tuesday.
+             3. Friday is the coolest day of the week.
+             4. Wednesday is the warmest day of the week.
+             5. Monday is as warm / cool as Thursday.
+             6. Monday isn’t as warm as Tuesday.
+             D:
+             1. Peter runs the fastest of all.
+             2. Markos runs faster than Steven.
+             3. Peter throws the disc the farthest of all.
+             4. Steven jumps as high as Markos.
+             5. Steven doesn’t throw the discus as far as Markos.
+             6. Peter is the best athlete of the three.
+
+
+
+
+                                                       Pupil’s Workbook • REVIEW 1-5                                         47
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 47                                                                                                  1/9/14 2:55 PM
+
+==============================================================================
+[PAGE 3/3 | GLOBAL PDF p.55 | SOURCE: WB07_Keys_CheckYourself_Units1-5_p053-055.pdf]
+==============================================================================
+             Unit 5
+             Key to Check yourself Test
+             A. Clothing/Shoes, Hairstyle/Accessories
+             clothing and shoes: bell bottomed pants, high-heeled
+             shoes, blue uniform
+             hairstyle and accessories: ponytail, hair brush, braids
+             B. Missing Information
+              Opening hours			            Sat-Thu		         10:00 a.m. - 6:00 p.m.
+              				                        Fri		             11:00 a.m. - 6:00 p.m.
+              Admission			adults: £5.95
+              				pupils: £4.50
+              				                        children under 16 (accompanied by an adult): free
+              Location			Covent Garden
+              Nearest Underground Station Convent Garden
+              Phone 			                   (0) 207 37 96 344
+              Website			www.ltmuseum.co.uk
+             C. Match the Signs
+              Do not consume food or drink Απαγορεύεται η κατανάλωση φαγητού και ποτού
+              Don’t lean against the door.
+                                           Μην ακουμπάτε στην πόρτα. Ανοίγει αυτόματα.
+              It opens automatically		
+              MIND THE GAP			              ΠΡΟΣΟΧΗ ΣΤΟ ΚΕΝΟ
+              Wait till the train stops		  Περιμένετε μέχρι ο συρμός να σταματήσει
+              Way out			ΕΞΟΔΟΣ
+              Keep clear of the doors		    ΜΗΝ ΕΜΠΟΔΙΖΕΤΕ ΤΗΝ ΕΞΟΔΟ
+              Keep your feet off the seats ΜΗ ΒΑΖΕΤΕ ΤΑ ΠΟΔΙΑ ΣΑΣ ΣΤΑ ΚΑΘΙΣΜΑΤΑ
+             D. Anastasia’s habits                                     E. Directions
+             1. Anastasia used to wear glasses.                        – Excuse me, how can I get to the Rex Theatre?
+             2. She used to eat healthy food.                          – The nearest underground station is Omonia Square.
+             3. She used to play the guitar.                           Take Panepistimiou Street, it’s on your left hand, next
+             4. She didn’t use to have short hair.                     to the Titania Hotel.
+             5. She didn’t use to eat hamburgers.                      – What time does the film start?
+             6. She didn’t use to ride a motor bike.                   – It starts at eight and it finishes at ten.
+                                                                       – How much is it?
+                                                                       – It’s seven Euros.
+                                                                       – Thank you.
+
+
+
+
+             48                                        Pupil’s Workbook • REVIEW 1-5
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 48                                                                                                 1/9/14 2:55 PM

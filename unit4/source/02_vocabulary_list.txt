@@ -1,0 +1,49 @@
+==============================================================================
+Unit 4 official vocabulary list (41 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+accident
+admire
+airhostess
+attached files
+captain
+cargo
+cockpit
+design
+drag
+drown
+edge
+engine
+experiment
+field
+fix
+flight
+fly
+gravity
+grow up
+invent
+kites
+land
+landscape
+lift
+melt
+nose
+passenger
+poem
+repair
+shepherd
+simulator
+sound
+speed
+splash
+sweat
+tail
+thrust
+unnoticed
+wax
+wing
+worksheet
+
+----- CHECK (known print errors / wraps) -----
+airhostess  ->  dated term: air hostess; modern usage is flight attendant

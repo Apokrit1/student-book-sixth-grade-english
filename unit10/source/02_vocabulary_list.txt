@@ -1,0 +1,48 @@
+==============================================================================
+Unit 10 official vocabulary list (43 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+acne
+actor
+allow
+approve
+award
+bestseller
+bored
+breaking news
+chance
+character
+creator
+critic
+crooked
+develop
+direct
+drawing
+evil
+experiment
+expertise
+forbidden
+gain
+genre
+hit the shelves
+illustration
+messy
+mission
+mop
+moving
+nasty
+novel
+permit
+plot
+request
+screenplay
+scruffy
+setting
+slightly
+sold out
+sophisticated
+spy
+switch on/off
+title
+viewer

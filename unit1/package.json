@@ -1,0 +1,16 @@
+{
+  "name": "unit1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "google-tts-api": "^2.0.2",
+    "node-edge-tts": "^1.2.10",
+    "pdf-parse": "^2.4.5"
+  }
+}

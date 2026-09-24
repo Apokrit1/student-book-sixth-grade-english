@@ -1,0 +1,28 @@
+==============================================================================
+SOURCE PDF : 16_Appendix_VI_Maps_p179-179.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split\16_Appendix_VI_Maps_p179-179.pdf
+GLOBAL PDF PAGES: 179-179
+PAGES IN THIS FILE: 1
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T22:56:05+03:00
+STATS: characters=215, words~=21
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/1 | GLOBAL PDF p.179 | SOURCE: 16_Appendix_VI_Maps_p179-179.pdf]
+==============================================================================
+               APPENDIX VI - MAP
+
+
+
+
+               162                        Pupil’s Book • APPENDIX VI - Map
+
+
+
+
+6th Pupil's Book APP V_160-162.indd 162                                      15/10/2020 9:41:36 πµ

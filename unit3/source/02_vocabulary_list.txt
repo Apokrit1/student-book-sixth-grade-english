@@ -1,0 +1,62 @@
+==============================================================================
+Unit 3 official vocabulary list (54 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+active
+anxious
+argue
+attractive
+cave
+coin
+cosy
+cunning
+delicate
+delightful
+disgusting
+dive
+dragon
+fairy
+fall in love
+fierce
+flames
+flee
+frightening
+goat
+handsome
+hideous
+huge
+humans
+keep vigil
+knight
+loyal
+luxurious
+monster
+moody
+nasty
+naughty
+orge
+oversized
+play tricks
+playful
+princess
+ruins
+savage
+shipwrecked
+spit
+sprite
+storm
+supernatural
+power
+talkative
+tiny
+ugly
+unpredictable
+vicious
+wicked
+wild
+winged
+witch
+
+----- CHECK (known print errors / wraps) -----
+orge  ->  typo in book: ogre

@@ -1,0 +1,733 @@
+==============================================================================
+SOURCE PDF : 13_Appendix_III_Grammar_File_p164-175.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split\13_Appendix_III_Grammar_File_p164-175.pdf
+GLOBAL PDF PAGES: 164-175
+PAGES IN THIS FILE: 12
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T22:56:05+03:00
+STATS: characters=40145, words~=2806
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/12 | GLOBAL PDF p.164 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+                APPENDIX III
+                Grammar File
+                                                                                                                       Grammar
+
+                UNIT 1
+
+                  Simple Present
+
+                FORM                            I, you, we, they                           like
+                                            +
+                                                He, she, it                                likes
+                                                                                                    milk.
+                                                I, you, we, they     do not
+                                            -                                              like
+                                                He, she, it          does not
+                                                Do                   I, you, we, they
+                                            ?                                              like     milk?
+                                                Does                 he, she, it
+
+                SPELLING RULES
+                                    For the 3rd person singular (he, she, it)
+                                     We add s to the main verb                               work+s = he works
+
+                                    Exceptions
+                                     We add es in verbs ending in sh, ch, s s, o, x          wash + es = he washes
+
+
+                                     We add ies in verbs ending in consonant + y study + ies = he studies
+
+                                    Examples of vowels: a, e, o, i, u
+                                    Examples of consonants: b, c, d, f, g, etc.             We use an ADVERB OF FREQ
+                                                                                                                            UENCY
+                                                                                            like always, usually, often, som
+                USE                                                                         to say how often something hap
+                                                                                                                              etimes
+                                    We use the simple present tense when:                                                    pens.
+                                                                                           It comes before the verb in
+                                    • something happens regularly                          the Present Simple.
+                                    • something is true in general                         When we have the verb to be
+                                                                                                                            we put
+                EXAMPLES                                                                   the adverb after it.
+                                                                                           E.g. We always have maths on
+                                                                                                                            Monday.
+                                      I live in Patras.                                    Do you often play football at
+                                                                                                                          school?
+                                      The Moon goes round the Earth.                       My brother is always early for
+                                                                                                                           school.
+                                      John’s father drives a taxi.
+                                      He does not drive a bus.
+                                      My sister and I do not watch TV
+                                      after 10.00 at night.
+                                      Do you always play football on Saturdays?
+
+
+
+
+                                                             Pupil’s Book • APPENDIX III - Grammar File                                147
+
+
+
+
+6th Pupil's Book APP III_147-158.indd 147                                                                                                    2/4/15 10:48 AM
+
+==============================================================================
+[PAGE 2/12 | GLOBAL PDF p.165 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              APPENDIX III - GRAMMAR FILE
+
+
+               Wh… questions / How… questions with Simple Present
+
+              EXAMPLES
+                            What                                             have                     for breakfast?
+                            What time                                        go                       to school?
+                            Where                  do you / they             spend                    holidays?
+                            When                                             come home                from school?
+                            Who                    does he / she / it        play                     tennis with?
+                            How often                                        meet                     friends?
+
+
+               Present Continuous
+
+              FORM                  I am                speaking             to you.
+                              +
+                                    You are             reading              this.
+                                    She is              staying              in London.
+                              -                  not
+                                    We are              playing              football.
+                                    Is he               watching             TV?
+                              ?
+                                    Are they            waiting              for John?
+
+              SPELLING RULES
+                            We add -ing to the main verb:                    work + ing = working
+                           Exceptions
+                           a. If the main verb ends in consonant + stressed vowel + consonant,
+                           we double the last letter: stop + p + ing = stopping / cut+ t+ ing = cutting
+
+                           b. If the main verb ends in ie, we change the ie to y:        die = diey + ing = dying
+
+                           c. If the main verb ends in vowel + consonant + e,
+                               omit the e: come + ing = coming
+              USE          We use the present continuous tense to talk about:
+                           a. an action happening exactly now
+                           b. an action happening around now
+
+                                    Look! The bus is coming!
+              EXAMPLES              Are you learning French or English?
+                                    We are not having breakfast at the moment.
+
+
+              148                               Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+10-0147_AGGLIKA.indb 148                                                                                               1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 3/12 | GLOBAL PDF p.166 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              UNIT 2
+
+               Countable / Uncountable nouns
+
+              EXAMPLES
+                                           Countable Nouns                                    Uncountable Nouns
+                             Singular                   Plural                                  Singular Only
+                                             some bananas                     some milk
+                                             a lot of bananas                 a lot of milk                 affirmative
+                                             (a) few bananas                  (a) little milk
+                           a banana
+                                             any bananas                      any milk
+                                                                                                             question
+                           an apple          many bananas                     much milk
+
+                                             not any bananas                  not any milk
+                                                                                                             negative
+                                             not many bananas                 not much milk
+
+
+               Containers / Units of weight
+
+              EXAMPLES
+                           Containers                                         Units of weight
+                           A can / a tin                      cider
+                           A box                          strawberries
+                           A packet                           sugar
+                                                                                    A kilo                      meat
+                           A bar                  of       chocolate                                  of
+                                                                                   A pound                      mince
+                           A bottle                       orange juice
+                           A jar                               jam
+                           A carton                            milk
+
+              UNIT 3
+
+               Comparisons of adjectives and adverbs
+
+              FORM                                     POSITIVE           COMPARATIVE                   SUPERLATIVE
+                                                                      …-er than                    the …-est of/in
+                                                       strong
+                           SHORT ADJECTIVES            big            stronger than                the strongest of/in
+                                                       ugly           bigger than                  the biggest of/in
+                                                                      uglier than                  the ugliest of/in
+                                                                      more … than                  the most … of/in
+                           LONG ADJECTIVES             Horrible
+                                                                      more horrible than           the most horrible of/in
+
+
+                                                 Pupil’s Book • APPENDIX III - Grammar File                                  149
+
+
+
+
+10-0147_AGGLIKA.indb 149                                                                                                           1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 4/12 | GLOBAL PDF p.167 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+                APPENDIX III - GRAMMAR FILE
+
+
+                USE	
+                    In the Comparative form we add –er than in short adjectives and more + adjective + than in
+                   long adjectives.
+                		In the Superlative form we add the –est in short adjectives and the most + adjective in
+                   long adjectives.
+
+                		                  Irregular adjectives
+                		
+                                                  Adjective                       Comparative                           Superlative
+                                      good                               better than                            the best of/in
+                                      bad                                worse than                             the worst of/in
+                                      far                                farther/further than                   the farthest/furthest of/in
+                                      much/many                          more than                              the most of/in
+                                      little                             less than                              the least of/in
+
+                		                  Comparisons of adjectives with as…as and not so… as
+
+                EXAMPLES
+                                            The night           is           as          dark              as           hell.
+                                            noun or                                                                   noun or
+                                                        positive verb        as       adjective            as
+                                            pronoun                                                                   pronoun
+
+                                        Our house             is not       as / so       luxurious              as        a hotel.
+                                            noun or                                                                       noun or
+                                                          negative          as / so      adjective              as
+                                            pronoun                                                                       pronoun
+                		                  Comparisons of adverbs
+
+                FORM                To form a regular adverb we add -ly / -ily to an adjective
+
+                                        ADJECTIVE             ADVERB                EXAMPLES
+                                      quiet              quietly                    The children are quie
+                                                                                                            t. They are playing
+                                                                                    quietly.
+                                      happy              happily                    That is a happy boy. He
+                                                                                                               is singing happily.
+                                                  EXCEPTIONS                       That is a fast horse. It
+                                                                                                            runs fast.
+                                                                                   This exercise is hard.
+                                                                                                           Tom is working hard
+                                      fast               fast                      on this exercise.
+                                      hard               hard                      Jim is a good football
+                                                                                                           player.
+                                                                                   He plays football well.
+                                      good               well
+
+
+                USE                 We use adverbs when we want to answer the question HOW.
+
+
+
+                150                                           Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+6th Pupil's Book APP III_147-158.indd 150                                                                                                     2/4/15 10:49 AM
+
+==============================================================================
+[PAGE 5/12 | GLOBAL PDF p.168 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              UNIT 4
+
+               Simple Past
+
+              FORM                 I                                           worked          very hard.
+                              +
+                                   You                                         went            to school.
+                                   He / She                                    go              with me.
+                              -                    did                   not
+                                   We                                          work            yesterday.
+                                                   you                         go              to London?
+                              ?    Did
+                                                   they                        work            at home?
+
+              USE	
+                  We use the simple past tense to talk about an action, a situation or an event,
+                           short or long, that
+                           • happened in the past
+                           • is completely finished
+                           • we say (or understand) the time and/or place it happened
+              EXAMPLES
+                                  I lived in that house when I was younger.
+                                  He didn’t like the movie.
+                                  What did you eat for dinner?
+                                  John rode his bike to school on Monday.
+                                  Mary did not go to school yesterday.
+                                  Did you play tennis last week?
+
+               Past Continuous
+
+              FORM                 I / he / she     was                   watching         TV.
+                              +
+                                   You              were                  working          hard.
+
+                              -    I / he / she     was                   helping          Mary.
+                                                                   not
+                                   We               were                  joking.
+
+                              ?    Was              he / she              studying         Maths?
+                                   Were             you / they            playing          football?
+
+              USE	
+                  The Past Continuous tense expresses an action that happened at a particular moment in
+                           the past and it continued for some time.
+
+                                    I was doing my homework at 6.00 in the evening.
+                                    They were not playing football at 9am this morning.
+              EXAMPLES              What were you doing at 10pm last night?
+                                    Tony went home early because it was snowing.
+
+                                                  Pupil’s Book • APPENDIX III - Grammar File                151
+
+
+
+
+10-0147_AGGLIKA.indb 151                                                                                          1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 6/12 | GLOBAL PDF p.169 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              APPENDIX III - GRAMMAR FILE
+
+
+               Past Continuous + Simple Past
+
+              USE	
+                  We often use the Past Continuous tense with the Simple Past tense. We use the Past
+                           Continuous tense to express a long action. And we use the Simple Past tense to express a
+                           short action that happens in the middle of the long action. We can join the two ideas with
+                           when or while.
+                           We use:
+                           • when + short action (Simple Past tense)
+                           • while + long action (Past Continuous tense)
+              EXAMPLES
+
+                                         I was watching TV                    when            the telephone rang.
+                            When         the telephone rang                                   I was watching TV.
+                                         The telephone rang                   while           I was watching TV.
+                            While        I was watching TV                                    the telephone rang.
+              UNIT 5
+
+               Used to…
+
+              FORM          In Ancient Greece, people                       wear              linen clothes in summer.
+                                                                 used to
+                            When I was fifteen I                            listen to         rock music.
+
+              USE          We use used to + infinitive to talk
+                                                                     REMEMBER
+                           about a past state that is not true
+                                                                    We can use either used
+                           now or about an old habit that                                     to… or Past Simple to
+                                                                    talk about a past state
+                           has now stopped.                                                 or habit that is no longe
+                                                                    true, but we can only us                          r
+                                                                                             e Past Simple to talk
+                                                                    about things we did at
+                                                                                            a specific time in the pa
+                                                                                                                      st.
+               Asking for and giving directions / information
+
+                                  When we ask for directions /               When we give directions / information we
+                                information we use the following                        use the following
+                                                                            Go up/down… street until you get to…
+                            Excuse me, how can I go/ get to…                Go straight…
+                            Can/could you tell me where… is, please?        Take the bus/ train to…
+                            Can/Could you show me the way to…?              Turn right/left…
+                            What time…?                                     It’s on the corner of…
+                            How much…, please?                              Take the first/second turning…
+                                                                            It is near/opposite/behind/in front of/
+                                                                            between…
+
+
+              152                                Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+10-0147_AGGLIKA.indb 152                                                                                                    1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 7/12 | GLOBAL PDF p.170 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              UNIT 6
+
+               Modal verbs: can, may, should
+
+              FORM                                   can
+                                            I
+                                         you         may                                     ride             this bike.
+                              +
+                                           he        should
+                                          she        cannot / can’t
+                                          we         may not                                 ride             this bike.
+                              -          they        should not / shouldn’t
+                                        Can          I / you
+                              ?         May          he / she                                ride             this bike?
+                                       Should        we / they
+
+              USE	
+                  CAN: Possibility / Ability
+                           We use can to talk about what is possible or what we are able or free to do:
+
+
+                                    She can fly a plane.
+                                    John can speak Spanish.
+              EXAMPLES              I cannot hear you. (I can’t hear you.)
+                                    Can you hear me?
+
+
+
+              	
+               CAN, MAY: Permission
+                           We sometimes use can to ask or give permission for something:
+
+                                                                     The use of CAN for pe
+                           Examples                                                          rmission is informal.
+
+                           Can I leave early today? May I leave early today?
+
+                           SHOULD: Advice
+
+                           We sometimes use should to give advice to someone:
+
+                           Example
+                           You should be brave and well trained, if you want to be a lifeguard.
+
+
+
+
+                                                Pupil’s Book • APPENDIX III - Grammar File                                 153
+
+
+
+
+10-0147_AGGLIKA.indb 153                                                                                                         1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 8/12 | GLOBAL PDF p.171 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              APPENDIX III - GRAMMAR FILE
+
+
+               Simple Future
+
+              FORM                                          open             the door.
+                              +       I
+                                            will            finish           before me.
+                                     You
+                                     We                     be               at school tomorrow.
+                              -      She    will    not
+                                                            leave            yet.
+
+                                            you             arrive           on time?
+                              ?      Will
+                                            they            want             dinner?
+
+                           For negative sentences in the simple future tense, we contract with won’t, like this:
+
+                            I will not                           I won’t
+                            you will not                         you won’t
+                            he/she/it will not                   he/she/it won’t
+                            we will not                          we won’t
+                            they will not                        they won’t
+
+              USE          We use the Simple Future tense to show prediction, offer, promise, warning,
+                           decision on the spot and request.
+                                                                                         Note that when we have
+                                                                                                                    a plan or
+                                                                                         intention to do someth
+                                                                                                                 ing in the
+                                                                                         future, we usually use
+                                                                                                                other tenses
+                                                                                         or expressions, such as
+              EXAMPLES                                                                                            the Present
+                                   It will rain tomorrow. (prediction)                   Continuous tense or be
+                                                                                                                   going to.
+                                   I’ll bring it right away! (offer)
+                                   I’ll fix your car tomorrow. (promise)
+                                   If you don’t follow my advice, you won’t get well. (warning)
+                                   Will you bring a bottle of water? (request)
+                                   There is no bread left. I’ll go and buy some! (decision on the spot)
+
+               be going to…
+
+              USE	
+                  We often use be going to…
+                           • when we have the intention to do something before we speak. We have
+                              already made a decision before speaking.
+
+              EXAMPLES             I have won €1,000. I am going to buy a new TV.
+                                   We’re not going to see my mother tomorrow.
+                                   When are you going to go on holiday?
+
+
+              154                                  Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+10-0147_AGGLIKA.indb 154                                                                                                        1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 9/12 | GLOBAL PDF p.172 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+                UNIT 7
+
+                  Present Perfect Simple
+
+                FORM                            subject                  auxiliary verb             main verb
+                                                I / You / We / They      have                       played          football.
+                                            +
+                                                He / She                 has                        visited         Rome.
+                                                I / You / We / They      haven’t                    won             the 200 m. race.
+                                            -
+                                                He / She                 hasn’t                     seen            ET.
+                                                Have                     you / we / they            finished?
+                                            ?
+                                                Has                      he / she                   done            it?
+
+
+                USE	
+                    We use the Present Perfect Simple tense to talk about past activities,
+                                    which we are not interested in when they happened. We only want to know
+                                    if they happened.
+                                                                                                 NOTE: If we are interes
+                                                                                                                        ted in When
+                EXAMPLES                                                                         an action happened we
+                                                                                                                         use Simple
+                                                                                                Past tense.
+                                      I have seen ET.                                           Example: Ian Thorpe wo
+                                                                                                                         n the 400 m
+                                      He has lived in Paris.                                    freestyle in 2004 Athe
+                                                                                                                       ns Olympics.
+                                      Have you visited Rome?
+                                      They have never broken a world record.
+
+
+                  Present Perfect Continuous
+
+                FORM                            I / You     have                       waiting      for one hour.
+                                            +
+                                                He / She    has                        talking      too much.
+                                                It          has                        raining.
+                                            -                         not      been
+                                                We          have                       playing      football.
+                                                            you                        seeing       her?
+                                            ?   Have
+                                                            they                       doing        their homework?
+
+
+                                       We use for to talk about a period of time. (for 5 minutes/ 2 weeks/ 6 years)
+                                       We use since to talk about a point in past time.
+                                       (since 9 o’clock/ 1st January/ Monday)
+
+
+
+                                                            Pupil’s Book • APPENDIX III - Grammar File                                 155
+
+
+
+
+6th Pupil's Book APP III_147-158.indd 155                                                                                                    2/4/15 10:49 AM
+
+==============================================================================
+[PAGE 10/12 | GLOBAL PDF p.173 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+                APPENDIX III - GRAMMAR FILE
+
+
+                USE                 We use the Present Perfect Continuous
+                		                  •	to talk about an action that started in the past and has just stopped.
+                                       There is usually a result now.
+                		                  •	to talk about an action that started in the past and is continuing now.
+                                       This is often used with for or since.
+
+                EXAMPLES
+                                       I have been reading for 2 hours. [I am still reading now.]
+                                       We’ve been studying since 9 o’clock. [We’re still studying now.]
+                                       How long have you been learning English? [You are still learning now.]
+                                       We have not been watching TV. [And we are not watching TV now.]
+                                       He has broken many records since he was 14. [He is still breaking records.]
+
+
+                UNIT 8
+
+                  Conditional Sentences
+
+                FORM                                          IF-clause                                Result clause
+                                                                                       will, can, must, + bare infinitive or
+                                      Type 1       Simple Present tense
+                                                                                       imperative
+                                      Type 2       Simple Past tense                   would + bare infinitive
+
+                USE                 We use Type 1 Conditional Sentences to show that something is possible to happen in
+                   the present or future.
+                		We use Type 2 Conditional Sentences to show that something is very unlikely to happen
+                   in the present or future.
+                		 This kind of sentences often expresses a wish or advice.
+
+                EXAMPLES
+                                                                                             NOTE: When we use Ty
+                                       Type 1                                                                      pe 2
+                                                                                            Conditional we prefer
+                                       If you choose to attend this excellent musical,                            to use were
+                                                                                            instead of was.
+                                       you will learn the importance of personal
+                                       safety, proper diet, and good health.
+                                       If you like Greek folk music, register for this event.
+                                       If you want to learn about other cultures, you can attend the dances from Peru.
+                                       Type 2
+                                       If I won a lot of money, I would (I’d) buy a lot of CD’s.
+                                       If I were you, I’d pay back all the money I owe.
+
+
+
+
+                156                                       Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+6th Pupil's Book APP III_147-158.indd 156                                                                                       2/4/15 10:51 AM
+
+==============================================================================
+[PAGE 11/12 | GLOBAL PDF p.174 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              UNIT 9
+
+               Past Perfect
+
+              FORM                                     finished       work.
+                                     I
+                              +
+                                    You    had         stopped        before me.
+                                    He
+                                    She                gone           to school.
+                              -            hadn’t
+                                    We                 left.
+                                           you         arrived?
+                              ?     Had
+                                           they        eaten          dinner?
+
+              USE          We use the Past Perfect tense to talk about an action that happened in the past before
+                           another action. This is ‘the past in the past’.
+
+              EXAMPLES
+
+                            The tide had washed up thousands of starfish, when he arrived.
+                            They were hungry. They had not eaten for five hours.
+                            I didn’t know who he was. I had never seen him before.
+                            “Mary wasn’t at home when I arrived.” “Really? Where had she gone?”
+
+
+              		           Clauses of result / reason
+              		           The clauses of result express the result of an action or a situation.
+              		           They start with …so and …as a result.
+
+              EXAMPLES
+
+                            People have built a lot of hotels near the beach so baby turtles head for the lights of
+                            the hotels.
+                            People have built a lot of hotels near the beach and as a result, baby turtles head for
+                            the lights of the hotels.
+
+              		           The clauses of reason tell us why something happens or exists.
+              		           They start with …because, …because of and …as.
+
+              EXAMPLES
+
+                            Fishermen kill them because they destroy their fishing nets.
+                            They lose their habitat because of tourism.
+                            The Mediterranean seal symbolizes the health of the sea, as it can only live in clean non
+                            polluted waters.
+
+
+
+                                                  Pupil’s Book • APPENDIX III - Grammar File                          157
+
+
+
+
+10-0147_AGGLIKA.indb 157                                                                                                    1/21/14 10:52 AM
+
+==============================================================================
+[PAGE 12/12 | GLOBAL PDF p.175 | SOURCE: 13_Appendix_III_Grammar_File_p164-175.pdf]
+==============================================================================
+              APPENDIX III - GRAMMAR FILE
+
+
+              UNIT 10
+
+               Passive Voice – Simple Present Tense
+
+              FORM         We form the Simple Present Passive with the verb to be in the right form and
+                           the Past participle of the main verb.
+
+                               Simple Present of verb ‘to be’               past participle of main verb
+                                              s
+
+
+
+
+                                                                                               s
+                                             am
+                                                                          used/ washed/ finished/ written/
+                                              is
+                                                                                    done etc.
+                                             are
+
+              USE          We use the Passive Voice when we are more interested in the action than in who is
+                           responsible for it (agent). When we want to mention who does the action the word by
+                           comes before it. We also use Passive Voice in notices and signs.
+
+
+              EXAMPLES
+
+                            The young Bond is presented as a tall and scruffy teenager.
+                            The young Bond books are written by Charlie Higson.
+                            Smoking is forbidden.
+                            Tickets are sold out.
+
+
+
+
+              158                                 Pupil’s Book • APPENDIX III - Grammar File
+
+
+
+
+10-0147_AGGLIKA.indb 158                                                                                         1/21/14 10:52 AM

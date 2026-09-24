@@ -1,0 +1,55 @@
+==============================================================================
+Unit 9 official vocabulary list (47 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+acid rain
+become extinct
+bend
+breath
+cancer
+carbon monoxide
+celebrate
+chemical plant
+chimney
+coal
+cover
+destroy
+disappear
+disease
+disturb
+dry cleanercause
+dump
+endangered species
+environment
+environmental
+fuel
+get rid of
+habitat
+head for
+industrial
+lay eggs
+nod
+ocean
+poison
+pollutant
+pollution
+protect
+quit
+rough
+rubbish
+save
+shore
+stare at
+starfish
+sulphur dioxide
+tide
+toxic waste
+toxin
+truck
+turtle
+wash up
+weigh
+
+----- CHECK (known print errors / wraps) -----
+dry cleanercause  ->  two entries merged in print: dry cleaner / cause

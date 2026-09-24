@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Scratch / working directories (agent scratch space, not durable content)
+**/scratch/
+**/_scratch/
+**/_to_delete/
+**/.agents/
+
+# Backups made by hand before git existed
+*.bak
+*.bak.*
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Editor/agent tool metadata
+.vscode/

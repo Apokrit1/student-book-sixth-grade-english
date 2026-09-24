@@ -1,0 +1,80 @@
+==============================================================================
+Unit 6 official vocabulary list (69 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+ability
+air traffic controller
+aisles
+area
+artistic
+attention
+biology
+brave
+candidate
+car mechanic
+care for
+career
+cheerfulhome
+economics
+chemistry
+communication
+compassionate
+construct
+co-ordination
+create
+creative
+dexterity
+dryer
+earrings
+ecologist
+equipment
+facilities
+foreign languages
+goggles
+hair dresser
+handle
+independently
+jwellery designer
+knowledge
+lab
+lifeguard
+loads
+location
+machinery
+necklace
+nurse
+nutrition
+occupation
+patient
+perm
+precious stones
+prevent
+profession
+razors
+require
+responsible
+ring
+safety rules
+schedule
+scissors
+self-assessment
+self-confident
+shift
+skill
+speech
+straighten
+stressful
+tamper
+team
+tool
+variety
+volunteer
+weather forecaste
+well trained
+
+----- CHECK (known print errors / wraps) -----
+cheerfulhome  ->  two entries merged in print: cheerful / home (economics); check column
+hair dresser  ->  standard spelling: hairdresser
+jwellery designer  ->  typo in book: jewellery designer
+weather forecaste  ->  typo in book: weather forecaster

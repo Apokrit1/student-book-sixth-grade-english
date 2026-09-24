@@ -1,0 +1,369 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>English 6th Grade launch video</title>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#000}
+#stage{width:1920px;height:1080px;transform-origin:0 0;inset:auto!important;left:0;top:0}
+#ctl{position:fixed;left:0;right:0;bottom:0;height:46px;background:rgba(0,0,0,.6);display:flex;align-items:center;gap:14px;padding:0 16px;font:600 14px sans-serif;color:#fff;transition:opacity .3s;z-index:9}
+#bar{flex:1;height:6px;background:#444;border-radius:3px;cursor:pointer;position:relative}
+#fill{position:absolute;left:0;top:0;bottom:0;background:#dd6b20;border-radius:3px}
+#btn{cursor:pointer;background:#dd6b20;border:0;color:#fff;font:700 14px sans-serif;padding:6px 14px;border-radius:6px}
+body{font-family:'Plus Jakarta Sans','Noto Sans','DejaVu Sans',sans-serif;color:#fff}
+#stage{position:absolute;inset:0;overflow:hidden;background:#0e0e12}
+.abs{position:absolute}
+.hide{display:none}
+.glow{position:absolute;width:1400px;height:1400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(221,107,32,.28),rgba(221,107,32,0) 60%);left:900px;top:-300px}
+.grain{position:absolute;inset:0;opacity:.07;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.big{font-family:'Outfit',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95}
+.kick{font-family:'Outfit',sans-serif;font-weight:700;font-size:26px;letter-spacing:.22em;text-transform:uppercase;color:#f6ad55}
+.page{position:absolute;width:560px;height:792px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.55),0 4px 12px rgba(0,0,0,.4);transform-origin:50% 50%}
+.page img{width:100%;height:100%;display:block}
+.browser{position:absolute;border-radius:18px;overflow:hidden;background:#fff;
+  box-shadow:0 50px 120px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
+.bar{height:44px;background:#f1f1f4;display:flex;align-items:center;padding:0 18px;gap:9px;border-bottom:1px solid #e2e2e8}
+.dot{width:13px;height:13px;border-radius:50%}
+.url{margin-left:22px;flex:1;height:28px;border-radius:14px;background:#fff;border:1px solid #e0e0e6;color:#555;
+  font:600 15px 'Plus Jakarta Sans';display:flex;align-items:center;padding-left:16px}
+.vp{position:relative;overflow:hidden;background:#fff}
+.vp img{position:absolute;left:0;top:0;width:100%}
+.tag{position:absolute;padding:8px 16px;border-radius:10px;font:800 22px 'Outfit';letter-spacing:.06em}
+.cap{position:absolute;font-family:'Outfit';font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.pill{display:inline-block;padding:14px 30px;border-radius:999px;font:700 38px 'Outfit';letter-spacing:-.01em}
+.full{position:absolute;inset:0}
+.photo{position:absolute;inset:-40px;background-size:cover;background-position:center}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.78) 100%)}
+</style></head>
+<body><div id="stage">
+  <div class="glow" id="glow"></div>
+
+  <!-- S1/S2 intro -->
+  <div id="yr" class="abs big" style="left:0;right:0;top:360px;text-align:center;font-size:300px;color:#fff"></div>
+  <div id="yrSub" class="abs" style="left:0;right:0;top:700px;text-align:center;font:600 40px 'Plus Jakarta Sans';color:#b9b9c6">A coursebook goes to print.</div>
+
+  <!-- book stack -->
+  <div id="stack" class="abs" style="left:0;top:0;width:1920px;height:1080px"></div>
+  <div id="leftTxt" class="abs big" style="left:130px;top:400px;font-size:120px;width:760px"></div>
+  <div id="leftKick" class="abs kick" style="left:134px;top:350px"></div>
+
+  <div id="rebuilt" class="abs big" style="left:0;right:0;top:390px;text-align:center;font-size:170px"></div>
+  <div id="flash" class="full" style="background:#fff;opacity:0"></div>
+
+  <!-- brand -->
+  <div id="brand" class="full" style="background:#dd6b20">
+    <div class="grain"></div>
+    <div id="brandT" class="abs big" style="left:0;right:0;top:330px;text-align:center;font-size:190px;color:#fff">English 6th Grade</div>
+    <div id="brandS" class="abs" style="left:0;right:0;top:590px;text-align:center"><span class="pill" style="background:#1a1a22;color:#fff">The coursebook, rebuilt for the screen.</span></div>
+  </div>
+
+  <!-- before / after -->
+  <div id="ba" class="full">
+    <div id="baKick" class="abs kick" style="left:110px;top:70px"></div>
+    <div id="baPage" class="page" style="left:110px;top:130px;width:500px;height:707px"><img id="baPageImg"></div>
+    <div class="tag" id="tagOld" style="left:92px;top:118px;background:#fff3d6;color:#7a4a00">2006 · PRINT</div>
+    <div id="arrow" class="abs big" style="left:640px;top:420px;font-size:90px;color:#dd6b20">→</div>
+    <div id="baBrowser" class="browser" style="left:730px;top:130px;width:1090px">
+      <div class="bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url" id="baUrl">english6 · unit 1 · our multicultural class</span></div>
+      <div class="vp" id="baVp" style="height:613px"><img id="baShot"></div>
+    </div>
+    <div class="tag" id="tagNew" style="left:1690px;top:112px;background:#dd6b20;color:#fff">2026 · LIVE</div>
+    <div id="baCap" class="cap" style="left:110px;top:880px;font-size:96px"></div>
+  </div>
+
+  <!-- words -->
+  <div id="words" class="full">
+    <div id="wPhoto" class="photo"></div>
+    <div class="shade"></div>
+    <div id="wKick" class="abs kick" style="left:120px;top:640px;color:#fbd38d"></div>
+    <div id="wWord" class="abs big" style="left:112px;top:690px;font-size:190px"></div>
+    <div id="wMeta" class="abs" style="left:120px;top:900px;font:600 40px 'Plus Jakarta Sans','Noto Sans','DejaVu Sans';color:#eee"></div>
+    <div id="wCount" class="abs big" style="right:110px;top:90px;font-size:44px;color:#fff;opacity:.9"></div>
+  </div>
+
+  <!-- v1 table -->
+  <div id="tbl" class="full">
+    <div id="tblBrowser" class="browser" style="left:260px;top:170px;width:1400px">
+      <div class="bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">english6 · unit 1 · vocabulary lab</span></div>
+      <div class="vp" style="height:787px"><img id="tblShot" src="cap/v1.jpg"></div>
+    </div>
+    <div id="tblCap" class="cap" style="left:0;right:0;text-align:center;top:52px;font-size:82px"></div>
+  </div>
+
+  <!-- privacy -->
+  <div id="priv" class="full">
+    <div id="zero" class="abs big" style="left:150px;top:180px;font-size:620px;color:#dd6b20;line-height:1"></div>
+    <div id="zeroLbl" class="abs big" style="left:640px;top:430px;font-size:150px"></div>
+    <div id="privA" class="abs big" style="left:0;right:0;top:350px;text-align:center;font-size:120px"></div>
+    <div id="privB" class="abs" style="left:0;right:0;top:560px;text-align:center;font:600 46px 'Plus Jakarta Sans';color:#c9c9d6"></div>
+  </div>
+
+  <!-- portal -->
+  <div id="port" class="full">
+    <div id="portBrowser" class="browser" style="left:560px;top:140px;width:1260px">
+      <div class="bar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="url">english6 · coursebook portal</span></div>
+      <div class="vp" style="height:709px"><img id="portShot" src="cap/portal.jpg"></div>
+    </div>
+    <div id="portKick" class="abs kick" style="left:110px;top:360px"></div>
+    <div id="portA" class="abs big" style="left:106px;top:410px;font-size:112px;width:520px"></div>
+  </div>
+
+  <!-- end -->
+  <div id="end" class="full">
+    <div id="endT" class="abs big" style="left:0;right:0;top:300px;text-align:center;font-size:170px">English 6th Grade</div>
+    <div id="endS" class="abs" style="left:0;right:0;top:500px;text-align:center;font:700 54px 'Outfit';color:#f6ad55">The interactive coursebook.</div>
+    <div id="endL" class="abs" style="left:0;right:0;top:640px;text-align:center;font:600 32px 'Plus Jakarta Sans';color:#b9b9c6">Unit 1 live now · Built by a classroom teacher in Volos</div>
+    <div id="endE" class="abs kick" style="left:0;right:0;top:880px;text-align:center;font-size:22px;color:#8a8a99">ICT-REV · Larissa · 1–2 October 2026</div>
+  </div>
+
+  <div class="grain" style="opacity:.05"></div>
+  <div id="fade" class="full" style="background:#000;opacity:0"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const P=(t,a,b)=>clamp((t-a)/(b-a));
+const eo3=x=>1-Math.pow(1-x,3);
+const eo5=x=>1-Math.pow(1-x,5);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eoBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const show=(el,on)=>{el.style.display=on?'':'none'};
+const inWin=(t,a,b)=>t>=a&&t<b;
+
+/* kinetic text: pop in over d, hold, snap out */
+function kin(el,t,a,b,txt,opt={}){
+  if(!inWin(t,a,b)){el.style.opacity=0;return}
+  if(el.textContent!==txt)el.textContent=txt;
+  const i=eo5(P(t,a,a+(opt.din||.28)));
+  const o=opt.noOut?0:P(t,b-(opt.dout||.14),b);
+  const dy=(1-i)*(opt.dy??60) - o*30;
+  el.style.opacity=(i*(1-o)).toFixed(3);
+  el.style.transform=`translateY(${dy}px) scale(${(opt.s0??1)+(1-(opt.s0??1))*i})`;
+  el.style.filter=`blur(${((1-i)*10+o*8).toFixed(1)}px)`;
+}
+
+/* book stack */
+const stackPages=['18','19','20','21','22','23','24','25','26','27','28'];
+const stackEls=[];
+const rnd=(i,s)=>{const x=Math.sin(i*127.1+s*311.7)*43758.5453;return x-Math.floor(x)};
+(function(){
+  const hero=document.createElement('div');hero.className='page';hero.id='hero';
+  hero.innerHTML='<img src="pages/p-17.jpg">';$('stack').appendChild(hero);
+  stackPages.forEach((p,i)=>{
+    const d=document.createElement('div');d.className='page';
+    d.innerHTML=`<img src="pages/p-${p}.jpg">`;$('stack').appendChild(d);stackEls.push(d);
+  });
+})();
+function renderStack(t){
+  const on=t>=1.9&&t<12.05; show($('stack'),on); if(!on)return;
+  const cx=1250,cy=540;
+  // camera
+  let cam=1, camY=0, blur=0, bright=1;
+  cam+=0.06*P(t,2,8);
+  cam+=0.18*eio(P(t,8,10));
+  cam+=1.6*Math.pow(P(t,10,12),2.2);
+  bright=1-0.55*P(t,8,9.2)-0.3*P(t,10,12);
+  blur=14*Math.pow(P(t,10,12),1.5);
+  $('stack').style.transform=`translate(${(960-cx)*P(t,10,11.5)}px,0) scale(${cam})`;
+  $('stack').style.transformOrigin=`${cx}px ${cy}px`;
+  $('stack').style.filter=`brightness(${bright}) blur(${blur}px)`;
+  // hero
+  const h=$('hero'); const hi=eo3(P(t,2,2.9));
+  h.style.left=(cx-280)+'px'; h.style.top=(cy-396)+'px';
+  h.style.transform=`translateY(${(1-hi)*700}px) rotate(${-4+ (1-hi)*-10}deg)`;
+  stackEls.forEach((el,i)=>{
+    const t0=4+0.25*i; const k=P(t,t0,t0+0.22); const e=eo3(k);
+    el.style.display=t>=t0?'':'none';
+    const r=(rnd(i,1)-.5)*16, ox=(rnd(i,2)-.5)*140, oy=(rnd(i,3)-.5)*70;
+    el.style.left=(cx-280+ox)+'px'; el.style.top=(cy-396+oy)+'px';
+    el.style.transform=`translateY(${-(1-e)*160}px) rotate(${r+(1-e)*(rnd(i,4)-.5)*30}deg) scale(${1.35-0.35*e})`;
+    el.style.opacity=clamp(k*3);
+  });
+}
+
+/* before/after config */
+const BA=[
+ {a:13.9,b:18,page:'18',shot:'cap/stories.jpg',h:3466,y0:0,y1:560,kick:'Lesson 1 · Meeting the newcomers',cap:'The reading now talks.'},
+ {a:18,b:20,page:'22',shot:'cap/grammar.jpg',h:6146,y0:280,y1:620,kick:'Lesson 2 · At the school lab',cap:'Listening labs, fully voiced.'},
+ {a:20,b:22,page:'27',shot:'cap/collocations.jpg',h:3234,y0:120,y1:420,kick:'Check yourself · Crossword',cap:'Clues you can hear.'},
+ {a:22,b:24,page:'26',shot:'cap/report.jpg',h:5054,y0:60,y1:520,kick:'Lesson 3 · A geography project',cap:'Guided report writing.'},
+ {a:24,b:26,page:'28',shot:'cap/challenges.jpg',h:2286,y0:0,y1:220,kick:'Check yourself · Test',cap:'Ear-training games.'},
+ {a:26,b:28,page:'21',shot:'cap/worksheets.jpg',h:3736,y0:120,y1:640,kick:'Practice',cap:'And yes, it still prints.'},
+];
+function renderBA(t){
+  const on=t>=13.9&&t<28.05; show($('ba'),on); if(!on)return;
+  const s=BA.find(x=>t>=x.a&&t<x.b)||BA[BA.length-1];
+  const idx=BA.indexOf(s);
+  const k=P(t,s.a,s.a+0.35), e=eo5(k);
+  if(!$('baPageImg').src.endsWith(`p-${s.page}.jpg`))$('baPageImg').src=`pages/p-${s.page}.jpg`;
+  if(!$('baShot').src.endsWith(s.shot))$('baShot').src=s.shot;
+  // entry of whole layout at first scene
+  const enter=eo5(P(t,13.9,14.5));
+  const pr=idx===0?enter:e; const amp=idx===0?1:0.16;
+  $('baPage').style.transform=`translateX(${-(1-pr)*700*amp}px) rotate(${-4+(1-pr)*-12*amp}deg) scale(${1+(1-pr)*(idx?0.06:0)})`;
+  $('tagOld').style.transform=`translateX(${-(1-pr)*700*amp}px) rotate(-4deg)`;
+  const bx=(1-pr)*900*amp;
+  const zoom=1+0.03*P(t,s.a,s.b);
+  $('baBrowser').style.transform=`perspective(2200px) translateX(${bx}px) rotateY(${-6+(1-pr)*-20*amp}deg) scale(${zoom})`;
+  $('tagNew').style.transform=`translateX(${bx}px) rotate(3deg)`;
+  $('arrow').style.opacity=enter; $('arrow').style.transform=`translateX(${Math.sin(t*6.283*1)*6}px)`;
+  // scroll: vp width 1090 -> image css scale 1090/3200
+  const Z=1.32, sc=1090*Z/3200; $('baShot').style.width=(Z*100)+'%';
+  const scrollT=eio(P(t,s.a+0.35,s.b-0.1));
+  const yy=(s.y0+(s.y1-s.y0)*scrollT)*2*sc; // y in 1600-css px -> *2 image px -> *sc
+  $('baShot').style.transform=`translate(${-1090*(Z-1)/2}px,${-yy}px)`;
+  kin($('baKick'),t,s.a+0.05,s.b,s.kick.toUpperCase(),{dy:20});
+  kin($('baCap'),t,s.a+0.12,s.b,s.cap,{dy:70});
+  // exit at end
+  const out=P(t,27.85,28.05);
+  $('ba').style.opacity=1-out;
+}
+
+/* brand */
+function renderBrand(t){
+  const on=t>=12&&t<14.05; show($('brand'),on); if(!on)return;
+  const i=eo5(P(t,12,12.6));
+  $('brandT').style.transform=`scale(${1.35-0.35*i})`; $('brandT').style.opacity=clamp(i*1.5);
+  $('brandT').style.filter=`blur(${(1-i)*16}px)`;
+  const j=eoBack(P(t,12.75,13.15));
+  $('brandS').style.transform=`translateY(${(1-j)*60}px) scale(${.8+.2*j})`; $('brandS').style.opacity=clamp(P(t,12.75,12.95));
+  const w=eio(P(t,13.65,14.0));
+  $('brand').style.clipPath=`inset(0 0 ${w*100}% 0)`;
+}
+
+/* words */
+const W=[
+ {a:28,b:29,img:'06_coast',w:'coast',ipa:'[kəʊst]',gr:'ακτή, παράλια'},
+ {a:29,b:30,img:'26_peninsula',w:'peninsula',ipa:'[pəˈnɪnsjʊlə]',gr:'χερσόνησος'},
+ {a:30,b:31,img:'13_golden_fleece',w:'golden fleece',ipa:'[ˌɡəʊldən ˈfliːs]',gr:'το χρυσόμαλλο δέρας'},
+ {a:31,b:32,img:'09_copper',w:'copper',ipa:'[ˈkɒpə]',gr:'χαλκός'},
+ {a:32,b:32.25,img:'19_mountain',w:'mountain'},
+ {a:32.25,b:32.5,img:'30_river',w:'river'},
+ {a:32.5,b:32.75,img:'04_citrus_fruit',w:'citrus fruit'},
+ {a:32.75,b:33,img:'34_underwater',w:'underwater'},
+ {a:33,b:33.25,img:'14_instrument',w:'instrument'},
+ {a:33.25,b:33.5,img:'23_oil_well',w:'oil well'},
+ {a:33.5,b:33.75,img:'27_plain',w:'plain'},
+ {a:33.75,b:34,img:'16_landscape',w:'landscape'},
+];
+function renderWords(t){
+  const on=t>=28&&t<34; show($('words'),on); if(!on)return;
+  const s=W.find(x=>t>=x.a&&t<x.b); const i=W.indexOf(s);
+  const url=`url(../unit1/assets/images_v2/vocab/${s.img}.webp)`;
+  if($('wPhoto').style.backgroundImage.indexOf(s.img)<0)$('wPhoto').style.backgroundImage=url;
+  const k=P(t,s.a,s.b);
+  $('wPhoto').style.transform=`scale(${1.12-0.08*k}) translateX(${(i%2?1:-1)*20*k}px)`;
+  const long=s.b-s.a>0.5;
+  $('wWord').style.fontSize=long?'190px':'150px';
+  kin($('wWord'),t,s.a,s.b+0.001,s.w,{dy:long?80:30,din:long?.3:.05,noOut:true});
+  if(long){kin($('wMeta'),t,s.a+.15,s.b+0.001,`${s.ipa}   ·   ${s.gr}`,{dy:30,noOut:true});
+           kin($('wKick'),t,s.a+.05,s.b+0.001,'Tap to hear it',{dy:20,noOut:true});}
+  else{$('wMeta').style.opacity=0;$('wKick').style.opacity=0}
+  $('wCount').textContent=`${String([6,26,13,9,19,30,4,34,14,23,27,16][i]).padStart(2,'0')} / 35`;
+}
+
+/* v1 table */
+function renderTbl(t){
+  const on=t>=34&&t<36.05; show($('tbl'),on); if(!on)return;
+  const i=eo5(P(t,34,34.4));
+  $('tblBrowser').style.transform=`translateY(${(1-i)*500}px) scale(${.92+.08*i})`;
+  const sc=1400/3200; const y=eio(P(t,34.3,36))*1700*2*sc;
+  $('tblShot').style.transform=`translateY(${-y}px)`;
+  kin($('tblCap'),t,34.1,36,'35 words. 216 recordings.',{dy:40});
+  $('tbl').style.opacity=1-P(t,35.85,36.05);
+}
+
+/* privacy */
+function renderPriv(t){
+  const on=t>=36&&t<40.05; show($('priv'),on); if(!on)return;
+  const zOn=t<39;
+  const zi=eo5(P(t,36,36.35));
+  $('zero').textContent='0'; $('zero').style.opacity=zOn?zi:0;
+  $('zero').style.transform=`scale(${1.4-.4*zi})`;
+  const labels=[[36.1,37,'cloud calls'],[37,38,'accounts'],[38,39,'trackers']];
+  $('zeroLbl').style.opacity=0;
+  for(const [a,b,txt] of labels) if(inWin(t,a,b)) kin($('zeroLbl'),t,a,b,txt,{dy:50,din:.22,dout:.1});
+  kin($('privA'),t,39,40,'Works offline.',{dy:60});
+  kin($('privB'),t,39.2,40,'Pupils’ data never leaves the classroom.',{dy:30});
+}
+
+/* portal */
+function renderPort(t){
+  const on=t>=40&&t<44.05; show($('port'),on); if(!on)return;
+  const i=eo5(P(t,40,40.5));
+  $('portBrowser').style.transform=`perspective(2200px) translateX(${(1-i)*900}px) rotateY(${-7}deg)`;
+  const sc=1260/3200;
+  const y=(eio(P(t,40.6,41.6))*420+eio(P(t,42,43.6))*680)*2*sc;
+  $('portShot').style.transform=`translateY(${-y}px)`;
+  if(t<42){kin($('portKick'),t,40.1,42,'UNIT 1',{dy:20});kin($('portA'),t,40.15,42,'Live now.',{dy:60});}
+  else{kin($('portKick'),t,42,44,'UNITS 2–10',{dy:20});kin($('portA'),t,42.05,44,'Next in line.',{dy:60});}
+  $('port').style.opacity=1-P(t,43.85,44.05);
+}
+
+/* end */
+function renderEnd(t){
+  const on=t>=44; show($('end'),on); if(!on)return;
+  const i=eo5(P(t,44,44.6));
+  $('endT').style.opacity=i; $('endT').style.transform=`scale(${1.2-.2*i})`; $('endT').style.filter=`blur(${(1-i)*12}px)`;
+  kin($('endS'),t,44.5,99,'The interactive coursebook.',{dy:30,noOut:true});
+  kin($('endL'),t,45.2,99,'Unit 1 live now · Built by a classroom teacher in Volos',{dy:20,noOut:true});
+  kin($('endE'),t,45.8,99,'ICT-REV · LARISSA · 1–2 OCTOBER 2026',{dy:20,noOut:true});
+}
+
+function render(t){
+  // bg glow drift
+  $('glow').style.transform=`translate(${Math.sin(t*.4)*120}px,${Math.cos(t*.3)*80}px)`;
+  $('glow').style.opacity=(t>=12&&t<36)||t>=40?1:.5;
+  // year
+  const yrOn=t<2.1; show($('yr'),yrOn); show($('yrSub'),yrOn);
+  if(yrOn){
+    const str='2006.'; const n=Math.min(str.length,Math.floor(P(t,.15,.95)*str.length+ (t>=.15?1:0)));
+    $('yr').textContent=str.slice(0,n); const out=P(t,1.8,2.05);
+    $('yr').style.opacity=1-out; $('yr').style.transform=`scale(${1+out*.3})`; $('yr').style.filter=`blur(${out*14}px)`;
+    kin($('yrSub'),t,1.0,2.05,'A coursebook goes to print.',{dy:20});
+  }
+  renderStack(t);
+  // left text over stack
+  const L=[[2.3,4,'English','6TH GRADE · PUPIL’S BOOK'],[4,5,'Same pages.','YEAR AFTER YEAR'],[5,6,'Same maps.','YEAR AFTER YEAR'],[6,7,'Same drills.','YEAR AFTER YEAR'],[7,8,'Twenty years.','SINCE 2006'],[8,9,'The pupils changed.',''],[9,10,'The book didn’t.','']];
+  $('leftTxt').style.opacity=0;$('leftKick').style.opacity=0;
+  for(const [a,b,txt,k] of L){ if(inWin(t,a,b)){ kin($('leftTxt'),t,a,b,txt,{dy:60,din:.22,dout:.1}); if(k)kin($('leftKick'),t,a,b,k,{dy:20,din:.2,dout:.1}); } }
+  // rebuilt
+  const R=[[10,10.5,'So'],[10.5,11,'a teacher'],[11,11.5,'rebuilt'],[11.5,12,'it.']];
+  $('rebuilt').style.opacity=0; show($('rebuilt'),t>=10&&t<12);
+  let acc='';for(const [a,b,w] of R){ if(t>=a){acc+=(acc?' ':'')+w} }
+  if(t>=10&&t<12){ $('rebuilt').textContent=acc; const lastA=R.filter(r=>t>=r[0]).pop()[0];
+    const i=eo5(P(t,lastA,lastA+.18)); $('rebuilt').style.opacity=1; $('rebuilt').style.transform=`scale(${1.06-.06*i})`; }
+  $('flash').style.opacity=t<12?Math.pow(P(t,11.8,12),2):1-P(t,12,12.25);
+  renderBrand(t); renderBA(t); renderWords(t); renderTbl(t); renderPriv(t); renderPort(t); renderEnd(t);
+  $('fade').style.opacity=P(t,48.6,50);
+}
+window.render=render;
+render(0);
+</script>
+
+<div id="ctl"><button id="btn">Play</button><div id="bar"><div id="fill"></div></div><span id="tc">0.0 / 50.0</span></div>
+<audio id="snd" src="soundtrack.mp3" preload="auto"></audio>
+<script>
+(function(){
+  const st=document.getElementById('stage'), snd=$('snd'), D=50;
+  function fit(){const k=Math.min(innerWidth/1920,innerHeight/1080);
+    st.style.transform=`translate(${(innerWidth-1920*k)/2}px,${(innerHeight-1080*k)/2}px) scale(${k})`;}
+  addEventListener('resize',fit); fit();
+  function loop(){const t=Math.min(D,snd.currentTime); render(t);
+    $('fill').style.width=(t/D*100)+'%'; $('tc').textContent=t.toFixed(1)+' / 50.0';
+    if(!snd.paused) requestAnimationFrame(loop);}
+  function toggle(){ if(snd.paused){ if(snd.ended||snd.currentTime>=D-.05) snd.currentTime=0; snd.play(); $('btn').textContent='Pause'; requestAnimationFrame(loop);} else {snd.pause(); $('btn').textContent='Play';} }
+  $('btn').onclick=e=>{e.stopPropagation();toggle()};
+  st.onclick=toggle;
+  $('bar').onclick=e=>{const r=e.currentTarget.getBoundingClientRect(); snd.currentTime=(e.clientX-r.left)/r.width*D; loop();};
+  addEventListener('keydown',e=>{ if(e.code==='Space'){e.preventDefault();toggle()}
+    if(e.code==='ArrowRight'){snd.currentTime=Math.min(D,snd.currentTime+2);loop()}
+    if(e.code==='ArrowLeft'){snd.currentTime=Math.max(0,snd.currentTime-2);loop()}
+    if(e.code==='KeyF'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()} });
+  snd.onended=()=>{$('btn').textContent='Play'};
+  let hid; addEventListener('mousemove',()=>{$('ctl').style.opacity=1;clearTimeout(hid);hid=setTimeout(()=>{if(!snd.paused)$('ctl').style.opacity=0},2000)});
+})();
+</script>
+</body></html>

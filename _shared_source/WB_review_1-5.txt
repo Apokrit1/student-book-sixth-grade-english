@@ -1,0 +1,159 @@
+==============================================================================
+SOURCE PDF : WB06_Review_1-5_p050-052.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split_workbook\WB06_Review_1-5_p050-052.pdf
+ORIGINAL WORKBOOK: 10-0148-02_V2_Agglika_ST-Dimotikou_Tetradio-Ergasion.pdf
+GLOBAL PDF PAGES: 50-52
+PAGES IN THIS FILE: 3
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T23:00:08+03:00
+STATS: characters=7670, words~=761
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/3 | GLOBAL PDF p.50 | SOURCE: WB06_Review_1-5_p050-052.pdf]
+==============================================================================
+               REVIEW 1-5
+               A. Vocabulary
+                  1. Food containers
+                                                             1            ACROSS
+                                                                           2. A ……………. of cereal
+                                                        2
+                                                                           5. A ……………. of wine
+              3
+                                                                           6. A ……………. of cheese
+                               4       5                                   8. A ……………. of bread
+                          6
+                                                                           9. A ……………. of toothpaste
+
+                                              7                           DOWN
+                                       8                                   1. A …………………….. of eggs
+                                                                           3. A …………………….. of butter
+              9           10
+                                                                           4. A …………………….. of cake
+                                                                           5. A …………………….. of soup
+                                                                           7. A …………………….. of mayonnaise
+                                                                          10. A …………………….. of rice
+
+             2. Cross out the odd word in each group                      e. ugly, frightening, disgusting, unattractive,
+                 a. plain, mountain, earthquake, peninsula, river            delightful
+                 b. copy, drop, paste, print, save                        f. cockpit, nose, tail, simulator, wings
+                 c. price, bakery, dairy, poultry, groceries              g. tube, wheel, train, double-decker, coach
+                 d. cotton, jacket, leather, silk, nylon
+
+
+
+             3. Where can you buy the following? Match.
+                 a pair of earrings                                     newsagent’s
+                 a newspapers and magazines                             stationer’s
+                 meat and poultry                                       jeweller’s
+                 bread and cakes                                        butcher’s
+                 notebooks and pens                                     baker’s
+
+
+
+
+               B. Grammar
+             1. How many or How much?
+             a. ___________________ milk do you drink?
+             b. ___________________ chickens have you got?
+             c. ___________________ eggs are there in the fridge
+             d. ___________________ flour do you need?
+             e. ___________________ slices of bread are there in your lunch box?
+
+
+                                                     Pupil’s Workbook • REVIEW 1-5                                           43
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 43                                                                                                  1/9/14 2:55 PM
+
+==============================================================================
+[PAGE 2/3 | GLOBAL PDF p.51 | SOURCE: WB06_Review_1-5_p050-052.pdf]
+==============================================================================
+             2. Read the telephone dialogue between Nick and George and underline the correct verb:
+             George: Hi, Nick! What are you doing / do you do now?
+             Nick:      I’m doing / I do my homework. There is / There was one more exercise for me to finish.
+                         What about you?
+             George: I’m eating / I eat an apple. I am always eating / I always eat fruit after homework.
+             Nick:       Was Peter calling you / Did Peter call you? I didn’t see him /I don’t see him at school
+                          this morning.
+             George:	Yes, he does / he did but my mother was answering / answered the phone.
+                          I was having / I had a bath. I’m going to call him back.
+             Nick:        Good. Ask him if we can go for a walk.
+
+
+             3. Comparisons
+             Look at the pictures of the three animals and compare them using the following adjectives: clever,
+             dangerous, beautiful, frightening, big, friendly, heavy.
+
+
+
+
+               C. Reading
+             Read the text and answer the True / False questions:
+
+                  THE YO-YO
+                                   The yo-yo has been very popular throughout world history and may be the
+                                second oldest toy in the world (after dolls). We can see ancient Greek yo-yos
+                                made of terra cotta in museums in Athens and yo-yo pictures on the walls of
+                                Egyptian temples. We know that important men as Napoleon and the Duke of
+                                Wellington used to play with yo-yo. It was popular with any generation such as
+               with kids from 1 to 100 years old.
+                   The modern story of the yo-yo starts with a young gentleman from the Philippines, named
+               Pedro Flores. In the 1920s, he moved to the USA, and worked as a porter at a Santa Monica
+               hotel. Carving and playing with wooden yo-yos was a traditional pastime in the Philippines, but
+               Pedro found that when he was playing yo-yo during his lunch break a crowd gathered to watch
+               him. The name “yo-yo,” which means “come-come” started at this hotel. He started a company
+               to make the toys, calling it the Flores Yo-Yo Company.
+                   Donald F. Duncan, a businessman first met the yo-yo during a business trip to California.
+               A year later, in 1929, he returned and bought the company from Flores, with the magic name
+               “yo-yo.” About this time, Duncan introduced the looped slip-string, which allows the yo-yo to
+               slip - a necessity for advanced tricks.
+                   The biggest yo-yo boom in history hit was in 1962, because of TV advertising.
+
+
+             44                                    Pupil’s Workbook • REVIEW 1-5
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 44                                                                                    1/9/14 2:55 PM
+
+==============================================================================
+[PAGE 3/3 | GLOBAL PDF p.52 | SOURCE: WB06_Review_1-5_p050-052.pdf]
+==============================================================================
+             True or False?
+             1. Children in Ancient Greece used to play with yo-yos.                      ________________
+             2. Ancient Egyptians used to draw yo-yos at school.                          ________________
+             3. Pedro Flores used to play yo-yo before his lunch break.                   ________________
+             4. Yo-yo means “stay at the hotel”.                                          ________________
+             5. TV helped yo-yos to become very popular games.                            ________________
+
+
+               D. Listening
+             Childhood memories
+             Match the sentences with the right speaker:
+             He used to invite friend at home to play.                                  Speaker _____
+             He used to play board games with his brother.                              Speaker _____
+             He used to play outdoors.                                                  Speaker _____
+
+
+               E. Speaking
+                            Pair-work
+                            Your friend Stella is at the mini market and wants to go to Tom’s house. Look at the map and
+                            give her directions how to get there.
+
+
+
+
+                                                      Pupil’s Workbook • REVIEW 1-5                                    45
+
+
+
+
+10-0148_AGGLIKA_TETRADIO.indb 45                                                                                            1/9/14 2:55 PM

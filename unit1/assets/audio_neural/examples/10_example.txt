@@ -1,0 +1,1 @@
+Press Control and C on your keyboard to copy the text into the clipboard.

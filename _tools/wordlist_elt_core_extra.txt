@@ -1,0 +1,24 @@
+# Everyday A1-A2 words that a web-frequency list under-rates but Greek primary
+# pupils know by Grade 6. Treated as "easy" by check_definitions.py.
+# Teacher-editable: add a word here when a flag is a false alarm.
+afraid angry animal apple autumn bake banana bath beach bee bird biscuit boat bone
+bottle bread breakfast bridge brush butter cake candle carrot cat cave cheese chicken
+chocolate clean clever cloud coin cold cook corn cow cup dance danger dangerous dark
+desk dinner dirty dog doll draw dress drink dry duck egg empty fall farm farmer fear
+field fire fish flat flood flower fog forest fresh fridge fruit garden gate goat gold
+grass hair hat heavy hill hole honey horse hot hungry ice jacket juice jump kitchen
+knife lake lamb lamp leaf lemon letter lion lunch meat milk monkey moon mountain mouse
+mouth neck nest noise nose onion orange paint paper park parrot pear pencil pepper pet
+picnic pig plane plant plate potato rabbit rain rice ring river roof salt sand sea seat
+sheep shelf ship shoe shop shoulder sing sky sleep smell smoke snake snow soap socks
+soup spoon spring stairs star storm strong sugar summer sun sweet swim table tail tea
+teeth thick thin thirsty tiger tired toast tomato tooth towel toy train tree umbrella
+vegetable village warm wash wave weather wet wheel wind window wing winter wolf wood
+wool yard
+# added 20 Sep 2026 after the first Unit 1 run (A2-known, under-rated by web frequency)
+atom atoms careful carefully coin coins electricity exactly metal shake shakes station
+wire wires flood storm nature sheep wool rock hill copy copied text file paper printer
+# added 20 Sep 2026, second pass: A1-A2/low-B1 words in the graded learner lists
+# (Cambridge/Oxford) that the web-frequency proxy under-rates
+dig dug suddenly sudden soft thousand thousands magic climb climbs climbing energy
+rocky steeply mandarin

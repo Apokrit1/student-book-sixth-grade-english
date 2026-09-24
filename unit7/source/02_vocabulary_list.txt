@@ -1,0 +1,60 @@
+==============================================================================
+Unit 7 official vocabulary list (52 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+accomplishment
+achievement
+among
+antiquity
+backstroke
+beat
+billion
+board
+breaststroke
+butterfly
+captivate
+champion
+comedy
+compare
+compete
+competition
+composer
+contest
+destination
+dominate
+drama
+earn
+entertainment
+event
+exceptional
+feeestyle
+ferret
+figure
+gold medal
+habit
+holder
+hot-air-balloon
+imagination
+long running
+movie
+musical
+nickname
+originally
+packed audience
+Paralympics
+pet
+post-show
+production
+recycling bank
+relay team
+review
+revive
+sanctuary
+simultaneously
+skewer
+success
+witness
+
+----- CHECK (known print errors / wraps) -----
+feeestyle  ->  typo in book: freestyle

@@ -1,0 +1,66 @@
+==============================================================================
+Unit 5 official vocabulary list (57 lines as printed)
+SOURCE: Pupil's Book Appendix V, rebuilt from word positions (.bbox.xml)
+NOTE: printed as-is; see CHECK section for known print errors
+==============================================================================
+accompany
+admission
+adult
+alight
+banker
+beard
+behind
+bell bottomed
+pants
+bite one’s nails
+braids
+buttons
+canapes
+change
+conductor
+consume
+crawl
+diary
+direction
+double-decker bus
+female
+fruit punch
+gap
+gift shop
+guide
+high heeled shoes
+hunt game
+impose
+instruction
+keep clear
+lean against
+levers
+linen
+mind
+omnibus
+opposite
+parcel
+perfume
+pony tail
+pull
+respectfully
+shy
+signal
+skirt
+stank
+straw
+togas
+tracks
+transportation
+treasure
+tube train
+tunics
+turning
+underground
+uniform
+van
+wear
+
+----- CHECK (known print errors / wraps) -----
+bell bottomed  ->  line wrap in print: 'bell-bottomed pants' (next line 'pants')
+pony tail  ->  standard spelling: ponytail

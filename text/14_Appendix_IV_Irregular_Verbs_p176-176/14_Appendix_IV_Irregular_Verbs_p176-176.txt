@@ -1,0 +1,58 @@
+==============================================================================
+SOURCE PDF : 14_Appendix_IV_Irregular_Verbs_p176-176.pdf
+SOURCE PATH: C:\photodentro\antigravity\st_all units\split\14_Appendix_IV_Irregular_Verbs_p176-176.pdf
+GLOBAL PDF PAGES: 176-176
+PAGES IN THIS FILE: 1
+EXTRACTION TOOL: pdftotext version 25.07.0 | mode: -layout -enc UTF-8 (layout-preserving)
+EXTRACTION DATE: 2026-09-19T22:56:05+03:00
+STATS: characters=3677, words~=184
+ENCODING: UTF-8 (Greek + English preserved)
+PAGE SEPARATOR: lines of '=' with per-page header: [unit-relative i/N | global PDF p.G]
+SIBLING FILES: pages/ contains one .txt per page; .bbox.xml has word coordinates
+==============================================================================
+
+
+==============================================================================
+[PAGE 1/1 | GLOBAL PDF p.176 | SOURCE: 14_Appendix_IV_Irregular_Verbs_p176-176.pdf]
+==============================================================================
+              APPENDIX IV
+              Irregular Verbs
+
+                                                      Past                                                    Past
+                  Infinitive     Past Simple                              Infinitive          Past Simple
+                                                    Participle                                              Participle
+                       be         was/were             been                  know                knew        known
+                     begin         began              begun                  lead                 led          led
+                      blow          blew              blown                  learn               learnt       learnt
+                     break          broke             broken                 leave                left         left
+                      bring        brought           brought                 light                 lit          lit
+                       buy         bought             bought                 lose                 lost         lost
+                     catch         caught             caught                 read                read         read
+                    choose          chose             chosen                 ride                rode        ridden
+                     come           came               come                  ring                rang         rung
+                       do            did               done                   run                 ran          run
+                      draw          drew              drawn                   say                said          said
+                      drink         drank             drunk                   see                saw          seen
+                      drive         drove             driven                shake                shook       shaken
+                       eat           ate              eaten                  sing                sang         sung
+                       fall          fell              fallen                 sit                 sat          sat
+                       feel          felt               felt                 smell               smelt        smelt
+                      fight        fought             fought                speak                spoke       spoken
+                           fly      flew               flown                 steal               stole        stolen
+                     forget         forgot           forgotten              stand                stood        stood
+                       get           got                got                  swim               swam          swum
+                      give          gave               given                 take                took         taken
+                           go       went               gone                  teach              taught       taught
+                      grow          grew              grown                 throw                threw       thrown
+                      have          had                had                   wake                woke        woken
+                      hear          heard             heard                  wear                wore         worn
+                      hide           hid              hidden                 write               wrote       written
+
+
+
+                                               Pupil’s Book • APPENDIX IV - Irregular Verbs                            159
+
+
+
+
+10-0147_AGGLIKA.indb 159                                                                                                     1/21/14 10:52 AM
