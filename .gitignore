@@ -5,7 +5,8 @@ node_modules/
 **/scratch/
 **/_scratch/
 **/_to_delete/
-**/.agents/
+unit1/.agents/
+_tools/.agents/
 
 # Backups made by hand before git existed
 *.bak

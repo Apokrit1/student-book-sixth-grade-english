@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#2e1065" />
+    </linearGradient>
+    <linearGradient id="glowWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.2" />
+    </linearGradient>
+    <radialGradient id="fairyAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Night Sky -->
+  <rect width="800" height="500" fill="url(#nightSky)" />
+
+  <!-- Crescent Moon -->
+  <path d="M 680 70 A 45 45 0 1 0 730 140 A 55 55 0 1 1 680 70 Z" fill="#fef08a" opacity="0.85" />
+
+  <!-- Stars & Fairy Dust in Sky -->
+  <g fill="#fef08a" opacity="0.7">
+    <circle cx="120" cy="80" r="2" />
+    <circle cx="240" cy="50" r="1.5" />
+    <circle cx="360" cy="90" r="2.5" />
+    <circle cx="500" cy="60" r="2" />
+    <circle cx="620" cy="110" r="1.5" />
+    <circle cx="750" cy="40" r="2" />
+    <circle cx="180" cy="150" r="1" />
+    <circle cx="440" cy="130" r="2" />
+  </g>
+
+  <!-- Enchanted Ancient Trees (Silhouettes) -->
+  <g fill="#090d16">
+    <!-- Left Ancient Trunk -->
+    <path d="M -20 500 C 40 400 30 250 10 120 C 30 110 80 150 100 200 C 130 160 160 220 180 280 C 140 380 180 440 220 500 Z" />
+    <!-- Tree canopy arches -->
+    <path d="M 0 0 C 120 40 240 20 320 80 C 260 140 140 100 0 160 Z" opacity="0.8" />
+    <!-- Right Ancient Trunk -->
+    <path d="M 820 500 C 760 380 770 240 800 100 C 750 120 720 170 690 230 C 650 300 680 420 640 500 Z" />
+    <path d="M 800 0 C 700 30 580 30 500 90 C 560 130 680 90 800 140 Z" opacity="0.8" />
+  </g>
+
+  <!-- Fairy Forest Floor & Giant Mushrooms -->
+  <path d="M 0 420 Q 200 380 400 400 T 800 410 L 800 500 L 0 500 Z" fill="#1e1b4b" />
+  <path d="M 0 450 Q 250 420 500 440 T 800 440 L 800 500 L 0 500 Z" fill="#0f172a" />
+
+  <!-- Magic Mushrooms -->
+  <g transform="translate(180, 390)">
+    <path d="M 0 60 Q 5 20 10 0 Q 15 20 20 60 Z" fill="#e2e8f0" />
+    <path d="M -15 20 C -15 -10 35 -10 35 20 Z" fill="#ec4899" />
+    <circle cx="2" cy="8" r="3" fill="#ffffff" />
+    <circle cx="18" cy="12" r="2.5" fill="#ffffff" />
+  </g>
+  <g transform="translate(610, 410)">
+    <path d="M 0 50 Q 5 15 8 0 Q 12 15 16 50 Z" fill="#e2e8f0" />
+    <path d="M -10 15 C -10 -5 26 -5 26 15 Z" fill="#a855f7" />
+    <circle cx="3" cy="5" r="2" fill="#ffffff" />
+    <circle cx="15" cy="8" r="2" fill="#ffffff" />
+  </g>
+
+  <!-- Central Floating Sprite / Fairy (Original Art) -->
+  <g transform="translate(380, 210)">
+    <!-- Magic Aura Glow -->
+    <circle cx="20" cy="20" r="70" fill="url(#fairyAura)" />
+    
+    <!-- Wing Pair Left -->
+    <path d="M 12 15 C -30 -30 -60 10 5 25 C -50 40 -30 70 12 30 Z" fill="url(#glowWing)" />
+    <!-- Wing Pair Right -->
+    <path d="M 28 15 C 70 -30 100 10 35 25 C 90 40 70 70 28 30 Z" fill="url(#glowWing)" />
+    
+    <!-- Fairy Silhouette Body -->
+    <path d="M 16 12 C 14 30 12 50 10 70 C 16 68 24 68 30 70 C 28 50 26 30 24 12 Z" fill="#fef08a" />
+    <!-- Fairy Head & Hair -->
+    <circle cx="20" cy="5" r="8" fill="#fef08a" />
+    <path d="M 14 2 Q 8 -10 20 -10 Q 32 -10 26 2 Z" fill="#f59e0b" />
+    
+    <!-- Magic Wand & Star Sparkle -->
+    <line x1="28" y1="25" x2="52" y2="10" stroke="#fef08a" stroke-width="2" />
+    <polygon points="52,5 55,10 60,10 56,14 58,19 53,16 48,19 50,14 46,10 51,10" fill="#facc15" />
+  </g>
+
+  <!-- Title Plate -->
+  <rect x="250" y="440" width="300" height="42" rx="21" fill="#0f172a" opacity="0.85" />
+  <text x="400" y="466" font-family="'Cinzel', 'Segoe UI', serif" font-size="16" font-weight="700" fill="#a78bfa" text-anchor="middle" letter-spacing="1.5">FAIRIES OF FAIRYLAND</text>
+</svg>

@@ -1,0 +1,295 @@
+{
+  "unit_id": 2,
+  "unit_title": "Going Shopping",
+  "cefr_level": "A2 / A2+",
+  "subtitle": "Supermarket quantities, fashion choices, sensory descriptions, and safe online ordering",
+  "stories": [
+    {
+      "id": "ffm_flyer",
+      "title": "A Fresh Food Market Flyer",
+      "student": "The FFM team",
+      "flag": "🛒",
+      "kicker": "Lesson 1 • Reading a supermarket flyer",
+      "summary": "The printed Fresh Food Market flyer, kept word-for-word: the bakery, meat and poultry, and greengrocer paragraphs.",
+      "narrative": "A. At FFM’s (Fresh Food Market), you can find a great selection of delicious and tempting cakes and desserts. Choose from fresh cream cakes and fruit flans to tasty pastries and delicious muffins – many prepared in-store. The boxes of doughnuts include a range of tempting flavours. For any special occasion there’s a great range of celebration cakes too! B. Every FFM has well trained butchers in-store, able to prepare over a hundred cuts of meat like beef and lamb ribs, pork chops and steaks. So whether it’s some mince for a cottage pie or a turkey for a special occasion, our butcher can prepare the cut that’s right for you. C. At FFM’s we carefully select and pack most of the fresh fruit and vegetables. You always find a superb selection of ready prepared salads and pre-washed vegetables. FFM offers a variety of organic products such as eggs, cheese, potatoes, mushrooms, tea bags and muesli that don’t cost the earth. We are always on hand to help you with your selection.",
+      "image": "assets/images_v2/ffm_flyer.svg",
+      "audio_file": "assets/audio_v2/stories/ffm_flyer_full_story.mp3",
+      "landmarks": [
+        { "name": "Bakery counter", "type": "Bakery", "word_key": "pastry", "word_id": 28, "desc": "Fresh cream cakes, fruit flans, tasty pastries, muffins and doughnuts." },
+        { "name": "Meat and poultry", "type": "Food departments", "word_key": "beef", "word_id": 3, "desc": "Butchers prepare cuts like beef, lamb ribs, pork chops and steaks, mince for cottage pie and turkey." },
+        { "name": "Greengrocer", "type": "Fruit and vegetables", "word_key": "organic products", "word_id": 26, "desc": "Fresh fruit, vegetables and organic products such as eggs, cheese, potatoes, mushrooms, tea bags and muesli." }
+      ],
+      "vocabulary_ids": [3, 9, 12, 17, 19, 26, 28, 29, 46]
+    },
+    {
+      "id": "mall_choice",
+      "title": "A Choice at the Department Store",
+      "student": "The shopping team",
+      "flag": "🛍️",
+      "kicker": "Lesson 2 • Describing clothes and choices",
+      "summary": "A short reading profile about choosing a gift at a department store and describing its colour, material and fit.",
+      "narrative": "A girl visits a department store to find a Father’s Day present. The class fashion-show activity asks pupils to walk like fashion models on the catwalk. Its table gives two examples: a cute, pink sweater and smart, dark blue, denim jeans. The official word list spells the sweater material woolen, while the Pupil’s Book table prints woollen. The table also lists the adjectives baggy, tight and loose, the elegant material silk, and items including a skirt, a sweater and a track suit. The material column includes cotton, and one table sentence says, “They match his T-shirt.” Before the listening, pupils look at receipts from different shops and choose one item as a present. The black shirt costs $30.95, and its colour does not suit the girl’s father, so it is too expensive. She chooses the green cotton T-shirt because it feels soft and matches his linen jacket.",
+      "image": "assets/images_v2/mall_choice.svg",
+      "audio_file": "assets/audio_v2/stories/mall_choice_full_story.mp3",
+      "landmarks": [
+        { "name": "Fashion catwalk", "type": "Fashion", "word_key": "catwalk", "word_id": 5, "desc": "The raised path where fashion models show clothes." },
+        { "name": "Cotton T-shirt", "type": "Clothing material", "word_key": "cotton", "word_id": 6, "desc": "A light material used for a soft green T-shirt." },
+        { "name": "Receipt", "type": "Shopping information", "word_key": "receipt", "word_id": 32, "desc": "Before the listening, pupils look at receipts from clothes shops, supermarkets, bookshops and bakeries." },
+        { "name": "Clothing choice", "type": "Description", "word_key": "suit", "word_id": 39, "desc": "The black shirt’s colour does not suit the girl’s father; the green T-shirt matches his jacket." }
+      ],
+      "vocabulary_ids": [1, 5, 6, 7, 10, 13, 18, 21, 22, 32, 34, 35, 36, 39, 40, 42, 44, 48]
+    },
+    {
+      "id": "online_order",
+      "title": "A Safe Toy Order",
+      "student": "The project team",
+      "flag": "💻",
+      "kicker": "Lesson 3 • E-shopping project",
+      "summary": "A short project profile about choosing toys for pupils in Cyprus without submitting a real order.",
+      "narrative": "John and Mary are choosing toys for pupils in Cyprus. They read an online site and write down each item, the unit price, the quantity, the subtotal and the total. A space shuttle toy is only one item in the selection. For extra practice, the teacher can also ask pupils to stay within a budget. They must check the information with a parent and must not send the order. The project helps them organise numbers, compare choices and make a safe decision.",
+      "image": "assets/images_v2/online_order.svg",
+      "audio_file": "assets/audio_v2/stories/online_order_full_story.mp3",
+      "landmarks": [
+        { "name": "Online toy selection", "type": "Shopping website", "word_key": "selection", "word_id": 33, "desc": "The site presents a selection of toys to compare." },
+        { "name": "Space shuttle toy", "type": "Toy", "word_key": "space shuttle", "word_id": 37, "desc": "A toy spacecraft, not a current space programme." },
+        { "name": "Order calculation", "type": "Project maths", "word_key": "subtotal", "word_id": 38, "desc": "The subtotal is calculated before the final total." },
+        { "name": "Budget check", "type": "Decision making", "word_key": "budget", "word_id": 4, "desc": "Budget is extra teacher scaffolding; the printed order form lists item, unit price, quantity, subtotal and total." }
+      ],
+      "vocabulary_ids": [4, 18, 31, 33, 37, 38, 43]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Shopping Grammar Lab: Quantity, Senses, and Adjectives",
+    "theme": "At the supermarket, at the mall, and online",
+    "target_structures": [
+      "Countable and uncountable nouns",
+      "a / an, some, any, how much, how many",
+      "Verbs of the senses: look, feel, taste, smell, sound",
+      "a few / few and a little / little",
+      "Order of adjectives: opinion, colour, material, item",
+      "Order form: unit price × quantity = subtotal"
+    ],
+    "rules": [
+      {
+        "concept": "Countable and uncountable nouns",
+        "usage": "Countable nouns have a singular and plural form. Uncountable nouns have one form and are measured with words such as some, much and a little.",
+        "signal_words": ["a", "an", "some", "many", "much", "a little"],
+        "examples": ["a banana", "an apple", "some bananas", "some milk", "many bananas", "much milk"]
+      },
+      {
+        "concept": "some, any, how much and how many",
+        "usage": "Use some in affirmative sentences. Use any in negative and question sentences. Use how many with plural countable nouns and how much with uncountable nouns.",
+        "signal_words": ["some", "any", "how much", "how many", "not many", "not much"],
+        "examples": ["We have some bread.", "We don't have any bread.", "How many boxes do we need?", "How much milk do we need?"]
+      },
+      {
+        "concept": "Verbs of the senses",
+        "usage": "Use look, feel, taste, smell and sound with like to ask about a thing's appearance, touch, taste, smell or sound.",
+        "signal_words": ["look like", "feel like", "taste like", "smell like", "sound like"],
+        "examples": ["The T-shirt feels soft.", "The cake tastes delicious.", "The honey smells nice.", "The new car looks smart."]
+      },
+      {
+        "concept": "a few / few and a little / little",
+        "usage": "Use a few before plural countable nouns and a little before uncountable nouns when there is enough. Use few or little when there is not enough.",
+        "signal_words": ["a few", "few", "a little", "little"],
+        "examples": ["There are a few biscuits.", "There are few biscuits.", "There is a little milk.", "There is little milk."]
+      },
+      {
+        "concept": "Adjective order",
+        "usage": "In the book pattern, put an opinion word first, then a colour, then a material, and then the item.",
+        "signal_words": ["lovely", "pink", "woollen", "sweater"],
+        "examples": ["a cute pink woollen sweater", "smart dark blue denim jeans"]
+      }
+    ],
+    "practice_items": [
+      { "type": "fill_in", "sentence": "We have ____ milk.", "options": ["some", "a"], "answer": "some", "explanation": "Milk is uncountable, so use some in an affirmative sentence." },
+      { "type": "fill_in", "sentence": "How ____ apples do we need?", "options": ["many", "much"], "answer": "many", "explanation": "Apples are countable, so ask how many." },
+      { "type": "fill_in", "sentence": "There is ____ bread in the bag.", "options": ["a little", "a few"], "answer": "a little", "explanation": "Bread is uncountable, so use a little." },
+      { "type": "fill_in", "sentence": "The green T-shirt ____ soft.", "options": ["feels", "tastes"], "answer": "feels", "explanation": "We use feel for how a thing feels when touched." },
+      { "type": "fill_in", "sentence": "The subtotal is the cost of one line before the ____.", "options": ["total", "item"], "answer": "total", "explanation": "The subtotal comes before the final total." }
+    ],
+    "school_lab_listening": {
+      "title": "At the Supermarket: Strawberries for the Cake",
+      "audio_file": "assets/audio_v2/grammar/supermarket_strawberries.mp3",
+      "dialogue_script": [
+        { "speaker": "Mom", "text": "Look at the strawberries. They are on special offer." },
+        { "speaker": "Mary", "text": "How much money do they cost?" },
+        { "speaker": "Mom", "text": "They are only 90p a box." },
+        { "speaker": "Mary", "text": "That’s a real bargain!! Do we need any strawberries for the cake?" },
+        { "speaker": "Mom", "text": "Yes, we need some." },
+        { "speaker": "Mary", "text": "How many boxes do we need?" },
+        { "speaker": "Mom", "text": "Just one." }
+      ],
+      "true_false_quiz": [
+        { "statement": "The strawberries are for the cake.", "answer": true, "explanation": "Mary asks whether they need strawberries for the cake." },
+        { "statement": "The strawberries cost 90p a box.", "answer": true, "explanation": "Mom says they are only 90p a box." },
+        { "statement": "They need twelve boxes.", "answer": false, "explanation": "Mom says they need just one box." }
+      ],
+      "pupil_projects": [
+        { "pupil": "Mary", "subject": "Shopping", "topic": "Strawberries", "actions": "asks about the price and quantity" },
+        { "pupil": "Mom", "subject": "Shopping", "topic": "A cake", "actions": "explains the special offer" }
+      ],
+      "target_verbs": [
+        { "verb": "cost", "student": "Mom", "action": "gives the price" },
+        { "verb": "need", "student": "Mary and Mom", "action": "talks about the quantity" }
+      ]
+    },
+    "classroom_listening": [
+      {
+        "title": "At the Department Store: A Father's Day Gift",
+        "audio_file": "assets/audio_v2/grammar/department_store.mp3",
+        "dialogue_script": [
+          { "speaker": "Man", "text": "Hi young lady. How may I help you?" },
+          { "speaker": "Girl", "text": "Well... yeah. I’m looking for a Father’s Day gift." },
+          { "speaker": "Man", "text": "OK. How about getting your father a new shirt?" },
+          { "speaker": "Girl", "text": "Hmm. That’s a good idea." },
+          { "speaker": "Man", "text": "What size does he take?" },
+          { "speaker": "Girl", "text": "Well… I’m not sure." },
+          { "speaker": "Man", "text": "What does he look like?" },
+          { "speaker": "Girl", "text": "He’s tall with broad shoulders and hmm…I think he is getting a little overweight now." },
+          { "speaker": "Man", "text": "Extra large, then. Look at this black one. Do you think it fits him?" },
+          { "speaker": "Girl", "text": "That’s all right but the colour doesn’t suit him. He’s rather dark. I think the striped one suits him better. How much is it, anyway?" },
+          { "speaker": "Man", "text": "Oh. It’s only $30.95." },
+          { "speaker": "Girl", "text": "Huh? That’s too expensive for me. Do you have something cheaper?" },
+          { "speaker": "Man", "text": "Hmm. How about this green T-shirt? It’s pure cotton." },
+          { "speaker": "Girl", "text": "Umm...it feels so soft and I think my father likes this design. It matches his linen jacket, but the price tag says $13.99, and I know I don’t have that much money. I only have $12, 00." },
+          { "speaker": "Man", "text": "Well, let me see… You’re lucky. This T-shirt just went on sale. It’s only $11.90. What do you say?" },
+          { "speaker": "Girl", "text": "Oh, thanks. I’ll take it." }
+        ],
+        "true_false_quiz": [
+          { "statement": "The girl is looking for a Father’s Day gift.", "answer": true, "explanation": "She says that she is looking for a Father’s Day gift." },
+          { "statement": "The black shirt costs $30.95.", "answer": true, "explanation": "The man gives the price of the black shirt." },
+          { "statement": "The girl rejects the black shirt because it is too small.", "answer": false, "explanation": "She says the colour does not suit him and the price is too high." },
+          { "statement": "The girl buys the green T-shirt for $11.90.", "answer": true, "explanation": "The T-shirt is on sale for $11.90 and she says she will take it." }
+        ],
+        "pupil_projects": [
+          { "pupil": "Girl", "subject": "Shopping", "topic": "A Father's Day gift", "actions": "compares colour, material and price" },
+          { "pupil": "Man", "subject": "Customer service", "topic": "A shirt and T-shirt", "actions": "asks questions and offers a cheaper choice" }
+        ],
+        "target_verbs": [
+          { "verb": "fit", "student": "Man and Girl", "action": "talks about size" },
+          { "verb": "suit", "student": "Girl", "action": "compares the colour" },
+          { "verb": "match", "student": "Girl", "action": "connects the T-shirt with the jacket" }
+        ]
+      },
+      {
+        "title": "Father's Day Breakfast",
+        "audio_file": "assets/audio_v2/grammar/fathers_day_breakfast.mp3",
+        "dialogue_script": [
+          { "speaker": "Narrator", "text": "It’s Father’s Day today. Mary gets up early. Her parents are still asleep, so Mary makes a very rich breakfast for them. She puts a little peanut butter in a bowl and mixes it with a little honey? Yum, yum! What does it taste like? It tastes delicious! Then she puts a few biscuits and a few muffins on a plate. She pours a little coffee in the cups but she knows that dad would like a little milk, too. He doesn’t like black coffee." },
+        { "speaker": "Mary", "text": "Wake up both of you! Happy Father’s Day!" },
+        { "speaker": "Father", "text": "Sniff, sniff! Mmm! Coffee? It smells nice!" }
+      ],
+      "pupil_projects": [
+        { "pupil": "Mary", "subject": "Breakfast", "topic": "Father's Day", "actions": "prepares a surprise breakfast" }
+      ],
+        "target_verbs": [
+          { "verb": "taste", "student": "Mary", "action": "describes the food" },
+          { "verb": "pour", "student": "Mary", "action": "puts coffee and milk in the cups" }
+        ]
+      }
+    ],
+    "frequency_spectrum": [],
+    "charades_game": {
+      "title": "Shopping Role-Play Cards",
+      "instructions": "One pupil acts as a customer and one as a shopkeeper. Use the quantity and shopping expressions on the card.",
+      "prompts": [
+        { "action": "asking for the price of a box of strawberries", "question": "How much are the strawberries?", "affirmative": "They are 90p a box.", "negative": "They are not 90p a box." },
+        { "action": "asking for three boxes", "question": "How many boxes do you need?", "affirmative": "I need three boxes.", "negative": "I do not need three boxes." },
+        { "action": "choosing a cotton T-shirt", "question": "Do you like the green T-shirt?", "affirmative": "Yes, it feels soft.", "negative": "No, it does not fit." },
+        { "action": "filling in an online order", "question": "What is the subtotal?", "affirmative": "It is on the order form.", "negative": "It is not on the order form." }
+      ]
+    }
+  },
+  "collocations": [
+    { "verb": "look for", "partner": "a new shirt", "example": "The girl looks for a new shirt at the department store." },
+    { "verb": "ask for", "partner": "the price", "example": "Ask for the price before you buy the item." },
+    { "verb": "pay for", "partner": "a box of strawberries", "example": "They ask how much to pay for the strawberries." },
+    { "verb": "choose", "partner": "a green T-shirt", "example": "The girl chooses a green T-shirt for her father." },
+    { "verb": "try on", "partner": "a sweater", "example": "The customer can try on a sweater before buying it." },
+    { "verb": "add to", "partner": "the shopping basket", "example": "Add the milk to the shopping basket." },
+    { "verb": "go with", "partner": "a skirt", "example": "The blue shoes go with a skirt." },
+    { "verb": "calculate", "partner": "the subtotal", "example": "Calculate the subtotal before the total." }
+  ],
+  "definition_challenge": {
+    "title": "Shopping Terms: Guess the Word from its Definition",
+    "note": "All ten answers come from the 48 core vocabulary entries.",
+    "group_a": [
+      { "number": 1, "word": "BAKERY", "clue": "The shop where bread and cakes are made or sold." },
+      { "number": 2, "word": "BUDGET", "clue": "The money available to spend." },
+      { "number": 3, "word": "RECEIPT", "clue": "The paper that shows what you pay." },
+      { "number": 4, "word": "FLYER", "clue": "A printed sheet with pictures and prices for shops." },
+      { "number": 5, "word": "MENU", "clue": "A list of food and prices in a shop or restaurant." }
+    ],
+    "group_b": [
+      { "number": 6, "word": "CATWALK", "clue": "A raised path where people show clothes." },
+      { "number": 7, "word": "SILK", "clue": "A very light material used for clothes." },
+      { "number": 8, "word": "QUANTITY", "clue": "An amount of something." },
+      { "number": 9, "word": "SUBTOTAL", "clue": "The cost of one line before the final amount." },
+      { "number": 10, "word": "TOTAL", "clue": "The final amount to pay." }
+    ]
+  },
+  "content_true_false": [
+    { "fact": "The flyer describes cakes, desserts, meat, poultry, fruit and vegetables.", "answer": true, "explanation": "The flyer introduces the bakery, meat and poultry sections and the greengrocer." },
+    { "fact": "The strawberries cost 90p a box in the listening task.", "answer": true, "explanation": "Mom says the strawberries are only 90p a box." },
+    { "fact": "The girl in the department store buys the black shirt because it is cheap.", "answer": false, "explanation": "The black shirt costs $30.95, and the girl says it is too expensive." },
+    { "fact": "The green T-shirt is made of pure cotton.", "answer": true, "explanation": "The man describes the green T-shirt as pure cotton." },
+    { "fact": "In the online project, pupils should send the real order without a parent.", "answer": false, "explanation": "The project says to check with a parent and not submit the order." },
+    { "fact": "A subtotal is calculated before the final total.", "answer": true, "explanation": "The order form lists the subtotal before the total." },
+    { "fact": "A space shuttle on the toy site means that the current space shuttle programme is still active.", "answer": false, "explanation": "The source uses the space shuttle as a toy image; the last shuttle flight was in 2011." },
+    { "fact": "The project recipients are pupils in Cyprus.", "answer": true, "explanation": "The book project asks pupils to buy presents for a primary school in Cyprus." }
+  ],
+  "report_builder_guide": {
+    "title": "Online Toy Order: Project Workshop",
+    "genre": "Online order and shopping decision",
+    "default_topic": "Toys for pupils in Cyprus",
+    "default_author": "",
+    "project_label": "Project",
+    "paragraphs": [
+      { "number": 1, "heading": "Recipients and purpose", "guiding_questions": "Who will receive the order? Why is the order being planned? Is this a real purchase or a practice task?", "connectors": ["for", "to help", "because", "not a real purchase"], "sample_starter": "This practice order is for pupils in a primary school in Cyprus. It is a school project, so we will not send it." },
+      { "number": 2, "heading": "Choose and describe items", "guiding_questions": "Which items do you choose? What is each item? Which details help another pupil understand it?", "connectors": ["first", "also", "such as", "each"], "sample_starter": "First, we choose a small toy. The toy is light, safe and suitable for the age group." },
+      { "number": 3, "heading": "Unit prices and quantities", "guiding_questions": "What is the unit price? How many items do you need? How do you calculate each subtotal?", "connectors": ["each", "times", "then", "after that"], "sample_starter": "The unit price is written on the order form. We multiply it by the quantity to calculate the subtotal." },
+      { "number": 4, "heading": "Total and safety check", "guiding_questions": "What is the final total? Who should check the order with you? How can you shop safely online?", "connectors": ["in total", "finally", "with a parent", "never"], "sample_starter": "Finally, we add the subtotals to find the total. We check the information with a parent and never send the practice order." }
+    ]
+  },
+  "can_do": {
+    "title": "Unit 2 Can-Do Passport",
+    "statements": [
+      { "id": "reading_flyer", "title": "Flyer Reader", "statement": "I can read a supermarket flyer, a menu, an Internet site and a receipt.", "badge": "📄" },
+      { "id": "talk_prices", "title": "Price Talker", "statement": "I can talk about shopping goods and their prices.", "badge": "💬" },
+      { "id": "write_orders", "title": "Order Writer", "statement": "I can write a shopping list and an online order.", "badge": "✍️" },
+      { "id": "understand_shops", "title": "Shop Listener", "statement": "I can understand people talking in supermarkets and department stores.", "badge": "🎧" }
+    ]
+  },
+  "teacher_notes": [
+    { "id": "u2_e01_pending", "lesson": "Appendix V and Lesson 2 writing", "title": "Pending: pair of snickers", "note": "The source prints “pair of snickers” and “a pair of snickers” in the writing task. The likely intended forms are “pair of sneakers” and “a pair of sneakers”. The app keeps the printed headword, but the app gloss now uses the intended shoe sense instead of the false chocolate-bar reading; full headword replacement still needs teacher approval." },
+    { "id": "u2_e02_pending", "lesson": "Appendix V and Lesson 3", "title": "Pending: unit pice", "note": "The source word list prints “unit pice”, while the order form prints “Unit Price”. The app keeps the printed list form until the teacher approves “unit price”." },
+    { "id": "u2_e03_pending", "lesson": "Appendix V and Lesson 2", "title": "Pending: woolen", "note": "The source word list prints “woolen”; the Pupil’s Book word bank prints “woollen”. The app keeps the list form until the teacher approves the British-English spelling." },
+    { "id": "u2_e04_pending", "lesson": "Lesson 1 shopping list and Workbook", "title": "Pending: a dozen of eggs", "note": "The book prints “a dozen of eggs”. Standard English normally uses “a dozen eggs”. Workbook checks will accept both forms only after the teacher approves this policy." },
+    { "id": "u2_e05_pending", "lesson": "Lesson 1 shopping list", "title": "Pending: cider on a birthday list", "note": "The source lists “20 cans of cider” in a child’s birthday-party list. The app leaves the printed quantity unchanged and does not present alcohol as a treat for pupils." },
+    { "id": "u2_e06_pending", "lesson": "Lesson 2 model poem", "title": "Pending: Off the oven", "note": "The model poem prints “Off the oven”. The likely model is “Out of the oven” or “Fresh from the oven”; the app keeps the printed wording pending teacher approval." },
+    { "id": "u2_assets", "lesson": "Lesson 3", "title": "Missing Internet-site image content", "note": "The extracted source does not contain the toy names, prices or assembly-piece count from the printed website. The project uses a safe, blank order-form model and does not invent those values." },
+    { "id": "u2_space_shuttle", "lesson": "Lesson 3 vocabulary", "title": "Space shuttle is a toy in this unit", "note": "The source uses a space shuttle toy on a website. The app does not present the historical Space Shuttle programme as current; the last shuttle flight was in 2011." },
+    { "id": "u2_fruit_flans", "lesson": "Lesson 1 and Lesson 2", "title": "Visual gloss opportunity", "note": "Fruit flans are an explicit teacher example for a visual gloss. The vocabulary record includes image_prompt, but no picture is shipped until the teacher selects and reviews one." },
+    { "id": "u2_pound", "lesson": "Lesson 1", "title": "Pound as weight and money", "note": "The book places “2 pounds of pork chops” beside “£1 = 100p”. The app teaches pound as a weight and as money without treating the two senses as the same item." },
+    { "id": "u2_a6_key", "lesson": "Workbook A6", "title": "Pending (E7): extracted key repeats d", "note": "The extracted Teacher’s Book key uses d for blanks 2 and 6, while the dialogue structure suggests c for the price question. No key correction is applied." },
+    { "id": "u2_a7_key", "lesson": "Workbook A7", "title": "Pending (E8): key wording mismatch", "note": "The printed e-mail says ‘quite tall’ and ‘dark T-shirts’, while the extracted key says ‘rather tall’ and ‘dark bright T-shirts’. The app follows the printed e-mail and records the mismatch." },
+    { "id": "u2_b1_key", "lesson": "Workbook B1", "title": "Pending (E9): extracted key order", "note": "The extracted key appears to swap the answers for some butter and any milk. The app keeps the book activity and records the contradiction for teacher review." },
+    { "id": "u2_b4_alcohol", "lesson": "Workbook B4", "title": "Pending (E10): beer in a primary exercise", "note": "The printed B4 item uses ‘beer’. The app preserves the exercise and does not recommend it as a pupil shopping example until the teacher decides whether to annotate or replace it." },
+    { "id": "u2_c_source", "lesson": "Workbook C", "title": "Source limitation: Greek sign layout", "note": "The extracted Greek supermarket-sign layout is incomplete. The app uses the Teacher’s Book key meanings, labels the limitation, and does not invent missing sign text." },
+    { "id": "u2_price_punct", "lesson": "Lesson 2 listening script", "title": "Pending (E11): printed $12, 00", "note": "The extracted script prints “$12, 00”. The app keeps that verbatim recording text pending teacher approval; standard price punctuation would be $12.00." }
+  ],
+  "book_checks": [
+    { "title": "Teacher decision pending", "note": "E1-E11 remain pending. The app preserves the printed forms and does not silently correct them." }
+  ],
+  "source_notes": {
+    "syllabus": "unit2/source/01_syllabus.txt",
+    "vocabulary": "unit2/source/02_vocabulary_list.txt",
+    "grammar": "unit2/source/13_SB_grammar_file.txt",
+    "workbook": "unit2/source/20_WB_unit.txt",
+    "teacher_book": "unit2/source/30_TB_unit.txt"
+  },
+  "supporting_lexis": [
+    "a can", "a tin", "a box", "a packet", "a bar", "a bottle", "a jar", "a carton", "a kilo of", "a pound of", "how much", "how many", "it fits", "it suits", "it matches", "it goes with"
+  ]
+}

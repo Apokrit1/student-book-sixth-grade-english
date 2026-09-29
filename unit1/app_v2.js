@@ -287,6 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="dossier-meta-badge">Capital: <strong>${story.capital}</strong></span>
             <span class="dossier-meta-badge">Hometown: <strong>${story.hometown}</strong></span>
             <span class="dossier-meta-badge">Nationality: <strong>${story.nationality}</strong></span>
+            ${story.voice_description ? `<span class="dossier-meta-badge" title="Character Voice: ${story.voice}">🎙️ Voice: <strong>${story.voice_description}</strong></span>` : ''}
           </div>
 
           <p class="dossier-summary">${story.summary}</p>

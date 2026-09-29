@@ -1,0 +1,38 @@
+{
+  "title": "A Play: The Fifty-Cent Piece",
+  "voice_map": {
+    "Narrator": "en-GB-SoniaNeural",
+    "Wife": "en-GB-LibbyNeural",
+    "Husband": "en-GB-RyanNeural",
+    "Old Man": "en-GB-ThomasNeural",
+    "Old Woman": "en-GB-SoniaNeural",
+    "Owner": "en-GB-RyanNeural"
+  },
+  "dialogue_script": [
+    { "speaker": "Narrator", "text": "The story is about a couple from New York who are returning home from a trip to New England. They are driving in a horse carriage, and are somewhere near Spiegletown when it starts getting dark and they have to seek shelter for the night." },
+    { "speaker": "Wife", "text": "George, I’m so tired that I can’t stay up longer. I want to lie down immediately." },
+    { "speaker": "Husband", "text": "Can you see that light through the trees? It must be a house. Let’s ride our horse quickly there." },
+    { "speaker": "Wife", "text": "Yes. Let’s do that. The night is as dark as hell! I’m scared." },
+    { "speaker": "Narrator", "text": "Soon, they reach a little house, and standing at the door, there is an old man and his wife smiling pleasantly." },
+    { "speaker": "Wife", "text": "Look at those people at the door. They are dressed in nightclothes. Do you think they can give us a room for the night?" },
+    { "speaker": "Husband", "text": "Let’s ask. Good evening! Sorry for disturbing you so late. It seems that you are about to turn in. Do you think we could spend the night here? We are travelling as far as New York but it’s already dark." },
+    { "speaker": "Old Man", "text": "We are about to turn in, but please, welcome! You look so exhausted. Our house is not as luxurious as a hotel but it’s cosy." },
+    { "speaker": "Old Woman", "text": "Please, have a cup of hot tea and some cakes. They are freshly baked." },
+    { "speaker": "Wife", "text": "Thank you! Really, I haven’t tasted cakes as delicious as these before!" },
+    { "speaker": "Husband", "text": "Please, allow me to pay you for the room and the food you are giving us." },
+    { "speaker": "Old Man", "text": "Oh, no! We could never accept money for a service as small as this! We consider you as our guests." },
+    { "speaker": "Narrator", "text": "The next morning, the travellers wake up early and get ready to leave the house quietly." },
+    { "speaker": "Wife", "text": "The bed is so comfortable that I can’t get out of it." },
+    { "speaker": "Husband", "text": "Very few people are as helpful as this couple. We can’t go without leaving them some money. Here, a fifty-cent coin! I’ll put it in the centre of the kitchen table. They can’t miss it." },
+    { "speaker": "Narrator", "text": "They get into their carriage and they go a few miles. They stop for a rest at a little restaurant in Spiegletown. The husband talks about the nice old couple to the owner of the restaurant." },
+    { "speaker": "Owner", "text": "Where do you say that house is?" },
+    { "speaker": "Husband", "text": "On the hill, just outside Spiegletown." },
+    { "speaker": "Owner", "text": "You must be mistaken. That house was on fire. It killed the Brown family three years ago!" },
+    { "speaker": "Husband", "text": "I don’t believe it! Mr. and Mrs. Brown are as alive as you and me." },
+    { "speaker": "Owner", "text": "Let’s drive back there quickly." },
+    { "speaker": "Narrator", "text": "There they find a burned out shell of a house. It is obvious that nobody can live in that place." },
+    { "speaker": "Husband", "text": "What’s that? That place can’t be the same! I must have missed the track." },
+    { "speaker": "Wife", "text": "Look! Look on the kitchen table!" },
+    { "speaker": "Narrator", "text": "The husband looks into the ruins and there he sees a burnt table with a shiny fifty-cent piece lying in the centre." }
+  ]
+}

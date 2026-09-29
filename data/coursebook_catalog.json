@@ -29,7 +29,7 @@
       "unit": 2,
       "title": "Going Shopping",
       "slug": "unit2",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Supermarkets, malls, canteen menus, expressing quantity, and e-shopping",
       "theme": "Consumer Education, Health Education, Decision Making",
       "grammar": "Countable/Uncountable Nouns, a/an, Some/Any, How much/many, Verbs of the Senses, a little/a few, Order of Adjectives",
@@ -38,14 +38,16 @@
         "Health Education",
         "Computer Science"
       ],
-      "badge": "Next in Pipeline",
+      "v1_url": "unit2/index.html",
+      "v2_url": "unit2/v2.html",
+      "badge": "Flagship v2 Ready",
       "accent_color": "#319795"
     },
     {
       "unit": 3,
       "title": "Imaginary Creatures",
       "slug": "unit3",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Fairy tale heroes, monsters, Shakespeare's Midsummer Night's Dream, personality traits",
       "theme": "Mythology, Literature, Theatre Education, Self-Awareness",
       "grammar": "Comparison of Adjectives & Adverbs, Opposites with Suffixes",
@@ -54,7 +56,9 @@
         "Theatre",
         "Art"
       ],
-      "badge": "Planned",
+      "v1_url": "unit3/index.html",
+      "v2_url": "unit3/v2.html",
+      "badge": "Flagship v2 Ready",
       "accent_color": "#805ad5"
     },
     {

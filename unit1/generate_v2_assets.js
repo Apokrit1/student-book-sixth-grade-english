@@ -4,7 +4,14 @@ const { EdgeTTS } = require('node-edge-tts');
 
 const v2Data = JSON.parse(fs.readFileSync(path.join('data', 'unit1_v2_data.json'), 'utf-8'));
 
-const VOICE_NAME = 'en-GB-SoniaNeural';
+const DEFAULT_VOICE = 'en-GB-SoniaNeural';
+
+const CHARACTER_VOICES = {
+  ukraine: 'en-GB-MaisieNeural', // Sasha: female student voice
+  albania: 'en-GB-LibbyNeural',   // Christina: distinct female student voice
+  georgia: 'en-US-EricNeural',    // Georgi: authentic young male (boy) voice
+  uk: 'en-GB-SoniaNeural'         // Gwen: female voice
+};
 
 // Target directories
 const audioStoriesDir = path.join('assets', 'audio_v2', 'stories');
@@ -19,23 +26,32 @@ async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function synthesizeFile(text, targetPath, maxRetries = 3) {
+async function synthesizeFile(text, targetPath, voice = DEFAULT_VOICE, maxRetries = 3) {
+  const sidecarPath = targetPath.replace(/\.mp3$/i, '.txt');
+  const cleanText = (text || '').trim();
+
   if (fs.existsSync(targetPath) && fs.statSync(targetPath).size > 1000) {
-    console.log(`[EXISTS] ${targetPath}`);
-    return true;
+    if (fs.existsSync(sidecarPath)) {
+      const existingText = fs.readFileSync(sidecarPath, 'utf-8').trim();
+      if (existingText === cleanText) {
+        console.log(`[EXISTS & MATCHES] ${targetPath} (${voice})`);
+        return true;
+      }
+    }
   }
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      const tts = new EdgeTTS({ voice: VOICE_NAME, timeout: 20000 });
-      await tts.ttsPromise(text, targetPath);
+      const tts = new EdgeTTS({ voice, timeout: 35000 });
+      await tts.ttsPromise(cleanText, targetPath);
       await sleep(150);
       if (fs.existsSync(targetPath) && fs.statSync(targetPath).size > 1000) {
-        console.log(`[GENERATED] ${targetPath} (${fs.statSync(targetPath).size} bytes)`);
+        fs.writeFileSync(sidecarPath, cleanText, 'utf-8');
+        console.log(`[GENERATED] ${targetPath} (${fs.statSync(targetPath).size} bytes) [${voice}]`);
         return true;
       }
     } catch (err) {
-      console.warn(`[Attempt ${attempt}] Failed ${targetPath}: ${err.message || err}`);
+      console.warn(`[Attempt ${attempt}] Failed ${targetPath} with ${voice}: ${err.message || err}`);
       await sleep(600 * attempt);
     }
   }
@@ -127,12 +143,13 @@ function generateSvgVisuals() {
 
 // 2. Synthesize Story Audio Narrations
 async function generateAudio() {
-  console.log('\nSynthesizing neural voice narrations for Newcomer Country Stories...');
+  console.log('\nSynthesizing neural voice narrations for Newcomer Country Stories with character-specific voices...');
   
   for (const story of v2Data.stories) {
     const targetFile = path.join(audioStoriesDir, `${story.id}_full_story.mp3`);
-    console.log(`Synthesizing story: ${story.student} (${story.country})...`);
-    await synthesizeFile(story.narrative, targetFile);
+    const voice = story.voice || CHARACTER_VOICES[story.id] || DEFAULT_VOICE;
+    console.log(`Synthesizing story: ${story.student} (${story.country}) with voice ${voice}...`);
+    await synthesizeFile(story.narrative, targetFile, voice);
   }
 
   console.log('\nSynthesizing Grammar Lab audio prompts...');

@@ -12,7 +12,7 @@ All four newcomer narratives have been reverted to 100% exact printed textbook t
 - **Georgi (Georgia)**: Restored verbatim ("Colchis", "Golden Fleece", "West Asia", "Pontus Euxinos", "copper and coal mines", "T’blisi").
 - **Gwen (UK)**: Restored verbatim ("ten years old", "Channel Tunnel connects Great Britain to France in the South").
 
-Audio narrations for all 4 stories were re-synthesized using Microsoft Edge Neural voice (`en-GB-SoniaNeural`) to match the exact coursebook wording.
+Audio narrations for all 4 stories were re-synthesized using differentiated Microsoft Edge Neural voices to give each child an authentic, distinct voice (two female voices for Sasha and Christina, a young male voice for Georgi, and Gwen retaining Sonia) matching the exact coursebook wording.
 
 ## Deliberate departures / pedagogical adaptations
 
@@ -376,6 +376,43 @@ Following `visual_glossary.md` and the updated Second Pass brief, freely license
 - `node verify_offline.js`: **100% passed** (0 external runtime network dependencies; exact prefix regex for creativecommons.org).
 - `node ../.agents/skills/coursebook-unit-extender/templates/test_unit.template.js 1`: **186 passed, 0 failed**.
 - `python ../_tools/check_definitions.py unit1`: **35/35 clean, 0 hard words (exit 0)**.
+
+## Newcomer Character Voice Differentiation (24 Sep 2026)
+
+### 1. Pedagogical Motivation & Requirement
+In Unit 1 Lesson 1 (*"Our Multicultural Class"*), the children introducing their homelands previously all shared a single neural voice (`en-GB-SoniaNeural`). During classroom testing with 6th-grade pupils, listening to three newcomer children from different countries (Sasha from Ukraine, Christina from Albania, Georgi from Georgia) and local host Gwen in the exact same mature female voice reduced character distinction and immersion. In particular, Georgi (a young schoolboy) was voiced by an adult female.
+
+The requirement was to provide differentiated voices:
+- **Two distinct female voices** for Sasha and Christina.
+- **An authentic young male voice** for Georgi.
+- Dedicated voice metadata and tests ensuring 100% offline playback with exact sidecar matching.
+
+### 2. Character Voice Mapping
+
+| Character | Country | Role / Age | Assigned Voice | Characteristics | Audio File |
+|---|---|---|---|---|---|
+| **Sasha** | Ukraine 🇺🇦 | Female pupil | `en-GB-MaisieNeural` | Bright, lively British schoolgirl voice | `assets/audio_v2/stories/ukraine_full_story.mp3` (371 KB) |
+| **Christina** | Albania 🇦🇱 | Female pupil | `en-GB-LibbyNeural` | Clear, youthful British female voice (distinct from Maisie) | `assets/audio_v2/stories/albania_full_story.mp3` (343 KB) |
+| **Georgi** | Georgia 🇬🇪 | Male pupil | `en-US-EricNeural` | Authentic young male (boy) voice; replaces adult voice | `assets/audio_v2/stories/georgia_full_story.mp3` (251 KB) |
+| **Gwen** | UK 🇬🇧 | Host pupil (Oxford) | `en-GB-SoniaNeural` | Warm, expressive British female narrator voice | `assets/audio_v2/stories/uk_full_story.mp3` (408 KB) |
+
+### 3. Implementation Details
+1. **Data Schemas & Twins:**
+   - Updated `data/unit1_v2_data.json` with `voice` and `voice_description` fields for each story entry.
+   - Synchronized twin file `data/unit1_v2_data.js` via `node ../.agents/skills/coursebook-unit-extender/scripts/sync_data_twins.js data/unit1_v2_data.json`.
+2. **Audio Synthesis Pipeline:**
+   - Re-synthesized all 4 story MP3s using Edge TTS neural models matching the exact verbatim textbook text.
+   - Maintained matching `.txt` sidecars alongside every audio file in `assets/audio_v2/stories/`.
+   - Updated `generate_v2_assets.js` with `CHARACTER_VOICES` mapping so that running the asset generator preserves and re-synthesizes each character's assigned voice and updates `.txt` sidecars.
+3. **User Interface (Dossier Profiles):**
+   - Updated `app_v2.js` to render a dedicated voice badge (`🎙️ Voice: [Voice Name]`) in the newcomer dossier header meta-tags, letting teachers and pupils visually identify who is speaking.
+4. **Test Suite Verification:**
+   - Added `Section N: Newcomer Character Story Voices` to `unit1/test_v2.js`, asserting:
+     - Voice assignments for Sasha (`en-GB-MaisieNeural`), Christina (`en-GB-LibbyNeural`), Georgi (`en-US-EricNeural`), and Gwen (`en-GB-SoniaNeural`).
+     - Distinctness assertion (all 4 voices are distinct; Sasha ≠ Christina; Georgi is young male).
+     - File existence, size (> 100 KB), and verbatim `.txt` sidecar text equivalence.
+   - Test results: `node test_v2.js` passed **265 assertions, 0 failed**.
+
 
 
 

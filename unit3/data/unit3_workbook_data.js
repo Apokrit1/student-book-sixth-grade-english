@@ -1,0 +1,933 @@
+window.UNIT3_WORKBOOK_DATA = {
+  "unit": 3,
+  "title": "Unit 3 Workbook: Imaginary Creatures",
+  "source_book": "10-0148-02_V2_Agglika_ST-Dimotikou_Tetradio-Ergasion.pdf",
+  "teacher_key_source": "unit3/source/30_TB_unit.txt",
+  "total_activities": 20,
+  "activities": [
+    {
+      "id": "a1",
+      "number": "A1",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 1. Monster Adjectives Lists",
+      "page": 17,
+      "type": "semi-open",
+      "instruction": "Put the following monster adjectives into 3 lists: SIZE, CHARACTER, and APPEARANCE.",
+      "word_bank": [
+        "vicious",
+        "large",
+        "disgusting",
+        "savage",
+        "fierce",
+        "unattractive",
+        "delicate",
+        "dangerous",
+        "tiny",
+        "friendly",
+        "good-hearted",
+        "smart",
+        "frightening",
+        "funny",
+        "monstrous",
+        "mysterious",
+        "naughty",
+        "ugly",
+        "huge",
+        "delightful",
+        "cunning",
+        "oversized",
+        "horrible",
+        "unpredictable",
+        "supernatural",
+        "hideous",
+        "playful"
+      ],
+      "model_answers": [
+        "SIZE: large, tiny, huge, oversized",
+        "APPEARANCE: disgusting, unattractive, frightening, monstrous, ugly, horrible, supernatural, hideous, delicate, delightful, mysterious",
+        "CHARACTER: vicious, savage, fierce, dangerous, friendly, good-hearted, smart, funny, naughty, cunning, unpredictable, playful"
+      ]
+    },
+    {
+      "id": "a2",
+      "number": "A2",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 2. Match the Opposites",
+      "page": 17,
+      "type": "closed",
+      "instruction": "Match each adjective in column A with its opposite in column B.",
+      "pairs": [
+        {
+          "left": "huge",
+          "right": "tiny"
+        },
+        {
+          "left": "horrible",
+          "right": "lovely"
+        },
+        {
+          "left": "vicious",
+          "right": "good-hearted"
+        },
+        {
+          "left": "naughty",
+          "right": "good"
+        },
+        {
+          "left": "playful",
+          "right": "serious"
+        }
+      ]
+    },
+    {
+      "id": "a3",
+      "number": "A3",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 3. Opposites with Prefixes (un- / in-)",
+      "page": 17,
+      "type": "closed",
+      "instruction": "Give the opposites by adding the negative prefix un- or in-.",
+      "gaps": [
+        {
+          "id": "a3_1",
+          "prefix": "attractive ➔",
+          "accepted": [
+            "unattractive"
+          ],
+          "suffix": "(example)"
+        },
+        {
+          "id": "a3_2",
+          "prefix": "friendly ➔",
+          "accepted": [
+            "unfriendly"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "a3_3",
+          "prefix": "active ➔",
+          "accepted": [
+            "inactive"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "a3_4",
+          "prefix": "happy ➔",
+          "accepted": [
+            "unhappy"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "a3_5",
+          "prefix": "expensive ➔",
+          "accepted": [
+            "inexpensive"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "a3_6",
+          "prefix": "kind ➔",
+          "accepted": [
+            "unkind"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "a3_7",
+          "prefix": "predictable ➔",
+          "accepted": [
+            "unpredictable"
+          ],
+          "suffix": ""
+        }
+      ]
+    },
+    {
+      "id": "a4",
+      "number": "A4",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 4. Match Synonyms and Meanings",
+      "page": 18,
+      "type": "closed",
+      "instruction": "Match the words or expressions in column A with their synonyms or meanings in column B.",
+      "pairs": [
+        {
+          "left": "sleep",
+          "right": "turn in"
+        },
+        {
+          "left": "very tired",
+          "right": "exhausted"
+        },
+        {
+          "left": "warm and comfortable",
+          "right": "cosy"
+        },
+        {
+          "left": "track",
+          "right": "path"
+        },
+        {
+          "left": "ruins",
+          "right": "remains"
+        },
+        {
+          "left": "I am scared",
+          "right": "I am afraid"
+        }
+      ]
+    },
+    {
+      "id": "a5",
+      "number": "A5",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 5. Complete the Dialogue: The Fifty-Cent Piece",
+      "page": 18,
+      "type": "closed",
+      "instruction": "Complete the dialogue with sentences a-d.",
+      "items": [
+        {
+          "speaker": "Traveller",
+          "prompt": "Can we spend the night with you here? (1) We feel so tired!",
+          "key_answer": "c. We are travelling as far as New York but it’s already dark.",
+          "options": [
+            "a. We could never accept money for a service as small as this.",
+            "b. You look so exhausted!",
+            "c. We are travelling as far as New York but it’s already dark.",
+            "d. They are freshly baked."
+          ]
+        },
+        {
+          "speaker": "Old Lady",
+          "prompt": "We are about to turn in, but please, welcome! (2) Our house is not as luxurious as a hotel but it’s cosy!",
+          "key_answer": "b. You look so exhausted!",
+          "options": [
+            "a. We could never accept money for a service as small as this.",
+            "b. You look so exhausted!",
+            "c. We are travelling as far as New York but it’s already dark.",
+            "d. They are freshly baked."
+          ]
+        },
+        {
+          "speaker": "Old Lady",
+          "prompt": "Please, have a cup of hot tea and some cakes. (3) — Thank you. I haven’t tasted cakes as delicious as these before!",
+          "key_answer": "d. They are freshly baked.",
+          "options": [
+            "a. We could never accept money for a service as small as this.",
+            "b. You look so exhausted!",
+            "c. We are travelling as far as New York but it’s already dark.",
+            "d. They are freshly baked."
+          ]
+        },
+        {
+          "speaker": "Old Man",
+          "prompt": "Please allow me to pay for the room and food. — Oh, no! (4). We consider you as our guests.",
+          "key_answer": "a. We could never accept money for a service as small as this.",
+          "options": [
+            "a. We could never accept money for a service as small as this.",
+            "b. You look so exhausted!",
+            "c. We are travelling as far as New York but it’s already dark.",
+            "d. They are freshly baked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a6",
+      "number": "A6",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 6. Mythological Creatures Identification",
+      "page": 19,
+      "type": "closed",
+      "instruction": "Match each description text with the correct mythological creature.",
+      "pairs": [
+        {
+          "left": "Half man and half horse, lives in mountains, follows Dionysus",
+          "right": "Centaurs"
+        },
+        {
+          "left": "Hair is a mass of serpents, turns people to stone from horrible fear",
+          "right": "Medusa"
+        },
+        {
+          "left": "Head of a bull and body of a man, lives in the labyrinth",
+          "right": "Minotaur"
+        },
+        {
+          "left": "Face of a woman, chest and feet of a lion, asks a deadly riddle",
+          "right": "Sphinx"
+        }
+      ]
+    },
+    {
+      "id": "a7",
+      "number": "A7",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 7. Describe Your Favourite Comic Hero",
+      "page": 19,
+      "type": "open",
+      "instruction": "Describe your favourite comic hero using as many adjectives as you can. What does he/she look like? What is he/she like?",
+      "sentence_starters": [
+        "My favourite comic hero is...",
+        "He / She looks...",
+        "He / She has got...",
+        "He / She is very...",
+        "Unlike other heroes, he / she is..."
+      ],
+      "word_bank": [
+        "strong",
+        "brave",
+        "smart",
+        "cunning",
+        "friendly",
+        "powerful",
+        "fearless",
+        "agile",
+        "good-hearted"
+      ],
+      "checklist": [
+        {
+          "label": "Named your favourite comic hero"
+        },
+        {
+          "label": "Described physical appearance (looks, face, clothes)"
+        },
+        {
+          "label": "Described personality traits using adjectives"
+        },
+        {
+          "label": "Used comparative adjectives or opposite prefixes (un-, in-)"
+        }
+      ],
+      "model_text": "My favourite comic hero is Asterix. He is small and energetic, with blond hair and a large moustache. He is not as big as Obelix, but he is much smarter and more cunning. He is very brave, friendly, and good-hearted when he protects his village."
+    },
+    {
+      "id": "b1",
+      "number": "B1",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 1. Comparisons with than",
+      "page": 20,
+      "type": "closed",
+      "instruction": "Compare the pictures using the comparative form of the adjective in brackets and 'than'.",
+      "gaps": [
+        {
+          "id": "b1_1",
+          "prefix": "An aeroplane is",
+          "accepted": [
+            "faster than a train",
+            "faster than"
+          ],
+          "suffix": "a train. (fast)"
+        },
+        {
+          "id": "b1_2",
+          "prefix": "Cinderella's dress is",
+          "accepted": [
+            "more beautiful than her skirt",
+            "more beautiful than"
+          ],
+          "suffix": "her skirt. (beautiful)"
+        },
+        {
+          "id": "b1_3",
+          "prefix": "Polyphemus is",
+          "accepted": [
+            "heavier than Shrek",
+            "heavier than"
+          ],
+          "suffix": "Shrek. (heavy)"
+        },
+        {
+          "id": "b1_4",
+          "prefix": "Shrek is",
+          "accepted": [
+            "uglier than his princess",
+            "uglier than"
+          ],
+          "suffix": "his princess. (ugly)"
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "number": "B2",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 2. Geographical Comparisons",
+      "page": 20,
+      "type": "closed",
+      "instruction": "Complete the sentences with the comparative form of the adjectives in brackets.",
+      "gaps": [
+        {
+          "id": "b2_1",
+          "prefix": "The Amazon River",
+          "accepted": [
+            "is longer than the Mississippi River",
+            "is longer than the Mississippi",
+            "is longer than"
+          ],
+          "suffix": "(long)"
+        },
+        {
+          "id": "b2_2",
+          "prefix": "India",
+          "accepted": [
+            "is more populated than Saudi Arabia",
+            "is more populated than"
+          ],
+          "suffix": "(populated)"
+        },
+        {
+          "id": "b2_3",
+          "prefix": "New York",
+          "accepted": [
+            "is larger than Los Angeles",
+            "is larger than"
+          ],
+          "suffix": "(large)"
+        },
+        {
+          "id": "b2_4",
+          "prefix": "Antarctica",
+          "accepted": [
+            "is colder than Canada",
+            "is colder than"
+          ],
+          "suffix": "(cold)"
+        },
+        {
+          "id": "b2_5",
+          "prefix": "Mount Everest",
+          "accepted": [
+            "is higher than Mount Kilimanjaro",
+            "is higher than"
+          ],
+          "suffix": "(high)"
+        },
+        {
+          "id": "b2_6",
+          "prefix": "Lake Baikal",
+          "accepted": [
+            "is deeper than the Caspian Sea",
+            "is deeper than"
+          ],
+          "suffix": "(deep)"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "number": "B3",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 3. Superlative World Records",
+      "page": 21,
+      "type": "closed",
+      "instruction": "Complete the sentences with the superlative form of the adjectives in brackets.",
+      "gaps": [
+        {
+          "id": "b3_1",
+          "prefix": "Asia is the",
+          "accepted": [
+            "largest"
+          ],
+          "suffix": "continent in the world. (large - 44,579,000 sq km)"
+        },
+        {
+          "id": "b3_2",
+          "prefix": "Africa is the continent with the",
+          "accepted": [
+            "most"
+          ],
+          "suffix": "countries. (many - 53)"
+        },
+        {
+          "id": "b3_3",
+          "prefix": "The Pacific Ocean is the",
+          "accepted": [
+            "deepest"
+          ],
+          "suffix": "ocean on Earth. (deep - 10,924 m)"
+        },
+        {
+          "id": "b3_4",
+          "prefix": "The Vatican is the",
+          "accepted": [
+            "smallest"
+          ],
+          "suffix": "country in the world. (small - 0.44 sq km)"
+        },
+        {
+          "id": "b3_5",
+          "prefix": "Luxembourg is the",
+          "accepted": [
+            "richest"
+          ],
+          "suffix": "country in the world. (rich - GNP $45,360)"
+        },
+        {
+          "id": "b3_6",
+          "prefix": "Mozambique is the",
+          "accepted": [
+            "poorest"
+          ],
+          "suffix": "country in the world. (poor - GNP $80)"
+        },
+        {
+          "id": "b3_7",
+          "prefix": "The Nile is the",
+          "accepted": [
+            "longest"
+          ],
+          "suffix": "river on Earth. (long - 6,825 km)"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "number": "B4",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 4. Facts About Athens",
+      "page": 21,
+      "type": "closed",
+      "instruction": "Fill in the correct comparative or superlative form of the adjectives.",
+      "gaps": [
+        {
+          "id": "b4_1",
+          "prefix": "Athens is the",
+          "accepted": [
+            "largest"
+          ],
+          "suffix": "city in Greece. (large)"
+        },
+        {
+          "id": "b4_2",
+          "prefix": "No other Greek city has as",
+          "accepted": [
+            "many"
+          ],
+          "suffix": "inhabitants as Athens. (many)"
+        },
+        {
+          "id": "b4_3",
+          "prefix": "The Athens underground is the",
+          "accepted": [
+            "newest"
+          ],
+          "suffix": "underground in Europe. (new)"
+        },
+        {
+          "id": "b4_4",
+          "prefix": "The Athens Acropolis is one of the",
+          "accepted": [
+            "most famous"
+          ],
+          "suffix": "sights worldwide. (famous)"
+        },
+        {
+          "id": "b4_5",
+          "prefix": "Athens is one of the",
+          "accepted": [
+            "oldest"
+          ],
+          "suffix": "cities in the world. (old)"
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "number": "B5",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 5. Comparing Houses (The Bell House vs Luis Place)",
+      "page": 21,
+      "type": "semi-open",
+      "instruction": "Look at the information about the two houses and write sentences using 'than' and 'as... as'.",
+      "model_answers": [
+        "The Bell House is bigger than Luis Place.",
+        "Luis Place is older than The Bell House.",
+        "The Bell House is more expensive than Luis Place.",
+        "Luis Place is not as expensive as The Bell House.",
+        "The Bell House has got as many bathrooms as Luis Place."
+      ]
+    },
+    {
+      "id": "b6",
+      "number": "B6",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 6. Comparative & Superlative of Adverbs",
+      "page": 22,
+      "type": "closed",
+      "instruction": "Complete the sentences with the comparative or superlative form of the adverbs in brackets.",
+      "gaps": [
+        {
+          "id": "b6_1",
+          "prefix": "The lorry driver drives",
+          "accepted": [
+            "more carefully"
+          ],
+          "suffix": "than the taxi driver. (carefully)"
+        },
+        {
+          "id": "b6_2",
+          "prefix": "Sophia sings",
+          "accepted": [
+            "the most beautifully",
+            "most beautifully"
+          ],
+          "suffix": "of all. (beautifully)"
+        },
+        {
+          "id": "b6_3",
+          "prefix": "Peter works",
+          "accepted": [
+            "harder"
+          ],
+          "suffix": "than Jerry. (hard)"
+        },
+        {
+          "id": "b6_4",
+          "prefix": "Aeroplanes travel",
+          "accepted": [
+            "the fastest",
+            "fastest"
+          ],
+          "suffix": "of all travel means. (fast)"
+        },
+        {
+          "id": "b6_5",
+          "prefix": "Helen dances",
+          "accepted": [
+            "worse"
+          ],
+          "suffix": "than Sonia. (bad)"
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "number": "B7",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 7. Sentence Transformations",
+      "page": 22,
+      "type": "closed",
+      "instruction": "Re-write the sentences using the prompt word in brackets.",
+      "gaps": [
+        {
+          "id": "b7_1",
+          "prefix": "Markos is 11. Dimitris is 11. ➔ Markos is",
+          "accepted": [
+            "as old as Dimitris",
+            "as young as Dimitris"
+          ],
+          "suffix": "(AS)"
+        },
+        {
+          "id": "b7_2",
+          "prefix": "Georgia sings beautifully. Martha sings more beautifully than any girl. ➔ Martha sings",
+          "accepted": [
+            "the most beautifully of all",
+            "most beautifully of all"
+          ],
+          "suffix": "(OF)"
+        },
+        {
+          "id": "b7_3",
+          "prefix": "Jim has 7 euros. Terry has 9 euros. ➔ Terry has got",
+          "accepted": [
+            "more money than Jim"
+          ],
+          "suffix": "(MORE)"
+        },
+        {
+          "id": "b7_4",
+          "prefix": "Alan works 3 hours. Ted works 4 hours. ➔ Ted works",
+          "accepted": [
+            "harder than Alan"
+          ],
+          "suffix": "(HARDER)"
+        },
+        {
+          "id": "b7_5",
+          "prefix": "Beaches on this island are clean. This beach is cleaner than all others. ➔ This beach is",
+          "accepted": [
+            "the cleanest of the island",
+            "the cleanest on the island"
+          ],
+          "suffix": "(THE)"
+        }
+      ]
+    },
+    {
+      "id": "b8",
+      "number": "B8",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 8. Monster Comparison with as... as",
+      "page": 22,
+      "type": "semi-open",
+      "instruction": "Look at the data for Monster A (age 78, 130 kg, 2 ft) and Monster B (age 75, 235 kg, 4 ft) and write 3 sentences using 'as ... as'.",
+      "model_answers": [
+        "Monster B is not as old as Monster A.",
+        "Monster A is not as heavy as Monster B.",
+        "Monster A is not as tall as Monster B."
+      ]
+    },
+    {
+      "id": "b9",
+      "number": "B9",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 9. Adjective or Adverb Error Hunt",
+      "page": 23,
+      "type": "closed",
+      "instruction": "Read the sentences and type the correct word for each item (or write 'correct' if no change is needed).",
+      "gaps": [
+        {
+          "id": "b9_1",
+          "prefix": "Come quick or we will miss the bus. ➔",
+          "accepted": [
+            "quickly"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "b9_2",
+          "prefix": "You are driving so dangerous that I am afraid... ➔",
+          "accepted": [
+            "dangerously"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "b9_3",
+          "prefix": "Susan works harder than John. ➔",
+          "accepted": [
+            "harder",
+            "correct"
+          ],
+          "suffix": "(correct)"
+        },
+        {
+          "id": "b9_4",
+          "prefix": "Roses smell very sweet. ➔",
+          "accepted": [
+            "sweet",
+            "correct"
+          ],
+          "suffix": "(correct)"
+        },
+        {
+          "id": "b9_5",
+          "prefix": "You look angrily. Why? ➔",
+          "accepted": [
+            "angry"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "b9_6",
+          "prefix": "She dances very good. ➔",
+          "accepted": [
+            "well"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "b9_7",
+          "prefix": "Which is worst, a toothache or a headache? ➔",
+          "accepted": [
+            "worse"
+          ],
+          "suffix": ""
+        },
+        {
+          "id": "b9_8",
+          "prefix": "That is the worst thing that could happen to me. ➔",
+          "accepted": [
+            "worst",
+            "correct"
+          ],
+          "suffix": "(correct)"
+        },
+        {
+          "id": "b9_9",
+          "prefix": "My mother drinks the least beer in the family. ➔",
+          "accepted": [
+            "least",
+            "correct"
+          ],
+          "suffix": "(correct)"
+        },
+        {
+          "id": "b9_10",
+          "prefix": "Steve draws better than Stanley. ➔",
+          "accepted": [
+            "better",
+            "correct"
+          ],
+          "suffix": "(correct)"
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "number": "B10",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 10. Spot the Beach Differences",
+      "page": 23,
+      "type": "semi-open",
+      "instruction": "Spot the differences between Picture A and Picture B using comparative adjectives: tall, short, new, crowded, old, big, small, relaxed.",
+      "model_answers": [
+        "In picture A the beach is more crowded than in picture B.",
+        "In picture A the boy's ball is smaller than the ball in picture B.",
+        "In picture A the people look more relaxed than the people in picture B.",
+        "In picture B the lady under the umbrella is younger than the lady in picture A.",
+        "In picture B the boy is shorter than the boy in picture A."
+      ]
+    },
+    {
+      "id": "b11",
+      "number": "B11",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 11. City Life vs Village Life",
+      "page": 24,
+      "type": "closed",
+      "instruction": "Fill in the correct comparative or superlative forms to complete the comparison of city and village life.",
+      "gaps": [
+        {
+          "id": "b11_1",
+          "prefix": "There are the",
+          "accepted": [
+            "widest"
+          ],
+          "suffix": "streets in the world. (wide)"
+        },
+        {
+          "id": "b11_2",
+          "prefix": "Buses and cars are the",
+          "accepted": [
+            "fastest"
+          ],
+          "suffix": "in the world. (fast)"
+        },
+        {
+          "id": "b11_3",
+          "prefix": "Shops in my town are the",
+          "accepted": [
+            "most interesting"
+          ],
+          "suffix": "in the world. (interesting)"
+        },
+        {
+          "id": "b11_4",
+          "prefix": "In the village, the air is",
+          "accepted": [
+            "fresher than in the city",
+            "fresher"
+          ],
+          "suffix": "than in the city. (fresh)"
+        },
+        {
+          "id": "b11_5",
+          "prefix": "The shops are not",
+          "accepted": [
+            "as interesting as in the city",
+            "as interesting as"
+          ],
+          "suffix": "in the city. (interesting)"
+        },
+        {
+          "id": "b11_6",
+          "prefix": "Life here, however, is",
+          "accepted": [
+            "more relaxing"
+          ],
+          "suffix": "and children walk to school happily. (relaxing)"
+        },
+        {
+          "id": "b11_7",
+          "prefix": "In the city, life is",
+          "accepted": [
+            "busier than life in the village",
+            "busier"
+          ],
+          "suffix": "than in the village. (busy)"
+        },
+        {
+          "id": "b11_8",
+          "prefix": "Streets are",
+          "accepted": [
+            "wider"
+          ],
+          "suffix": "and cars travel faster. (wide)"
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "number": "B12",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 12. Compare Means of Transport",
+      "page": 25,
+      "type": "open",
+      "instruction": "Look at the two pictures (steam train vs modern high-speed train) and compare them using comparative adjectives or adverbs (fast, slow, safe, dangerous, comfortable, expensive).",
+      "sentence_starters": [
+        "In picture 1, the steam train travels...",
+        "The modern train in picture 2 is much...",
+        "Travelling by steam train is...",
+        "Tickets for the modern high-speed train are probably..."
+      ],
+      "checklist": [
+        {
+          "label": "Compared steam train vs modern train"
+        },
+        {
+          "label": "Used comparative adjectives (-er than, more ... than)"
+        },
+        {
+          "label": "Used adverbs of manner (more slowly, faster)"
+        },
+        {
+          "label": "Checked spelling and capital letters"
+        }
+      ],
+      "model_text": "In picture 1, the steam train travels more slowly than the modern train in picture 2. The train in picture 2 is faster, more comfortable, and safer than the old steam locomotive, although the vintage steam train looks more delightful and interesting."
+    },
+    {
+      "id": "c_mediation",
+      "number": "C",
+      "lesson": "lesson3",
+      "title": "C. Mediation — Scylla and Charybdis",
+      "page": 25,
+      "type": "open",
+      "instruction": "Read the Greek passage about Scylla and Charybdis and write an English note to your friend Bernard telling him where this text is from and what it is all about.",
+      "passage_title": "Η Σκύλλα και η Χάρυβδη",
+      "letter_text": "Η Σκύλλα και η Χάρυβδη είναι δυο θαλάσσια τέρατα, που ζουν σε αντικριστές σπηλιές στα στενά της Σικελίας ή του Γιβραλτάρ. Η Σκύλλα είναι ένα τέρας με 6 κεφάλια, τρώει μεγάλα ψάρια αλλά και ανθρώπους, που περνούν με τα καράβια τους κοντά από τη σπηλιά της. Έτσι, κατάφερε να φάει τους συντρόφους του Οδυσσέα. Η Χάρυβδη μοιάζει με γοργόνα, δηλαδή από τη μέση και επάνω είναι γυναίκα και από τη μέση και κάτω είναι ψάρι. Ζει απέναντι από τη Σκύλλα και ρουφάει το νερό της θάλασσας μαζί με ό,τι βρίσκεται μέσα σ’ αυτό.",
+      "sentence_starters": [
+        "Dear Bernard,",
+        "This text comes from Greek mythology and describes...",
+        "Scylla is a sea monster with...",
+        "Charybdis lives opposite Scylla and...",
+        "Together they made sailing through the straits very dangerous for Odysseus and his crew."
+      ],
+      "checklist": [
+        {
+          "label": "Addressed friend Bernard in English"
+        },
+        {
+          "label": "Identified the source (Greek mythology / Homer's Odyssey)"
+        },
+        {
+          "label": "Described Scylla (six heads, eats sailors near the cave)"
+        },
+        {
+          "label": "Described Charybdis (mermaid-like, sucks seawater in a whirlpool)"
+        },
+        {
+          "label": "Transferred the key Greek concepts accurately into English"
+        }
+      ],
+      "model_text": "Dear Bernard, this text comes from Greek mythology and Homer's Odyssey. It is about two terrifying sea monsters, Scylla and Charybdis, living opposite each other in the straits near Sicily. Scylla is a monster with six heads who snatches and eats sailors from passing ships, just like she did with Ulysses' companions. Charybdis looks like a mermaid and swallows huge amounts of seawater, creating a deadly whirlpool that sinks entire ships."
+    }
+  ]
+};

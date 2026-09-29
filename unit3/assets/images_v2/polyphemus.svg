@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a202c" />
+      <stop offset="50%" stop-color="#2d3748" />
+      <stop offset="100%" stop-color="#4a5568" />
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b6cb0" />
+      <stop offset="50%" stop-color="#2c5282" />
+      <stop offset="100%" stop-color="#1a365d" />
+    </linearGradient>
+    <linearGradient id="rockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a5568" />
+      <stop offset="50%" stop-color="#2d3748" />
+      <stop offset="100%" stop-color="#1a202c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="320" fill="url(#skyGrad)" />
+  
+  <!-- Storm Clouds -->
+  <path d="M 0 120 Q 80 80 160 110 Q 240 70 340 100 Q 450 60 560 90 Q 680 70 800 110 L 800 0 L 0 0 Z" fill="#2d3748" opacity="0.6" />
+  <path d="M 50 160 Q 180 120 280 150 Q 400 110 520 140 Q 650 120 800 150 L 800 0 L 0 0 Z" fill="#1a202c" opacity="0.4" />
+  
+  <!-- Distant Lightning Flash -->
+  <polygon points="420,40 435,90 425,95 440,150 415,105 425,100" fill="#ecc94b" opacity="0.7" />
+
+  <!-- Mountain Peaks & Island -->
+  <polygon points="50,320 220,130 380,320" fill="#2d3748" />
+  <polygon points="200,320 380,100 560,320" fill="#1a202c" />
+  <polygon points="450,320 620,160 780,320" fill="#2d3748" />
+
+  <!-- Giant's Cave on the Cliff -->
+  <path d="M 330 320 C 330 240 430 240 430 320 Z" fill="#0d1117" />
+  <circle cx="380" cy="270" r="14" fill="#dd6b20" opacity="0.8" />
+  <circle cx="380" cy="270" r="6" fill="#fbd38d" />
+
+  <!-- Sea with Waves -->
+  <rect y="310" width="800" height="190" fill="url(#seaGrad)" />
+  <path d="M 0 340 Q 50 330 100 340 T 200 340 T 300 340 T 400 340 T 500 340 T 600 340 T 700 340 T 800 340 L 800 500 L 0 500 Z" fill="#2b6cb0" opacity="0.5" />
+  <path d="M 0 370 Q 60 360 120 370 T 240 370 T 360 370 T 480 370 T 600 370 T 720 370 T 800 370 L 800 500 L 0 500 Z" fill="#2c5282" opacity="0.7" />
+
+  <!-- Cyclops Silhouette Standing on Lookout Cliff -->
+  <g fill="#171923">
+    <!-- Rock ledge -->
+    <path d="M 80 430 L 180 310 L 260 330 L 220 440 Z" />
+    <!-- Giant Body -->
+    <path d="M 160 310 C 150 270 170 230 190 230 C 210 230 230 270 220 310 Z" />
+    <!-- Head with Single Glowing Eye -->
+    <circle cx="190" cy="210" r="22" />
+    <circle cx="190" cy="208" r="5" fill="#e53e3e" />
+    <!-- Massive Arms & Club -->
+    <path d="M 165 245 L 140 280 L 145 295 L 175 260 Z" />
+    <path d="M 215 245 L 245 275 L 255 315 L 245 320 Z" />
+    <!-- Club -->
+    <polygon points="248,310 270,230 282,233 258,315" fill="#4a5568" />
+  </g>
+
+  <!-- Distant Ancient Sailing Ship Overturned in the Waves -->
+  <g transform="translate(560, 360)" fill="#718096" opacity="0.85">
+    <path d="M 0 20 Q 30 5 60 20 Q 30 30 0 20 Z" fill="#4a5568" />
+    <line x1="30" y1="20" x2="30" y2="-15" stroke="#2d3748" stroke-width="2" />
+    <polygon points="30,-15 50,0 30,5" fill="#e2e8f0" opacity="0.7" />
+  </g>
+
+  <!-- Mythological Title Plate -->
+  <rect x="250" y="440" width="300" height="42" rx="21" fill="#1a202c" opacity="0.85" />
+  <text x="400" y="466" font-family="'Cinzel', 'Segoe UI', serif" font-size="16" font-weight="700" fill="#f6ad55" text-anchor="middle" letter-spacing="1.5">POLYPHEMUS THE CYCLOPS</text>
+</svg>

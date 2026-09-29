@@ -12,6 +12,8 @@ window.UNIT1_V2_DATA = {
       "nationality": "Ukrainian",
       "flag": "🇺🇦",
       "audio_key": "story_sasha",
+      "voice": "en-GB-MaisieNeural",
+      "voice_description": "Maisie (Child Female AI)",
       "summary": "Sasha introduces Ukraine, the second largest country in Europe, its geography, natural beauty, and environmental history.",
       "narrative": "I come from Ukraine, the second largest country in Europe. It is between Poland and Moldavia in the west and Russia in the east. I don’t come from the capital, Kiev. My hometown is Odessa, on the coast of the Black Sea. Ukraine has got large plains but also high mountains, such as the Carpathians. The River Dnipo flows across the country splitting it in two parts. In winter the weather gets very cold. Summers are warm across the greater part of the country and cool along the Black Sea, so we spend much more time outdoors. A nuclear power plant accident in Chernobyl, in 1986, is still causing serious environmental problems which worry Ukrainian people. Today we don’t have enough drinking water supplies because of that accident. Despite these problems, I believe Ukraine is a beautiful country with outgoing and brave people. I love it very much.",
       "landmarks": [
@@ -66,6 +68,8 @@ window.UNIT1_V2_DATA = {
       "nationality": "Albanian",
       "flag": "🇦🇱",
       "audio_key": "story_christina",
+      "voice": "en-GB-LibbyNeural",
+      "voice_description": "Libby (Youth Female AI)",
       "summary": "Christina describes Albania's ancient Illyrian roots, Adriatic and Ionian coast, climate, and Mother Teresa.",
       "narrative": "Albania, the ancient Illyria, is where I come from. My hometown is Tirana, the capital of Albania. Albania shares borders with Serbia, Montenegro and Greece. On the west, it is bordering the Adriatic Sea and the Ionian Sea. The beaches are beautiful and during the hot, dry summers we swim in the clear sea, but in winter the temperature usually drops and it often rains heavily, so there are a lot of forests. We often have problems with natural disasters, such as earthquakes or tsunamis that happen along the South coast. Mother Teresa, the popular nun and humanitarian Nobel Prize winner, is of Albanian origin. My country is not very rich and our parents sometimes go to other countries, such as Italy, France or Greece, and work there. However, we miss our homeland.",
       "landmarks": [
@@ -118,6 +122,8 @@ window.UNIT1_V2_DATA = {
       "nationality": "Georgian",
       "flag": "🇬🇪",
       "audio_key": "story_georgi",
+      "voice": "en-US-EricNeural",
+      "voice_description": "Eric (Young Male AI)",
       "summary": "Georgi shares the ancient Colchis myth of Jason and the Golden Fleece, Black Sea agriculture, and mines.",
       "narrative": "Do you remember the ancient Colchis and the myth of Jason and the Golden Fleece? That is where I come from, Georgia! It is in the West Asia, bordering the Black Sea, which the Greeks called Pontus Euxinos, Turkey and Russia. The temperature is mild and it is usually sunny and warm. The country is mountainous, but along the coast we grow vines, tea and citrus fruit. In this area the temperature rarely drops below zero. Many people work in copper and coal mines, or in oil wells. Others sometimes leave their hometown to find work. My uncle works in T’blisi, the capital of Georgia.",
       "landmarks": [
@@ -171,6 +177,8 @@ window.UNIT1_V2_DATA = {
       "nationality": "British / Welsh",
       "flag": "🇬🇧",
       "audio_key": "story_gwen",
+      "voice": "en-GB-SoniaNeural",
+      "voice_description": "Sonia (Expressive Female AI)",
       "summary": "Gwen presents the UK's geography, the River Thames, maritime climate, and multicultural society.",
       "narrative": "My name is Gwen and I am ten years old. It is a Welsh name, because my father comes from Wales, but now I live in Oxford, England. The official name of my country is The United Kingdom of Great Britain and Northern Ireland and it includes Great Britain (England, Wales and Scotland) and Northern Ireland. Great Britain is actually an island. An underwater channel, the Channel Tunnel, connects Great Britain to France in the South. The North Sea in the East separates it from the rest of Europe. The country is mostly mountainous in Scotland and Wales but with green plains and hills in the South. Rivers flow across this part of the country. The famous river Thames runs through London, the capital of England. The weather is cold in winter and warm in summer time, but it is also wet. It rains most of the time. The people of Britain are multicultural, coming from different countries and races, so here you can meet British people from Asia, Africa or the Caribbean. They speak English and the language of their fathers as well. I think it’s exciting to live in Great Britain because it opens its doors to everyone!",
       "landmarks": [
@@ -833,4 +841,5 @@ window.UNIT1_V2_DATA = {
       "note": "The pupils already know the other sense of the word, a running race; the book uses it once, in 'coming from different countries and races' (SB p.1)."
     }
   ]
-};
+}
+;

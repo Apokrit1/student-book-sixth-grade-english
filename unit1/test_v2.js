@@ -407,6 +407,36 @@ async function runV2Tests() {
          appV2Content.includes("getVocabAudioPath('example', padId)"),
     'app_v2.js implements playAudioSequence queuing exactly [word, def, example]');
 
+  // --- Section N: Newcomer Character Story Voices (Differentiated Voices) ---
+  console.log('\n--- Section N: Newcomer Character Story Voices ---');
+  const sasha = u1Data.stories.find(s => s.id === 'ukraine');
+  const christina = u1Data.stories.find(s => s.id === 'albania');
+  const georgi = u1Data.stories.find(s => s.id === 'georgia');
+  const gwen = u1Data.stories.find(s => s.id === 'uk');
+
+  assert(sasha && sasha.voice && sasha.voice === 'en-GB-MaisieNeural', 'Sasha (Ukraine) is assigned female pupil voice en-GB-MaisieNeural');
+  assert(christina && christina.voice && christina.voice === 'en-GB-LibbyNeural', 'Christina (Albania) is assigned female pupil voice en-GB-LibbyNeural');
+  assert(georgi && georgi.voice && georgi.voice === 'en-US-EricNeural', 'Georgi (Georgia) is assigned young male voice en-US-EricNeural');
+  assert(gwen && gwen.voice, 'Gwen (UK) is assigned voice ' + gwen.voice);
+
+  // Distinct voices assertion
+  const distinctVoices = new Set([sasha.voice, christina.voice, georgi.voice, gwen.voice]);
+  assert(distinctVoices.size === 4, `All 4 story characters have completely distinct voices (${distinctVoices.size}/4)`);
+  assert(sasha.voice !== christina.voice, 'Sasha and Christina have different female voices');
+  assert(georgi.voice !== sasha.voice && georgi.voice !== christina.voice, 'Georgi voice is distinct from female characters');
+
+  // Verify all 4 story MP3s and their sidecars
+  u1Data.stories.forEach(st => {
+    const mp3 = path.join('assets', 'audio_v2', 'stories', `${st.id}_full_story.mp3`);
+    const txt = path.join('assets', 'audio_v2', 'stories', `${st.id}_full_story.txt`);
+    assert(fs.existsSync(mp3) && fs.statSync(mp3).size > 100000, `Story MP3 exists and is valid size: ${mp3} (${fs.existsSync(mp3) ? fs.statSync(mp3).size : 0} bytes)`);
+    assert(fs.existsSync(txt), `Story .txt sidecar exists: ${txt}`);
+    if (fs.existsSync(txt)) {
+      const txtContent = fs.readFileSync(txt, 'utf-8').trim();
+      assert(txtContent === st.narrative.trim(), `Story sidecar matches narrative text verbatim for ${st.student} (${st.country})`);
+    }
+  });
+
   // 4. Test endpoints if server is running
   try {
     const epTest = await testEndpoint('/portal.html');

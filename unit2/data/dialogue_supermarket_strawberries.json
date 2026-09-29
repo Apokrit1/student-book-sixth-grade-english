@@ -1,0 +1,15 @@
+{
+  "speaker_voices": {
+    "mom": "en-GB-LibbyNeural",
+    "mary": "en-GB-MaisieNeural"
+  },
+  "dialogue_script": [
+    { "speaker": "Mom", "text": "Look at the strawberries. They are on special offer." },
+    { "speaker": "Mary", "text": "How much money do they cost?" },
+    { "speaker": "Mom", "text": "They are only 90p a box." },
+    { "speaker": "Mary", "text": "That’s a real bargain!! Do we need any strawberries for the cake?" },
+    { "speaker": "Mom", "text": "Yes, we need some." },
+    { "speaker": "Mary", "text": "How many boxes do we need?" },
+    { "speaker": "Mom", "text": "Just one." }
+  ]
+}

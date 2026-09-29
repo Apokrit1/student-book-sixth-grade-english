@@ -1,0 +1,207 @@
+{
+  "unit_id": 2,
+  "unit_title": "Going Shopping",
+  "cefr_level": "A2 / A2+",
+  "stories": [
+    {
+      "id": "story_1",
+      "student": "StudentName",
+      "country": "CountryOrContext",
+      "capital": "City",
+      "hometown": "City",
+      "nationality": "Nationality",
+      "flag": "🏳️",
+      "audio_key": "story_1",
+      "summary": "One-sentence overview of the student text.",
+      "narrative": "Full authentic text written for A2 learners...",
+      "landmarks": [
+        {
+          "name": "Target Feature or Realia Item",
+          "type": "Category",
+          "word_key": "target_word",
+          "word_id": 1,
+          "desc": "Factual description."
+        },
+        {
+          "name": "Historical / Thematic Site (Non-core lexis)",
+          "type": "Culture",
+          "word_key": null,
+          "word_id": null,
+          "desc": "Factual description with null audio pill."
+        }
+      ],
+      "vocabulary_ids": [
+        1
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Grammar Lab: Target Tense & Structures",
+    "theme": "Everyday Context",
+    "target_structures": [
+      "Target Structure 1 (e.g. Countable / Uncountable Nouns)",
+      "Target Structure 2 (e.g. Quantifiers: Some / Any, Much / Many)"
+    ],
+    "rules": [
+      {
+        "concept": "Rule 1",
+        "usage": "Clear explanation for 11-12 year old primary pupils.",
+        "signal_words": [
+          "signal 1",
+          "signal 2"
+        ],
+        "examples": [
+          "Example sentence illustrating target structure."
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "type": "fill_in",
+        "sentence": "Practice sentence with [gap].",
+        "options": [
+          "option_a",
+          "option_b"
+        ],
+        "answer": "option_a",
+        "explanation": "Grammar rule explanation."
+      }
+    ],
+    "frequency_spectrum": [
+      {
+        "adverb": "Always",
+        "percent": 100,
+        "example": "Dynamic action example (repeatable, no stative facts)."
+      },
+      {
+        "adverb": "Usually",
+        "percent": 85,
+        "example": "Dynamic action example."
+      },
+      {
+        "adverb": "Often",
+        "percent": 70,
+        "example": "Dynamic action example."
+      },
+      {
+        "adverb": "Sometimes",
+        "percent": 50,
+        "example": "Dynamic action example."
+      },
+      {
+        "adverb": "Rarely",
+        "percent": 20,
+        "example": "Dynamic action example."
+      },
+      {
+        "adverb": "Never",
+        "percent": 0,
+        "example": "Dynamic action example (e.g. It never snows in the desert)."
+      }
+    ],
+    "school_lab_listening": {
+      "title": "Authentic Listening Task",
+      "audio_file": "assets/audio_v2/grammar/unit_dialogue.mp3",
+      "dialogue_script": [
+        {
+          "speaker": "Speaker 1",
+          "text": "Turn text..."
+        },
+        {
+          "speaker": "Speaker 2",
+          "text": "Turn text..."
+        }
+      ],
+      "true_false_quiz": [
+        {
+          "statement": "Statement 1.",
+          "answer": true,
+          "explanation": "True explanation."
+        },
+        {
+          "statement": "Statement 2.",
+          "answer": false,
+          "explanation": "False explanation."
+        }
+      ]
+    },
+    "charades_game": {
+      "title": "Classroom Communicative Game",
+      "instructions": "Pair/group communicative rules.",
+      "prompts": [
+        {
+          "action": "action to mime/guess",
+          "question": "Are you ...?",
+          "affirmative": "Yes, I am!",
+          "negative": "No, I'm not!"
+        }
+      ]
+    }
+  },
+  "collocations": [
+    {
+      "verb": "verb",
+      "partner": "natural partner",
+      "example": "Authentic contextual example sentence."
+    }
+  ],
+  "definition_challenge": {
+    "title": "Thematic Terms: Guess the Word from its Definition",
+    "note": "Extended lexis beyond the core syllabus items",
+    "group_a": [
+      {
+        "number": 1,
+        "word": "ANSWER",
+        "clue": "Definition clue here."
+      }
+    ],
+    "group_b": [
+      {
+        "number": 2,
+        "word": "ANSWER",
+        "clue": "Definition clue here."
+      }
+    ]
+  },
+  "content_true_false": [
+    {
+      "fact": "Factual statement testing unit knowledge.",
+      "answer": true,
+      "explanation": "Explanation."
+    }
+  ],
+  "report_builder_guide": {
+    "title": "Portfolio Writing Workshop (Unit Genre Structure)",
+    "genre": "Unit Writing Genre (e.g. Country Report, E-Shopping Review, Letter, Film Review)",
+    "paragraphs": [
+      {
+        "number": 1,
+        "heading": "Section 1: Introduction",
+        "guiding_questions": "Prompt questions...",
+        "connectors": [
+          "connector 1",
+          "connector 2"
+        ],
+        "sample_starter": "Sentence starter..."
+      },
+      {
+        "number": 2,
+        "heading": "Section 2: Details & Description",
+        "guiding_questions": "Prompt questions...",
+        "connectors": [
+          "connector 3",
+          "connector 4"
+        ],
+        "sample_starter": "Sentence starter..."
+      }
+    ]
+  },
+  "teacher_notes": [
+    {
+      "id": "pedagogical_note_1",
+      "lesson": "Lesson reference",
+      "title": "Fact-Check or Syllabus Resolution",
+      "note": "Pedagogical commentary for teachers documenting curriculum choices and fact-checks."
+    }
+  ]
+}

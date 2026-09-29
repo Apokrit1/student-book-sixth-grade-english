@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fantasySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="35%" stop-color="#d97706" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+    <linearGradient id="hillGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </linearGradient>
+    <linearGradient id="hillGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#40916c" />
+      <stop offset="100%" stop-color="#2d6a4f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sunset Sky over Fairy-Tale Realm -->
+  <rect width="800" height="350" fill="url(#fantasySky)" />
+
+  <!-- Distant Jagged Mountains -->
+  <polygon points="80,350 200,180 340,350" fill="#78350f" opacity="0.6" />
+  <polygon points="260,350 420,150 580,350" fill="#92400e" opacity="0.5" />
+  <polygon points="500,350 660,190 790,350" fill="#78350f" opacity="0.6" />
+
+  <!-- Distant Dragon Flying Silhouette -->
+  <g transform="translate(320, 110) scale(0.7)" fill="#451a03" opacity="0.75">
+    <path d="M 0 0 C 15 -10 30 -5 45 5 C 30 15 15 10 0 0 Z" />
+    <!-- Wings -->
+    <path d="M 20 0 Q 35 -35 60 -40 Q 40 -15 30 5 Z" />
+    <path d="M 15 5 Q 0 -25 -20 -30 Q -5 -10 10 10 Z" />
+    <!-- Tail -->
+    <path d="M 0 0 Q -25 5 -40 20 Q -20 15 0 2 Z" />
+  </g>
+
+  <!-- Distant Medieval Castle on Cliff -->
+  <g transform="translate(560, 180)" fill="#374151">
+    <rect x="20" y="40" width="90" height="70" />
+    <!-- Towers -->
+    <rect x="10" y="10" width="25" height="100" />
+    <polygon points="5,10 22,-15 40,10" fill="#1f2937" />
+    <rect x="95" y="10" width="25" height="100" />
+    <polygon points="90,10 107,-15 125,10" fill="#1f2937" />
+    <!-- Center Keep Tower -->
+    <rect x="50" y="20" width="30" height="60" />
+    <polygon points="45,20 65,-5 85,20" fill="#b91c1c" />
+    <!-- Flags -->
+    <polygon points="22,-15 22,-30 40,-22" fill="#ef4444" />
+    <polygon points="107,-15 107,-30 125,-22" fill="#ef4444" />
+  </g>
+
+  <!-- Rolling Green Hills (Original Art) -->
+  <path d="M 0 280 Q 250 230 500 270 T 800 260 L 800 500 L 0 500 Z" fill="url(#hillGrad1)" />
+  <path d="M 0 350 Q 300 300 600 340 T 800 330 L 800 500 L 0 500 Z" fill="url(#hillGrad2)" />
+
+  <!-- Foreground: Friendly Fantasy Ogre on the Trail (Original Style, No Shrek Depiction) -->
+  <g transform="translate(140, 270)">
+    <!-- Ogre Silhouette / Figure -->
+    <!-- Massive Body with Vest -->
+    <ellipse cx="60" cy="90" rx="42" ry="50" fill="#52796f" />
+    <path d="M 35 60 C 35 110 50 130 60 130 C 70 130 85 110 85 60 Z" fill="#84a98c" />
+    <!-- Big Rounded Head with Quirky Horned Ears -->
+    <circle cx="60" cy="30" r="26" fill="#84a98c" />
+    <!-- Cute Pointed Ears -->
+    <polygon points="36,25 20,20 34,35" fill="#84a98c" />
+    <polygon points="84,25 100,20 86,35" fill="#84a98c" />
+    <!-- Warm smile and big nose -->
+    <circle cx="60" cy="32" r="6" fill="#52796f" />
+    <path d="M 48 40 Q 60 52 72 40" stroke="#2f3e46" stroke-width="3" fill="none" />
+    <!-- Walking Stick -->
+    <rect x="110" y="40" width="8" height="120" rx="4" fill="#6f4e37" />
+    <!-- Backpack with Wild Flowers -->
+    <rect x="15" y="70" width="22" height="35" rx="6" fill="#a47148" />
+  </g>
+
+  <!-- Wild Thistle & Flora in Foreground -->
+  <g fill="#2f3e46" opacity="0.9">
+    <path d="M 50 480 Q 70 430 85 410 Q 70 440 60 480 Z" fill="#2d6a4f" />
+    <circle cx="85" cy="405" r="7" fill="#d946ef" />
+    <path d="M 680 500 Q 700 450 720 420 Q 705 450 690 500 Z" fill="#2d6a4f" />
+    <circle cx="720" cy="415" r="8" fill="#d946ef" />
+  </g>
+
+  <!-- Title Plate -->
+  <rect x="250" y="440" width="300" height="42" rx="21" fill="#1f2937" opacity="0.9" />
+  <text x="400" y="466" font-family="'Cinzel', 'Segoe UI', serif" font-size="16" font-weight="700" fill="#fcd34d" text-anchor="middle" letter-spacing="1.5">AN OGRE'S TALE</text>
+</svg>

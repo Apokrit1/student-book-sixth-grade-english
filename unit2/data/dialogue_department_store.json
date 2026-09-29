@@ -1,0 +1,24 @@
+{
+  "speaker_voices": {
+    "man": "en-GB-ThomasNeural",
+    "girl": "en-GB-MaisieNeural"
+  },
+  "dialogue_script": [
+    { "speaker": "Man", "text": "Hi young lady. How may I help you?" },
+    { "speaker": "Girl", "text": "Well... yeah. I’m looking for a Father’s Day gift." },
+    { "speaker": "Man", "text": "OK. How about getting your father a new shirt?" },
+    { "speaker": "Girl", "text": "Hmm. That’s a good idea." },
+    { "speaker": "Man", "text": "What size does he take?" },
+    { "speaker": "Girl", "text": "Well… I’m not sure." },
+    { "speaker": "Man", "text": "What does he look like?" },
+    { "speaker": "Girl", "text": "He’s tall with broad shoulders and hmm…I think he is getting a little overweight now." },
+    { "speaker": "Man", "text": "Extra large, then. Look at this black one. Do you think it fits him?" },
+    { "speaker": "Girl", "text": "That’s all right but the colour doesn’t suit him. He’s rather dark. I think the striped one suits him better. How much is it, anyway?" },
+    { "speaker": "Man", "text": "Oh. It’s only $30.95." },
+    { "speaker": "Girl", "text": "Huh? That’s too expensive for me. Do you have something cheaper?" },
+    { "speaker": "Man", "text": "Hmm. How about this green T-shirt? It’s pure cotton." },
+    { "speaker": "Girl", "text": "Umm...it feels so soft and I think my father likes this design. It matches his linen jacket, but the price tag says $13.99, and I know I don’t have that much money. I only have $12, 00." },
+    { "speaker": "Man", "text": "Well, let me see… You’re lucky. This T-shirt just went on sale. It’s only $11.90. What do you say?" },
+    { "speaker": "Girl", "text": "Oh, thanks. I’ll take it." }
+  ]
+}
