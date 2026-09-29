@@ -345,6 +345,9 @@ async function handleDialogue(scriptFile, outMp3, force) {
   } else if (raw.grammar_lab && raw.grammar_lab.school_lab_listening) {
     turns = raw.grammar_lab.school_lab_listening.dialogue_script || [];
     customVoices = raw.speaker_voices || raw.grammar_lab.school_lab_listening.speaker_voices || {};
+  } else if (raw.grammar && raw.grammar.school_lab_listening) {
+    turns = raw.grammar.school_lab_listening.dialogue_script || [];
+    customVoices = raw.speaker_voices || raw.grammar.school_lab_listening.speaker_voices || {};
   } else if (raw.dialogue_script) {
     turns = raw.dialogue_script;
     customVoices = raw.speaker_voices || {};

@@ -1,0 +1,782 @@
+window.UNIT4_V2_DATA = {
+  "unit_id": 4,
+  "unit_title": "The History of the Aeroplane",
+  "cefr_level": "A2 / A2+",
+  "subtitle": "Pioneers of Flight, Aviation Science, In-Flight Adventures, and the Myth of Icarus",
+  "stories": [
+    {
+      "id": "daedalus_icarus",
+      "student": "Greek Mythology",
+      "country": "Crete & the Aegean Sea",
+      "capital": "Knossos",
+      "hometown": "The Labyrinth",
+      "nationality": "Ancient Greek",
+      "flag": "🏛️",
+      "audio_key": "story_daedalus_icarus",
+      "audio_file": "assets/audio_v2/stories/daedalus_icarus_full_story.mp3",
+      "image": "assets/images_v2/daedalus_icarus.svg",
+      "summary": "Daedalus makes wax wings to escape from King Minos's prison, but young Icarus flies too close to the hot sun.",
+      "narrative": "In ancient times, Minos, the king of Crete, invited the famous Athenian architect Daedalus to build a labyrinth for him. When the labyrinth was ready, King Minos jailed Daedalus and his son Icarus in the labyrinth because he wanted to have this great architect in his island forever. Daedalus thought that the only way to escape was to fly out of prison. He made two sets of wax wings, one for himself and one for Icarus, and so, they flew away. Daedalus told Icarus: 'Don’t fly too close to the sun. The sun melts the wax.' Icarus did not remember his father’s advice and flew higher and higher until his wax wings started to melt. He moved his arms faster and faster. The fast movement of arms did not help much and Icarus fell into the deep sea. His father flew over the place where Icarus fell. Daedalus looked hard but he could not find his son. He named the sea 'Icarian Sea' after his son’s name. Of course this is a myth but it is the first flight accident.",
+      "landmarks": [
+        {
+          "name": "The Cretan Labyrinth",
+          "type": "Mythological Prison",
+          "word_key": null,
+          "word_id": null,
+          "desc": "The maze of stone corridors designed by Daedalus where King Minos jailed the inventor and his son."
+        },
+        {
+          "name": "Feather & Wax Wings",
+          "type": "Invention",
+          "word_key": "wax",
+          "word_id": 39,
+          "desc": "Two sets of artificial wings fastened with beeswax so father and son could fly out of captivity."
+        },
+        {
+          "name": "The Icarian Sea",
+          "type": "Body of Water",
+          "word_key": null,
+          "word_id": null,
+          "desc": "The deep blue Aegean waters where Icarus fell after the hot sun melted his wings."
+        },
+        {
+          "name": "Flight over the Waves",
+          "type": "Action",
+          "word_key": "fly",
+          "word_id": 17,
+          "desc": "The historic escape through the air, remembered as the earliest legendary flight accident."
+        }
+      ],
+      "vocabulary_ids": [
+        1,
+        16,
+        17,
+        25,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "fleet_air_arm",
+      "student": "Joan & Joe's Class Trip",
+      "country": "United Kingdom",
+      "capital": "London",
+      "hometown": "RNAS Yeovilton, Somerset",
+      "nationality": "British",
+      "flag": "🇬🇧",
+      "audio_key": "story_fleet_air_arm",
+      "audio_file": "assets/audio_v2/stories/fleet_air_arm_full_story.mp3",
+      "image": "assets/images_v2/fleet_air_arm.svg",
+      "summary": "Joan and Joe write an email about their exciting visit to the aviation museum near Yeovilton with 40 historic aircraft and a simulator.",
+      "narrative": "Dear Jim and Mary, Yesterday, our class visited the Fleet Arm Museum outside London near Yeovilton. We saw over 40 historic planes there and we heard a lot about the history of planes and the Wright brothers, the first fliers. We also saw modern aeroplanes and then we flew on a helicopter in a simulator! It was exciting! We learnt about the four forces of flight, too. Open the attached files: These are the worksheets we worked on in the museum. Do you want to try them, too? Kisses, Joan and Joe.",
+      "landmarks": [
+        {
+          "name": "Yeovilton Museum Hangars",
+          "type": "Aviation Museum",
+          "word_key": null,
+          "word_id": null,
+          "desc": "The Royal Navy's Fleet Air Arm Museum houses over 40 preserved historic naval aircraft."
+        },
+        {
+          "name": "Helicopter Flight Simulator",
+          "type": "Training Device",
+          "word_key": "simulator",
+          "word_id": 31,
+          "desc": "An interactive cabin simulator where pupils experience the feel of realistic helicopter flight."
+        },
+        {
+          "name": "Museum Worksheets",
+          "type": "Study Material",
+          "word_key": "worksheet",
+          "word_id": 41,
+          "desc": "Attached files sent by email containing exercises on aeroplane parts and flight forces."
+        },
+        {
+          "name": "Aircraft Cockpit",
+          "type": "Flight Deck",
+          "word_key": null,
+          "word_id": null,
+          "desc": "The control station at the front of the plane where pilots manage instruments and steering."
+        }
+      ],
+      "vocabulary_ids": [
+        4,
+        16,
+        17,
+        31,
+        41
+      ]
+    },
+    {
+      "id": "wright_brothers",
+      "student": "Wilbur & Orville Wright",
+      "country": "United States of America",
+      "capital": "Washington, D.C.",
+      "hometown": "Dayton, Ohio & Kitty Hawk",
+      "nationality": "American",
+      "flag": "🇺🇸",
+      "audio_key": "story_wright_brothers",
+      "audio_file": "assets/audio_v2/stories/wright_brothers_full_story.mp3",
+      "image": "assets/images_v2/wright_flyer.svg",
+      "summary": "From fixing bicycles and building kites to launching the world's first powered motor aeroplane in December 1903.",
+      "narrative": "Wilbur and Orville Wright invented the first aeroplane in the United States of America in 1903. The Wright brothers thought of the flight when one day their father returned from a trip and surprised the boys with a small toy. It was a toy helicopter. The boys admired the toy very much and they said that they wanted to fly. While the boys were growing up, they were always repairing and fixing things. They made kites and sold them to classmates. Later, they opened a bicycle shop and repaired bicycles. They used the money from the bicycle shop for their first flight experiments. The historic flight lasted for just 12 seconds and covered about 120 feet. This changed the world forever.",
+      "landmarks": [
+        {
+          "name": "Dayton Bicycle Workshop",
+          "type": "Historic Workshop",
+          "word_key": "repair",
+          "word_id": 29,
+          "desc": "The brothers repaired bikes and used their earnings to fund aerodynamic wind experiments."
+        },
+        {
+          "name": "Handmade Box Kites",
+          "type": "Early Gliders",
+          "word_key": "kites",
+          "word_id": 21,
+          "desc": "Light wooden and cloth craft sold to schoolmates and tested for wing-warping balance."
+        },
+        {
+          "name": "Kitty Hawk Dunes",
+          "type": "Testing Ground",
+          "word_key": "experiment",
+          "word_id": 13,
+          "desc": "The windswept coastal hills of North Carolina where the brothers tested gliders and engines."
+        },
+        {
+          "name": "The Wright Flyer (1903)",
+          "type": "Pioneer Aircraft",
+          "word_key": "invent",
+          "word_id": 20,
+          "desc": "The first heavier-than-air powered machine to fly under control, lasting 12 historic seconds."
+        }
+      ],
+      "vocabulary_ids": [
+        2,
+        13,
+        15,
+        16,
+        17,
+        20,
+        21,
+        29
+      ]
+    },
+    {
+      "id": "fall_of_icarus",
+      "student": "Pieter Brueghel & W.H. Auden",
+      "country": "Flanders & Belgium",
+      "capital": "Brussels",
+      "hometown": "Royal Museums of Fine Arts of Belgium",
+      "nationality": "Flemish Masterpiece",
+      "flag": "🎨",
+      "audio_key": "story_fall_of_icarus",
+      "audio_file": "assets/audio_v2/stories/fall_of_icarus_full_story.mp3",
+      "image": "assets/images_v2/brueghel_landscape.svg",
+      "summary": "In Pieter Brueghel's celebrated 1558 painting, ordinary life continues quietly as Icarus falls into the spring sea.",
+      "narrative": "According to Brueghel, when Icarus fell... It was spring. A farmer was working in his field. A shepherd was looking after his sheep. A fisherman was catching fish near the edge of the sea. All were sweating in the sun that melted the wings’ wax. Off the coast there was a splash quite unnoticed. This was Icarus’ drowning.",
+      "landmarks": [
+        {
+          "name": "The Plowing Field",
+          "type": "Rural Countryside",
+          "word_key": "field",
+          "word_id": 14,
+          "desc": "A furrowed hillside where a hardworking farmer guides his horse under the warm spring sun."
+        },
+        {
+          "name": "The Shepherd's Hillside",
+          "type": "Pasture",
+          "word_key": "shepherd",
+          "word_id": 30,
+          "desc": "A quiet grassy knoll where the shepherd leans on his crook, looking up at the sky."
+        },
+        {
+          "name": "The Water's Edge",
+          "type": "Rocky Shoreline",
+          "word_key": "edge",
+          "word_id": 11,
+          "desc": "The peaceful coastal rocks where a fisherman casts his line into the calm green water."
+        },
+        {
+          "name": "The Unnoticed Splash",
+          "type": "Mythic Climax",
+          "word_key": "splash",
+          "word_id": 34,
+          "desc": "A tiny foam splash near a departing merchant ship, marking where Icarus plunged into the sea."
+        }
+      ],
+      "vocabulary_ids": [
+        10,
+        11,
+        14,
+        25,
+        30,
+        34,
+        35,
+        38,
+        39,
+        40
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Aviation Grammar Lab: Past Simple, Past Continuous & Linking Words",
+    "target_structures": [
+      "Past Simple (Regular & Irregular)",
+      "Past Continuous (Ongoing & Interrupted Actions)",
+      "Time Conjunctions: When vs. While / As",
+      "Sequential Linking Words: First, Then, After that, Later, Finally"
+    ],
+    "rules": [
+      {
+        "concept": "Past Simple: Completed Events",
+        "usage": "Use the Past Simple for actions and events that began and finished at a definite time in the past.",
+        "signal_words": [
+          "yesterday",
+          "in 1903",
+          "last week",
+          "ago",
+          "when"
+        ],
+        "examples": [
+          "The Wright brothers invented the first plane in 1903.",
+          "We visited the Fleet Air Arm Museum yesterday.",
+          "Did you hear the captain's announcement? No, I didn't."
+        ]
+      },
+      {
+        "concept": "Past Continuous: Actions in Progress",
+        "usage": "Use the Past Continuous (was/were + verb-ing) to describe an activity that continued over time in the past or sets the scene.",
+        "signal_words": [
+          "at 4 o'clock",
+          "all morning",
+          "while",
+          "as"
+        ],
+        "examples": [
+          "While the boys were growing up, they were repairing and fixing things.",
+          "Mary was playing computer games while Jim was watching TV.",
+          "A farmer was working in his field."
+        ]
+      },
+      {
+        "concept": "Interrupted Past Actions: When vs. While",
+        "usage": "Join a longer scene-setting action (Past Continuous) with a sudden short event (Past Simple). Use 'while' before the long action and 'when' before the short event.",
+        "signal_words": [
+          "when + Past Simple",
+          "while / as + Past Continuous"
+        ],
+        "examples": [
+          "I was flying over the ocean when the plane took a dive.",
+          "While I was saying my prayers, I heard the captain's calm voice.",
+          "The airhostess was serving coffee when the cup spilt."
+        ]
+      },
+      {
+        "concept": "Linking Words of Narration",
+        "usage": "Use linking words to organize historical events, stories, and biographies in clear chronological sequence.",
+        "signal_words": [
+          "first",
+          "then",
+          "after that",
+          "later",
+          "finally"
+        ],
+        "examples": [
+          "First, they made kites and sold them to classmates.",
+          "Then, they opened a bicycle shop and repaired bicycles.",
+          "Later, they used the money for their first flight experiments.",
+          "Finally, they flew the first plane in 1903."
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "type": "fill_in",
+        "sentence": "The Wright brothers ____ the first aeroplane in 1903.",
+        "options": [
+          "invented",
+          "were inventing"
+        ],
+        "answer": "invented",
+        "explanation": "We use Past Simple for a completed historical event at a specific time (in 1903)."
+      },
+      {
+        "type": "fill_in",
+        "sentence": "We were flying over the ocean when the plane ____ a sudden dive.",
+        "options": [
+          "took",
+          "was taking"
+        ],
+        "answer": "took",
+        "explanation": "A sudden short action interrupting an ongoing flight takes the Past Simple after 'when'."
+      },
+      {
+        "type": "fill_in",
+        "sentence": "____ the passenger was sleeping, coffee spilt on his magazine.",
+        "options": [
+          "While",
+          "When"
+        ],
+        "answer": "While",
+        "explanation": "We use 'While' (or 'As') before an ongoing continuous background action."
+      },
+      {
+        "type": "fill_in",
+        "sentence": "Icarus flew higher and higher until his wax wings ____ to melt.",
+        "options": [
+          "started",
+          "were starting"
+        ],
+        "answer": "started",
+        "explanation": "The change of state occurred at that decisive moment in the past."
+      },
+      {
+        "type": "fill_in",
+        "sentence": "____, the boys made kites. Then, they opened a bicycle shop.",
+        "options": [
+          "First",
+          "Finally"
+        ],
+        "answer": "First",
+        "explanation": "We begin a chronological narrative with 'First'."
+      },
+      {
+        "type": "fill_in",
+        "sentence": "While Mary was playing games, her parents ____ books.",
+        "options": [
+          "were reading",
+          "read"
+        ],
+        "answer": "were reading",
+        "explanation": "Two continuous actions happening simultaneously in the past both use the Past Continuous."
+      }
+    ],
+    "forces_of_flight": {
+      "title": "Interactive Physics Lab: The Four Forces of Flight",
+      "instruction": "Match each aerodynamic force with its correct direction and role in keeping an aeroplane airborne:",
+      "forces": [
+        {
+          "name": "Lift",
+          "greek": "Άνωση",
+          "direction": "Pulls / pushes the aeroplane upward",
+          "role": "Created by air pressure difference moving over and under curved wings.",
+          "opposes": "Gravity"
+        },
+        {
+          "name": "Gravity (Weight)",
+          "greek": "Βαρύτητα / Βάρος",
+          "direction": "Pulls the aeroplane downward",
+          "role": "The natural gravitational force pulling the mass of the craft towards the Earth.",
+          "opposes": "Lift"
+        },
+        {
+          "name": "Thrust",
+          "greek": "Ώση",
+          "direction": "Pushes the aeroplane forward",
+          "role": "Generated by powerful engines or propellers to overcome air resistance.",
+          "opposes": "Drag"
+        },
+        {
+          "name": "Drag",
+          "greek": "Οπισθέλκουσα",
+          "direction": "Pushes / pulls the aeroplane backward",
+          "role": "Friction and air resistance resisting the plane's forward motion through the atmosphere.",
+          "opposes": "Thrust"
+        }
+      ]
+    },
+    "school_lab_listening": {
+      "title": "Authentic Flight Listening: Incident in an Air Pocket",
+      "audio_file": "assets/audio_v2/grammar/air_pocket_dialogue.mp3",
+      "dialogue_script": [
+        {
+          "speaker": "Jim",
+          "text": "How safe are aeroplanes, father?"
+        },
+        {
+          "speaker": "Father",
+          "text": "Very safe. They are the safest means of transport."
+        },
+        {
+          "speaker": "Mary",
+          "text": "Dad, tell us again about that flight incident with the air pocket."
+        },
+        {
+          "speaker": "Father",
+          "text": "Yes... it happened in 1985. I was travelling on a Boeing 747 from New York to Ireland."
+        },
+        {
+          "speaker": "Mary",
+          "text": "To Ireland!"
+        },
+        {
+          "speaker": "Jim",
+          "text": "To Ireland!"
+        },
+        {
+          "speaker": "Father",
+          "text": "Yes. It was a business trip. Well, we were flying over the ocean when the plane took a dive. The airhostess was serving coffee and the passenger next to me was sleeping. I was reading a magazine. The cup of hot coffee was spilt on the magazine. The passenger next to me woke up terrified. The plane was shaking and many passengers were screaming. I knew that something was wrong. While I was saying my prayers, I heard the captain’s calm voice: 'Please fasten your seatbelts. Don’t panic. It was only an air pocket. Everything is all right. We are going to land in Dublin, Ireland in about an hour. Enjoy your coffee.'"
+        },
+        {
+          "speaker": "Jim",
+          "text": "Oh... planes meet air pockets and they also meet stormy weather."
+        },
+        {
+          "speaker": "Father",
+          "text": "That’s why we should fasten our seatbelts..."
+        }
+      ]
+    }
+  },
+  "definition_challenge": {
+    "title": "Aviation Terms: Guess the Word from its Definition",
+    "group_a": [
+      {
+        "id": "ca1",
+        "prompt": "a sudden drop in the air that makes an aeroplane shake or dive",
+        "answer": "air pocket",
+        "hint": "The incident Jim's father experienced on his 1985 flight.",
+        "word_id": null
+      },
+      {
+        "id": "ca2",
+        "prompt": "an aeroplane designed with floats that can land on water",
+        "answer": "seaplane",
+        "hint": "Aircraft used in island regions that touches down on lakes or seas.",
+        "word_id": null
+      },
+      {
+        "id": "ca3",
+        "prompt": "a machine that uses fuel or power to produce movement",
+        "answer": "engine",
+        "hint": "The powerful motor of a jet or rocket.",
+        "word_id": 12
+      },
+      {
+        "id": "ca4",
+        "prompt": "the backward force of air that slows down a moving aeroplane",
+        "answer": "drag",
+        "hint": "Air resistance opposing thrust.",
+        "word_id": 9
+      },
+      {
+        "id": "ca5",
+        "prompt": "the natural force that pulls objects down towards the centre of the Earth",
+        "answer": "gravity",
+        "hint": "The downward aerodynamic force opposing lift.",
+        "word_id": 18
+      },
+      {
+        "id": "ca6",
+        "prompt": "the small front room where the pilot sits to control a plane",
+        "answer": "cockpit",
+        "hint": "The flight deck with controls, screens, and steering pedals.",
+        "word_id": 7
+      },
+      {
+        "id": "ca7",
+        "prompt": "the upward force that keeps an aircraft in the air",
+        "answer": "lift",
+        "hint": "Air pressure under the wings raising the machine.",
+        "word_id": 24
+      }
+    ],
+    "group_b": [
+      {
+        "id": "cb1",
+        "prompt": "a person who travels in a vehicle without driving it",
+        "answer": "passenger",
+        "hint": "People who sit in the cabin wearing seatbelts.",
+        "word_id": 27
+      },
+      {
+        "id": "cb2",
+        "prompt": "how fast someone or something moves across a distance",
+        "answer": "speed",
+        "hint": "The Concorde flew at twice the speed of sound.",
+        "word_id": 33
+      },
+      {
+        "id": "cb3",
+        "prompt": "a journey made through the air by a plane or bird",
+        "answer": "flight",
+        "hint": "The Wright brothers' 12-second trip in 1903.",
+        "word_id": 16
+      },
+      {
+        "id": "cb4",
+        "prompt": "the person in control of a ship or large passenger aircraft",
+        "answer": "captain",
+        "hint": "Spoke in a calm voice when the plane shook.",
+        "word_id": 5
+      },
+      {
+        "id": "cb5",
+        "prompt": "to bring an aircraft down onto the ground or water safely",
+        "answer": "land",
+        "hint": "Touching down safely on the airport runway.",
+        "word_id": 22
+      },
+      {
+        "id": "cb6",
+        "prompt": "the strong forward push produced by an aircraft engine",
+        "answer": "thrust",
+        "hint": "Aerodynamic forward force driving the plane through the sky.",
+        "word_id": 37
+      },
+      {
+        "id": "cb7",
+        "prompt": "a soft yellow material from bees that turns soft when warm",
+        "answer": "wax",
+        "hint": "Used by Daedalus to glue feather wings together.",
+        "word_id": 39
+      }
+    ]
+  },
+  "content_true_false": [
+    {
+      "statement": "Wilbur and Orville Wright invented the first successful aeroplane in 1903 in the USA.",
+      "answer": true,
+      "explanation": "Their historic flight lasted 12 seconds and covered 120 feet at Kitty Hawk, North Carolina."
+    },
+    {
+      "statement": "King Minos jailed Daedalus and Icarus because he wanted to keep the great architect on Crete forever.",
+      "answer": true,
+      "explanation": "After the labyrinth was completed, King Minos imprisoned them so Daedalus could not share his architectural secrets."
+    },
+    {
+      "statement": "The Concorde passenger aircraft flew at five times the speed of sound (hypersonic speed).",
+      "answer": false,
+      "explanation": "Concorde had a cruising speed of Mach 2.04 (about twice the speed of sound), not five times."
+    },
+    {
+      "statement": "Lift is the aerodynamic force that pulls an aeroplane downwards towards the ground.",
+      "answer": false,
+      "explanation": "Lift pulls and pushes the plane upward; gravity is the downward force."
+    },
+    {
+      "statement": "In Pieter Brueghel's painting, the farmer and shepherd stop their work to watch Icarus fall.",
+      "answer": false,
+      "explanation": "Brueghel depicts the plower, shepherd, and fisherman continuing their daily tasks unnoticed as Icarus splashes into the sea."
+    },
+    {
+      "statement": "Igor Sikorsky built the world's first multi-engine aircraft and designed the modern helicopter.",
+      "answer": true,
+      "explanation": "Known as 'the father of the helicopter', Sikorsky pioneered multi-engine planes and practical rotary-wing aircraft."
+    }
+  ],
+  "report_builder_guide": {
+    "genre": "Aviation History Portfolio: Pioneer Biography & Poetry Workshop",
+    "prompt": "Write a structured biography of a famous aviation pioneer (Igor Sikorsky, the Wright Brothers, or the Montgolfier Brothers) or compose a poem reflecting on the Fall of Icarus.",
+    "connector_banks": [
+      {
+        "category": "Time and Sequence",
+        "words": [
+          "first",
+          "at first",
+          "then",
+          "after that",
+          "while",
+          "as",
+          "later",
+          "finally",
+          "in the end"
+        ]
+      },
+      {
+        "category": "Cause and Result",
+        "words": [
+          "because",
+          "so",
+          "as a result",
+          "in order to",
+          "that is why"
+        ]
+      },
+      {
+        "category": "Biographical Starters",
+        "words": [
+          "People call him...",
+          "He was born in...",
+          "As a young boy, he...",
+          "While growing up, he was always...",
+          "He created a series of..."
+        ]
+      },
+      {
+        "category": "Aviation Terminology",
+        "words": [
+          "aeroplane",
+          "helicopter",
+          "forces of flight",
+          "lift and drag",
+          "thrust",
+          "gravity",
+          "historic flight",
+          "changed the world"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "pioneer_intro",
+        "title": "Step 1: Pioneer Introduction & Birthplace",
+        "prompt": "Introduce the inventor, their title or nickname, and where and when they were born.",
+        "placeholder": "People call Igor Sikorsky 'the father of the helicopter'. He was born in Kyiv, Ukraine in 1889..."
+      },
+      {
+        "id": "early_experiments",
+        "title": "Step 2: Early Life & First Experiments",
+        "prompt": "Describe what the inventor built or studied as a young person using 'as', 'while', and Past Continuous.",
+        "placeholder": "As a schoolboy, he built several model aircraft and helicopters. While he was studying in Russia and Paris, he designed..."
+      },
+      {
+        "id": "breakthrough",
+        "title": "Step 3: The Historic Invention & Progress",
+        "prompt": "Narrate the major achievements using sequence linkers: First, Then, Later, After that.",
+        "placeholder": "First, he built the world's first multi-engine aircraft. Later, after moving to the USA, he started his own company and created..."
+      },
+      {
+        "id": "legacy",
+        "title": "Step 4: Legacy & Impact on Modern Aviation",
+        "prompt": "Conclude with how this pioneer's work shaped the modern world and continues today.",
+        "placeholder": "Finally, his company continued to produce world-leading helicopters. His daring experiments changed aviation forever."
+      }
+    ]
+  },
+  "can_do": {
+    "title": "CEFR Level A2/A2+ Can-Do Self-Assessment",
+    "statements": [
+      {
+        "id": "past_tenses",
+        "title": "Past Tense Narrator",
+        "statement": "I can talk and ask questions about past events using Past Simple and Past Continuous (affirmative, negative, interrogative).",
+        "badge": "⏱️"
+      },
+      {
+        "id": "aviation_parts_forces",
+        "title": "Aviation Scientist",
+        "statement": "I can identify the main parts of an aeroplane and describe the four forces of flight (lift, drag, thrust, gravity).",
+        "badge": "✈️"
+      },
+      {
+        "id": "flight_listening",
+        "title": "Aviation Listener",
+        "statement": "I can listen to and understand in-flight dialogues about air pockets and mythological stories about Daedalus and Icarus.",
+        "badge": "🎧"
+      },
+      {
+        "id": "biography_writing",
+        "title": "Biographical Writer",
+        "statement": "I can organize and write a coherent biography of an inventor using chronological linking words (first, then, later, finally).",
+        "badge": "📜"
+      },
+      {
+        "id": "art_poem_reflection",
+        "title": "Art & Poetry Critic",
+        "statement": "I can read, talk about, and express my feelings on Pieter Brueghel's painting and poems about the fall of Icarus.",
+        "badge": "🎨"
+      }
+    ]
+  },
+  "teacher_notes": [
+    {
+      "id": "u4_e01_airhostess",
+      "lesson": "Appendix V and Lesson 2",
+      "title": "Modern Aviation Usage: Flight Attendant vs. Airhostess",
+      "note": "The 2004 coursebook prints 'airhostess'. In contemporary international aviation, gender-neutral terms such as 'flight attendant' or 'cabin crew' are standard. The app presents both terms transparently."
+    },
+    {
+      "id": "u4_e02_museum_name",
+      "lesson": "Lesson 1 Reading (p.38)",
+      "title": "Museum Name: Fleet Air Arm Museum",
+      "note": "Question 1 writes 'Fleet Air Museum' while the email text says 'Fleet Arm Museum'. The actual museum located at RNAS Yeovilton, Somerset is the Fleet Air Arm Museum. The book check notes this for pupils."
+    },
+    {
+      "id": "u4_e03_concorde_speed",
+      "lesson": "Lesson 2 Picture B (p.43)",
+      "title": "Aviation Fact Check: Concorde Speed",
+      "note": "The book groups Concorde under 'up to five times the speed of sound (760-3500 MPH)'. Concorde's actual cruising speed was Mach 2.04 (~1,354 MPH, twice the speed of sound). Hypersonic speeds (Mach 5+) are orbital rocket territory."
+    },
+    {
+      "id": "u4_e04_sikorsky_birthplace",
+      "lesson": "Lesson 2 Practice B (p.45)",
+      "title": "Biographical Note: Igor Sikorsky's Birthplace",
+      "note": "The prompt notes 'Born in Kiev, Ukraine'. While Kyiv was in the Russian Empire in 1889, it is the capital of Ukraine. The app preserves the printed student prompt verbatim."
+    },
+    {
+      "id": "u4_e05_bothers_typo",
+      "lesson": "Check Yourself B (p.47)",
+      "title": "Typo in Coursebook: Montgolfier Bothers",
+      "note": "SB p.47 misprints 'two French bothers who (invent)'. The app annotates this typo as 'brothers'."
+    },
+    {
+      "id": "u4_e06_concorde_clue",
+      "lesson": "Workbook Crossword Down 3",
+      "title": "Workbook Clue: Concorde Speed",
+      "note": "WB p.26 clue 3 says 'A Concorde flies 5 times up the ... of sound'. Crossword target is 'speed'."
+    },
+    {
+      "id": "u4_e07_landing_gea_key",
+      "lesson": "Teacher's Book p.51 key to WB Activity 3",
+      "title": "Teacher's Book Answer Key Typo",
+      "note": "TB p.51 line 735 prints '7. landing gea'. The workbook engine accepts 'landing gear'."
+    }
+  ],
+  "book_checks": [
+    {
+      "title": "Fleet Air Arm Museum Name",
+      "note": "Your book mentions 'Fleet Air Museum' and 'Fleet Arm Museum'. The official name is the Fleet Air Arm Museum near Yeovilton, Somerset."
+    },
+    {
+      "title": "Concorde Cruising Speed",
+      "note": "Your book says: 'five times the speed of sound'. In fact, Concorde flew at about twice the speed of sound (Mach 2.04)."
+    },
+    {
+      "title": "Montgolfier Brothers Typo",
+      "note": "Your book prints 'bothers'. The word is 'brothers'."
+    }
+  ],
+  "source_notes": {
+    "syllabus": "unit4/source/01_syllabus.txt",
+    "vocabulary": "unit4/source/02_vocabulary_list.txt",
+    "grammar": "unit4/source/13_SB_grammar_file.txt",
+    "workbook": "unit4/source/20_WB_unit.txt",
+    "teacher_book": "unit4/source/30_TB_unit.txt"
+  },
+  "supporting_lexis": [
+    "aeroplane",
+    "helicopter",
+    "simulator",
+    "cockpit",
+    "forces of flight",
+    "lift",
+    "drag",
+    "thrust",
+    "gravity",
+    "speed of sound",
+    "supersonic",
+    "air pocket",
+    "fasten seatbelts",
+    "flight attendant",
+    "runway",
+    "landing gear",
+    "fuselage",
+    "wings",
+    "tail",
+    "rudder",
+    "aileron",
+    "pioneer",
+    "inventor",
+    "biography",
+    "labyrinth",
+    "Icarus",
+    "Daedalus",
+    "wax",
+    "feathers",
+    "landscape",
+    "Brueghel",
+    "poem"
+  ]
+}
+;

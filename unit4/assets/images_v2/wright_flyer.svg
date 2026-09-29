@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4299e1" />
+      <stop offset="50%" stop-color="#90cdf4" />
+      <stop offset="100%" stop-color="#ebf8ff" />
+    </linearGradient>
+    <linearGradient id="duneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ecc94b" />
+      <stop offset="40%" stop-color="#d69e2e" />
+      <stop offset="100%" stop-color="#b7791f" />
+    </linearGradient>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefcbf" />
+      <stop offset="100%" stop-color="#f6e05e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="360" fill="url(#skyGrad)" />
+  <!-- Wind lines across sky -->
+  <path d="M 50 80 Q 200 70 350 85" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4" />
+  <path d="M 120 120 Q 300 110 480 125" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.35" />
+  <path d="M 450 60 Q 600 50 750 65" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3" />
+
+  <!-- Kitty Hawk Sand Dunes -->
+  <path d="M 0 380 Q 180 320 380 360 Q 580 400 800 340 L 800 500 L 0 500 Z" fill="url(#duneGrad)" />
+  <path d="M 0 420 Q 220 380 440 430 Q 660 480 800 410 L 800 500 L 0 500 Z" fill="#975a16" opacity="0.35" />
+
+  <!-- Launching Rail / Monorail Track on the Sand -->
+  <polygon points="120,440 380,390 400,394 140,446" fill="#744210" opacity="0.75" />
+
+  <!-- Orville Wright Running beside the Plane -->
+  <g transform="translate(180, 360)">
+    <circle cx="0" cy="0" r="8" fill="#2d3748" />
+    <polygon points="-5,8 5,8 10,38 -10,38" fill="#4a5568" />
+    <line x1="-5" y1="38" x2="-15" y2="65" stroke="#2d3748" stroke-width="4" />
+    <line x1="5" y1="38" x2="20" y2="60" stroke="#2d3748" stroke-width="4" />
+    <!-- Cap and coat -->
+    <rect x="-8" y="-4" width="16" height="5" rx="2" fill="#1a202c" />
+  </g>
+
+  <!-- The 1903 Wright Flyer Biplane in Flight -->
+  <g transform="translate(340, 160)">
+    <!-- Lower Wing (Wood & Muslin Fabric) -->
+    <rect x="-140" y="55" width="280" height="20" rx="4" fill="url(#canvasGrad)" stroke="#b7791f" stroke-width="2" />
+    <!-- Upper Wing -->
+    <rect x="-140" y="0" width="280" height="20" rx="4" fill="url(#canvasGrad)" stroke="#b7791f" stroke-width="2" />
+
+    <!-- Vertical Wing Struts -->
+    <line x1="-120" y1="20" x2="-120" y2="55" stroke="#744210" stroke-width="3" />
+    <line x1="-70" y1="20" x2="-70" y2="55" stroke="#744210" stroke-width="3" />
+    <line x1="-20" y1="20" x2="-20" y2="55" stroke="#744210" stroke-width="3" />
+    <line x1="30" y1="20" x2="30" y2="55" stroke="#744210" stroke-width="3" />
+    <line x1="80" y1="20" x2="80" y2="55" stroke="#744210" stroke-width="3" />
+    <line x1="130" y1="20" x2="130" y2="55" stroke="#744210" stroke-width="3" />
+
+    <!-- Cross Wire Bracing -->
+    <line x1="-120" y1="20" x2="-70" y2="55" stroke="#cbd5e0" stroke-width="1.5" />
+    <line x1="-70" y1="20" x2="-120" y2="55" stroke="#cbd5e0" stroke-width="1.5" />
+    <line x1="80" y1="20" x2="130" y2="55" stroke="#cbd5e0" stroke-width="1.5" />
+    <line x1="130" y1="20" x2="80" y2="55" stroke="#cbd5e0" stroke-width="1.5" />
+
+    <!-- Front Elevator (Canard) -->
+    <polygon points="-30,30 -60,25 -60,35" fill="none" stroke="#744210" stroke-width="2" />
+    <rect x="-95" y="24" width="40" height="10" rx="2" fill="url(#canvasGrad)" stroke="#b7791f" stroke-width="1.5" />
+
+    <!-- Rear Rudder (Double Vertical Vanes) -->
+    <polygon points="120,32 165,30 165,40" fill="none" stroke="#744210" stroke-width="2" />
+    <rect x="165" y="10" width="8" height="55" fill="url(#canvasGrad)" stroke="#b7791f" stroke-width="1.5" />
+    <rect x="178" y="10" width="8" height="55" fill="url(#canvasGrad)" stroke="#b7791f" stroke-width="1.5" />
+
+    <!-- Twin Pusher Propellers -->
+    <ellipse cx="60" cy="38" rx="4" ry="26" fill="#2d3748" opacity="0.6" />
+    <ellipse cx="-40" cy="38" rx="4" ry="26" fill="#2d3748" opacity="0.6" />
+
+    <!-- Pilot (Wilbur lying prone on the lower wing) -->
+    <ellipse cx="5" cy="52" rx="22" ry="7" fill="#2d3748" />
+    <circle cx="-16" cy="50" r="5" fill="#fbd38d" />
+
+    <!-- Landing Skids -->
+    <path d="M -80 75 L 80 75 L 95 65" stroke="#744210" stroke-width="3" fill="none" />
+    <path d="M -80 75 L -100 65" stroke="#744210" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Historic Caption Badge -->
+  <rect x="25" y="440" width="370" height="38" rx="8" fill="#1a202c" opacity="0.85" />
+  <text x="40" y="465" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f7fafc">The Wright Flyer — Kitty Hawk, 1903 (12 Seconds)</text>
+</svg>

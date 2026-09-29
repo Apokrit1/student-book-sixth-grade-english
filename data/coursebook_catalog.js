@@ -65,16 +65,19 @@ window.COURSEBOOK_CATALOG = {
       "unit": 4,
       "title": "The History of the Aeroplane",
       "slug": "unit4",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Daedalus & Icarus, Wright Brothers, aviation history, narrating past events",
       "theme": "Progress, Change, Inventions, Forces of Flight",
       "grammar": "Past Simple, Past Continuous, Time Linkers (when, while, after that)",
       "cross_curricular": [
         "History",
         "Science",
-        "Technology"
+        "Technology",
+        "Art"
       ],
-      "badge": "Planned",
+      "v1_url": "unit4/index.html",
+      "v2_url": "unit4/v2.html",
+      "badge": "Flagship v2 Ready",
       "accent_color": "#3182ce"
     },
     {

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hangarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="50%" stop-color="#4a5568" />
+      <stop offset="100%" stop-color="#1a202c" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#718096" />
+      <stop offset="100%" stop-color="#4a5568" />
+    </linearGradient>
+    <linearGradient id="planeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b6cb0" />
+      <stop offset="100%" stop-color="#1a365d" />
+    </linearGradient>
+    <linearGradient id="heliGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#319795" />
+      <stop offset="100%" stop-color="#234e52" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hangar Background Structure -->
+  <rect width="800" height="340" fill="url(#hangarGrad)" />
+  <!-- Arched Hangar Roof Beams -->
+  <path d="M 0 100 Q 400 20 800 100" stroke="#718096" stroke-width="6" fill="none" opacity="0.4" />
+  <path d="M 0 160 Q 400 80 800 160" stroke="#718096" stroke-width="4" fill="none" opacity="0.3" />
+  <line x1="200" y1="65" x2="200" y2="340" stroke="#718096" stroke-width="3" opacity="0.2" />
+  <line x1="400" y1="40" x2="400" y2="340" stroke="#718096" stroke-width="3" opacity="0.2" />
+  <line x1="600" y1="65" x2="600" y2="340" stroke="#718096" stroke-width="3" opacity="0.2" />
+
+  <!-- Exhibition Floor -->
+  <polygon points="0,340 800,340 800,500 0,500" fill="url(#floorGrad)" />
+  <!-- Runway Guideline -->
+  <polygon points="350,500 450,500 410,340 390,340" fill="#ecc94b" opacity="0.7" />
+
+  <!-- Historic Aircraft on Stand (Royal Navy Sea Harrier / Jet) -->
+  <g transform="translate(180, 230)">
+    <!-- Main Fuselage -->
+    <ellipse cx="140" cy="50" rx="140" ry="24" fill="url(#planeGrad)" />
+    <!-- Pointed Cockpit -->
+    <path d="M 220 38 Q 260 48 280 50 Q 260 56 220 62 Z" fill="#63b3ed" opacity="0.8" />
+    <path d="M 220 38 Q 245 42 255 50 L 220 50 Z" fill="#ebf8ff" opacity="0.6" />
+    <!-- Swept Wings -->
+    <polygon points="120,45 60,-25 20,48" fill="#2c5282" />
+    <polygon points="120,55 60,125 20,52" fill="#1a365d" />
+    <!-- Tail Fin and Rudder -->
+    <polygon points="20,40 -25,-30 5,45" fill="#2b6cb0" />
+    <!-- Royal Navy Roundel (Red White Blue) -->
+    <circle cx="110" cy="50" r="14" fill="#e53e3e" />
+    <circle cx="110" cy="50" r="9" fill="#ffffff" />
+    <circle cx="110" cy="50" r="4.5" fill="#2b6cb0" />
+    <!-- Landing Gear -->
+    <line x1="70" y1="68" x2="70" y2="92" stroke="#1a202c" stroke-width="4" />
+    <circle cx="70" cy="94" r="6" fill="#1a202c" />
+    <line x1="210" y1="65" x2="210" y2="90" stroke="#1a202c" stroke-width="3" />
+    <circle cx="210" cy="92" r="5" fill="#1a202c" />
+  </g>
+
+  <!-- Interactive Flight Simulator Pod -->
+  <g transform="translate(560, 240)">
+    <!-- Hydraulic Motion Base -->
+    <polygon points="60,110 30,150 170,150 140,110" fill="#1a202c" />
+    <line x1="65" y1="110" x2="45" y2="145" stroke="#e2e8f0" stroke-width="5" />
+    <line x1="135" y1="110" x2="155" y2="145" stroke="#e2e8f0" stroke-width="5" />
+    <!-- Simulator Cabin (Helicopter Cockpit Pod) -->
+    <rect x="25" y="25" width="150" height="85" rx="20" fill="url(#heliGrad)" stroke="#38b2ac" stroke-width="2" />
+    <!-- Simulator Viewscreen Glass -->
+    <path d="M 40 45 Q 90 35 150 45 L 145 75 Q 90 70 45 75 Z" fill="#90cdf4" opacity="0.75" />
+    <!-- Cabin Label -->
+    <text x="50" y="98" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">SIMULATOR 01</text>
+    <!-- Pupils / Visitors in Front -->
+    <circle cx="15" cy="115" r="10" fill="#dd6b20" />
+    <rect x="8" y="125" width="14" height="25" rx="4" fill="#3182ce" />
+    <circle cx="-10" cy="118" r="9" fill="#f6ad55" />
+    <rect x="-16" y="127" width="12" height="23" rx="4" fill="#d69e2e" />
+  </g>
+
+  <!-- Museum Badge Label -->
+  <rect x="25" y="440" width="350" height="38" rx="8" fill="#1a202c" opacity="0.85" />
+  <text x="40" y="465" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f7fafc">Fleet Air Arm Museum — Yeovilton</text>
+</svg>

@@ -1,0 +1,536 @@
+window.UNIT4_WORKBOOK_DATA = {
+  "unit": 4,
+  "title": "Unit 4 Workbook: The History of the Aeroplane",
+  "source_book": "10-0148-02_V2_Agglika_ST-Dimotikou_Tetradio-Ergasion.pdf",
+  "teacher_key_source": "unit4/source/30_TB_unit.txt",
+  "total_activities": 14,
+  "activities": [
+    {
+      "id": "a1",
+      "number": "A1",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 1. Crossword: The Flight Vocabulary",
+      "page": 26,
+      "type": "closed",
+      "instruction": "Solve the flight vocabulary crossword using the clues across and down.",
+      "gaps": [
+        {
+          "id": "a1_a1",
+          "prefix": "Across 1. Planes sometimes fall into it: ",
+          "accepted": ["air pocket", "air-pocket"],
+          "suffix": "(2 words)"
+        },
+        {
+          "id": "a1_a5",
+          "prefix": "Across 5. It lands on water: ",
+          "accepted": ["seaplane"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_a6",
+          "prefix": "Across 6. A space shuttle has a strong one: ",
+          "accepted": ["engine"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_a7",
+          "prefix": "Across 7. This force pulls the plane backward: ",
+          "accepted": ["drag"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_a9",
+          "prefix": "Across 9. This force pulls the plane down: ",
+          "accepted": ["gravity"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_a11",
+          "prefix": "Across 11. The Wright brothers invented it: ",
+          "accepted": ["airplane", "aeroplane"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_a13",
+          "prefix": "Across 13. This force pushes the plane upward: ",
+          "accepted": ["lift"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d2",
+          "prefix": "Down 2. A person travelling on a plane: ",
+          "accepted": ["passenger"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d3",
+          "prefix": "Down 3. A Concorde flies 5 times up the ................ of sound: ",
+          "accepted": ["speed"],
+          "suffix": "(E6 Book Check: Mach 2.04)"
+        },
+        {
+          "id": "a1_d4",
+          "prefix": "Down 4. A journey in the air: ",
+          "accepted": ["flight"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d8",
+          "prefix": "Down 8. It travels to the moon: ",
+          "accepted": ["rocket"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d10",
+          "prefix": "Down 10. A helicopter can ..................... anywhere: ",
+          "accepted": ["land"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d12",
+          "prefix": "Down 12. The person who controls a plane: ",
+          "accepted": ["pilot"],
+          "suffix": ""
+        },
+        {
+          "id": "a1_d14",
+          "prefix": "Down 14. Birds have got wings, so they can ............: ",
+          "accepted": ["fly"],
+          "suffix": ""
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "number": "A2",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 2. Parts of the Plane & Forces of Flight",
+      "page": 27,
+      "type": "closed",
+      "instruction": "Classify the given aviation terms into 'Parts of the plane' and 'Forces of flight'.",
+      "pairs": [
+        { "left": "cockpit", "right": "Parts of the plane" },
+        { "left": "engine", "right": "Parts of the plane" },
+        { "left": "fuselage", "right": "Parts of the plane" },
+        { "left": "landing gear", "right": "Parts of the plane" },
+        { "left": "rudder", "right": "Parts of the plane" },
+        { "left": "tail", "right": "Parts of the plane" },
+        { "left": "wings", "right": "Parts of the plane" },
+        { "left": "drag", "right": "Forces of flight" },
+        { "left": "gravity", "right": "Forces of flight" },
+        { "left": "lift", "right": "Forces of flight" },
+        { "left": "thrust", "right": "Forces of flight" }
+      ]
+    },
+    {
+      "id": "a3",
+      "number": "A3",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 3. Complete the Flight Story",
+      "page": 27,
+      "type": "closed",
+      "instruction": "Use the word bank to complete Maria's flight experience: took off, airhostess, air pocket, cockpit, landed, forces, pilot, fuselage, wings, tail, landing gear.",
+      "gaps": [
+        {
+          "id": "a3_1",
+          "prefix": "The 1. ",
+          "accepted": ["pilot"],
+          "suffix": "of the plane welcomed the passengers on board."
+        },
+        {
+          "id": "a3_2",
+          "prefix": "The 2. ",
+          "accepted": ["airhostess", "flight attendant"],
+          "suffix": "asked them to fasten their seat belts and switch off their mobiles."
+        },
+        {
+          "id": "a3_3",
+          "prefix": "When everything was ok, the plane 3. ",
+          "accepted": ["took off"],
+          "suffix": ". It was a wonderful trip,"
+        },
+        {
+          "id": "a3_4",
+          "prefix": "the weather was fine and the plane didn't fall into a(n) 4. ",
+          "accepted": ["air pocket", "air-pocket"],
+          "suffix": ". Maria was sitting near the window."
+        },
+        {
+          "id": "a3_5",
+          "prefix": "She remembered what she had learnt at school about the four 5. ",
+          "accepted": ["forces"],
+          "suffix": "of flight."
+        },
+        {
+          "id": "a3_6",
+          "prefix": "The body of the plane is called the 6. ",
+          "accepted": ["fuselage"],
+          "suffix": ""
+        },
+        {
+          "id": "a3_7",
+          "prefix": "and the wheels of the plane are the 7. ",
+          "accepted": ["landing gear"],
+          "suffix": "."
+        },
+        {
+          "id": "a3_8",
+          "prefix": "Maria could see the 8. ",
+          "accepted": ["wings"],
+          "suffix": "from the window."
+        },
+        {
+          "id": "a3_9",
+          "prefix": "She could not see its 9. ",
+          "accepted": ["tail"],
+          "suffix": "which is at the back part of the plane."
+        },
+        {
+          "id": "a3_10",
+          "prefix": "After 4 hours the plane 10. ",
+          "accepted": ["landed"],
+          "suffix": "at Heathrow airport in London."
+        },
+        {
+          "id": "a3_11",
+          "prefix": "Maria asked if she could visit the pilot who was in the 11. ",
+          "accepted": ["cockpit"],
+          "suffix": "of the plane."
+        }
+      ]
+    },
+    {
+      "id": "a4",
+      "number": "A4",
+      "lesson": "lesson1",
+      "title": "A. Vocabulary — 4. Match Information with Types of Planes",
+      "page": 28,
+      "type": "closed",
+      "instruction": "Match each type of aircraft with its corresponding flight capability.",
+      "pairs": [
+        {
+          "left": "Boeing 747",
+          "right": "They can travel very quickly and can carry many people and goods."
+        },
+        {
+          "left": "Space Shuttle",
+          "right": "They fly at speeds 5 to 10 times the speed of sound."
+        },
+        {
+          "left": "Seaplane",
+          "right": "They can land on water."
+        },
+        {
+          "left": "Concorde",
+          "right": "They can fly up to five times the speed of sound."
+        }
+      ]
+    },
+    {
+      "id": "b1",
+      "number": "B1",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 1. Hidden Irregular Past Tenses",
+      "page": 29,
+      "type": "closed",
+      "instruction": "Type the 6 irregular past tense verbs hidden in the letter puzzle.",
+      "gaps": [
+        {
+          "id": "b1_1",
+          "prefix": "Irregular past verb 1 (fly): ",
+          "accepted": ["flew"],
+          "suffix": ""
+        },
+        {
+          "id": "b1_2",
+          "prefix": "Irregular past verb 2 (fall): ",
+          "accepted": ["fell"],
+          "suffix": ""
+        },
+        {
+          "id": "b1_3",
+          "prefix": "Irregular past verb 3 (think): ",
+          "accepted": ["thought"],
+          "suffix": ""
+        },
+        {
+          "id": "b1_4",
+          "prefix": "Irregular past verb 4 (make): ",
+          "accepted": ["made"],
+          "suffix": ""
+        },
+        {
+          "id": "b1_5",
+          "prefix": "Irregular past verb 5 (say): ",
+          "accepted": ["said"],
+          "suffix": ""
+        },
+        {
+          "id": "b1_6",
+          "prefix": "Irregular past verb 6 (build): ",
+          "accepted": ["built"],
+          "suffix": ""
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "number": "B2",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 2. Past Simple Gap-Fill",
+      "page": 29,
+      "type": "closed",
+      "instruction": "Complete the sentences with the Past Simple form of the verbs: buy, feel, give, drink, do, break, go.",
+      "gaps": [
+        {
+          "id": "b2_1",
+          "prefix": "1. Mary ",
+          "accepted": ["broke"],
+          "suffix": "her leg in the school yard yesterday. (break)"
+        },
+        {
+          "id": "b2_2",
+          "prefix": "2. They ",
+          "accepted": ["bought"],
+          "suffix": "many souvenirs on their trip last year. (buy)"
+        },
+        {
+          "id": "b2_3",
+          "prefix": "3. He ",
+          "accepted": ["gave"],
+          "suffix": "me a free game ticket last week. (give)"
+        },
+        {
+          "id": "b2_4",
+          "prefix": "4. You ",
+          "accepted": ["went"],
+          "suffix": "to the wrong building last time. (go)"
+        },
+        {
+          "id": "b2_5",
+          "prefix": "5. He ",
+          "accepted": ["did"],
+          "suffix": "his homework last night. (do)"
+        },
+        {
+          "id": "b2_6",
+          "prefix": "6. I ",
+          "accepted": ["felt"],
+          "suffix": "very tired after lunch the day before yesterday. (feel)"
+        },
+        {
+          "id": "b2_7",
+          "prefix": "7. I ",
+          "accepted": ["drank"],
+          "suffix": "all the milk in the carton this morning. (drink)"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "number": "B3",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 3. Match Question to Answer",
+      "page": 29,
+      "type": "closed",
+      "instruction": "Match each question with its appropriate short answer.",
+      "pairs": [
+        {
+          "left": "Who built that building?",
+          "right": "A famous architect"
+        },
+        {
+          "left": "Where did you go last night?",
+          "right": "To the cinema"
+        },
+        {
+          "left": "Where did you buy that dress?",
+          "right": "At a small shop"
+        },
+        {
+          "left": "When did she arrive?",
+          "right": "On Sunday"
+        },
+        {
+          "left": "What time did they fly?",
+          "right": "At 8 o’clock"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "number": "B4",
+      "lesson": "lesson2",
+      "title": "B. Grammar — 4. What are Mary's Questions?",
+      "page": 30,
+      "type": "semi-open",
+      "instruction": "Write Mary's questions about Mark's party based on his answers in bold.",
+      "gaps": [
+        {
+          "id": "b4_a",
+          "prefix": "Mary: Who ",
+          "accepted": ["organised the party?", "organized the party?", "organised the party", "organized the party"],
+          "suffix": "(Mark: My friend Bill organized the party.)"
+        },
+        {
+          "id": "b4_b",
+          "prefix": "Mary: What kind of ",
+          "accepted": ["party was it?", "party was it"],
+          "suffix": "(Mark: It was a birthday party.)"
+        },
+        {
+          "id": "b4_c",
+          "prefix": "Mary: Whose ",
+          "accepted": ["party was it?", "birthday was it?", "party was it", "birthday was it"],
+          "suffix": "(Mark: It was his sister’s birthday.)"
+        },
+        {
+          "id": "b4_d",
+          "prefix": "Mary: How many ",
+          "accepted": ["children were there?", "children were at the party?", "children were there"],
+          "suffix": "(Mark: About 15 children were there.)"
+        },
+        {
+          "id": "b4_e",
+          "prefix": "Mary: When ",
+          "accepted": ["did the party start?", "did it start?", "did the party start"],
+          "suffix": "(Mark: The party started at 7 o’clock.)"
+        },
+        {
+          "id": "b4_f",
+          "prefix": "Mary: Were ",
+          "accepted": ["Peter and Joan there?", "Peter and Joan there"],
+          "suffix": "(Mark: No, Peter and Joan weren’t there.)"
+        },
+        {
+          "id": "b4_g",
+          "prefix": "Mary: What ",
+          "accepted": ["was the music", "was the music like?"],
+          "suffix": "like? (Mark: The music was fantastic.)"
+        },
+        {
+          "id": "b4_h",
+          "prefix": "Mary: Did ",
+          "accepted": ["you eat much?", "you eat much"],
+          "suffix": "(Mark: No, I didn’t eat much.)"
+        },
+        {
+          "id": "b4_i",
+          "prefix": "Mary: Did ",
+          "accepted": ["you sing?", "you sing 'Happy birthday'?", "you sing"],
+          "suffix": "(Mark: Yes, we all sang 'Happy birthday'.)"
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "number": "B5",
+      "lesson": "lesson3",
+      "title": "B. Grammar — 5. In Daedalus' Time (Did or Didn't)",
+      "page": 31,
+      "type": "closed",
+      "instruction": "Match each activity to whether ancient people did or didn't do it in Daedalus' time.",
+      "pairs": [
+        { "left": "paint on pottery", "right": "People did" },
+        { "left": "believe in the 12 gods", "right": "People did" },
+        { "left": "play games of marbles", "right": "People did" },
+        { "left": "fly by plane", "right": "People didn't" },
+        { "left": "eat cheeseburgers", "right": "People didn't" },
+        { "left": "play computer games", "right": "People didn't" }
+      ]
+    },
+    {
+      "id": "b6",
+      "number": "B6",
+      "lesson": "lesson3",
+      "title": "B. Grammar — 6. What People Didn't Do in Daedalus' Time",
+      "page": 31,
+      "type": "open",
+      "instruction": "Write three full sentences describing things people didn't do in Daedalus' time using negative Past Simple.",
+      "checklist": [
+        { "label": "Used negative Past Simple: didn't + base verb" },
+        { "label": "Included 'in Daedalus' time' in each sentence" },
+        { "label": "Mentioned modern inventions (cheeseburgers, planes, computer games)" }
+      ],
+      "model_text": "1. People didn't fly by plane in Daedalus' time.\n2. People didn't eat cheeseburgers in Daedalus' time.\n3. People didn't play computer games in Daedalus' time."
+    },
+    {
+      "id": "b7",
+      "number": "B7",
+      "lesson": "lesson3",
+      "title": "B. Grammar — 7. Interrupted Past Actions",
+      "page": 32,
+      "type": "closed",
+      "instruction": "Complete the interrupted past action sentences with the correct verb combination (Past Continuous + Past Simple).",
+      "gaps": [
+        {
+          "id": "b7_1",
+          "prefix": "1. The girl was sleeping when the alarm ",
+          "accepted": ["went off"],
+          "suffix": ". (go off)"
+        },
+        {
+          "id": "b7_2",
+          "prefix": "2. The child was working on the computer when the lights ",
+          "accepted": ["went out"],
+          "suffix": ". (go out)"
+        },
+        {
+          "id": "b7_3",
+          "prefix": "3. The boys were playing football when it ",
+          "accepted": ["started raining", "began to rain", "started to rain"],
+          "suffix": ". (start / rain)"
+        }
+      ]
+    },
+    {
+      "id": "b8",
+      "number": "B8",
+      "lesson": "lesson3",
+      "title": "B. Grammar — 8. At the Science Museum",
+      "page": 32,
+      "type": "semi-open",
+      "instruction": "Complete the description of what people were doing when Mary's class arrived at the Science Museum.",
+      "model_answers": [
+        "When the pupils arrived, some people were queuing and buying tickets.",
+        "Some boys were looking at an airplane.",
+        "An old woman was sitting on a bench.",
+        "A teacher was talking to a group of pupils.",
+        "The pupils were writing on their worksheets."
+      ]
+    },
+    {
+      "id": "c1",
+      "number": "C1",
+      "lesson": "lesson3",
+      "title": "C. Reading and Writing — 1. My Best Holiday",
+      "page": 33,
+      "type": "open",
+      "instruction": "Read about Mohammed, Ala, Hussam, and Elina's holidays. Then write a short paragraph about your best holiday using Past Simple.",
+      "checklist": [
+        { "label": "Named the destination where you travelled" },
+        { "label": "Used regular and irregular Past Simple verbs correctly" },
+        { "label": "Described activities, sights, or food enjoyed on the trip" },
+        { "label": "Expressed your personal feelings about the experience" }
+      ],
+      "model_text": "Last holiday I went to Crete with my family. We travelled by plane from Athens. We visited the ancient Palace of Knossos and saw the labyrinth from the myth of Daedalus and Icarus. In the afternoon we swam in the warm sea and ate fresh fish at a seaside taverna. It was an exciting and unforgettable holiday!"
+    },
+    {
+      "id": "c2",
+      "number": "C2",
+      "lesson": "lesson3",
+      "title": "C. Reading and Writing — 2. Biography of Alessandro Volta",
+      "page": 34,
+      "type": "open",
+      "instruction": "Read the notes about Italian physicist Alessandro Volta (1745-1827) and write his biography using Past Simple and linking words (first, then, after that, later, finally).",
+      "checklist": [
+        { "label": "Mentioned birthplace and childhood in Como, Italy" },
+        { "label": "Used chronological linking words: First, In 1774, In 1779, Later, Finally" },
+        { "label": "Described the invention of the electric battery (voltaic pile)" },
+        { "label": "Noted the naming of the electrical unit (the volt) after him" }
+      ],
+      "model_text": "Alessandro Volta was born in 1745 in Como, Lombardy, Italy, and went to school there. In 1774 he became professor of Physics at the Royal School in Como. While he was teaching there, he made various inventions. After that, in 1779 he became professor of Physics at the University of Pavia. A year later in 1780 he developed the voltaic pile, which was the forerunner of the electric battery. In 1794 he married Teresa Peregrini and had three sons. Napoleon made him a Count to honour him in 1810. Volta died in 1827. Many years later, in 1881 an electrical unit, the VOLT, took his name."
+    }
+  ]
+}
+;
