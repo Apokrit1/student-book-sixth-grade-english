@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a154b"/>
+      <stop offset="50%" stop-color="#2d1152"/>
+      <stop offset="100%" stop-color="#190734"/>
+    </linearGradient>
+    <linearGradient id="discGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7b00"/>
+      <stop offset="100%" stop-color="#ff007f"/>
+    </linearGradient>
+    <linearGradient id="flareGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Retro dance floor -->
+  <path d="M 0 380 L 800 380 L 800 500 L 0 500 Z" fill="#1a0033"/>
+  <g opacity="0.3">
+    <line x1="100" y1="380" x2="50" y2="500" stroke="#ff007f" stroke-width="2"/>
+    <line x1="250" y1="380" x2="220" y2="500" stroke="#00f0ff" stroke-width="2"/>
+    <line x1="400" y1="380" x2="400" y2="500" stroke="#ffdd00" stroke-width="2"/>
+    <line x1="550" y1="380" x2="580" y2="500" stroke="#00f0ff" stroke-width="2"/>
+    <line x1="700" y1="380" x2="750" y2="500" stroke="#ff007f" stroke-width="2"/>
+  </g>
+
+  <!-- Turntable & Vinyl Record -->
+  <rect x="50" y="290" width="160" height="100" rx="10" fill="#333344" stroke="#ffdd00" stroke-width="3"/>
+  <circle cx="120" cy="340" r="42" fill="#111111" stroke="#ff7b00" stroke-width="2"/>
+  <circle cx="120" cy="340" r="30" fill="#222" stroke="#555" stroke-width="1"/>
+  <circle cx="120" cy="340" r="16" fill="url(#discGrad)"/>
+  <circle cx="120" cy="340" r="4" fill="#fff"/>
+  <line x1="180" y1="310" x2="140" y2="335" stroke="#ccc" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Girl 1: Mini Skirt & High Heels (Dancing) -->
+  <g transform="translate(280, 140)">
+    <!-- Ponytail -->
+    <path d="M 50 40 C 30 20, 10 50, 5 70 C 15 65, 35 60, 45 50 Z" fill="#6a3805"/>
+    <circle cx="65" cy="45" r="22" fill="#fed0b8"/>
+    <!-- Eyes and smile -->
+    <circle cx="72" cy="42" r="2.5" fill="#333"/>
+    <path d="M 68 53 Q 73 59 78 53" fill="none" stroke="#333" stroke-width="2"/>
+    <!-- Yellow 60s Mini Dress -->
+    <path d="M 50 67 L 80 67 L 95 160 L 35 160 Z" fill="#ffd700" stroke="#ffaa00" stroke-width="2"/>
+    <circle cx="65" cy="95" r="8" fill="#ff4081"/>
+    <circle cx="65" cy="125" r="12" fill="#ff4081"/>
+    <!-- Arms dancing -->
+    <path d="M 50 75 Q 20 60 15 30" fill="none" stroke="#fed0b8" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 80 75 Q 110 90 120 70" fill="none" stroke="#fed0b8" stroke-width="9" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="55" y1="160" x2="50" y2="245" stroke="#fed0b8" stroke-width="9" stroke-linecap="round"/>
+    <line x1="75" y1="160" x2="85" y2="245" stroke="#fed0b8" stroke-width="9" stroke-linecap="round"/>
+    <!-- High heeled red shoes -->
+    <path d="M 45 245 L 60 245 L 56 258 L 43 258 Z" fill="#e91e63"/>
+    <path d="M 80 245 L 95 245 L 92 258 L 78 258 Z" fill="#e91e63"/>
+  </g>
+
+  <!-- Guy: Bell-bottomed Pants & Andreas Ponytail -->
+  <g transform="translate(460, 130)">
+    <!-- Ponytail -->
+    <path d="M 35 35 C 15 25, 0 45, 5 65 C 15 60, 25 55, 35 45 Z" fill="#2d1a04"/>
+    <circle cx="50" cy="42" r="22" fill="#ffd0b0"/>
+    <circle cx="45" cy="40" r="2.5" fill="#333"/>
+    <!-- Orange Shirt -->
+    <path d="M 30 65 L 70 65 L 75 140 L 25 140 Z" fill="#ff6d00"/>
+    <!-- Flared Bell-bottomed Trousers -->
+    <path d="M 27 140 L 73 140 L 88 255 L 53 255 L 50 175 L 47 255 L 12 255 Z" fill="url(#flareGrad)"/>
+    <!-- Arms -->
+    <path d="M 30 75 Q 0 85 10 115" fill="none" stroke="#ffd0b0" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 70 75 Q 100 65 115 90" fill="none" stroke="#ffd0b0" stroke-width="9" stroke-linecap="round"/>
+    <!-- Shoes -->
+    <ellipse cx="25" cy="257" rx="15" ry="6" fill="#3e2723"/>
+    <ellipse cx="75" cy="257" rx="15" ry="6" fill="#3e2723"/>
+  </g>
+
+  <!-- Party Punch Bowl and Canapes Table -->
+  <g transform="translate(630, 260)">
+    <rect x="0" y="80" width="130" height="60" rx="6" fill="#5d4037"/>
+    <!-- Punch Bowl -->
+    <ellipse cx="45" cy="65" rx="35" ry="12" fill="#ff1744" opacity="0.8"/>
+    <path d="M 10 65 Q 45 110 80 65 Z" fill="#e91e63" opacity="0.7" stroke="#ffffff" stroke-width="2"/>
+    <!-- Canapes Plate -->
+    <ellipse cx="100" cy="72" rx="22" ry="8" fill="#eeeeee"/>
+    <circle cx="95" cy="70" r="4" fill="#ff9800"/>
+    <circle cx="105" cy="71" r="4" fill="#4caf50"/>
+  </g>
+
+  <!-- 1968 Text Banner -->
+  <text x="400" y="60" text-anchor="middle" fill="#ffd700" font-family="Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="4">DIARY OF THE SIXTIES (1968)</text>
+</svg>

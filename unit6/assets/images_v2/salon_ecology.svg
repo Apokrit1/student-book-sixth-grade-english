@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eco_wall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="mirror_glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="50%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Eco Salon Light Green Wall -->
+  <rect width="800" height="380" fill="url(#eco_wall)"/>
+  
+  <!-- Vertical Living Plant Wall on Left -->
+  <rect x="40" y="40" width="130" height="330" rx="10" fill="#14532d"/>
+  <!-- Leaf patterns -->
+  <circle cx="70" cy="80" r="22" fill="#22c55e"/>
+  <circle cx="120" cy="110" r="26" fill="#16a34a"/>
+  <circle cx="85" cy="160" r="30" fill="#4ade80"/>
+  <circle cx="125" cy="200" r="24" fill="#22c55e"/>
+  <circle cx="75" cy="245" r="28" fill="#15803d"/>
+  <circle cx="115" cy="300" r="32" fill="#22c55e"/>
+  <circle cx="75" cy="335" r="20" fill="#4ade80"/>
+
+  <!-- Modern Styling Station (Center) -->
+  <!-- Mirror with Rounded Arch -->
+  <path d="M 280 320 L 280 130 A 120 120 0 0 1 520 130 L 520 320 Z" fill="url(#mirror_glass)" stroke="#e2e8f0" stroke-width="8"/>
+  <!-- Mirror reflection highlights -->
+  <path d="M 330 110 L 450 70 L 470 110 L 350 150 Z" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Salon Styling Table -->
+  <rect x="240" y="320" width="320" height="20" rx="6" fill="#334155"/>
+  <rect x="385" y="340" width="30" height="120" fill="#64748b"/>
+
+  <!-- Eco-Friendly Hair Products & Tools on Table -->
+  <!-- Natural shampoo bottles -->
+  <rect x="270" y="270" width="24" height="50" rx="4" fill="#16a34a"/>
+  <rect x="277" y="260" width="10" height="10" fill="#f8fafc"/>
+  <rect x="305" y="265" width="28" height="55" rx="5" fill="#f59e0b"/>
+  <rect x="314" y="255" width="10" height="10" fill="#f8fafc"/>
+  
+  <!-- Scissors & Comb -->
+  <path d="M 470 305 L 505 285 M 470 285 L 505 305" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="468" cy="285" r="6" fill="none" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="468" cy="305" r="6" fill="none" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="520" y="295" width="40" height="15" rx="2" fill="#78350f"/>
+  <line x1="525" y1="310" x2="525" y2="315" stroke="#78350f" stroke-width="2"/>
+  <line x1="530" y1="310" x2="530" y2="315" stroke="#78350f" stroke-width="2"/>
+  <line x1="535" y1="310" x2="535" y2="315" stroke="#78350f" stroke-width="2"/>
+  <line x1="540" y1="310" x2="540" y2="315" stroke="#78350f" stroke-width="2"/>
+  <line x1="545" y1="310" x2="545" y2="315" stroke="#78350f" stroke-width="2"/>
+  <line x1="550" y1="310" x2="550" y2="315" stroke="#78350f" stroke-width="2"/>
+
+  <!-- Professional Hairdresser Chair -->
+  <rect x="350" y="380" width="100" height="20" rx="10" fill="#0f172a"/>
+  <rect x="390" y="400" width="20" height="60" fill="#475569"/>
+  <ellipse cx="400" cy="460" rx="55" ry="15" fill="#334155"/>
+
+  <!-- Wooden Floor -->
+  <rect y="460" width="800" height="40" fill="#78350f"/>
+
+  <!-- Potted Bamboo on Right -->
+  <rect x="680" y="340" width="60" height="70" rx="6" fill="#e2e8f0"/>
+  <line x1="700" y1="340" x2="700" y2="170" stroke="#15803d" stroke-width="6"/>
+  <line x1="715" y1="340" x2="715" y2="150" stroke="#15803d" stroke-width="7"/>
+  <line x1="730" y1="340" x2="730" y2="190" stroke="#15803d" stroke-width="5"/>
+  <ellipse cx="685" cy="180" rx="20" ry="8" fill="#22c55e" transform="rotate(-30, 685, 180)"/>
+  <ellipse cx="735" cy="160" rx="20" ry="8" fill="#22c55e" transform="rotate(30, 735, 160)"/>
+
+  <!-- Title Badge -->
+  <rect x="250" y="25" width="300" height="38" rx="8" fill="#0f172a" opacity="0.85"/>
+  <text x="400" y="50" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700" font-family="system-ui, sans-serif">ECO-FRIENDLY HAIR SALON</text>
+</svg>

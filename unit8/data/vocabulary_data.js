@@ -1,0 +1,596 @@
+window.VOCABULARY_DATA = [
+  {
+    "id": 1,
+    "word": "adaptation",
+    "part_of_speech": "noun",
+    "ipa": "/ˌædæpˈteɪʃn/",
+    "meaning_gr": "διασκευή (έργου / ιστορίας)",
+    "definition_en": "A book or play that has been changed to make a new film or show.",
+    "example": "We watched a musical adaptation of the old fairy tale."
+  },
+  {
+    "id": 2,
+    "word": "allowance",
+    "part_of_speech": "noun",
+    "ipa": "/əˈlaʊəns/",
+    "meaning_gr": "χαρτζιλίκι, επίδομα",
+    "definition_en": "Money given to someone regularly, especially by parents to a child.",
+    "example": "He receives a weekly allowance to buy school books and fruit."
+  },
+  {
+    "id": 3,
+    "word": "approximately",
+    "part_of_speech": "adverb",
+    "ipa": "/əˈprɒksɪmətli/",
+    "meaning_gr": "περίπου",
+    "definition_en": "Close to a number or time, but not completely exact.",
+    "example": "Approximately five hundred pupils went to the music concert."
+  },
+  {
+    "id": 4,
+    "word": "artist",
+    "part_of_speech": "noun",
+    "ipa": "/ˈɑːtɪst/",
+    "meaning_gr": "καλλιτέχνης",
+    "definition_en": "A person who creates paintings or plays music well.",
+    "example": "The talented artist painted colourful pictures for our musical."
+  },
+  {
+    "id": 5,
+    "word": "attend",
+    "part_of_speech": "verb",
+    "ipa": "/əˈtend/",
+    "meaning_gr": "παρακολουθώ, πηγαίνω σε",
+    "definition_en": "To go to or be present at an event or concert.",
+    "example": "Many young people attend the summer music festival every year."
+  },
+  {
+    "id": 6,
+    "word": "background",
+    "part_of_speech": "noun",
+    "ipa": "/ˈbækɡraʊnd/",
+    "meaning_gr": "παρασκήνιο, υπόβαθρο, φόντο",
+    "definition_en": "The part of a picture or stage that is behind the main things.",
+    "example": "Soft guitar music played in the background while the actors talked."
+  },
+  {
+    "id": 7,
+    "word": "band",
+    "part_of_speech": "noun",
+    "ipa": "/bænd/",
+    "meaning_gr": "μουσικό συγκρότημα",
+    "definition_en": "A group of musicians who play music and sing songs together.",
+    "example": "My brother plays the electric guitar in a school rock band."
+  },
+  {
+    "id": 8,
+    "word": "bill",
+    "part_of_speech": "noun",
+    "ipa": "/bɪl/",
+    "meaning_gr": "λογαριασμός",
+    "definition_en": "A piece of paper showing how much money you must pay for something.",
+    "example": "Father paid the electricity bill at the post office yesterday."
+  },
+  {
+    "id": 9,
+    "word": "brochure",
+    "part_of_speech": "noun",
+    "ipa": "/ˈbrəʊʃə/",
+    "meaning_gr": "διαφημιστικό φυλλάδιο",
+    "definition_en": "A small paper book with pictures and facts about an event or place.",
+    "example": "She picked up a colourful brochure about the international folk festival."
+  },
+  {
+    "id": 10,
+    "word": "chaperones",
+    "part_of_speech": "noun",
+    "ipa": "/ˈʃæpərəʊnz/",
+    "meaning_gr": "συνοδοί (σε σχολική εκδρομή / εκδήλωση)",
+    "definition_en": "Older people who look after younger students during school trips.",
+    "example": "Two teachers were the chaperones during our class trip."
+  },
+  {
+    "id": 11,
+    "word": "chore",
+    "part_of_speech": "noun",
+    "ipa": "/tʃɔː/",
+    "meaning_gr": "δουλειά του σπιτιού, αγγαρεία",
+    "definition_en": "A small job around the house that you must do regularly.",
+    "example": "Washing the dishes after dinner is my daily chore."
+  },
+  {
+    "id": 12,
+    "word": "chorus",
+    "part_of_speech": "noun",
+    "ipa": "/ˈkɔːrəs/",
+    "meaning_gr": "ρεφρέν, χορωδία",
+    "definition_en": "The part of a song that is repeated after each verse.",
+    "example": "The whole class loved to sing the lively chorus together."
+  },
+  {
+    "id": 13,
+    "word": "consumer",
+    "part_of_speech": "noun",
+    "ipa": "/kənˈsjuːmə/",
+    "meaning_gr": "καταναλωτής",
+    "definition_en": "A person who buys things or uses goods and services.",
+    "example": "A good consumer checks prices before buying expensive shoes."
+  },
+  {
+    "id": 14,
+    "word": "dazzling",
+    "part_of_speech": "adjective",
+    "ipa": "/ˈdæzlɪŋ/",
+    "meaning_gr": "εκθαμβωτικός, λαμπερός",
+    "definition_en": "Extremely bright, exciting, or impressive to look at.",
+    "example": "The dancers had dazzling costumes under the bright stage lights."
+  },
+  {
+    "id": 15,
+    "word": "downtown",
+    "part_of_speech": "noun",
+    "ipa": "/ˌdaʊnˈtaʊn/",
+    "meaning_gr": "κέντρο της πόλης",
+    "definition_en": "The central busy part of a city where shops and theatres are.",
+    "example": "We took the bus downtown to visit the music museum."
+  },
+  {
+    "id": 16,
+    "word": "drum",
+    "part_of_speech": "noun",
+    "ipa": "/drʌm/",
+    "meaning_gr": "τύμπανο",
+    "definition_en": "A round musical tool that you hit with sticks or hands.",
+    "example": "He played the drum loudly to keep the rhythm for the band."
+  },
+  {
+    "id": 17,
+    "word": "educational",
+    "part_of_speech": "adjective",
+    "ipa": "/ˌedʒuˈkeɪʃənl/",
+    "meaning_gr": "εκπαιδευτικός",
+    "definition_en": "Providing helpful knowledge or teaching something useful.",
+    "example": "Visiting the musical instruments museum was an educational trip."
+  },
+  {
+    "id": 18,
+    "word": "fairy tale",
+    "part_of_speech": "noun",
+    "ipa": "/ˈfeəri teɪl/",
+    "meaning_gr": "παραμύθι",
+    "definition_en": "A traditional story for children about magic, heroes, or animals.",
+    "example": "The musical was based on the famous fairy tale Little Red Riding Hood."
+  },
+  {
+    "id": 19,
+    "word": "folk music",
+    "part_of_speech": "noun",
+    "ipa": "/ˈfəʊk mjuːzɪk/",
+    "meaning_gr": "παραδοσιακή μουσική",
+    "definition_en": "Traditional music that has been played by ordinary people for generations.",
+    "example": "We listened to beautiful folk music played on traditional instruments."
+  },
+  {
+    "id": 20,
+    "word": "forgive",
+    "part_of_speech": "verb",
+    "ipa": "/fəˈɡɪv/",
+    "meaning_gr": "συγχωρώ",
+    "definition_en": "To stop being angry with someone who made a mistake.",
+    "example": "She decided to forgive her brother for breaking her pencil."
+  },
+  {
+    "id": 21,
+    "word": "generation",
+    "part_of_speech": "noun",
+    "ipa": "/ˌdʒenəˈreɪʃn/",
+    "meaning_gr": "γενιά",
+    "definition_en": "All the people born and living at about the same time.",
+    "example": "This wonderful folk song was passed down from generation to generation."
+  },
+  {
+    "id": 22,
+    "word": "guitar",
+    "part_of_speech": "noun",
+    "ipa": "/ɡɪˈtɑː/",
+    "meaning_gr": "κιθάρα",
+    "definition_en": "A musical tool with six strings that you play with your fingers.",
+    "example": "Maria practiced playing her guitar every afternoon."
+  },
+  {
+    "id": 23,
+    "word": "handouts",
+    "part_of_speech": "noun",
+    "ipa": "/ˈhændaʊts/",
+    "meaning_gr": "φυλλάδια σημειώσεων",
+    "definition_en": "Printed papers given to students in class to help them learn.",
+    "example": "The music teacher had helpful handouts with song words."
+  },
+  {
+    "id": 24,
+    "word": "harmony",
+    "part_of_speech": "noun",
+    "ipa": "/ˈhɑːməni/",
+    "meaning_gr": "αρμονία",
+    "definition_en": "Pleasing musical sounds made when different notes are played together.",
+    "example": "The singers were in perfect harmony during the school festival."
+  },
+  {
+    "id": 25,
+    "word": "income",
+    "part_of_speech": "noun",
+    "ipa": "/ˈɪnkʌm/",
+    "meaning_gr": "εισόδημα",
+    "definition_en": "The money a person receives regularly for work or business.",
+    "example": "His monthly income allows him to save money for summer holidays."
+  },
+  {
+    "id": 26,
+    "word": "inspire",
+    "part_of_speech": "verb",
+    "ipa": "/ɪnˈspaɪə/",
+    "meaning_gr": "εμπνέω",
+    "definition_en": "To give someone good ideas and the wish to do something great.",
+    "example": "A good music teacher can inspire children to learn new songs."
+  },
+  {
+    "id": 27,
+    "word": "instructor",
+    "part_of_speech": "noun",
+    "ipa": "/ɪnˈstrʌktə/",
+    "meaning_gr": "εκπαιδευτής, δάσκαλος",
+    "definition_en": "A person whose job is to teach a sport or skill.",
+    "example": "The violin instructor showed the pupil how to hold the bow."
+  },
+  {
+    "id": 28,
+    "word": "instrument",
+    "part_of_speech": "noun",
+    "ipa": "/ˈɪnstrəmənt/",
+    "meaning_gr": "μουσικό όργανο",
+    "definition_en": "An object like a piano, flute, or drum used to produce music.",
+    "example": "Every child in the music class had an instrument to play."
+  },
+  {
+    "id": 29,
+    "word": "instrumental",
+    "part_of_speech": "adjective",
+    "ipa": "/ˌɪnstrəˈmentl/",
+    "meaning_gr": "οργανικός (μουσική μόνο με όργανα)",
+    "definition_en": "Music played using musical tools without any singing voices.",
+    "example": "The band played a fast instrumental song before the singer arrived."
+  },
+  {
+    "id": 30,
+    "word": "intelligent",
+    "part_of_speech": "adjective",
+    "ipa": "/ɪnˈtelɪdʒənt/",
+    "meaning_gr": "έξυπνος, ευφυής",
+    "definition_en": "Able to learn, understand, and think about things quickly and well.",
+    "example": "She made an intelligent decision to save half of her pocket money."
+  },
+  {
+    "id": 31,
+    "word": "length",
+    "part_of_speech": "noun",
+    "ipa": "/leŋθ/",
+    "meaning_gr": "μήκος, διάρκεια",
+    "definition_en": "How long something is from one end to the other, or in time.",
+    "example": "The length of the music concert was about two hours."
+  },
+  {
+    "id": 32,
+    "word": "look forward to",
+    "part_of_speech": "verb",
+    "ipa": "/lʊk ˈfɔːwəd tuː/",
+    "meaning_gr": "ανυπομονώ για",
+    "definition_en": "To feel excited and happy about something that will happen soon.",
+    "example": "We look forward to watching the school musical on Saturday night."
+  },
+  {
+    "id": 33,
+    "word": "lyrics",
+    "part_of_speech": "noun",
+    "ipa": "/ˈlɪrɪks/",
+    "meaning_gr": "στίχοι τραγουδιού",
+    "definition_en": "The words that make up a song.",
+    "example": "The simple lyrics of the song were easy for children to remember."
+  },
+  {
+    "id": 34,
+    "word": "melody",
+    "part_of_speech": "noun",
+    "ipa": "/ˈmelədi/",
+    "meaning_gr": "μελωδία",
+    "definition_en": "A sweet pattern of musical notes that forms a song.",
+    "example": "The flute played a sweet melody that made everyone smile."
+  },
+  {
+    "id": 35,
+    "word": "millionaire",
+    "part_of_speech": "noun",
+    "ipa": "/ˌmɪljəˈneə/",
+    "meaning_gr": "εκατομμυριούχος",
+    "definition_en": "A very rich person who has at least one million pounds or euros.",
+    "example": "If I were a millionaire, I would build a big music school for children."
+  },
+  {
+    "id": 36,
+    "word": "oboe",
+    "part_of_speech": "noun",
+    "ipa": "/ˈəʊbəʊ/",
+    "meaning_gr": "όμποε",
+    "definition_en": "A musical wooden tool played by blowing air into it.",
+    "example": "The musician played a warm low note on the oboe."
+  },
+  {
+    "id": 37,
+    "word": "originate",
+    "part_of_speech": "verb",
+    "ipa": "/əˈrɪdʒɪneɪt/",
+    "meaning_gr": "προέρχομαι, κατάγομαι",
+    "definition_en": "To start or come from a particular place or beginning.",
+    "example": "Many modern musical styles originate from traditional songs."
+  },
+  {
+    "id": 38,
+    "word": "owe",
+    "part_of_speech": "verb",
+    "ipa": "/əʊ/",
+    "meaning_gr": "χρωστώ",
+    "definition_en": "To need to pay money to someone for things you took or borrowed.",
+    "example": "I owe my friend five euros for the concert ticket."
+  },
+  {
+    "id": 39,
+    "word": "passionate",
+    "part_of_speech": "adjective",
+    "ipa": "/ˈpæʃənət/",
+    "meaning_gr": "παθιασμένος, γεμάτος πάθος",
+    "definition_en": "Having or showing very strong love and feelings for something.",
+    "example": "He is very passionate about playing the trumpet in the school band."
+  },
+  {
+    "id": 40,
+    "word": "percussion",
+    "part_of_speech": "noun",
+    "ipa": "/pəˈkʌʃn/",
+    "meaning_gr": "κρουστά (μουσικά όργανα)",
+    "definition_en": "Musical tools like drums and bells played by hitting or shaking them.",
+    "example": "The percussion section had an exciting beat during the show."
+  },
+  {
+    "id": 41,
+    "word": "performance",
+    "part_of_speech": "noun",
+    "ipa": "/pəˈfɔːməns/",
+    "meaning_gr": "παράσταση, εκτέλεση",
+    "definition_en": "The act of acting, dancing, or playing music in front of people.",
+    "example": "The school band made a good performance at the town square."
+  },
+  {
+    "id": 42,
+    "word": "perform",
+    "part_of_speech": "verb",
+    "ipa": "/pəˈfɔːm/",
+    "meaning_gr": "δίνω παράσταση, ερμηνεύω",
+    "definition_en": "To act, sing, or play an instrument for an audience.",
+    "example": "The children will perform their funny play on Friday morning."
+  },
+  {
+    "id": 43,
+    "word": "persuade",
+    "part_of_speech": "verb",
+    "ipa": "/pəˈsweɪd/",
+    "meaning_gr": "πείθω",
+    "definition_en": "To make someone agree to do something by giving good reasons.",
+    "example": "She managed to persuade her friend to join the school band."
+  },
+  {
+    "id": 44,
+    "word": "pester",
+    "part_of_speech": "verb",
+    "ipa": "/ˈpestə/",
+    "meaning_gr": "ενοχλώ, ζαλίζω (με απαιτήσεις)",
+    "definition_en": "To bother someone by asking for things again and again.",
+    "example": "Children often pester their parents to buy sweets at the shop."
+  },
+  {
+    "id": 45,
+    "word": "pocket money",
+    "part_of_speech": "noun",
+    "ipa": "/ˈpɒkɪt ˌmʌni/",
+    "meaning_gr": "χαρτζιλίκι",
+    "definition_en": "A small amount of money given to a child regularly to spend.",
+    "example": "Tom saves some of his pocket money in a little blue bank."
+  },
+  {
+    "id": 46,
+    "word": "provide",
+    "part_of_speech": "verb",
+    "ipa": "/prəˈvaɪd/",
+    "meaning_gr": "παρέχω, προσφέρω",
+    "definition_en": "To give someone something that they need or want.",
+    "example": "The festival workers provide free cold water for all visitors."
+  },
+  {
+    "id": 47,
+    "word": "register",
+    "part_of_speech": "verb",
+    "ipa": "/ˈredʒɪstə/",
+    "meaning_gr": "εγγράφομαι, καταγράφω",
+    "definition_en": "To put an official name on a list for a course or competition.",
+    "example": "Pupils should register online before joining the music class."
+  },
+  {
+    "id": 48,
+    "word": "research",
+    "part_of_speech": "noun",
+    "ipa": "/rɪˈsɜːtʃ/",
+    "meaning_gr": "έρευνα",
+    "definition_en": "The careful study of a subject to find new facts and information.",
+    "example": "We did some internet research about traditional Greek instruments."
+  },
+  {
+    "id": 49,
+    "word": "reservation",
+    "part_of_speech": "noun",
+    "ipa": "/ˌrezəˈveɪʃn/",
+    "meaning_gr": "κράτηση (θέσης)",
+    "definition_en": "An arrangement to keep a seat, ticket, or table for you.",
+    "example": "Mother made a phone reservation for four good concert seats."
+  },
+  {
+    "id": 50,
+    "word": "rhythm",
+    "part_of_speech": "noun",
+    "ipa": "/ˈrɪðəm/",
+    "meaning_gr": "ρυθμός",
+    "definition_en": "A regular repeating pattern of musical beats or movements.",
+    "example": "The pupils moved their hands to the fast rhythm of the song."
+  },
+  {
+    "id": 51,
+    "word": "simply",
+    "part_of_speech": "adverb",
+    "ipa": "/ˈsɪmpli/",
+    "meaning_gr": "απλά, απλώς",
+    "definition_en": "In an easy or clear way, or only.",
+    "example": "You simply push the green button to play the music."
+  },
+  {
+    "id": 52,
+    "word": "source",
+    "part_of_speech": "noun",
+    "ipa": "/sɔːs/",
+    "meaning_gr": "πηγή",
+    "definition_en": "The place, thing, or person where something starts or comes from.",
+    "example": "Books are a wonderful source of ideas and knowledge."
+  },
+  {
+    "id": 53,
+    "word": "stage",
+    "part_of_speech": "noun",
+    "ipa": "/steɪdʒ/",
+    "meaning_gr": "σκηνή θεάτρου",
+    "definition_en": "The raised floor in a theatre where actors and musicians perform.",
+    "example": "The musicians walked onto the stage and bowed to the audience."
+  },
+  {
+    "id": 54,
+    "word": "string",
+    "part_of_speech": "noun",
+    "ipa": "/strɪŋ/",
+    "meaning_gr": "χορδή (οργάνου)",
+    "definition_en": "A tight wire on an instrument that makes music when you touch it.",
+    "example": "He had to replace the top string on his guitar."
+  },
+  {
+    "id": 55,
+    "word": "toiletries",
+    "part_of_speech": "noun",
+    "ipa": "/ˈtɔɪlətriz/",
+    "meaning_gr": "είδη ατομικής υγιεινής / καθαριότητας",
+    "definition_en": "Things you use to clean your body, like soap and water.",
+    "example": "She packed soap, clean towels, and toiletries in her small bag."
+  },
+  {
+    "id": 56,
+    "word": "trumpet",
+    "part_of_speech": "noun",
+    "ipa": "/ˈtrʌmpɪt/",
+    "meaning_gr": "τρομπέτα",
+    "definition_en": "A bright metal wind tool that plays loud clear notes.",
+    "example": "He played a happy melody on his bright golden trumpet."
+  },
+  {
+    "id": 57,
+    "word": "trust",
+    "part_of_speech": "verb",
+    "ipa": "/trʌst/",
+    "meaning_gr": "εμπιστεύομαι",
+    "definition_en": "To believe that someone is good and will not hurt you.",
+    "example": "Good friends always trust each other with their little secrets."
+  },
+  {
+    "id": 58,
+    "word": "venue",
+    "part_of_speech": "noun",
+    "ipa": "/ˈvenjuː/",
+    "meaning_gr": "χώρος εκδήλωσης",
+    "definition_en": "The place where a concert, festival, or sports event happens.",
+    "example": "The ancient stone theatre was a wonderful venue for the concert."
+  },
+  {
+    "id": 59,
+    "word": "verse",
+    "part_of_speech": "noun",
+    "ipa": "/vɜːs/",
+    "meaning_gr": "στροφή (τραγουδιού / ποιήματος)",
+    "definition_en": "One of the parts that a poem or song has.",
+    "example": "The singer read the first verse with soft music."
+  },
+  {
+    "id": 60,
+    "word": "violin",
+    "part_of_speech": "noun",
+    "ipa": "/ˌvaɪəˈlɪn/",
+    "meaning_gr": "βιολί",
+    "definition_en": "A wooden musical tool with four strings played with a bow.",
+    "example": "She played a slow, beautiful melody on her wooden violin."
+  },
+  {
+    "id": 61,
+    "word": "vocal",
+    "part_of_speech": "adjective",
+    "ipa": "/ˈvəʊkl/",
+    "meaning_gr": "φωνητικός",
+    "definition_en": "Connected with the human voice or singing.",
+    "example": "The children did vocal exercises before the concert started."
+  },
+  {
+    "id": 62,
+    "word": "waste",
+    "part_of_speech": "verb",
+    "ipa": "/weɪst/",
+    "meaning_gr": "σπαταλώ",
+    "definition_en": "To spend money, time, or energy on things you do not need.",
+    "example": "Do not waste your pocket money on plastic toys."
+  },
+  {
+    "id": 63,
+    "word": "wealthy",
+    "part_of_speech": "adjective",
+    "ipa": "/ˈwelθi/",
+    "meaning_gr": "πλούσιος, εύπορος",
+    "definition_en": "Having a lot of money or rich things.",
+    "example": "The wealthy man provided money to help build the music library."
+  },
+  {
+    "id": 64,
+    "word": "wedding",
+    "part_of_speech": "noun",
+    "ipa": "/ˈwedɪŋ/",
+    "meaning_gr": "γάμος (τελετή)",
+    "definition_en": "A special day when two people get married, and the party after.",
+    "example": "Traditional musicians played happy songs at the village wedding."
+  },
+  {
+    "id": 65,
+    "word": "wind",
+    "part_of_speech": "noun",
+    "ipa": "/wɪnd/",
+    "meaning_gr": "πνευστά (μουσικά όργανα)",
+    "definition_en": "Musical tools played by blowing air into them, like flutes and trumpets.",
+    "example": "The band has a large wind section with flutes and trumpets."
+  },
+  {
+    "id": 66,
+    "word": "wolf",
+    "part_of_speech": "noun",
+    "ipa": "/wʊlf/",
+    "meaning_gr": "λύκος",
+    "definition_en": "A wild dog-like animal that lives and hunts in forest groups.",
+    "example": "In the fairy tale, Little Red Riding Hood meets a cunning wolf."
+  }
+];

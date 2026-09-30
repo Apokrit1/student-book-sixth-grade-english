@@ -1,0 +1,1 @@
+A musical tool with six strings that you play with your fingers.

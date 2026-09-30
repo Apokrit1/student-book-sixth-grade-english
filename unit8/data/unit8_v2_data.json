@@ -1,0 +1,817 @@
+{
+  "unit_id": 8,
+  "unit_title": "Blow Your Own Trumpet",
+  "theme": "Musical Instruments, Bands, Performances, Pocket Money & Problem Page",
+  "coursebook_page_range": "Pupil's Book pp. 97-110, Workbook pp. 68-77",
+  "hero": {
+    "title": "Blow Your Own Trumpet",
+    "subtitle": "Discover traditional and modern musical instruments, rock band rehearsals, smart pocket money budgeting, and creative problem page advice.",
+    "badge": "Unit 8 — CEFR A2+"
+  },
+  "stories": [
+    {
+      "id": "museum_folk_instruments",
+      "student": "Eleni & Dimitris",
+      "country": "Greece",
+      "capital": "Athens",
+      "hometown": "Plaka",
+      "nationality": "Greek",
+      "flag": "🎻",
+      "audio_key": "story_museum_folk_instruments",
+      "audio_file": "assets/audio_v2/stories/museum_folk_instruments_full_story.mp3",
+      "image": "assets/images_v2/folk_instruments.svg",
+      "summary": "Eleni and Dimitris visit the Museum of Greek Folk Musical Instruments in Plaka and explore traditional clarinets, lutes, and brass horns.",
+      "narrative": "Eleni and Dimitris visit the Museum of Greek Folk Musical Instruments in downtown Athens with adult chaperones. The educational exhibition displays how folk music originated centuries ago and was passed down through each generation. A helpful instructor gives the pupils a colourful brochure and detailed handouts about each traditional instrument. Dimitris looks at an antique wooden oboe and a rare wind pipe, while Eleni examines a handmade string violin used at a traditional island wedding. The guide explains the length of each tube and how artists play instrumental melodies without electric amplification. The excited children look forward to attending a live concert in the garden tonight.",
+      "landmarks": [
+        {
+          "name": "Museum Instrument Collection",
+          "type": "Cultural Venue",
+          "word_key": "instrument",
+          "word_id": 28,
+          "desc": "Historic neoclassical mansion in Athens housing over 1,200 traditional folk instruments."
+        },
+        {
+          "name": "Wind & Brass Gallery",
+          "type": "Instrument Gallery",
+          "word_key": "wind",
+          "word_id": 65,
+          "desc": "Exhibition of shepherds' flutes, wooden clarinets, and brass horns across generations."
+        },
+        {
+          "name": "Traditional String Lutes",
+          "type": "Handmade Instruments",
+          "word_key": "string",
+          "word_id": 54,
+          "desc": "Folk violins, bouzoukis, and wooden guitars that produce rich acoustic harmony."
+        },
+        {
+          "name": "Educational Handouts Stand",
+          "type": "Learning Resource",
+          "word_key": "educational",
+          "word_id": 17,
+          "desc": "Informative exhibition brochures and guides for visiting school pupils."
+        }
+      ],
+      "vocabulary_ids": [
+        4,
+        5,
+        9,
+        10,
+        15,
+        17,
+        19,
+        21,
+        23,
+        27,
+        28,
+        29,
+        31,
+        32,
+        36,
+        37,
+        54,
+        60,
+        64,
+        65
+      ],
+      "follow_up_questions": [
+        {
+          "question": "Where is the Museum of Greek Folk Musical Instruments located?",
+          "options": [
+            "In downtown Athens, in the historic district of Plaka",
+            "On an island in the Aegean Sea",
+            "In an ancient stadium in Olympia",
+            "Inside the Athens International Airport"
+          ],
+          "answer": 0,
+          "explanation": "The museum is situated in a neoclassical mansion in Plaka, downtown Athens."
+        },
+        {
+          "question": "What does the museum instructor give Eleni and Dimitris?",
+          "options": [
+            "A free violin and guitar",
+            "A colourful brochure and detailed handouts",
+            "Tickets for an opera in London",
+            "A glass jar for pocket money"
+          ],
+          "answer": 1,
+          "explanation": "The instructor hands them an educational brochure and handouts about folk instruments."
+        },
+        {
+          "question": "What event do the children look forward to attending tonight?",
+          "options": [
+            "A live traditional concert in the garden",
+            "A swimming race at the Olympic pool",
+            "A hot-air balloon race",
+            "A school test on ancient history"
+          ],
+          "answer": 0,
+          "explanation": "They look forward to attending a live traditional concert on the museum courtyard stage."
+        }
+      ]
+    },
+    {
+      "id": "school_rock_band",
+      "student": "Maya & Liam",
+      "country": "United Kingdom",
+      "capital": "London",
+      "hometown": "Camden",
+      "nationality": "British",
+      "flag": "🎸",
+      "audio_key": "story_school_rock_band",
+      "audio_file": "assets/audio_v2/stories/school_rock_band_full_story.mp3",
+      "image": "assets/images_v2/school_band.svg",
+      "summary": "Maya and Liam rehearse with their school rock band, writing lyrics, tuning guitars, and perfecting their drum rhythm.",
+      "narrative": "Maya and Liam are passionate members of a popular school rock band called The Camden Sparks. Every Tuesday, they meet in the music room to rehearse and compose. Maya is the lead vocal singer; she loves to write lyrics that inspire her friends, with catchy verses and a memorable chorus. Liam plays the electric guitar with dazzling speed, while Ben hits the percussion drum kit to establish a tight rhythm and steady beat. Their music teacher helped them register for the city music festival and make a hall reservation at a famous downtown venue. The band creates a rich melody and harmony, and is thrilled to perform on the main auditorium stage for their big annual performance.",
+      "landmarks": [
+        {
+          "name": "Camden Rehearsal Studio",
+          "type": "Rehearsal Venue",
+          "word_key": "band",
+          "word_id": 7,
+          "desc": "Acoustically treated studio where student bands practice with amplifiers and microphones."
+        },
+        {
+          "name": "Percussion Corner",
+          "type": "Rhythm Station",
+          "word_key": "percussion",
+          "word_id": 40,
+          "desc": "Complete acoustic drum kit, cymbals, and tambourines providing steady rhythmic drive."
+        },
+        {
+          "name": "Vocal Microphone & Stand",
+          "type": "Performance Setup",
+          "word_key": "vocal",
+          "word_id": 61,
+          "desc": "Professional studio microphone where lead singers deliver expressive melodies."
+        },
+        {
+          "name": "Spring Festival Stage",
+          "type": "Concert Stage",
+          "word_key": "stage",
+          "word_id": 53,
+          "desc": "Main auditorium stage with spotlights where the group will perform live."
+        }
+      ],
+      "vocabulary_ids": [
+        7,
+        12,
+        14,
+        16,
+        22,
+        24,
+        26,
+        33,
+        34,
+        39,
+        40,
+        41,
+        42,
+        47,
+        49,
+        50,
+        53,
+        58,
+        59,
+        61
+      ],
+      "follow_up_questions": [
+        {
+          "question": "What role does Maya have in the school band?",
+          "options": [
+            "She is the lead vocal singer and writes inspiring lyrics",
+            "She plays the heavy brass trumpet",
+            "She manages the ticket sales",
+            "She plays the traditional violin"
+          ],
+          "answer": 0,
+          "explanation": "Maya sings lead vocals and writes catchy lyrics for each verse and chorus."
+        },
+        {
+          "question": "Which instrument does Ben play to keep the rhythm?",
+          "options": [
+            "The percussion drum kit",
+            "A wooden flute",
+            "An acoustic oboe",
+            "An electric keyboard"
+          ],
+          "answer": 0,
+          "explanation": "Ben plays the percussion drum kit to provide steady rhythmic timing."
+        },
+        {
+          "question": "Where will The Camden Sparks give their upcoming live performance?",
+          "options": [
+            "On the main auditorium stage for the annual festival",
+            "On a television cooking show",
+            "At an international sports stadium",
+            "Inside the city subway station"
+          ],
+          "answer": 0,
+          "explanation": "They are preparing to perform on the main auditorium stage."
+        }
+      ]
+    },
+    {
+      "id": "pocket_money_budget",
+      "student": "George & Kelly",
+      "country": "Cyprus",
+      "capital": "Nicosia",
+      "hometown": "Engomi",
+      "nationality": "Cypriot",
+      "flag": "🪙",
+      "audio_key": "story_pocket_money_budget",
+      "audio_file": "assets/audio_v2/stories/pocket_money_budget_full_story.mp3",
+      "image": "assets/images_v2/piggy_bank.svg",
+      "summary": "George and Kelly learn how to manage their weekly pocket money, budget for expenses, and save up for a school charity project.",
+      "narrative": "George and Kelly receive a weekly pocket money allowance from their parents for helping with each household chore. In the past, Kelly would pester her mother for extra coins, simply to waste them on useless snacks and fancy toiletries. After studying how a smart consumer acts, the children decided to do intelligent research on financial habits. They learned that even a wealthy millionaire must track every bill and never owe money carelessly. Their parents provide three clear jars to organise their small income: one for essential needs, one for long-term savings, and one to donate. George managed to persuade Kelly to save approximately forty euros from every income source to buy school supplies for local children.",
+      "landmarks": [
+        {
+          "name": "Allowance & Chores Jar",
+          "type": "Financial Tool",
+          "word_key": "allowance",
+          "word_id": 2,
+          "desc": "Weekly coins earned through household chores and responsible family cooperation."
+        },
+        {
+          "name": "Smart Consumer Sheet",
+          "type": "Learning Project",
+          "word_key": "consumer",
+          "word_id": 13,
+          "desc": "Clear budget tracking expenses, income sources, and savings targets."
+        },
+        {
+          "name": "Pocket Money Savings Jar",
+          "type": "Saving Habit",
+          "word_key": "pocket money",
+          "word_id": 45,
+          "desc": "Secure piggy bank where saved money accumulates for important goals."
+        },
+        {
+          "name": "Income Sources Ledger",
+          "type": "Charity Action",
+          "word_key": "source",
+          "word_id": 52,
+          "desc": "Book donation funded by children's cooperative savings project."
+        }
+      ],
+      "vocabulary_ids": [
+        2,
+        3,
+        8,
+        11,
+        13,
+        25,
+        30,
+        35,
+        38,
+        43,
+        44,
+        45,
+        46,
+        48,
+        51,
+        52,
+        55,
+        62,
+        63
+      ],
+      "follow_up_questions": [
+        {
+          "question": "How do George and Kelly earn their weekly pocket money?",
+          "options": [
+            "By helping with household chores at home",
+            "By winning a musical competition",
+            "By selling guitars in a shop",
+            "By acting in a theatrical play"
+          ],
+          "answer": 0,
+          "explanation": "They receive an allowance from their parents for helping with chores."
+        },
+        {
+          "question": "What did the children learn about managing money?",
+          "options": [
+            "Even a wealthy person must track bills and avoid debt",
+            "To spend all coins on video games immediately",
+            "To borrow money without asking",
+            "To avoid doing chores"
+          ],
+          "answer": 0,
+          "explanation": "They learned to track bills, avoid owing money, and save carefully."
+        },
+        {
+          "question": "What did the children buy with their saved forty euros?",
+          "options": [
+            "School supplies for local children",
+            "Brand new expensive video games",
+            "Tickets to an overseas flight",
+            "New clothes and perfume"
+          ],
+          "answer": 0,
+          "explanation": "They bought school supplies to help local children."
+        }
+      ]
+    },
+    {
+      "id": "fairytale_problem_page",
+      "student": "Counselor Clara & The Big Bad Wolf",
+      "country": "Fairytale Forest",
+      "capital": "Enchanted Woods",
+      "hometown": "Storyville",
+      "nationality": "Fable",
+      "flag": "🐺",
+      "audio_key": "story_fairytale_problem_page",
+      "audio_file": "assets/audio_v2/stories/fairytale_problem_page_full_story.mp3",
+      "image": "assets/images_v2/problem_page.svg",
+      "summary": "The Big Bad Wolf writes to the School Magazine problem page seeking advice on how to apologize, overcome prejudice, and join the forest orchestra.",
+      "narrative": "In a charming modern adaptation of an old fairy tale, the famous wolf sends a troubled letter to the school problem page. He writes about his misunderstood background: while villagers think he is frightening, he only loves playing the brass trumpet. Counselor Clara writes back with caring advice. She explains that if he apologises sincerely for past mistakes, people will forgive him and learn to trust him again. The wolf follows her guidance, holds an open rehearsal in the village square, and proves that mutual trust and music can turn a lonely wolf into a beloved friend.",
+      "landmarks": [
+        {
+          "name": "Fairytale Problem Column",
+          "type": "Advice Section",
+          "word_key": "fairy tale",
+          "word_id": 18,
+          "desc": "Popular school magazine page offering friendly, supportive guidance to students in need."
+        },
+        {
+          "name": "Wolf's Brass Trumpet",
+          "type": "Musical Expression",
+          "word_key": "trumpet",
+          "word_id": 56,
+          "desc": "A gleaming brass trumpet played with great musical skill and devotion."
+        },
+        {
+          "name": "Forgiveness Letter",
+          "type": "Reconciliation Step",
+          "word_key": "forgive",
+          "word_id": 20,
+          "desc": "An honest letter asking for forgiveness and expressing a desire for positive friendship."
+        },
+        {
+          "name": "Mutual Trust Circle",
+          "type": "Community Value",
+          "word_key": "trust",
+          "word_id": 57,
+          "desc": "A joyful forest gathering bringing villagers and forest creatures together in trust."
+        }
+      ],
+      "vocabulary_ids": [
+        1,
+        6,
+        18,
+        20,
+        56,
+        57,
+        66
+      ],
+      "follow_up_questions": [
+        {
+          "question": "What instrument does the wolf secretly love playing?",
+          "options": [
+            "The brass trumpet",
+            "An electric bass guitar",
+            "A loud acoustic drum kit",
+            "An antique church organ"
+          ],
+          "answer": 0,
+          "explanation": "The wolf plays the trumpet with passion and wants to make music."
+        },
+        {
+          "question": "What advice does Counselor Clara give to the wolf?",
+          "options": [
+            "To apologise sincerely so villagers can forgive and trust him",
+            "To hide in the forest forever and never speak to anyone",
+            "To buy an expensive sports car and drive away",
+            "To start an argument with the grandmother"
+          ],
+          "answer": 0,
+          "explanation": "She advises him to apologise for past mistakes and build trust."
+        },
+        {
+          "question": "What value helps the villagers and wolf become good friends?",
+          "options": [
+            "Mutual trust, sincere communication, and forgiveness",
+            "Keeping secrets and avoiding conversations",
+            "Spending lots of money on gifts",
+            "Competing aggressively in races"
+          ],
+          "answer": 0,
+          "explanation": "Mutual trust, clear communication, and forgiveness create lasting friendship."
+        }
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Inductive Grammar Lab: Modal Verbs (Ability, Obligation, Advice)",
+    "subtitle": "Discover how modal verbs express ability (can/could), obligation (must/have to), advice (should/ought to), and permission.",
+    "target_structures": [
+      "Ability & Possibility: can / could / be able to",
+      "Obligation & Necessity: must / have to / need to",
+      "Lack of Necessity: don't have to / needn't",
+      "Prohibition: mustn't",
+      "Advice & Suggestions: should / ought to / had better / why don't you"
+    ],
+    "rules": [
+      {
+        "structure": "Ability: can / could / be able to",
+        "use": "Express general ability in present (can), past (could), or all tenses (be able to).",
+        "signal_words": [
+          "now",
+          "in the past",
+          "in the future",
+          "easily"
+        ],
+        "examples": [
+          "He can play the trumpet with great skill.",
+          "When she was six, she could not read music notes.",
+          "With enough practice, you will be able to play in the school band."
+        ]
+      },
+      {
+        "structure": "Obligation & Necessity: must vs have to",
+        "use": "Express strong obligation from the speaker (must) or external rules/laws (have to).",
+        "signal_words": [
+          "rule",
+          "necessary",
+          "important",
+          "law"
+        ],
+        "examples": [
+          "I must practice my violin every day to improve.",
+          "All students have to be at the rehearsal hall by 4:00 PM."
+        ]
+      },
+      {
+        "structure": "Prohibition vs No Obligation: mustn't vs don't have to",
+        "use": "Mustn't means it is forbidden. Don't have to means it is not necessary, but you may if you want.",
+        "signal_words": [
+          "forbidden",
+          "not allowed",
+          "optional",
+          "not necessary"
+        ],
+        "examples": [
+          "You mustn't touch the antique instruments in the glass display case.",
+          "You don't have to bring your own guitar; the school provides acoustic guitars."
+        ]
+      },
+      {
+        "structure": "Advice & Recommendation: should / ought to",
+        "use": "Give friendly guidance, recommendations, or constructive suggestions.",
+        "signal_words": [
+          "good idea",
+          "advice",
+          "opinion",
+          "recommend"
+        ],
+        "examples": [
+          "You should make a weekly budget for your pocket money.",
+          "You ought to tune your guitar strings before going on stage."
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "id": "p1",
+        "prompt": "You _____ touch the antique folk instruments in the museum. It is strictly forbidden!",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "should",
+          "could"
+        ],
+        "answer": 0,
+        "explanation": "Mustn't expresses strong prohibition ('strictly forbidden')."
+      },
+      {
+        "id": "p2",
+        "prompt": "Tomorrow is Saturday! We _____ wake up early because there is no school.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "have to",
+          "ought to"
+        ],
+        "answer": 1,
+        "explanation": "Don't have to expresses absence of obligation (it is not necessary)."
+      },
+      {
+        "id": "p3",
+        "prompt": "If you want to save pocket money, you _____ put a few coins in your piggy bank every week.",
+        "options": [
+          "mustn't",
+          "should",
+          "couldn't",
+          "don't have to"
+        ],
+        "answer": 1,
+        "explanation": "Should is used to give sensible, constructive advice."
+      },
+      {
+        "id": "p4",
+        "prompt": "Maya is very talented. She _____ sing beautifully and write catchy song lyrics.",
+        "options": [
+          "can",
+          "mustn't",
+          "had to",
+          "ought"
+        ],
+        "answer": 0,
+        "explanation": "Can expresses present ability."
+      },
+      {
+        "id": "p5",
+        "prompt": "Musicians _____ arrive at the concert venue thirty minutes before the show starts.",
+        "options": [
+          "have to",
+          "mustn't",
+          "could",
+          "might"
+        ],
+        "answer": 0,
+        "explanation": "Have to expresses an external requirement or rule."
+      },
+      {
+        "id": "p6",
+        "prompt": "You look very tired from studying all night. Why _____ you take a short break?",
+        "options": [
+          "don't",
+          "mustn't",
+          "shouldn't",
+          "aren't"
+        ],
+        "answer": 0,
+        "explanation": "'Why don't you...' is an idiomatic way to offer a friendly suggestion."
+      }
+    ],
+    "school_lab_listening": {
+      "title": "School Band Rehearsal: Preparing for the Spring Concert",
+      "audio_file": "assets/audio_v2/grammar/school_concert_rehearsal.mp3",
+      "context": "Listen to music teacher Ms Davies and band leader Mark discuss instrument tuning, practice schedules, and concert preparations.",
+      "script_lines": [
+        {
+          "speaker": "Ms Davies",
+          "text": "Good afternoon Mark. How is the band rehearsal coming along for the spring concert?"
+        },
+        {
+          "speaker": "Mark",
+          "text": "Good afternoon Ms Davies! We are making great progress, but we still need to practice our new song."
+        },
+        {
+          "speaker": "Ms Davies",
+          "text": "You should make sure everyone arrives on time. Remember, the brass section must tune their trumpets before we begin."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Of course. Can we use the stage lighting during our Friday rehearsal?"
+        },
+        {
+          "speaker": "Ms Davies",
+          "text": "Yes, you can. You don't have to wear your stage costumes on Friday, but you must be fully prepared for Saturday night!"
+        },
+        {
+          "speaker": "Mark",
+          "text": "Thank you Ms Davies. We will give our best performance for the school audience!"
+        }
+      ],
+      "dialogue_script": [
+        {
+          "speaker": "Ms Davies",
+          "text": "Good afternoon Mark. How is the band rehearsal coming along for the spring concert?"
+        },
+        {
+          "speaker": "Mark",
+          "text": "Good afternoon Ms Davies! We are making great progress, but we still need to practice our new song."
+        },
+        {
+          "speaker": "Ms Davies",
+          "text": "You should make sure everyone arrives on time. Remember, the brass section must tune their trumpets before we begin."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Of course. Can we use the stage lighting during our Friday rehearsal?"
+        },
+        {
+          "speaker": "Ms Davies",
+          "text": "Yes, you can. You don't have to wear your stage costumes on Friday, but you must be fully prepared for Saturday night!"
+        },
+        {
+          "speaker": "Mark",
+          "text": "Thank you Ms Davies. We will give our best performance for the school audience!"
+        }
+      ]
+    },
+    "content_true_false": [
+      {
+        "statement": "The brass section must tune their trumpets before the rehearsal begins.",
+        "correct": true,
+        "explanation": "Ms Davies reminds Mark that the brass section must tune their instruments before playing."
+      },
+      {
+        "statement": "The band members have to wear their official stage costumes during the Friday practice.",
+        "correct": false,
+        "explanation": "Ms Davies states they do not have to wear costumes on Friday, only for Saturday night."
+      },
+      {
+        "statement": "Mark and the band members are allowed to use the stage lighting during Friday's rehearsal.",
+        "correct": true,
+        "explanation": "Ms Davies confirms that they can use the stage lighting on Friday."
+      }
+    ]
+  },
+  "collocations": [
+    {
+      "expression": "blow your own trumpet",
+      "meaning": "boast about one's own talents or achievements",
+      "greek": "περιαυτολογώ, κομπάζω",
+      "example": "He is very modest; he never blows his own trumpet about his guitar skills."
+    },
+    {
+      "expression": "strike a chord",
+      "meaning": "create an emotional response or feel very familiar",
+      "greek": "αγγίζω ευαίσθητη χορδή",
+      "example": "The touching lyrics of the folk song struck a chord with the whole audience."
+    },
+    {
+      "expression": "face the music",
+      "meaning": "accept the unpleasant consequences of your actions",
+      "greek": "αντιμετωπίζω τις συνέπειες",
+      "example": "He spent all his pocket money on games, and now he must face the music."
+    },
+    {
+      "expression": "play by ear",
+      "meaning": "play music without reading notes, or decide things as you go",
+      "greek": "παίζω με το αυτί, βλέποντας και κάνοντας",
+      "example": "Dimitris cannot read sheet music, but he can play any traditional tune by ear."
+    },
+    {
+      "expression": "music to my ears",
+      "meaning": "something that you are very pleased and delighted to hear",
+      "greek": "μουσική στα αυτιά μου (πολύ ευχάριστο νέο)",
+      "example": "Hearing that our school concert raised money for charity was music to my ears."
+    },
+    {
+      "expression": "save up pocket money",
+      "meaning": "keep coins regularly in order to buy something special",
+      "greek": "κάνω οικονομίες από το χαρτζιλίκι",
+      "example": "Kelly saves up her pocket money to buy a new acoustic violin."
+    }
+  ],
+  "definition_challenge": [
+    {
+      "id": "d1",
+      "clue": "A shiny brass wind instrument with three valves that produces a loud, bright sound.",
+      "word": "trumpet",
+      "word_id": 56,
+      "options": [
+        "trumpet",
+        "flute",
+        "violin",
+        "drum"
+      ]
+    },
+    {
+      "id": "d2",
+      "clue": "A regular sum of money given by parents to children, often for doing helpful chores.",
+      "word": "allowance",
+      "word_id": 2,
+      "options": [
+        "allowance",
+        "income",
+        "bill",
+        "brochure"
+      ]
+    },
+    {
+      "id": "d3",
+      "clue": "A musical instrument with a tight membrane over a frame that you hit with sticks.",
+      "word": "drum",
+      "word_id": 16,
+      "options": [
+        "drum",
+        "guitar",
+        "oboe",
+        "violin"
+      ]
+    },
+    {
+      "id": "d4",
+      "clue": "The written words of a song created by a songwriter or poet.",
+      "word": "lyrics",
+      "word_id": 33,
+      "options": [
+        "lyrics",
+        "verse",
+        "rhythm",
+        "handouts"
+      ]
+    },
+    {
+      "id": "d5",
+      "clue": "A traditional children's story about magical creatures, talking animals, or enchanted lands.",
+      "word": "fairy tale",
+      "word_id": 18,
+      "options": [
+        "fairy tale",
+        "adaptation",
+        "research",
+        "brochure"
+      ]
+    },
+    {
+      "id": "d6",
+      "clue": "A musical wooden instrument with four strings played with a bow.",
+      "word": "violin",
+      "word_id": 60,
+      "options": [
+        "violin",
+        "trumpet",
+        "drum",
+        "percussion"
+      ]
+    },
+    {
+      "id": "d7",
+      "clue": "A person who possesses money or assets worth at least one million euros or dollars.",
+      "word": "millionaire",
+      "word_id": 35,
+      "options": [
+        "millionaire",
+        "consumer",
+        "instructor",
+        "artist"
+      ]
+    },
+    {
+      "id": "d8",
+      "clue": "A place where public events, performances, or concerts happen.",
+      "word": "venue",
+      "word_id": 58,
+      "options": [
+        "venue",
+        "stage",
+        "downtown",
+        "background"
+      ]
+    }
+  ],
+  "writing_workshop": {
+    "title": "Problem Letter & Advice Column",
+    "prompt": "Write a letter asking for advice about saving pocket money or practicing a musical instrument, OR write a reply from Counselor Clara giving friendly suggestions.",
+    "model_text": "Dear Counselor Clara,\n\nI have a problem and I really need your advice. Every week my parents give me a small pocket money allowance. However, by Tuesday I always spend all my coins on sweets and video games! Now our school band is planning a trip, and I cannot afford the ticket.\n\nWhat should I do? How can I stop wasting my money?\n\nDesperate Saver\n\n---\n\nDear Desperate Saver,\n\nDon't worry! Many students face the same challenge. Here is my advice:\nFirst, you should keep a small notebook to record your daily expenses. When you see where your money goes, it is easier to make sensible choices.\nSecond, you ought to divide your allowance into jars: one for spending, and one for savings. Put your savings jar out of sight!\nThird, you could ask your parents if you can do extra chores at home to earn a little extra income for the band trip.\n\nBe patient, stick to your plan, and you will achieve your goal!\n\nBest wishes,\nCounselor Clara",
+    "scaffolding_steps": [
+      {
+        "step": 1,
+        "title": "State the Problem Clearly",
+        "tip": "Explain who you are, what the situation is, and what worries you."
+      },
+      {
+        "step": 2,
+        "title": "Use Modal Verbs for Advice",
+        "tip": "Use 'You should...', 'You ought to...', 'Why don't you...', and 'You could...' to give polite guidance."
+      },
+      {
+        "step": 3,
+        "title": "Offer Practical Action Steps",
+        "tip": "Give two or three realistic ideas that the reader can try immediately."
+      },
+      {
+        "step": 4,
+        "title": "Encourage and Sign Off",
+        "tip": "End with a warm, encouraging closing sentence (e.g., 'Best wishes', 'Stay positive!')."
+      }
+    ],
+    "checklist": [
+      "I used greeting and sign-off formulas appropriate for an advice column.",
+      "I explained the problem or situation clearly.",
+      "I used modal verbs for advice (should, ought to, why don't you).",
+      "I checked my spelling and used vocabulary from Unit 8 (allowance, pocket money, budget, advice)."
+    ]
+  },
+  "can_do_checklist": [
+    {
+      "id": "cd1",
+      "statement": "I can identify and describe various musical instruments (brass, wind, strings, percussion).",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd2",
+      "statement": "I can express ability and obligation using can, could, must, and have to.",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd3",
+      "statement": "I can give friendly advice and suggestions using should, ought to, and 'Why don't you...'.",
+      "cefr_level": "A2+"
+    },
+    {
+      "id": "cd4",
+      "statement": "I can discuss pocket money, budgeting, and saving habits in English.",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd5",
+      "statement": "I can write a simple problem letter and provide helpful advice with clear reasons.",
+      "cefr_level": "B1"
+    }
+  ]
+}

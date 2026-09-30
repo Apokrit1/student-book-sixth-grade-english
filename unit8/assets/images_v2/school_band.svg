@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="spotLight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spotLightCyan" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="guitarRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bandBg)"/>
+
+  <!-- Spotlights -->
+  <polygon points="150,0 20,480 320,480" fill="url(#spotLight)"/>
+  <polygon points="650,0 480,480 780,480" fill="url(#spotLightCyan)"/>
+
+  <!-- Stage Platform -->
+  <polygon points="60,420 740,420 800,500 0,500" fill="#18181b"/>
+  <line x1="60" y1="420" x2="740" y2="420" stroke="#ec4899" stroke-width="4"/>
+
+  <!-- Drum Kit (Center Stage) -->
+  <g transform="translate(320, 210)">
+    <!-- Bass Drum -->
+    <circle cx="80" cy="150" r="65" fill="#27272a" stroke="#e4e4e7" stroke-width="6"/>
+    <circle cx="80" cy="150" r="52" fill="#09090b"/>
+    <text x="80" y="157" font-family="'Impact', sans-serif" font-size="20" fill="#ec4899" text-anchor="middle" letter-spacing="2">SPARKS</text>
+    <!-- Snare & Tom-Toms -->
+    <ellipse cx="25" cy="85" rx="30" ry="14" fill="#52525b" stroke="#e4e4e7" stroke-width="3"/>
+    <ellipse cx="135" cy="85" rx="30" ry="14" fill="#52525b" stroke="#e4e4e7" stroke-width="3"/>
+    <!-- Cymbals -->
+    <ellipse cx="-20" cy="35" rx="42" ry="12" fill="#facc15" stroke="#ca8a04" stroke-width="3"/>
+    <line x1="-20" y1="35" x2="-10" y2="180" stroke="#a1a1aa" stroke-width="5"/>
+    <ellipse cx="180" cy="30" rx="46" ry="13" fill="#facc15" stroke="#ca8a04" stroke-width="3"/>
+    <line x1="180" y1="30" x2="170" y2="180" stroke="#a1a1aa" stroke-width="5"/>
+    <!-- Drumsticks -->
+    <line x1="30" y1="65" x2="80" y2="90" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="130" y1="65" x2="85" y2="90" stroke="#fef08a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Electric Guitar (Left) -->
+  <g transform="translate(130, 190) rotate(22)">
+    <!-- Body -->
+    <path d="M 40 90 C 20 80 5 110 10 140 C 15 170 30 190 60 190 C 90 190 110 160 110 130 C 110 100 80 85 70 65 L 75 10 L 45 10 L 50 65 Z" fill="url(#guitarRed)"/>
+    <!-- Pickguard -->
+    <path d="M 40 100 Q 70 110 65 150 Q 35 155 35 125 Z" fill="#ffffff" opacity="0.9"/>
+    <!-- Pickups & Bridge -->
+    <rect x="48" y="115" width="24" height="6" fill="#18181b"/>
+    <rect x="48" y="130" width="24" height="6" fill="#18181b"/>
+    <!-- Neck -->
+    <rect x="52" y="-120" width="16" height="130" fill="#fef3c7"/>
+    <!-- Frets -->
+    <line x1="52" y1="-100" x2="68" y2="-100" stroke="#71717a" stroke-width="1.5"/>
+    <line x1="52" y1="-70" x2="68" y2="-70" stroke="#71717a" stroke-width="1.5"/>
+    <line x1="52" y1="-40" x2="68" y2="-40" stroke="#71717a" stroke-width="1.5"/>
+    <line x1="52" y1="-10" x2="68" y2="-10" stroke="#71717a" stroke-width="1.5"/>
+    <!-- Headstock -->
+    <polygon points="50,-120 70,-120 75,-160 45,-155" fill="url(#guitarRed)"/>
+  </g>
+
+  <!-- Vocal Microphone Stand (Right) -->
+  <g transform="translate(610, 200)">
+    <!-- Mic Head -->
+    <ellipse cx="20" cy="40" rx="14" ry="20" fill="#71717a" stroke="#e4e4e7" stroke-width="2"/>
+    <rect x="10" y="32" width="20" height="16" fill="#27272a" opacity="0.6"/>
+    <!-- Clip & Boom -->
+    <rect x="16" y="58" width="8" height="25" fill="#18181b"/>
+    <!-- Stand Pole -->
+    <line x1="20" y1="80" x2="20" y2="230" stroke="#d4d4d8" stroke-width="5"/>
+    <!-- Base -->
+    <polygon points="-10,230 50,230 20,215" fill="#27272a"/>
+  </g>
+
+  <!-- Amplifier Stack (Far Left) -->
+  <g transform="translate(40, 290)">
+    <rect x="0" y="0" width="90" height="130" rx="6" fill="#18181b" stroke="#3f3f46" stroke-width="4"/>
+    <rect x="10" y="10" width="70" height="70" fill="#27272a"/>
+    <circle cx="45" cy="45" r="26" fill="#09090b"/>
+    <rect x="10" y="90" width="70" height="30" fill="#3f3f46"/>
+    <circle cx="25" cy="105" r="5" fill="#f43f5e"/>
+    <circle cx="45" cy="105" r="5" fill="#facc15"/>
+    <circle cx="65" cy="105" r="5" fill="#22c55e"/>
+  </g>
+
+  <!-- Dynamic Energy Notes & Waves -->
+  <g fill="#ec4899">
+    <circle cx="270" cy="130" r="10"/>
+    <path d="M 270 130 L 270 60 L 310 70 L 310 135" stroke="#ec4899" stroke-width="4" fill="none"/>
+    <circle cx="310" cy="135" r="10"/>
+    <circle cx="560" cy="110" r="9"/>
+    <path d="M 560 110 L 560 50 L 590 55" stroke="#06b6d4" stroke-width="4" fill="none"/>
+    <circle cx="590" cy="105" r="8" fill="#06b6d4"/>
+  </g>
+</svg>

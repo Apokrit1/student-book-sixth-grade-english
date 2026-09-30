@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="arena_roof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="pool_water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <linearGradient id="lane_float" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arena Ceiling & Architecture -->
+  <rect width="800" height="180" fill="url(#arena_roof)"/>
+  <!-- Structural trusses -->
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#334155" stroke-width="4"/>
+  <line x1="0" y1="90" x2="800" y2="90" stroke="#334155" stroke-width="3"/>
+  <line x1="100" y1="0" x2="150" y2="90" stroke="#475569" stroke-width="3"/>
+  <line x1="250" y1="0" x2="200" y2="90" stroke="#475569" stroke-width="3"/>
+  <line x1="400" y1="0" x2="350" y2="90" stroke="#475569" stroke-width="3"/>
+  <line x1="550" y1="0" x2="500" y2="90" stroke="#475569" stroke-width="3"/>
+  <line x1="700" y1="0" x2="650" y2="90" stroke="#475569" stroke-width="3"/>
+  
+  <!-- Arena Floodlights -->
+  <circle cx="200" cy="90" r="14" fill="#fef08a"/>
+  <circle cx="400" cy="90" r="14" fill="#fef08a"/>
+  <circle cx="600" cy="90" r="14" fill="#fef08a"/>
+
+  <!-- Spectator Stands / Scoreboard -->
+  <rect x="250" y="20" width="300" height="50" rx="8" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+  <text x="400" y="45" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="700" font-family="monospace">WORLD RECORD: 00:47:84</text>
+  <text x="400" y="60" text-anchor="middle" fill="#fef08a" font-size="11" font-family="monospace">100m FREESTYLE FINAL</text>
+
+  <!-- Pool Deck -->
+  <rect y="180" width="800" height="320" fill="#e2e8f0"/>
+  <!-- 50m Olympic Pool Basin -->
+  <polygon points="60,220 740,220 780,500 20,500" fill="url(#pool_water)"/>
+
+  <!-- Swimming Lane Dividers (Perspective) -->
+  <line x1="160" y1="220" x2="130" y2="500" stroke="#ef4444" stroke-width="6" stroke-dasharray="14,6"/>
+  <line x1="280" y1="220" x2="270" y2="500" stroke="#facc15" stroke-width="6" stroke-dasharray="14,6"/>
+  <line x1="400" y1="220" x2="400" y2="500" stroke="#3b82f6" stroke-width="7" stroke-dasharray="16,6"/>
+  <line x1="520" y1="220" x2="530" y2="500" stroke="#facc15" stroke-width="6" stroke-dasharray="14,6"/>
+  <line x1="640" y1="220" x2="670" y2="500" stroke="#ef4444" stroke-width="6" stroke-dasharray="14,6"/>
+
+  <!-- Water Surface Ripples -->
+  <ellipse cx="400" cy="380" rx="160" ry="25" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="270" cy="420" rx="100" ry="18" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="530" cy="420" rx="100" ry="18" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.5"/>
+
+  <!-- Starting Blocks along Far Edge -->
+  <rect x="180" y="200" width="30" height="20" rx="3" fill="#3b82f6"/>
+  <rect x="300" y="200" width="30" height="20" rx="3" fill="#3b82f6"/>
+  <rect x="385" y="198" width="30" height="22" rx="3" fill="#ef4444"/>
+  <rect x="470" y="200" width="30" height="20" rx="3" fill="#3b82f6"/>
+  <rect x="590" y="200" width="30" height="20" rx="3" fill="#3b82f6"/>
+
+  <!-- Swimmer in Lane 4 (Butterfly / Freestyle) -->
+  <ellipse cx="400" cy="340" rx="28" ry="12" fill="#fed7aa"/>
+  <ellipse cx="400" cy="335" rx="10" ry="8" fill="#1e293b"/>
+  <!-- Butterfly arm splash -->
+  <path d="M 370 340 Q 340 310 330 330 Q 360 345 375 345" fill="#38bdf8" opacity="0.8"/>
+  <path d="M 430 340 Q 460 310 470 330 Q 440 345 425 345" fill="#38bdf8" opacity="0.8"/>
+  <!-- Splash droplets -->
+  <circle cx="340" cy="315" r="4" fill="#ffffff"/>
+  <circle cx="460" cy="315" r="4" fill="#ffffff"/>
+  <circle cx="400" cy="365" r="5" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Title Badge -->
+  <rect x="250" y="445" width="300" height="38" rx="8" fill="#0f172a" opacity="0.9"/>
+  <text x="400" y="470" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700" font-family="system-ui, sans-serif">OLYMPIC AQUATIC CENTRE</text>
+</svg>

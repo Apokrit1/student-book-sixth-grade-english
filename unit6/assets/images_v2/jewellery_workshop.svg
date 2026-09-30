@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_jewel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="bench" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <radialGradient id="lamp_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Workshop Wall -->
+  <rect width="800" height="500" fill="url(#bg_jewel)"/>
+  
+  <!-- Pegboard and tools in background -->
+  <rect x="60" y="40" width="680" height="180" rx="12" fill="#0f172a" opacity="0.6"/>
+  <!-- Tool outlines on board -->
+  <circle cx="120" cy="100" r="16" fill="none" stroke="#64748b" stroke-width="4"/>
+  <rect x="180" y="80" width="12" height="70" rx="3" fill="#64748b"/>
+  <rect x="230" y="70" width="16" height="85" rx="3" fill="#64748b"/>
+  <circle cx="300" cy="110" r="22" fill="none" stroke="#64748b" stroke-width="4"/>
+  
+  <!-- Desk Lamp Glow & Arm -->
+  <circle cx="220" cy="160" r="140" fill="url(#lamp_glow)"/>
+  <path d="M 120 280 L 160 180 L 220 160" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <polygon points="200,140 250,150 230,190" fill="#334155"/>
+
+  <!-- Wooden Workbench -->
+  <rect x="40" y="260" width="720" height="200" rx="10" fill="url(#bench)"/>
+  <rect x="40" y="260" width="720" height="18" fill="#92400e"/>
+
+  <!-- Blueprint / Design Sketch Sheet -->
+  <rect x="140" y="285" width="220" height="150" rx="6" fill="#f8fafc" transform="rotate(-4, 250, 360)"/>
+  <!-- Sketches on paper -->
+  <circle cx="230" cy="340" r="32" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="230,320 250,340 230,360 210,340" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="160" y1="390" x2="300" y2="390" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="160" y1="410" x2="270" y2="410" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Pliers and Tweezers -->
+  <path d="M 400 320 L 440 370 L 460 360" fill="none" stroke="url(#silver)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 410 310 L 440 370" fill="none" stroke="url(#silver)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="530" cy="340" r="45" fill="#38bdf8" fill-opacity="0.3" stroke="url(#silver)" stroke-width="8"/>
+  <line x1="565" y1="375" x2="620" y2="430" stroke="#78350f" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="530" cy="340" r="40" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+
+  <!-- Sparkling Gems & Golden Ring -->
+  <!-- Emerald -->
+  <polygon points="460,390 480,380 500,390 500,410 480,420 460,410" fill="#10b981"/>
+  <!-- Ruby -->
+  <polygon points="505,375 520,360 535,375 520,395" fill="#ef4444"/>
+  <!-- Diamond -->
+  <polygon points="430,420 445,405 460,420 445,435" fill="#e0f2fe"/>
+  <!-- Gold Ring with Sapphire -->
+  <ellipse cx="480" cy="330" rx="30" ry="18" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <polygon points="475,310 485,310 490,322 470,322" fill="#2563eb"/>
+
+  <!-- Title Badge -->
+  <rect x="250" y="440" width="300" height="38" rx="8" fill="#0f172a" opacity="0.9"/>
+  <text x="400" y="465" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700" font-family="system-ui, sans-serif">JEWELLERY DESIGNER WORKBENCH</text>
+</svg>

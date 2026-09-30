@@ -1,0 +1,723 @@
+window.UNIT6_V2_DATA = {
+  "unit_id": 6,
+  "unit_title": "Me, Myself and My Future Job",
+  "cefr_level": "A2 / A2+",
+  "subtitle": "Talking About Jobs and Careers, Modals (Can, May, Should), Future Forms (Will & Going to), and Safety Rules at Work",
+  "stories": [
+    {
+      "id": "jewellery_designer",
+      "student": "Helen",
+      "country": "Greece",
+      "capital": "Thessaloniki",
+      "hometown": "Career Day Fair",
+      "nationality": "Greek",
+      "flag": "🇬🇷",
+      "audio_key": "story_jewellery_designer",
+      "audio_file": "assets/audio_v2/stories/jewellery_designer_full_story.mp3",
+      "image": "assets/images_v2/jewellery_workshop.svg",
+      "summary": "Helen explains how she crafts rings, necklaces, and earrings from precious stones using delicate hand tools and lasers.",
+      "narrative": "Helen is a creative jewellery designer in Thessaloniki. She takes metal and precious stones and creates rings, necklaces, earrings and other fine jewellery. She can use loads of hand tools to make delicate pieces. Her artistic work requires attention to detail, finger dexterity, patience, and good hand-eye co-ordination. Artistic ability and fashion knowledge are very important in this rewarding craft.",
+      "landmarks": [
+        {
+          "name": "Hand Tools & Laser Engravers",
+          "type": "Workshop Equipment",
+          "word_key": "tool",
+          "word_id": 65,
+          "desc": "Precision pliers, files, hammers, and laser cutters used to craft intricate metalwork."
+        },
+        {
+          "name": "Precious Stones & Metal Rings",
+          "type": "Gemstones & Fine Metals",
+          "word_key": "precious stones",
+          "word_id": 46,
+          "desc": "Sparkling diamonds, rubies, and gold bands shaped into bespoke jewellery."
+        },
+        {
+          "name": "Hand-Eye Co-ordination Bench",
+          "type": "Artisanal Skill",
+          "word_key": "co-ordination",
+          "word_id": 19,
+          "desc": "The workbench requiring intense concentration, steady hands, and fine finger dexterity."
+        },
+        {
+          "name": "Pearl Necklaces & Earrings",
+          "type": "Adornment",
+          "word_key": "necklace",
+          "word_id": 40,
+          "desc": "Finished collections of delicate earrings and pearl necklaces displayed for exhibitions."
+        }
+      ],
+      "vocabulary_ids": [
+        1,
+        5,
+        6,
+        19,
+        20,
+        22,
+        24,
+        33,
+        34,
+        37,
+        40,
+        46,
+        50,
+        52,
+        65
+      ]
+    },
+    {
+      "id": "air_traffic_controller",
+      "student": "Sophia",
+      "country": "Greece",
+      "capital": "Macedonia Airport",
+      "hometown": "Thessaloniki",
+      "nationality": "Greek",
+      "flag": "🛫",
+      "audio_key": "story_air_traffic_controller",
+      "audio_file": "assets/audio_v2/stories/air_traffic_controller_full_story.mp3",
+      "image": "assets/images_v2/control_tower.svg",
+      "summary": "Sophia manages aircraft movements from the radar tower, coordinating schedules and communicating across time zones.",
+      "narrative": "Sophia is an air traffic controller at a busy airport. Her job is to co-ordinate the movement of aeroplanes and direct them to keep flying schedules on time. She handles every plane that is taking off or landing. She usually works forty-hour weeks, including night and weekend shifts. It is a stressful occupation that requires clear speech, communication skills, Mathematics, and foreign languages for a successful career.",
+      "landmarks": [
+        {
+          "name": "Airport Control Tower",
+          "type": "Aviation Facility",
+          "word_key": "air traffic controller",
+          "word_id": 2,
+          "desc": "The elevated observation cab equipped with panoramic radar displays and radio links."
+        },
+        {
+          "name": "Flight Schedules Monitor",
+          "type": "Timetable System",
+          "word_key": "schedule",
+          "word_id": 54,
+          "desc": "Real-time departure and arrival boards ensuring aeroplanes maintain strict airway separation."
+        },
+        {
+          "name": "Radio Communication Headset",
+          "type": "Audio Technology",
+          "word_key": "communication",
+          "word_id": 16,
+          "desc": "Crystal-clear microphone and audio gear for radio telephony with international pilots."
+        },
+        {
+          "name": "Multi-Lingual Radar Ops",
+          "type": "Language Expertise",
+          "word_key": "foreign languages",
+          "word_id": 28,
+          "desc": "Standardized aviation English and foreign language proficiency essential during busy shifts."
+        }
+      ],
+      "vocabulary_ids": [
+        2,
+        12,
+        16,
+        28,
+        31,
+        43,
+        54,
+        58,
+        60,
+        62
+      ]
+    },
+    {
+      "id": "home_health_nurse",
+      "student": "George",
+      "country": "Greece",
+      "capital": "Thessaloniki",
+      "hometown": "Community Health Care",
+      "nationality": "Greek",
+      "flag": "🩺",
+      "audio_key": "story_home_health_nurse",
+      "audio_file": "assets/audio_v2/stories/home_health_nurse_full_story.mp3",
+      "image": "assets/images_v2/home_nurse.svg",
+      "summary": "George visits recovering patients at home, providing medical assistance, emotional cheer, and dietary advice.",
+      "narrative": "George is a home health nurse who travels to different locations to care for ill patients. He instructs family members on how to look after the sick patient with love and patience. George is responsible, compassionate, and cheerful, bringing comfort to everyone he visits. In his studies, classes in Biology, Health Sciences, Home Economics, and Nutrition prepared him to help people every day.",
+      "landmarks": [
+        {
+          "name": "Home Patient Care Kit",
+          "type": "Medical Equipment",
+          "word_key": "nurse",
+          "word_id": 41,
+          "desc": "A travel bag packed with stethoscopes, bandages, blood pressure monitors, and thermometer kits."
+        },
+        {
+          "name": "Compassionate Bedside Consultation",
+          "type": "Healthcare Service",
+          "word_key": "patient",
+          "word_id": 44,
+          "desc": "Warm, encouraging medical visits for elderly or convalescent citizens in their residences."
+        },
+        {
+          "name": "Nutrition & Meal Guidance",
+          "type": "Health Sciences",
+          "word_key": "nutrition",
+          "word_id": 42,
+          "desc": "Customized dietary recommendations derived from home economics and clinical nutrition."
+        },
+        {
+          "name": "Mobile Community Care",
+          "type": "Outreach",
+          "word_key": "location",
+          "word_id": 38,
+          "desc": "Travelling to diverse suburban and rural locations to offer essential nursing support."
+        }
+      ],
+      "vocabulary_ids": [
+        7,
+        11,
+        13,
+        14,
+        17,
+        38,
+        41,
+        42,
+        44,
+        51
+      ]
+    },
+    {
+      "id": "hairdresser_ecologist",
+      "student": "Vassilis & Maria",
+      "country": "Greece",
+      "capital": "Thessaloniki & the Wild",
+      "hometown": "Career Day Highlights",
+      "nationality": "Greek",
+      "flag": "🌿",
+      "audio_key": "story_hairdresser_ecologist",
+      "audio_file": "assets/audio_v2/stories/hairdresser_ecologist_full_story.mp3",
+      "image": "assets/images_v2/salon_ecology.svg",
+      "summary": "Vassilis showcases styling tools in the salon while Maria explains ecological fieldwork and Amazon research.",
+      "narrative": "Vassilis is a hairdresser who cuts and styles hair using a variety of tools such as scissors, razors, and hot dryers. He can colour, perm, or straighten hair, and he must be creative and self-confident. Chemistry and science courses are helpful in his salon. Maria is an ecologist who studies nature. She works in a lab but also goes out to the mountain area to study wild plants and animals. She loves volunteer work and will travel to the Amazon. Working independently or as part of a cooperative team are essential skills for her profession.",
+      "landmarks": [
+        {
+          "name": "Professional Styling Station",
+          "type": "Salon Tools",
+          "word_key": "hairdresser",
+          "word_id": 30,
+          "desc": "Precision salon scissors, electric dryers, conditioning lotions, and straighteners."
+        },
+        {
+          "name": "Chemistry & Hair Treatments",
+          "type": "Applied Science",
+          "word_key": "perm",
+          "word_id": 45,
+          "desc": "Chemical solutions formulated to safely colour, perm, or straighten diverse hair textures."
+        },
+        {
+          "name": "Ecology Fieldwork Station",
+          "type": "Environmental Science",
+          "word_key": "ecologist",
+          "word_id": 25,
+          "desc": "Collecting botanical specimens and monitoring wildlife in endangered forest ecosystems."
+        },
+        {
+          "name": "Amazon Conservation Research",
+          "type": "Volunteer Project",
+          "word_key": "volunteer",
+          "word_id": 67,
+          "desc": "International conservation teamwork protecting biodiversity and freshwater river basins."
+        }
+      ],
+      "vocabulary_ids": [
+        4,
+        15,
+        21,
+        23,
+        25,
+        30,
+        32,
+        35,
+        45,
+        48,
+        49,
+        55,
+        57,
+        59,
+        61,
+        64,
+        66,
+        67
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Inductive Grammar Lab: Modals & Future Intentions",
+    "subtitle": "Discover how English expresses ability, permission, possibility, advice, promises, and future career plans.",
+    "target_structures": [
+      "Modal Verbs: can (ability), may (permission/possibility), should (advice)",
+      "Future with Will: predictions, promises, warnings, spontaneous decisions",
+      "Future with Going to: intentions and pre-arranged future plans",
+      "Safety Rules at Work: imperative warnings and protective equipment"
+    ],
+    "rules": [
+      {
+        "structure": "can / may / should + bare infinitive",
+        "use": "Expressing ability ('can'), possibility or polite permission ('may'), and recommended advice ('should').",
+        "signal_words": [
+          "be able to",
+          "it is possible",
+          "it is advisable",
+          "I recommend"
+        ],
+        "examples": [
+          "Ecologists can work in a lab or outdoors in nature. (Ability & possibility)",
+          "You should be brave and well trained to be a lifeguard. (Advice / requirement)",
+          "May I ask for more information about the job? (Polite permission)"
+        ]
+      },
+      {
+        "structure": "Future: will vs be going to",
+        "use": "'Will' for sudden decisions, predictions, and promises; 'Going to' for intentions and pre-arranged goals.",
+        "signal_words": [
+          "next year",
+          "I promise",
+          "in the future",
+          "I intend to"
+        ],
+        "examples": [
+          "I will study hard for my exams, I promise! (Promise)",
+          "Next summer, I am going to travel to the Amazon to study plants. (Pre-arranged intention)"
+        ]
+      },
+      {
+        "structure": "Workplace Safety Rules",
+        "use": "Imperatives and modal prohibitions to ensure safety in labs, factories, and supermarkets.",
+        "signal_words": [
+          "wear",
+          "always",
+          "never",
+          "keep clear",
+          "do not touch"
+        ],
+        "examples": [
+          "Always wear safety goggles in the chemistry laboratory.",
+          "Keep supermarket aisles clear of empty boxes to prevent accidents."
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "id": "g1",
+        "prompt": "Lifeguards ________ swim fast and stay calm under pressure.",
+        "options": [
+          "must be able to",
+          "may to",
+          "should to",
+          "could to"
+        ],
+        "answer": "must be able to",
+        "explanation": "Modal expressions of ability take the bare infinitive without 'to'."
+      },
+      {
+        "id": "g2",
+        "prompt": "The phone is ringing in the office! — Don't worry, I ________ it!",
+        "options": [
+          "will answer",
+          "am answering",
+          "going to answer",
+          "answered"
+        ],
+        "answer": "will answer",
+        "explanation": "We use 'will' for spontaneous on-the-spot decisions made at the moment of speaking."
+      },
+      {
+        "id": "g3",
+        "prompt": "Maria ________ travel to the Amazon next summer; her tickets are booked.",
+        "options": [
+          "is going to",
+          "will",
+          "shall",
+          "would"
+        ],
+        "answer": "is going to",
+        "explanation": "'Be going to' expresses pre-arranged intentions and plans formed prior to speaking."
+      },
+      {
+        "id": "g4",
+        "prompt": "You ________ wear protective goggles whenever handling dangerous chemicals.",
+        "options": [
+          "should",
+          "may",
+          "can",
+          "might"
+        ],
+        "answer": "should",
+        "explanation": "'Should' conveys strong advisability and essential safety recommendations."
+      },
+      {
+        "id": "g5",
+        "prompt": "Never ________ with running machinery or electrical switches in the factory.",
+        "options": [
+          "tamper",
+          "tampering",
+          "tampers",
+          "tampered"
+        ],
+        "answer": "tamper",
+        "explanation": "Imperative negative safety instructions use 'Never + bare infinitive'."
+      }
+    ],
+    "school_lab_listening": {
+      "title": "Career Day Thessaloniki: Asking for Job Information",
+      "audio_file": "assets/audio_v2/grammar/career_day_interview.mp3",
+      "context": "Listen to a telephone conversation between a job applicant inquiring about a lifeguard position and the personnel manager.",
+      "script_lines": [
+        {
+          "speaker": "Applicant",
+          "text": "Hello, my name is Kostas. I am calling about the lifeguard job at Alimos beach."
+        },
+        {
+          "speaker": "Manager",
+          "text": "Hello Kostas! Are you strong and healthy? Can you swim fast and dive well?"
+        },
+        {
+          "speaker": "Applicant",
+          "text": "Yes, I have been a competitive swimmer for five years and I have a first aid certificate."
+        },
+        {
+          "speaker": "Manager",
+          "text": "Excellent. The job can be dangerous, so you should be brave and well trained. You may need to save people in difficult conditions. You will work six hours a day and you can use the beach facilities."
+        },
+        {
+          "speaker": "Applicant",
+          "text": "That sounds fantastic. When can I come for a personal interview?"
+        },
+        {
+          "speaker": "Manager",
+          "text": "Come tomorrow morning at 10 o'clock. Bring your certificate and ID card."
+        }
+      ],
+      "dialogue_script": [
+        {
+          "speaker": "Applicant",
+          "text": "Hello, my name is Kostas. I am calling about the lifeguard job at Alimos beach."
+        },
+        {
+          "speaker": "Manager",
+          "text": "Hello Kostas! Are you strong and healthy? Can you swim fast and dive well?"
+        },
+        {
+          "speaker": "Applicant",
+          "text": "Yes, I have been a competitive swimmer for five years and I have a first aid certificate."
+        },
+        {
+          "speaker": "Manager",
+          "text": "Excellent. The job can be dangerous, so you should be brave and well trained. You may need to save people in difficult conditions. You will work six hours a day and you can use the beach facilities."
+        },
+        {
+          "speaker": "Applicant",
+          "text": "That sounds fantastic. When can I come for a personal interview?"
+        },
+        {
+          "speaker": "Manager",
+          "text": "Come tomorrow morning at 10 o'clock. Bring your certificate and ID card."
+        }
+      ]
+    },
+    "content_true_false": [
+      {
+        "id": "tf1",
+        "statement": "An air traffic controller usually works forty-hour weeks including night shifts.",
+        "is_true": true,
+        "feedback": "Correct! Sophia explains that controllers work rotational shifts to keep skies safe 24/7."
+      },
+      {
+        "id": "tf2",
+        "statement": "A jewellery designer only uses heavy hammers and never touches computers.",
+        "is_true": false,
+        "feedback": "False! Helen uses modern computers and laser technology alongside delicate hand tools."
+      },
+      {
+        "id": "tf3",
+        "statement": "Home health nurses only work inside large hospitals and never travel to homes.",
+        "is_true": false,
+        "feedback": "False! Home health nurses specifically travel to patients' homes to provide dedicated care."
+      },
+      {
+        "id": "tf4",
+        "statement": "Workers must keep supermarket aisles clear of boxes to prevent tripping accidents.",
+        "is_true": true,
+        "feedback": "True! Keeping passageways clear is a vital workplace safety rule."
+      },
+      {
+        "id": "tf5",
+        "statement": "Ecologists study plants and animals in both laboratories and outdoor environments.",
+        "is_true": true,
+        "feedback": "True! Maria works in scientific labs and in wild natural habitats like the Amazon."
+      }
+    ]
+  },
+  "collocations": [
+    {
+      "prefix": "air traffic",
+      "suffix": "controller",
+      "example": "The air traffic controller monitored incoming flights."
+    },
+    {
+      "prefix": "precious",
+      "suffix": "stones",
+      "example": "Jewellers set precious stones into elegant rings."
+    },
+    {
+      "prefix": "home",
+      "suffix": "economics",
+      "example": "Students learn practical skills in home economics."
+    },
+    {
+      "prefix": "safety",
+      "suffix": "rules",
+      "example": "Always obey safety rules in the laboratory."
+    },
+    {
+      "prefix": "hand-eye",
+      "suffix": "co-ordination",
+      "example": "Delicate crafts require excellent hand-eye co-ordination."
+    },
+    {
+      "prefix": "foreign",
+      "suffix": "languages",
+      "example": "Speaking foreign languages opens up international careers."
+    },
+    {
+      "prefix": "weather",
+      "suffix": "forecaster",
+      "example": "The weather forecaster announced sunny weather ahead."
+    },
+    {
+      "prefix": "well",
+      "suffix": "trained",
+      "example": "Beach lifeguards must be brave and well trained."
+    },
+    {
+      "prefix": "self",
+      "suffix": "confident",
+      "example": "She felt self-confident before the job interview."
+    },
+    {
+      "prefix": "volunteer",
+      "suffix": "work",
+      "example": "Many young people do volunteer work to help animals."
+    }
+  ],
+  "definition_challenge": {
+    "title": "Professions & Workplace Skills: Guess the Word",
+    "description": "Read the authentic definition clues and match them with target coursebook vocabulary.",
+    "items": [
+      {
+        "id": "c1",
+        "clue": "A person who directs planes to take off, fly, and land safely.",
+        "options": [
+          "air traffic controller",
+          "lifeguard",
+          "car mechanic",
+          "hairdresser"
+        ],
+        "correct": "air traffic controller",
+        "hint": "Works up in the airport control tower."
+      },
+      {
+        "id": "c2",
+        "clue": "A person trained to look after people who are sick at home or in a clinic.",
+        "options": [
+          "nurse",
+          "candidate",
+          "ecologist",
+          "designer"
+        ],
+        "correct": "nurse",
+        "hint": "George visits patients in their residences."
+      },
+      {
+        "id": "c3",
+        "clue": "Very expensive bright rocks like diamonds and rubies set in jewellery.",
+        "options": [
+          "precious stones",
+          "goggles",
+          "tools",
+          "earrings"
+        ],
+        "correct": "precious stones",
+        "hint": "Used in rings and necklaces."
+      },
+      {
+        "id": "c4",
+        "clue": "Great ability to use your hands and fingers quickly and neatly.",
+        "options": [
+          "dexterity",
+          "nutrition",
+          "speech",
+          "schedule"
+        ],
+        "correct": "dexterity",
+        "hint": "Essential for watchmakers and jewellery designers."
+      },
+      {
+        "id": "c5",
+        "clue": "Special big glasses that protect eyes from dangerous chemicals or dust.",
+        "options": [
+          "goggles",
+          "scissors",
+          "dryers",
+          "razors"
+        ],
+        "correct": "goggles",
+        "hint": "Worn in science laboratories."
+      },
+      {
+        "id": "c6",
+        "clue": "Long narrow paths to walk between lines of shelves in a supermarket.",
+        "options": [
+          "aisles",
+          "facilities",
+          "locations",
+          "shifts"
+        ],
+        "correct": "aisles",
+        "hint": "Keep them free of boxes and spilled liquids."
+      },
+      {
+        "id": "c7",
+        "clue": "A scientist who studies how animals and green plants live in nature.",
+        "options": [
+          "ecologist",
+          "car mechanic",
+          "lifeguard",
+          "forecaster"
+        ],
+        "correct": "ecologist",
+        "hint": "Maria studies ecosystems in Greece and the Amazon."
+      },
+      {
+        "id": "c8",
+        "clue": "A strong swimmer who saves people from danger at a public beach.",
+        "options": [
+          "lifeguard",
+          "nurse",
+          "pilot",
+          "conductor"
+        ],
+        "correct": "lifeguard",
+        "hint": "Stationed in tall observation towers on the sand."
+      },
+      {
+        "id": "c9",
+        "clue": "To touch or alter emergency switches or equipment in a harmful way.",
+        "options": [
+          "tamper",
+          "construct",
+          "prevent",
+          "straighten"
+        ],
+        "correct": "tamper",
+        "hint": "'Never tamper with fire alarms.'"
+      },
+      {
+        "id": "c10",
+        "clue": "A set period of working time, such as eight hours at night in a hospital.",
+        "options": [
+          "shift",
+          "career",
+          "occupation",
+          "facility"
+        ],
+        "correct": "shift",
+        "hint": "Sophia works night and weekend shifts."
+      },
+      {
+        "id": "c11",
+        "clue": "A person who offers to do work without being paid to help others.",
+        "options": [
+          "volunteer",
+          "candidate",
+          "supervisor",
+          "mechanic"
+        ],
+        "correct": "volunteer",
+        "hint": "Participates in environmental or community initiatives."
+      },
+      {
+        "id": "c12",
+        "clue": "The person on TV or radio who tells us if it will rain tomorrow.",
+        "options": [
+          "weather forecaster",
+          "air traffic controller",
+          "hairdresser",
+          "jeweller"
+        ],
+        "correct": "weather forecaster",
+        "hint": "Interprets satellite radar charts."
+      }
+    ]
+  },
+  "writing_workshop": {
+    "title": "Guided Job Profile Workshop: My Future Career",
+    "genre": "Professional Career Profile",
+    "guidance": "Follow the structured framework to write a comprehensive job profile outlining daily duties, necessary skills, school subjects, and personal goals.",
+    "sections": [
+      {
+        "title": "1. Job Title & Workplace Environment",
+        "prompt": "State the profession you want to follow and where professionals in this field work.",
+        "connector_bank": [
+          "In the future I would like to become",
+          "Professionals in this field work in",
+          "This occupation takes place in"
+        ],
+        "model_snippet": "In the future, I would like to become an ecologist. Ecologists work in research laboratories and out in wild natural areas like forests, rivers, and national parks."
+      },
+      {
+        "title": "2. Daily Duties & Responsibilities",
+        "prompt": "Explain what you will do day-to-day and what equipment you can use.",
+        "connector_bank": [
+          "Every day, they have to",
+          "They can use a variety of tools such as",
+          "Their main responsibility is to"
+        ],
+        "model_snippet": "Their main duty is to study wild plants and animals and protect natural habitats. They can use microscopes, water sampling kits, and computer models to track environmental health."
+      },
+      {
+        "title": "3. Required Skills & School Subjects",
+        "prompt": "Highlight the personality traits, skills, and school courses necessary for this career.",
+        "connector_bank": [
+          "To do this job well, you should be",
+          "It requires great",
+          "Helpful school subjects are"
+        ],
+        "model_snippet": "To do this job well, you should be patient, hardworking, and observant. You must have good communication skills and team spirit. Helpful school subjects are Biology, Chemistry, and Foreign Languages."
+      },
+      {
+        "title": "4. Future Goals & New Year Resolutions",
+        "prompt": "State what you are going to do to prepare for this future career.",
+        "connector_bank": [
+          "Next year, I am going to",
+          "I will study hard to",
+          "My goal is to"
+        ],
+        "model_snippet": "Next year, I am going to join the school environmental club and do volunteer work planting trees. I will study hard in science to achieve my dream!"
+      }
+    ]
+  },
+  "can_do": [
+    "I can read and understand diverse job profiles and advertisements.",
+    "I can talk about personal skills, traits, and future careers.",
+    "I can express ability, permission, possibility, and advice with modals (can, may, should).",
+    "I can express future predictions and promises with 'will' and intentions with 'going to'.",
+    "I can read, understand, and write safety rules for work environments.",
+    "I can write a detailed professional job profile for my portfolio."
+  ],
+  "teacher_notes": [
+    {
+      "topic": "Book Check: Errata Register",
+      "detail": "E1: 'cheerfulhome' and 'economics' separated into 'cheerful' and 'home economics'. E2: 'hair dresser' standard compound 'hairdresser'. E3: 'jwellery designer' spelling fixed to 'jewellery designer'. E4: 'weather forecaste' typo corrected to 'weather forecaster'. E5: 'co-ordination' hyphenation accepted."
+    },
+    {
+      "topic": "Grammar: Modal Functions in Career Guidance",
+      "detail": "Clarify for pupils that 'can' conveys physical or learned ability, 'may' expresses formal possibility or polite permission, and 'should' offers constructive advice or professional recommendations."
+    },
+    {
+      "topic": "Future Forms Contrast",
+      "detail": "Distinguish between 'will' for spontaneous on-the-spot decisions, predictions based on opinion, and promises, versus 'be going to' for established personal intentions and pre-arranged future plans."
+    }
+  ]
+};

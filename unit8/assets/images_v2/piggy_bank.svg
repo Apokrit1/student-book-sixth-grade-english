@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="pigGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0f172a"/>
+
+  <!-- Table Top -->
+  <rect x="50" y="380" width="700" height="20" rx="4" fill="#334155"/>
+  <polygon points="50,400 750,400 780,480 20,480" fill="#1e293b"/>
+
+  <!-- Center Piggy Bank -->
+  <g transform="translate(300, 160)">
+    <!-- Tail (Curly) -->
+    <path d="M 10 120 Q -20 100 -10 80 Q 5 70 -5 55" fill="none" stroke="#f472b6" stroke-width="7" stroke-linecap="round"/>
+    <!-- Feet -->
+    <rect x="50" y="180" width="26" height="35" rx="10" fill="#db2777"/>
+    <rect x="140" y="180" width="26" height="35" rx="10" fill="#db2777"/>
+    <!-- Body -->
+    <ellipse cx="110" cy="120" rx="110" ry="85" fill="url(#pigGrad)"/>
+    <!-- Coin Slot -->
+    <rect x="95" y="38" width="30" height="7" rx="3" fill="#831843"/>
+    <!-- Snout -->
+    <ellipse cx="205" cy="130" rx="25" ry="32" fill="#f472b6" stroke="#db2777" stroke-width="3"/>
+    <circle cx="198" cy="130" r="5" fill="#831843"/>
+    <circle cx="212" cy="130" r="5" fill="#831843"/>
+    <!-- Eye & Smile -->
+    <circle cx="160" cy="95" r="7" fill="#0f172a"/>
+    <circle cx="162" cy="93" r="2.5" fill="#ffffff"/>
+    <!-- Ear -->
+    <polygon points="120,50 145,15 160,55" fill="#f472b6" stroke="#db2777" stroke-width="2"/>
+  </g>
+
+  <!-- Golden Coin Entering Slot -->
+  <g transform="translate(410, 120)">
+    <circle cx="0" cy="0" r="26" fill="url(#coinGrad)" stroke="#a16207" stroke-width="3"/>
+    <text x="0" y="9" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#713f12" text-anchor="middle">€</text>
+  </g>
+
+  <!-- Three Budget Jars (Left & Right) -->
+  <!-- Jar 1: SPEND -->
+  <g transform="translate(110, 240)">
+    <rect x="0" y="20" width="80" height="130" rx="14" fill="#38bdf8" opacity="0.3" stroke="#0284c7" stroke-width="3"/>
+    <rect x="10" y="10" width="60" height="15" rx="4" fill="#0284c7"/>
+    <rect x="10" y="65" width="60" height="30" rx="4" fill="#ffffff"/>
+    <text x="40" y="85" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">SPEND</text>
+    <!-- Coins inside -->
+    <circle cx="30" cy="125" r="14" fill="url(#coinGrad)"/>
+    <circle cx="50" cy="130" r="14" fill="url(#coinGrad)"/>
+  </g>
+
+  <!-- Jar 2: SAVE -->
+  <g transform="translate(610, 240)">
+    <rect x="0" y="20" width="80" height="130" rx="14" fill="#4ade80" opacity="0.3" stroke="#16a34a" stroke-width="3"/>
+    <rect x="10" y="10" width="60" height="15" rx="4" fill="#16a34a"/>
+    <rect x="10" y="65" width="60" height="30" rx="4" fill="#ffffff"/>
+    <text x="40" y="85" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">SAVE</text>
+    <!-- Coins stacked high -->
+    <circle cx="35" cy="130" r="14" fill="url(#coinGrad)"/>
+    <circle cx="50" cy="125" r="14" fill="url(#coinGrad)"/>
+    <circle cx="40" cy="105" r="14" fill="url(#coinGrad)"/>
+  </g>
+
+  <!-- Title Banner -->
+  <rect x="250" y="430" width="300" height="42" rx="8" fill="#1e293b" stroke="#eab308" stroke-width="2"/>
+  <text x="400" y="457" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#fef08a" text-anchor="middle">SMART POCKET MONEY BUDGET</text>
+</svg>

@@ -1,0 +1,570 @@
+{
+  "unit": 7,
+  "unit_title": "Share Your Experiences",
+  "coursebook_page_range": "Workbook pp. 58-66 (Global PDF pp. 65-73)",
+  "activities": [
+    {
+      "id": "A1",
+      "section": "A. Vocabulary",
+      "title": "1. Match the Words",
+      "instruction": "Match the words from each column to form correct phrases.",
+      "type": "matching",
+      "pairs": [
+        {
+          "colA": "silver",
+          "colB": "medal",
+          "phrase": "silver medal"
+        },
+        {
+          "colA": "butterfly",
+          "colB": "swimmer",
+          "phrase": "butterfly swimmer"
+        },
+        {
+          "colA": "relay",
+          "colB": "race",
+          "phrase": "relay race"
+        },
+        {
+          "colA": "break",
+          "colB": "a record",
+          "phrase": "break a record"
+        },
+        {
+          "colA": "recycling",
+          "colB": "bank",
+          "phrase": "recycling bank"
+        },
+        {
+          "colA": "record",
+          "colB": "holder",
+          "phrase": "record holder"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "section": "A. Vocabulary",
+      "title": "2. Match Words with Definitions",
+      "instruction": "Match the words in column A with their definitions or synonyms in column B.",
+      "type": "matching",
+      "items": [
+        {
+          "word": "reporter",
+          "definition": "someone who works for a TV station, newspaper or a magazine"
+        },
+        {
+          "word": "champion",
+          "definition": "the best athlete or player"
+        },
+        {
+          "word": "longest running show",
+          "definition": "the play with the most performances"
+        },
+        {
+          "word": "packed audience",
+          "definition": "many spectators"
+        },
+        {
+          "word": "composer",
+          "definition": "a person who writes music"
+        },
+        {
+          "word": "achieve",
+          "definition": "succeed"
+        },
+        {
+          "word": "unique",
+          "definition": "only one of this kind"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "section": "A. Vocabulary",
+      "title": "3. Cross the Odd Word Out",
+      "instruction": "Identify and cross out the word that does not belong to the lexical set.",
+      "type": "odd_one_out",
+      "groups": [
+        {
+          "cue": "a",
+          "options": [
+            "freestyle",
+            "performance",
+            "backstroke",
+            "butterfly",
+            "breaststroke"
+          ],
+          "odd_word": "performance",
+          "explanation": "All others are specific swimming styles/strokes."
+        },
+        {
+          "cue": "b",
+          "options": [
+            "poetry",
+            "musical",
+            "drama",
+            "opera",
+            "comedy"
+          ],
+          "odd_word": "poetry",
+          "explanation": "All others are stage/theatre performance genres."
+        },
+        {
+          "cue": "c",
+          "options": [
+            "succeed",
+            "manage",
+            "achieve",
+            "fail",
+            "accomplish"
+          ],
+          "odd_word": "fail",
+          "explanation": "Fail is an antonym; all others mean to successfully do something."
+        },
+        {
+          "cue": "d",
+          "options": [
+            "win",
+            "beat",
+            "lose",
+            "come first",
+            "succeed"
+          ],
+          "odd_word": "lose",
+          "explanation": "Lose is an antonym; all others describe winning or triumph."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "section": "A. Vocabulary",
+      "title": "4. Write Sentences from Cues",
+      "instruction": "Write full sentences about each prompt using the provided target terms.",
+      "type": "guided_sentence_production",
+      "target_words": [
+        "world record",
+        "Paralympics",
+        "musical",
+        "relay race",
+        "recycling bin"
+      ],
+      "model_sentence": "This great athlete has broken the world record in 100m freestyle race.",
+      "prompts": [
+        {
+          "term": "world record",
+          "example": "The champion has broken the world record in the 100m freestyle race."
+        },
+        {
+          "term": "Paralympics",
+          "example": "Konstantinos Fykas won two gold medals at the Sydney Paralympics."
+        },
+        {
+          "term": "musical",
+          "example": "We saw a fantastic long-running musical in London last winter."
+        },
+        {
+          "term": "relay race",
+          "example": "Our school swimming relay race was very exciting."
+        },
+        {
+          "term": "recycling bin",
+          "example": "Pupils put plastic bottles and paper into the recycling bin."
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "section": "A. Vocabulary",
+      "title": "5. Match Questions and Answers",
+      "instruction": "Match column A (questions / statements) to column B (appropriate responses).",
+      "type": "matching",
+      "exchanges": [
+        {
+          "prompt": "1. He has won both 200m and 800m freestyle.",
+          "response": "c. That's fantastic! Does he hold the world record then?"
+        },
+        {
+          "prompt": "2. What has your last record been?",
+          "response": "b. I have won the Elementary School Games in California."
+        },
+        {
+          "prompt": "3. Do you know if relay races and discus throwing are Olympic Games?",
+          "response": "e. Yes, they are."
+        },
+        {
+          "prompt": "4. Well, how long have you been cooking it?",
+          "response": "d. I have been cooking it for 12 hours."
+        },
+        {
+          "prompt": "5. Tell me, how long have you had your ferret?",
+          "response": "a. I bought him two years ago."
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "section": "A. Vocabulary / Reading",
+      "title": "6. Reading Comprehension: Famous Personalities",
+      "instruction": "Read the biographical clues and identify who each famous person is.",
+      "type": "reading_identification",
+      "options": [
+        "Maradona",
+        "Panagiotis Giannakis",
+        "Muhammad Ali",
+        "Madonna"
+      ],
+      "texts": [
+        {
+          "label": "a",
+          "excerpt": "I've been called Marilyn's successor! Since the 1970's, I've been a dancer in a nightclub and have recorded many hit records. Most of my records are about love, but some talk about religion. Many people have danced to my records. They've been number 1 both in America and Britain.",
+          "person": "Madonna"
+        },
+        {
+          "label": "b",
+          "excerpt": "My friends call me 'Dragon'. I have participated as a player in five editions of the Final Four. As the captain of the National Team of my country I have won the Eurobasket Championship both as a player (1987) and as a coach (2005). On the semi-final game held on September 1, my team beat the USA Dream Team 101-95.",
+          "person": "Panagiotis Giannakis"
+        },
+        {
+          "label": "c",
+          "excerpt": "I've learnt to play my sport with a lot of imagination. People say that there is a direct line between my head and my left foot. I've played both for my country in South America and for my Italian club. I've helped my country reach the finals in two World Cups. I've scored most of my goals with my left foot, but I've sometimes used my... hand.",
+          "person": "Maradona"
+        },
+        {
+          "label": "d",
+          "excerpt": "I've been a top sportsman. I've been World Champion in my sport three times. I've beaten Sonny Liston twice, have defeated Joe Frazier and have knocked out George Foreman. Outside the ring, I've worked for peace. I've taken a Muslim name.",
+          "person": "Muhammad Ali"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "section": "B. Grammar",
+      "title": "1. Birthday Preparations (Present Perfect Simple)",
+      "instruction": "It is 10:30 a.m. Look at what each member of Jim's family has done for his birthday party.",
+      "type": "guided_production",
+      "cues": [
+        {
+          "person": "Mother",
+          "target": "Mother has baked a chocolate birthday cake."
+        },
+        {
+          "person": "Father",
+          "target": "Father has bought balloons and party decorations."
+        },
+        {
+          "person": "Grandfather",
+          "target": "Grandfather has wrapped the birthday present."
+        },
+        {
+          "person": "Grandmother",
+          "target": "Grandmother has made delicious sandwiches and fruit punch."
+        },
+        {
+          "person": "Mary",
+          "target": "Mary has cleaned the living room table."
+        },
+        {
+          "person": "Jim",
+          "target": "Jim has sent invitation emails to his classmates."
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "section": "B. Grammar",
+      "title": "2. Present Perfect Simple vs Past Simple",
+      "instruction": "Complete the story about John the basketball player using the correct past or perfect forms.",
+      "type": "fill_in_the_blank",
+      "text": "John [blank:has been] a basketball player for 6 years. He [blank:started] playing when he [blank:was] 5 years old and [blank:has enjoyed] it since then. John [blank:joined] the local team last year and [blank:has offered] great help so far. Last night John [blank:managed] to score at the very last second and so he [blank:gave] the victory to his team.",
+      "answers": [
+        "has been",
+        "started",
+        "was",
+        "has enjoyed",
+        "joined",
+        "has offered",
+        "managed",
+        "gave"
+      ]
+    },
+    {
+      "id": "B3",
+      "section": "B. Grammar",
+      "title": "3. FOR or SINCE Practice",
+      "instruction": "Complete each sentence with FOR (duration) or SINCE (starting point).",
+      "type": "fill_in_the_blank",
+      "sentences": [
+        {
+          "cue": "a",
+          "text": "Anastasia has been a reporter [blank] six years.",
+          "answer": "for"
+        },
+        {
+          "cue": "b",
+          "text": "She has been working for ELS magazine [blank] 2005.",
+          "answer": "since"
+        },
+        {
+          "cue": "c",
+          "text": "Mike and I have scored ten goals [blank] last month.",
+          "answer": "since"
+        },
+        {
+          "cue": "d",
+          "text": "He has been practicing very hard [blank] the last 2 years.",
+          "answer": "for"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "section": "B. Grammar",
+      "title": "4. Sentence Rewriting with FOR and SINCE",
+      "instruction": "Rewrite the situation using Present Perfect Continuous / Simple with FOR or SINCE.",
+      "type": "sentence_transformation",
+      "items": [
+        {
+          "cue": "a",
+          "original": "John moved to Santorini in 2004. He is still living there.",
+          "target": "He has been living in Santorini since 2004 / for [X] years."
+        },
+        {
+          "cue": "b",
+          "original": "He bought the ferret two years ago. He still has it.",
+          "target": "He has had the ferret for two years / since two years ago."
+        },
+        {
+          "cue": "c",
+          "original": "They first met the Smiths in 2000. They still know them.",
+          "target": "They have known the Smiths since 2000."
+        },
+        {
+          "cue": "d",
+          "original": "George started playing for Panathinaikos in 2006. He is still playing there.",
+          "target": "He has been playing for Panathinaikos since 2006."
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "section": "B. Grammar",
+      "title": "5. Environmental Reporter Lisa (Verb Forms)",
+      "instruction": "Complete the sentences with the correct form of the verbs in brackets.",
+      "type": "fill_in_the_blank",
+      "items": [
+        {
+          "cue": "a",
+          "text": "Lisa is a reporter. She has been writing for a local magazine for the last three years.",
+          "answer": "has been writing"
+        },
+        {
+          "cue": "b",
+          "text": "She [blank:has also been working] for a TV channel at the same time.",
+          "answer": "has also been working / has also worked"
+        },
+        {
+          "cue": "c",
+          "text": "Lisa [blank:has been collecting] information about the recycling process.",
+          "answer": "has been collecting / has collected"
+        },
+        {
+          "cue": "d",
+          "text": "Students [blank:have watched] all her TV programmes and want to protect nature.",
+          "answer": "have watched / watch"
+        },
+        {
+          "cue": "e",
+          "text": "Many students [blank:have recycled] paper, bottles, and tins.",
+          "answer": "have recycled / recycle"
+        },
+        {
+          "cue": "f",
+          "text": "Some of them [blank:have written] articles about the environment for the local newspaper.",
+          "answer": "have written"
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "section": "B. Grammar",
+      "title": "6. What Has Jim Been Doing?",
+      "instruction": "Look at what Jim has been doing in his room since early morning and write sentences.",
+      "type": "guided_production",
+      "sentences": [
+        {
+          "cue": "a",
+          "target": "He has been doing his homework."
+        },
+        {
+          "cue": "b",
+          "target": "He has been reading an adventure book."
+        },
+        {
+          "cue": "c",
+          "target": "He has been listening to his favourite music tracks."
+        },
+        {
+          "cue": "d",
+          "target": "He has been tidying his desk and bookshelf."
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "section": "B. Grammar",
+      "title": "7. Mixed Tense Practice",
+      "instruction": "Complete the sentences using Past Simple, Present Perfect Simple, or Present Perfect Continuous.",
+      "type": "fill_in_the_blank",
+      "sentences": [
+        {
+          "cue": "a",
+          "text": "Sonia [blank:lost] the match 1-2.",
+          "answer": "lost"
+        },
+        {
+          "cue": "b",
+          "text": "Peter [blank:has scored] 4 goals in two games.",
+          "answer": "has scored"
+        },
+        {
+          "cue": "c",
+          "text": "Olympiakos [blank:has won] the football cup for the sixth time.",
+          "answer": "has won"
+        },
+        {
+          "cue": "d",
+          "text": "George [blank:has never broken] the world record.",
+          "answer": "has never broken"
+        },
+        {
+          "cue": "e",
+          "text": "Maria [blank:has had] this habit since she was a child.",
+          "answer": "has had"
+        },
+        {
+          "cue": "f",
+          "text": "Amalia [blank:was] on a TV programme yesterday.",
+          "answer": "was"
+        },
+        {
+          "cue": "g",
+          "text": "Kostas and I [blank:have never tried] golf.",
+          "answer": "have never tried"
+        },
+        {
+          "cue": "h",
+          "text": "Fykas [blank:has been swimming] since he was four.",
+          "answer": "has been swimming"
+        },
+        {
+          "cue": "i",
+          "text": "I [blank:went] to the theatre last night and I liked it very much. It was a great musical.",
+          "answer": "went"
+        },
+        {
+          "cue": "j",
+          "text": "This house [blank:has belonged] to my neighbours for seven years.",
+          "answer": "has belonged"
+        }
+      ]
+    },
+    {
+      "id": "B8",
+      "section": "B. Grammar",
+      "title": "8. Multiple Choice Tense Quiz",
+      "instruction": "Choose the correct conversational answer (a, b, or c).",
+      "type": "multiple_choice",
+      "questions": [
+        {
+          "q": "1. Have you ever ridden a horse?",
+          "options": [
+            "a. last year.",
+            "b. Not at all.",
+            "c. No, I haven't."
+          ],
+          "answer": "c. No, I haven't."
+        },
+        {
+          "q": "2. Have you ever swum in a river?",
+          "options": [
+            "a. Yes, I did.",
+            "b. Not until yesterday.",
+            "c. Yes, I have. I swam last summer."
+          ],
+          "answer": "c. Yes, I have. I swam last summer."
+        },
+        {
+          "q": "3. Has Tom been studying English for many years?",
+          "options": [
+            "a. Yes, for 5 years.",
+            "b. No, he didn't.",
+            "c. Yes, he does."
+          ],
+          "answer": "a. Yes, for 5 years."
+        },
+        {
+          "q": "4. When did you start piano lessons?",
+          "options": [
+            "a. since 2006.",
+            "b. last week.",
+            "c. next year."
+          ],
+          "answer": "b. last week."
+        },
+        {
+          "q": "5. Have you broken a class record?",
+          "options": [
+            "a. Not until last year.",
+            "b. Yes, I did. I ate 3 ice-creams in four minutes.",
+            "c. No, I haven't. I think I must try harder."
+          ],
+          "answer": "c. No, I haven't. I think I must try harder."
+        }
+      ]
+    },
+    {
+      "id": "B9",
+      "section": "B. Grammar",
+      "title": "9. Interviewing a Famous Ballet Dancer",
+      "instruction": "Formulate interviewer questions from prompt cues using correct perfect and past tenses.",
+      "type": "guided_question_formulation",
+      "items": [
+        {
+          "cue": "How long / dance?",
+          "target": "How long have you been dancing?"
+        },
+        {
+          "cue": "In which places / dance?",
+          "target": "In which places have you danced?"
+        },
+        {
+          "cue": "When / best ballet performance?",
+          "target": "When was your best ballet performance?"
+        },
+        {
+          "cue": "What / do / recently?",
+          "target": "What have you been doing recently?"
+        },
+        {
+          "cue": "What / do in the future?",
+          "target": "What will you do / are you going to do in the future?"
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "section": "B. Grammar & Writing",
+      "title": "10. Pen-Friend Email to Joan (London)",
+      "instruction": "Write an email to your pen friend Joan in London sharing your recent news, hobbies, and sports activities using Present Perfect.",
+      "type": "writing_frame",
+      "starter": "Hello Joan,\nHow nice to hear from you after so long! Well, I've been very busy lately. I've...",
+      "checklist": [
+        "Used Present Perfect Simple to share recent news (I have joined, I have started)",
+        "Used Present Perfect Continuous to describe ongoing hobbies (I have been playing)",
+        "Mentioned sports, school clubs, or neighbourhood events",
+        "Ended with a friendly sign-off (Write back soon, Best wishes)"
+      ]
+    }
+  ]
+}

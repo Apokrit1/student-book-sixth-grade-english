@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="busRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Museum Exhibition Hall Background -->
+  <rect width="800" height="500" fill="url(#hallGrad)"/>
+
+  <!-- Covent Garden Floral Arch Architecture Glass Roof -->
+  <path d="M 50 150 Q 400 30 750 150" fill="none" stroke="#475569" stroke-width="6"/>
+  <path d="M 120 150 Q 400 60 680 150" fill="none" stroke="#334155" stroke-width="4"/>
+  <line x1="200" y1="110" x2="200" y2="450" stroke="#334155" stroke-width="4"/>
+  <line x1="600" y1="110" x2="600" y2="450" stroke="#334155" stroke-width="4"/>
+
+  <!-- Museum Floor & Rail Tracks -->
+  <rect x="0" y="420" width="800" height="80" fill="#334155"/>
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#94a3b8" stroke-width="6"/>
+  <line x1="0" y1="470" x2="800" y2="470" stroke="#94a3b8" stroke-width="6"/>
+  <!-- Track ties -->
+  <g stroke="#1e293b" stroke-width="5">
+    <line x1="50" y1="430" x2="50" y2="480"/>
+    <line x1="150" y1="430" x2="150" y2="480"/>
+    <line x1="250" y1="430" x2="250" y2="480"/>
+    <line x1="350" y1="430" x2="350" y2="480"/>
+    <line x1="450" y1="430" x2="450" y2="480"/>
+    <line x1="550" y1="430" x2="550" y2="480"/>
+    <line x1="650" y1="430" x2="650" y2="480"/>
+    <line x1="750" y1="430" x2="750" y2="480"/>
+  </g>
+
+  <!-- Iconic Red Double-Decker Bus (Routemaster) -->
+  <g transform="translate(80, 160)">
+    <!-- Main Body Lower Deck -->
+    <rect x="0" y="120" width="300" height="140" rx="10" fill="url(#busRed)"/>
+    <!-- Upper Deck -->
+    <rect x="0" y="10" width="300" height="110" rx="10" fill="url(#busRed)"/>
+    <!-- Yellow Waistline Strip -->
+    <rect x="0" y="115" width="300" height="10" fill="#facc15"/>
+
+    <!-- Upper Deck Windows -->
+    <rect x="20" y="25" width="50" height="50" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <rect x="85" y="25" width="50" height="50" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <rect x="150" y="25" width="50" height="50" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <rect x="215" y="25" width="65" height="50" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+
+    <!-- Lower Deck Windows -->
+    <rect x="20" y="140" width="50" height="55" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <rect x="85" y="140" width="50" height="55" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <rect x="150" y="140" width="50" height="55" rx="4" fill="#e0f2fe" stroke="#333" stroke-width="2"/>
+    <!-- Driver Front Cab -->
+    <rect x="215" y="140" width="65" height="55" rx="4" fill="#bae6fd" stroke="#333" stroke-width="2"/>
+
+    <!-- Destination Blind -->
+    <rect x="100" y="85" width="100" height="22" fill="#111" rx="3"/>
+    <text x="150" y="101" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="bold">COVENT GARDEN</text>
+
+    <!-- Wheels -->
+    <circle cx="65" cy="260" r="32" fill="#1e293b" stroke="#64748b" stroke-width="8"/>
+    <circle cx="235" cy="260" r="32" fill="#1e293b" stroke="#64748b" stroke-width="8"/>
+  </g>
+
+  <!-- London Underground Roundel Logo Sign -->
+  <g transform="translate(560, 200)">
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#dc2626" stroke-width="26"/>
+    <rect x="0" y="76" width="200" height="48" rx="6" fill="#1d4ed8"/>
+    <text x="100" y="108" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">UNDERGROUND</text>
+  </g>
+
+  <!-- Interactive Controls Station Simulator Desk -->
+  <g transform="translate(460, 340)">
+    <rect x="0" y="0" width="240" height="80" rx="8" fill="#334155" stroke="#facc15" stroke-width="3"/>
+    <!-- Simulator Levers -->
+    <line x1="40" y1="40" x2="30" y2="10" stroke="#f1f5f9" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="28" cy="8" r="8" fill="#ef4444"/>
+    <line x1="80" y1="40" x2="85" y2="10" stroke="#f1f5f9" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="87" cy="8" r="8" fill="#22c55e"/>
+    <!-- Push Buttons -->
+    <circle cx="140" cy="30" r="10" fill="#38bdf8"/>
+    <circle cx="180" cy="30" r="10" fill="#eab308"/>
+    <text x="120" y="65" text-anchor="middle" fill="#f8fafc" font-family="Arial" font-size="12" font-weight="bold">TRAIN SIMULATOR</text>
+  </g>
+
+  <!-- Gallery Heading -->
+  <text x="400" y="60" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="26" font-weight="900" letter-spacing="2">LONDON TRANSPORT MUSEUM</text>
+</svg>

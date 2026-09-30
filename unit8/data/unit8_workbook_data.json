@@ -1,0 +1,486 @@
+{
+  "unit": 8,
+  "unit_title": "Blow Your Own Trumpet",
+  "coursebook_page_range": "Workbook pp. 67-74 (Global PDF pp. 74-81)",
+  "activities": [
+    {
+      "id": "A1",
+      "section": "A. Vocabulary",
+      "title": "1. Categorise Musical Instruments",
+      "instruction": "Put the musical instruments into the correct instrument family.",
+      "type": "categorisation",
+      "categories": {
+        "WIND": [
+          "flute",
+          "oboe",
+          "clarinet",
+          "trumpet",
+          "saxophone"
+        ],
+        "STRING": [
+          "guitar",
+          "violin",
+          "lute"
+        ],
+        "PERCUSSION": [
+          "drums",
+          "tambourine"
+        ],
+        "KEYBOARD": [
+          "piano"
+        ]
+      }
+    },
+    {
+      "id": "A2",
+      "section": "A. Vocabulary",
+      "title": "2. Match Collocations and Phrases",
+      "instruction": "Match the words or phrases in column A with those in column B.",
+      "type": "matching",
+      "pairs": [
+        {
+          "colA": "dazzling",
+          "colB": "costumes",
+          "phrase": "dazzling costumes"
+        },
+        {
+          "colA": "melodic",
+          "colB": "dances",
+          "phrase": "melodic dances"
+        },
+        {
+          "colA": "attend",
+          "colB": "a performance",
+          "phrase": "attend a performance"
+        },
+        {
+          "colA": "fairy",
+          "colB": "tale",
+          "phrase": "fairy tale"
+        },
+        {
+          "colA": "scary",
+          "colB": "wolf",
+          "phrase": "scary wolf"
+        },
+        {
+          "colA": "colourful",
+          "colB": "dances",
+          "phrase": "colourful dances"
+        },
+        {
+          "colA": "first-come",
+          "colB": "first-served",
+          "phrase": "first-come first-served"
+        },
+        {
+          "colA": "wealthy",
+          "colB": "man",
+          "phrase": "wealthy man"
+        },
+        {
+          "colA": "borrow",
+          "colB": "money",
+          "phrase": "borrow money"
+        },
+        {
+          "colA": "give up",
+          "colB": "my job",
+          "phrase": "give up my job"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "section": "A. Vocabulary",
+      "title": "3. Find Opposites",
+      "instruction": "Write the opposite of each phrase or word.",
+      "type": "opposites",
+      "pairs": [
+        {
+          "word": "save money",
+          "opposite": "spend money / waste money"
+        },
+        {
+          "word": "wealthy man",
+          "opposite": "poor man"
+        },
+        {
+          "word": "lend",
+          "opposite": "borrow"
+        },
+        {
+          "word": "owe money",
+          "opposite": "pay money / be owed money"
+        },
+        {
+          "word": "win",
+          "opposite": "lose"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "section": "A. Vocabulary",
+      "title": "4. Find Synonyms",
+      "instruction": "Provide a synonym for each descriptive word.",
+      "type": "synonyms",
+      "pairs": [
+        {
+          "word": "dazzling",
+          "synonym": "impressive / bright / glittering"
+        },
+        {
+          "word": "colourful",
+          "synonym": "vivid / bright"
+        },
+        {
+          "word": "intelligent",
+          "synonym": "clever / smart"
+        },
+        {
+          "word": "delightful",
+          "synonym": "wonderful / charming"
+        },
+        {
+          "word": "electrifying",
+          "synonym": "thrilling / exciting"
+        },
+        {
+          "word": "scary",
+          "synonym": "frightening"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "section": "A. Vocabulary",
+      "title": "5. Words Connected with Money",
+      "instruction": "Identify eight words or phrases connected with money.",
+      "type": "selection",
+      "money_words": [
+        "allowance",
+        "cash",
+        "wealth",
+        "bill",
+        "a single penny",
+        "pay",
+        "can't afford to buy",
+        "lend dollars"
+      ]
+    },
+    {
+      "id": "A6",
+      "section": "A. Vocabulary",
+      "title": "6. Reconstruct Telephone Dialogue",
+      "instruction": "Put the sentences in order (1-9) to form a coherent telephone conversation.",
+      "type": "dialogue_ordering",
+      "steps": [
+        {
+          "order": 1,
+          "text": "What are we going to do tonight Peter?"
+        },
+        {
+          "order": 2,
+          "text": "Well, there is a music festival in New Smyrni square tonight."
+        },
+        {
+          "order": 3,
+          "text": "I want to go. Would you like to come?"
+        },
+        {
+          "order": 4,
+          "text": "What will we see if we choose to go there?"
+        },
+        {
+          "order": 5,
+          "text": "We will see dances from various parts of Greece. I heard there are great bands and musicians, too."
+        },
+        {
+          "order": 6,
+          "text": "What instruments are we going to hear?"
+        },
+        {
+          "order": 7,
+          "text": "All kinds. Most of the bands are led by the clarinet, but we will enjoy the bagpipe, and the lute, too. Well, what do you say?"
+        },
+        {
+          "order": 8,
+          "text": "It sounds nice. Where shall we meet?"
+        },
+        {
+          "order": 9,
+          "text": "At the corner of Aigaiou and Eleftheriou Venizelou Street, at seven."
+        },
+        {
+          "order": 10,
+          "text": "Ok. But wait for me if I'm a little late."
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "section": "B. Grammar",
+      "title": "1. Conditionals Type 1 (Real Conditions)",
+      "instruction": "Complete the sentences with the correct form of the verbs in brackets.",
+      "type": "fill_in_the_blank",
+      "sentences": [
+        {
+          "cue": "a",
+          "text": "If you [blank:go] to the concert, you will listen to your favourite songs.",
+          "answer": "go"
+        },
+        {
+          "cue": "b",
+          "text": "If I [blank:do not go] to the concert, I may go to the cinema.",
+          "answer": "do not go / don't go"
+        },
+        {
+          "cue": "c",
+          "text": "If you decide to go to the concert, [blank:will you telephone] me?",
+          "answer": "will you telephone / telephone"
+        },
+        {
+          "cue": "d",
+          "text": "You [blank:will not forget] their passionate singing if you choose to attend their performance.",
+          "answer": "will not forget / won't forget"
+        },
+        {
+          "cue": "e",
+          "text": "If pupils [blank:study] classical music, they may become more intelligent.",
+          "answer": "study"
+        },
+        {
+          "cue": "f",
+          "text": "You must [blank:practise] very hard if you want to be a great musician.",
+          "answer": "practise"
+        },
+        {
+          "cue": "g",
+          "text": "If I am late for the concert, please [blank:wait] for me.",
+          "answer": "wait"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "section": "B. Grammar",
+      "title": "2. Conditionals Type 2 (Unreal / Imaginary)",
+      "instruction": "Match the if-clauses in column A with the result clauses in column B.",
+      "type": "matching",
+      "pairs": [
+        {
+          "if_clause": "1. If a stranger asked me to get into his car...",
+          "result": "c. I'd refuse politely."
+        },
+        {
+          "if_clause": "2. If I won the lottery...",
+          "result": "b. I'd help the homeless."
+        },
+        {
+          "if_clause": "3. If my best friend wanted to become a singer...",
+          "result": "e. I'd advise her not to. I don't think she has a talent."
+        },
+        {
+          "if_clause": "4. If I were you...",
+          "result": "d. I'd study harder."
+        },
+        {
+          "if_clause": "5. If I saw the wolf...",
+          "result": "a. I'd scream."
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "section": "B. Grammar",
+      "title": "3. What Would You Do?",
+      "instruction": "Complete the conditional sentences describing what you would do in each situation.",
+      "type": "guided_production",
+      "items": [
+        {
+          "cue": "a",
+          "prompt": "If I were the granny,",
+          "suggested": "I would lock the front door and call the village woodcutter."
+        },
+        {
+          "cue": "b",
+          "prompt": "If I were Alice,",
+          "suggested": "I would follow the white rabbit down into Wonderland."
+        },
+        {
+          "cue": "c",
+          "prompt": "If I were that pirate,",
+          "suggested": "I would bury my treasure chest safely on a desert island."
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "section": "B. Grammar",
+      "title": "4. Giving Advice with 'If I were you'",
+      "instruction": "Give helpful advice in each difficult situation using 'If I were you, I would...'.",
+      "type": "advice_production",
+      "scenarios": [
+        {
+          "cue": "1",
+          "problem": "Your friend Panos is bullied on the way home from school.",
+          "advice": "If I were you, I would tell your parents and your headteacher immediately. You shouldn't walk home alone."
+        },
+        {
+          "cue": "2",
+          "problem": "Your sister wants to buy a guitar but lacks the money.",
+          "advice": "If I were you, I would save my weekly pocket money and do some household chores to earn extra cash."
+        },
+        {
+          "cue": "3",
+          "problem": "Your sister talks on the phone instead of doing homework.",
+          "advice": "If I were you, I would switch off my mobile phone during study hours so you can concentrate and get good marks."
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "section": "B. Grammar",
+      "title": "5. Mixed Conditionals (Type 1 & Type 2)",
+      "instruction": "Complete the sentences with the correct verb forms.",
+      "type": "fill_in_the_blank",
+      "sentences": [
+        {
+          "cue": "1",
+          "text": "If Cacophonix [blank:sings], everyone leaves.",
+          "answer": "sings"
+        },
+        {
+          "cue": "2",
+          "text": "If I [blank:do not become] a musician, I will become an actor.",
+          "answer": "do not become / don't become"
+        },
+        {
+          "cue": "3",
+          "text": "If I [blank:could] play the saxophone, I would join the city band.",
+          "answer": "could"
+        },
+        {
+          "cue": "4",
+          "text": "If it [blank:does not rain] tomorrow, we will go to the festival.",
+          "answer": "does not rain / doesn't rain"
+        },
+        {
+          "cue": "5",
+          "text": "I [blank:would buy] a beautiful house on the beach if I had a lot of money.",
+          "answer": "would buy / 'd buy"
+        },
+        {
+          "cue": "6",
+          "text": "If you go to the funfair, please [blank:buy] a T-shirt for me.",
+          "answer": "buy"
+        },
+        {
+          "cue": "7",
+          "text": "You [blank:must study] harder if you want to become a band conductor.",
+          "answer": "must study / should study / will have to study"
+        },
+        {
+          "cue": "8",
+          "text": "If I [blank:met] Madonna, I would ask for an autograph.",
+          "answer": "met"
+        },
+        {
+          "cue": "9",
+          "text": "You dance so well! If I [blank:were] you, I would start ballet lessons!",
+          "answer": "were"
+        },
+        {
+          "cue": "10",
+          "text": "If I [blank:saw] a wild animal in the city centre, I would be surprised and I would call the police!",
+          "answer": "saw"
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "section": "B. Grammar",
+      "title": "6. Conversational Reactions",
+      "instruction": "Choose the most appropriate conversational response (a, b, or c).",
+      "type": "multiple_choice",
+      "items": [
+        {
+          "cue": "1",
+          "prompt": "If Terry comes, he will play the violin!",
+          "options": [
+            "a. Good idea!",
+            "b. Yes, I can!",
+            "c. Sure. Let's try!"
+          ],
+          "answer": "a. Good idea!"
+        },
+        {
+          "cue": "2",
+          "prompt": "If we go to Paris, we can visit the Eiffel Tower.",
+          "options": [
+            "a. Don't mention it.",
+            "b. That's right.",
+            "c. That's wrong."
+          ],
+          "answer": "b. That's right."
+        },
+        {
+          "cue": "3",
+          "prompt": "What will happen if its mother doesn't feed it?",
+          "options": [
+            "a. Sorry about it.",
+            "b. We will!",
+            "c. What's that?"
+          ],
+          "answer": "b. We will!"
+        },
+        {
+          "cue": "4",
+          "prompt": "If I finish my homework at 8, I may watch television for some time.",
+          "options": [
+            "a. Don't make it!",
+            "b. That's enough!",
+            "c. Good! Try to finish early."
+          ],
+          "answer": "c. Good! Try to finish early."
+        },
+        {
+          "cue": "5",
+          "prompt": "If I won a lot of money, I would spend it all in one day!",
+          "options": [
+            "a. That's not sensible!",
+            "b. Sure, let's go.",
+            "c. What about it?"
+          ],
+          "answer": "a. That's not sensible!"
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "section": "B. Writing",
+      "title": "7. Letter of Advice to the Hospitalised Wolf",
+      "instruction": "Write a caring letter of advice to the wolf from Little Red Riding Hood.",
+      "type": "guided_letter",
+      "scaffold": {
+        "greeting": "Dear Wolf,",
+        "opening": "I heard that you are in hospital after the bad experience you had in the forest. I hope you get well soon!",
+        "body": "If I were you, I would stop chasing people and learn to be polite. If you are friendly, other forest animals will like you and play music with you.",
+        "sign_off": "Best wishes,\nYour friend"
+      }
+    },
+    {
+      "id": "B8",
+      "section": "B. Life Skills",
+      "title": "8. Personal Safety Tips & Roleplay",
+      "instruction": "Read the safety guidelines about strangers and formulate advice for personal protection.",
+      "type": "safety_analysis",
+      "rules": [
+        "Stay away from strangers even if they have familiar faces.",
+        "Never get into a car or leave the play area without parental permission.",
+        "Always inform parents where you are, who you are with, and when you will return."
+      ]
+    }
+  ]
+}

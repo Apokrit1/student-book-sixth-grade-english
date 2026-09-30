@@ -84,7 +84,7 @@
       "unit": 5,
       "title": "Travelling Through Time",
       "slug": "unit5",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Diaries, songs, museum visits, transportation rules, and asking for directions",
       "theme": "Time & Place, Local History, Music, Road Safety",
       "grammar": "Used to (past habits), Asking for & Giving Directions, Informal Letter Phrases",
@@ -93,14 +93,16 @@
         "Local History",
         "Civics"
       ],
-      "badge": "Planned",
-      "accent_color": "#d69e2e"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#d69e2e",
+      "v1_url": "unit5/index.html",
+      "v2_url": "unit5/v2.html"
     },
     {
       "unit": 6,
       "title": "Me, Myself and My Future Job",
       "slug": "unit6",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Careers, job interviews, personal traits, safety rules, and future goals",
       "theme": "Career Guidance, Citizenship, Personal Development",
       "grammar": "Modal Verbs (can, may, should), Future Tenses (will, going to)",
@@ -108,14 +110,16 @@
         "Career Guidance",
         "Citizenship"
       ],
-      "badge": "Planned",
-      "accent_color": "#e53e3e"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#e53e3e",
+      "v1_url": "unit6/index.html",
+      "v2_url": "unit6/v2.html"
     },
     {
       "unit": 7,
       "title": "Share Your Experiences",
       "slug": "unit7",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Life experiences, world records, Paralympics champions, personal bests, and duration of events",
       "theme": "Physical Education, Resilience, Achievement",
       "grammar": "Present Perfect Simple & Continuous, For & Since",
@@ -125,24 +129,28 @@
         "Environmental Education",
         "Theatre Education"
       ],
-      "badge": "Planned",
-      "accent_color": "#38a169"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#38a169",
+      "v1_url": "unit7/index.html",
+      "v2_url": "unit7/v2.html"
     },
     {
       "unit": 8,
       "title": "Blow Your Own Trumpet",
       "slug": "unit8",
-      "status": "planned",
-      "tagline": "Music festivals, instruments, pocket money survey, and giving advice",
-      "theme": "Music, Financial Literacy, Stereotypes, Conflict Resolution",
-      "grammar": "Conditionals Type 1 & Type 2, Advice Formulations",
+      "status": "ready",
+      "tagline": "Musical instruments, rock bands, pocket money budgeting, and giving advice",
+      "theme": "Music, Financial Literacy, Fables & Stereotypes, Conflict Resolution",
+      "grammar": "Modal Verbs (Ability, Obligation, Advice, Prohibition)",
       "cross_curricular": [
         "Music",
         "Consumer Education",
-        "Mathematics"
+        "Civics"
       ],
-      "badge": "Planned",
-      "accent_color": "#d53f8c"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#d53f8c",
+      "v1_url": "unit8/index.html",
+      "v2_url": "unit8/v2.html"
     },
     {
       "unit": 9,

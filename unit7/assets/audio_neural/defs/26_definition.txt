@@ -1,0 +1,1 @@
+A swimming race where swimmers can choose any way to swim.

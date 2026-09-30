@@ -1,0 +1,613 @@
+{
+  "unit_id": 7,
+  "unit_title": "Share Your Experiences",
+  "theme": "Sports, Olympic & Paralympic Champions, Records, Experiences & Theatre",
+  "coursebook_page_range": "Pupil's Book pp. 83-96, Workbook pp. 58-67",
+  "hero": {
+    "title": "Share Your Experiences",
+    "subtitle": "Discover remarkable world records, inspiring Paralympic achievements, swimming styles, hot-air balloon flights, and memorable stage performances.",
+    "badge": "Unit 7 — CEFR A2+"
+  },
+  "stories": [
+    {
+      "id": "record_swimmers",
+      "student": "Sofia & Nikos",
+      "country": "Greece",
+      "capital": "Athens Aquatic Centre",
+      "hometown": "Olympic Pool",
+      "nationality": "Greek",
+      "flag": "🏊",
+      "audio_key": "story_record_swimmers",
+      "audio_file": "assets/audio_v2/stories/record_swimmers_full_story.mp3",
+      "image": "assets/images_v2/olympic_pool.svg",
+      "summary": "Sofia and Nikos explore competitive swimming strokes, world records, and relay races at the Athens Aquatic Centre.",
+      "narrative": "Sofia and Nikos love swimming at the Olympic Aquatic Centre. Today they watch athletes compete in a big national competition. Swimmers race in four main styles: backstroke, breaststroke, butterfly, and fast freestyle. The crowd cheers when the reigning champion manages to beat the national record by two seconds. Sofia watches the official time board to compare the results. In the final event, the mixed relay team swims with power, and two swimmers touch the pool wall simultaneously. The winning athlete proudly lifts her gold medal as the new record holder.",
+      "landmarks": [
+        {
+          "name": "Olympic 50m Pool",
+          "type": "Competition Venue",
+          "word_key": "competition",
+          "word_id": 16,
+          "desc": "Ten-lane Olympic size swimming pool hosting national and international championships."
+        },
+        {
+          "name": "Four Swimming Styles",
+          "type": "Technical Strokes",
+          "word_key": "breaststroke",
+          "word_id": 9,
+          "desc": "Mastering backstroke, breaststroke, butterfly, and freestyle strokes."
+        },
+        {
+          "name": "Relay Team Wall Finish",
+          "type": "Race Action",
+          "word_key": "relay team",
+          "word_id": 45,
+          "desc": "Simultaneous touch-finish on electronic timing pads by four relay swimmers."
+        },
+        {
+          "name": "Podium Gold Medal",
+          "type": "Victory Award",
+          "word_key": "gold medal",
+          "word_id": 29,
+          "desc": "First-place champion receiving the gold medal and world record holder diploma."
+        }
+      ],
+      "vocabulary_ids": [
+        5,
+        6,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        24,
+        26,
+        29,
+        31,
+        45,
+        49
+      ]
+    },
+    {
+      "id": "paralympic_champion_fykas",
+      "student": "Konstantinos & Team",
+      "country": "Greece",
+      "capital": "Sydney & Athens",
+      "hometown": "Greek Paralympic Team",
+      "nationality": "Greek",
+      "flag": "🥇",
+      "audio_key": "story_paralympic_champion_fykas",
+      "audio_file": "assets/audio_v2/stories/paralympic_champion_fykas_full_story.mp3",
+      "image": "assets/images_v2/paralympic_podium.svg",
+      "summary": "The inspiring career of Konstantinos Fykas, double gold medalist at the Sydney Paralympics and world record holder.",
+      "narrative": "Konstantinos Fykas is an inspiring Greek athlete who achieved remarkable success at the Paralympics. When he was young, his teammates gave him the nickname Dolphin because of his exceptional speed in water. Daily swimming became a disciplined habit that helped him overcome severe physical challenges. In the Sydney games, he was able to dominate both the fifty metre and hundred metre races. His hard training helped him earn international praise. Fans compared his courage to the ancient runners of antiquity, and his gold medal figure stands as an unforgettable accomplishment and historic achievement in Greek sports history.",
+      "landmarks": [
+        {
+          "name": "Paralympic Games Arena",
+          "type": "World Stage",
+          "word_key": "Paralympics",
+          "word_id": 40,
+          "desc": "Elite sporting stage celebrating athletes who overcome physical challenges."
+        },
+        {
+          "name": "Dolphin Nickname Legacy",
+          "type": "Athletic Nickname",
+          "word_key": "nickname",
+          "word_id": 37,
+          "desc": "Honouring Fykas's fluid, lightning-fast swimming form and water technique."
+        },
+        {
+          "name": "Historic Record Board",
+          "type": "Medal Record",
+          "word_key": "achievement",
+          "word_id": 2,
+          "desc": "Double world record figures etched in international swimming history."
+        },
+        {
+          "name": "Ancient Olympic Spirit",
+          "type": "Historical Tradition",
+          "word_key": "antiquity",
+          "word_id": 4,
+          "desc": "Connecting modern perseverance directly with the athletic ideals of classical antiquity."
+        }
+      ],
+      "vocabulary_ids": [
+        1,
+        2,
+        4,
+        20,
+        22,
+        25,
+        28,
+        30,
+        37,
+        40,
+        51
+      ]
+    },
+    {
+      "id": "hot_air_balloon_race",
+      "student": "Alex & Maria",
+      "country": "Greece & Cappadocia",
+      "capital": "Meteora Valley",
+      "hometown": "Aero Club Festival",
+      "nationality": "Greek",
+      "flag": "🎈",
+      "audio_key": "story_hot_air_balloon_race",
+      "audio_file": "assets/audio_v2/stories/hot_air_balloon_race_full_story.mp3",
+      "image": "assets/images_v2/hot_air_balloon.svg",
+      "summary": "Alex boards a giant hot-air balloon across mountain valleys, spotting wildlife sanctuaries and festival crowds.",
+      "narrative": "Early in the morning, Alex and Maria prepare to board a giant hot-air balloon. The international contest was originally planned for yesterday, but clear skies today allow dozens of balloons to rise together among the misty hills. Floating silently high above, they witness the spectacular landscape stretching for miles. Alex uses his imagination to photograph the winding river below. They fly over a protected bird sanctuary where wild herons rest. A spectator on the grass holds a funny pet ferret on a lead. Near the landing destination, pupils deposit soda cans in a recycling bank while families enjoy roasted meat on a wooden skewer. More than one billion viewers around the world follow balloon racing festivals each year.",
+      "landmarks": [
+        {
+          "name": "Giant Hot-Air Balloon Basket",
+          "type": "Aviation Craft",
+          "word_key": "hot-air balloon",
+          "word_id": 32,
+          "desc": "Wicker passenger basket equipped with propane burners and navigation instruments."
+        },
+        {
+          "name": "Valley Wildlife Sanctuary",
+          "type": "Protected Nature",
+          "word_key": "sanctuary",
+          "word_id": 48,
+          "desc": "Protected wetlands sanctuary home to rare herons, pelicans, and wild waterfowl."
+        },
+        {
+          "name": "Green Eco Recycling Bank",
+          "type": "Environmental Station",
+          "word_key": "recycling bank",
+          "word_id": 44,
+          "desc": "Community waste collection point keeping the festival grounds clean."
+        },
+        {
+          "name": "Festival Skewer Picnic",
+          "type": "Picnic Tradition",
+          "word_key": "skewer",
+          "word_id": 50,
+          "desc": "Traditional outdoor picnic food enjoyed by spectator families at the landing site."
+        }
+      ],
+      "vocabulary_ids": [
+        3,
+        7,
+        8,
+        18,
+        19,
+        27,
+        32,
+        33,
+        38,
+        41,
+        44,
+        48,
+        50,
+        52
+      ]
+    },
+    {
+      "id": "theatre_musical_night",
+      "student": "Elena & Giorgos",
+      "country": "United Kingdom & Greece",
+      "capital": "London West End & Athens",
+      "hometown": "Drama Arts Academy",
+      "nationality": "Greek",
+      "flag": "🎭",
+      "audio_key": "story_theatre_musical_night",
+      "audio_file": "assets/audio_v2/stories/theatre_musical_night_full_story.mp3",
+      "image": "assets/images_v2/theatre_stage.svg",
+      "summary": "Elena and Giorgos attend a long-running musical in London and explore Greek theatre productions in Athens.",
+      "narrative": "Elena and Giorgos love theatrical entertainment. Last December in London, they attended a famous long-running musical in the West End. The talented actors captivate the packed audience with live songs and energetic dancing. The composer wrote magical melodies that were later adapted into a popular movie. Back in Athens, their school drama society decided to revive a classic Greek comedy by Aristophanes. The student production received an enthusiastic review in the local cultural newspaper. After the show, pupils enjoyed a lively post-show discussion with the director about stage lighting and costume design.",
+      "landmarks": [
+        {
+          "name": "West End Musical Theatre",
+          "type": "Stage Production",
+          "word_key": "musical",
+          "word_id": 36,
+          "desc": "Grand historic theatre presenting world-famous musicals before packed audiences."
+        },
+        {
+          "name": "Aristophanes Comedy Revival",
+          "type": "Classic Theatre",
+          "word_key": "comedy",
+          "word_id": 13,
+          "desc": "Modern school production reviving classical Athenian satirical comedies."
+        },
+        {
+          "name": "Newspaper Theatre Review",
+          "type": "Arts Criticism",
+          "word_key": "review",
+          "word_id": 46,
+          "desc": "Published critical review evaluating acting, music composition, and directing."
+        },
+        {
+          "name": "Post-Show Director Talk",
+          "type": "Educational Forum",
+          "word_key": "post-show",
+          "word_id": 42,
+          "desc": "Q&A session with the stage director discussing performance techniques."
+        }
+      ],
+      "vocabulary_ids": [
+        11,
+        13,
+        17,
+        21,
+        23,
+        34,
+        35,
+        36,
+        39,
+        42,
+        43,
+        46,
+        47
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Inductive Grammar Lab: Present Perfect & Experiences",
+    "subtitle": "Contrast Present Perfect Simple (life experiences) with Past Simple (definite times), and master Present Perfect Continuous with for and since.",
+    "target_structures": [
+      "Present Perfect Simple: have/has + past participle (life experiences, results)",
+      "Past Simple: definite finished past time (in 2004, yesterday, when I was eight)",
+      "Present Perfect Continuous: have/has been + -ing (duration of ongoing actions)",
+      "Time expressions: ever, never, already, yet, for (duration), since (starting point)"
+    ],
+    "rules": [
+      {
+        "structure": "Present Perfect Simple (Experience)",
+        "use": "Talk about experiences in our life without mentioning a specific finished time.",
+        "signal_words": [
+          "Have you ever...",
+          "I have never...",
+          "already",
+          "yet"
+        ],
+        "examples": [
+          "Have you ever flown in a hot-air balloon? — Yes, I have.",
+          "She has won three gold medals in swimming competitions."
+        ]
+      },
+      {
+        "structure": "Present Perfect vs Past Simple",
+        "use": "Use Present Perfect when the time is open/unspecified; switch to Past Simple as soon as a specific time is mentioned.",
+        "signal_words": [
+          "in 2000",
+          "yesterday",
+          "last year",
+          "two days ago"
+        ],
+        "examples": [
+          "I have visited London three times. (Life experience)",
+          "I went to London last summer and saw a musical. (Specific past time)"
+        ]
+      },
+      {
+        "structure": "Present Perfect Continuous with FOR and SINCE",
+        "use": "Express actions that began in the past and are still continuing in the present.",
+        "signal_words": [
+          "for five years (duration)",
+          "since 2018 (point in time)",
+          "How long have you been...?"
+        ],
+        "examples": [
+          "Konstantinos Fykas has been swimming since he was eight years old.",
+          "The actors have been rehearsing for three hours."
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "id": "g1",
+        "prompt": "________ you ever flown in a colourful hot-air balloon?",
+        "options": [
+          "Have",
+          "Did",
+          "Do",
+          "Are"
+        ],
+        "answer": "Have",
+        "explanation": "We use 'Have you ever + past participle' to ask about life experiences."
+      },
+      {
+        "id": "g2",
+        "prompt": "Konstantinos Fykas ________ two gold medals at the Sydney Paralympics in 2000.",
+        "options": [
+          "won",
+          "has won",
+          "was winning",
+          "wins"
+        ],
+        "answer": "won",
+        "explanation": "A specific finished past time ('in 2000') requires the Past Simple."
+      },
+      {
+        "id": "g3",
+        "prompt": "Elena has been acting in the school drama club ________ three years.",
+        "options": [
+          "for",
+          "since",
+          "during",
+          "from"
+        ],
+        "answer": "for",
+        "explanation": "'For' indicates a period of duration ('three years')."
+      },
+      {
+        "id": "g4",
+        "prompt": "Nikos ________ competitive swimming since he was eight years old.",
+        "options": [
+          "has been practicing",
+          "practiced",
+          "is practicing",
+          "practices"
+        ],
+        "answer": "has been practicing",
+        "explanation": "An action starting in the past and continuing up to now with 'since' takes Present Perfect Continuous."
+      },
+      {
+        "id": "g5",
+        "prompt": "The record-breaking swimmer has ________ touched the wall and won the race!",
+        "options": [
+          "just",
+          "yet",
+          "ever",
+          "since"
+        ],
+        "answer": "just",
+        "explanation": "'Just' indicates an action completed a very short moment before the present."
+      }
+    ],
+    "school_lab_listening": {
+      "title": "Radio Programme: Interview with Champion Konstantinos Fykas",
+      "audio_file": "assets/audio_v2/grammar/radio_champion_interview.mp3",
+      "context": "Listen to the radio presenter interview Greek Paralympic swimming champion Konstantinos Fykas about his achievements and training routine.",
+      "script_lines": [
+        {
+          "speaker": "Radio Host",
+          "text": "Good evening sports fans and welcome to Top Stories on the Radio. Tonight in our studio we have a true champion, Greek Paralympian swimmer Konstantinos Fykas. Welcome Konstantinos!"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "Good evening! Thank you very much for inviting me to your show."
+        },
+        {
+          "speaker": "Radio Host",
+          "text": "How long have you been swimming competitively, Konstantinos?"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "I have been swimming since I was eight years old. Swimming became my daily habit and my passion."
+        },
+        {
+          "speaker": "Radio Host",
+          "text": "You won two gold medals and set world records at the Sydney Paralympics. What is your advice for young pupils?"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "Never give up on your dreams. With hard work, patience, and determination, you can accomplish anything in life."
+        }
+      ],
+      "dialogue_script": [
+        {
+          "speaker": "Radio Host",
+          "text": "Good evening sports fans and welcome to Top Stories on the Radio. Tonight in our studio we have a true champion, Greek Paralympian swimmer Konstantinos Fykas. Welcome Konstantinos!"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "Good evening! Thank you very much for inviting me to your show."
+        },
+        {
+          "speaker": "Radio Host",
+          "text": "How long have you been swimming competitively, Konstantinos?"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "I have been swimming since I was eight years old. Swimming became my daily habit and my passion."
+        },
+        {
+          "speaker": "Radio Host",
+          "text": "You won two gold medals and set world records at the Sydney Paralympics. What is your advice for young pupils?"
+        },
+        {
+          "speaker": "Konstantinos",
+          "text": "Never give up on your dreams. With hard work, patience, and determination, you can accomplish anything in life."
+        }
+      ]
+    },
+    "content_true_false": [
+      {
+        "statement": "Konstantinos Fykas started swimming when he was eight years old.",
+        "answer": true,
+        "quote": "I have been swimming since I was eight years old."
+      },
+      {
+        "statement": "Konstantinos won silver medals in the Sydney Paralympic swimming events.",
+        "answer": false,
+        "quote": "You won two gold medals and set world records at the Sydney Paralympics."
+      },
+      {
+        "statement": "Konstantinos advises children to believe in their dreams and work hard.",
+        "answer": true,
+        "quote": "Never give up on your dreams. With hard work, patience, and determination, you can accomplish anything."
+      }
+    ]
+  },
+  "collocations": [
+    {
+      "chunk": "beat a world record",
+      "meaning_gr": "σπάω παγκόσμιο ρεκόρ",
+      "example": "She trained every single day to beat a world record in backstroke."
+    },
+    {
+      "chunk": "packed audience",
+      "meaning_gr": "κατάμεστο θέατρο / κοινό",
+      "example": "The musical played before a packed audience every weekend."
+    },
+    {
+      "chunk": "board a balloon",
+      "meaning_gr": "επιβιβάζομαι σε αερόστατο",
+      "example": "The excited tourists were ready to board a balloon at sunrise."
+    },
+    {
+      "chunk": "earn a medal",
+      "meaning_gr": "κερδίζω επάξια μετάλλιο",
+      "example": "Dedication and teamwork helped the swimmers earn a medal."
+    }
+  ],
+  "definition_challenge": [
+    {
+      "id": "d1",
+      "prompt": "What is 'freestyle' in swimming?",
+      "options": [
+        "A race where swimmers can choose any way to swim",
+        "A dance on a wooden floor",
+        "Running fast around a track",
+        "Diving from a high cliff"
+      ],
+      "answer": "A race where swimmers can choose any way to swim"
+    },
+    {
+      "id": "d2",
+      "prompt": "What does 'accomplishment' mean?",
+      "options": [
+        "Something difficult that you finish with great success",
+        "A kind of small boat",
+        "A warm woollen blanket",
+        "A fast car race"
+      ],
+      "answer": "Something difficult that you finish with great success"
+    },
+    {
+      "id": "d3",
+      "prompt": "What is a 'hot-air balloon'?",
+      "options": [
+        "A very large bag with hot air that carries people into the sky",
+        "A small plastic ball for tennis",
+        "A fast submarine under the sea",
+        "A steam train on iron tracks"
+      ],
+      "answer": "A very large bag with hot air that carries people into the sky"
+    },
+    {
+      "id": "d4",
+      "prompt": "What does 'simultaneously' mean?",
+      "options": [
+        "Happening at the exact same moment in time",
+        "Happening very slowly",
+        "Happening only once a year",
+        "Happening in complete silence"
+      ],
+      "answer": "Happening at the exact same moment in time"
+    },
+    {
+      "id": "d5",
+      "prompt": "What is a 'sanctuary'?",
+      "options": [
+        "A safe place where wild birds and animals can live in safety",
+        "A shop that sells musical instruments",
+        "A sports field with artificial grass",
+        "A busy airport runway"
+      ],
+      "answer": "A safe place where wild birds and animals can live in safety"
+    },
+    {
+      "id": "d6",
+      "prompt": "What is a 'packed audience'?",
+      "options": [
+        "A very large group of people filling every seat in a hall",
+        "A group of luggage bags at the airport",
+        "A small club with three members",
+        "Actors rehearsing on an empty stage"
+      ],
+      "answer": "A very large group of people filling every seat in a hall"
+    },
+    {
+      "id": "d7",
+      "prompt": "What does a 'composer' do?",
+      "options": [
+        "Writes music and songs for instruments or the theatre",
+        "Drives a bus in the city",
+        "Swims in the butterfly race",
+        "Puts out fires in tall buildings"
+      ],
+      "answer": "Writes music and songs for instruments or the theatre"
+    },
+    {
+      "id": "d8",
+      "prompt": "What is the 'Paralympics'?",
+      "options": [
+        "An international sports event for athletes with special physical needs",
+        "A theatre show for young children",
+        "A hot-air balloon race across deserts",
+        "A card game played with friends"
+      ],
+      "answer": "An international sports event for athletes with special physical needs"
+    },
+    {
+      "id": "d9",
+      "prompt": "What is a 'relay team'?",
+      "options": [
+        "A group of athletes who take turns in a race",
+        "A pair of special sports shoes",
+        "A metal bar holding weights",
+        "A coach giving orders"
+      ],
+      "answer": "A group of athletes who take turns in a race"
+    },
+    {
+      "id": "d10",
+      "prompt": "What does 'revive' mean?",
+      "options": [
+        "To bring something back to active life or start it again",
+        "To forget an old telephone number",
+        "To buy expensive clothes in a store",
+        "To swim slowly in a lake"
+      ],
+      "answer": "To bring something back to active life or start it again"
+    },
+    {
+      "id": "d11",
+      "prompt": "What is a 'recycling bank'?",
+      "options": [
+        "A special large box where people put bottles and paper",
+        "A place where you borrow money",
+        "A steep river bank with trees",
+        "A garage for parking bicycles"
+      ],
+      "answer": "A special large box where people put bottles and paper"
+    },
+    {
+      "id": "d12",
+      "prompt": "What is an 'achievement'?",
+      "options": [
+        "A thing that is done very well after working very hard",
+        "A ticket for a theatre comedy",
+        "A wooden tool for eating meat",
+        "A secret name for a pet"
+      ],
+      "answer": "A thing that is done very well after working very hard"
+    }
+  ],
+  "writing_workshop": {
+    "title": "Class Book of Records: My Personal Best",
+    "genre": "Personal Achievement Report",
+    "guidance": "Write a report about an achievement, hobby record, or skill you have accomplished or practiced for a long time.",
+    "scaffold": {
+      "title_line": "My Personal Record: [Name of achievement/skill]",
+      "opening": "I have been [practicing/playing/studying] [activity] for [number] years / since [year/age].",
+      "development": "My biggest accomplishment so far was when I [what you did / competition you entered / challenge you beat].",
+      "feelings": "I felt very proud because I [worked hard / trained every week / never gave up].",
+      "closing": "In the future, I hope to [next goal or record you want to achieve]."
+    }
+  },
+  "can_do_checklist": [
+    "I can name four different swimming styles (backstroke, breaststroke, butterfly, freestyle).",
+    "I can talk about my life experiences using the Present Perfect Simple (have you ever / I have never).",
+    "I can distinguish between Present Perfect (unspecified experience) and Past Simple (finished past time).",
+    "I can express duration of ongoing activities using Present Perfect Continuous with for and since.",
+    "I can write a report about an inspiring sports champion or my own personal record."
+  ]
+}

@@ -1,0 +1,470 @@
+window.VOCABULARY_DATA = [
+  {
+    "id": 1,
+    "word": "accomplishment",
+    "part_of_speech": "noun",
+    "ipa": "/əˈkʌmplɪʃmənt/",
+    "meaning_gr": "επίτευγμα, κατόρθωμα",
+    "definition_en": "Something difficult that you finish with great success.",
+    "example": "Winning the gold medal was his biggest personal accomplishment."
+  },
+  {
+    "id": 2,
+    "word": "achievement",
+    "part_of_speech": "noun",
+    "ipa": "/əˈtʃiːvmənt/",
+    "meaning_gr": "επίτευγμα",
+    "definition_en": "A thing that is done very well after working very hard.",
+    "example": "Breaking the world record was a great achievement for the boy."
+  },
+  {
+    "id": 3,
+    "word": "among",
+    "part_of_speech": "preposition",
+    "ipa": "/əˈmʌŋ/",
+    "meaning_gr": "ανάμεσα σε",
+    "definition_en": "In the middle of other people or things.",
+    "example": "She sat happily among her friends after the swimming race."
+  },
+  {
+    "id": 4,
+    "word": "antiquity",
+    "part_of_speech": "noun",
+    "ipa": "/ænˈtɪkwəti/",
+    "meaning_gr": "αρχαιότητα",
+    "definition_en": "The ancient past, especially in ancient Greece and Rome.",
+    "example": "Athletes in antiquity were famous in ancient Greece."
+  },
+  {
+    "id": 5,
+    "word": "backstroke",
+    "part_of_speech": "noun",
+    "ipa": "/ˈbækstrəʊk/",
+    "meaning_gr": "ύπτιο (κολύμβηση)",
+    "definition_en": "A swimming style done by moving on your back in the water.",
+    "example": "He practiced the backstroke every morning in the pool."
+  },
+  {
+    "id": 6,
+    "word": "beat",
+    "part_of_speech": "verb",
+    "ipa": "/biːt/",
+    "meaning_gr": "νικώ, ξεπερνώ (ρεκόρ)",
+    "definition_en": "To win against another player or do better than an old score.",
+    "example": "The champion was able to beat the national record by two seconds."
+  },
+  {
+    "id": 7,
+    "word": "billion",
+    "part_of_speech": "number",
+    "ipa": "/ˈbɪljən/",
+    "meaning_gr": "δισεκατομμύριο",
+    "definition_en": "The very large number that means one thousand million.",
+    "example": "More than one billion people watched the big sports game on television."
+  },
+  {
+    "id": 8,
+    "word": "board",
+    "part_of_speech": "verb",
+    "ipa": "/bɔːd/",
+    "meaning_gr": "επιβιβάζομαι",
+    "definition_en": "To get into or enter a plane, train, or big balloon.",
+    "example": "The pilots were ready to board the hot-air balloon for the flight."
+  },
+  {
+    "id": 9,
+    "word": "breaststroke",
+    "part_of_speech": "noun",
+    "ipa": "/ˈbreststrəʊk/",
+    "meaning_gr": "πρόσθιο (κολύμβηση)",
+    "definition_en": "A swimming style where both arms move forward together in circles.",
+    "example": "She won first place in the hundred metre breaststroke event."
+  },
+  {
+    "id": 10,
+    "word": "butterfly",
+    "part_of_speech": "noun",
+    "ipa": "/ˈbʌtəflaɪ/",
+    "meaning_gr": "πεταλούδα (κολύμβηση)",
+    "definition_en": "A difficult swimming style where both arms lift up together over the water.",
+    "example": "The butterfly style requires strong arms and regular practice."
+  },
+  {
+    "id": 11,
+    "word": "captivate",
+    "part_of_speech": "verb",
+    "ipa": "/ˈkæptɪveɪt/",
+    "meaning_gr": "αιχμαλωτίζω, γοητεύω",
+    "definition_en": "To make people watch and listen with great interest.",
+    "example": "The clever actors captivate the crowd with their wonderful play."
+  },
+  {
+    "id": 12,
+    "word": "champion",
+    "part_of_speech": "noun",
+    "ipa": "/ˈtʃæmpiən/",
+    "meaning_gr": "πρωταθλητής",
+    "definition_en": "A person or team that wins first place in a major contest.",
+    "example": "The swimming champion smiled happily at the friendly crowd."
+  },
+  {
+    "id": 13,
+    "word": "comedy",
+    "part_of_speech": "noun",
+    "ipa": "/ˈkɒmədi/",
+    "meaning_gr": "κωμωδία",
+    "definition_en": "A funny play, film, or show that makes people laugh.",
+    "example": "We watched an exciting comedy at the school theatre festival."
+  },
+  {
+    "id": 14,
+    "word": "compare",
+    "part_of_speech": "verb",
+    "ipa": "/kəmˈpeə/",
+    "meaning_gr": "συγκρίνω",
+    "definition_en": "To look at two things to see how they are the same or different.",
+    "example": "The sports teacher will compare the race times of all runners."
+  },
+  {
+    "id": 15,
+    "word": "compete",
+    "part_of_speech": "verb",
+    "ipa": "/kəmˈpiːt/",
+    "meaning_gr": "διαγωνίζομαι, συναγωνίζομαι",
+    "definition_en": "To take part in a race or game against other people to win.",
+    "example": "Swimmers from thirty countries will compete in the summer games."
+  },
+  {
+    "id": 16,
+    "word": "competition",
+    "part_of_speech": "noun",
+    "ipa": "/ˌkɒmpəˈtɪʃn/",
+    "meaning_gr": "διαγωνισμός, αγώνας",
+    "definition_en": "An event where people try to be the most successful or win.",
+    "example": "He entered the national swimming competition with high hopes."
+  },
+  {
+    "id": 17,
+    "word": "composer",
+    "part_of_speech": "noun",
+    "ipa": "/kəmˈpəʊzə/",
+    "meaning_gr": "συνθέτης",
+    "definition_en": "A person who writes music and songs for instruments or the theatre.",
+    "example": "The composer made wonderful songs for the opening show."
+  },
+  {
+    "id": 18,
+    "word": "contest",
+    "part_of_speech": "noun",
+    "ipa": "/ˈkɒntest/",
+    "meaning_gr": "διαγωνισμός",
+    "definition_en": "A game or match in which people try to win a prize.",
+    "example": "Our school won first prize in the music contest."
+  },
+  {
+    "id": 19,
+    "word": "destination",
+    "part_of_speech": "noun",
+    "ipa": "/ˌdestɪˈneɪʃn/",
+    "meaning_gr": "προορισμός",
+    "definition_en": "The place where someone is travelling to.",
+    "example": "The balloon reached its final destination just before the sun went down."
+  },
+  {
+    "id": 20,
+    "word": "dominate",
+    "part_of_speech": "verb",
+    "ipa": "/ˈdɒmɪneɪt/",
+    "meaning_gr": "κυριαρχώ",
+    "definition_en": "To have the strongest power or lead during a whole match.",
+    "example": "The basketball team was able to dominate the whole game."
+  },
+  {
+    "id": 21,
+    "word": "drama",
+    "part_of_speech": "noun",
+    "ipa": "/ˈdrɑːmə/",
+    "meaning_gr": "δράμα, θεατρικό έργο",
+    "definition_en": "A serious play or show made for actors on a stage.",
+    "example": "She loves acting in drama classes every Tuesday afternoon."
+  },
+  {
+    "id": 22,
+    "word": "earn",
+    "part_of_speech": "verb",
+    "ipa": "/ɜːn/",
+    "meaning_gr": "κερδίζω επάξια, αποκτώ",
+    "definition_en": "To get something good because you worked very hard for it.",
+    "example": "Hard work helped him earn a place on the school team."
+  },
+  {
+    "id": 23,
+    "word": "entertainment",
+    "part_of_speech": "noun",
+    "ipa": "/ˌentəˈteɪnmənt/",
+    "meaning_gr": "ψυχαγωγία, διασκέδαση",
+    "definition_en": "Shows, films, or activities that make people happy.",
+    "example": "The city festival offered great entertainment for families and young pupils."
+  },
+  {
+    "id": 24,
+    "word": "event",
+    "part_of_speech": "noun",
+    "ipa": "/ɪˈvent/",
+    "meaning_gr": "αγώνισμα, εκδήλωση",
+    "definition_en": "An important sports race or special show with many people.",
+    "example": "The freestyle race was the most popular sports event of the day."
+  },
+  {
+    "id": 25,
+    "word": "exceptional",
+    "part_of_speech": "adjective",
+    "ipa": "/ɪkˈsepʃənl/",
+    "meaning_gr": "εξαιρετικός, σπάνιος",
+    "definition_en": "Much greater or much better than what is usual or normal.",
+    "example": "The young girl showed exceptional skill in her music lessons."
+  },
+  {
+    "id": 26,
+    "word": "freestyle",
+    "part_of_speech": "noun",
+    "ipa": "/ˈfriːstaɪl/",
+    "meaning_gr": "ελεύθερο (κολύμβηση)",
+    "definition_en": "A swimming race where swimmers can choose any way to swim.",
+    "example": "He holds the national record for the hundred metre freestyle race."
+  },
+  {
+    "id": 27,
+    "word": "ferret",
+    "part_of_speech": "noun",
+    "ipa": "/ˈferɪt/",
+    "meaning_gr": "κουνάβι (ως κατοικίδιο)",
+    "definition_en": "A small long animal that some people keep in their homes as a pet.",
+    "example": "His funny pet ferret loves hiding little toys under the bed."
+  },
+  {
+    "id": 28,
+    "word": "figure",
+    "part_of_speech": "noun",
+    "ipa": "/ˈfɪɡə/",
+    "meaning_gr": "αριθμός, νούμερο",
+    "definition_en": "A number or amount that you see in an official paper.",
+    "example": "The official paper shows a big figure for school sports medals."
+  },
+  {
+    "id": 29,
+    "word": "gold medal",
+    "part_of_speech": "noun",
+    "ipa": "/ˌɡəʊld ˈmedl/",
+    "meaning_gr": "χρυσό μετάλλιο",
+    "definition_en": "A round piece of yellow metal given to the first place winner.",
+    "example": "She showed her new gold medal to her friends."
+  },
+  {
+    "id": 30,
+    "word": "habit",
+    "part_of_speech": "noun",
+    "ipa": "/ˈhæbɪt/",
+    "meaning_gr": "συνήθεια",
+    "definition_en": "Something you do often and almost without thinking.",
+    "example": "Swimming every morning is a healthy habit for him."
+  },
+  {
+    "id": 31,
+    "word": "holder",
+    "part_of_speech": "noun",
+    "ipa": "/ˈhəʊldə/",
+    "meaning_gr": "κάτοχος (ρεκόρ)",
+    "definition_en": "A person who officially has a title or sports record.",
+    "example": "She is the famous holder of three world swimming records."
+  },
+  {
+    "id": 32,
+    "word": "hot-air balloon",
+    "part_of_speech": "noun",
+    "ipa": "/ˌhɒt ˈeə bəˈluːn/",
+    "meaning_gr": "αερόστατο θερμού αέρα",
+    "definition_en": "A very large bag with hot air that carries people into the sky.",
+    "example": "We went high in a big hot-air balloon across the green valley."
+  },
+  {
+    "id": 33,
+    "word": "imagination",
+    "part_of_speech": "noun",
+    "ipa": "/ɪˌmædʒɪˈneɪʃn/",
+    "meaning_gr": "φαντασία",
+    "definition_en": "The ability of your mind to create new ideas or pictures.",
+    "example": "Reading good stories helps children use their rich imagination."
+  },
+  {
+    "id": 34,
+    "word": "long-running",
+    "part_of_speech": "adjective",
+    "ipa": "/ˌlɒŋ ˈrʌnɪŋ/",
+    "meaning_gr": "μακροχρόνιος, που παίζεται καιρό",
+    "definition_en": "Continuing for a long time without stopping.",
+    "example": "The play is a famous long-running musical in the city."
+  },
+  {
+    "id": 35,
+    "word": "movie",
+    "part_of_speech": "noun",
+    "ipa": "/ˈmuːvi/",
+    "meaning_gr": "ταινία, κινηματογραφικό έργο",
+    "definition_en": "A film shown in a cinema or on television.",
+    "example": "We watched an exciting adventure movie on Friday evening."
+  },
+  {
+    "id": 36,
+    "word": "musical",
+    "part_of_speech": "noun",
+    "ipa": "/ˈmjuːzɪkl/",
+    "meaning_gr": "μιούζικαλ (μουσικό θέατρο)",
+    "definition_en": "A play or film that tells a story with songs and dancing.",
+    "example": "The new musical had amazing songs and bright lights."
+  },
+  {
+    "id": 37,
+    "word": "nickname",
+    "part_of_speech": "noun",
+    "ipa": "/ˈnɪkneɪm/",
+    "meaning_gr": "παρατσούκλι",
+    "definition_en": "An extra friendly name given to someone by friends or family.",
+    "example": "He has the funny nickname Speed because he runs so fast."
+  },
+  {
+    "id": 38,
+    "word": "originally",
+    "part_of_speech": "adverb",
+    "ipa": "/əˈrɪdʒənəli/",
+    "meaning_gr": "αρχικά",
+    "definition_en": "In the beginning, before changes took place.",
+    "example": "The sports match was originally set for early May."
+  },
+  {
+    "id": 39,
+    "word": "packed audience",
+    "part_of_speech": "noun",
+    "ipa": "/ˌpækt ˈɔːdiəns/",
+    "meaning_gr": "κατάμεστο κοινό",
+    "definition_en": "A very large group of people filling every seat in a hall.",
+    "example": "The young actors performed before a packed audience in the hall."
+  },
+  {
+    "id": 40,
+    "word": "Paralympics",
+    "part_of_speech": "noun",
+    "ipa": "/ˌpærəˈlɪmpɪks/",
+    "meaning_gr": "Παραολυμπιακοί Αγώνες",
+    "definition_en": "An international sports event for athletes with special physical needs.",
+    "example": "He won two gold medals at the Paralympics in swimming."
+  },
+  {
+    "id": 41,
+    "word": "pet",
+    "part_of_speech": "noun",
+    "ipa": "/pet/",
+    "meaning_gr": "κατοικίδιο ζώο",
+    "definition_en": "An animal that you keep at home for company and love.",
+    "example": "My friend has a small white rabbit as a friendly pet."
+  },
+  {
+    "id": 42,
+    "word": "post-show",
+    "part_of_speech": "adjective",
+    "ipa": "/ˌpəʊst ˈʃəʊ/",
+    "meaning_gr": "μετά την παράσταση",
+    "definition_en": "Happening right after a theatre show ends.",
+    "example": "The director invited the pupils to a nice post-show talk."
+  },
+  {
+    "id": 43,
+    "word": "production",
+    "part_of_speech": "noun",
+    "ipa": "/prəˈdʌkʃn/",
+    "meaning_gr": "παραγωγή, θεατρικό ανέβασμα",
+    "definition_en": "The making of a play, film, or music show.",
+    "example": "The school drama club prepared a great theatre production."
+  },
+  {
+    "id": 44,
+    "word": "recycling bank",
+    "part_of_speech": "noun",
+    "ipa": "/riːˈsaɪklɪŋ bæŋk/",
+    "meaning_gr": "κάδος / σταθμός ανακύκλωσης",
+    "definition_en": "A special large box on the street where people put bottles and paper.",
+    "example": "The pupils took glass bottles to the recycling bank."
+  },
+  {
+    "id": 45,
+    "word": "relay team",
+    "part_of_speech": "noun",
+    "ipa": "/ˈriːleɪ tiːm/",
+    "meaning_gr": "ομάδα σκυταλοδρομίας",
+    "definition_en": "A group of runners or swimmers who take turns in a race.",
+    "example": "Our school relay team won first place in the mixed swimming race."
+  },
+  {
+    "id": 46,
+    "word": "review",
+    "part_of_speech": "noun",
+    "ipa": "/rɪˈvjuː/",
+    "meaning_gr": "κριτική (θεάτρου, βιβλίου)",
+    "definition_en": "A short text giving an opinion about a book, play, or film.",
+    "example": "The newspaper published a very positive review of the school play."
+  },
+  {
+    "id": 47,
+    "word": "revive",
+    "part_of_speech": "verb",
+    "ipa": "/rɪˈvaɪv/",
+    "meaning_gr": "αναβιώνω, ξαναζωντανεύω",
+    "definition_en": "To bring something back to active life or start it again.",
+    "example": "The modern games were created to revive the ancient tradition."
+  },
+  {
+    "id": 48,
+    "word": "sanctuary",
+    "part_of_speech": "noun",
+    "ipa": "/ˈsæŋktʃuəri/",
+    "meaning_gr": "καταφύγιο (άγριας ζωής)",
+    "definition_en": "A safe place where wild birds and animals can live in safety.",
+    "example": "Volunteers built a safe animal sanctuary near the forest lake."
+  },
+  {
+    "id": 49,
+    "word": "simultaneously",
+    "part_of_speech": "adverb",
+    "ipa": "/ˌsɪmlˈteɪniəsli/",
+    "meaning_gr": "ταυτόχρονα",
+    "definition_en": "Happening or being done at the exact same moment in time.",
+    "example": "The two swimmers touched the pool wall simultaneously at the finish line."
+  },
+  {
+    "id": 50,
+    "word": "skewer",
+    "part_of_speech": "noun",
+    "ipa": "/ˈskjuːə/",
+    "meaning_gr": "σουβλάκι (ξυλάκι / καλαμάκι)",
+    "definition_en": "A long thin piece of wood or metal used to hold food.",
+    "example": "He cooked delicious meat pieces on a wooden skewer during the picnic."
+  },
+  {
+    "id": 51,
+    "word": "success",
+    "part_of_speech": "noun",
+    "ipa": "/səkˈses/",
+    "meaning_gr": "επιτυχία",
+    "definition_en": "The good result when you do what you wanted to do.",
+    "example": "Hard daily training brought great success to the young runner."
+  },
+  {
+    "id": 52,
+    "word": "witness",
+    "part_of_speech": "verb",
+    "ipa": "/ˈwɪtnəs/",
+    "meaning_gr": "γίνομαι μάρτυρας, βλέπω με τα μάτια μου",
+    "definition_en": "To see an important event happen with your own eyes.",
+    "example": "Many people came to the stadium to witness the record breaking race."
+  }
+];
