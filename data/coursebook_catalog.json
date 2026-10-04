@@ -156,7 +156,7 @@
       "unit": 9,
       "title": "Earth Day Everyday",
       "slug": "unit9",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Environmental protection, endangered species, pollutants, and green action",
       "theme": "Environmental Education, Ecology, Biology, Activism",
       "grammar": "Past Perfect Simple, Clauses of Reason & Result",
@@ -165,14 +165,16 @@
         "Biology",
         "Geography"
       ],
-      "badge": "Planned",
-      "accent_color": "#2f855a"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#2f855a",
+      "v1_url": "unit9/index.html",
+      "v2_url": "unit9/v2.html"
     },
     {
       "unit": 10,
       "title": "Time for Fun",
       "slug": "unit10",
-      "status": "planned",
+      "status": "ready",
       "tagline": "Cinema, books, film reviews, super spies, and expressing preferences",
       "theme": "Cinema, Literature, Cultural Media, Leisure",
       "grammar": "Present Simple Passive, -ed / -ing Participial Adjectives",
@@ -181,8 +183,10 @@
         "Literature",
         "Art"
       ],
-      "badge": "Planned",
-      "accent_color": "#4a5568"
+      "badge": "Flagship v2 Ready",
+      "accent_color": "#4f46e5",
+      "v1_url": "unit10/index.html",
+      "v2_url": "unit10/v2.html"
     }
   ]
 }

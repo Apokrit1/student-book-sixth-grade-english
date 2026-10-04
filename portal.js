@@ -63,4 +63,70 @@ document.addEventListener('DOMContentLoaded', () => {
       unitsGrid.appendChild(card);
     });
   }
+
+  // --- Video Modal Controls ---
+  const videoModal = document.getElementById('videoModal');
+  const modalVideoElement = document.getElementById('modalVideoElement');
+  const closeVideoModal = document.getElementById('closeVideoModal');
+  const watchPitchVideoBtn = document.getElementById('watchPitchVideoBtn');
+  const heroWatchVideoBtn = document.getElementById('heroWatchVideoBtn');
+  const previewPlayBtn = document.getElementById('previewPlayBtn');
+  const videoPreviewTrigger = document.getElementById('videoPreviewTrigger');
+
+  function openModal(e) {
+    if (e) e.preventDefault();
+    if (!videoModal) return;
+    videoModal.style.display = 'flex';
+    videoModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (modalVideoElement) {
+      modalVideoElement.currentTime = 0;
+      modalVideoElement.play().catch(err => {
+        console.log('Video autoplay prevented or suspended:', err);
+      });
+    }
+  }
+
+  function closeModal() {
+    if (!videoModal) return;
+    videoModal.style.display = 'none';
+    videoModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (modalVideoElement) {
+      modalVideoElement.pause();
+    }
+  }
+
+  if (watchPitchVideoBtn) watchPitchVideoBtn.addEventListener('click', openModal);
+  if (heroWatchVideoBtn) heroWatchVideoBtn.addEventListener('click', openModal);
+  if (previewPlayBtn) previewPlayBtn.addEventListener('click', openModal);
+  if (videoPreviewTrigger) {
+    videoPreviewTrigger.addEventListener('click', (e) => {
+      // Don't trigger if clicked directly on a child button that already has a handler
+      if (e.target.closest('#previewPlayBtn')) return;
+      openModal(e);
+    });
+    videoPreviewTrigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openModal(e);
+      }
+    });
+  }
+
+  if (closeVideoModal) closeVideoModal.addEventListener('click', closeModal);
+
+  if (videoModal) {
+    videoModal.addEventListener('click', (e) => {
+      if (e.target === videoModal) {
+        closeModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoModal && videoModal.style.display === 'flex') {
+      closeModal();
+    }
+  });
 });

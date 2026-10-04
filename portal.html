@@ -23,7 +23,12 @@
           <span class="greek-crest">🇬🇷</span>
           <span>Greek Ministry of Education • DEPPS-APS Curriculum</span>
         </div>
-        <div class="portal-level-pill">CEFR Level A2 / A2+</div>
+        <div class="portal-header-chips">
+          <a href="#pitchSection" class="portal-chip-link">
+            <span>🎬</span> Launch Pitch &amp; Player
+          </a>
+          <div class="portal-level-pill">CEFR Level A2 / A2+</div>
+        </div>
       </div>
       
       <div class="portal-hero">
@@ -33,6 +38,16 @@
           <p class="portal-desc">
             A state-of-the-art digital modernization of the Greek primary school coursebook. Bridging classic curricular grammar and lexical goals with authentic intercultural storytelling, natural neural AI speech, and printable classroom worksheet packs.
           </p>
+          <div class="portal-hero-actions">
+            <a href="english6_launch_ictrev.mp4" target="_blank" class="hero-cta-btn hero-video-btn" id="heroWatchVideoBtn">
+              <span class="btn-play-icon">▶</span>
+              <span>Watch Pitch Video (MP4)</span>
+            </a>
+            <a href="_video_pipeline/player.html" target="_blank" class="hero-cta-btn hero-player-btn">
+              <span>⚡</span>
+              <span>Keynote Player (HTML5)</span>
+            </a>
+          </div>
         </div>
         <div class="portal-quick-stats">
           <div class="stat-box">
@@ -64,6 +79,96 @@
   <main class="portal-main">
     <div class="portal-container">
       
+      <!-- Video Pipeline & Pitch Showcase Card -->
+      <section class="pipeline-showcase-section" id="pitchSection" aria-labelledby="pipelineSectionTitle">
+        <div class="pipeline-card">
+          <div class="pipeline-glow" aria-hidden="true"></div>
+          
+          <div class="pipeline-content">
+            <div class="pipeline-badge-group">
+              <span class="pipeline-badge primary">🎬 Video Pipeline</span>
+              <span class="pipeline-badge secondary">ICT-REV Larissa 2026</span>
+              <span class="pipeline-badge duration">⏱️ 50s Launch Pitch</span>
+            </div>
+            
+            <h2 class="pipeline-title" id="pipelineSectionTitle">The Coursebook, Rebuilt for the Screen</h2>
+            
+            <p class="pipeline-desc">
+              Experience the official conference keynote pitch created through an automated rendering pipeline using Playwright headless browser capture, procedural typesetting, and synchronized neural AI speech.
+            </p>
+
+            <div class="pipeline-specs">
+              <div class="pipeline-spec-item">
+                <span class="spec-icon">🎥</span>
+                <div class="spec-text">
+                  <strong>1080p HD Video</strong>
+                  <span>CRF 18 Master Render</span>
+                </div>
+              </div>
+              <div class="pipeline-spec-item">
+                <span class="spec-icon">🔊</span>
+                <div class="spec-text">
+                  <strong>Neural Voice</strong>
+                  <span>Synthesized British Audio</span>
+                </div>
+              </div>
+              <div class="pipeline-spec-item">
+                <span class="spec-icon">⚡</span>
+                <div class="spec-text">
+                  <strong>HTML5 Engine</strong>
+                  <span>Frame-Accurate Player</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pipeline-actions">
+              <a href="english6_launch_ictrev.mp4" target="_blank" class="pipeline-btn video-mp4-btn" id="watchPitchVideoBtn">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span>Watch Pitch Video (MP4)</span>
+              </a>
+              <a href="_video_pipeline/player.html" target="_blank" class="pipeline-btn player-html-btn" id="openPlayerHtmlBtn">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Interactive Player (HTML5)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pipeline-preview-pane">
+            <div class="preview-browser-frame">
+              <div class="browser-titlebar">
+                <div class="browser-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="browser-address">english6_launch_ictrev.mp4</div>
+                <div class="browser-badge">1080p</div>
+              </div>
+              
+              <div class="browser-viewport" id="videoPreviewTrigger" role="button" tabindex="0" aria-label="Play Launch Pitch Video">
+                <img src="assets/pitch_video_poster.jpg" alt="English 6th Grade — Launch Video Preview Poster" class="preview-poster" loading="lazy">
+                <div class="preview-overlay">
+                  <button class="preview-play-btn" id="previewPlayBtn" aria-label="Play Launch Pitch Video">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30" aria-hidden="true">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </button>
+                  <div class="preview-caption">
+                    <span class="preview-play-label">Play 50s Conference Pitch</span>
+                    <span class="preview-sub-label">Click to watch video modal • 1080p MP4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <div class="section-title-row">
         <div>
           <h2 class="section-title">Coursebook Units & Learning Modules</h2>
@@ -73,10 +178,10 @@
 
       <!-- Teacher Syllabus Check Notice (§I) -->
       <div style="margin-bottom: 24px; padding: 14px 20px; background: rgba(49, 130, 206, 0.08); border: 1px solid rgba(49, 130, 206, 0.3); border-radius: 12px; display: flex; align-items: flex-start; gap: 12px;">
-        <span style="font-size: 1.3rem; line-height: 1;">🧑‍🏫</span>
+        <span style="font-size: 1.3rem; line-height: 1;">🎉</span>
         <div style="font-size: 0.88rem; color: #2d3748; line-height: 1.5;">
-          <strong style="color: #2b6cb0;">Note for Teachers & Authors:</strong>
-          Unit titles, grammatical foci, and themes for Units 2–10 represent preliminary syllabus mapping and should be verified against the physical 6th Grade Coursebook and Teacher's Book before authoring content for those units.
+          <strong style="color: #2b6cb0;">Complete 10-Unit Modernization Milestone:</strong>
+          All 10 syllabus units (Units 1–10) are now fully built, authentic to the Greek Ministry of Education Teacher's Book &amp; Pupil's Book, and equipped with Version 2 CLIL stories, inductive grammar labs, dual-engine neural audio, and printable student worksheets.
         </div>
       </div>
 
@@ -140,10 +245,54 @@
 
   <footer class="portal-footer">
     <div class="portal-footer-container">
-      <div class="footer-brand">Photodentro & Ministry of Education • English 6th Grade Modernization Project</div>
+      <div class="footer-links-row">
+        <a href="english6_launch_ictrev.mp4" target="_blank" class="footer-link">🎬 Pitch Video (MP4)</a>
+        <span class="footer-sep">•</span>
+        <a href="_video_pipeline/player.html" target="_blank" class="footer-link">⚡ Keynote Player (HTML5)</a>
+        <span class="footer-sep">•</span>
+        <a href="#unitsGrid" class="footer-link">📚 Coursebook Units (1–10)</a>
+        <span class="footer-sep">•</span>
+        <a href="unit1/v2.html" class="footer-link">🚀 Unit 1 Flagship</a>
+      </div>
+      <div class="footer-brand">Photodentro &amp; Ministry of Education • English 6th Grade Modernization Project</div>
       <div class="footer-meta">Created for Greek Primary Schools (ΣΤ΄ Δημοτικού) • Digital Companion Framework</div>
     </div>
   </footer>
+
+  <!-- Video Player Modal Dialog -->
+  <div class="video-modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true" style="display: none;">
+    <div class="video-modal-container">
+      <div class="video-modal-header">
+        <div class="video-modal-title-group">
+          <span class="modal-crest">🎬</span>
+          <h3 class="video-modal-title">English 6th Grade — Launch Pitch Video</h3>
+          <span class="video-modal-pill">ICT-REV Larissa 2026</span>
+        </div>
+        <button class="video-modal-close" id="closeVideoModal" aria-label="Close video dialog">&times;</button>
+      </div>
+
+      <div class="video-modal-body">
+        <video id="modalVideoElement" class="modal-video" controls preload="auto" poster="assets/pitch_video_poster.jpg">
+          <source src="english6_launch_ictrev.mp4" type="video/mp4">
+          Your browser does not support HTML5 video playback.
+        </video>
+      </div>
+
+      <div class="video-modal-footer">
+        <div class="modal-footer-left">
+          <span class="modal-footnote">Automated Video Pipeline • 1080p Master (50 seconds)</span>
+        </div>
+        <div class="modal-footer-right">
+          <a href="english6_launch_ictrev.mp4" target="_blank" download class="modal-action-btn secondary">
+            <span>📥</span> Download MP4
+          </a>
+          <a href="_video_pipeline/player.html" target="_blank" class="modal-action-btn primary">
+            <span>⚡</span> Open HTML5 Player ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="data/coursebook_catalog.js"></script>
   <script src="portal.js"></script>

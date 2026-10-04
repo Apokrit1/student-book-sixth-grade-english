@@ -1,0 +1,534 @@
+window.UNIT10_V2_DATA = {
+  "unit_id": 10,
+  "unit_title": "Time for Fun",
+  "unit_subtitle": "The Super Spy • Film Festival • Writing a Film Review",
+  "cefr_level": "A2 / A2+",
+  "theme": "Cinema, Literature, Cultural Media, Leisure, and Critical Reviews",
+  "stories": [
+    {
+      "id": "super_spy_cinema",
+      "title": "On Set with the Secret Spy",
+      "subtitle": "Behind the Scenes at Pinewood Studios",
+      "reading_time": "3 min read",
+      "image": "assets/images_v2/super_spy.svg",
+      "narrative": "At the famous movie studios, a bustling film crew prepares to shoot the climax of a new blockbuster thriller. In the story, a British secret spy undertakes an urgent mission to stop an evil billionaire from stealing digital codes. Behind the main cameras, a talented director uses technical expertise to direct every dramatic move. On set, a young actor checks high-tech gadgets before the clapperboard snaps. The director pauses to approve the lighting, and assistants quickly switch on powerful studio lamps while crew members switch off background alarms. In this top-secret facility, visitors are told that taking mobile photos is strictly forbidden. The prop team conducted an experiment with miniature laser pens, testing sophisticated props so that the dangerous scene looks completely real on the cinema screen.",
+      "vocabulary_ids": [2, 4, 15, 17, 18, 19, 20, 26, 39, 40, 41],
+      "landmarks": [
+        {
+          "name": "Secret Spy Gadget Table",
+          "desc": "The high-tech prop bench where sophisticated gadgets are prepared for the spy.",
+          "word_key": "spy",
+          "word_id": 40
+        },
+        {
+          "name": "Director's Soundstage Chair",
+          "desc": "The central viewing monitor where the director sits to direct the scene.",
+          "word_key": "direct",
+          "word_id": 15
+        },
+        {
+          "name": "Mission Briefing Screen",
+          "desc": "The glowing digital map displaying the secret agent's dangerous mission.",
+          "word_key": "mission",
+          "word_id": 26
+        },
+        {
+          "name": "Laser Experiment Station",
+          "desc": "The special effects lab where prop scientists run a safe laser experiment.",
+          "word_key": "experiment",
+          "word_id": 18
+        }
+      ]
+    },
+    {
+      "id": "international_film_festival",
+      "title": "The Youth Film Festival",
+      "subtitle": "Red Carpets, Awards, and Cheering Viewers",
+      "reading_time": "3 min read",
+      "image": "assets/images_v2/film_festival.svg",
+      "narrative": "Every autumn, our town cinema hosts the International Youth Film Festival, welcoming movie lovers from all over Greece. This year, tickets for the opening gala were completely sold out within minutes. Security staff permit ticket holders inside the lobby, but festival rules do not allow visitors to bring outside food. Inside the packed cinema hall, every excited viewer waited with popcorn for the lights to dim. Nobody felt bored, because the varied programme offered something for everyone, representing nearly every cinema genre from comedy to science fiction. After each short film, audience members had a chance to request questions directly to the filmmakers. When the festival jury presented a golden award to a slightly nervous teenager from Thessaloniki, she delivered a moving speech thanking her teachers for believing in her dream.",
+      "vocabulary_ids": [3, 5, 7, 9, 22, 28, 31, 33, 37, 38, 43],
+      "landmarks": [
+        {
+          "name": "Festival Award Trophy Podium",
+          "desc": "The golden stage pedestal where the best student film won an award.",
+          "word_key": "award",
+          "word_id": 5
+        },
+        {
+          "name": "Sold Out Ticket Booth",
+          "desc": "The cinema box office displaying the red sign showing evening seats were sold out.",
+          "word_key": "sold out",
+          "word_id": 38
+        },
+        {
+          "name": "Genre Screening Hall",
+          "desc": "The modern screening theater highlighting films from every artistic genre.",
+          "word_key": "genre",
+          "word_id": 22
+        },
+        {
+          "name": "Viewer Audience Balcony",
+          "desc": "The cinema gallery where every enthusiastic viewer watched the moving finale.",
+          "word_key": "viewer",
+          "word_id": 43
+        }
+      ]
+    },
+    {
+      "id": "bestseller_to_blockbuster",
+      "title": "From Page to Big Screen",
+      "subtitle": "How an Adventure Novel Becomes a Movie",
+      "reading_time": "3 min read",
+      "image": "assets/images_v2/book_adaptation.svg",
+      "narrative": "Turning a popular printed book into a motion picture requires incredible teamwork and creativity. Last year, author Sarah Jenkins watched her thrilling adventure novel become a national bestseller as soon as it hit the shelves across Greece. The original creator wrote about a brave young sailor, and fans fell in love with each memorable character. Soon, a film studio purchased the rights and hired screenwriters to adapt the story into a fast-paced screenplay. In the art studio, an illustrator produced a detailed colour drawing for each key scene, making sure every book illustration came alive. Sarah explained that young writers gain confidence when they develop their ideas with patience. Now, the film version shares the same famous title and promises to thrill cinema crowds around the globe.",
+      "vocabulary_ids": [6, 10, 11, 14, 16, 21, 23, 24, 30, 34, 42],
+      "landmarks": [
+        {
+          "name": "Bestseller Bookstore Display",
+          "desc": "The shop window celebrating the mystery novel that became a bestseller.",
+          "word_key": "bestseller",
+          "word_id": 6
+        },
+        {
+          "name": "Screenplay Writing Desk",
+          "desc": "The author's desk where the book text was adapted into a shooting screenplay.",
+          "word_key": "screenplay",
+          "word_id": 34
+        },
+        {
+          "name": "Character Sketchpad",
+          "desc": "The visual concept sketchbook exploring the main detective character.",
+          "word_key": "character",
+          "word_id": 10
+        },
+        {
+          "name": "Storybook Illustration Easel",
+          "desc": "The wooden easel holding an original colour illustration for the printed book.",
+          "word_key": "illustration",
+          "word_id": 24
+        }
+      ]
+    },
+    {
+      "id": "young_critics_review",
+      "title": "The Young Critics Circle",
+      "subtitle": "Debating Plots, Settings, and Villains",
+      "reading_time": "3 min read",
+      "image": "assets/images_v2/film_critics.svg",
+      "narrative": "In the media room, the school newspaper film club gathered to write their weekly entertainment column. Student critic Alexis turned on the television just as an announcer reported breaking news about upcoming cinema releases. Alexis praised the exciting plot of the new detective movie, noting how the dark historical setting created brilliant suspense. However, classmate Elena pointed out the makeup: the villain had a crooked nose, a nasty frown, and facial acne to look frightening, while the detective wore a scruffy old coat. The discussion got so lively that someone spilled fruit juice on the floor, and Kostas had to fetch a wet mop to clean the messy table. In their final critique, the club agreed that a strong story and believable acting make a movie unforgettable.",
+      "vocabulary_ids": [1, 8, 12, 13, 25, 27, 29, 32, 35, 36],
+      "landmarks": [
+        {
+          "name": "Film Critic Debate Table",
+          "desc": "The round discussion table where each young critic analyzed the movie.",
+          "word_key": "critic",
+          "word_id": 12
+        },
+        {
+          "name": "Plot Storyboard Board",
+          "desc": "The pinboard outlining each scene and action in the detective plot.",
+          "word_key": "plot",
+          "word_id": 32
+        },
+        {
+          "name": "Cinema Setting Map",
+          "desc": "The atmospheric drawing showing the foggy mountain setting of the story.",
+          "word_key": "setting",
+          "word_id": 36
+        },
+        {
+          "name": "Studio Cleaning Mop Stand",
+          "desc": "The custodial corner where Kostas grabbed a mop to clean the messy floor.",
+          "word_key": "mop",
+          "word_id": 27
+        }
+      ]
+    }
+  ],
+  "grammar_lab": {
+    "title": "Grammar Lab: Present Simple Passive & Participial Adjectives",
+    "intro": "Learn how the Present Simple Passive highlights actions over doers, how -ed and -ing adjectives describe feelings and films, and how to express preferences.",
+    "target_structures": [
+      {
+        "name": "Present Simple Passive",
+        "formula": "am / is / are + past participle (V3)",
+        "use": "Used when the action is more important than who performs it, or when the agent is obvious or unknown.",
+        "signal_words": ["is directed by", "are filmed in", "is written by", "are shown"]
+      },
+      {
+        "name": "-ing vs. -ed Adjectives",
+        "formula": "-ing (cause/quality) vs. -ed (person's feeling)",
+        "use": "-ing adjectives describe the person, thing, or situation that causes the feeling; -ed adjectives describe how someone feels.",
+        "signal_words": ["boring / bored", "exciting / excited", "moving / moved", "tiring / tired"]
+      },
+      {
+        "name": "Expressions of Preference",
+        "formula": "prefer + noun/-ing to + noun/-ing | would rather + bare infinitive than ...",
+        "use": "Expresses likes, choices, and recommendations between leisure options.",
+        "signal_words": ["prefer ... to ...", "would rather ... than ..."]
+      }
+    ],
+    "rules": [
+      {
+        "structure": "Present Simple Passive (Active vs. Passive)",
+        "explanation": "To form the passive in the Present Simple, use the correct form of 'be' (am / is / are) followed by the past participle of the main verb.",
+        "examples": [
+          {
+            "sentence": "Active: A famous filmmaker directs the new action movie.",
+            "highlight": "Active focus: the filmmaker performs the action"
+          },
+          {
+            "sentence": "Passive: The new action movie is directed by a famous filmmaker.",
+            "highlight": "Passive focus: the movie receives the action"
+          }
+        ]
+      },
+      {
+        "structure": "Adjectives ending in -ed and -ing",
+        "explanation": "Use -ing to describe what the film or book is like. Use -ed to describe how the viewer or reader feels.",
+        "examples": [
+          {
+            "sentence": "The spy thriller is very exciting.",
+            "highlight": "-ing describes the film's quality"
+          },
+          {
+            "sentence": "The viewer is excited when the hero escapes.",
+            "highlight": "-ed describes the viewer's emotional state"
+          },
+          {
+            "sentence": "The speech was moving, so many people felt moved to tears.",
+            "highlight": "moving (speech) → moved (people)"
+          }
+        ]
+      },
+      {
+        "structure": "Preferences (prefer vs. would rather)",
+        "explanation": "'Prefer' takes nouns or gerunds (-ing) joined by 'to'. 'Would rather' takes the bare infinitive joined by 'than'.",
+        "examples": [
+          {
+            "sentence": "I prefer reading adventure novels to watching comedies.",
+            "highlight": "prefer + -ing + to + -ing"
+          },
+          {
+            "sentence": "I would rather see a science fiction film than stay at home.",
+            "highlight": "would rather + bare infinitive + than"
+          }
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "id": "g1",
+        "type": "fill_in",
+        "prompt": "The new superhero screenplay ______ (write) by a talented young author.",
+        "answer": "is written",
+        "accepted": ["is written"],
+        "explanation": "Singular subject 'screenplay' takes 'is written' in the Present Simple Passive."
+      },
+      {
+        "id": "g2",
+        "type": "fill_in",
+        "prompt": "Hundreds of short movies ______ (show) at the youth film festival every year.",
+        "answer": "are shown",
+        "accepted": ["are shown"],
+        "explanation": "Plural subject 'movies' takes 'are shown' in the passive."
+      },
+      {
+        "id": "g3",
+        "type": "multiple_choice",
+        "prompt": "The three-hour documentary was very ______, so the students felt ______ by the end.",
+        "options": ["boring / bored", "bored / boring", "bored / bored", "boring / boring"],
+        "answer": "boring / bored",
+        "explanation": "The documentary is 'boring' (cause); the students feel 'bored' (emotion)."
+      },
+      {
+        "id": "g4",
+        "type": "multiple_choice",
+        "prompt": "I prefer watching action films ______ reading long historical novels.",
+        "options": ["to", "than", "from", "for"],
+        "answer": "to",
+        "explanation": "We say 'prefer [doing something] TO [doing something else]'."
+      },
+      {
+        "id": "g5",
+        "type": "fill_in",
+        "prompt": "Special effects ______ (create) using sophisticated computer software.",
+        "answer": "are created",
+        "accepted": ["are created"],
+        "explanation": "Plural subject 'effects' takes 'are created' in the passive."
+      }
+    ],
+    "classroom_listening": {
+      "title": "Choosing a Film at the Festival",
+      "audio_file": "assets/audio_v2/grammar/cinema_dialogue.mp3",
+      "turns": [
+        {
+          "speaker": "Alexis",
+          "text": "What film would you rather see tonight, Elena? The comedy is directed by a new Greek filmmaker."
+        },
+        {
+          "speaker": "Elena",
+          "text": "I usually prefer mystery thrillers to comedies, but I heard that all the evening tickets are already sold out!"
+        },
+        {
+          "speaker": "Alexis",
+          "text": "That is true. But look, a fantastic cartoon is shown at seven o'clock on screen two."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Great! The reviews say the animation is really moving and funny. Let's ask for two student tickets right now."
+        },
+        {
+          "speaker": "Alexis",
+          "text": "Remember to switch off your phone before we go in; loud ringtones are strictly forbidden."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Of course! Let's get some popcorn and find our seats before the lights dim."
+        }
+      ]
+    }
+  },
+  "collocations": [
+    {
+      "phrase": "hit the shelves",
+      "part_a": "hit",
+      "part_b": "the shelves",
+      "meaning": "to become available for purchase in shops or bookstores",
+      "greek": "κυκλοφορεί στα καταστήματα/βιβλιοπωλεία",
+      "example": "The thrilling new detective novel will hit the shelves next Friday."
+    },
+    {
+      "phrase": "sold out",
+      "part_a": "sold",
+      "part_b": "out",
+      "meaning": "having all tickets or items bought, with none remaining",
+      "greek": "εξαντλημένος (για εισιτήρια)",
+      "example": "All evening tickets for the film festival were completely sold out."
+    },
+    {
+      "phrase": "switch on/off",
+      "part_a": "switch",
+      "part_b": "on/off",
+      "meaning": "to operate a switch to start or stop electrical equipment",
+      "greek": "ανάβω / σβήνω (διακόπτη)",
+      "example": "Please switch off mobile phones before the film presentation starts."
+    },
+    {
+      "phrase": "breaking news",
+      "part_a": "breaking",
+      "part_b": "news",
+      "meaning": "important current reports broadcast immediately",
+      "greek": "έκτακτες ειδήσεις, έκτακτο δελτίο",
+      "example": "The television show paused for breaking news about the film festival."
+    },
+    {
+      "phrase": "gain expertise",
+      "part_a": "gain",
+      "part_b": "expertise",
+      "meaning": "to acquire specialized knowledge and practical skill",
+      "greek": "αποκτώ εξειδικευμένη γνώση/πείρα",
+      "example": "Students gain expertise by editing short video clips with teachers."
+    },
+    {
+      "phrase": "win an award",
+      "part_a": "win an",
+      "part_b": "award",
+      "meaning": "to receive a competitive prize for artistic excellence",
+      "greek": "κερδίζω ένα βραβείο",
+      "example": "The touching short documentary won an award at the youth festival."
+    }
+  ],
+  "definition_challenge": [
+    {
+      "id": "d1",
+      "clue": "A person who acts in a film, play, or television show.",
+      "word": "actor",
+      "word_id": 2,
+      "pos": "n",
+      "options": [
+        "actor",
+        "critic",
+        "creator",
+        "viewer"
+      ]
+    },
+    {
+      "id": "d2",
+      "clue": "A person who works secretly to discover information about enemies.",
+      "word": "spy",
+      "word_id": 40,
+      "pos": "n",
+      "options": [
+        "spy",
+        "actor",
+        "character",
+        "critic"
+      ]
+    },
+    {
+      "id": "d3",
+      "clue": "The written text and dialogue prepared for filming a movie.",
+      "word": "screenplay",
+      "word_id": 34,
+      "pos": "n",
+      "options": [
+        "screenplay",
+        "novel",
+        "bestseller",
+        "title"
+      ]
+    },
+    {
+      "id": "d4",
+      "clue": "A particular artistic kind or type of film, book, or music.",
+      "word": "genre",
+      "word_id": 22,
+      "pos": "n",
+      "options": [
+        "genre",
+        "plot",
+        "setting",
+        "character"
+      ]
+    },
+    {
+      "id": "d5",
+      "clue": "To tell the actors and camera crew in a film what to do.",
+      "word": "direct",
+      "word_id": 15,
+      "pos": "v",
+      "options": [
+        "direct",
+        "develop",
+        "approve",
+        "allow"
+      ]
+    },
+    {
+      "id": "d6",
+      "clue": "Feeling tired and unhappy because something is not interesting.",
+      "word": "bored",
+      "word_id": 7,
+      "pos": "adj",
+      "options": [
+        "bored",
+        "moving",
+        "crooked",
+        "scruffy"
+      ]
+    },
+    {
+      "id": "d7",
+      "clue": "A prize given to someone for doing something exceptionally well.",
+      "word": "award",
+      "word_id": 5,
+      "pos": "n",
+      "options": [
+        "award",
+        "chance",
+        "mission",
+        "title"
+      ]
+    },
+    {
+      "id": "d8",
+      "clue": "Not allowed by an official rule or law.",
+      "word": "forbidden",
+      "word_id": 20,
+      "pos": "adj",
+      "options": [
+        "forbidden",
+        "sold out",
+        "evil",
+        "nasty"
+      ]
+    }
+  ],
+  "writing_workshop": {
+    "genre": "Film Review & Recommendation",
+    "title": "Writing a Winning Film Review",
+    "prompt": "Write a film review for your school magazine about a movie you have recently watched. Include details about the title, director, actors, genre, setting, plot outline, and your recommendation with a star rating.",
+    "model_text": "Title: The Mystery of the Clockwork Spy\nGenre: Mystery / Adventure\nDirector: Paul Greengrass\nStarring: Daniel Craig, Emma Watson\nRating: ★★★★★ (5 / 5 stars)\n\n'The Mystery of the Clockwork Spy' is an exciting adventure film directed by Paul Greengrass. The film is set in the rainy streets of London in 1920. Daniel Craig plays Inspector Miller, a clever British detective who receives a secret mission to recover stolen state blueprints.\n\nThe plot is fast-paced and full of thrilling surprises. Miller must stop an evil criminal syndicate before midnight. The acting is convincing, and the special effects are sophisticated and believable. What I liked most was the unexpected ending, which kept every viewer guessing until the final minute.\n\nI recommend this film to anyone who enjoys suspenseful detective stories. Don't miss it!",
+    "scaffolding": [
+      {
+        "step": 1,
+        "title": "Basic Information Header",
+        "tip": "List the film title, director, main actors, genre, and star rating (e.g. ★★★★☆)."
+      },
+      {
+        "step": 2,
+        "title": "Introduction & Setting",
+        "tip": "Use the Present Simple Passive to state who directed the film and describe the time and place of the setting (e.g. 'The film is directed by... and is set in...')."
+      },
+      {
+        "step": 3,
+        "title": "Plot Summary",
+        "tip": "Briefly describe the main problem and character missions. Never give away the surprise ending!"
+      },
+      {
+        "step": 4,
+        "title": "Critique & Recommendation",
+        "tip": "Use -ing adjectives (exciting, moving, gripping) to explain why viewers should watch it."
+      }
+    ],
+    "connectors": [
+      "is directed by",
+      "is set in",
+      "in addition",
+      "what I liked most was",
+      "however",
+      "I highly recommend"
+    ],
+    "self_assessment_checklist": [
+      "I included a clear header with title, director, and genre.",
+      "I used the Present Simple Passive (is directed by, is set in).",
+      "I used participial adjectives (-ed and -ing) to express opinions.",
+      "I summarized the plot without giving away the ending.",
+      "I finished with a clear recommendation and star rating."
+    ]
+  },
+  "can_do_statements": [
+    {
+      "id": "cd1",
+      "descriptor": "I can read and understand texts, articles, and reviews about films, books, and famous characters.",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd2",
+      "descriptor": "I can use the Present Simple Passive to describe how films are made, directed, and shown.",
+      "cefr_level": "A2+"
+    },
+    {
+      "id": "cd3",
+      "descriptor": "I can use -ed and -ing adjectives to describe my feelings and the qualities of films and books.",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd4",
+      "descriptor": "I can express preferences between leisure choices using 'prefer ... to' and 'would rather ... than'.",
+      "cefr_level": "A2"
+    },
+    {
+      "id": "cd5",
+      "descriptor": "I can write a structured film review with a plot summary, critical evaluation, and personal recommendation.",
+      "cefr_level": "A2+"
+    }
+  ],
+  "teacher_notes": [
+    {
+      "topic": "Curricular & IP Guidance (Super Spy)",
+      "note": "Lesson 1 references the super spy genre (James Bond). Emphasize the cultural and literary history of British spy thrillers while ensuring student production focuses on original creative narratives."
+    },
+    {
+      "topic": "Grammar Contrast: -ing vs. -ed",
+      "note": "Greek learners frequently confuse 'bored' and 'boring'. Use the visual feeling cards in the Grammar Lab to contrast cause ('the movie is boring') with personal feeling ('I am bored')."
+    },
+    {
+      "topic": "Project Integration",
+      "note": "The Unit 10 project is writing a Film Review. Encourage students to create an illustrated cinema magazine layout for the classroom display wall."
+    }
+  ]
+}
+;

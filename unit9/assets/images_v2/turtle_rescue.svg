@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="deepOcean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="60%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="shellGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="flipperGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="sandDune" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night Sky -->
+  <rect width="800" height="500" fill="url(#nightSky)"/>
+
+  <!-- Stars -->
+  <circle cx="90" cy="70" r="1.5" fill="#f8fafc"/>
+  <circle cx="160" cy="40" r="2" fill="#f8fafc"/>
+  <circle cx="270" cy="90" r="1.5" fill="#f8fafc"/>
+  <circle cx="430" cy="50" r="2" fill="#f8fafc"/>
+  <circle cx="580" cy="80" r="1.5" fill="#f8fafc"/>
+  <circle cx="710" cy="40" r="2" fill="#f8fafc"/>
+
+  <!-- Full Moon -->
+  <circle cx="680" cy="110" r="45" fill="#fef08a" opacity="0.9"/>
+  <circle cx="675" cy="105" r="40" fill="#ffffff" opacity="0.95"/>
+  <circle cx="660" cy="95" r="6" fill="#e2e8f0" opacity="0.6"/>
+  <circle cx="690" cy="120" r="8" fill="#e2e8f0" opacity="0.5"/>
+
+  <!-- Coastal Horizon & Night Water -->
+  <path d="M 0 190 L 800 190 L 800 500 L 0 500 Z" fill="url(#deepOcean)"/>
+  <!-- Moonlit Reflection Path on Sea -->
+  <polygon points="660,190 700,190 760,500 580,500" fill="#fef08a" opacity="0.15"/>
+
+  <!-- Protected Sandy Shore (Left Background) -->
+  <path d="M 0 190 Q 250 200 380 260 L 0 350 Z" fill="url(#sandDune)" opacity="0.8"/>
+
+  <!-- Loggerhead Turtle (Center) -->
+  <g transform="translate(320, 230)">
+    <!-- Flippers (Front Left) -->
+    <path d="M 40 40 C -10 10 -60 30 -80 70 C -70 85 -40 75 20 65 Z" fill="url(#flipperGrad)"/>
+    <!-- Flippers (Front Right) -->
+    <path d="M 120 40 C 170 10 220 30 240 70 C 230 85 200 75 140 65 Z" fill="url(#flipperGrad)"/>
+    <!-- Hind Flippers -->
+    <path d="M 30 160 C 0 180 -10 210 15 220 C 35 220 45 195 50 170 Z" fill="#22c55e"/>
+    <path d="M 130 160 C 160 180 170 210 145 220 C 125 220 115 195 110 170 Z" fill="#22c55e"/>
+    <!-- Tail -->
+    <polygon points="75,185 85,185 80,205" fill="#15803d"/>
+    <!-- Head -->
+    <path d="M 60 30 C 50 -10 110 -10 100 30 Z" fill="url(#flipperGrad)"/>
+    <circle cx="70" cy="12" r="3" fill="#020617"/>
+    <circle cx="90" cy="12" r="3" fill="#020617"/>
+    <!-- Shell (Carapace) -->
+    <ellipse cx="80" cy="115" rx="65" ry="75" fill="url(#shellGrad)"/>
+    <!-- Shell Pattern / Scutes -->
+    <polygon points="80,55 60,80 60,110 80,125 100,110 100,80" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+    <polygon points="80,125 60,145 60,170 80,185 100,170 100,145" fill="#22c55e" stroke="#14532d" stroke-width="2"/>
+    <polygon points="60,80 25,95 25,135 60,145 60,110" fill="#16a34a" stroke="#14532d" stroke-width="2"/>
+    <polygon points="100,80 135,95 135,135 100,145 100,110" fill="#16a34a" stroke="#14532d" stroke-width="2"/>
+  </g>
+
+  <!-- Baby Hatchling heading for the sea (Bottom Left) -->
+  <g transform="translate(180, 390) scale(0.35)">
+    <path d="M 40 40 C -10 10 -50 30 -60 60 C -50 70 -30 65 20 60 Z" fill="#86efac"/>
+    <path d="M 120 40 C 170 10 210 30 220 60 C 210 70 190 65 140 60 Z" fill="#86efac"/>
+    <path d="M 60 30 C 50 -5 110 -5 100 30 Z" fill="#86efac"/>
+    <ellipse cx="80" cy="100" rx="50" ry="60" fill="#15803d"/>
+  </g>
+
+  <!-- Rescue Station Beacon / Info Sign (Top Right) -->
+  <g transform="translate(30, 40)">
+    <rect width="320" height="42" rx="10" fill="#0f172a" opacity="0.8"/>
+    <text x="160" y="27" font-family="sans-serif" font-size="15" font-weight="bold" fill="#38bdf8" text-anchor="middle">Zakynthos Marine Rescue Station</text>
+  </g>
+</svg>

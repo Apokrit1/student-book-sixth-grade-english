@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="redCarpet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#b91c1c"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="marqueeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="searchLight" x1="0%" y1="100%" x2="30%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0.01"/>
+    </linearGradient>
+    <filter id="festGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Night Sky -->
+  <rect width="800" height="500" fill="url(#nightSky)"/>
+
+  <!-- Searchlights crossing in sky -->
+  <polygon points="120,420 180,420 380,0 280,0" fill="url(#searchLight)"/>
+  <polygon points="680,420 620,420 420,0 520,0" fill="url(#searchLight)"/>
+
+  <!-- Stars in sky -->
+  <circle cx="100" cy="60" r="1.5" fill="#f8fafc" opacity="0.8"/>
+  <circle cx="220" cy="40" r="2" fill="#f8fafc" opacity="0.7"/>
+  <circle cx="580" cy="50" r="1.5" fill="#f8fafc" opacity="0.9"/>
+  <circle cx="720" cy="70" r="2" fill="#f8fafc" opacity="0.8"/>
+  <circle cx="400" cy="30" r="2.5" fill="#fef08a" opacity="0.9"/>
+
+  <!-- Grand Cinema Marquee Facade (Top-Center) -->
+  <g transform="translate(150, 45)">
+    <!-- Main Signboard Box -->
+    <rect x="0" y="0" width="500" height="110" rx="12" fill="#18181b" stroke="url(#marqueeGrad)" stroke-width="4"/>
+    <!-- Outer Bulb Ring -->
+    <g fill="#fef08a">
+      <circle cx="20" cy="15" r="4" filter="url(#festGlow)"/>
+      <circle cx="65" cy="15" r="4"/>
+      <circle cx="110" cy="15" r="4"/>
+      <circle cx="155" cy="15" r="4"/>
+      <circle cx="200" cy="15" r="4"/>
+      <circle cx="245" cy="15" r="4"/>
+      <circle cx="290" cy="15" r="4"/>
+      <circle cx="335" cy="15" r="4"/>
+      <circle cx="380" cy="15" r="4"/>
+      <circle cx="425" cy="15" r="4"/>
+      <circle cx="475" cy="15" r="4" filter="url(#festGlow)"/>
+      <!-- Bottom bulbs -->
+      <circle cx="20" cy="95" r="4" filter="url(#festGlow)"/>
+      <circle cx="65" cy="95" r="4"/>
+      <circle cx="110" cy="95" r="4"/>
+      <circle cx="155" cy="95" r="4"/>
+      <circle cx="200" cy="95" r="4"/>
+      <circle cx="245" cy="95" r="4"/>
+      <circle cx="290" cy="95" r="4"/>
+      <circle cx="335" cy="95" r="4"/>
+      <circle cx="380" cy="95" r="4"/>
+      <circle cx="425" cy="95" r="4"/>
+      <circle cx="475" cy="95" r="4" filter="url(#festGlow)"/>
+    </g>
+    <!-- Marquee Text -->
+    <text x="250" y="52" fill="#fef08a" font-family="'Outfit', sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="3" filter="url(#festGlow)">YOUTH FILM FESTIVAL</text>
+    <text x="250" y="78" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="4">NOW SHOWING • GALA PREMIERE</text>
+  </g>
+
+  <!-- Cinema Entrance Doors & Pillars -->
+  <rect x="180" y="155" width="440" height="150" fill="#1e1b4b" opacity="0.7"/>
+  <rect x="230" y="175" width="90" height="130" rx="4" fill="#09090b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="355" y="175" width="90" height="130" rx="4" fill="#09090b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="480" y="175" width="90" height="130" rx="4" fill="#09090b" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- "SOLD OUT" Signboard over Entrance -->
+  <g transform="translate(340, 195) rotate(-6)">
+    <rect x="0" y="0" width="125" height="34" rx="5" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="62" y="23" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="2">SOLD OUT</text>
+  </g>
+
+  <!-- Red Carpet (Perspective trapezoid extending forward) -->
+  <polygon points="310,290 490,290 620,500 180,500" fill="url(#redCarpet)"/>
+  <!-- Velvet Ropes & Brass Stanchions Left -->
+  <g stroke="#eab308" stroke-width="4" fill="#eab308">
+    <circle cx="210" cy="360" r="7"/>
+    <line x1="210" y1="360" x2="210" y2="440"/>
+    <circle cx="280" cy="320" r="6"/>
+    <line x1="280" y1="320" x2="280" y2="390"/>
+    <!-- Rope -->
+    <path d="M 210 370 Q 245 400 280 330" fill="none" stroke="#b91c1c" stroke-width="5"/>
+  </g>
+  <!-- Velvet Ropes & Brass Stanchions Right -->
+  <g stroke="#eab308" stroke-width="4" fill="#eab308">
+    <circle cx="590" cy="360" r="7"/>
+    <line x1="590" y1="360" x2="590" y2="440"/>
+    <circle cx="520" cy="320" r="6"/>
+    <line x1="520" y1="320" x2="520" y2="390"/>
+    <!-- Rope -->
+    <path d="M 520 330 Q 555 400 590 370" fill="none" stroke="#b91c1c" stroke-width="5"/>
+  </g>
+
+  <!-- Golden Film Festival Trophy Podium (Left Foreground) -->
+  <g transform="translate(70, 310)">
+    <!-- Base Pedestal -->
+    <rect x="15" y="90" width="70" height="50" rx="4" fill="#18181b" stroke="#ca8a04" stroke-width="2"/>
+    <text x="50" y="120" fill="#fde047" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">BEST FILM</text>
+    <!-- Trophy Stem -->
+    <path d="M 45 90 L 45 50 Q 40 40 30 35 L 70 35 Q 60 40 55 50 L 55 90 Z" fill="url(#trophyGold)"/>
+    <!-- Trophy Golden Cup / Star -->
+    <polygon points="50,5 57,23 75,23 60,34 66,51 50,40 34,51 40,34 25,23 43,23" fill="url(#trophyGold)" filter="url(#festGlow)"/>
+    <ellipse cx="50" cy="142" rx="40" ry="8" fill="#020617" opacity="0.6"/>
+  </g>
+
+  <!-- Cinema Popcorn Tub (Right Foreground) -->
+  <g transform="translate(670, 340)">
+    <!-- Popcorn Tub Trapezoid -->
+    <polygon points="10,40 80,40 70,120 20,120" fill="#f8fafc" stroke="#dc2626" stroke-width="2"/>
+    <!-- Red Stripes -->
+    <polygon points="25,40 35,40 32,120 23,120" fill="#dc2626"/>
+    <polygon points="45,40 55,40 50,120 42,120" fill="#dc2626"/>
+    <polygon points="65,40 73,40 65,120 58,120" fill="#dc2626"/>
+    <!-- Popcorn Kernels Fluffy Dome -->
+    <g fill="#fde047">
+      <circle cx="25" cy="35" r="9"/>
+      <circle cx="40" cy="28" r="10"/>
+      <circle cx="55" cy="32" r="9"/>
+      <circle cx="70" cy="38" r="8"/>
+      <circle cx="32" cy="20" r="9"/>
+      <circle cx="50" cy="18" r="9"/>
+    </g>
+    <!-- Floor Shadow -->
+    <ellipse cx="45" cy="125" rx="35" ry="6" fill="#020617" opacity="0.5"/>
+  </g>
+
+  <!-- Cheering Festival Audience Silhouettes (Foreground edges) -->
+  <g fill="#090d16">
+    <!-- Left audience -->
+    <circle cx="40" cy="460" r="22"/>
+    <path d="M 10 500 C 15 480 25 475 40 475 C 55 475 65 480 70 500 Z"/>
+    <circle cx="110" cy="470" r="18"/>
+    <path d="M 85 500 C 90 485 100 480 110 480 C 120 480 130 485 135 500 Z"/>
+    <!-- Right audience -->
+    <circle cx="750" cy="460" r="22"/>
+    <path d="M 720 500 C 725 480 735 475 750 475 C 765 475 775 480 780 500 Z"/>
+  </g>
+</svg>

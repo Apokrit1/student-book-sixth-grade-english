@@ -11,6 +11,7 @@ _tools/.agents/
 # Backups made by hand before git existed
 *.bak
 *.bak.*
+*.bak-*
 
 # OS junk
 Thumbs.db
@@ -18,3 +19,17 @@ Thumbs.db
 
 # Editor/agent tool metadata
 .vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Video rendering pipeline intermediates & workspace artifacts
+_video_pipeline/frames/
+_video_pipeline/workspace/
+_video_pipeline/*.wav
+_video_pipeline/*.mp4
+
+# Media backups
+english6_launch_ictrev_orig.mp4
+*_orig.mp4

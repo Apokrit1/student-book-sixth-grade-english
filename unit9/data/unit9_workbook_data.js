@@ -1,0 +1,437 @@
+window.UNIT9_WORKBOOK_DATA = {
+  "unit": 9,
+  "unit_title": "Earth Day Everyday",
+  "coursebook_page_range": "Workbook pp. 75-83 (Global PDF pp. 82-90)",
+  "activities": [
+    {
+      "id": "A1",
+      "section": "A. Vocabulary",
+      "title": "1. Earth Day Crossword Clues",
+      "instruction": "Read the definitions and complete the environmental crossword.",
+      "type": "matching",
+      "pairs": [
+        { "colA": "The air, water and land on Earth (Across 1)", "colB": "environment", "phrase": "environment" },
+        { "colA": "Many animals live in it (Across 2)", "colB": "forest", "phrase": "forest" },
+        { "colA": "It lives only in non-polluted waters (Across 3)", "colB": "seal", "phrase": "seal" },
+        { "colA": "Earth is a... (Across 4)", "colB": "planet", "phrase": "planet" },
+        { "colA": "People should not leave litter on the... (Across 5)", "colB": "beach", "phrase": "beach" },
+        { "colA": "The planet we live on (Down 1)", "colB": "Earth", "phrase": "Earth" },
+        { "colA": "A sea animal that looks like a star (Down 3)", "colB": "starfish", "phrase": "starfish" },
+        { "colA": "This animal lays its eggs in the sand (Down 6)", "colB": "turtle", "phrase": "turtle" },
+        { "colA": "Carbon Monoxide and Sulphur Dioxide are... (Down 7)", "colB": "pollutants", "phrase": "pollutants" }
+      ]
+    },
+    {
+      "id": "A2",
+      "section": "A. Vocabulary",
+      "title": "2. Match Collocations and Phrases",
+      "instruction": "Match the words or phrases in A with those in B to form environmental partnerships.",
+      "type": "matching",
+      "pairs": [
+        { "colA": "disturb", "colB": "their habitat", "phrase": "disturb their habitat" },
+        { "colA": "become", "colB": "extinct", "phrase": "become extinct" },
+        { "colA": "dump", "colB": "waste", "phrase": "dump waste" },
+        { "colA": "endangered", "colB": "species", "phrase": "endangered species" },
+        { "colA": "make", "colB": "a difference", "phrase": "make a difference" },
+        { "colA": "protect", "colB": "the environment", "phrase": "protect the environment" },
+        { "colA": "carbon", "colB": "dioxide", "phrase": "carbon dioxide" },
+        { "colA": "power", "colB": "plant", "phrase": "power plant" }
+      ]
+    },
+    {
+      "id": "A3",
+      "section": "A. Vocabulary",
+      "title": "3. Odd Word Out",
+      "instruction": "Identify the word that does not belong in each semantic group.",
+      "type": "odd_one_out",
+      "items": [
+        {
+          "words": ["sea turtle", "male", "seal", "bear"],
+          "odd": "male",
+          "reason": "'male' is a gender term, while the others are animal species."
+        },
+        {
+          "words": ["industrial waste", "litter", "rubbish", "species"],
+          "odd": "species",
+          "reason": "'species' refers to biological kinds of animals/plants, while the others are types of trash."
+        },
+        {
+          "words": ["tide", "wave", "starfish", "sea"],
+          "odd": "starfish",
+          "reason": "'starfish' is a living sea creature, while the others are water and ocean features."
+        },
+        {
+          "words": ["pollute", "save", "protect", "clean"],
+          "odd": "pollute",
+          "reason": "'pollute' means to damage the earth, whereas save, protect, and clean mean conserving it."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "section": "A. Vocabulary",
+      "title": "4. Match Synonyms",
+      "instruction": "Match each word on the left with its closest synonym on the right.",
+      "type": "matching",
+      "pairs": [
+        { "colA": "quit", "colB": "give up", "phrase": "quit = give up" },
+        { "colA": "disturb", "colB": "upset", "phrase": "disturb = upset" },
+        { "colA": "get rid of", "colB": "throw away", "phrase": "get rid of = throw away" },
+        { "colA": "rough", "colB": "hard, difficult", "phrase": "rough = hard, difficult" },
+        { "colA": "litter", "colB": "rubbish", "phrase": "litter = rubbish" },
+        { "colA": "folks", "colB": "people", "phrase": "folks = people" }
+      ]
+    },
+    {
+      "id": "A5",
+      "section": "A. Vocabulary",
+      "title": "5. Complete with the Correct Verbs",
+      "instruction": "Fill in each sentence using the verbs: dump, weigh, breathe, recycle, grow, lay, protect.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "People should ______ endangered animals.",
+          "accepted": ["protect"],
+          "hint": "keep safe from danger"
+        },
+        {
+          "text": "If the air is polluted, people cannot ______.",
+          "accepted": ["breathe"],
+          "hint": "take air into lungs"
+        },
+        {
+          "text": "We must all try to ______ all the paper that we do not use in schools any more.",
+          "accepted": ["recycle"],
+          "hint": "process used paper again"
+        },
+        {
+          "text": "Factories should not ______ their waste in rivers.",
+          "accepted": ["dump"],
+          "hint": "drop or throw trash carelessly"
+        },
+        {
+          "text": "Caretta-caretta turtles ______ eggs in the sand.",
+          "accepted": ["lay", "lays"],
+          "hint": "produce eggs"
+        },
+        {
+          "text": "Monk seals grow to about 2.40 m in length and ______ up to 320 kg.",
+          "accepted": ["weigh"],
+          "hint": "measure weight on scale"
+        },
+        {
+          "text": "Sulphur dioxide makes plants and trees ______ more slowly.",
+          "accepted": ["grow"],
+          "hint": "get bigger over time"
+        }
+      ]
+    },
+    {
+      "id": "A6",
+      "section": "A. Vocabulary",
+      "title": "6. Word Derivatives & Formations",
+      "instruction": "Complete each sentence with a derivative of the base word in brackets.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "The boy was out of ______ (BREATHE) and it was obvious that he was tired.",
+          "accepted": ["breath"],
+          "hint": "noun form: the air in your lungs"
+        },
+        {
+          "text": "Monk seals are very heavy. Their ______ (WEIGH) is around 320 kg.",
+          "accepted": ["weight"],
+          "hint": "noun form of weigh"
+        },
+        {
+          "text": "Carbon Monoxide is a dangerous ______ (POLLUTE).",
+          "accepted": ["pollutant"],
+          "hint": "noun: substance that pollutes"
+        },
+        {
+          "text": "Many companies are not careful about how they get rid of their ______ (INDUSTRY) waste.",
+          "accepted": ["industrial"],
+          "hint": "adjective form of industry"
+        },
+        {
+          "text": "Caretta-caretta and Monachus-monachus are ______ (DANGER) animals.",
+          "accepted": ["endangered"],
+          "hint": "participle adjective for threatened species"
+        },
+        {
+          "text": "Sophia is a member of the ______ (ENVIRONMENT) team in her school.",
+          "accepted": ["environmental"],
+          "hint": "adjective form of environment"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "section": "B. Grammar",
+      "title": "1. Visiting the Parents' Village (Past Perfect)",
+      "instruction": "Complete the sentences using the Past Perfect (had + V3) to show what had changed before you returned.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "The tree outside the house was not there. People ______ (cut) it down.",
+          "accepted": ["had cut"],
+          "hint": "had + cut"
+        },
+        {
+          "text": "The bridge over the stream was not there. It ______ (fall) down.",
+          "accepted": ["had fallen", "had fallen down"],
+          "hint": "had + fallen"
+        },
+        {
+          "text": "The small lake near the village was not clean. People ______ (throw) their rubbish in.",
+          "accepted": ["had thrown"],
+          "hint": "had + thrown"
+        },
+        {
+          "text": "The storks that used to live there ______ (fly) away.",
+          "accepted": ["had flown"],
+          "hint": "had + flown"
+        },
+        {
+          "text": "My grandfather no longer had his donkey. He ______ (sell) it.",
+          "accepted": ["had sold"],
+          "hint": "had + sold"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "section": "B. Grammar",
+      "title": "2. What Had Happened in Greenville?",
+      "instruction": "Read the poem about Greenville turning brown. Write what had happened before Mr. Green returned.",
+      "type": "open",
+      "model_answers": [
+        "People had cut down the green trees.",
+        "Factories had dumped toxic waste into the clean river.",
+        "Cars and power plants had polluted the crystal blue sky."
+      ],
+      "checklist": [
+        "Use Past Perfect (had + past participle).",
+        "Explain changes to air, trees, or water.",
+        "Reflect the poem's themes of smog and pollution."
+      ]
+    },
+    {
+      "id": "B3",
+      "section": "B. Grammar",
+      "title": "3. Combine Sentences with Past Perfect",
+      "instruction": "Join the two events using the connector in brackets and the Past Perfect for the earlier event.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "Mark was sad. Some companies dumped toxic waste on the beach. (because) → Mark was sad because some companies ______ toxic waste on the beach.",
+          "accepted": ["had dumped"],
+          "hint": "earlier past action"
+        },
+        {
+          "text": "The tide washed up the starfish. Mark arrived. (when) → The tide ______ the starfish when Mark arrived.",
+          "accepted": ["had washed up"],
+          "hint": "tide washed up before Mark arrived"
+        },
+        {
+          "text": "The bears left. People took over their natural habitat. (because) → The bears left because people ______ over their natural habitat.",
+          "accepted": ["had taken", "had taken over"],
+          "hint": "had taken"
+        },
+        {
+          "text": "The dog was in hospital. He broke his leg. (because) → The dog was in hospital because he ______ his leg.",
+          "accepted": ["had broken"],
+          "hint": "had + broken"
+        },
+        {
+          "text": "The birds left the stream. Factories dumped waste there. (after) → The birds left the stream after factories ______ waste there.",
+          "accepted": ["had dumped"],
+          "hint": "had + dumped"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "section": "B. Grammar",
+      "title": "4. Past Simple or Past Perfect?",
+      "instruction": "Put the verbs in brackets into the correct tense (Past Simple or Past Perfect Simple).",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "The wolf ______ (attack) the hunter after he ______ (try) to kill him.",
+          "accepted": ["attacked / had tried", "attacked, had tried"],
+          "hint": "attacked (later) / had tried (earlier)"
+        },
+        {
+          "text": "The fisherman ______ (kill) the seal because it ______ (destroy) his nets.",
+          "accepted": ["killed / had destroyed", "killed, had destroyed"],
+          "hint": "killed (later) / had destroyed (earlier)"
+        },
+        {
+          "text": "When Tom ______ (arrive) at the sea, he could not swim because people ______ (throw) bottles in.",
+          "accepted": ["arrived / had thrown", "arrived, had thrown"],
+          "hint": "arrived (later) / had thrown (earlier)"
+        },
+        {
+          "text": "Maria ______ (leave) the beach when the tsunami ______ (hit) her island.",
+          "accepted": ["had left / hit", "had left, hit"],
+          "hint": "had left (earlier) / hit (later)"
+        },
+        {
+          "text": "The boy ______ (throw) the starfish into the sea after the tide ______ (wash) them out.",
+          "accepted": ["threw / had washed", "threw, had washed"],
+          "hint": "threw (later) / had washed (earlier)"
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "section": "B. Grammar",
+      "title": "5. Helen's Beach Checklist (Had / Hadn't)",
+      "instruction": "Look at what Helen checked off before leaving the beach. Complete the sentences with had or hadn't.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "She ______ (collect) plastic bags. [Checked]",
+          "accepted": ["had collected"],
+          "hint": "positive action"
+        },
+        {
+          "text": "She ______ (take) her suntan oil. [Unchecked]",
+          "accepted": ["had not taken", "hadn't taken"],
+          "hint": "negative action"
+        },
+        {
+          "text": "She ______ (put) her tennis racket in her bag. [Unchecked]",
+          "accepted": ["had not put", "hadn't put"],
+          "hint": "negative action"
+        },
+        {
+          "text": "She ______ (put) the towel in her bag. [Checked]",
+          "accepted": ["had put"],
+          "hint": "positive action"
+        },
+        {
+          "text": "She ______ (throw) empty cans in the recycling bin. [Checked]",
+          "accepted": ["had thrown"],
+          "hint": "positive action"
+        },
+        {
+          "text": "She ______ (pick up) colourful pebbles. [Checked]",
+          "accepted": ["had picked up"],
+          "hint": "positive action"
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "section": "B. Grammar",
+      "title": "6. Because or Because Of?",
+      "instruction": "Choose 'because' (followed by subject + verb) or 'because of' (followed by noun phrase).",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "He could not stay any longer ______ the awful smell.",
+          "accepted": ["because of"],
+          "hint": "followed by noun phrase 'the awful smell'"
+        },
+        {
+          "text": "Tim was surprised to see such a bird in his garden ______ he had not seen any for many years!",
+          "accepted": ["because"],
+          "hint": "followed by clause 'he had not seen'"
+        },
+        {
+          "text": "The cat was at the vet ______ she had had a car accident.",
+          "accepted": ["because"],
+          "hint": "followed by clause 'she had had'"
+        },
+        {
+          "text": "The citizens felt awful ______ the smog.",
+          "accepted": ["because of"],
+          "hint": "followed by noun phrase 'the smog'"
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "section": "B. Grammar",
+      "title": "7. Reason and Result Matching",
+      "instruction": "Match each environmental cause/reason with its corresponding effect/result.",
+      "type": "matching",
+      "pairs": [
+        { "colA": "People play games on the beach", "colB": "a lot of turtle eggs break", "phrase": "People play games → turtle eggs break" },
+        { "colA": "Black smoke comes out of chimneys", "colB": "we have headaches", "phrase": "Chimney smoke → headaches" },
+        { "colA": "People disturb natural habitats", "colB": "bears become extinct", "phrase": "Disturbing habitats → extinction" },
+        { "colA": "Factories dump toxic waste", "colB": "fish die", "phrase": "Dumping waste → fish die" },
+        { "colA": "Acid rain falls on the valley", "colB": "trees grow more slowly", "phrase": "Acid rain → trees grow slowly" }
+      ]
+    },
+    {
+      "id": "B8",
+      "section": "B. Grammar",
+      "title": "8. Connectors: So, As a result, Because, Because of",
+      "instruction": "Complete each sentence with the appropriate reason or result connector.",
+      "type": "fill_in",
+      "items": [
+        {
+          "text": "The water was not clean, ______ the fisherman did not want to fish.",
+          "accepted": ["so"],
+          "hint": "shows everyday result"
+        },
+        {
+          "text": "The bear could not find food to eat, and ______, she feels very hungry today.",
+          "accepted": ["as a result"],
+          "hint": "shows formal consequence"
+        },
+        {
+          "text": "The pigeons could not find a place to build their nest ______ people had cut down all the trees.",
+          "accepted": ["because", "as"],
+          "hint": "introduces clause of reason"
+        },
+        {
+          "text": "The tourists did not want to swim ______ the polluted water.",
+          "accepted": ["because of"],
+          "hint": "followed by noun phrase"
+        }
+      ]
+    },
+    {
+      "id": "B9",
+      "section": "B. Grammar",
+      "title": "9. Guided Writing: Advice Email to Shalleen",
+      "instruction": "Write an email to your Australian friend Shalleen explaining why she should choose a quiet, eco-friendly beach instead of a crowded, polluted tourist resort.",
+      "type": "open",
+      "model_text": "Hello Shalleen,\nI was glad to hear that you want to visit Greece this summer! The island you are thinking of visiting is very famous, but when I was there last year, I could not swim because of the thick yacht oil and crowds of noisy motorboats. The beach was polluted with plastic cups, and the turtles could not nest. I really think you should visit a quiet island with protected nature reserves instead!\nBest wishes,\nMaria",
+      "checklist": [
+        "Include greeting and closing.",
+        "Explain why swimming was difficult (oil, noise, trash).",
+        "Use 'because of' with a noun phrase.",
+        "Recommend an eco-friendly alternative."
+      ]
+    },
+    {
+      "id": "C1",
+      "section": "C. Reading",
+      "title": "1. The Secret of Bog Creek",
+      "instruction": "Read the story of Bob and Jeannie at Bog Creek and answer the comprehension questions.",
+      "type": "short_answer",
+      "questions": [
+        {
+          "q": "What is Bog Creek?",
+          "accepted": ["It is a stream.", "a stream", "A stream in New Jersey"],
+          "sample": "Bog Creek is a freshwater stream in New Jersey."
+        },
+        {
+          "q": "What was the secret of Bog Creek?",
+          "accepted": [
+            "Some people used the farm as a place to dump their old chemicals and paints.",
+            "People dumped chemicals and paints there.",
+            "Secret dumping of toxic chemicals and paints."
+          ],
+          "sample": "People used the farm as a secret place to dump old chemicals and paint waste."
+        }
+      ]
+    }
+  ]
+}
+;

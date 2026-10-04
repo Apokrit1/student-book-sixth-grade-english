@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursebook Digital Companion</title>
+  <meta name="description" content="Offline interactive coursebook companion with modular grammar, reading, writing, workbook, and review activities.">
+  <link rel="stylesheet" href="style_v2.css">
+</head>
+<body data-unit="9" data-workbook="unit9_workbook_data.js">
+  <div class="bg-decoration" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <div class="audio-hud" id="audioHud" style="display:none;" role="region" aria-label="Audio playback controller">
+    <div class="hud-content">
+      <div class="hud-info"><span class="hud-label" id="hudAudioType">Audio</span><strong class="hud-title" id="hudAudioTitle">Playback</strong></div>
+      <div class="hud-controls">
+        <button class="hud-btn" id="hudPauseBtn" title="Pause or resume" aria-label="Pause audio">⏸️</button>
+        <button class="hud-btn" id="hudStopBtn" title="Stop" aria-label="Stop audio">⏹️</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="app-header no-print">
+    <div class="header-container">
+      <div class="top-nav-row">
+        <div class="nav-breadcrumbs">
+          <a href="../portal.html" class="hub-link"><span>🏠</span> Coursebook Portal</a>
+          <span class="separator">/</span>
+          <span class="current-unit shell-unit-label">Unit N</span>
+          <span class="badge v2-badge">Digital Companion</span>
+        </div>
+        <div class="nav-actions">
+          <button class="v1-switch-btn" id="topTeacherNotesBtn" type="button" title="Teacher notes" hidden><span>🧑‍🏫</span> Teacher Notes</button>
+          <a href="index.html" class="v1-switch-btn" title="Open the vocabulary app"><span>📖</span> Vocabulary App</a>
+          <button class="print-pack-top-btn" id="topPrintPackBtn" type="button" title="Print the complete worksheet pack" hidden><span>🖨️</span> Print Worksheets</button>
+        </div>
+      </div>
+
+      <div class="header-hero">
+        <div class="hero-text-wrap">
+          <h1 class="main-title shell-unit-title">Coursebook Unit</h1>
+          <p class="sub-title shell-unit-subtitle">Interactive learning companion</p>
+        </div>
+        <div class="audio-settings-bar">
+          <div class="setting-item"><label for="v2VoiceSelect">Voice:</label><select id="v2VoiceSelect" class="v2-select"><option value="neural" selected>Natural Neural Voice</option><option value="standard">Classic Voice</option></select></div>
+          <div class="setting-item"><label for="v2SpeedSelect">Speed:</label><select id="v2SpeedSelect" class="v2-select"><option value="0.8">0.8x</option><option value="1.0" selected>1.0x</option><option value="1.2">1.2x</option></select></div>
+        </div>
+      </div>
+
+      <nav class="v2-nav-tabs" id="moduleTabs" role="tablist" aria-label="Learning modules"></nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-container" id="v2Panels"></div>
+  </main>
+
+  <div id="workbookPrintArea" class="workbook-print-area no-screen" style="display:none;"></div>
+
+  <footer class="app-footer no-print">
+    <div class="footer-container">
+      <div class="shell-footer-title">Coursebook Digital Companion</div>
+      <div class="footer-sub">Interactive course content runs locally with no pupil-data tracking.</div>
+    </div>
+  </footer>
+
+  <script src="data/vocabulary_data.js"></script>
+  <script src="app_v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distractor Review Tool</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: #2c3e50; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .target-word { font-size: 1.5em; font-weight: bold; color: #34495e; }
+        .pos { display: inline-block; background: #e8f4f8; color: #2980b9; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; margin-left: 10px; }
+        .meaning { color: #7f8c8d; margin-bottom: 15px; font-style: italic; }
+        .distractors { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .distractor { background: #fdf2e9; color: #d35400; padding: 8px 12px; border-radius: 4px; border: 1px solid #fad7a1; font-weight: 500; }
+        .feedback-section { border-top: 1px solid #eee; padding-top: 15px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .btn-approve { background: #2ecc71; color: white; }
+        .btn-approve:hover { background: #27ae60; }
+        .btn-reject { background: #e74c3c; color: white; }
+        .btn-reject:hover { background: #c0392b; }
+        .selected-approve { box-shadow: 0 0 0 3px #2ecc71 inset; opacity: 1; border: 2px solid #145c32; }
+        .selected-reject { box-shadow: 0 0 0 3px #e74c3c inset; opacity: 1; border: 2px solid #7a1e14; }
+        .feedback-input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px; box-sizing: border-box; }
+        .save-btn { display: block; width: 100%; padding: 15px; background: #3498db; color: white; font-size: 1.2em; border: none; border-radius: 8px; cursor: pointer; margin-top: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .save-btn:hover { background: #2980b9; }
+            @media (max-width: 600px) {
+            body { padding: 10px; }
+            .card { padding: 15px; }
+            .btn-group { width: 100%; }
+            .btn { flex: 1; padding: 12px 16px; }
+            .feedback-input { width: 100%; min-width: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Distractor Review Applet</h1>
+        <p style="text-align: center;">Review the newly generated distractors. They are designed to match the Target Word's POS and Semantic Field.</p>
+        <div id="items-container"></div>
+        <button class="save-btn" onclick="saveFeedback()">💾 Download Feedback JSON</button>
+    </div>
+
+    <script src="distractor_data.js"></script>
+    <script>
+        const feedback = {};
+
+        function renderItems() {
+            const container = document.getElementById('items-container');
+            data.forEach(item => {
+                feedback[item.id] = { word: item.word, status: null, comments: "" };
+                
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div>
+                        <span class="target-word">${item.word}</span>
+                        <span class="pos">${item.pos}</span>
+                    </div>
+                    <div class="meaning">Greek: ${item.meaning}</div>
+                    <div class="distractors">
+                        ${item.distractors.map(d => `<span class="distractor">${d}</span>`).join('')}
+                    </div>
+                    <div class="feedback-section">
+                        <div class="btn-group">
+                            <button class="btn btn-approve" id="approve-${item.id}" onclick="setStatus(${item.id}, 'approved')">👍 Approve</button>
+                            <button class="btn btn-reject" id="reject-${item.id}" onclick="setStatus(${item.id}, 'rejected')">👎 Reject</button>
+                        </div>
+                        <input type="text" class="feedback-input" placeholder="Optional feedback (e.g., 'muffins is not a fruit, bad semantic match')" onchange="updateComment(${item.id}, this.value)">
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function setStatus(id, status) {
+            feedback[id].status = status;
+            document.getElementById(`approve-${id}`).classList.remove('selected-approve');
+            document.getElementById(`reject-${id}`).classList.remove('selected-reject');
+            
+            if (status === 'approved') {
+                document.getElementById(`approve-${id}`).classList.add('selected-approve');
+            } else {
+                document.getElementById(`reject-${id}`).classList.add('selected-reject');
+            }
+        }
+
+        function updateComment(id, value) {
+            feedback[id].comments = value;
+        }
+
+        function saveFeedback() {
+            // Check if all items are reviewed
+            const unreviewed = Object.values(feedback).filter(f => f.status === null);
+            if (unreviewed.length > 0) {
+                if (!confirm(`You have ${unreviewed.length} unreviewed items. Download anyway?`)) {
+                    return;
+                }
+            }
+
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(feedback, null, 2));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "distractor_feedback.json");
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        }
+
+        window.onload = renderItems;
+    </script>
+</body>
+</html>
+

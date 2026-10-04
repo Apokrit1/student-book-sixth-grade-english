@@ -111,10 +111,21 @@ body{font-family:'Plus Jakarta Sans','Noto Sans','DejaVu Sans',sans-serif;color:
 
   <!-- end -->
   <div id="end" class="full">
-    <div id="endT" class="abs big" style="left:0;right:0;top:300px;text-align:center;font-size:170px">English 6th Grade</div>
-    <div id="endS" class="abs" style="left:0;right:0;top:500px;text-align:center;font:700 54px 'Outfit';color:#f6ad55">The interactive coursebook.</div>
-    <div id="endL" class="abs" style="left:0;right:0;top:640px;text-align:center;font:600 32px 'Plus Jakarta Sans';color:#b9b9c6">Unit 1 live now · Built by a classroom teacher in Volos</div>
-    <div id="endE" class="abs kick" style="left:0;right:0;top:880px;text-align:center;font-size:22px;color:#8a8a99">ICT-REV · Larissa · 1–2 October 2026</div>
+    <div id="endLeft" class="abs" style="left:150px;top:220px;width:1080px">
+      <div id="endT" class="big" style="font-size:140px;color:#fff">English 6th Grade</div>
+      <div id="endS" class="big" style="font-size:46px;color:#f6ad55;margin-top:18px">The interactive coursebook.</div>
+      <div id="endUrl" style="margin-top:42px">
+        <span class="pill" style="background:#dd6b20;color:#fff;font-size:30px;font-weight:700;padding:14px 30px;box-shadow:0 14px 40px rgba(221,107,32,0.45);display:inline-block">
+          https://sixthgrade-english-buddy.lovable.app
+        </span>
+      </div>
+      <div id="endL" style="margin-top:38px;font:600 28px 'Plus Jakarta Sans';color:#b9b9c6">Unit 1 live now · Built by a classroom teacher in Volos</div>
+    </div>
+    <div id="endQrCard" class="abs" style="right:160px;top:210px;width:380px;background:#fff;border-radius:28px;padding:24px;box-shadow:0 30px 90px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.15);text-align:center">
+      <img src="qr.png" style="width:100%;border-radius:16px;display:block">
+      <div style="font-family:'Outfit';font-weight:800;font-size:22px;color:#1a1a22;margin-top:16px;letter-spacing:.04em;text-transform:uppercase">Scan to try live</div>
+    </div>
+    <div id="endE" class="abs kick" style="left:0;right:0;top:920px;text-align:center;font-size:22px;color:#8a8a99">ICT-REV · Larissa · 1–2 October 2026</div>
   </div>
 
   <div class="grain" style="opacity:.05"></div>
@@ -306,9 +317,18 @@ function renderPort(t){
 function renderEnd(t){
   const on=t>=44; show($('end'),on); if(!on)return;
   const i=eo5(P(t,44,44.6));
-  $('endT').style.opacity=i; $('endT').style.transform=`scale(${1.2-.2*i})`; $('endT').style.filter=`blur(${(1-i)*12}px)`;
-  kin($('endS'),t,44.5,99,'The interactive coursebook.',{dy:30,noOut:true});
+  $('endT').style.opacity=i; $('endT').style.transform=`scale(${1.15-.15*i})`; $('endT').style.filter=`blur(${(1-i)*12}px)`;
+  kin($('endS'),t,44.4,99,'The interactive coursebook.',{dy:25,noOut:true});
+  
+  const ui=eo5(P(t,44.8,45.3));
+  $('endUrl').style.opacity=ui; $('endUrl').style.transform=`translateY(${(1-ui)*30}px)`;
+  
   kin($('endL'),t,45.2,99,'Unit 1 live now · Built by a classroom teacher in Volos',{dy:20,noOut:true});
+
+  const qi=eoBack(P(t,44.6,45.2));
+  $('endQrCard').style.opacity=clamp(P(t,44.6,44.9));
+  $('endQrCard').style.transform=`translateY(${(1-qi)*50}px) scale(${.85+.15*qi})`;
+
   kin($('endE'),t,45.8,99,'ICT-REV · LARISSA · 1–2 OCTOBER 2026',{dy:20,noOut:true});
 }
 

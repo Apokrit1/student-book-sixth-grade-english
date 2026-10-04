@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function highlightExample(sentence, word) {
     const first = String(word || '').split(/\s+/)[0].replace(/[^a-zA-Z]/g, '');
     if (!sentence || !first) return escapeHtml(sentence);
-    const pattern = new RegExp(`\\b${first}[a-z]*\\b`, 'gi');
+    const pattern = new RegExp(`(\\b${first}[a-z]*\\b)`, 'gi');
     return escapeHtml(sentence).replace(pattern, '<span class="example-target-word">$1</span>');
   }
 
