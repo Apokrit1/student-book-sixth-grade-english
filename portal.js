@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="${u.v1_url}" class="action-btn v1-btn">
               <span>📖</span> Version 1 (Vocabulary Lab)
             </a>
+            ${u.photodentro_url ? `
+              <a href="${u.photodentro_url}" target="_blank" class="action-btn oer-btn">
+                <span>🏛️</span> Photodentro OER Lab
+              </a>
+            ` : ''}
           ` : `
             <span class="action-btn disabled">
               <span>🔒</span> In Preparation for Term ${u.unit <= 4 ? '1' : (u.unit <= 7 ? '2' : '3')}

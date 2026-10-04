@@ -74,6 +74,19 @@ async function runV2Tests() {
   const catalog = JSON.parse(fs.readFileSync('../data/coursebook_catalog.json', 'utf-8'));
   assert(catalog.units && catalog.units.length === 10, 'Catalog contains all 10 coursebook units');
   assert(catalog.units[0].status === 'ready' && catalog.units[0].v2_url === 'unit1/v2.html', 'Unit 1 is designated ready with v2_url');
+  assert(catalog.units[0].photodentro_url === 'unit1/photodentro/index.html', 'Unit 1 registers Photodentro OER app');
+
+  // 2b. Photodentro OER files verification
+  const photodentroFiles = [
+    'photodentro/index.html',
+    'photodentro/app.js',
+    'photodentro/css/style.css'
+  ];
+  for (const pf of photodentroFiles) {
+    const pExists = fs.existsSync(pf);
+    const pSize = pExists ? fs.statSync(pf).size : 0;
+    assert(pExists && pSize > 50, `Photodentro OER file exists and non-empty: ${pf} (${pSize} bytes)`);
+  }
 
   // 3. Unit 1 v2 data validation & Dossier Vocabulary Regression Guard
   const u1Data = JSON.parse(fs.readFileSync('data/unit1_v2_data.json', 'utf-8'));

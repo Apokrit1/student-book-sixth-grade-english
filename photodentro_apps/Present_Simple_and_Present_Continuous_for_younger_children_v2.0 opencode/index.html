@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Present Simple ή Present Continuous; Κουίζ για μικρότερα παιδιά — επιλέξτε το σωστό ρηματικό χρόνο.">
+<title>Present Simple &amp; Present Continuous · Κουίζ για παιδιά</title>
+
+<style>
+  @font-face{
+    font-family:'Roboto Condensed';
+    src:url('fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight:400; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'Roboto Condensed';
+    src:url('fonts/RobotoCondensed-Italic.ttf') format('truetype');
+    font-weight:400; font-style:italic; font-display:swap;
+  }
+  @font-face{
+    font-family:'Roboto Condensed';
+    src:url('fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight:700; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'Roboto Condensed';
+    src:url('fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight:700; font-style:italic; font-display:swap;
+  }
+</style>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+
+  <header class="topbar">
+    <div class="wrap">
+      <div class="topbar__inner">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">A + ING</span>
+          <div class="brand__text">
+            <h1 class="brand__title">Present Simple <span class="brand__amp">&amp;</span> Present Continuous</h1>
+            <p class="brand__subtitle">Άσκηση για μικρότερα παιδιά · Διάλεξε τον σωστό χρόνο</p>
+          </div>
+        </div>
+        <p class="round">Γύρος <strong id="roundVal">1</strong></p>
+        <nav class="topbar__actions" aria-label="Βοήθεια και πληροφορίες">
+          <button type="button" class="icon-btn" id="helpBtn" aria-label="Βοήθεια" title="Βοήθεια">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </button>
+          <button type="button" class="icon-btn" id="infoBtn" aria-label="Συντελεστές" title="Συντελεστές">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="introHeading">
+      <div class="intro__text">
+        <p class="eyebrow">Μικρές προτάσεις, μεγάλα βήματα!</p>
+        <h2 id="introHeading">Κάθε μέρα ή <span>τώρα;</span></h2>
+        <p>Γίνε εξερευνητής των αγγλικών! Βρες τη λέξη-κλειδί και διάλεξε τον χρόνο που ταιριάζει.</p>
+      </div>
+      <aside class="grammar" aria-label="Μικρή υπενθύμιση γραμματικής">
+        <section class="grammar__card">
+          <p class="grammar__tag">Κάθε μέρα</p>
+          <h3 lang="en">Present Simple</h3>
+          <p>Για συνήθειες και πράγματα που ισχύουν γενικά.</p>
+          <p class="grammar__example" lang="en">I <strong>play</strong> every day.</p>
+          <p class="grammar__keywords" lang="en">always · usually · every day</p>
+        </section>
+        <section class="grammar__card grammar__card--now">
+          <p class="grammar__tag">Αυτή τη στιγμή</p>
+          <h3 lang="en">Present Continuous</h3>
+          <p>Για όσα γίνονται τώρα ή αυτή την περίοδο.</p>
+          <p class="grammar__example" lang="en">I <strong>am playing</strong> now.</p>
+          <p class="grammar__keywords" lang="en">now · Look! · this term</p>
+        </section>
+      </aside>
+    </section>
+
+    <section class="panel" aria-labelledby="quizHeading">
+      <div class="panel__head">
+        <h2 class="panel__title" id="quizHeading">Συμπλήρωσε με τη σωστή μορφή του ρήματος:</h2>
+        <p class="panel__hint">Διάλεξε μία από τις δύο απαντήσεις σε κάθε πρόταση.</p>
+      </div>
+
+      <div class="progress">
+        <p class="progress__text" id="progressVal" aria-live="polite">0 από 5 επιλεγμένες</p>
+        <progress class="progress__bar" id="progressBar" max="5" value="0" aria-label="Επιλεγμένες απαντήσεις στον γύρο">0 από 5</progress>
+      </div>
+
+      <p class="score" aria-live="polite">
+        <span class="score__item">Σκορ: <strong id="scoreVal">0</strong></span>
+        <span class="score__item">Ερωτήσεις: <strong id="totalVal">0</strong></span>
+        <span class="score__item">Σωστές: <strong id="correctVal">0</strong></span>
+      </p>
+
+      <ol class="quiz" id="quizList" aria-live="polite"></ol>
+
+      <p id="resultMsg" class="result" role="status" hidden></p>
+
+      <div class="bar" role="group" aria-label="Έλεγχος απαντήσεων">
+        <button type="button" class="btn btn--primary" id="checkBtn">Έλεγχος</button>
+        <button type="button" class="btn" id="answersBtn">Απαντήσεις</button>
+        <button type="button" class="btn btn--ghost" id="againBtn" hidden>Προσπάθησε ξανά</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button type="button" class="modal__x" data-close aria-label="Κλείσιμο">×</button>
+      <h2 class="modal__title" id="helpTitle">Πώς διαλέγω τον σωστό χρόνο;</h2>
+
+      <div class="help-grid">
+        <section class="rule rule--simple">
+          <h3>Present Simple <span>(απλός ενεστώτας)</span></h3>
+          <p>Τον χρησιμοποιούμε για πράγματα που γίνονται <strong>κάθε μέρα, συνήθως, συχνά</strong> — συνήθειες, ρουτίνες και γεγονότα.</p>
+          <p class="rule__words">Λέξεις-κλειδιά: <em>always · usually · often · sometimes · never · every day · every morning · in the afternoon</em></p>
+          <p class="rule__eg">Π.χ. <em>Mr Brown <b>gets</b> up very early every morning.</em></p>
+        </section>
+        <section class="rule rule--continuous">
+          <h3>Present Continuous <span>(ενεστώτας διαρκείας)</span></h3>
+          <p>Τον χρησιμοποιούμε για πράγματα που γίνονται <strong>τώρα, αυτή τη στιγμή</strong> ή <strong>γύρω από το τώρα</strong> (this term, today…).</p>
+          <p class="rule__words">Λέξεις-κλειδιά: <em>now · today · this term · Look! · Listen! · Watch out!</em></p>
+          <p class="rule__eg">Π.χ. <em>Look! The sun <b>is shining</b>!</em></p>
+        </section>
+      </div>
+
+      <div class="modal__foot">
+        <button type="button" class="btn btn--primary" data-close>Εντάξει!</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <p>Εκπαιδευτικό αντικείμενο για το <a href="credits/index.html" target="_blank" rel="noopener">Φωτόδεντρο</a> · <a href="credits/index.html" target="_blank" rel="noopener">Συντελεστές &amp; Άδεια</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

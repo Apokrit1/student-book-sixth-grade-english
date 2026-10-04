@@ -1,7 +1,7 @@
 {
   "title": "English 6th Grade — Digital Coursebook Companion (ΣΤ΄ Δημοτικού)",
   "curriculum": "Greek Ministry of Education (DEPPS-APS) / ITYE Diophantus",
-  "level": "CEFR A2 / A2+",
+  "level": "CEFR A1 / A1+",
   "target_audience": "11-12 year old EFL Primary Learners & Teachers",
   "teacher_syllabus_notice": "Note for Teachers & Authors: Unit titles, grammatical foci, and themes for Units 2–10 represent preliminary syllabus mapping and should be verified against the physical 6th Grade Coursebook and Teacher's Book before authoring content for those units.",
   "total_units": 10,
@@ -18,10 +18,12 @@
         "Geography",
         "History",
         "Science",
-        "Computer Science"
+        "Computer Science",
+        "Photodentro OER"
       ],
       "v1_url": "unit1/index.html",
       "v2_url": "unit1/v2.html",
+      "photodentro_url": "unit1/photodentro/index.html",
       "badge": "Flagship v2 Ready",
       "accent_color": "#dd6b20"
     },

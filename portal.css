@@ -484,6 +484,20 @@ body {
   border: 1px solid #e2e8f0;
 }
 
+.action-btn.oer-btn {
+  background: linear-gradient(135deg, #285e61 0%, #234e52 100%);
+  color: #e6fffa;
+  border: 1px solid #319795;
+  box-shadow: 0 4px 12px rgba(49, 151, 149, 0.25);
+}
+
+.action-btn.oer-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #319795 0%, #285e61 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(49, 151, 149, 0.35);
+}
+
 /* Teacher Framework Card */
 .teacher-framework-card {
   background: #ffffff;

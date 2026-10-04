@@ -2451,6 +2451,51 @@ body {
 }
 
 /* ========================================== */
+/* PHOTODENTRO OER CARD & IN-APP MODAL STYLES */
+/* ========================================== */
+.photodentro-card {
+  border: 2px solid #b2f5ea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.photodentro-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(44, 122, 123, 0.15);
+}
+
+.v2-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+}
+
+.v2-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.v2-modal-container {
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ========================================== */
 /* PRINT MEDIA QUERY (WORK SHEET PERFECTION) */
 /* ========================================== */
 @media print {

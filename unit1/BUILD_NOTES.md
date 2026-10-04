@@ -416,3 +416,29 @@ The requirement was to provide differentiated voices:
 
 
 
+
+
+## Photodentro OER Integration: Present Simple vs. Present Continuous (04 Oct 2026)
+
+### 1. Source & Pedagogical Alignment
+Modernized from the official Greek Ministry of Education Open Educational Resource (OER) hosted on the Photodentro National Repository (Ψηφιακό Σχολείο / ΙΤΥΕ «ΔΙΟΦΑΝΤΟΣ», Version 2.0). 
+- **Learning Object**: *Present Simple & Present Continuous for Younger Children (v2.0)*
+- **Curriculum Alignment**: Matches **Unit 1 Lesson 2** (*"A school day in Great Britain - What do you usually do? / What are you doing now?"*) and the contrast between routine habits / frequency adverbs (*always, usually, every day, at 7.45*) and temporary present actions (*now, today, look!, watch out!*).
+- **Format**: 27 curriculum-aligned contrast sentences organized in dynamic 5-sentence rounds, with instant checking, hints, scoring, and review.
+
+### 2. Architecture & Deliverables
+1. **Self-Contained Local App**:
+   - Deployed at `unit1/photodentro/` (`index.html`, `app.js`, `css/style.css`, `fonts/`, `credits/`).
+   - 100% offline, zero external CDN or network dependencies, fully GDPR-compliant.
+   - Enhanced with a topbar return button linking back to the Unit 1 Coursebook Companion.
+2. **In-App Integration in Flagship Companion (`v2.html`)**:
+   - Added **Sub-module E** inside `MODULE 2: GRAMMAR LAB` featuring an interactive presentation card with direct launch capabilities.
+   - Built a distraction-free in-app modal overlay (`#photodentroModal`) allowing pupils to play the quest seamlessly inside `v2.html` without navigating away, plus an option to open full-screen in a new tab.
+3. **Version 1 Vocabulary Lab Link (`index.html`)**:
+   - Added a direct quick-launch button in the header (`🏛️ Photodentro Grammar Quiz ➔`).
+4. **Portal Hub Integration (`portal.html`, `data/coursebook_catalog.json`)**:
+   - Registered `photodentro_url: "unit1/photodentro/index.html"` and `"Photodentro OER"` tag in Unit 1 catalog data.
+   - Added an emerald `[ 🏛️ Photodentro OER Lab ]` action button to Unit 1's card in `portal.html` and `portal.js`.
+5. **Verification**:
+   - `node test_v2.js`: 260 assertions passed, 0 failed.
+   - `node verify_offline.js`: 100% offline compliance passed with zero external network leaks.

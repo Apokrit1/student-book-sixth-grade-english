@@ -292,6 +292,37 @@
               </button>
             </div>
           </div>
+
+          <!-- Sub-module E: Photodentro Interactive Grammar Quest -->
+          <div class="grammar-card full-width photodentro-card">
+            <div class="grammar-card-header">
+              <span class="badge" style="background: #2c7a7b; color: #fff;">🏛️ Photodentro OER • Greek National Repository</span>
+              <h3>⚡ Photodentro Interactive Lab: Present Simple vs. Present Continuous</h3>
+              <p>Practice with the official modernized open educational resource from the Greek National Educational Repository (<strong>Αποθετήριο «Φωτόδεντρο» / ΙΤΥΕ «ΔΙΟΦΑΝΤΟΣ»</strong>). Test routines vs. current actions across 27 interactive contrastive challenges!</p>
+            </div>
+
+            <div style="padding: 20px; background: linear-gradient(135deg, #f0fdf4 0%, #e6fffa 100%); border-radius: var(--radius-md); border: 1px solid #b2f5ea; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+              <div style="max-width: 680px;">
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
+                  <span style="font-size: 0.78rem; font-weight: 700; background: #319795; color: #fff; padding: 2px 8px; border-radius: 999px;">27 Contrast Sentences</span>
+                  <span style="font-size: 0.78rem; font-weight: 700; background: #38a169; color: #fff; padding: 2px 8px; border-radius: 999px;">5-Sentence Rounds</span>
+                  <span style="font-size: 0.78rem; font-weight: 700; background: #d69e2e; color: #fff; padding: 2px 8px; border-radius: 999px;">Instant Feedback</span>
+                  <span style="font-size: 0.78rem; font-weight: 700; background: #4a5568; color: #fff; padding: 2px 8px; border-radius: 999px;">100% Offline &amp; GDPR Compliant</span>
+                </div>
+                <p style="margin: 0; font-size: 0.92rem; color: #234e52; line-height: 1.5;">
+                  Discover the keyword clues (<em>every day, usually, always</em> vs. <em>now, look, today</em>) and score points across dynamic interactive rounds.
+                </p>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button type="button" class="play-full-story-btn" id="btnOpenPhotodentroModal" style="background: #319795; border-color: #285e61;">
+                  <span>🎮</span> Play Interactive Quest (In-App)
+                </button>
+                <a href="photodentro/index.html" target="_blank" class="v1-switch-btn" style="margin: 0; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                  <span>↗</span> Open Standalone
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -620,6 +651,31 @@
 
   <!-- Hidden standalone print container for single A4 workbook activity printing -->
   <div id="workbookPrintArea" class="workbook-print-area no-screen" style="display: none;"></div>
+
+  <!-- Photodentro Interactive In-App Modal Dialog -->
+  <div id="photodentroModal" class="v2-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="photodentroModalTitle">
+    <div class="v2-modal-backdrop" id="photodentroModalBackdrop"></div>
+    <div class="v2-modal-container" style="max-width: 1120px; width: 95vw; height: 90vh; display: flex; flex-direction: column; background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); z-index: 1000; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #2c5f75; color: #fff;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.3rem;">🏛️</span>
+          <div>
+            <h3 id="photodentroModalTitle" style="margin: 0; font-size: 1.05rem; font-weight: 700; color: #fff;">Photodentro: Present Simple &amp; Present Continuous</h3>
+            <p style="margin: 0; font-size: 0.78rem; opacity: 0.9;">Επίσημο Ψηφιακό Μαθησιακό Αντικείμενο · ΙΤΥΕ «ΔΙΟΦΑΝΤΟΣ»</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <a href="photodentro/index.html" target="_blank" class="v1-switch-btn" style="margin: 0; padding: 4px 10px; font-size: 0.8rem; background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.4); color: #fff;" title="Open Fullscreen in New Tab">
+            <span>↗</span> New Tab
+          </a>
+          <button type="button" id="btnClosePhotodentroModal" style="background: none; border: none; color: #fff; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 6px;" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div style="flex: 1; position: relative; background: #f3f5ef;">
+        <iframe id="photodentroIframe" src="about:blank" style="width: 100%; height: 100%; border: none;" title="Photodentro Interactive Learning Object"></iframe>
+      </div>
+    </div>
+  </div>
 
   <footer class="app-footer no-print">
     <div class="footer-container">

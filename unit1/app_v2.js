@@ -555,6 +555,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+
+    // E. Photodentro Interactive Lab In-App Modal Controls
+    const btnOpenPhotodentro = document.getElementById('btnOpenPhotodentroModal');
+    const modalPhotodentro = document.getElementById('photodentroModal');
+    const backdropPhotodentro = document.getElementById('photodentroModalBackdrop');
+    const btnClosePhotodentro = document.getElementById('btnClosePhotodentroModal');
+    const iframePhotodentro = document.getElementById('photodentroIframe');
+
+    if (btnOpenPhotodentro && modalPhotodentro && iframePhotodentro) {
+      const openModal = () => {
+        if (iframePhotodentro.getAttribute('src') === 'about:blank') {
+          iframePhotodentro.src = 'photodentro/index.html';
+        }
+        modalPhotodentro.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      };
+      const closeModal = () => {
+        modalPhotodentro.style.display = 'none';
+        document.body.style.overflow = '';
+      };
+
+      btnOpenPhotodentro.addEventListener('click', openModal);
+      if (btnClosePhotodentro) btnClosePhotodentro.addEventListener('click', closeModal);
+      if (backdropPhotodentro) backdropPhotodentro.addEventListener('click', closeModal);
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalPhotodentro.style.display === 'block') {
+          closeModal();
+        }
+      });
+    }
   }
 
   // ==========================================
