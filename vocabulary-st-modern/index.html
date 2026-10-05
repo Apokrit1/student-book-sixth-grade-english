@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English 6th Grade — A coursebook, relearned · Modernization Preview</title>
+  <meta name="description" content="Modernization preview for the Greek Primary School 6th Grade English Coursebook hub. Warm, hand-drawn, type-led design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG defs for hand-drawn marks (reused across the page) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Soft paper grain -->
+      <filter id="paper-grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
+        <feColorMatrix values="0 0 0 0 0.16   0 0 0 0 0.14   0 0 0 0 0.12   0 0 0 0.045 0"/>
+      </filter>
+      <!-- Squiggly hand-drawn arrow -->
+      <symbol id="arrow-squiggle" viewBox="0 0 64 24">
+        <path d="M2 12 Q 12 2, 22 12 T 42 12 T 56 12" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M50 6 L58 12 L50 18" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <!-- Asterisk -->
+      <symbol id="asterisk" viewBox="0 0 32 32">
+        <path d="M16 2 L16 30 M4 8 L28 24 M4 24 L28 8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </symbol>
+      <!-- Sparkle -->
+      <symbol id="sparkle" viewBox="0 0 24 24">
+        <path d="M12 1 L13.5 9 L21 10.5 L13.5 12 L12 23 L10.5 12 L3 10.5 L10.5 9 Z" fill="currentColor"/>
+      </symbol>
+      <!-- Underline squiggle -->
+      <symbol id="underline-squiggle" viewBox="0 0 200 12" preserveAspectRatio="none">
+        <path d="M2 6 Q 18 0, 34 6 T 66 6 T 98 6 T 130 6 T 162 6 T 194 6" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </symbol>
+      <!-- Check -->
+      <symbol id="check" viewBox="0 0 24 24">
+        <path d="M3 12 L10 19 L21 5" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Floating background glyphs -->
+  <div class="bg-glyphs" aria-hidden="true">
+    <svg class="glyph g1"><use href="#asterisk"/></svg>
+    <svg class="glyph g2"><use href="#sparkle"/></svg>
+    <svg class="glyph g3"><use href="#asterisk"/></svg>
+    <svg class="glyph g4"><use href="#sparkle"/></svg>
+    <svg class="glyph g5"><use href="#asterisk"/></svg>
+    <svg class="glyph g6"><use href="#sparkle"/></svg>
+    <!-- Dotted loop -->
+    <svg class="loop l1" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 8" fill="none"/>
+    </svg>
+    <svg class="loop l2" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="2" stroke-dasharray="2 8" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Top brand strip -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 22 Q 8 8, 20 8 Q 32 8, 32 22 L 32 32 Q 32 36, 28 36 L 12 36 Q 8 36, 8 32 Z" fill="var(--clay)"/>
+          <circle cx="14" cy="20" r="2.5" fill="var(--cream)"/>
+          <circle cx="26" cy="20" r="2.5" fill="var(--cream)"/>
+          <path d="M14 26 Q 20 30, 26 26" stroke="var(--cream)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Photodentro<em>·</em>English</span>
+          <span class="brand-meta">ΣΤ΄ Δημοτικού · 6th Grade</span>
+        </span>
+      </a>
+      <nav class="topnav">
+        <a href="#units">Units</a>
+        <a href="#teacher">For Teachers</a>
+        <a href="#story">Story</a>
+      </nav>
+      <a class="topbar-cta" href="#units">
+        Launch Unit 1
+        <svg class="arrow"><use href="#arrow-squiggle"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="kicker">
+          <svg class="kicker-mark"><use href="#sparkle"/></svg>
+          <span>Greek Ministry of Education · DEPPS-APS</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line">A 20-year-old</span>
+          <span class="line">coursebook,</span>
+          <span class="line">
+            <span class="hl">relearned.</span>
+            <svg class="hl-underline"><use href="#underline-squiggle"/></svg>
+          </span>
+        </h1>
+
+        <p class="hero-lede">
+          A modernization of the 2006 English textbook for 6th graders — same grammar,
+          same heart, new stories. CLIL labs, neural audio, printable worksheets,
+          and a launch video that introduces the year in under a minute.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="cta primary" href="#units">
+            <span>Explore the 10 units</span>
+            <svg class="arrow"><use href="#arrow-squiggle"/></svg>
+          </a>
+          <a class="cta ghost" href="#story">
+            <span>Read the story</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="meta-pill sage"><strong>CEFR</strong> A1 / A1+</span>
+          <span class="meta-pill clay"><strong>10</strong> Units</span>
+          <span class="meta-pill mustard"><strong>280+</strong> Neural audios</span>
+          <span class="meta-pill blush"><strong>100%</strong> Printable</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="false">
+        <!-- Decorative frame -->
+        <div class="art-frame">
+          <svg class="art-frame-border" viewBox="0 0 400 400" preserveAspectRatio="none">
+            <path d="M20 30 Q 20 20, 30 20 L 370 20 Q 380 20, 380 30 L 380 370 Q 380 380, 370 380 L 30 380 Q 20 380, 20 370 Z"
+                  fill="none" stroke="var(--dust)" stroke-width="2.5" stroke-dasharray="3 6" />
+          </svg>
+          <!-- Stacked pages with flags -->
+          <div class="art-stack">
+            <div class="art-page p3">
+              <div class="page-flag" style="background: var(--sage);"></div>
+              <div class="page-flag" style="background: var(--mustard);"></div>
+              <div class="page-flag" style="background: var(--blush);"></div>
+            </div>
+            <div class="art-page p2">
+              <div class="page-flag" style="background: var(--clay);"></div>
+              <div class="page-flag" style="background: var(--sage);"></div>
+            </div>
+            <div class="art-page p1">
+              <div class="page-flag" style="background: var(--mustard);"></div>
+              <div class="page-flag" style="background: var(--clay);"></div>
+              <div class="page-flag" style="background: var(--sage);"></div>
+            </div>
+          </div>
+          <!-- Sparkles around art -->
+          <svg class="art-sparkle s1"><use href="#sparkle"/></svg>
+          <svg class="art-sparkle s2"><use href="#sparkle"/></svg>
+          <svg class="art-asterisk a1"><use href="#asterisk"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FILTER + UNITS ============================ -->
+  <section class="units-section" id="units">
+    <div class="section-inner">
+      <header class="section-head">
+        <div class="kicker">
+          <svg class="kicker-mark"><use href="#asterisk"/></svg>
+          <span>The Coursebook</span>
+        </div>
+        <h2 class="section-title">
+          Pick a unit.<br>
+          <em>Stay a while.</em>
+        </h2>
+        <p class="section-lede">
+          Each unit ships with a CLIL story, an inductive grammar lab, dual-voice neural
+          audio, and a printable worksheet pack. Filter by term or by what your class
+          needs this week.
+        </p>
+      </header>
+
+      <div class="filter-row" role="tablist" aria-label="Filter units">
+        <button class="chip active" data-filter="all">All <span class="chip-count">10</span></button>
+        <button class="chip" data-filter="term-1">Term 1 <span class="chip-count">4</span></button>
+        <button class="chip" data-filter="term-2">Term 2 <span class="chip-count">3</span></button>
+        <button class="chip" data-filter="term-3">Term 3 <span class="chip-count">3</span></button>
+        <span class="chip-sep"></span>
+        <button class="chip sage" data-filter="ready">v2 Ready</button>
+        <button class="chip mustard" data-filter="featured">Featured</button>
+      </div>
+
+      <div class="units-grid" id="unitsGrid">
+
+        <!-- Unit 1 — Featured (full-width hero card) -->
+        <article class="unit-card featured visible"
+                 data-terms="term-1"
+                 data-flags="ready featured">
+          <div class="featured-art" id="featuredArt">
+            <!-- Illustration placeholder; replaced when image is ready -->
+            <div class="featured-art-fallback" aria-hidden="true">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="300" fill="var(--blush)"/>
+                <!-- Hand-drawn kids silhouettes -->
+                <g fill="var(--clay)">
+                  <circle cx="100" cy="130" r="28"/>
+                  <rect x="80" y="155" width="40" height="80" rx="12"/>
+                </g>
+                <g fill="var(--sage)">
+                  <circle cx="170" cy="120" r="30"/>
+                  <rect x="148" y="148" width="44" height="90" rx="12"/>
+                </g>
+                <g fill="var(--mustard)">
+                  <circle cx="240" cy="130" r="28"/>
+                  <rect x="220" y="155" width="40" height="80" rx="12"/>
+                </g>
+                <!-- Flags -->
+                <g stroke="var(--ink)" stroke-width="2" fill="none">
+                  <line x1="100" y1="100" x2="100" y2="60"/>
+                  <line x1="170" y1="90" x2="170" y2="50"/>
+                  <line x1="240" y1="100" x2="240" y2="60"/>
+                </g>
+                <g>
+                  <rect x="92" y="50" width="16" height="10" fill="var(--clay)"/>
+                  <rect x="162" y="40" width="16" height="10" fill="var(--sage)"/>
+                  <rect x="232" y="50" width="16" height="10" fill="var(--mustard)"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="featured-body">
+            <div class="featured-tag">
+              <svg class="kicker-mark"><use href="#sparkle"/></svg>
+              Featured · Flagship v2
+            </div>
+            <div class="unit-number-badge">
+              <span class="unit-num">01</span>
+              <span class="unit-term">Term 1</span>
+            </div>
+            <h3 class="unit-title">Our Multicultural Class</h3>
+            <p class="unit-tagline">
+              Meet newcomers from Ukraine, Albania, Georgia, and the UK. Build a 5-paragraph
+              country report, master present-simple vs. continuous, and explore geography
+              through a CLIL lab.
+            </p>
+            <div class="unit-meta-tags">
+              <span class="meta-tag clay">🌍 Geography CLIL</span>
+              <span class="meta-tag sage">Present Simple vs. Continuous</span>
+              <span class="meta-tag mustard">🎧 Dual-voice neural audio</span>
+              <span class="meta-tag blush">5 printable worksheets</span>
+            </div>
+            <div class="unit-actions">
+              <a href="unit1/v2.html" class="cta primary small">
+                <span>Launch Version 2</span>
+                <svg class="arrow"><use href="#arrow-squiggle"/></svg>
+              </a>
+              <a href="unit1/index.html" class="cta ghost small">Version 1</a>
+              <a href="unit1/photodentro/index.html" class="cta ghost small" target="_blank">Photodentro OER ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Unit 2 -->
+        <article class="unit-card" data-terms="term-1">
+          <div class="card-flag">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" fill="var(--sage)"/>
+              <text x="30" y="38" text-anchor="middle" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--cream)">02</text>
+            </svg>
+            <span class="card-term">Term 1</span>
+          </div>
+          <h3 class="unit-title-sm">Going Shopping</h3>
+          <p class="unit-tagline-sm">
+            Supermarkets, malls, canteen menus — countable vs. uncountable, how much / how many,
+            and the verbs of the senses.
+          </p>
+          <div class="unit-pills">
+            <span class="pill clay">v2 Ready</span>
+            <span class="pill cream">Quantity</span>
+          </div>
+          <a href="unit2/v2.html" class="card-link">Open unit
+            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+          </a>
+        </article>
+
+        <!-- Unit 3 -->
+        <article class="unit-card" data-terms="term-1">
+          <div class="card-flag">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" fill="var(--mustard)"/>
+              <text x="30" y="38" text-anchor="middle" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--cream)">03</text>
+            </svg>
+            <span class="card-term">Term 1</span>
+          </div>
+          <h3 class="unit-title-sm">Imaginary Creatures</h3>
+          <p class="unit-tagline-sm">
+            Dragons, fairies, robots — descriptive writing with adjectives in the right order
+            and a CLIL mythology lab.
+          </p>
+          <div class="unit-pills">
+            <span class="pill clay">v2 Ready</span>
+            <span class="pill cream">Adjectives</span>
+          </div>
+          <a href="unit3/v2.html" class="card-link">Open unit
+            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+          </a>
+        </article>
+
+        <!-- Unit 4 -->
+        <article class="unit-card" data-terms="term-1">
+          <div class="card-flag">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" fill="var(--blush)"/>
+              <text x="30" y="38" text-anchor="middle" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--ink)">04</text>
+            </svg>
+            <span class="card-term">Term 1</span>
+          </div>
+          <h3 class="unit-title-sm">Holidays & Travel</h3>
+          <p class="unit-tagline-sm">
+            Packing lists, airports, postcards home. Comparatives &amp; superlatives with a
+            travel-blog writing frame.
+          </p>
+          <div class="unit-pills">
+            <span class="pill mustard">Flagship</span>
+            <span class="pill cream">Comparison</span>
+          </div>
+          <a href="unit4/v2.html" class="card-link">Open unit
+            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TEACHER ============================ -->
+  <section class="teacher-section" id="teacher">
+    <div class="section-inner narrow">
+      <div class="teacher-card">
+        <svg class="teacher-card-border" viewBox="0 0 800 600" preserveAspectRatio="none">
+          <path d="M14 30 Q 14 4, 40 4 L 760 4 Q 786 4, 786 30 L 786 570 Q 786 596, 760 596 L 40 596 Q 14 596, 14 570 Z"
+                fill="none" stroke="var(--clay)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 8"/>
+        </svg>
+        <div class="kicker centered">
+          <svg class="kicker-mark"><use href="#asterisk"/></svg>
+          <span>For the Teacher</span>
+        </div>
+        <h2 class="section-title centered">
+          Built for the classroom,<br>
+          <em>not just the browser.</em>
+        </h2>
+        <div class="teacher-grid">
+          <div class="teacher-pillar">
+            <div class="pillar-mark">
+              <svg viewBox="0 0 40 40"><use href="#asterisk"/></svg>
+            </div>
+            <h4>Printable packs</h4>
+            <p>Every module generates an ink-friendly A4 worksheet with name and date fields. Print, hand out, done.</p>
+          </div>
+          <div class="teacher-pillar">
+            <div class="pillar-mark sage">
+              <svg viewBox="0 0 24 24"><use href="#sparkle"/></svg>
+            </div>
+            <h4>Dual AI voices</h4>
+            <p>High-fidelity Sonia (British prosody) and classic Google TTS. Adjustable speed from 0.8× to 1.2×.</p>
+          </div>
+          <div class="teacher-pillar">
+            <div class="pillar-mark mustard">
+              <svg viewBox="0 0 24 24"><use href="#check"/></svg>
+            </div>
+            <h4>Can-Do portfolio</h4>
+            <p>Aligned with the textbook's self-assessment. Learners tick what they can do. Teachers see growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Photodentro &amp; Ministry of Education — English 6th Grade Modernization Project</div>
+      <div class="footer-meta">Created for ΣΤ΄ Δημοτικού · Digital Companion Framework · v2 Preview</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
