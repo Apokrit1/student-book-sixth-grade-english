@@ -1,7 +1,7 @@
 {
   "unit_id": 1,
   "unit_title": "Our Multicultural Class",
-  "cefr_level": "A2+",
+  "cefr_level": "A1+",
   "stories": [
     {
       "id": "ukraine",
@@ -32,7 +32,7 @@
           "desc": "High mountains in Ukraine."
         },
         {
-          "name": "River Dnipo",
+          "name": "River Dnipro (Coursebook: River Dnipo)",
           "type": "River",
           "word_key": "split (in two)",
           "word_id": 32,
@@ -57,7 +57,11 @@
         27,
         30,
         32
-      ]
+      ],
+      "book_check": {
+        "title": "Coursebook Names & Contemporary Geography",
+        "note": "The printed coursebook uses 'Moldavia' and 'River Dnipo'. In contemporary standard English, these are written as Moldova and the River Dnipro."
+      }
     },
     {
       "id": "albania",
@@ -117,7 +121,7 @@
       "id": "georgia",
       "student": "Georgi",
       "country": "Georgia",
-      "capital": "T’blisi",
+      "capital": "Tbilisi",
       "hometown": "T’blisi",
       "nationality": "Georgian",
       "flag": "🇬🇪",
@@ -142,7 +146,7 @@
           "desc": "Mountainous country with copper and coal mines, and oil wells."
         },
         {
-          "name": "T’blisi",
+          "name": "Tbilisi",
           "type": "Capital City",
           "word_key": "ancient",
           "word_id": 1,
@@ -166,7 +170,11 @@
         17,
         19,
         33
-      ]
+      ],
+      "book_check": {
+        "title": "Capital City Romanization",
+        "note": "The printed coursebook writes 'T’blisi'. Modern standard English Romanization is Tbilisi."
+      }
     },
     {
       "id": "uk",
@@ -221,7 +229,11 @@
         27,
         30,
         34
-      ]
+      ],
+      "book_check": {
+        "title": "Sociocultural Language Note",
+        "note": "The printed coursebook uses the phrasing 'different countries and races'. In modern English, we describe multicultural societies as welcoming people from diverse cultures, heritages, and backgrounds."
+      }
     }
   ],
   "grammar_lab": {
@@ -813,7 +825,37 @@
         ],
         "sample_starter": "I think Greece is one of the most inspiring places to live and visit because ancient history and modern culture blend harmoniously together."
       }
-    ]
+    ],
+    "level1_factfile": {
+      "title": "Level 1: Core Country Factfile (1–2 Paragraphs)",
+      "description": "Essential Unit 1 writing task: Describe a country's location, capital, key landforms, and climate.",
+      "paragraphs": [
+        {
+          "number": 1,
+          "heading": "Location, Capital & Borders",
+          "guiding_questions": "Where is the country located? What is its capital city? Which countries and seas border it?",
+          "connectors": [
+            "is located in",
+            "the capital is",
+            "shares borders with",
+            "to the north/south"
+          ],
+          "sample_starter": "Greece is located in Southeastern Europe. The capital city is Athens. It shares borders with Albania, North Macedonia, Bulgaria, and Turkey, and it is surrounded by the Aegean, Ionian, and Mediterranean Seas."
+        },
+        {
+          "number": 2,
+          "heading": "Landscape, Climate & Lifestyle",
+          "guiding_questions": "What landforms does it have (mountains, plains, islands)? What is the weather like? What do people do?",
+          "connectors": [
+            "has got many",
+            "in summer/winter",
+            "people usually",
+            "famous for"
+          ],
+          "sample_starter": "The country has got high mountains and beautiful islands. In summer the weather is warm and sunny, while winters are mild. People usually enjoy outdoor activities and welcoming visitors from all over the world."
+        }
+      ]
+    }
   },
   "teacher_notes": [
     {

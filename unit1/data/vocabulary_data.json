@@ -9,7 +9,8 @@
     "meaning_gr": "αρχαίος, πανάρχαιος",
     "definition_en": "very old, from a time thousands of years ago, like ancient Greece",
     "example": "The Parthenon is a famous ancient monument in Athens.",
-    "category": "History & Culture"
+    "category": "History & Culture",
+    "tier": "core"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "meaning_gr": "σύνορο, μεθόριος / συνορεύω",
     "definition_en": "the line where one country ends and the next one begins",
     "example": "Greece shares a northern border with Albania, North Macedonia, and Bulgaria.",
-    "category": "Geography"
+    "category": "Geography",
+    "tier": "core"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "meaning_gr": "γενναίος, θαρραλέος",
     "definition_en": "not afraid of danger or of difficult things",
     "example": "The brave firefighter saved the cat from the burning building.",
-    "category": "Personality"
+    "category": "Personality",
+    "tier": "core"
   },
   {
     "id": 4,
@@ -51,7 +54,8 @@
     "image_source": "Wikimedia Commons, Grapefruit (Citrus paradisi) with pink flesh, א (Aleph) and raeky, CC BY-SA 2.5, https://creativecommons.org/licenses/by-sa/2.5",
     "image_credit": "א (Aleph) / raeky / Wikimedia Commons / CC BY-SA 2.5",
     "image_file": "File:Citrus paradisi (Grapefruit, pink) white bg.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 5,
@@ -69,7 +73,8 @@
     "image_source": "Wikimedia Commons, Surface coal mine detail, Gillette, Wyoming, Greg Goebel, CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0",
     "image_credit": "Greg Goebel / Wikimedia Commons / CC BY-SA 2.0",
     "image_file": "File:Surface coal mine detail, Gillette, Wyoming.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
     "image_source": "Wikimedia Commons, Rocky Coast El Houaria Tunisia, Aymen FANTAR, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Aymen FANTAR / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Rocky Coast El Houaria Tunisia.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 7,
@@ -99,7 +105,8 @@
     "meaning_gr": "περιλαμβάνω, αποτελούμαι από",
     "definition_en": "to be made up of two or more parts",
     "example": "The European Union comprises twenty-seven member countries.",
-    "category": "General"
+    "category": "General",
+    "tier": "extension"
   },
   {
     "id": 8,
@@ -111,7 +118,8 @@
     "meaning_gr": "συνδέω, ενώνω",
     "definition_en": "to join two things together",
     "example": "You need a Wi-Fi cable or router to connect your computer to the internet.",
-    "category": "Technology"
+    "category": "Technology",
+    "tier": "core"
   },
   {
     "id": 9,
@@ -129,7 +137,8 @@
     "image_source": "Wikimedia Commons, Electric guide 3×2.5 mm, Petar Milošević, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Petar Milošević / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Electric guide 3×2.5 mm.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 10,
@@ -141,7 +150,8 @@
     "meaning_gr": "αντιγράφω / αντίγραφο",
     "definition_en": "to make another one that is exactly the same",
     "example": "Press Control and C on your keyboard to copy the text into the clipboard.",
-    "category": "Technology"
+    "category": "Technology",
+    "tier": "extension"
   },
   {
     "id": 11,
@@ -153,7 +163,8 @@
     "meaning_gr": "σεισμός, δόνηση της γης",
     "definition_en": "when the ground shakes suddenly and strongly",
     "example": "During an earthquake, remember to duck under a sturdy desk.",
-    "category": "Nature & Disasters"
+    "category": "Nature & Disasters",
+    "tier": "core"
   },
   {
     "id": 12,
@@ -165,7 +176,8 @@
     "meaning_gr": "ρέω, κυλώ / ροή",
     "definition_en": "to move like the water in a river",
     "example": "The River Dnipro flows smoothly across the country towards the Black Sea.",
-    "category": "Geography"
+    "category": "Geography",
+    "tier": "core"
   },
   {
     "id": 13,
@@ -183,7 +195,8 @@
     "image_source": "Wikimedia Commons, Jason and the Golden Fleece by Peter Paul Rubens, Yair Haklai, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Peter Paul Rubens / Yair Haklai / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Jason and the Golden Fleece by Peter Paul Rubens.jpg",
-    "image_modified": "cropped gilded museum frame, scaled to 768px, converted to webp"
+    "image_modified": "cropped gilded museum frame, scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 14,
@@ -201,7 +214,8 @@
     "image_source": "Wikimedia Commons, Flute with musicial notes, Petar Milošević, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Petar Milošević / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Flute with musicial notes.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 15,
@@ -213,7 +227,8 @@
     "meaning_gr": "αξιοθέατο, ορόσημο",
     "definition_en": "a building or place that is easy to know again, and helps you find your way",
     "example": "The Eiffel Tower is the most recognizable landmark in Paris.",
-    "category": "Geography & Travel"
+    "category": "Geography & Travel",
+    "tier": "extension"
   },
   {
     "id": 16,
@@ -231,7 +246,8 @@
     "image_source": "Wikimedia Commons, Tuscan Landscape 7, Martin Falbisoner, CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0",
     "image_credit": "Martin Falbisoner / Wikimedia Commons / CC BY-SA 3.0",
     "image_file": "File:Tuscan Landscape 7.JPG",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 17,
@@ -243,7 +259,8 @@
     "meaning_gr": "ήπιος, γλυκός (για καιρό)",
     "definition_en": "not very cold and not very hot",
     "example": "Mediterranean countries usually enjoy a mild and pleasant winter climate.",
-    "category": "Weather & Climate"
+    "category": "Weather & Climate",
+    "tier": "core"
   },
   {
     "id": 18,
@@ -255,7 +272,8 @@
     "meaning_gr": "μόριο (στη χημεία/φυσική)",
     "definition_en": "the smallest piece of water, air or anything else; it is made of atoms",
     "example": "A water molecule is composed of two hydrogen atoms and one oxygen atom.",
-    "category": "Science & Lab"
+    "category": "Science & Lab",
+    "tier": "extension"
   },
   {
     "id": 19,
@@ -273,7 +291,8 @@
     "image_source": "Wikimedia Commons, Hiking on Mount Olympus 54, Anastasiya Lvova, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Anastasiya Lvova / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Hiking on Mount Olympus 54.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 20,
@@ -285,7 +304,8 @@
     "meaning_gr": "πολυπολιτισμικός",
     "definition_en": "with people from many different countries and cultures",
     "example": "Our multicultural class has pupils from Ukraine, Georgia, Albania, and Greece.",
-    "category": "Society & People"
+    "category": "Society & People",
+    "tier": "core"
   },
   {
     "id": 21,
@@ -297,7 +317,8 @@
     "meaning_gr": "φυσική καταστροφή",
     "definition_en": "something very bad that nature does, like an earthquake or a flood",
     "example": "Floods, earthquakes, and forest fires are serious types of natural disaster.",
-    "category": "Nature & Disasters"
+    "category": "Nature & Disasters",
+    "tier": "core"
   },
   {
     "id": 22,
@@ -309,7 +330,8 @@
     "meaning_gr": "πυρηνικός σταθμός παραγωγής ενέργειας",
     "definition_en": "a place that makes electricity from the energy inside atoms",
     "example": "Ukraine has several nuclear power plants that make electricity.",
-    "category": "Industry & Resources"
+    "category": "Industry & Resources",
+    "tier": "core"
   },
   {
     "id": 23,
@@ -327,7 +349,8 @@
     "image_source": "Wikimedia Commons, Gnitz (Usedom), Ölförderpumpe -- 2010 -- 2673, Dietmar Rabich, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Gnitz (Usedom), Ölförderpumpe -- 2010 -- 2673.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 24,
@@ -339,7 +362,8 @@
     "meaning_gr": "εξωστρεφής, κοινωνικός",
     "definition_en": "someone who likes meeting and talking to new people",
     "example": "Nikos is an outgoing boy who quickly makes new friends at school.",
-    "category": "Personality"
+    "category": "Personality",
+    "tier": "core"
   },
   {
     "id": 25,
@@ -351,7 +375,8 @@
     "meaning_gr": "επικολλούν, κάνω επικόλληση",
     "definition_en": "to put text or a picture that you have copied into another place",
     "example": "First copy the picture, and then paste it into your presentation slide.",
-    "category": "Technology"
+    "category": "Technology",
+    "tier": "extension"
   },
   {
     "id": 26,
@@ -369,7 +394,8 @@
     "image_source": "Wikimedia Commons, The Peloponnese from ISS, NASA / ISS Expedition 59, Public domain",
     "image_credit": "NASA / ISS Expedition 59 / Wikimedia Commons / Public domain",
     "image_file": "File:The Peloponnese from ISS.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   },
   {
     "id": 27,
@@ -387,7 +413,8 @@
     "image_source": "Wikimedia Commons, Plain of Thessaly, Robin Rönnlund, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Robin Rönnlund / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Plain of Thessaly.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 28,
@@ -399,7 +426,8 @@
     "meaning_gr": "εκτυπώνω / εκτύπωση",
     "definition_en": "to put words or pictures from a computer onto paper",
     "example": "Can you please print three copies of the geography project for our team?",
-    "category": "Technology"
+    "category": "Technology",
+    "tier": "extension"
   },
   {
     "id": 29,
@@ -411,7 +439,8 @@
     "meaning_gr": "φυλή (ανθρώπινη) / αγώνας ταχύτητας",
     "definition_en": "a large group of people whose families come from the same part of the world",
     "example": "People of every race and background live together peacefully in modern cities.",
-    "category": "Society & People"
+    "category": "Society & People",
+    "tier": "core"
   },
   {
     "id": 30,
@@ -429,7 +458,8 @@
     "image_source": "Wikimedia Commons, The Brynica River flowing through meadows on the border of Sosnowiec and Katowice in the morning, Krzysztof Popławski, CC BY 4.0, https://creativecommons.org/licenses/by/4.0",
     "image_credit": "Krzysztof Popławski / Wikimedia Commons / CC BY 4.0",
     "image_file": "File:The Brynica River flowing through meadows on the border of Sosnowiec and Katowice in the morning.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 31,
@@ -441,7 +471,8 @@
     "meaning_gr": "αναζητώ, ψάχνω / αναζήτηση",
     "definition_en": "to look carefully for something you want to find",
     "example": "Pupils use the school tablets to search for information about European geography.",
-    "category": "Technology"
+    "category": "Technology",
+    "tier": "extension"
   },
   {
     "id": 32,
@@ -453,7 +484,8 @@
     "meaning_gr": "χωρίζω σε, διασπώ σε μέρη",
     "definition_en": "to break something into two parts",
     "example": "The mighty river flows south, splitting the capital city in two halves.",
-    "category": "General"
+    "category": "General",
+    "tier": "extension"
   },
   {
     "id": 33,
@@ -465,7 +497,8 @@
     "meaning_gr": "θερμοκρασία",
     "definition_en": "how hot or how cold something is",
     "example": "In summer, the afternoon temperature often reaches thirty-five degrees Celsius.",
-    "category": "Weather & Climate"
+    "category": "Weather & Climate",
+    "tier": "core"
   },
   {
     "id": 34,
@@ -483,7 +516,8 @@
     "image_source": "Wikimedia Commons, Gallito (Stephanolepis hispidus), franja marina Teno-Rasca, Tenerife, España, 2022-01-06, DD 16, Diego Delso, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Gallito (Stephanolepis hispidus), franja marina Teno-Rasca, Tenerife, España, 2022-01-06, DD 16.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "core"
   },
   {
     "id": 35,
@@ -501,6 +535,7 @@
     "image_source": "Wikimedia Commons, Benasque - Anciles - Grifo 01, Basotxerri, CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0",
     "image_credit": "Basotxerri / Wikimedia Commons / CC BY-SA 4.0",
     "image_file": "File:Benasque - Anciles - Grifo 01.jpg",
-    "image_modified": "scaled to 768px, converted to webp"
+    "image_modified": "scaled to 768px, converted to webp",
+    "tier": "extension"
   }
 ]

@@ -1,5 +1,5 @@
 /**
- * The Companion — Modernization Preview (rev 2)
+ * The Modernized Coursebook — Preview (rev 3)
  * Image swap · Staggered scroll-in · Filter logic · Hero parallax
  */
 
@@ -18,16 +18,14 @@
       if (fallback) fallback.style.display = 'none';
       featuredArt.appendChild(img);
     };
-    img.onerror = () => {
-      // keep fallback
-    };
+    img.onerror = () => {};
   }
 
   // ----- Staggered scroll-in animation -----
   const cards = Array.from(document.querySelectorAll('.unit-split'));
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry, idx) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const el = entry.target;
           const i = cards.indexOf(el);
@@ -73,17 +71,16 @@
           if (show) visibleCards.push(card);
         });
 
-        // Re-trigger stagger animation on visible cards
         visibleCards.forEach((c, i) => {
           c.classList.remove('visible');
-          void c.offsetWidth; // reflow
+          void c.offsetWidth;
           setTimeout(() => c.classList.add('visible'), i * 70);
         });
       });
     });
   }
 
-  // ----- Subtle parallax on hero art (scroll) -----
+  // ----- Subtle parallax on hero art -----
   const heroArt = document.querySelector('.hero-art');
   if (heroArt) {
     let ticking = false;

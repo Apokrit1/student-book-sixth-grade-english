@@ -2609,3 +2609,55 @@ body {
     page-break-inside: avoid !important;
   }
 }
+
+/* Syllabus & Curriculum Transparency Badges (U1-07) */
+.syllabus-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.syllabus-pill.core {
+  background: #ebf8ff;
+  color: #2b6cb0;
+  border: 1px solid #bee3f8;
+}
+.syllabus-pill.clil {
+  background: #faf5ff;
+  color: #6b46c1;
+  border: 1px solid #e9d8fd;
+}
+.syllabus-pill.elp {
+  background: #f0fff4;
+  color: #276749;
+  border: 1px solid #c6f6d5;
+}
+
+.tab-badge-pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 9999px;
+  margin-left: 4px;
+}
+.tab-badge-pill.core {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+.tab-badge-pill.clil {
+  background: #faf5ff;
+  color: #6b46c1;
+}
+.tab-badge-pill.dual {
+  background: #fffaf0;
+  color: #c05621;
+}
+.tab-badge-pill.elp {
+  background: #f0fff4;
+  color: #276749;
+}

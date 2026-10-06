@@ -85,28 +85,28 @@
       <!-- Main Module Navigation Tabs -->
       <nav class="v2-nav-tabs" role="tablist" aria-label="Version 2 Learning Modules">
         <button class="v2-tab active" data-tab="stories" role="tab" aria-selected="true">
-          <span class="tab-icon">🌍</span> Country Dossiers
+          <span class="tab-icon">🌍</span> Country Dossiers <span class="tab-badge-pill core">Core</span>
         </button>
         <button class="v2-tab" data-tab="grammar" role="tab" aria-selected="false">
-          <span class="tab-icon">🧪</span> Grammar Lab
+          <span class="tab-icon">🧪</span> Grammar Lab <span class="tab-badge-pill core">Core</span>
         </button>
         <button class="v2-tab" data-tab="collocations" role="tab" aria-selected="false">
-          <span class="tab-icon">🧩</span> Collocations & Geography Clues
+          <span class="tab-icon">🧩</span> Collocations &amp; Clues <span class="tab-badge-pill clil">CLIL</span>
         </button>
         <button class="v2-tab" data-tab="report" role="tab" aria-selected="false">
-          <span class="tab-icon">✍️</span> 5-Paragraph Report Builder
+          <span class="tab-icon">✍️</span> Report Builder <span class="tab-badge-pill dual">Dual</span>
         </button>
         <button class="v2-tab" data-tab="challenges" role="tab" aria-selected="false">
-          <span class="tab-icon">🎧</span> Challenge Arena
+          <span class="tab-icon">🎧</span> Challenge Arena <span class="tab-badge-pill clil">CLIL</span>
         </button>
         <button class="v2-tab" data-tab="worksheets" role="tab" aria-selected="false">
-          <span class="tab-icon">🖨️</span> Printable Worksheets
+          <span class="tab-icon">🖨️</span> Worksheets <span class="tab-badge-pill core">Core</span>
         </button>
         <button class="v2-tab" data-tab="passport" role="tab" aria-selected="false">
-          <span class="tab-icon">🎖️</span> Can-Do Passport
+          <span class="tab-icon">🎖️</span> Can-Do Passport <span class="tab-badge-pill elp">ELP</span>
         </button>
         <button class="v2-tab" data-tab="workbook" role="tab" aria-selected="false">
-          <span class="tab-icon">📓</span> Workbook
+          <span class="tab-icon">📓</span> Workbook <span class="tab-badge-pill core">Core</span>
         </button>
       </nav>
 
@@ -123,7 +123,7 @@
       <section id="panel-stories" class="v2-panel active">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🌍 Meeting the Newcomers: Interactive Country Dossiers</h2>
+            <h2 class="panel-title">🌍 Meeting the Newcomers: Interactive Country Dossiers <span class="syllabus-pill core">Core Syllabus</span></h2>
             <p class="panel-desc">Listen to Sasha, Christina, Georgi, and Gwen introduce their homelands, geography, and cultures. Click map landmarks and vocabulary callouts to hear authentic pronunciations.</p>
           </div>
           <div class="panel-actions">
@@ -195,7 +195,7 @@
       <section id="panel-grammar" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🧪 Grammar in Action: Routines vs. Right Now</h2>
+            <h2 class="panel-title">🧪 Grammar in Action: Routines vs. Right Now <span class="syllabus-pill core">Core Syllabus</span></h2>
             <p class="panel-desc">Master the contrast between the Present Simple (habits, frequency adverbs) and the Present Continuous (actions happening right now in the school lab).</p>
           </div>
           <div class="panel-actions">
@@ -332,7 +332,7 @@
       <section id="panel-collocations" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🧩 Geography Collocations & Clue Challenge</h2>
+            <h2 class="panel-title">🧩 Geography Collocations &amp; Clue Challenge <span class="syllabus-pill clil">CLIL Lab</span></h2>
             <p class="panel-desc">English words live in partnerships! Connect verbs with their natural noun partners, and solve the Geography Clue Challenge (Guess the Word from its Definition).</p>
           </div>
           <div class="panel-actions">
@@ -385,8 +385,8 @@
       <section id="panel-report" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">✍️ The 5-Paragraph Country Report Builder</h2>
-            <p class="panel-desc">Follow Gwen's model (Lesson 3) to compose an official European Class Portfolio report. Use guided connectors, paragraph checklists, and export your completed report to PDF/Print!</p>
+            <h2 class="panel-title">✍️ Country Report Builder — Dual Scaffold <span class="syllabus-pill core">Core &amp; Extended</span></h2>
+            <p class="panel-desc">Choose between Level 1: Core Factfile (1–2 Paragraphs) or Level 2: Extended Portfolio Report (5 Paragraphs). Use guided connectors, paragraph checklists, and export your completed report to PDF/Print!</p>
           </div>
           <div class="panel-actions">
             <button class="btn-print-module" data-sheet="4">
@@ -396,6 +396,15 @@
         </div>
 
         <div class="report-builder-wrap">
+          <!-- Level Selector (Dual Scaffold U1-12) -->
+          <div class="report-level-selector no-print" style="margin-bottom: 14px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="report-level-btn active" id="btnReportLevel1" data-level="1" style="padding: 8px 16px; font-size: 0.88rem; font-weight: 700; border-radius: 9999px; border: 1px solid #cbd5e0; background: #2b6cb0; color: #fff; cursor: pointer;">
+              🌱 Level 1: Core Factfile (1–2 Paragraphs)
+            </button>
+            <button class="report-level-btn" id="btnReportLevel2" data-level="2" style="padding: 8px 16px; font-size: 0.88rem; font-weight: 700; border-radius: 9999px; border: 1px solid #cbd5e0; background: #edf2f7; color: #4a5568; cursor: pointer;">
+              🚀 Level 2: Extended Project (5 Paragraphs)
+            </button>
+          </div>
           <!-- Country Target Selector -->
           <div class="report-target-selector no-print">
             <label for="reportCountryInput">Country Subject:</label>
@@ -433,7 +442,7 @@
       <section id="panel-challenges" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🎧 Challenge Arena: 4 Formative Ear-Training Games</h2>
+            <h2 class="panel-title">🎧 Challenge Arena: 4 Formative Ear-Training Games <span class="syllabus-pill clil">CLIL Lab</span></h2>
             <p class="panel-desc">Hone your listening comprehension and geographical deduction across four interactive game modes.</p>
           </div>
           <div class="panel-actions">
@@ -496,7 +505,7 @@
       <section id="panel-worksheets" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🖨️ Complete Printable Classroom Worksheets Pack</h2>
+            <h2 class="panel-title">🖨️ Complete Printable Classroom Worksheets Pack <span class="syllabus-pill core">Core &amp; Extension</span></h2>
             <p class="panel-desc">All 5 activity worksheets formatted for crisp A4 paper printing and PDF download. Perfect for classroom handouts, homework assignments, and physical student portfolios.</p>
           </div>
           <div class="panel-actions">
@@ -527,12 +536,12 @@
       <section id="panel-passport" class="v2-panel">
         <div class="panel-header-box no-print">
           <div>
-            <h2 class="panel-title">🎖️ CEFR Learner Autonomy & "Can-Do" Passport</h2>
-            <p class="panel-desc">Track your mastery of the four official Unit 1 learning milestones. Complete the checklist to unlock your personalized Junior Linguist & Geographer Certificate!</p>
+            <h2 class="panel-title">🎖️ CEFR Learner Autonomy &amp; "Can-Do" Passport <span class="syllabus-pill elp">ELP Reflection</span></h2>
+            <p class="panel-desc">Reflect on your progress across the four official Unit 1 learning milestones. Complete the reflection checklist to unlock your personalized Junior Linguist &amp; Geographer Learning Record!</p>
           </div>
           <div class="panel-actions">
             <button class="print-action-btn" id="btnPrintCertificate">
-              <span>🏆</span> Print Official Certificate
+              <span>📄</span> Print Learning Record
             </button>
           </div>
         </div>
@@ -541,7 +550,7 @@
           <!-- Can-Do Checklist -->
           <div class="passport-checklist-card">
             <h3>📋 My Unit 1 Can-Do Statements</h3>
-            <p>Tick each statement as you demonstrate mastery during classroom or home study:</p>
+            <p>Tick each statement as you demonstrate progress during classroom or home study:</p>
 
             <div class="can-do-list" id="canDoList">
               <label class="can-do-item">
@@ -569,14 +578,14 @@
                 <input type="checkbox" id="check4" data-badge="writing">
                 <div class="can-do-content">
                   <strong>4. Structured Genre Writing:</strong>
-                  <span>I can write a structured 5-paragraph country report using connectors like "and", "but", and "so" for my European school portfolio.</span>
+                  <span>I can write a structured country report using connectors like "and", "but", and "so" for my European school portfolio.</span>
                 </div>
               </label>
             </div>
 
             <div class="passport-progress-bar-wrap">
               <div class="progress-bar-label">
-                <span>Unit Mastery:</span>
+                <span>Reflection Progress:</span>
                 <strong id="passportProgressPct">0% Complete</strong>
               </div>
               <div class="progress-bar-track">
@@ -585,19 +594,19 @@
             </div>
           </div>
 
-          <!-- Certificate Preview Card -->
+          <!-- Learning Record Preview Card -->
           <div class="certificate-card" id="certificateCard">
             <div class="cert-border">
               <div class="cert-header">
                 <span class="cert-crest">🇬🇷 🇪🇺</span>
                 <h4>Greek Ministry of Education • English 6th Grade Primary</h4>
-                <h3>Certificate of Unit Mastery</h3>
+                <h3>Unit 1 Learning Record &amp; Can-Do Reflection</h3>
               </div>
               <p class="cert-body">
-                This is to certify that
+                This is to record that
                 <span class="cert-student-name" id="certStudentName">_______________________</span>
-                has successfully achieved all CEFR A2+ learning milestones for
-                <strong>Unit 1: Our Multicultural Class</strong>.
+                has completed the Unit 1 learning and reflection activities for
+                <strong>Unit 1: Our Multicultural Class</strong> (Target CEFR: A1+).
               </p>
               <div class="cert-badges-row">
                 <span class="cert-badge" id="badgeGeo">🗺️ Geographer</span>
@@ -619,7 +628,7 @@
         <div class="panel-header-box">
           <div class="header-left">
             <span class="panel-tag">Interactive Activity Book • All 15 Activities</span>
-            <h2 class="panel-title">Unit 1 Workbook Companion</h2>
+            <h2 class="panel-title">Unit 1 Workbook Companion <span class="syllabus-pill core">Core Syllabus</span></h2>
             <p class="panel-desc">All 15 official activities in printed book order (pp. 6–13) with instant self-checking, rule validation, writing scaffolding checklists, and clean A4 printable worksheets.</p>
           </div>
           <div class="header-right-actions">

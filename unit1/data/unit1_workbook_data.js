@@ -219,7 +219,7 @@ window.UNIT1_WORKBOOK_DATA = {
       "title": "A. Vocabulary — 3. Name of Each School Subject",
       "page": 2,
       "type": "closed",
-      "instruction": "Write the name of each school subject under each picture.",
+      "instruction": "Write the name of each school subject under each picture. (Choose 4 from the 8-word bank)",
       "word_bank": [
         "Maths",
         "Science",
@@ -267,7 +267,8 @@ window.UNIT1_WORKBOOK_DATA = {
             "Music"
           ]
         }
-      ]
+      ],
+      "teacher_note": "Fidelity note: Retains the complete 8-word bank from printed Workbook p. 2 with 4 intentional pedagogical distractors to prevent process-of-elimination guessing."
     },
     {
       "id": "b1-I",
@@ -296,7 +297,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "the baby.",
           "accepted": [
             "is looking after",
-            "looks after",
             "'s looking after"
           ],
           "key_answer": "is looking after"
@@ -308,7 +308,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "on the phone.",
           "accepted": [
             "is talking",
-            "talks",
             "'s talking"
           ],
           "key_answer": "is talking"
@@ -320,7 +319,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "a letter to her pen-friend.",
           "accepted": [
             "is writing",
-            "writes",
             "'s writing"
           ],
           "key_answer": "is writing"
@@ -332,7 +330,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "his favourite TV series.",
           "accepted": [
             "is watching",
-            "watches",
             "'s watching"
           ],
           "key_answer": "is watching"
@@ -344,7 +341,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "in their armchairs.",
           "accepted": [
             "are sitting",
-            "sit",
             "'re sitting"
           ],
           "key_answer": "are sitting"
@@ -356,7 +352,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "",
           "accepted": [
             "is sleeping",
-            "sleeps",
             "'s sleeping"
           ],
           "key_answer": "is sleeping"
@@ -368,7 +363,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "a pair of socks for the baby.",
           "accepted": [
             "is knitting",
-            "knits",
             "'s knitting"
           ],
           "key_answer": "is knitting"
@@ -380,7 +374,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "suffix": "after a ball.",
           "accepted": [
             "is running",
-            "runs",
             "'s running"
           ],
           "key_answer": "is running"
@@ -629,7 +622,6 @@ window.UNIT1_WORKBOOK_DATA = {
             "'m making",
             "am preparing",
             "'m preparing",
-            "make",
             "I'm making",
             "I am making"
           ],
@@ -655,7 +647,6 @@ window.UNIT1_WORKBOOK_DATA = {
           "accepted": [
             "am putting",
             "'m putting",
-            "put",
             "I'm putting",
             "I am putting"
           ],
@@ -896,14 +887,22 @@ window.UNIT1_WORKBOOK_DATA = {
           "id": "chk_location",
           "label": "Location (Where are you staying?)",
           "keywords": [
-            "in",
-            "at",
-            "town",
+            "in greece",
+            "in athens",
+            "at a hotel",
+            "in a hotel",
+            "on an island",
+            "in a village",
+            "in a town",
+            "in a city",
+            "hotel",
             "island",
-            "city",
             "village",
+            "town",
+            "city",
             "greece",
-            "hotel"
+            "athens",
+            "naxos"
           ]
         },
         {
@@ -1227,12 +1226,21 @@ window.UNIT1_WORKBOOK_DATA = {
           "id": "chk_routine",
           "label": "Routine expressions (every day, twice a week, on Mondays...)",
           "keywords": [
-            "on",
-            "have",
-            "every",
-            "week",
+            "every day",
+            "every morning",
+            "every week",
+            "three times a week",
+            "twice a week",
+            "once a week",
+            "on monday",
+            "on tuesdays",
+            "on wednesday",
+            "on thursdays",
+            "on friday",
             "classes",
-            "lessons"
+            "lessons",
+            "schedule",
+            "timetable"
           ]
         }
       ],

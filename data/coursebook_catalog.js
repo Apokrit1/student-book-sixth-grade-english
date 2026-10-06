@@ -1,7 +1,7 @@
 window.COURSEBOOK_CATALOG = {
   "title": "English 6th Grade — Digital Coursebook Companion (ΣΤ΄ Δημοτικού)",
   "curriculum": "Greek Ministry of Education (DEPPS-APS) / ITYE Diophantus",
-  "level": "CEFR A1 / A1+",
+  "level": "CEFR A1+ (Bridge to A2)",
   "target_audience": "11-12 year old EFL Primary Learners & Teachers",
   "teacher_syllabus_notice": "Note for Teachers & Authors: Unit titles, grammatical foci, and themes for Units 2–10 represent preliminary syllabus mapping and should be verified against the physical 6th Grade Coursebook and Teacher's Book before authoring content for those units.",
   "total_units": 10,

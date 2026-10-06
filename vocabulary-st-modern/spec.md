@@ -1,34 +1,50 @@
-# English 6th Grade — "The Companion" · Design Spec (rev 2)
+# English 6th Grade — The Modernized Coursebook · Design Spec (rev 3)
 
 ## Project Context
 
 **English 6th Grade (ΣΤ΄ Δημοτικού)** — official curriculum of the Greek Ministry of Education (DEPPS-APS / ITYE Diophantus).
 
-**Two artifacts, one journey:**
+**The site is the coursebook.** It is not a reference to a PDF. The site itself replaces the printed textbook and teaches the entire syllabus — every lesson, every reading, every listening task, every grammar target, every cultural and cross-curricular thread.
 
-| | What it is | Where it lives |
-|---|---|---|
-| **v1 — The Coursebook** | The official, printed 2006 English coursebook — Pupil's Book, Workbook, Teacher's Book, audio CD. Authoritative curriculum content, CEFR A1 / A1+. | `st_unit*.pdf`, paper textbook |
-| **v2 — The Companion** | A digital companion that lives next to the coursebook — adds CLIL stories, dual-voice TTS, inductive grammar labs, and printable worksheets. Built to *play with* the book, not replace it. | `unit*/v2.html`, `unit*/index.html` |
-
-**Brand promise:** *The Companion never claims to be the coursebook. It sits beside it, brings it to life, and gets out of the way.*
+**The Companion is the vocabulary layer.** A focused, vocabulary-only module that lives next to each unit. It is the **only place where Greek lexical items are allowed and practiced**. The rest of the coursebook is fully in English, by design. The Companion is the bridge that lets a Greek-speaking learner map new English words onto the Greek they already know.
 
 ---
 
-## Concept: A Companion, Not a Replacement
+## Two things, one site
 
-The page is positioned as a **vocabulary companion** to a **legacy coursebook**. Every element of the design reinforces this duality:
+| | What it is | Where it lives |
+|---|---|---|
+| **The Coursebook** | The whole year of English 6, fully online. Every unit, every lesson. Grammar, reading, listening, culture, cross-curricular links, worksheets. 100% in English. | This site. Every page is a lesson. |
+| **The Companion** | A vocabulary-only layer attached to each unit. The **only** place Greek lexical items appear and are practiced. Vocabulary + activities on vocabulary. Greek translations, Greek-friendly prompts, lexical-pairing drills. | `unit*/index.html` (vocab lab per unit) |
 
-- **The coursebook side** feels printed, established, slightly nostalgic — paper texture, page numbers, the typography of a schoolbook, dashed lines like a margin ruler.
-- **The companion side** feels warm, modern, hand-drawn — terracotta and sage, bouncy motion, illustrated kids, the friend who helps you with the reading.
+**Brand promise:** *The Coursebook teaches English in English. The Companion is the one place Greek belongs.*
 
-The two are never blended into a gray middle. They sit side by side, each clearly itself.
+---
+
+## Concept: One Modernized Coursebook, with a Vocabulary Companion
+
+The page positions the site as the **modernized coursebook itself** — not a complement to a printed book, but the coursebook. Every unit card shows a real lesson the student will do in the browser.
+
+The Companion is presented as a focused, clearly-bounded feature: a vocabulary companion. It is *not* a replacement for anything; it is the bridge between Greek (what they know) and English (what they're learning). Greek appears nowhere else.
+
+This shift changes everything:
+
+- The site no longer references PDFs. The coursebook lives here.
+- Vocabulary work is presented as a *Greek-English bridge*, with the Greek explicitly visible.
+- The Companion feels like a focused sub-product, with its own scope and identity.
 
 ---
 
 ## Visual Direction: Modern Educational Playful
 
-Bright, hand-drawn illustration feel; bouncy motion; rounded shapes; warm earthy palette. The Companion is optimistic and inviting without being babyish.
+Bright, hand-drawn illustration feel; bouncy motion; rounded shapes; warm earthy palette.
+
+Two-tone visual identity reinforces the duality:
+
+- **Coursebook** = cream/paper/warm-ink, dashed lines, "official" feel — feels like a textbook that's been modernized
+- **Companion** = paper-white/terracotta, sage accents, hand-drawn sparkles — feels like a vocabulary notebook with a friendly Greek-English translator
+
+Greek text uses a clean serif (Fraunces italic) inside the Companion — the Greek letters feel like a respected old friend, not an intrusion.
 
 ---
 
@@ -36,93 +52,104 @@ Bright, hand-drawn illustration feel; bouncy motion; rounded shapes; warm earthy
 
 | Token | Hex | Role |
 |---|---|---|
-| `--clay` | `#C8553D` | Companion primary — CTAs, "v2" tags |
+| `--clay` | `#C8553D` | Companion primary — CTAs, "v2" tags, vocabulary cards |
 | `--clay-soft` | `#E0836E` | Hover state |
-| `--sage` | `#7A9471` | v2 Ready badge, secondary accent |
+| `--sage` | `#7A9471` | Secondary accent |
 | `--sage-deep` | `#4F6A4A` | Pressed states |
-| `--paper` | `#FFFDF8` | Card surface (Companion side) |
-| `--paper-cream` | `#F6EFDF` | Coursebook page surface (v1 side) |
+| `--paper` | `#FFFDF8` | Companion / vocabulary card surface |
+| `--paper-cream` | `#F6EFDF` | Coursebook lesson surface (cream + ruled lines) |
 | `--cream` | `#FAF3E7` | Page background |
 | `--ink` | `#2D2A26` | Body text |
 | `--charcoal` | `#1B1916` | Display headlines |
-| `--mustard` | `#D4A24C` | Highlights, "Companion" badge |
+| `--mustard` | `#D4A24C` | Companion "Greek allowed" highlight |
 | `--blush` | `#F4C6B8` | Soft fills |
 | `--dust` | `#C8B79C` | Hairlines, ruled lines |
-
-**Two accent colors carry the duality:**
-- Coursebook (v1): **dust + ink** — printed-paper feel
-- Companion (v2): **clay + sage + mustard** — modern hand-drawn feel
 
 ---
 
 ## Typography
 
-- **Display (Companion headlines)**: **Fraunces** — variable serif, weight 700–900, opsz 144, SOFT 100. Warm, scholarly, slightly chunky.
-- **Coursebook labels**: **Fraunces** italic at smaller sizes — feels like the spine of a book.
-- **Body**: **Inter** — clean sans, weight 400/500/600.
-- **Mono / labels**: **JetBrains Mono** — for unit numbers, page references, term pills.
+- **Display**: **Fraunces** variable serif, weight 700–900, opsz 144, SOFT 100
+- **Body**: **Inter** — clean sans, weight 400/500/600
+- **Greek text in the Companion**: **Fraunces Italic** — same family as English, just italicized to read as "the other language"
+- **Mono / labels**: **JetBrains Mono** — for unit numbers, page refs, term pills
 
 ---
 
 ## Hero Section — Type-led with subtle motion
 
-- **Brand strip** at top: `Photodentro · English 6th Grade · THE COMPANION`
+- **Brand strip**: `Photodentro · English 6th Grade` + sub-brand `THE COURSEBOOK` (no longer "The Companion" as the headline product)
 - **Headline** (3 lines):
-  - "A **Companion**"
-  - "for the coursebook."
-- **Subhead**: Short thesis positioning the Companion as additive, not replacement.
+  - "The coursebook."
+  - "**Modernized.**" (clay italic, with mustard squiggle underline)
+- **Subhead**: *Every lesson from the official 2006 syllabus, now taught in the browser — and a Companion where Greek vocabulary belongs.*
 - **CTAs**:
-  - Primary (terracotta): "Meet the Companion →" — scrolls to units
-  - Ghost: "What is this?" — opens the explainer
-- **Right side**: A visual of an open coursebook whose right page is "coming alive" with hand-drawn marks, sparkles, and a colored Companion ribbon. Subtle CSS parallax.
-- **Background**: cream → blush radial wash with drifting asterisks/sparkles/dotted loops. No video.
+  - Primary (clay): "Open the coursebook →"
+  - Ghost: "What's the Companion?"
+- **Right side**: A visual of an open book — left page shows a coursebook lesson header (warm cream, ruled lines, "Unit 01 · pp. 4–15"); right page shows the Companion's vocabulary list with Greek + English pairs (paper white, sage accents, small sparkles).
+- **Background**: cream → blush radial wash with drifting asterisks, sparkles, dotted loops.
 
 ---
 
-## "The Two Things" Explainer Card (NEW)
+## "The Two Things" Explainer Card
 
-A short section directly under the hero that makes the concept explicit for any visitor who lands confused:
+A short section directly under the hero that makes the concept explicit:
 
-> **The Coursebook** is the printed 2006 textbook. Authoritative. Established. Where the vocabulary list, the grammar targets, and the Can-Do self-assessment live.
+> **The Coursebook** is the full English 6th Grade syllabus — every lesson, every unit, every reading, every grammar target, every listening task, every worksheet. It is taught in English. Always.
 >
-> **The Companion** is what we built to play alongside it. CLIL stories, neural audio, printable packs — all tuned to the same units and page numbers.
+> **The Companion** is the vocabulary layer for each unit. Vocabulary items, vocabulary activities, and the **only** place Greek lexical items are allowed. This is where you connect new English words to the Greek you already speak.
 >
-> Use either. Use both. The Companion never replaces the book; it just makes the book easier to love.
+> No Greek anywhere else. The Companion is the bridge.
 
-Visual: two stacked paper-notebook blocks side by side, each clearly labeled.
+Visual: two stacked paper-notebook blocks side by side:
+- **Left** (cream, ruled, mono labels): The Coursebook — list of lesson components
+- **Right** (paper, clay border): The Companion — sample vocabulary list with Greek/English pairs
+
+A `+` symbol joins them. Closing line in italic Fraunces: *"Two tools. One syllabus. Greek belongs in the Companion."*
 
 ---
 
 ## Unit Grid — Split Cards (the centerpiece)
 
-Each unit card is split vertically into two halves, separated by a thin dashed hairline:
+Each unit card is split into two halves separated by a dashed fold-mark.
 
-### Left half — **v1 · The Coursebook**
-- Cream/paper background, dashed border
-- Unit number in mono (e.g., `UNIT 01`)
-- Coursebook title (the textbook's title)
-- Coursebook page reference (e.g., `pp. 4–15`)
-- Coursebook theme (1 line)
-- Tiny "open coursebook" link → `st_unit1.pdf`
+### Left half — **The Coursebook**
+- Cream/paper background, ruled notebook lines, dashed red margin
+- Unit number in mono (`UNIT 01`)
+- Lesson title
+- Page reference (`pp. 4–15`)
+- 3–4 lesson components (Grammar · Reading · Listening · Culture · CLIL)
+- Primary CTA: "Open this lesson →" → `unit*/v2.html`
 
-### Right half — **v2 · The Companion**
-- Paper-white background, solid border
-- "THE COMPANION" badge in mustard
-- Companion tagline
-- 4 activity pills (CLIL · Neural Audio · Printable · etc.)
-- Primary CTA: "Launch Companion →" → `unit1/v2.html`
-- Secondary CTA: "Quick vocab lab" → `unit1/index.html`
-- Tiny illustrated mark top-right
+### Right half — **The Companion**
+- Paper-white background, clay border
+- "THE COMPANION" badge
+- 4–6 sample vocabulary pairs (English + Greek, in a clean two-column layout)
+- A subtle "Ελληνικά επιτρέπονται εδώ" hint (Greek allowed here)
+- Secondary CTA: "Open Companion →" → `unit*/index.html`
 
-On hover: the Companion half lifts 6px, the Coursebook half stays planted. The split feels intentional, like an open book.
+On hover: the Companion half lifts 6px; the Coursebook half stays planted.
 
-**Featured unit card** (Unit 1): the left half is a generated watercolor illustration of multicultural kids (replacing the cream placeholder). The right half is the Companion side. The split is shown with a clear "fold" mark.
+**Vocabulary pair treatment** (this is the visual heart of the new concept):
+
+```
+┌─────────────────────────────┐
+│  country          χώρα      │
+│  classmate      συμμαθητής   │
+│  greeting    χαιρετισμός    │
+│  introduce       συστήνω     │
+└─────────────────────────────┘
+```
+
+English on the left in Fraunces 600 (Inter actually, for the table). Greek on the right in **Fraunces italic** — same typeface, just italicized. The Greek is positioned as the equal partner to the English, not as a translation footnote.
 
 ---
 
-## Teacher Framework Card
+## Teacher Section
 
-Same as before — cream panel with hand-drawn frame, three pillars. Adds one line at the top: "Designed to leave your coursebook on the desk, not in the cupboard."
+Same cream-pillared structure. Adds:
+
+> *Greek lexical items only appear in the Companion. The Coursebook is 100% in English. This separation matters for immersion and for assessment.*
 
 ---
 
@@ -130,7 +157,8 @@ Same as before — cream panel with hand-drawn frame, three pillars. Adds one li
 
 - Cream paper grain (SVG noise, 4.5% opacity)
 - Floating hand-drawn glyphs (asterisks, sparkles, dotted loops) drift with parallax
-- A subtle dotted ruled-line pattern visible on Coursebook side of unit cards (like notebook paper)
+- Coursebook side of unit cards: ruled notebook lines
+- Companion side of unit cards: subtle blush radial wash in top-right
 
 ---
 
@@ -139,8 +167,7 @@ Same as before — cream panel with hand-drawn frame, three pillars. Adds one li
 - Springy overshoot easing on Companion card lifts (`cubic-bezier(0.34, 1.56, 0.64, 1)`)
 - Standard state-transition easing (`cubic-bezier(0.4, 0.0, 0.2, 1)`)
 - Background glyphs: 14–22s linear infinite drift
-- Filter chips: 200ms color/scale on click
-- Hero "Companion" word: subtle pulse on the mustard underline to draw the eye
+- Vocabulary pairs stagger in on hover
 
 All motion respects `prefers-reduced-motion: reduce`.
 
@@ -148,38 +175,39 @@ All motion respects `prefers-reduced-motion: reduce`.
 
 ## Tech Stack
 
-- HTML5, vanilla CSS, minimal JS (~100 lines)
-- Inline critical CSS in `<style>`
+- HTML5, vanilla CSS, minimal JS
 - Google Fonts: Fraunces variable + Inter variable + JetBrains Mono
-- All icons inline SVG
-- Mobile-first responsive
+- Inline critical CSS, all SVG inline
 
 ---
 
 ## Asset Plan
 
-- `imgs/hero_illustration.jpg` — open book / kids / flags (generated, in palette)
-- `imgs/unit1_featured.jpg` — multicultural kids (generated, in palette)
-- `imgs/teacher_illus.jpg` — teacher at chalkboard (generated, in palette)
-- `imgs/coursebook_cover.jpg` *(future)* — photograph of the 2006 coursebook for authenticity
-- All decorative marks are inline SVG
+- `imgs/hero_illustration.jpg` — six 6th graders with flags (warm tones)
+- `imgs/unit1_featured.jpg` — three kids with flags
+- `imgs/teacher_illus.jpg` — teacher at chalkboard
+
+(Generated already; kept in palette.)
 
 ---
 
 ## What This Preview Includes
 
-1. Brand strip with "The Companion" identity
-3. "The Two Things" explainer card (the explicit concept)
-4. Featured Unit 1 card with split layout + generated illustration on Coursebook half
-5. Three compact sample units with split cards
-6. Filter chip row (working)
+1. Brand strip + "The Coursebook" identity
+2. Hero with corrected positioning (the site IS the coursebook)
+3. "The Two Things" explainer with sample Greek-English vocabulary pairs
+4. Featured Unit 1 split card with real Greek vocabulary pairs
+5. Three compact sample units with split cards + vocabulary pairs
+6. Filter chip row
 7. Teacher pillars card
 8. Footer
 
-Not in preview (reserved for full build): all 10 unit cards rendered, video pipeline showcase, mobile deep polish, full coursebook catalog data wiring, coursebook cover photograph, accessibility audit.
+Not in preview (reserved for full build): all 10 unit cards rendered, full vocabulary lists per unit, mobile deep polish, real coursebook catalog data wiring, accessibility audit.
 
 ---
 
-## Iteration note
+## Iteration history
 
-The original spec treated v1/v2 as "version 1 (older lab)" vs "version 2 (newer flagship)". The user clarified: **v1 is the legacy coursebook material, v2 is the vocabulary companion.** This reframes the entire product from "an app that comes in two versions" to "a textbook and a friend". The design must respect both halves and never collapse the difference.
+- **rev 1**: "Modern Educational Playful" style chosen. Generic 10-unit coursebook grid.
+- **rev 2**: User clarified v1/v2 duality — v1 = legacy coursebook, v2 = vocabulary companion. Reframed as "The Companion sits beside the printed book."
+- **rev 3 (current)**: User corrected that the site **is** the modernized coursebook itself, not a complement to a printed book. The Companion is the vocabulary layer where Greek is allowed. PDFs are out of the picture. The site teaches the whole syllabus.

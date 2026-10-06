@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Companion · A friend for the English 6th Grade Coursebook</title>
-  <meta name="description" content="The Companion is a vocabulary companion for the official Greek 6th Grade English coursebook. CLIL stories, neural audio, printable worksheets — sits beside the book, never replaces it.">
+  <title>The Coursebook · English 6th Grade · Modernized for the browser</title>
+  <meta name="description" content="The modernized English 6th Grade coursebook. Every lesson, every unit. Plus the Companion — the only place Greek lexical items are allowed and practiced.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..900,0..100;1,9..144,400..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,10 +15,6 @@
   <!-- SVG defs (reused hand-drawn marks) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <filter id="paper-grain">
-        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/>
-        <feColorMatrix values="0 0 0 0 0.16   0 0 0 0 0.14   0 0 0 0 0.12   0 0 0 0.045 0"/>
-      </filter>
       <symbol id="arrow-squiggle" viewBox="0 0 64 24">
         <path d="M2 12 Q 12 2, 22 12 T 42 12 T 56 12" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
         <path d="M50 6 L58 12 L50 18" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,9 +36,9 @@
         <path d="M60 12 Q 60 8, 56 8 L 34 8 Q 32 8, 32 10 L 32 56 Q 32 58, 34 58 L 56 58 Q 60 58, 60 54 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
         <line x1="32" y1="10" x2="32" y2="56" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
       </symbol>
-      <symbol id="sparkle-circle" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-        <path d="M12 6 L13 11 L18 12 L13 13 L12 18 L11 13 L6 12 L11 11 Z" fill="currentColor"/>
+      <symbol id="translate" viewBox="0 0 24 24">
+        <path d="M3 5 H15 M9 3 V5 M11 5 Q 8 12, 4 14 M12 9 Q 9 13, 5 14 M11 13 L9 16" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 14 H21 M17 12 V20 M14 17 Q 18 17, 21 20 M19 14 Q 17 18, 14 20" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
     </defs>
   </svg>
@@ -79,10 +75,10 @@
         </span>
       </a>
 
-      <div class="brand-badge">
-        <span class="badge-prefix">The</span>
-        <span class="badge-name">Companion</span>
-        <svg class="badge-mark"><use href="#sparkle"/></svg>
+      <div class="brand-sub">
+        <span class="brand-sub-prefix">The</span>
+        <span class="brand-sub-name">Coursebook</span>
+        <span class="brand-sub-mod">· modernized</span>
       </div>
 
       <nav class="topnav">
@@ -92,7 +88,7 @@
       </nav>
 
       <a class="topbar-cta" href="#units">
-        Open the Companion
+        Open the coursebook
         <svg class="arrow"><use href="#arrow-squiggle"/></svg>
       </a>
     </div>
@@ -104,73 +100,83 @@
       <div class="hero-text">
         <div class="kicker">
           <svg class="kicker-mark"><use href="#book-open"/></svg>
-          <span>The vocabulary companion to the 2006 coursebook</span>
+          <span>The English 6th Grade coursebook — fully in the browser</span>
         </div>
 
         <h1 class="hero-title">
-          <span class="line">A</span>
+          <span class="line">The coursebook.</span>
           <span class="line">
-            <span class="hl">Companion</span>
+            <span class="hl">Modernized.</span>
             <svg class="hl-underline"><use href="#underline-squiggle"/></svg>
           </span>
-          <span class="line">for the coursebook.</span>
         </h1>
 
         <p class="hero-lede">
-          The official <strong>English 6th Grade coursebook</strong> is still the heart of the syllabus.
-          The Companion is what we built to sit beside it — CLIL labs, dual-voice neural audio,
-          and printable worksheet packs.
+          Every lesson from the official 2006 syllabus — grammar, reading, listening,
+          culture, cross-curricular — taught here in the browser. Plus the
+          <strong>Companion</strong>: the only place Greek lexical items are allowed
+          and practiced.
         </p>
 
         <div class="hero-ctas">
           <a class="cta primary" href="#units">
-            <span>Open the Companion</span>
+            <span>Open the coursebook</span>
             <svg class="arrow"><use href="#arrow-squiggle"/></svg>
           </a>
           <a class="cta ghost" href="#explainer">
-            <span>What's the difference?</span>
+            <span>What's the Companion?</span>
           </a>
         </div>
 
         <div class="hero-meta">
-          <span class="meta-pill sage"><strong>v1</strong> Coursebook</span>
-          <span class="meta-pill clay"><strong>v2</strong> Companion</span>
-          <span class="meta-pill mustard"><strong>10</strong> Units</span>
-          <span class="meta-pill blush"><strong>280+</strong> Neural audios</span>
-          <span class="meta-pill paper"><strong>100%</strong> Printable</span>
+          <span class="meta-pill sage"><strong>10</strong> Units</span>
+          <span class="meta-pill clay"><strong>All</strong> syllabus material</span>
+          <span class="meta-pill mustard"><strong>Companion</strong> for vocabulary</span>
+          <span class="meta-pill blush"><strong>Greek</strong> allowed only here</span>
         </div>
       </div>
 
-      <div class="hero-art" aria-hidden="false">
+      <div class="hero-art">
         <div class="art-frame">
           <svg class="art-frame-border" viewBox="0 0 400 400" preserveAspectRatio="none">
             <path d="M20 30 Q 20 20, 30 20 L 370 20 Q 380 20, 380 30 L 380 370 Q 380 380, 370 380 L 30 380 Q 20 380, 20 370 Z"
                   fill="none" stroke="var(--dust)" stroke-width="2.5" stroke-dasharray="3 6" />
           </svg>
 
-          <!-- Open book: left page = coursebook (cream), right page = companion (paper with sparkles) -->
           <div class="art-book">
+            <!-- Left page: Coursebook lesson -->
             <div class="book-page coursebook-page-side">
               <div class="page-corner">v1</div>
               <div class="page-label">THE COURSEBOOK</div>
-              <div class="page-title">English<br>6th Grade</div>
-              <div class="page-sub">Pupil's Book &amp; Workbook</div>
-              <div class="page-lines">
-                <span></span><span></span><span></span><span></span>
+              <div class="page-title">Lesson 01</div>
+              <div class="page-sub">Multicultural Class</div>
+              <div class="lesson-pieces">
+                <span>Grammar</span>
+                <span>Reading</span>
+                <span>Listening</span>
+                <span>Culture</span>
               </div>
-              <div class="page-stamp">2006 · est.</div>
+              <div class="page-lines">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="page-stamp">all in English</div>
             </div>
+
             <div class="book-fold"></div>
+
+            <!-- Right page: Companion vocab list -->
             <div class="book-page companion-page-side">
               <div class="page-corner companion">v2</div>
               <div class="page-label companion">THE COMPANION</div>
-              <div class="page-title-companion">vocabulary<br>companion</div>
-              <div class="page-pills">
-                <span>CLIL</span><span>TTS</span><span>Print</span>
+              <div class="page-title-companion">vocab · <span class="el-hint">λεξιλόγιο</span></div>
+              <div class="vocab-mini">
+                <div class="vocab-row"><span class="en">country</span><span class="el">χώρα</span></div>
+                <div class="vocab-row"><span class="en">classmate</span><span class="el">συμμαθητής</span></div>
+                <div class="vocab-row"><span class="en">greeting</span><span class="el">χαιρετισμός</span></div>
+                <div class="vocab-row"><span class="en">introduce</span><span class="el">συστήνω</span></div>
               </div>
               <svg class="page-sparkle s1"><use href="#sparkle"/></svg>
               <svg class="page-sparkle s2"><use href="#sparkle"/></svg>
-              <svg class="page-sparkle s3"><use href="#sparkle"/></svg>
             </div>
           </div>
 
@@ -191,62 +197,64 @@
           <span>The two things</span>
         </div>
         <h2 class="section-title">
-          One book. <em>One friend.</em><br>
-          Never the same thing.
+          One coursebook. <em>One vocabulary Companion.</em><br>
+          Greek belongs in only one of them.
         </h2>
       </header>
 
       <div class="two-things">
         <article class="thing-card coursebook">
-            <div class="thing-tag">v1</div>
-            <h3 class="thing-title">The Coursebook</h3>
-            <p class="thing-desc">
-              The official, printed 2006 textbook — Pupil's Book, Workbook, Teacher's Book,
-              audio CD. Authoritative. Established. Where the vocabulary list, the grammar
-              targets, and the "Now tick what you can do" self-assessment live.
-            </p>
-            <ul class="thing-list">
-              <li><svg class="bullet"><use href="#check"/></svg> Official DEPPS-APS curriculum</li>
-              <li><svg class="bullet"><use href="#check"/></svg> CEFR A1 / A1+ targets</li>
-              <li><svg class="bullet"><use href="#check"/></svg> Teacher's Book &amp; Pupil's Book</li>
-              <li><svg class="bullet"><use href="#check"/></svg> 20 years of trust</li>
-            </ul>
-            <a href="st_unit1.pdf" target="_blank" class="thing-cta paper">
-              <span>Open coursebook PDF</span>
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </article>
+          <div class="thing-tag">v1 · the site</div>
+          <h3 class="thing-title">The Coursebook</h3>
+          <p class="thing-desc">
+            The full English 6th Grade syllabus — every lesson, every unit, every reading,
+            every listening task, every grammar target, every cultural and cross-curricular
+            thread. Taught in the browser. Taught in English. Always.
+          </p>
+          <ul class="thing-list">
+            <li><svg class="bullet"><use href="#check"/></svg> Every lesson from the official 2006 syllabus</li>
+            <li><svg class="bullet"><use href="#check"/></svg> Grammar, reading, listening, culture, CLIL</li>
+            <li><svg class="bullet"><use href="#check"/></svg> Printable A4 worksheet packs</li>
+            <li><svg class="bullet"><use href="#check"/></svg> Sonia Neural + Google TTS</li>
+            <li><svg class="bullet"><use href="#check"/></svg> 100% in English — for full immersion</li>
+          </ul>
+          <a href="#units" class="thing-cta paper">
+            <span>Browse the units</span>
+            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+          </a>
+        </article>
 
-          <div class="thing-plus" aria-hidden="true">
-            <svg viewBox="0 0 40 40">
-              <circle cx="20" cy="20" r="18" fill="var(--cream)" stroke="var(--dust)" stroke-width="1.5" stroke-dasharray="2 4"/>
-              <text x="20" y="27" text-anchor="middle" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--clay)">+</text>
-            </svg>
-          </div>
-
-          <article class="thing-card companion">
-            <div class="thing-tag clay">v2</div>
-            <h3 class="thing-title">The Companion</h3>
-            <p class="thing-desc">
-              A digital companion that lives next to the coursebook. CLIL stories, dual-voice
-              neural audio, inductive grammar labs, and printable worksheet packs. Built to
-              <em>play with</em> the book, not replace it.
-            </p>
-            <ul class="thing-list">
-              <li><svg class="bullet clay"><use href="#check"/></svg> CLIL stories &amp; cultural maps</li>
-              <li><svg class="bullet clay"><use href="#check"/></svg> Sonia Neural + Google TTS</li>
-              <li><svg class="bullet clay"><use href="#check"/></svg> Printable A4 worksheet packs</li>
-            </ul>
-            <a href="#units" class="thing-cta clay">
-              <span>Open the Companion</span>
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </article>
+        <div class="thing-plus" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18" fill="var(--cream)" stroke="var(--dust)" stroke-width="1.5" stroke-dasharray="2 4"/>
+            <text x="20" y="27" text-anchor="middle" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--clay)">+</text>
+          </svg>
         </div>
 
-        <p class="two-things-foot">
-          Use either. Use both. The Companion never replaces the book; it makes the book easier to love.
-        </p>
+        <article class="thing-card companion">
+          <div class="thing-tag clay">v2 · vocabulary only</div>
+          <h3 class="thing-title">The Companion</h3>
+          <p class="thing-desc">
+            A vocabulary-only layer attached to each unit. Vocabulary items and vocabulary
+            activities. The <em>only</em> place Greek lexical items are allowed and practiced —
+            the bridge that maps new English words onto the Greek you already speak.
+          </p>
+          <ul class="thing-list">
+            <li><svg class="bullet clay"><use href="#check"/></svg> Vocabulary &amp; lexical-pairing drills</li>
+            <li><svg class="bullet clay"><use href="#check"/></svg> Greek translations, Greek-friendly prompts</li>
+            <li><svg class="bullet clay"><use href="#check"/></svg> Per-unit Companion in every unit</li>
+            <li><svg class="bullet clay"><use href="#check"/></svg> The only place Greek appears</li>
+          </ul>
+          <a href="#units" class="thing-cta clay">
+            <span>See the Companion per unit</span>
+            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+          </a>
+        </article>
+      </div>
+
+      <p class="two-things-foot">
+        Two tools. One syllabus. <em>Greek belongs in the Companion.</em>
+      </p>
     </div>
   </section>
 
@@ -256,16 +264,16 @@
       <header class="section-head">
         <div class="kicker">
           <svg class="kicker-mark"><use href="#asterisk"/></svg>
-          <span>10 units · one page each</span>
+          <span>10 units · the full year</span>
         </div>
         <h2 class="section-title">
-          Pick a unit.<br>
-          <em>Open the Companion.</em>
+          Every unit. <em>Every lesson.</em><br>
+          With its Companion.
         </h2>
         <p class="section-lede">
-          Every card shows both halves: the <strong>coursebook pages</strong> on the left,
-          the <strong>Companion activities</strong> on the right. Filter by term or by what
-          your class needs this week.
+          Each unit card shows the <strong>coursebook lesson</strong> on the left and the
+          <strong>Companion vocabulary</strong> on the right — with real Greek translations
+          in the right place. Filter by term or by what's ready.
         </p>
       </header>
 
@@ -295,7 +303,6 @@
               <div class="v1-cover-fallback">
                 <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
                   <rect width="400" height="500" fill="var(--paper-cream)"/>
-                  <!-- Notebook paper lines -->
                   <g stroke="var(--dust)" stroke-width="0.5" opacity="0.5">
                     <line x1="40" y1="120" x2="360" y2="120"/>
                     <line x1="40" y1="160" x2="360" y2="160"/>
@@ -306,21 +313,22 @@
                     <line x1="40" y1="360" x2="360" y2="360"/>
                     <line x1="40" y1="400" x2="360" y2="400"/>
                   </g>
-                  <!-- Left margin -->
                   <line x1="60" y1="0" x2="60" y2="500" stroke="var(--clay)" stroke-width="1.5" opacity="0.3"/>
-                  <!-- Header -->
-                  <text x="80" y="60" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--charcoal)" font-style="italic">Unit 01</text>
-                  <text x="80" y="92" font-family="Fraunces" font-size="14" fill="var(--ink)" opacity="0.7">2006 Pupil's Book · pp. 4–15</text>
-                  <!-- Decorative book stamp -->
-                  <g transform="translate(280, 50)">
-                    <circle cx="0" cy="0" r="35" fill="none" stroke="var(--dust)" stroke-width="1.5"/>
-                    <text x="0" y="-4" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="var(--ink)" opacity="0.6">EST.</text>
-                    <text x="0" y="12" text-anchor="middle" font-family="Fraunces" font-size="14" font-weight="800" fill="var(--ink)">2006</text>
+                  <text x="80" y="60" font-family="Fraunces" font-size="22" font-weight="800" fill="var(--charcoal)" font-style="italic">Lesson 01</text>
+                  <text x="80" y="92" font-family="JetBrains Mono" font-size="11" fill="var(--ink)" opacity="0.65">UNIT 01 · Our Multicultural Class</text>
+                  <text x="80" y="118" font-family="Inter" font-size="11" fill="var(--ink)" opacity="0.55">Lesson pieces in this unit:</text>
+                  <g font-family="JetBrains Mono" font-size="11" fill="var(--ink)">
+                    <text x="80" y="148">▸ Grammar: present simple vs. continuous</text>
+                    <text x="80" y="172">▸ Reading: a new classmate's story</text>
+                    <text x="80" y="196">▸ Listening: greetings from 4 countries</text>
+                    <text x="80" y="220">▸ Culture: 4 European countries</text>
+                    <text x="80" y="244">▸ CLIL: European geography lab</text>
+                    <text x="80" y="268">▸ Worksheet pack · 5 printables</text>
                   </g>
-                  <!-- Page number stamp -->
-                  <g transform="translate(200, 240)">
-                    <rect x="-50" y="-12" width="100" height="24" rx="4" fill="var(--dust)" opacity="0.3"/>
-                    <text x="0" y="5" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="var(--ink)">pp. 4–15</text>
+                  <g transform="translate(320, 60)">
+                    <circle cx="0" cy="0" r="32" fill="none" stroke="var(--dust)" stroke-width="1.5"/>
+                    <text x="0" y="-3" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="var(--ink)" opacity="0.6">ALL IN</text>
+                    <text x="0" y="11" text-anchor="middle" font-family="Fraunces" font-size="11" font-weight="800" fill="var(--ink)">ENGLISH</text>
                   </g>
                 </svg>
               </div>
@@ -328,8 +336,8 @@
             <div class="v1-meta">
               <div class="v1-title">Our Multicultural Class</div>
               <div class="v1-theme">Multiculturalism · Europe · Communication</div>
-              <a class="v1-link" href="st_unit1.pdf" target="_blank">
-                Open coursebook PDF
+              <a class="v1-link" href="unit1/v2.html">
+                Open this lesson
                 <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
               </a>
             </div>
@@ -344,31 +352,33 @@
           <div class="unit-side v2-side">
             <div class="side-label">
               <span class="side-tag v2">v2</span>
-              <span class="side-name">The Companion</span>
+              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
             </div>
             <div class="v2-number-badge">
               <span class="big-num">01</span>
               <span class="term-pill">Term 1 · Flagship</span>
             </div>
-            <h3 class="v2-title">Vocabulary that travels.</h3>
+            <h3 class="v2-title">Vocabulary you'll meet.</h3>
             <p class="v2-tagline">
-              Meet newcomers from Ukraine, Albania, Georgia, and the UK. Build a 5-paragraph
-              country report. Master present-simple vs. continuous. Explore geography through
-              a CLIL lab.
+              Greek lexical items are allowed here — and only here. The Companion maps each
+              new English word onto the Greek you speak.
             </p>
-            <div class="v2-activities">
-              <span class="act-tag sage">🌍 Geography CLIL</span>
-              <span class="act-tag clay">Present Simple vs. Continuous</span>
-              <span class="act-tag mustard">🎧 Sonia + Google TTS</span>
-              <span class="act-tag blush">5 printable worksheets</span>
+
+            <div class="vocab-table">
+              <div class="vocab-row"><span class="en">country</span><span class="arrow-mark">↔</span><span class="el">χώρα</span></div>
+              <div class="vocab-row"><span class="en">classmate</span><span class="arrow-mark">↔</span><span class="el">συμμαθητής</span></div>
+              <div class="vocab-row"><span class="en">greeting</span><span class="arrow-mark">↔</span><span class="el">χαιρετισμός</span></div>
+              <div class="vocab-row"><span class="en">introduce</span><span class="arrow-mark">↔</span><span class="el">συστήνω</span></div>
+              <div class="vocab-row"><span class="en">nationality</span><span class="arrow-mark">↔</span><span class="el">εθνικότητα</span></div>
+              <div class="vocab-row"><span class="en">classroom</span><span class="arrow-mark">↔</span><span class="el">τάξη</span></div>
             </div>
+
             <div class="v2-actions">
-              <a href="unit1/v2.html" class="cta primary small">
-                <span>Launch Companion</span>
+              <a href="unit1/index.html" class="cta primary small">
+                <span>Open Companion</span>
                 <svg class="arrow"><use href="#arrow-squiggle"/></svg>
               </a>
-              <a href="unit1/index.html" class="cta ghost small">Quick vocab lab</a>
-              <a href="unit1/photodentro/index.html" class="cta ghost small" target="_blank">Photodentro OER ↗</a>
+              <a href="unit1/v2.html" class="cta ghost small">Open lesson</a>
             </div>
           </div>
         </article>
@@ -378,29 +388,32 @@
           <div class="unit-side v1-side">
             <div class="side-label">
               <span class="side-tag v1">v1</span>
-              <span class="side-name">Coursebook</span>
+              <span class="side-name">The Coursebook</span>
             </div>
             <div class="v1-mini">
-              <span class="v1-num">UNIT 02</span>
+              <span class="v1-num">LESSON 02</span>
               <h4 class="v1-mini-title">Going Shopping</h4>
-              <span class="v1-pages">pp. 16–27</span>
+              <span class="v1-pages">Countable · Uncountable · Senses verbs</span>
             </div>
+            <a class="v1-link mini" href="unit2/v2.html">
+              Open this lesson
+              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+            </a>
           </div>
           <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
           <div class="unit-side v2-side">
             <div class="side-label">
               <span class="side-tag v2">v2</span>
-              <span class="side-name">Companion</span>
+              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
             </div>
-            <h4 class="v2-mini-title">The shopping trip.</h4>
-            <p class="v2-mini-tag">Supermarkets, malls, canteen menus. Countable vs. uncountable, how much / how many.</p>
-            <div class="v2-mini-pills">
-              <span class="act-tag sage small">Quantity</span>
-              <span class="act-tag clay small">Senses verbs</span>
-              <span class="act-tag paper small">3 printables</span>
+            <div class="vocab-table compact">
+              <div class="vocab-row"><span class="en">shop</span><span class="arrow-mark">↔</span><span class="el">μαγαζί</span></div>
+              <div class="vocab-row"><span class="en">how much</span><span class="arrow-mark">↔</span><span class="el">πόσο</span></div>
+              <div class="vocab-row"><span class="en">cheese</span><span class="arrow-mark">↔</span><span class="el">τυρί</span></div>
+              <div class="vocab-row"><span class="en">how many</span><span class="arrow-mark">↔</span><span class="el">πόσα</span></div>
             </div>
-            <a href="unit2/v2.html" class="v2-mini-link">
-              Launch Companion
+            <a href="unit2/index.html" class="v2-mini-link">
+              Open Companion
               <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
             </a>
           </div>
@@ -411,29 +424,32 @@
           <div class="unit-side v1-side">
             <div class="side-label">
               <span class="side-tag v1">v1</span>
-              <span class="side-name">Coursebook</span>
+              <span class="side-name">The Coursebook</span>
             </div>
             <div class="v1-mini">
-              <span class="v1-num">UNIT 03</span>
+              <span class="v1-num">LESSON 03</span>
               <h4 class="v1-mini-title">Imaginary Creatures</h4>
-              <span class="v1-pages">pp. 28–39</span>
+              <span class="v1-pages">Adjective order · Mythology CLIL</span>
             </div>
+            <a class="v1-link mini" href="unit3/v2.html">
+              Open this lesson
+              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+            </a>
           </div>
           <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
           <div class="unit-side v2-side">
             <div class="side-label">
               <span class="side-tag v2">v2</span>
-              <span class="side-name">Companion</span>
+              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
             </div>
-            <h4 class="v2-mini-title">Dragons &amp; fairies.</h4>
-            <p class="v2-mini-tag">Descriptive writing with adjectives in the right order. A CLIL mythology lab.</p>
-            <div class="v2-mini-pills">
-              <span class="act-tag mustard small">Adjective order</span>
-              <span class="act-tag clay small">Mythology CLIL</span>
-              <span class="act-tag paper small">4 printables</span>
+            <div class="vocab-table compact">
+              <div class="vocab-row"><span class="en">dragon</span><span class="arrow-mark">↔</span><span class="el">δράκος</span></div>
+              <div class="vocab-row"><span class="en">fairy</span><span class="arrow-mark">↔</span><span class="el">νεράιδα</span></div>
+              <div class="vocab-row"><span class="en">wing</span><span class="arrow-mark">↔</span><span class="el">φτερό</span></div>
+              <div class="vocab-row"><span class="en">tail</span><span class="arrow-mark">↔</span><span class="el">ουρά</span></div>
             </div>
-            <a href="unit3/v2.html" class="v2-mini-link">
-              Launch Companion
+            <a href="unit3/index.html" class="v2-mini-link">
+              Open Companion
               <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
             </a>
           </div>
@@ -444,29 +460,32 @@
           <div class="unit-side v1-side">
             <div class="side-label">
               <span class="side-tag v1">v1</span>
-              <span class="side-name">Coursebook</span>
+              <span class="side-name">The Coursebook</span>
             </div>
             <div class="v1-mini">
-              <span class="v1-num">UNIT 04</span>
+              <span class="v1-num">LESSON 04</span>
               <h4 class="v1-mini-title">Holidays &amp; Travel</h4>
-              <span class="v1-pages">pp. 40–51</span>
+              <span class="v1-pages">Comparatives · Travel-blog frame</span>
             </div>
+            <a class="v1-link mini" href="unit4/v2.html">
+              Open this lesson
+              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
+            </a>
           </div>
           <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
           <div class="unit-side v2-side">
             <div class="side-label">
               <span class="side-tag v2">v2</span>
-              <span class="side-name">Companion</span>
+              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
             </div>
-            <h4 class="v2-mini-title">Postcards home.</h4>
-            <p class="v2-mini-tag">Comparatives &amp; superlatives with a travel-blog writing frame.</p>
-            <div class="v2-mini-pills">
-              <span class="act-tag blush small">Comparison</span>
-              <span class="act-tag clay small">Travel blog</span>
-              <span class="act-tag paper small">5 printables</span>
+            <div class="vocab-table compact">
+              <div class="vocab-row"><span class="en">suitcase</span><span class="arrow-mark">↔</span><span class="el">βαλίτσα</span></div>
+              <div class="vocab-row"><span class="en">airport</span><span class="arrow-mark">↔</span><span class="el">αεροδρόμιο</span></div>
+              <div class="vocab-row"><span class="en">postcard</span><span class="arrow-mark">↔</span><span class="el">κάρτα</span></div>
+              <div class="vocab-row"><span class="en">beach</span><span class="arrow-mark">↔</span><span class="el">παραλία</span></div>
             </div>
-            <a href="unit4/v2.html" class="v2-mini-link">
-              Launch Companion
+            <a href="unit4/index.html" class="v2-mini-link">
+              Open Companion
               <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
             </a>
           </div>
@@ -489,30 +508,35 @@
           <span>For the Teacher</span>
         </div>
         <h2 class="section-title centered">
-          Designed to leave your<br>
-          <em>coursebook on the desk,</em> not in the cupboard.
+          Two scopes, <em>one syllabus.</em><br>
+          Greek lives in the Companion. Nowhere else.
         </h2>
+        <p class="teacher-lede">
+          The Coursebook is 100% in English — that's the immersion. The Companion is where
+          Greek lexical items live — vocabulary work only. The separation matters for
+          learning and for the classroom.
+        </p>
         <div class="teacher-grid">
           <div class="teacher-pillar">
             <div class="pillar-mark">
               <svg viewBox="0 0 40 40"><use href="#asterisk"/></svg>
             </div>
-            <h4>Printable packs</h4>
-            <p>Every module generates an ink-friendly A4 worksheet with name and date fields. Print, hand out, done.</p>
+            <h4>Coursebook · every lesson</h4>
+            <p>Grammar, reading, listening, culture, CLIL, worksheets. In English. Always.</p>
           </div>
           <div class="teacher-pillar">
             <div class="pillar-mark sage">
-              <svg viewBox="0 0 24 24"><use href="#sparkle"/></svg>
+              <svg viewBox="0 0 24 24"><use href="#translate"/></svg>
             </div>
-            <h4>Dual AI voices</h4>
-            <p>High-fidelity Sonia (British prosody) and classic Google TTS. Adjustable speed from 0.8× to 1.2×.</p>
+            <h4>Companion · vocabulary only</h4>
+            <p>Vocabulary items, lexical-pair drills. The one place Greek lexical items are practiced.</p>
           </div>
           <div class="teacher-pillar">
             <div class="pillar-mark mustard">
               <svg viewBox="0 0 24 24"><use href="#check"/></svg>
             </div>
             <h4>Can-Do portfolio</h4>
-            <p>Aligned with the textbook's self-assessment. Learners tick what they can do. Teachers see growth.</p>
+            <p>Aligned with the syllabus self-assessment. Learners tick what they can do. Teachers see growth.</p>
           </div>
         </div>
       </div>
@@ -522,8 +546,8 @@
   <!-- ============================ FOOTER ============================ -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">Photodentro &amp; Ministry of Education — The Companion to the English 6th Grade Coursebook</div>
-      <div class="footer-meta">Created for ΣΤ΄ Δημοτικού · Digital Companion Framework · v2 Preview</div>
+      <div class="footer-brand">Photodentro &amp; Ministry of Education — The Modernized English 6th Grade Coursebook</div>
+      <div class="footer-meta">Created for ΣΤ΄ Δημοτικού · Greek lexical items live only in the Companion · v3 Preview</div>
     </div>
   </footer>
 

@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           if (quizScoreEl) {
-            quizScoreEl.textContent = `Score: ${score} / ${items.length}`;
+            quizScoreEl.textContent = `Practice Accuracy: ${score} / ${items.length}`;
           }
         });
       });
@@ -776,29 +776,79 @@ document.addEventListener('DOMContentLoaded', () => {
     const studentInput = document.getElementById('reportStudentInput');
     const btnPreview = document.getElementById('btnPreviewReport');
     const btnPrint = document.getElementById('btnPrintReport');
+    const btnLevel1 = document.getElementById('btnReportLevel1');
+    const btnLevel2 = document.getElementById('btnReportLevel2');
 
     if (!v2Data || !v2Data.report_builder_guide || !stepsContainer) return;
 
-    stepsContainer.innerHTML = v2Data.report_builder_guide.paragraphs.map(p => `
-      <div class="step-card" data-step="${p.number}">
-        <div class="step-header">
-          <div class="step-num-badge">${p.number}</div>
-          <div class="step-title">Paragraph ${p.number}: ${p.heading}</div>
+    let activeLevel = 1; // Default to Level 1 Core Factfile
+
+    function renderSteps() {
+      const isLevel1 = activeLevel === 1;
+      const paragraphs = isLevel1 && v2Data.report_builder_guide.level1_factfile
+        ? v2Data.report_builder_guide.level1_factfile.paragraphs
+        : v2Data.report_builder_guide.paragraphs;
+
+      stepsContainer.innerHTML = paragraphs.map(p => `
+        <div class="step-card" data-step="${p.number}">
+          <div class="step-header">
+            <div class="step-num-badge">${p.number}</div>
+            <div class="step-title">Paragraph ${p.number}: ${p.heading}</div>
+          </div>
+          <p class="step-guide"><strong>Guide:</strong> ${p.guiding_questions}</p>
+          <div class="step-connectors">
+            <span>Helpful connectors:</span>
+            ${p.connectors.map(c => `<button class="connector-chip" data-text="${c}">${c}</button>`).join('')}
+          </div>
+          <textarea class="step-textarea" rows="3" placeholder="Write Paragraph ${p.number} here... (e.g. ${p.sample_starter})">${p.sample_starter}</textarea>
         </div>
-        <p class="step-guide"><strong>Guide:</strong> ${p.guiding_questions}</p>
-        <div class="step-connectors">
-          <span>Helpful connectors:</span>
-          ${p.connectors.map(c => `<button class="connector-chip" data-text="${c}">${c}</button>`).join('')}
-        </div>
-        <textarea class="step-textarea" rows="3" placeholder="Write Paragraph ${p.number} here... (e.g. ${p.sample_starter})">${p.sample_starter}</textarea>
-      </div>
-    `).join('');
+      `).join('');
+
+      stepsContainer.querySelectorAll('.step-textarea').forEach(ta => {
+        ta.addEventListener('input', updatePreview);
+      });
+
+      stepsContainer.querySelectorAll('.connector-chip').forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          const text = e.currentTarget.dataset.text;
+          const ta = e.currentTarget.closest('.step-card').querySelector('.step-textarea');
+          ta.value = `${ta.value} ${text}`.trim();
+          updatePreview();
+          ta.focus();
+        });
+      });
+
+      updatePreview();
+    }
+
+    if (btnLevel1 && btnLevel2) {
+      btnLevel1.addEventListener('click', () => {
+        activeLevel = 1;
+        btnLevel1.style.background = '#2b6cb0';
+        btnLevel1.style.color = '#fff';
+        btnLevel2.style.background = '#edf2f7';
+        btnLevel2.style.color = '#4a5568';
+        renderSteps();
+      });
+      btnLevel2.addEventListener('click', () => {
+        activeLevel = 2;
+        btnLevel2.style.background = '#2b6cb0';
+        btnLevel2.style.color = '#fff';
+        btnLevel1.style.background = '#edf2f7';
+        btnLevel1.style.color = '#4a5568';
+        renderSteps();
+      });
+    }
+
+    renderSteps();
 
     function updatePreview() {
       const country = countryInput.value.trim() || 'Greece';
       const student = studentInput.value.trim() || 'A Student';
 
-      previewTitle.textContent = `European Project: Report on ${country}`;
+      previewTitle.textContent = activeLevel === 1 
+        ? `European Factfile: Report on ${country}`
+        : `European Project: Extended Report on ${country}`;
       previewAuthor.textContent = `By: ${student}`;
 
       const textareas = stepsContainer.querySelectorAll('.step-textarea');
@@ -807,30 +857,14 @@ document.addEventListener('DOMContentLoaded', () => {
       `).join('');
     }
 
-    stepsContainer.querySelectorAll('.step-textarea').forEach(ta => {
-      ta.addEventListener('input', updatePreview);
-    });
-
     countryInput.addEventListener('input', updatePreview);
     studentInput.addEventListener('input', updatePreview);
     btnPreview.addEventListener('click', updatePreview);
-
-    stepsContainer.querySelectorAll('.connector-chip').forEach(chip => {
-      chip.addEventListener('click', (e) => {
-        const text = e.currentTarget.dataset.text;
-        const ta = e.currentTarget.closest('.step-card').querySelector('.step-textarea');
-        ta.value = `${ta.value} ${text}`.trim();
-        updatePreview();
-        ta.focus();
-      });
-    });
 
     btnPrint.addEventListener('click', () => {
       updatePreview();
       window.print();
     });
-
-    updatePreview();
   }
 
   // ==========================================
@@ -1379,7 +1413,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnPrintCert.addEventListener('click', () => {
-      const name = prompt('Enter Student Name for the Certificate:', 'Alexandros Papadopoulos');
+      const name = prompt('Enter Student Name for the Learning Record:', 'Alexandros Papadopoulos');
       if (name) studentNameEl.textContent = name;
       window.print();
     });
@@ -1994,7 +2028,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
 
         <div class="wb-model-container" id="model_box_${act.id}" style="display: none;">
-          <div class="wb-model-header">Model Text (CEFR A2+ Standard):</div>
+          <div class="wb-model-header">Model Text (Target CEFR: A1+ Standard):</div>
           <p style="margin: 0; white-space: pre-line;">${act.model_text || ''}</p>
         </div>
       `;
@@ -2574,15 +2608,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const checklist = act.checklist || act.scaffolding_checklist || [];
 
       if (ta) {
-        // Live auto-ticking checklist
+        // Live auto-ticking formative checklist with regex word-boundary evaluation (U1-04)
         ta.addEventListener('input', () => {
-          const text = ta.value.toLowerCase();
+          const text = ta.value;
           let tickedCount = 0;
 
           checklist.forEach((item, idx) => {
             const chkEl = document.getElementById(`chk_${act.id}_${idx}`);
             if (!chkEl) return;
-            const hasMatch = (item.keywords || []).some(kw => text.includes(kw.toLowerCase()));
+            const hasMatch = (item.keywords || []).some(kw => {
+              const cleanKw = kw.trim();
+              if (!cleanKw) return false;
+              const escaped = cleanKw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+              const rx = new RegExp('\\b' + escaped + '\\b', 'i');
+              return rx.test(text);
+            });
             if (hasMatch) {
               chkEl.classList.add('is-ticked');
               chkEl.querySelector('.wb-check-icon').textContent = '✅';
@@ -2594,9 +2634,9 @@ document.addEventListener('DOMContentLoaded', () => {
           });
 
           if (tickedCount === checklist.length) {
-            statusEl.innerHTML = '<span style="color: #276749">🌟 All checklist points mentioned in your text!</span>';
+            statusEl.innerHTML = '<span style="color: #276749">🌟 Possible evidence detected for all checklist points! (Subject to teacher review)</span>';
           } else {
-            statusEl.innerHTML = `<span style="color: #718096">${tickedCount} / ${checklist.length} checklist points included</span>`;
+            statusEl.innerHTML = `<span style="color: #718096">Formative check: Possible evidence detected for ${tickedCount} / ${checklist.length} points</span>`;
           }
         });
       }
