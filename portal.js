@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="unit-card-header">
           <div class="unit-number-pill" style="${isReady ? '' : 'background: #718096;'}">Unit ${padNum}</div>
-          <div class="unit-badge ${badgeClass}">${u.badge}</div>
         </div>
         <h3 class="unit-title">${u.title}</h3>
         <p class="unit-tagline">${u.tagline}</p>
@@ -47,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="unit-card-actions">
           ${isReady ? `
             <a href="${u.v2_url}" class="action-btn v2-btn">
-              <span>🚀</span> Launch Version 2 (CLIL & Portfolio)
+              <span>📚</span> Student's Book &amp; Workbook
             </a>
             <a href="${u.v1_url}" class="action-btn v1-btn">
-              <span>📖</span> Version 1 (Vocabulary Lab)
+              <span>📖</span> Vocabulary Companion
             </a>
             ${u.photodentro_url ? `
               <a href="${u.photodentro_url}" target="_blank" class="action-btn oer-btn">

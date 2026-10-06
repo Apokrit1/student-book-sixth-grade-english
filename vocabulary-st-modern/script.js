@@ -1,12 +1,12 @@
 /**
- * English 6th Grade — Modernization Preview
- * Lightweight filter + scroll-in animation
+ * The Companion — Modernization Preview (rev 2)
+ * Image swap · Staggered scroll-in · Filter logic · Hero parallax
  */
 
 (function () {
   'use strict';
 
-  // ----- Image swap when ready (if generated illustrations exist) -----
+  // ----- Image swap when ready (if generated illustration exists) -----
   const featuredArt = document.getElementById('featuredArt');
   if (featuredArt) {
     const img = new Image();
@@ -14,7 +14,7 @@
     img.alt = 'Hand-drawn illustration of three 6th graders waving flags of Greece, Ukraine, and Albania';
     img.loading = 'eager';
     img.onload = () => {
-      const fallback = featuredArt.querySelector('.featured-art-fallback');
+      const fallback = featuredArt.querySelector('.v1-cover-fallback');
       if (fallback) fallback.style.display = 'none';
       featuredArt.appendChild(img);
     };
@@ -24,7 +24,7 @@
   }
 
   // ----- Staggered scroll-in animation -----
-  const cards = Array.from(document.querySelectorAll('.unit-card'));
+  const cards = Array.from(document.querySelectorAll('.unit-split'));
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry, idx) => {
@@ -45,11 +45,9 @@
 
   // ----- Filter chips -----
   const chips = document.querySelectorAll('.chip');
-  const grid = document.getElementById('unitsGrid');
-  if (chips.length && grid) {
+  if (chips.length) {
     chips.forEach(chip => {
       chip.addEventListener('click', () => {
-        // Toggle active within the same group (color class)
         const colorClass = ['sage', 'mustard'].find(c => chip.classList.contains(c)) || 'default';
         chips.forEach(c => {
           if ((colorClass === 'default' && !c.classList.contains('sage') && !c.classList.contains('mustard')) ||
@@ -78,8 +76,7 @@
         // Re-trigger stagger animation on visible cards
         visibleCards.forEach((c, i) => {
           c.classList.remove('visible');
-          // force reflow then re-add
-          void c.offsetWidth;
+          void c.offsetWidth; // reflow
           setTimeout(() => c.classList.add('visible'), i * 70);
         });
       });

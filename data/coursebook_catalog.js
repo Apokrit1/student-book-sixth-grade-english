@@ -24,7 +24,6 @@ window.COURSEBOOK_CATALOG = {
       "v1_url": "unit1/index.html",
       "v2_url": "unit1/v2.html",
       "photodentro_url": "unit1/photodentro/index.html",
-      "badge": "Flagship v2 Ready",
       "accent_color": "#dd6b20"
     },
     {
@@ -42,7 +41,6 @@ window.COURSEBOOK_CATALOG = {
       ],
       "v1_url": "unit2/index.html",
       "v2_url": "unit2/v2.html",
-      "badge": "Flagship v2 Ready",
       "accent_color": "#319795"
     },
     {
@@ -60,7 +58,6 @@ window.COURSEBOOK_CATALOG = {
       ],
       "v1_url": "unit3/index.html",
       "v2_url": "unit3/v2.html",
-      "badge": "Flagship v2 Ready",
       "accent_color": "#805ad5"
     },
     {
@@ -79,7 +76,6 @@ window.COURSEBOOK_CATALOG = {
       ],
       "v1_url": "unit4/index.html",
       "v2_url": "unit4/v2.html",
-      "badge": "Flagship v2 Ready",
       "accent_color": "#3182ce"
     },
     {
@@ -95,7 +91,6 @@ window.COURSEBOOK_CATALOG = {
         "Local History",
         "Civics"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#d69e2e",
       "v1_url": "unit5/index.html",
       "v2_url": "unit5/v2.html"
@@ -112,7 +107,6 @@ window.COURSEBOOK_CATALOG = {
         "Career Guidance",
         "Citizenship"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#e53e3e",
       "v1_url": "unit6/index.html",
       "v2_url": "unit6/v2.html"
@@ -131,7 +125,6 @@ window.COURSEBOOK_CATALOG = {
         "Environmental Education",
         "Theatre Education"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#38a169",
       "v1_url": "unit7/index.html",
       "v2_url": "unit7/v2.html"
@@ -149,7 +142,6 @@ window.COURSEBOOK_CATALOG = {
         "Consumer Education",
         "Civics"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#d53f8c",
       "v1_url": "unit8/index.html",
       "v2_url": "unit8/v2.html"
@@ -167,7 +159,6 @@ window.COURSEBOOK_CATALOG = {
         "Biology",
         "Geography"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#2f855a",
       "v1_url": "unit9/index.html",
       "v2_url": "unit9/v2.html"
@@ -185,7 +176,6 @@ window.COURSEBOOK_CATALOG = {
         "Literature",
         "Art"
       ],
-      "badge": "Flagship v2 Ready",
       "accent_color": "#4f46e5",
       "v1_url": "unit10/index.html",
       "v2_url": "unit10/v2.html"
