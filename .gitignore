@@ -10,8 +10,15 @@ _tools/.agents/
 
 # Backups made by hand before git existed
 *.bak
+*.bak*
 *.bak.*
 *.bak-*
+
+# Scratch audio and helper scripts
+**/test_tts.mp3
+**/inspect_*.js
+**/assets/audio/full/
+**/assets/audio_neural/full/
 
 # OS junk
 Thumbs.db

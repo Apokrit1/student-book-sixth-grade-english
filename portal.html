@@ -3,148 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English 6th Grade (ΣΤ΄ Δημοτικού) — Modern Digital Coursebook Hub</title>
-  <meta name="description" content="Official modern digital companion for the Greek Primary School 6th Grade English Coursebook. Interactive CLIL labs, neural audio, and printable classroom worksheets.">
+  <title>English 6th Grade (ΣΤ΄ Δημοτικού) — Interactive CLIL Hub &amp; Coursebook Companion</title>
+  <meta name="description" content="Official modern digital companion for the Greek Primary School 6th Grade English Coursebook. Interactive CLIL labs, neural audio, printable worksheets &amp; auto-scored quizzes.">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="portal.css">
 </head>
 <body>
 
-  <!-- Background decorative ambient gradients -->
+  <!-- Ambient Decorative Background Gradients -->
   <div class="bg-decoration" aria-hidden="true">
     <div class="glow-orb orb-1"></div>
     <div class="glow-orb orb-2"></div>
     <div class="glow-orb orb-3"></div>
   </div>
 
-  <header class="portal-header">
-    <div class="portal-header-container">
-      <div class="portal-brand-row">
-        <div class="portal-brand-badge">
-          <span class="greek-crest">🇬🇷</span>
-          <span>Greek Ministry of Education • DEPPS-APS Curriculum</span>
-        </div>
-        <div class="portal-header-chips">
-          <div class="portal-level-pill">Target CEFR: A1+ (Bridge to A2)</div>
-        </div>
-      </div>
+  <!-- =========================================================================
+       1. STICKY HEADER (Always Visible with Search, Mode Toggle & Quiz Dashboard)
+       ========================================================================= -->
+  <header class="sticky-header" id="portalHeader" role="banner">
+    <div class="header-container">
       
-      <div class="portal-hero">
-        <div class="portal-hero-text">
-          <h1 class="portal-title">English 6th Grade</h1>
-          <h2 class="portal-subtitle">Interactive Coursebook Companion & Modernized CLIL Hub</h2>
-          <p class="portal-desc">
-            A state-of-the-art digital modernization of the Greek primary school coursebook. Bridging classic curricular grammar and lexical goals with authentic intercultural storytelling, natural neural AI speech, and printable classroom worksheet packs.
-          </p>
-          <div class="portal-hero-actions">
-            <a href="#unitsGrid" class="hero-cta-btn hero-video-btn">
-              <span>📚</span>
-              <span>Explore Units (1–10)</span>
-            </a>
-            <a href="unit1/v2.html" class="hero-cta-btn hero-player-btn">
-              <span>📚</span>
-              <span>Open Unit 1 Coursebook</span>
-            </a>
-          </div>
+      <!-- Logo & Brand -->
+      <a href="portal.html" class="header-brand" aria-label="English 6th Grade Hub Homepage">
+        <div class="brand-crest" aria-hidden="true">🇬🇷</div>
+        <div class="brand-info">
+          <span class="brand-title">English 6th Grade</span>
+          <span class="brand-subtitle">Interactive CLIL Hub <span class="badge-pill">A2 / A2+</span></span>
         </div>
-        <div class="portal-quick-stats">
-          <div class="stat-box">
-            <span class="stat-number">10</span>
-            <span class="stat-name">Syllabus Units</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">280+</span>
-            <span class="stat-name">Neural AI Audios</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">100%</span>
-            <span class="stat-name">Printable Worksheets</span>
-          </div>
+      </a>
+
+      <!-- Real-Time Search Bar -->
+      <div class="header-search-wrapper" role="search">
+        <div class="search-input-box">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input 
+            type="search" 
+            id="unitSearch" 
+            placeholder="Search units, grammar, themes, or keywords (Press '/' to focus)..." 
+            autocomplete="off" 
+            spellcheck="false"
+            aria-label="Search units and resources"
+          >
+          <kbd class="search-kbd-hint" aria-hidden="true">/</kbd>
+          <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear search" hidden>×</button>
         </div>
       </div>
 
-      <!-- Modernization Mission Banner -->
-      <div class="modernization-banner">
-        <div class="banner-icon">🚀</div>
-        <div class="banner-content">
-          <strong>20-Year Coursebook Modernization Initiative:</strong>
-          <span>Extending the timeless educational core of the 2006 textbook into a contemporary, collaborative learning space with authentic modern contexts, inductive grammar labs, and ready-to-print student portfolio sheets.</span>
-        </div>
+      <!-- Header Tools & Actions -->
+      <div class="header-tools">
+        <!-- Quiz Dashboard Button -->
+        <button id="openQuizDashboardBtn" class="header-action-btn quiz-dash-btn" aria-label="Open Quiz Dashboard and badges" title="View Quiz Scores & Badges">
+          <span class="btn-icon">📊</span>
+          <span class="btn-text">Quiz Dashboard</span>
+          <span class="badge-counter" id="headerBadgesCount" title="CEFR Badges Earned">0/10</span>
+        </button>
+
+        <!-- Teacher Mode Toggle Switch -->
+        <button id="teacherModeToggle" class="header-action-btn teacher-toggle-btn" aria-pressed="false" aria-label="Toggle Teacher Mode with answer keys and lesson notes" title="Teacher Mode: Reveals answer keys & teacher notes">
+          <span class="btn-icon">👩‍🏫</span>
+          <span class="btn-text">Teacher Mode</span>
+          <span class="toggle-pill" aria-hidden="true"><span class="toggle-knob"></span></span>
+        </button>
+
+        <!-- Student Profile Avatar Button -->
+        <button id="profileBtn" class="profile-avatar-btn" aria-label="Student profile settings" title="Student Profile & Certificate Name">
+          <span class="avatar-badge" id="avatarEmoji">🎒</span>
+          <span class="avatar-name" id="navStudentName">Student</span>
+        </button>
       </div>
+
     </div>
   </header>
 
-  <main class="portal-main">
-    <div class="portal-container">
+  <!-- Teacher Mode Global Indicator Banner (Appears when active) -->
+  <aside id="teacherModeBanner" class="teacher-mode-banner" role="status" aria-live="polite" hidden>
+    <div class="teacher-banner-inner">
+      <div class="teacher-banner-text">
+        <span class="teacher-badge-icon">👩‍🏫</span>
+        <strong>Teacher Mode Active:</strong> 
+        <span>Answer keys, pedagogical notes, and full 10-unit worksheet packs are now accessible across all unit tabs.</span>
+      </div>
+      <div class="teacher-banner-actions">
+        <button id="teacherDownloadAllBtn" class="teacher-quick-btn" title="Download Complete Printable Pack for All Units">
+          🖨️ Download All Worksheets
+        </button>
+        <button id="teacherDismissBannerBtn" class="teacher-dismiss-btn" aria-label="Dismiss banner">✕</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. HERO SECTION (Multicultural Classroom Illustration & Quick Stats)
+       ========================================================================= -->
+  <section class="portal-hero-section" id="heroSection">
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    <div class="hero-container">
       
-      <div class="section-title-row">
+      <div class="hero-content">
+        <div class="hero-curriculum-badge">
+          <span class="crest-dot">🇬🇷</span>
+          <span>Greek Ministry of Education • DEPPS-APS Curriculum Companion</span>
+        </div>
+
+        <h1 class="hero-main-title">
+          English 6th Grade <span class="hero-title-accent">– Interactive CLIL Hub</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Modernized lessons, neural AI audio, printable worksheets &amp; auto‑scored quizzes. Designed for Greek primary school learners and teachers to explore authentic intercultural stories, discover inductive grammar, and build CEFR portfolios.
+        </p>
+
+        <!-- Hero Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#unitsGridSection" class="btn btn-primary hero-cta-btn" id="exploreUnitsBtn">
+            <span>Explore All Units</span>
+            <span class="btn-arrow" aria-hidden="true">▼</span>
+          </a>
+          <button id="heroOpenQuizBtn" class="btn btn-secondary hero-secondary-btn">
+            <span>📊</span> Quiz Dashboard &amp; Badges
+          </button>
+          <button id="heroQuickAudioBtn" class="btn btn-glass hero-glass-btn">
+            <span>🎧</span> Audio Listening Lab
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counters -->
+      <div class="hero-stats-card" aria-label="Hub content statistics">
+        <div class="stat-item">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Syllabus Units</span>
+          <span class="stat-detail">Units 1–10 Complete</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">280+</span>
+          <span class="stat-label">Neural Audios</span>
+          <span class="stat-detail">Dual-Engine AI Speech</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Printable Packs</span>
+          <span class="stat-detail">Ink-Friendly Worksheets</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Auto Quizzes</span>
+          <span class="stat-detail">CEFR Can-Do Badges</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modernization Mission Banner -->
+  <div class="mission-banner-wrap">
+    <div class="mission-banner">
+      <div class="mission-icon" aria-hidden="true">🚀</div>
+      <div class="mission-text">
+        <strong>20-Year Coursebook Modernization Initiative:</strong>
+        <span>Extending the timeless educational core of the 2006 textbook into a contemporary, collaborative learning space with authentic European contexts, inductive grammar labs, and ready-to-print student portfolio sheets.</span>
+      </div>
+      <a href="unit1/v2.html" class="mission-flagship-btn" title="Launch Flagship Unit 1 Explorer">
+        ✨ Try Flagship Unit 1
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. COURSEBOOK UNITS GRID SECTION (Search, Term Filters & Cards)
+       ========================================================================= -->
+  <main class="portal-main" id="unitsGridSection">
+    <div class="portal-container">
+
+      <!-- Section Title & Curriculum Term Filter Pills -->
+      <div class="section-header-row">
         <div>
-          <h2 class="section-title">Coursebook Units & Learning Modules</h2>
-          <p class="section-subtitle">Select a unit to launch its interactive learning application, audio labs, and printable worksheets.</p>
+          <h2 class="section-title">Coursebook Units (1–10)</h2>
+          <p class="section-subtitle">Select any unit to launch its interactive CLIL lesson, audio lab, printable worksheet, or quiz.</p>
         </div>
+
+        <!-- Term and Status Filter Pills -->
+        <nav class="term-filter-tabs" aria-label="Filter units by term or progress">
+          <button class="filter-tab active" data-filter="all" aria-pressed="true">
+            All Units <span class="filter-count" id="countAll">10</span>
+          </button>
+          <button class="filter-tab" data-filter="term1" aria-pressed="false">
+            Term 1 (Units 1–3)
+          </button>
+          <button class="filter-tab" data-filter="term2" aria-pressed="false">
+            Term 2 (Units 4–7)
+          </button>
+          <button class="filter-tab" data-filter="term3" aria-pressed="false">
+            Term 3 (Units 8–10)
+          </button>
+          <button class="filter-tab" data-filter="completed" aria-pressed="false">
+            Completed <span class="filter-count" id="countCompleted">0</span>
+          </button>
+        </nav>
       </div>
 
-      <!-- Teacher Syllabus Check Notice (§I) -->
-      <div style="margin-bottom: 24px; padding: 14px 20px; background: rgba(49, 130, 206, 0.08); border: 1px solid rgba(49, 130, 206, 0.3); border-radius: 12px; display: flex; align-items: flex-start; gap: 12px;">
-        <span style="font-size: 1.3rem; line-height: 1;">🎉</span>
-        <div style="font-size: 0.88rem; color: #2d3748; line-height: 1.5;">
-          <strong style="color: #2b6cb0;">Complete 10-Unit Modernization Milestone:</strong>
-          All 10 syllabus units (Units 1–10) are now fully built, authentic to the Greek Ministry of Education Teacher's Book &amp; Pupil's Book, and equipped with Student's Book &amp; Workbook CLIL stories, inductive grammar labs, dual-engine neural audio, and printable student worksheets.
-        </div>
+      <!-- Live Search & Active Filter Feedback -->
+      <div id="searchFeedbackBar" class="search-feedback-bar" hidden>
+        <span id="searchFeedbackText">Showing 10 units</span>
+        <button id="resetSearchFilterBtn" class="reset-filter-link">Reset filters</button>
       </div>
 
-      <!-- Units Grid (Populated dynamically from data/coursebook_catalog.json) -->
-      <div class="units-grid" id="unitsGrid">
-        <!-- Unit 1 Featured Card (Fallback rendered for instant display) -->
-        <article class="unit-card featured">
-          <div class="unit-card-header">
-            <div class="unit-number-pill">Unit 01</div>
-          </div>
-          <h3 class="unit-title">Our Multicultural Class</h3>
-          <p class="unit-tagline">Meeting newcomers from Ukraine, Albania, Georgia & the UK. European geography, habits vs. present situations, and 5-paragraph country reports.</p>
-          
-          <div class="unit-meta-tags">
-            <span class="meta-tag">🌍 Geography CLIL</span>
-            <span class="meta-tag">🧪 Present Simple vs. Continuous</span>
-            <span class="meta-tag">🎧 Dual Voice Neural AI</span>
-            <span class="meta-tag">🖨️ 5 Printable Worksheets</span>
-          </div>
-
-          <div class="unit-card-actions">
-            <a href="unit1/v2.html" class="action-btn v2-btn">
-              <span>📚</span> Student's Book &amp; Workbook
-            </a>
-            <a href="unit1/index.html" class="action-btn v1-btn">
-              <span>📖</span> Vocabulary Companion
-            </a>
-            <a href="unit1/photodentro/index.html" target="_blank" class="action-btn oer-btn">
-              <span>🏛️</span> Photodentro OER Lab
-            </a>
-          </div>
-        </article>
+      <!-- Units Grid (Populated dynamically via portal.js from window.COURSEBOOK_CATALOG) -->
+      <div class="units-grid" id="unitsGrid" role="region" aria-label="Coursebook Units Grid">
+        <!-- Unit Cards will be dynamically injected here -->
       </div>
 
       <!-- Teacher's Pedagogical Framework Callout -->
-      <section class="teacher-framework-card">
+      <section class="teacher-framework-card" aria-labelledby="frameworkTitle">
         <div class="framework-header">
-          <span class="framework-icon">🧑‍🏫</span>
+          <span class="framework-icon" aria-hidden="true">🧑‍🏫</span>
           <div>
-            <h3 class="framework-title">Teacher & Classroom Integration Guide</h3>
-            <p class="framework-desc">Designed for seamless blended learning in both computer labs and traditional classrooms.</p>
+            <h3 class="framework-title" id="frameworkTitle">Teacher &amp; Classroom Integration Framework</h3>
+            <p class="framework-desc">Designed for blended learning in computer labs, interactive whiteboards, and traditional print classrooms.</p>
           </div>
         </div>
 
         <div class="framework-grid">
           <div class="framework-pillar">
             <h4>📄 Complete Printable Packs</h4>
-            <p>Every interactive module generates an ink-friendly, single/double A4 worksheet with student name and date fields for immediate classroom distribution and homework.</p>
+            <p>Every interactive module generates an ink-friendly, clean A4 worksheet with student name and date fields for immediate classroom distribution and homework.</p>
           </div>
           <div class="framework-pillar">
             <h4>🔊 Dual AI Speech Models</h4>
-            <p>Listen using high-definition Sonia Neural AI (natural British prosody) or Classic Google TTS, allowing pupils to adjust speeds (0.8x to 1.2x) for differentiated ear training.</p>
+            <p>Listen using high-definition Sonia Neural AI (natural British prosody) or Classic TTS, with 0.8x to 1.2x speed controls for differentiated ear training.</p>
           </div>
           <div class="framework-pillar">
             <h4>🎖️ CEFR "Can-Do" Portfolio</h4>
-            <p>Directly aligned with the textbook's self-assessment targets (*"Now tick what you can do"*), cultivating learner autonomy and self-evaluation.</p>
+            <p>Directly aligned with the textbook's self-assessment targets (<em>"Now tick what you can do"</em>), cultivating learner autonomy and self-evaluation.</p>
+          </div>
+          <div class="framework-pillar">
+            <h4>🇬🇷 DEPPS-APS Alignment</h4>
+            <p>Preserves all lexical items, grammatical targets, cross-curricular CLIL connections, and pedagogical sequences mandated by the Greek curriculum.</p>
           </div>
         </div>
       </section>
@@ -152,20 +249,453 @@
     </div>
   </main>
 
-  <footer class="portal-footer">
+  <!-- =========================================================================
+       4. CONSISTENT UNIT WRAPPER MODAL (Tabs: Lesson, Audio Lab, Worksheet, Quiz)
+       ========================================================================= -->
+  <dialog id="unitWrapperModal" class="unit-wrapper-modal" aria-labelledby="wrapperUnitTitle" aria-modal="true">
+    <div class="wrapper-shell">
+      
+      <!-- Wrapper Header -->
+      <header class="wrapper-header">
+        <div class="wrapper-title-group">
+          <span class="wrapper-unit-icon" id="wrapperUnitIcon">🌍</span>
+          <div>
+            <div class="wrapper-unit-meta">
+              <span class="wrapper-pill" id="wrapperUnitPill">Unit 01</span>
+              <span class="wrapper-cefr" id="wrapperCefrPill">CEFR A2</span>
+              <span class="wrapper-status-pill" id="wrapperCompletionStatus">In Progress</span>
+            </div>
+            <h2 class="wrapper-unit-title" id="wrapperUnitTitle">Our Multicultural Class</h2>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs (Lesson, Audio Lab, Worksheet, Quiz) -->
+        <nav class="wrapper-tabs" role="tablist" aria-label="Unit Learning Modules">
+          <button class="wrapper-tab active" data-tab="lesson" role="tab" aria-selected="true" id="tabBtnLesson">
+            <span class="tab-icon">📖</span> <span class="tab-label">Lesson Explorer</span>
+          </button>
+          <button class="wrapper-tab" data-tab="audio" role="tab" aria-selected="false" id="tabBtnAudio">
+            <span class="tab-icon">🎧</span> <span class="tab-label">Audio Lab</span>
+          </button>
+          <button class="wrapper-tab" data-tab="worksheet" role="tab" aria-selected="false" id="tabBtnWorksheet">
+            <span class="tab-icon">📄</span> <span class="tab-label">Worksheet</span>
+          </button>
+          <button class="wrapper-tab" data-tab="quiz" role="tab" aria-selected="false" id="tabBtnQuiz">
+            <span class="tab-icon">📝</span> <span class="tab-label">Quiz &amp; Badge</span>
+          </button>
+        </nav>
+
+        <!-- Wrapper Utility Actions -->
+        <div class="wrapper-header-actions">
+          <a href="#" id="wrapperFullscreenBtn" target="_blank" rel="noopener" class="wrapper-action-btn" title="Open Lesson in New Tab">
+            <span>↗️</span>
+          </a>
+          <button id="wrapperCloseBtn" class="wrapper-close-btn" aria-label="Close Unit Wrapper">✕</button>
+        </div>
+      </header>
+
+      <!-- Wrapper Body Panels -->
+      <div class="wrapper-body">
+        
+        <!-- Tab Panel 1: Lesson Explorer (Iframe with Lazy Load) -->
+        <section class="wrapper-panel active" id="panelLesson" role="tabpanel" aria-labelledby="tabBtnLesson">
+          <div class="lesson-iframe-wrap">
+            <div class="iframe-loading-indicator" id="iframeLoader">
+              <div class="spinner"></div>
+              <span>Loading Unit Explorer...</span>
+            </div>
+            <iframe id="lessonIframe" title="Unit Interactive Lesson Explorer" src="about:blank" loading="lazy"></iframe>
+          </div>
+        </section>
+
+        <!-- Tab Panel 2: Audio Lab (Dedicated Audio Player & Transcripts) -->
+        <section class="wrapper-panel" id="panelAudio" role="tabpanel" aria-labelledby="tabBtnAudio" hidden>
+          <div class="audio-lab-container">
+            <div class="audio-lab-sidebar">
+              <h3 class="audio-lab-title">🎧 Unit Audio Tracks</h3>
+              <p class="audio-lab-subtitle">Choose a story narration or dialogue:</p>
+              <div class="audio-playlist" id="audioPlaylist">
+                <!-- Tracks dynamically injected here -->
+              </div>
+            </div>
+
+            <div class="audio-transcript-panel">
+              <div class="transcript-header">
+                <div>
+                  <h4 class="transcript-title" id="transcriptStoryTitle">Select an Audio Track</h4>
+                  <span class="transcript-speaker" id="transcriptSpeaker">Narrator</span>
+                </div>
+                <div class="transcript-tools">
+                  <button id="toggleTranscriptSizeBtn" class="text-size-btn" title="Toggle larger text size">Aa</button>
+                </div>
+              </div>
+              <div class="transcript-body" id="transcriptBody">
+                <p class="transcript-placeholder">Select a story from the left playlist to start audio playback and view synchronized transcripts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unified Audio Player Bar (Fixed at bottom of Audio tab) -->
+          <div class="unified-audio-player-bar" id="unifiedAudioBar">
+            <div class="player-track-info">
+              <span class="player-track-icon" id="playerTrackIcon">🎵</span>
+              <div class="player-track-meta">
+                <span class="player-title" id="playerTrackTitle">No track playing</span>
+                <span class="player-subtitle" id="playerTrackSubtitle">Select a story to begin</span>
+              </div>
+            </div>
+
+            <div class="player-controls">
+              <button id="playerSkipBackBtn" class="player-btn player-skip-btn" title="Skip -10 seconds" aria-label="Skip back 10 seconds">⏪ 10s</button>
+              <button id="playerPlayPauseBtn" class="player-btn player-play-btn" title="Play or Pause" aria-label="Play">▶️</button>
+              <button id="playerSkipForwardBtn" class="player-btn player-skip-btn" title="Skip +10 seconds" aria-label="Skip forward 10 seconds">10s ⏩</button>
+            </div>
+
+            <div class="player-progress-wrap">
+              <span id="playerCurrentTime">0:00</span>
+              <input type="range" id="playerProgressBar" min="0" max="100" value="0" step="0.5" aria-label="Audio progress seek">
+              <span id="playerDuration">0:00</span>
+            </div>
+
+            <div class="player-speed-volume">
+              <label for="playerSpeedSelect" class="sr-only">Playback Speed</label>
+              <select id="playerSpeedSelect" class="player-select" title="Speed">
+                <option value="0.8">0.8× Slow</option>
+                <option value="1.0" selected>1.0× Normal</option>
+                <option value="1.2">1.2× Fast</option>
+              </select>
+
+              <div class="volume-slider-group">
+                <span class="vol-icon" id="volIcon">🔊</span>
+                <input type="range" id="playerVolumeSlider" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+              </div>
+            </div>
+            <audio id="coreAudioElement" preload="metadata"></audio>
+          </div>
+        </section>
+
+        <!-- Tab Panel 3: Printable Worksheet Pack -->
+        <section class="wrapper-panel" id="panelWorksheet" role="tabpanel" aria-labelledby="tabBtnWorksheet" hidden>
+          <div class="worksheet-pack-container">
+            <div class="worksheet-toolbar">
+              <div class="worksheet-meta-inputs">
+                <label for="wsStudentName">Student Name:
+                  <input type="text" id="wsStudentName" placeholder="Pupil's Full Name" class="ws-input">
+                </label>
+                <label for="wsDate">Date:
+                  <input type="text" id="wsDate" class="ws-input">
+                </label>
+                <label for="wsClass">Class:
+                  <input type="text" id="wsClass" value="6th Grade (ΣΤ΄)" class="ws-input">
+                </label>
+              </div>
+
+              <div class="worksheet-action-buttons">
+                <button id="printCurrentWorksheetBtn" class="btn btn-primary" title="Print this ink-friendly A4 worksheet">
+                  🖨️ Print Worksheet
+                </button>
+                <button id="downloadPdfWorksheetBtn" class="btn btn-outline" title="Save as PDF via Print Dialog">
+                  📥 Download PDF
+                </button>
+              </div>
+            </div>
+
+            <!-- Worksheet Preview Sheet -->
+            <div class="worksheet-paper-sheet" id="worksheetPaper">
+              <div class="ws-header-brand">
+                <div class="ws-brand-left">
+                  <div class="ws-crest">🇬🇷 Greek Ministry of Education • DEPPS-APS 6th Grade English</div>
+                  <div class="ws-unit-name" id="wsUnitTitle">Unit 1: Our Multicultural Class</div>
+                </div>
+                <div class="ws-student-box">
+                  <div>Name: <span id="wsPrintStudentName">____________________</span></div>
+                  <div>Date: <span id="wsPrintDate">__ / __ / 2026</span></div>
+                  <div>Class: <span id="wsPrintClass">ΣΤ΄ Δημοτικού</span></div>
+                </div>
+              </div>
+
+              <div class="ws-body-content" id="wsBodyContent">
+                <!-- Dynamically generated printable exercises from unit data -->
+              </div>
+
+              <div class="ws-footer-bar">
+                <span>English 6th Grade Digital Companion Pack • Ink-Friendly Classroom Edition</span>
+                <span>Page 1 of 1</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tab Panel 4: Interactive Auto-Scored Quiz & Can-Do Badge -->
+        <section class="wrapper-panel" id="panelQuiz" role="tabpanel" aria-labelledby="tabBtnQuiz" hidden>
+          <div class="quiz-container" id="unitQuizContainer">
+            <!-- Quiz Start / Screen -->
+            <div class="quiz-screen" id="quizActiveScreen">
+              <div class="quiz-top-bar">
+                <div class="quiz-progress-text">
+                  <span>Question <strong id="quizCurrentQ">1</strong> of <strong id="quizTotalQ">8</strong></span>
+                </div>
+                <div class="quiz-timer" id="quizTimerBox">
+                  <span class="timer-icon">⏱️</span> <span id="quizTimerVal">00:00</span>
+                </div>
+                <div class="quiz-score-live">
+                  Score: <strong id="quizLiveScore">0%</strong>
+                </div>
+              </div>
+
+              <div class="quiz-card-box">
+                <div class="quiz-question-type" id="quizQType">Comprehension &amp; Grammar</div>
+                <h3 class="quiz-question-prompt" id="quizPrompt">Loading quiz question...</h3>
+                <div class="quiz-options-list" id="quizOptionsList">
+                  <!-- Options injected dynamically -->
+                </div>
+                <div class="quiz-feedback-box" id="quizFeedbackBox" hidden>
+                  <div class="feedback-icon" id="quizFeedbackIcon">💡</div>
+                  <div class="feedback-text" id="quizFeedbackText">Explanation</div>
+                </div>
+              </div>
+
+              <div class="quiz-nav-row">
+                <button id="quizNextBtn" class="btn btn-primary" disabled>Next Question ❯</button>
+              </div>
+            </div>
+
+            <!-- Quiz Results Screen (Shown upon completion) -->
+            <div class="quiz-results-screen" id="quizResultsScreen" hidden>
+              <div class="results-badge-showcase">
+                <div class="badge-icon-celebration" id="resultsBadgeIcon">🌍</div>
+                <h3 class="results-title" id="resultsTitle">Great Job!</h3>
+                <p class="results-subtitle" id="resultsSubtitle">You have completed the Unit Quiz.</p>
+              </div>
+
+              <div class="results-score-card">
+                <div class="score-circle">
+                  <span class="score-big" id="resultsScorePercent">88%</span>
+                  <span class="score-label">Final Score</span>
+                </div>
+                <div class="results-stats">
+                  <div class="result-stat-row">
+                    <span>Correct Answers:</span>
+                    <strong id="resultsCorrectCount">7 / 8</strong>
+                  </div>
+                  <div class="result-stat-row">
+                    <span>CEFR Can-Do Status:</span>
+                    <strong id="resultsCanDoStatus" class="status-passed">Badge Awarded! 🎖️</strong>
+                  </div>
+                  <div class="result-stat-row">
+                    <span>Time Taken:</span>
+                    <strong id="resultsTimeSpent">1m 45s</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="results-actions">
+                <button id="quizRetakeBtn" class="btn btn-outline">🔄 Retake Quiz</button>
+                <button id="quizReviewBtn" class="btn btn-secondary">🔍 Review Answers</button>
+                <button id="quizDoneCloseBtn" class="btn btn-primary">✅ Save Progress &amp; Return to Hub</button>
+              </div>
+
+              <!-- Answer Review Tray (revealed upon clicking Review) -->
+              <div class="quiz-review-tray" id="quizReviewTray" hidden>
+                <h4>Question Review:</h4>
+                <div class="review-questions-list" id="reviewQuestionsList"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       5. QUIZ DASHBOARD & CAN-DO BADGES MODAL
+       ========================================================================= -->
+  <dialog id="quizDashboardModal" class="dashboard-modal" aria-labelledby="dashModalTitle" aria-modal="true">
+    <div class="dashboard-shell">
+      <header class="dashboard-header">
+        <div class="dash-header-title">
+          <span class="dash-icon">📊</span>
+          <div>
+            <h2 id="dashModalTitle">Student Quiz Dashboard &amp; Can-Do Passports</h2>
+            <p>Track your CEFR learning mastery and unit badges across all 10 syllabus units.</p>
+          </div>
+        </div>
+        <button id="dashCloseBtn" class="wrapper-close-btn" aria-label="Close Quiz Dashboard">✕</button>
+      </header>
+
+      <div class="dashboard-body">
+        <!-- Overall Progress Overview -->
+        <div class="dash-overview-card">
+          <div class="dash-metric">
+            <span class="metric-val" id="dashOverallAvg">0%</span>
+            <span class="metric-label">Average Score</span>
+          </div>
+          <div class="dash-metric">
+            <span class="metric-val" id="dashBadgesEarned">0 / 10</span>
+            <span class="metric-label">CEFR Badges Earned</span>
+          </div>
+          <div class="dash-metric">
+            <span class="metric-val" id="dashUnitsCompleted">0 / 10</span>
+            <span class="metric-label">Units Completed</span>
+          </div>
+          <div class="dash-actions">
+            <button id="dashPrintCertificateBtn" class="btn btn-primary dash-btn">
+              🎓 Print Official Certificate
+            </button>
+            <button id="dashResetProgressBtn" class="btn btn-outline dash-btn text-danger">
+              🔄 Reset Progress
+            </button>
+          </div>
+        </div>
+
+        <!-- Badges Gallery -->
+        <h3 class="dash-section-title">🏆 CEFR Can-Do Passports</h3>
+        <div class="badges-grid" id="dashBadgesGrid">
+          <!-- 10 Badges Injected Dynamically -->
+        </div>
+
+        <!-- Unit Score Table -->
+        <h3 class="dash-section-title">📋 Unit-by-Unit Scorecards</h3>
+        <div class="dash-table-wrap">
+          <table class="dash-score-table">
+            <thead>
+              <tr>
+                <th>Unit</th>
+                <th>Theme &amp; Title</th>
+                <th>Status</th>
+                <th>Best Score</th>
+                <th>Badge</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="dashScoresTbody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       6. STUDENT PROFILE MODAL
+       ========================================================================= -->
+  <dialog id="profileModal" class="profile-modal" aria-labelledby="profileModalTitle" aria-modal="true">
+    <div class="profile-modal-shell">
+      <header class="profile-modal-header">
+        <h3 id="profileModalTitle">🎒 Student Profile</h3>
+        <button id="profileModalCloseBtn" class="wrapper-close-btn" aria-label="Close profile">✕</button>
+      </header>
+      <form id="profileForm" class="profile-form">
+        <div class="form-group">
+          <label for="inputStudentName">Student Name (printed on worksheets &amp; certificates):</label>
+          <input type="text" id="inputStudentName" placeholder="Enter your full name" required class="profile-input">
+        </div>
+        <div class="form-group">
+          <label for="inputStudentClass">School / Class:</label>
+          <input type="text" id="inputStudentClass" value="6th Grade (ΣΤ΄ Δημοτικού)" class="profile-input">
+        </div>
+        <div class="form-group">
+          <label>Choose Avatar Icon:</label>
+          <div class="avatar-picker-grid" id="avatarPickerGrid">
+            <button type="button" class="avatar-opt active" data-emoji="🎒">🎒</button>
+            <button type="button" class="avatar-opt" data-emoji="🌍">🌍</button>
+            <button type="button" class="avatar-opt" data-emoji="🚀">🚀</button>
+            <button type="button" class="avatar-opt" data-emoji="📚">📚</button>
+            <button type="button" class="avatar-opt" data-emoji="🎨">🎨</button>
+            <button type="button" class="avatar-opt" data-emoji="🏆">🏆</button>
+          </div>
+        </div>
+        <div class="profile-form-actions">
+          <button type="submit" class="btn btn-primary">Save Profile</button>
+          <button type="button" id="profileCancelBtn" class="btn btn-outline">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       7. OFFICIAL PRINTABLE CERTIFICATE CONTAINER (Printed via @media print)
+       ========================================================================= -->
+  <div id="printCertificateContainer" class="print-certificate-container no-screen">
+    <div class="cert-border">
+      <div class="cert-inner">
+        <div class="cert-header">
+          <div class="cert-crest">🇬🇷</div>
+          <div class="cert-authority">GREEK MINISTRY OF EDUCATION • DEPPS-APS CURRICULUM</div>
+          <h1 class="cert-title">Certificate of Achievement</h1>
+          <p class="cert-subtitle">English 6th Grade (ΣΤ΄ Δημοτικού) — Digital Companion Hub</p>
+        </div>
+        <div class="cert-body">
+          <p class="cert-present">This is proudly presented to</p>
+          <h2 class="cert-student-name" id="certStudentName">Alexandros Papadopoulos</h2>
+          <p class="cert-reason">
+            for successfully completing interactive CLIL inquiries, neural audio ear-training labs, and demonstrating CEFR Level A2/A2+ communicative competence in 6th Grade English.
+          </p>
+          <div class="cert-badges-row" id="certBadgesRow">
+            <!-- Badges placed here -->
+          </div>
+        </div>
+        <div class="cert-footer">
+          <div class="cert-sign">
+            <div class="sign-line"></div>
+            <span>Coursebook Teacher</span>
+          </div>
+          <div class="cert-stamp">
+            <div class="stamp-circle">
+              <span>EXCELLENCE</span>
+              <span>ΣΤ΄ 2026</span>
+            </div>
+          </div>
+          <div class="cert-sign">
+            <div class="sign-line"></div>
+            <span>Primary School Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       8. FOOTER & LOVABLE EDIT BADGE (Positioned bottom-right as proposed)
+       ========================================================================= -->
+  <footer class="portal-footer" role="contentinfo">
     <div class="portal-footer-container">
       <div class="footer-links-row">
-        <a href="#unitsGrid" class="footer-link">📚 Coursebook Units (1–10)</a>
+        <a href="#unitsGridSection" class="footer-link">📚 Coursebook Units (1–10)</a>
         <span class="footer-sep">•</span>
-        <a href="unit1/v2.html" class="footer-link">📚 Unit 1 Coursebook</a>
+        <a href="unit1/v2.html" class="footer-link">🚀 Unit 1 Flagship</a>
         <span class="footer-sep">•</span>
-        <a href="unit10/v2.html" class="footer-link">📚 Unit 10 Coursebook</a>
+        <button id="footerOpenQuizBtn" class="footer-btn-link">📊 Quiz Dashboard</button>
+        <span class="footer-sep">•</span>
+        <button id="footerTeacherBtn" class="footer-btn-link">👩‍🏫 Teacher Portal</button>
       </div>
-      <div class="footer-brand">Photodentro &amp; Ministry of Education • English 6th Grade Modernization Project</div>
-      <div class="footer-meta">Created for Greek Primary Schools (ΣΤ΄ Δημοτικού) • Digital Companion Framework</div>
+      <div class="footer-brand">
+        Photodentro &amp; Ministry of Education • English 6th Grade Modernization Project
+      </div>
+      <div class="footer-meta">
+        Created for Greek Primary Schools (ΣΤ΄ Δημοτικού) • Digital Companion Framework • CEFR Level A2/A2+
+      </div>
     </div>
   </footer>
 
+  <!-- Lovable Floating Badge in bottom-right corner with larger touch target -->
+  <aside class="lovable-floating-badge-wrap" aria-label="Lovable Hub Link">
+    <a 
+      href="https://sixthgrade-english-buddy.lovable.app" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="lovable-floating-badge" 
+      title="Open the Lovable Cloud Edition"
+    >
+      <span class="lovable-heart" aria-hidden="true">❤️</span>
+      <span class="lovable-label">Lovable Hub</span>
+      <span class="lovable-ext-arrow" aria-hidden="true">↗</span>
+    </a>
+  </aside>
+
+  <!-- External & Hub Scripts -->
   <script src="data/coursebook_catalog.js"></script>
   <script src="portal.js"></script>
 </body>
