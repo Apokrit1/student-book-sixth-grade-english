@@ -9,109 +9,95 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background subtle animated gradients -->
-  <div class="bg-decoration">
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-  </div>
-
-  <header class="main-header">
-    <div class="header-container">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-        <div class="header-badge-row" style="margin-bottom: 0;">
-          <a href="../portal.html" style="text-decoration: none; font-size: 0.82rem; font-weight: 700; color: #2b6cb0; background: #ebf8ff; border: 1px solid #bee3f8; padding: 4px 10px; border-radius: 9999px;">
-            🏠 Coursebook Portal
-          </a>
-          <span class="badge curriculum-badge">🇬🇷 English 6th Grade (ΣΤ' Δημοτικού)</span>
-          <span class="badge cefr-badge">CEFR A1+</span>
-          <span class="badge unit-badge">Unit 1: Lessons 1-3</span>
+  <!-- Slim, focused Top App Bar -->
+  <header class="app-topbar">
+    <div class="topbar-inner">
+      <div class="brand-cluster">
+        <a href="../portal.html" class="portal-back-btn" title="Back to Coursebook Portal">
+          <span class="icon">🏠</span>
+          <span class="text">Portal</span>
+        </a>
+        <div class="unit-title-group">
+          <span class="unit-kicker">Unit 1 · 6th Grade English</span>
+          <h1 class="unit-heading">Our Multicultural Class</h1>
         </div>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <a href="photodentro/index.html" target="_blank" style="text-decoration: none; font-size: 0.84rem; font-weight: 800; color: #ffffff; background: linear-gradient(135deg, #2c7a7b 0%, #234e52 100%); padding: 6px 14px; border-radius: 9999px; box-shadow: 0 2px 8px rgba(44,122,123,0.3); display: inline-flex; align-items: center; gap: 6px;">
-            <span>🏛️</span> Photodentro Grammar Quiz ➔
-          </a>
-          <a href="v2.html" style="text-decoration: none; font-size: 0.84rem; font-weight: 800; color: #ffffff; background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%); padding: 6px 14px; border-radius: 9999px; box-shadow: 0 2px 8px rgba(221,107,32,0.3); display: inline-flex; align-items: center; gap: 6px;">
-            <span>📚</span> Student's Book &amp; Workbook ➔
-          </a>
-        </div>
-      </div>
-      
-      <div class="header-title-row">
-        <div class="title-wrap">
-          <h1 class="main-title">Our Multicultural Class</h1>
-          <p class="sub-title">Interactive Picture Vocabulary Companion & Audio Pronunciation Lab</p>
-        </div>
-        
-        <div class="quick-stats">
-          <div class="stat-card">
-            <span class="stat-num" id="totalWordsCount">35</span>
-            <span class="stat-label">Lexical Items</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-num" id="audioCount">280</span>
-            <span class="stat-label">Pre-recorded MP3s (2 Voices)</span>
-          </div>
-        </div>
+        <span class="mode-badge-pill">Vocabulary Companion</span>
+        <!-- Keep stats accessible for JS -->
+        <span class="sr-stats" style="display:none;">
+          <span id="totalWordsCount">35</span>
+          <span id="audioCount">280</span>
+        </span>
       </div>
 
-      <!-- Controls & Nav Row -->
-      <div class="controls-bar">
-        <!-- View Mode Switcher -->
-        <div class="view-modes" role="tablist" aria-label="Learning View Modes">
-          <button class="mode-btn active" data-mode="table" id="btnModeTable" role="tab" aria-selected="true">
-            <span class="icon">📋</span> Table Companion
-          </button>
-          <button class="mode-btn" data-mode="cards" id="btnModeCards" role="tab" aria-selected="false">
-            <span class="icon">🗂️</span> Visual Cards
-          </button>
-          <button class="mode-btn" data-mode="quiz" id="btnModeQuiz" role="tab" aria-selected="false">
-            <span class="icon">🎯</span> Listening Challenge
-          </button>
-          <button class="mode-btn" data-mode="defQuiz" id="btnModeDefQuiz" role="tab" aria-selected="false">
-            <span class="icon">💡</span> Definition Challenge
-          </button>
-          <button class="mode-btn" data-mode="printable" id="btnModePrintable" role="tab" aria-selected="false">
-            <span class="icon">🖨️</span> Printable Study Sheet
-          </button>
-          <button class="mode-btn" data-mode="tts" id="btnModeTTS" role="tab" aria-selected="false">
-            <span class="icon">📝</span> TTS Script & Export
-          </button>
-        </div>
-
-        <!-- Search & Filter Controls -->
-        <div class="search-filter-group">
-          <div class="search-input-wrap">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search word, Greek meaning, or definition..." aria-label="Search vocabulary">
-            <button class="clear-search" id="clearSearchBtn" aria-label="Clear search">✕</button>
-          </div>
-          
-          <div class="voice-select-wrap">
-            <label for="voiceSelect" class="speed-label">AI Voice:</label>
-            <select id="voiceSelect" class="speed-select" aria-label="Audio voice model">
-              <option value="neural" selected>✨ Sonia (Natural Neural AI)</option>
-              <option value="standard">🔊 Google Standard (Classic)</option>
+      <div class="topbar-actions">
+        <!-- AI Voice & Speed in compact toolbar -->
+        <div class="audio-quick-controls">
+          <div class="control-pill">
+            <label for="voiceSelect" class="sr-only">Voice</label>
+            <select id="voiceSelect" class="compact-select" aria-label="Audio voice model">
+              <option value="neural" selected>✨ Sonia (Neural AI)</option>
+              <option value="standard">🔊 Classic Voice</option>
             </select>
           </div>
-
-          <div class="audio-speed-wrap">
-            <label for="speedSelect" class="speed-label">Speed:</label>
-            <select id="speedSelect" class="speed-select" aria-label="Playback speed">
-              <option value="0.8">0.8x (Slow)</option>
-              <option value="1.0" selected>1.0x (Normal)</option>
-              <option value="1.2">1.2x (Fast)</option>
+          <div class="control-pill">
+            <label for="speedSelect" class="sr-only">Speed</label>
+            <select id="speedSelect" class="compact-select" aria-label="Playback speed">
+              <option value="0.8">0.8×</option>
+              <option value="1.0" selected>1.0×</option>
+              <option value="1.2">1.2×</option>
             </select>
           </div>
         </div>
+
+        <a href="photodentro/index.html" target="_blank" class="photodentro-link-btn" title="Open Photodentro Grammar Quiz">
+          🏛️ Photodentro
+        </a>
+        <a href="v2.html" class="coursebook-switch-btn" title="Switch to Student's Book & Workbook">
+          <span>📚 Student's Book &amp; Workbook ➔</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Tactile Mode Switcher Tab Rail -->
+    <nav class="mode-nav-rail" role="tablist" aria-label="Learning Modes">
+      <div class="nav-rail-inner">
+        <button class="mode-btn active" data-mode="table" id="btnModeTable" role="tab" aria-selected="true">
+          <span class="icon">📋</span> Word Table
+        </button>
+        <button class="mode-btn" data-mode="cards" id="btnModeCards" role="tab" aria-selected="false">
+          <span class="icon">🗂️</span> Visual Cards
+        </button>
+        <button class="mode-btn" data-mode="quiz" id="btnModeQuiz" role="tab" aria-selected="false">
+          <span class="icon">🎯</span> Listening Challenge
+        </button>
+        <button class="mode-btn" data-mode="defQuiz" id="btnModeDefQuiz" role="tab" aria-selected="false">
+          <span class="icon">💡</span> Definition Challenge
+        </button>
+        <button class="mode-btn" data-mode="printable" id="btnModePrintable" role="tab" aria-selected="false">
+          <span class="icon">🖨️</span> Study Sheet
+        </button>
+        <button class="mode-btn" data-mode="tts" id="btnModeTTS" role="tab" aria-selected="false">
+          <span class="icon">📝</span> Script Export
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Filter & Search Dock (Anchored right above content, hidden on quiz/print views) -->
+  <div class="filter-search-dock" id="filterSearchDock">
+    <div class="dock-inner">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search word, Greek meaning, or definition..." aria-label="Search vocabulary">
+        <button class="clear-search" id="clearSearchBtn" aria-label="Clear search">✕</button>
       </div>
 
-      <!-- Category Filter Pills -->
       <div class="category-pills" id="categoryPills">
         <button class="pill-btn active" data-category="all">All Words (35)</button>
         <!-- dynamically populated -->
       </div>
     </div>
-  </header>
+  </div>
 
   <main class="content-container">
     <!-- Active Audio Player HUD (Floats when audio plays) -->
