@@ -1,8 +1,8 @@
 {
   "repository": "student-book-sixth-grade-english",
-  "current_branch": "main",
-  "current_head": "a789a67",
-  "last_updated": "2026-10-14 22:19:46",
+  "current_branch": "experimental/concordance-recommendations",
+  "current_head": "c952192",
+  "last_updated": "2026-10-14 22:33:30",
   "total_checkpoints": 7,
   "checkpoints": [
     {
@@ -109,7 +109,7 @@
     },
     {
       "tag": "v2.0-consensus-review",
-      "commit": "a789a67",
+      "commit": "c952192",
       "date": "2026-10-14",
       "title": "Consensus Action Plan & Argon Review Bundle",
       "category": "QA & Model Review",
