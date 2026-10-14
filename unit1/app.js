@@ -282,61 +282,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  let audioTimer = null;
+
   // ==========================================
   // 2. AUDIO ENGINE & PLAYBACK
   // ==========================================
 
-  function playAudioFile(audioSrc, typeLabel, titleLabel, triggerBtn, targetRow, onComplete) {
-    stopCurrentAudio();
-
-    // Mark active button & row
-    if (triggerBtn) {
-      currentPlayingBtn = triggerBtn;
-      currentPlayingBtn.classList.add('playing');
-    }
-    if (targetRow) {
-      currentPlayingRow = targetRow;
-      currentPlayingRow.classList.add('is-playing');
-    }
-
-    // Show Audio HUD
-    audioHud.style.display = 'block';
-    hudAudioType.textContent = typeLabel || 'Audio';
-    hudAudioTitle.textContent = titleLabel || 'Playback';
-    hudPauseBtn.textContent = '⏸';
-
-    currentAudio = new Audio(audioSrc);
-    currentAudio.playbackRate = playbackRate;
-
-    currentAudio.play().then(() => {
-      // playing successfully
-    }).catch(err => {
-      console.warn('Audio file play error, using speech synthesis fallback:', err);
-      speakFallback(titleLabel || typeLabel, onComplete);
-    });
-
-    currentAudio.onended = () => {
-      clearPlayingVisuals();
-      if (onComplete) onComplete();
-    };
-
-    currentAudio.onerror = (e) => {
-      console.warn('Audio element error:', e);
-      clearPlayingVisuals();
-      if (onComplete) onComplete();
-    };
-  }
-
   function stopCurrentAudio() {
+    if (audioTimer) {
+      clearTimeout(audioTimer);
+      audioTimer = null;
+    }
+    playAllQueue = [];
+    isPlayAllActive = false;
+
     if (currentAudio) {
       currentAudio.pause();
       currentAudio.currentTime = 0;
+      currentAudio.src = '';
       currentAudio = null;
     }
+
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+
     clearPlayingVisuals();
-    audioHud.style.display = 'none';
-    isPlayAllActive = false;
-    playAllQueue = [];
+    if (audioHud) audioHud.style.display = 'none';
+    if (hudPauseBtn) hudPauseBtn.textContent = '⏸';
   }
 
   function clearPlayingVisuals() {
@@ -350,6 +323,85 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function playSequence(entries, triggerBtn, targetRow, onComplete) {
+    // If clicking the button that is already playing, stop it (toggle behavior)
+    if (triggerBtn && triggerBtn.classList.contains('playing')) {
+      stopCurrentAudio();
+      return;
+    }
+
+    stopCurrentAudio();
+
+    const queue = (Array.isArray(entries) ? entries : [entries]).filter(e => e && (e.src || e.fallbackText));
+    if (!queue.length) return;
+
+    playAllQueue = queue.slice();
+    isPlayAllActive = playAllQueue.length > 1;
+
+    // Mark active button & row
+    if (triggerBtn) {
+      currentPlayingBtn = triggerBtn;
+      currentPlayingBtn.classList.add('playing');
+    }
+    if (targetRow) {
+      currentPlayingRow = targetRow;
+      currentPlayingRow.classList.add('is-playing');
+    }
+
+    const playNext = () => {
+      if (!playAllQueue.length) {
+        stopCurrentAudio();
+        if (onComplete) onComplete();
+        return;
+      }
+
+      const entry = playAllQueue.shift();
+
+      // Show and update Audio HUD
+      if (audioHud) audioHud.style.display = 'block';
+      if (hudAudioType) hudAudioType.textContent = entry.type || 'Audio';
+      if (hudAudioTitle) hudAudioTitle.textContent = entry.title || 'Playback';
+      if (hudPauseBtn) hudPauseBtn.textContent = '⏸';
+
+      currentAudio = new Audio(entry.src);
+      currentAudio.playbackRate = playbackRate;
+
+      const advance = () => {
+        if (playAllQueue.length) {
+          audioTimer = setTimeout(playNext, 350);
+        } else {
+          stopCurrentAudio();
+          if (onComplete) onComplete();
+        }
+      };
+
+      currentAudio.onended = () => {
+        advance();
+      };
+
+      currentAudio.onerror = (e) => {
+        console.warn('Audio file play error, using speech synthesis fallback:', entry.src, e);
+        speakFallback(entry.fallbackText || entry.title || entry.type, advance);
+      };
+
+      currentAudio.play().catch(err => {
+        console.warn('Audio play() error, using speech synthesis fallback:', err);
+        speakFallback(entry.fallbackText || entry.title || entry.type, advance);
+      });
+    };
+
+    playNext();
+  }
+
+  function playAudioFile(audioSrc, typeLabel, titleLabel, triggerBtn, targetRow, onComplete) {
+    playSequence([{
+      src: audioSrc,
+      type: typeLabel,
+      title: titleLabel,
+      fallbackText: titleLabel
+    }], triggerBtn, targetRow, onComplete);
+  }
+
   // Speech synthesis fallback for extreme edge cases
   function speakFallback(text, onComplete) {
     if (!window.speechSynthesis) {
@@ -357,18 +409,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     window.speechSynthesis.cancel();
-    const cleanText = text.replace(/\(.*\)/g, '');
+    const cleanText = (text || '').replace(/\(.*\)/g, '').trim();
     const utter = new SpeechSynthesisUtterance(cleanText);
     utter.rate = playbackRate;
     utter.lang = 'en-US';
     utter.onend = () => {
-      clearPlayingVisuals();
-      audioHud.style.display = 'none';
       if (onComplete) onComplete();
     };
     utter.onerror = () => {
-      clearPlayingVisuals();
-      audioHud.style.display = 'none';
       if (onComplete) onComplete();
     };
     window.speechSynthesis.speak(utter);
@@ -376,33 +424,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Play All: Sequentially reads Word -> Definition -> Example
   function playAllSequence(item, rowEl, btnEl) {
-    stopCurrentAudio();
-    isPlayAllActive = true;
     const padId = String(item.id).padStart(2, '0');
-    
-    const srcs = [
-      getAudioPath('word', padId),
-      getAudioPath('def', padId),
-      getAudioPath('example', padId)
-    ];
-    let idx = 0;
-    function playStep() {
-      if (!isPlayAllActive || idx >= srcs.length) {
-        isPlayAllActive = false;
-        clearPlayingVisuals();
-        audioHud.style.display = 'none';
-        return;
+    playSequence([
+      {
+        src: getAudioPath('word', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.word
+      },
+      {
+        src: getAudioPath('def', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.definition_en
+      },
+      {
+        src: getAudioPath('example', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.example
       }
-      const s = srcs[idx++];
-      playAudioFile(s, 'Complete Entry', `${item.word}`, btnEl, rowEl, () => {
-        if (isPlayAllActive && idx < srcs.length) {
-          setTimeout(playStep, 350);
-        } else {
-          isPlayAllActive = false;
-        }
-      });
-    }
-    playStep();
+    ], btnEl, rowEl);
   }
 
   // Attach table button events

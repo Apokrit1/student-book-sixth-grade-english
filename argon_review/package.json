@@ -1,0 +1,29 @@
+{
+  "name": "english-6th-grade-portal-unit1-review",
+  "version": "2.0.0",
+  "description": "Greek Ministry of Education 6th Grade Primary English (Αγγλικά ΣΤ΄ Δημοτικού) - Master CLIL Portal & Unit 1 Flagship Review Bundle",
+  "main": "portal.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "serve": "npx serve .",
+    "test": "node _validate.mjs unit1",
+    "verify:offline": "cd unit1 && node verify_offline.js"
+  },
+  "keywords": [
+    "education",
+    "coursebook",
+    "primary-school",
+    "english-efl",
+    "cefr-a2",
+    "offline-first",
+    "gdpr-compliant",
+    "photodentro",
+    "greek-curriculum"
+  ],
+  "author": "Apokrit",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

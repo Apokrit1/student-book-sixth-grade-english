@@ -1,0 +1,322 @@
+================================================================================
+UNIT 1: OUR MULTICULTURAL CLASS - VOCABULARY COMPANION & TTS SCRIPT
+Grade: 6th Grade (ΣΤ' Δημοτικού) | Level: CEFR A1+
+Total Lexical Items: 35
+Format: Word | IPA Pronunciation | Part of Speech | Derivatives | Meaning (Greek) | English Definition | Example
+================================================================================
+
+--------------------------------------------------------------------------------
+ITEM 1: ANCIENT
+Pronunciation: [ˈeɪnʃənt]  |  Part of Speech: (adj)
+Derivatives / Collocations: Der: anciently (adv)
+Greek Meaning: αρχαίος, πανάρχαιος
+English Definition: belonging to the distant past and no longer in existence
+Example Sentence: "The Parthenon is a famous ancient monument in Athens."
+[TTS Reading Script]: ancient. Definition: belonging to the distant past and no longer in existence. Example: The Parthenon is a famous ancient monument in Athens.
+
+--------------------------------------------------------------------------------
+ITEM 2: BORDER
+Pronunciation: [ˈbɔːdə]  |  Part of Speech: (n, v)
+Derivatives / Collocations: Der: borderline (n), border (v) = συνορεύω
+Greek Meaning: σύνορο, μεθόριος / συνορεύω
+English Definition: a line separating two countries or regions
+Example Sentence: "Greece shares a northern border with Albania, North Macedonia, and Bulgaria."
+[TTS Reading Script]: border. Definition: a line separating two countries or regions. Example: Greece shares a northern border with Albania, North Macedonia, and Bulgaria.
+
+--------------------------------------------------------------------------------
+ITEM 3: BRAVE
+Pronunciation: [breɪv]  |  Part of Speech: (adj)
+Derivatives / Collocations: Der: bravely (adv), bravery (n)
+Greek Meaning: γενναίος, θαρραλέος
+English Definition: ready to face danger or pain without showing fear
+Example Sentence: "The brave firefighter saved the cat from the burning building."
+[TTS Reading Script]: brave. Definition: ready to face danger or pain without showing fear. Example: The brave firefighter saved the cat from the burning building.
+
+--------------------------------------------------------------------------------
+ITEM 4: CITRUS FRUIT
+Pronunciation: [ˈsɪtrəs fruːt]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: citric (adj), citrus (n)
+Greek Meaning: εσπεριδοειδή (πορτοκάλια, λεμόνια κλπ)
+English Definition: a fruit with a thick skin and pulpy flesh, such as an orange or lemon
+Example Sentence: "Oranges and lemons are juicy citrus fruits rich in vitamin C."
+[TTS Reading Script]: citrus fruit. Definition: a fruit with a thick skin and pulpy flesh, such as an orange or lemon. Example: Oranges and lemons are juicy citrus fruits rich in vitamin C.
+
+--------------------------------------------------------------------------------
+ITEM 5: COAL MINES
+Pronunciation: [kəʊl maɪnz]  |  Part of Speech: (n pl)
+Derivatives / Collocations: Der: coal miner (n), mining (n)
+Greek Meaning: ανθρακωρυχεία
+English Definition: deep underground places from which coal is dug out
+Example Sentence: "My grandfather worked underground in the coal mines for twenty years."
+[TTS Reading Script]: coal mines. Definition: deep underground places from which coal is dug out. Example: My grandfather worked underground in the coal mines for twenty years.
+
+--------------------------------------------------------------------------------
+ITEM 6: COAST
+Pronunciation: [kəʊst]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: coastal (adj), coastline (n)
+Greek Meaning: ακτή, παράκτια ζώνη
+English Definition: the land near or next to the sea
+Example Sentence: "Odessa is a beautiful port city situated on the coast of the Black Sea."
+[TTS Reading Script]: coast. Definition: the land near or next to the sea. Example: Odessa is a beautiful port city situated on the coast of the Black Sea.
+
+--------------------------------------------------------------------------------
+ITEM 7: COMPRISE
+Pronunciation: [kəmˈpraɪz]  |  Part of Speech: (v)
+Derivatives / Collocations: Der: comprising (prep)
+Greek Meaning: περιλαμβάνω, αποτελούμαι από
+English Definition: to consist of or be made up of particular parts
+Example Sentence: "The European Union comprises twenty-seven member countries."
+[TTS Reading Script]: comprise. Definition: to consist of or be made up of particular parts. Example: The European Union comprises twenty-seven member countries.
+
+--------------------------------------------------------------------------------
+ITEM 8: CONNECT
+Pronunciation: [kəˈnekt]  |  Part of Speech: (v)
+Derivatives / Collocations: Der: connection (n), connected (adj)
+Greek Meaning: συνδέω, ενώνω
+English Definition: to join or link two or more things together
+Example Sentence: "You need a Wi-Fi cable or router to connect your computer to the internet."
+[TTS Reading Script]: connect. Definition: to join or link two or more things together. Example: You need a Wi-Fi cable or router to connect your computer to the internet.
+
+--------------------------------------------------------------------------------
+ITEM 9: COPPER
+Pronunciation: [ˈkɒpə]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: coppery (adj)
+Greek Meaning: χαλκός (μέταλλο)
+English Definition: a reddish-brown metal that conducts heat and electricity very well
+Example Sentence: "Electric cables are usually made of thin copper wires."
+[TTS Reading Script]: copper. Definition: a reddish-brown metal that conducts heat and electricity very well. Example: Electric cables are usually made of thin copper wires.
+
+--------------------------------------------------------------------------------
+ITEM 10: COPY
+Pronunciation: [ˈkɒpi]  |  Part of Speech: (v, n)
+Derivatives / Collocations: Der: copying (n), photocopier (n)
+Greek Meaning: αντιγράφω / αντίγραφο
+English Definition: to produce something that is an exact duplicate of an original
+Example Sentence: "Press Control and C on your keyboard to copy the text into the clipboard."
+[TTS Reading Script]: copy. Definition: to produce something that is an exact duplicate of an original. Example: Press Control and C on your keyboard to copy the text into the clipboard.
+
+--------------------------------------------------------------------------------
+ITEM 11: EARTHQUAKE
+Pronunciation: [ˈɜːθkweɪk]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: quake (n/v), aftershock (n)
+Greek Meaning: σεισμός, δόνηση της γης
+English Definition: a sudden violent shaking of the ground causing destruction
+Example Sentence: "During an earthquake, remember to duck under a sturdy desk."
+[TTS Reading Script]: earthquake. Definition: a sudden violent shaking of the ground causing destruction. Example: During an earthquake, remember to duck under a sturdy desk.
+
+--------------------------------------------------------------------------------
+ITEM 12: FLOW
+Pronunciation: [fləʊ]  |  Part of Speech: (v, n)
+Derivatives / Collocations: Der: flowing (adj), overflow (v/n)
+Greek Meaning: ρέω, κυλώ / ροή
+English Definition: to move steadily and continuously in a stream
+Example Sentence: "The River Dnipro flows smoothly across the country towards the Black Sea."
+[TTS Reading Script]: flow. Definition: to move steadily and continuously in a stream. Example: The River Dnipro flows smoothly across the country towards the Black Sea.
+
+--------------------------------------------------------------------------------
+ITEM 13: GOLDEN FLEECE
+Pronunciation: [ˌɡəʊldən ˈfliːs]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: fleece (n) = προβιά, μαλλί προβάτου
+Greek Meaning: το χρυσόμαλλο δέρας
+English Definition: the magical fleece of a winged ram in Greek mythology
+Example Sentence: "Jason and the Argonauts sailed on the ship Argo to capture the golden fleece."
+[TTS Reading Script]: golden fleece. Definition: the magical fleece of a winged ram in Greek mythology. Example: Jason and the Argonauts sailed on the ship Argo to capture the golden fleece.
+
+--------------------------------------------------------------------------------
+ITEM 14: INSTRUMENT
+Pronunciation: [ˈɪnstrəmənt]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: instrumental (adj)
+Greek Meaning: επιστημονικό όργανο, μουσικό όργανο
+English Definition: a tool or device used for precise work or for making music
+Example Sentence: "A microscope is a scientific instrument used in the school science lab."
+[TTS Reading Script]: instrument. Definition: a tool or device used for precise work or for making music. Example: A microscope is a scientific instrument used in the school science lab.
+
+--------------------------------------------------------------------------------
+ITEM 15: LANDMARK
+Pronunciation: [ˈlændmɑːk]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: landmarking (n)
+Greek Meaning: αξιοθέατο, ορόσημο
+English Definition: an easily recognizable object or building that marks a location
+Example Sentence: "The Eiffel Tower is the most recognizable landmark in Paris."
+[TTS Reading Script]: landmark. Definition: an easily recognizable object or building that marks a location. Example: The Eiffel Tower is the most recognizable landmark in Paris.
+
+--------------------------------------------------------------------------------
+ITEM 16: LANDSCAPE
+Pronunciation: [ˈlændskeɪp]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: landscaping (n)
+Greek Meaning: τοπίο, φυσική θέα
+English Definition: all the visible features of an area of countryside or land
+Example Sentence: "The green hills and blue lakes create a breathtaking mountain landscape."
+[TTS Reading Script]: landscape. Definition: all the visible features of an area of countryside or land. Example: The green hills and blue lakes create a breathtaking mountain landscape.
+
+--------------------------------------------------------------------------------
+ITEM 17: MILD
+Pronunciation: [maɪld]  |  Part of Speech: (adj)
+Derivatives / Collocations: Der: mildly (adv), mildness (n)
+Greek Meaning: ήπιος, γλυκός (για καιρό)
+English Definition: moderately warm and pleasant, not cold or severe
+Example Sentence: "Mediterranean countries usually enjoy a mild and pleasant winter climate."
+[TTS Reading Script]: mild. Definition: moderately warm and pleasant, not cold or severe. Example: Mediterranean countries usually enjoy a mild and pleasant winter climate.
+
+--------------------------------------------------------------------------------
+ITEM 18: MOLECULE
+Pronunciation: [ˈmɒlɪkjuːl]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: molecular (adj)
+Greek Meaning: μόριο (στη χημεία/φυσική)
+English Definition: a group of atoms bonded together, representing the smallest unit of a compound
+Example Sentence: "A water molecule is composed of two hydrogen atoms and one oxygen atom."
+[TTS Reading Script]: molecule. Definition: a group of atoms bonded together, representing the smallest unit of a compound. Example: A water molecule is composed of two hydrogen atoms and one oxygen atom.
+
+--------------------------------------------------------------------------------
+ITEM 19: MOUNTAIN
+Pronunciation: [ˈmaʊntɪn]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: mountainous (adj), mountaineer (n)
+Greek Meaning: βουνό, όρος
+English Definition: a large natural elevation of the earth's surface rising abruptly
+Example Sentence: "Mount Olympus is the highest and most majestic mountain in Greece."
+[TTS Reading Script]: mountain. Definition: a large natural elevation of the earth's surface rising abruptly. Example: Mount Olympus is the highest and most majestic mountain in Greece.
+
+--------------------------------------------------------------------------------
+ITEM 20: MULTICULTURAL
+Pronunciation: [ˌmʌltiˈkʌltʃərəl]  |  Part of Speech: (adj)
+Derivatives / Collocations: Der: multiculturalism (n)
+Greek Meaning: πολυπολιτισμικός
+English Definition: relating to or containing several cultural or ethnic groups
+Example Sentence: "Our multicultural class has pupils from Ukraine, Georgia, Albania, and Greece."
+[TTS Reading Script]: multicultural. Definition: relating to or containing several cultural or ethnic groups. Example: Our multicultural class has pupils from Ukraine, Georgia, Albania, and Greece.
+
+--------------------------------------------------------------------------------
+ITEM 21: NATURAL DISASTER
+Pronunciation: [ˈnætʃrəl dɪˈzɑːstə]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: disastrous (adj)
+Greek Meaning: φυσική καταστροφή
+English Definition: a major adverse event resulting from natural processes of the Earth
+Example Sentence: "Floods, earthquakes, and forest fires are serious types of natural disaster."
+[TTS Reading Script]: natural disaster. Definition: a major adverse event resulting from natural processes of the Earth. Example: Floods, earthquakes, and forest fires are serious types of natural disaster.
+
+--------------------------------------------------------------------------------
+ITEM 22: NUCLEAR POWER PLANT
+Pronunciation: [ˌnjuːkliə ˈpaʊə plɑːnt]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: nuclear energy (n)
+Greek Meaning: πυρηνικός σταθμός παραγωγής ενέργειας
+English Definition: a thermal power station in which the heat source is a nuclear reactor
+Example Sentence: "The nuclear power plant produces massive amounts of clean electricity."
+[TTS Reading Script]: nuclear power plant. Definition: a thermal power station in which the heat source is a nuclear reactor. Example: The nuclear power plant produces massive amounts of clean electricity.
+
+--------------------------------------------------------------------------------
+ITEM 23: OIL WELL
+Pronunciation: [ɔɪl wel]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: oil rig (n), drilling (n)
+Greek Meaning: πετρελαιοπηγή, φρέαρ πετρελαίου
+English Definition: a hole drilled into the earth for bringing oil to the surface
+Example Sentence: "Engineers drilled an oil well deep beneath the seabed to extract petroleum."
+[TTS Reading Script]: oil well. Definition: a hole drilled into the earth for bringing oil to the surface. Example: Engineers drilled an oil well deep beneath the seabed to extract petroleum.
+
+--------------------------------------------------------------------------------
+ITEM 24: OUTGOING
+Pronunciation: [ˈaʊtɡəʊɪŋ]  |  Part of Speech: (adj)
+Derivatives / Collocations: Der: outgoingness (n)
+Greek Meaning: εξωστρεφής, κοινωνικός
+English Definition: friendly, sociable, and eager to talk to people
+Example Sentence: "Nikos is an outgoing boy who quickly makes new friends at school."
+[TTS Reading Script]: outgoing. Definition: friendly, sociable, and eager to talk to people. Example: Nikos is an outgoing boy who quickly makes new friends at school.
+
+--------------------------------------------------------------------------------
+ITEM 25: PASTE
+Pronunciation: [peɪst]  |  Part of Speech: (v, n)
+Derivatives / Collocations: Der: pasting (n), copy-paste (n/v)
+Greek Meaning: επικολλούν, κάνω επικόλληση
+English Definition: to insert copied text or an image into a document on a computer
+Example Sentence: "First copy the picture, and then paste it into your presentation slide."
+[TTS Reading Script]: paste. Definition: to insert copied text or an image into a document on a computer. Example: First copy the picture, and then paste it into your presentation slide.
+
+--------------------------------------------------------------------------------
+ITEM 26: PENINSULA
+Pronunciation: [pəˈnɪnsjʊlə]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: peninsular (adj)
+Greek Meaning: χερσόνησος
+English Definition: a piece of land almost surrounded by water or projecting into sea
+Example Sentence: "The Peloponnese is a famous peninsula connected to mainland Greece by the Isthmus."
+[TTS Reading Script]: peninsula. Definition: a piece of land almost surrounded by water or projecting into sea. Example: The Peloponnese is a famous peninsula connected to mainland Greece by the Isthmus.
+
+--------------------------------------------------------------------------------
+ITEM 27: PLAIN
+Pronunciation: [pleɪn]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: floodplain (n)
+Greek Meaning: πεδιάδα, κάμπος
+English Definition: a large area of flat land with few trees
+Example Sentence: "Farmers cultivate wheat and corn across the vast green plain of Thessaly."
+[TTS Reading Script]: plain. Definition: a large area of flat land with few trees. Example: Farmers cultivate wheat and corn across the vast green plain of Thessaly.
+
+--------------------------------------------------------------------------------
+ITEM 28: PRINT
+Pronunciation: [prɪnt]  |  Part of Speech: (v, n)
+Derivatives / Collocations: Der: printer (n), printout (n)
+Greek Meaning: εκτυπώνω / εκτύπωση
+English Definition: to produce documents on paper using a printing machine
+Example Sentence: "Can you please print three copies of the geography project for our team?"
+[TTS Reading Script]: print. Definition: to produce documents on paper using a printing machine. Example: Can you please print three copies of the geography project for our team?
+
+--------------------------------------------------------------------------------
+ITEM 29: RACE
+Pronunciation: [reɪs]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: racial (adj), racer (n)
+Greek Meaning: φυλή (ανθρώπινη) / αγώνας ταχύτητας
+English Definition: a group of people sharing ethnic heritage, or a running competition
+Example Sentence: "People of every race and background live together peacefully in modern cities."
+[TTS Reading Script]: race. Definition: a group of people sharing ethnic heritage, or a running competition. Example: People of every race and background live together peacefully in modern cities.
+
+--------------------------------------------------------------------------------
+ITEM 30: RIVER
+Pronunciation: [ˈrɪvə]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: riverbed (n), riverside (n)
+Greek Meaning: ποταμός, ποτάμι
+English Definition: a large natural stream of water flowing in a channel to the sea or a lake
+Example Sentence: "The River Thames runs straight through the historic heart of London."
+[TTS Reading Script]: river. Definition: a large natural stream of water flowing in a channel to the sea or a lake. Example: The River Thames runs straight through the historic heart of London.
+
+--------------------------------------------------------------------------------
+ITEM 31: SEARCH
+Pronunciation: [sɜːtʃ]  |  Part of Speech: (v, n)
+Derivatives / Collocations: Der: search engine (n), searcher (n)
+Greek Meaning: αναζητώ, ψάχνω / αναζήτηση
+English Definition: to look carefully through a place or online database to find something
+Example Sentence: "Pupils use the school tablets to search for information about European geography."
+[TTS Reading Script]: search. Definition: to look carefully through a place or online database to find something. Example: Pupils use the school tablets to search for information about European geography.
+
+--------------------------------------------------------------------------------
+ITEM 32: SPLIT IN
+Pronunciation: [splɪt ɪn]  |  Part of Speech: (phr v)
+Derivatives / Collocations: Der: splitting (n), split (v/adj)
+Greek Meaning: χωρίζω σε, διασπώ σε μέρη
+English Definition: to divide or separate into two or more distinct parts
+Example Sentence: "The mighty river flows south, splitting the capital city in two halves."
+[TTS Reading Script]: split in. Definition: to divide or separate into two or more distinct parts. Example: The mighty river flows south, splitting the capital city in two halves.
+
+--------------------------------------------------------------------------------
+ITEM 33: TEMPERATURE
+Pronunciation: [ˈtemprətʃə]  |  Part of Speech: (n)
+Derivatives / Collocations: Der: thermometer (n), temperate (adj)
+Greek Meaning: θερμοκρασία
+English Definition: the degree of heat or cold measured by a thermometer
+Example Sentence: "In summer, the afternoon temperature often reaches thirty-five degrees Celsius."
+[TTS Reading Script]: temperature. Definition: the degree of heat or cold measured by a thermometer. Example: In summer, the afternoon temperature often reaches thirty-five degrees Celsius.
+
+--------------------------------------------------------------------------------
+ITEM 34: UNDERWATER
+Pronunciation: [ˌʌndəˈwɔːtə]  |  Part of Speech: (adj, adv)
+Derivatives / Collocations: Der: underwater camera (n)
+Greek Meaning: υποβρύχιος / κάτω από το νερό
+English Definition: situated, occurring, or done beneath the surface of the water
+Example Sentence: "Divers discovered an underwater cave filled with colorful sea plants and fish."
+[TTS Reading Script]: underwater. Definition: situated, occurring, or done beneath the surface of the water. Example: Divers discovered an underwater cave filled with colorful sea plants and fish.
+
+--------------------------------------------------------------------------------
+ITEM 35: WATER SUPPLIES
+Pronunciation: [ˈwɔːtə səˈplaɪz]  |  Part of Speech: (n pl)
+Derivatives / Collocations: Der: water supply system (n)
+Greek Meaning: αποθέματα νερού, παροχή νερού
+English Definition: reservoirs or systems providing fresh drinking water to people
+Example Sentence: "Lakes and mountain reservoirs protect the city's clean drinking water supplies."
+[TTS Reading Script]: water supplies. Definition: reservoirs or systems providing fresh drinking water to people. Example: Lakes and mountain reservoirs protect the city's clean drinking water supplies.
+
