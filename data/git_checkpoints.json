@@ -1,0 +1,128 @@
+{
+  "repository": "student-book-sixth-grade-english",
+  "current_branch": "main",
+  "current_head": "8f5c276",
+  "last_updated": "2026-10-14 22:19:34",
+  "total_checkpoints": 7,
+  "checkpoints": [
+    {
+      "tag": "v1.0-units1-3",
+      "commit": "240cb0e",
+      "date": "2026-09-29",
+      "title": "Units 1, 2, and 3 Flagship Companions",
+      "category": "Core Curriculum",
+      "badge_color": "#3b82f6",
+      "message": "Milestone: Units 1, 2, and 3 Flagship Digital Companions",
+      "body": "",
+      "highlights": [
+        "Complete Unit 1 ('Our Multicultural Class'), Unit 2 ('Going Shopping'), and Unit 3 ('Imaginary Creatures')",
+        "Full offline dual-engine vocabulary audio (Google TTS + Edge Neural Sonia)",
+        "Dual JSON/JS data twins architecture preventing browser CORS blocks",
+        "Interactive Workbook modules and automated test harnesses"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v1.4-unit4",
+      "commit": "f1bbc9f",
+      "date": "2026-09-29",
+      "title": "Unit 4: The History of the Aeroplane",
+      "category": "Aviation & History",
+      "badge_color": "#2563eb",
+      "message": "Milestone: Unit 4 Digital Companion (The History of the Aeroplane)",
+      "body": "",
+      "highlights": [
+        "Flagship v2 companion for Unit 4 (Daedalus & Icarus, Wright Brothers, FAA Museum)",
+        "Past Simple vs. Past Continuous time linker grammar labs",
+        "Scaffolded in-flight dialogue audio recordings and SVG illustrations",
+        "Auto-evaluating 14-activity workbook module"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v1.8-units5-8",
+      "commit": "37cb153",
+      "date": "2026-09-30",
+      "title": "Units 5 to 8 Full Curriculum Expansion",
+      "category": "Term 2 & 3 Units",
+      "badge_color": "#8b5cf6",
+      "message": "Milestone: Units 5 through 8 Digital Companions with Dual Audio and Workbooks",
+      "body": "",
+      "highlights": [
+        "Unit 5 ('Travelling Through Time'), Unit 6 ('Me, Myself and My Future Job')",
+        "Unit 7 ('Share Your Experiences'), Unit 8 ('Blow Your Own Trumpet')",
+        "Inductive grammar labs for 'used to', modal verbs, and Present Perfect",
+        "Full pedagogical review and CEFR progression across Units 1–8"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v2.0-all-10-units",
+      "commit": "5ea463c",
+      "date": "2026-10-04",
+      "title": "Complete 10-Unit Digital Coursebook Curriculum",
+      "category": "Curriculum Milestone",
+      "badge_color": "#10b981",
+      "message": "Milestone: All 10 Units Complete with Launch Video and Catalog",
+      "body": "",
+      "highlights": [
+        "Units 9 ('Earth Day Everyday') and Unit 10 ('Time for Fun') completed",
+        "Full 10-unit coursebook catalog and master search metadata",
+        "Calibrated 10-unit vocabulary distractors catalog (~357 KB)",
+        "Kinetic launch presentation video pipeline"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v2.0-clil-portal",
+      "commit": "a8c866f",
+      "date": "2026-10-09",
+      "title": "Master Interactive CLIL Hub & Unit Wrapper",
+      "category": "Platform Architecture",
+      "badge_color": "#f59e0b",
+      "message": "Milestone: Master Interactive CLIL Hub, Unit Wrapper, and Quiz Dashboard",
+      "body": "",
+      "highlights": [
+        "Modern CLIL Dashboard with term filters (Terms 1, 2, 3) and cross-curricular tags",
+        "Instant multi-unit lexical search with CEFR level filters",
+        "Interactive random quiz challenge engine across all 10 units",
+        "Standardized unit_wrapper.html modal viewer for seamless navigation"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v2.0-before-redesign",
+      "commit": "844fbad",
+      "date": "2026-10-10",
+      "title": "Unit 1 Modernized Vocabulary Companion Styles",
+      "category": "UI / Design System",
+      "badge_color": "#ec4899",
+      "message": "refactor: update unit 1 navigation and modernize vocabulary companion styles",
+      "body": "",
+      "highlights": [
+        "Bio-Warm 2026 / EdTech design system tokens",
+        "Refactored Unit 1 navigation bar with quick quizzes links",
+        "Tactile mode switcher tab rail (Table, Cards, Listening, Definition Challenge)",
+        "Audio speed controls (0.8x, 1.0x, 1.2x) and Sonia Neural voice selection"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v2.0-consensus-review",
+      "commit": "8f5c276",
+      "date": "2026-10-14",
+      "title": "Consensus Action Plan & Argon Review Bundle",
+      "category": "QA & Model Review",
+      "badge_color": "#06b6d4",
+      "message": "Checkpoint: Consensus Action Plan, Argon Review bundle, and Unit 1 navigation refactor",
+      "body": "",
+      "highlights": [
+        "Comprehensive synthesis of external QA reports (ChatGPT, Claude, Manus)",
+        "Enforced strict 4-rule ELT validation standard and regex word-boundary heuristics",
+        "Lightweight review bundle (~1.09 MB) and single-file export (argon_review.txt)",
+        "Unit 1 audio sequence playback queue with Web Speech fallback"
+      ],
+      "is_latest": true
+    }
+  ]
+}

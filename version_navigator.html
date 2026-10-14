@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version Navigator & Time Machine — English 6th Grade</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <style>
+    :root {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #243248;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-card: #334155;
+      --accent-blue: #38bdf8;
+      --accent-indigo: #6366f1;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+      --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+      --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-display);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 80px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Background Glow Orbs */
+    .glow-backdrop {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.25;
+    }
+
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, #38bdf8 0%, rgba(56, 189, 248, 0) 70%);
+      top: -200px;
+      right: -100px;
+    }
+
+    .orb-2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, #6366f1 0%, rgba(99, 102, 241, 0) 70%);
+      bottom: -150px;
+      left: -100px;
+    }
+
+    /* Top Navigation Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-icon {
+      font-size: 1.5rem;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-portal {
+      background: #1e293b;
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-portal:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: #38bdf8;
+      transform: translateY(-1px);
+    }
+
+    .btn-return-main {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-return-main:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-help {
+      background: #334155;
+      color: #f8fafc;
+    }
+
+    .btn-help:hover {
+      background: #475569;
+    }
+
+    /* Hero Section */
+    .hero-container {
+      max-width: 1200px;
+      margin: 40px auto 30px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-badge-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Live Status Banner */
+    .status-dashboard-bar {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(8px);
+      margin-bottom: 30px;
+    }
+
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .status-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .status-meta .label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      font-weight: 800;
+    }
+
+    .status-meta .val {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .code-pill {
+      font-family: var(--font-mono);
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: #38bdf8;
+    }
+
+    /* Search & Filter Dock */
+    .controls-dock {
+      background: #1e293b;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .search-wrap {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      background: #0f172a;
+      border: 1px solid var(--border-card);
+      color: var(--text-main);
+      padding: 10px 16px 10px 40px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+
+    .filter-pills {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-chip {
+      background: #0f172a;
+      border: 1px solid var(--border-card);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-chip:hover {
+      color: var(--text-main);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .filter-chip.active {
+      background: #38bdf8;
+      color: #0f172a;
+      border-color: #38bdf8;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    }
+
+    /* Timeline Stream */
+    .timeline-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-left: 40px;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 20px;
+      bottom: 20px;
+      width: 3px;
+      background: linear-gradient(180deg, #38bdf8 0%, #6366f1 50%, #334155 100%);
+      border-radius: 2px;
+    }
+
+    .checkpoint-node {
+      position: relative;
+      margin-bottom: 32px;
+    }
+
+    .node-pin {
+      position: absolute;
+      left: -40px;
+      top: 22px;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      background: #0f172a;
+      border: 3px solid #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      z-index: 2;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+      transition: var(--transition);
+    }
+
+    .checkpoint-node.is-latest .node-pin {
+      border-color: #10b981;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.6);
+      animation: pulse-ring 2s infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* Checkpoint Card */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .tag-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #0f172a;
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .latest-pill {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
+    }
+
+    .category-badge {
+      background: #334155;
+      color: #e2e8f0;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .card-meta-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .commit-hash-btn {
+      background: #0f172a;
+      border: 1px solid var(--border-card);
+      color: #38bdf8;
+      font-family: var(--font-mono);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .commit-hash-btn:hover {
+      background: #1e293b;
+      border-color: #38bdf8;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .card-highlights {
+      list-style: none;
+      margin: 14px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card-highlights li {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.45;
+    }
+
+    .card-highlights li::before {
+      content: '✓';
+      color: #10b981;
+      font-weight: 900;
+    }
+
+    /* Terminal Action Toolbar */
+    .terminal-actions-bar {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .terminal-preview-cmd {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.86rem;
+      color: #38bdf8;
+      background: rgba(15, 23, 42, 0.8);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px dashed rgba(56, 189, 248, 0.3);
+      user-select: all;
+    }
+
+    .terminal-preview-cmd .prompt {
+      color: #64748b;
+    }
+
+    .action-btn-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      transition: var(--transition);
+    }
+
+    .btn-checkout {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn-checkout:hover {
+      background: #7dd3fc;
+      transform: translateY(-1px);
+    }
+
+    .btn-branch {
+      background: #334155;
+      color: #f8fafc;
+    }
+
+    .btn-branch:hover {
+      background: #475569;
+    }
+
+    .btn-revert {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .btn-revert:hover {
+      background: #f43f5e;
+      color: #ffffff;
+    }
+
+    /* Modal Styling */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #1e293b;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      max-width: 650px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .modal-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #38bdf8;
+    }
+
+    .modal-close-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .modal-close-btn:hover {
+      color: #ffffff;
+    }
+
+    .modal-body {
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .modal-body h4 {
+      color: #ffffff;
+      margin: 18px 0 8px;
+      font-size: 1rem;
+    }
+
+    .command-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #38bdf8;
+      margin: 6px 0 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Floating Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #10b981;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-weight: 800;
+      font-size: 0.88rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+      transition: all 0.25s ease-out;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 1.8rem; }
+      .timeline-container { padding-left: 20px; }
+      .timeline-container::before { left: 5px; }
+      .node-pin { left: -25px; width: 26px; height: 26px; font-size: 0.7rem; top: 25px; }
+      .terminal-actions-bar { flex-direction: column; align-items: stretch; }
+      .action-btn-group { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="glow-backdrop">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="portal.html" class="brand-wrap">
+        <div class="brand-icon">⏳</div>
+        <div>
+          <span class="brand-title">Version Navigator &amp; Time Machine</span>
+          <span class="brand-subtitle">English 6th Grade (ΣΤ΄ Δημοτικού) · Git Checkpoints</span>
+        </div>
+      </a>
+      <div class="top-actions">
+        <a href="portal.html" class="btn btn-portal">
+          <span>🏠</span> Coursebook Portal
+        </a>
+        <button class="btn btn-return-main" id="btnReturnMainTop">
+          <span>⚡</span> Return to Latest Main
+        </button>
+        <button class="btn btn-help" id="btnOpenHelp">
+          <span>❓</span> How to Use
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero -->
+  <main class="hero-container">
+    <div class="hero-header">
+      <div class="hero-badge-row">
+        <span>🕒</span> Full Chronological Checkpoint Registry
+      </div>
+      <h1 class="hero-title">Travel Across Project Milestones</h1>
+      <p class="hero-desc">
+        Every major curriculum release, pedagogical review, and architecture refactor is preserved with an annotated Git Tag. Copy any command below to step back in time, test past iterations, or branch off safely.
+      </p>
+    </div>
+
+    <!-- Live Status Dashboard -->
+    <div class="status-dashboard-bar">
+      <div class="status-item">
+        <div class="status-icon">📍</div>
+        <div class="status-meta">
+          <div class="label">Current Active HEAD</div>
+          <div class="val">
+            <span class="code-pill" id="statHeadCommit">8f5c276</span>
+            <span style="color:#10b981;">(main)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <div class="status-icon">🏷️</div>
+        <div class="status-meta">
+          <div class="label">Latest Released Tag</div>
+          <div class="val">
+            <span class="code-pill" style="color:#10b981;" id="statLatestTag">v2.0-consensus-review</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <div class="status-icon">📦</div>
+        <div class="status-meta">
+          <div class="label">Total Checkpoints</div>
+          <div class="val" id="statTotalTags">7 Milestones</div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <div class="status-icon">🛡️</div>
+        <div class="status-meta">
+          <div class="label">Safety Guarantee</div>
+          <div class="val" style="color:#38bdf8;">100% Non-Destructive</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls Dock -->
+    <div class="controls-dock">
+      <div class="search-wrap">
+        <span class="search-icon-svg">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search checkpoint tag, commit, or milestone keyword...">
+      </div>
+
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-chip active" data-filter="all">All Checkpoints</button>
+        <button class="filter-chip" data-filter="core">Core Curriculum</button>
+        <button class="filter-chip" data-filter="architecture">Platform Architecture</button>
+        <button class="filter-chip" data-filter="qa">QA &amp; Reviews</button>
+      </div>
+    </div>
+
+    <!-- Timeline Stream -->
+    <div class="timeline-container" id="timelineStream">
+      <!-- Dynamic Checkpoint Nodes Injected via JS -->
+    </div>
+  </main>
+
+  <!-- Help & Guide Modal -->
+  <div class="modal-overlay" id="helpModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">How Git Checkpoints Work</h3>
+        <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>A <strong>Git Tag</strong> is like an unalterable bookmark attached to an exact moment in your project history. You can travel freely back and forth across these bookmarks without losing any work.</p>
+
+        <h4>1. How to Travel to a Past Version</h4>
+        <p>Click <strong>"Jump to Version"</strong> on any card to copy the command, then paste it in your terminal:</p>
+        <div class="command-box">
+          <code>git checkout &lt;tag-name&gt;</code>
+        </div>
+        <p style="font-size:0.82rem; color:#94a3b8;">Your files will instantly transform into that version. You can open <code>portal.html</code> or <code>unit1/index.html</code> in your browser to inspect or test it.</p>
+
+        <h4>2. How to Return to the Present (Latest Code)</h4>
+        <p>Whenever you are done exploring the past and want to return to today's code:</p>
+        <div class="command-box">
+          <code>git checkout main</code>
+        </div>
+
+        <h4>3. How to Make Experimental Changes to a Past Version</h4>
+        <p>If you want to start modifying or testing ideas from an older checkpoint without messing up your main code, create a new branch from that tag:</p>
+        <div class="command-box">
+          <code>git checkout -b my-experiment &lt;tag-name&gt;</code>
+        </div>
+
+        <h4>4. Adding Future Checkpoints</h4>
+        <p>Whenever you complete a new feature or unit and want to bookmark it, run this script to create a tag and update this dashboard:</p>
+        <div class="command-box">
+          <code>python _tools/update_version_navigator.py</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotification">
+    <span>✓</span> <span id="toastMessage">Command copied to clipboard!</span>
+  </div>
+
+  <!-- Load Dynamic Checkpoints Data -->
+  <script src="data/git_checkpoints.js"></script>
+
+  <script>
+    // Embedded fallback in case running over file:/// before generator
+    const FALLBACK_CHECKPOINTS = [
+      {
+        tag: "v2.0-consensus-review",
+        commit: "8f5c276",
+        date: "2026-10-14",
+        title: "Consensus Action Plan & Argon Review Bundle",
+        category: "QA & Model Review",
+        badge_color: "#06b6d4",
+        highlights: [
+          "Comprehensive synthesis of external QA reports (ChatGPT, Claude, Manus)",
+          "Enforced strict 4-rule ELT validation standard and regex word-boundary heuristics",
+          "Lightweight review bundle (~1.09 MB) and single-file export (argon_review.txt)",
+          "Unit 1 audio sequence playback queue with Web Speech fallback"
+        ],
+        is_latest: true
+      },
+      {
+        tag: "v2.0-before-redesign",
+        commit: "844fbad",
+        date: "2026-10-10",
+        title: "Unit 1 Modernized Vocabulary Companion Styles",
+        category: "UI / Design System",
+        badge_color: "#ec4899",
+        highlights: [
+          "Bio-Warm 2026 / EdTech design system tokens",
+          "Refactored Unit 1 navigation bar with quick quizzes links",
+          "Tactile mode switcher tab rail (Table, Cards, Listening, Definition Challenge)",
+          "Audio speed controls (0.8x, 1.0x, 1.2x) and Sonia Neural voice selection"
+        ],
+        is_latest: false
+      },
+      {
+        tag: "v2.0-clil-portal",
+        commit: "a8c866f",
+        date: "2026-10-09",
+        title: "Master Interactive CLIL Hub & Unit Wrapper",
+        category: "Platform Architecture",
+        badge_color: "#f59e0b",
+        highlights: [
+          "Modern CLIL Dashboard with term filters (Terms 1, 2, 3) and cross-curricular tags",
+          "Instant multi-unit lexical search with CEFR level filters",
+          "Interactive random quiz challenge engine across all 10 units",
+          "Standardized unit_wrapper.html modal viewer for seamless navigation"
+        ],
+        is_latest: false
+      },
+      {
+        tag: "v2.0-all-10-units",
+        commit: "5ea463c",
+        date: "2026-10-04",
+        title: "Complete 10-Unit Digital Coursebook Curriculum",
+        category: "Curriculum Milestone",
+        badge_color: "#10b981",
+        highlights: [
+          "Units 9 ('Earth Day Everyday') and Unit 10 ('Time for Fun') completed",
+          "Full 10-unit coursebook catalog and master search metadata",
+          "Calibrated 10-unit vocabulary distractors catalog (~357 KB)",
+          "Kinetic launch presentation video pipeline"
+        ],
+        is_latest: false
+      },
+      {
+        tag: "v1.8-units5-8",
+        commit: "37cb153",
+        date: "2026-09-30",
+        title: "Units 5 to 8 Full Curriculum Expansion",
+        category: "Term 2 & 3 Units",
+        badge_color: "#8b5cf6",
+        highlights: [
+          "Unit 5 ('Travelling Through Time'), Unit 6 ('Me, Myself and My Future Job')",
+          "Unit 7 ('Share Your Experiences'), Unit 8 ('Blow Your Own Trumpet')",
+          "Inductive grammar labs for 'used to', modal verbs, and Present Perfect",
+          "Full pedagogical review and CEFR progression across Units 1–8"
+        ],
+        is_latest: false
+      },
+      {
+        tag: "v1.4-unit4",
+        commit: "f1bbc9f",
+        date: "2026-09-29",
+        title: "Unit 4: The History of the Aeroplane",
+        category: "Aviation & History",
+        badge_color: "#2563eb",
+        highlights: [
+          "Flagship v2 companion for Unit 4 (Daedalus & Icarus, Wright Brothers, FAA Museum)",
+          "Past Simple vs. Past Continuous time linker grammar labs",
+          "Scaffolded in-flight dialogue audio recordings and SVG illustrations",
+          "Auto-evaluating 14-activity workbook module"
+        ],
+        is_latest: false
+      },
+      {
+        tag: "v1.0-units1-3",
+        commit: "240cb0e",
+        date: "2026-09-29",
+        title: "Units 1, 2, and 3 Flagship Companions",
+        category: "Core Curriculum",
+        badge_color: "#3b82f6",
+        highlights: [
+          "Complete Unit 1 ('Our Multicultural Class'), Unit 2 ('Going Shopping'), and Unit 3 ('Imaginary Creatures')",
+          "Full offline dual-engine vocabulary audio (Google TTS + Edge Neural Sonia)",
+          "Dual JSON/JS data twins architecture preventing browser CORS blocks",
+          "Interactive Workbook modules and automated test harnesses"
+        ],
+        is_latest: false
+      }
+    ];
+
+    const dataStore = window.GIT_CHECKPOINTS && window.GIT_CHECKPOINTS.checkpoints 
+      ? window.GIT_CHECKPOINTS.checkpoints 
+      : FALLBACK_CHECKPOINTS;
+
+    // Elements
+    const timelineStream = document.getElementById('timelineStream');
+    const searchInput = document.getElementById('searchInput');
+    const filterPills = document.getElementById('filterPills');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const helpModal = document.getElementById('helpModal');
+    const btnOpenHelp = document.getElementById('btnOpenHelp');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const btnReturnMainTop = document.getElementById('btnReturnMainTop');
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    // Toast Trigger
+    function showToast(text) {
+      toastMsg.textContent = text;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Copy Helper
+    function copyCommand(cmd, feedback) {
+      navigator.clipboard.writeText(cmd).then(() => {
+        showToast(feedback || `Copied: ${cmd}`);
+      }).catch(err => {
+        // Fallback prompt
+        prompt("Copy this command to run in your terminal:", cmd);
+      });
+    }
+
+    // Render Stream
+    function renderTimeline() {
+      // Sort newest first
+      const sorted = [...dataStore].reverse();
+
+      const filtered = sorted.filter(cp => {
+        // Filter by category
+        if (currentFilter === 'core' && !cp.category.toLowerCase().includes('curriculum') && !cp.category.toLowerCase().includes('term') && !cp.category.toLowerCase().includes('unit')) return false;
+        if (currentFilter === 'architecture' && !cp.category.toLowerCase().includes('architecture') && !cp.category.toLowerCase().includes('milestone')) return false;
+        if (currentFilter === 'qa' && !cp.category.toLowerCase().includes('qa') && !cp.category.toLowerCase().includes('review') && !cp.category.toLowerCase().includes('design')) return false;
+
+        // Search text
+        if (currentSearch) {
+          const q = currentSearch.toLowerCase();
+          const matchTag = cp.tag.toLowerCase().includes(q);
+          const matchTitle = cp.title.toLowerCase().includes(q);
+          const matchCommit = cp.commit.toLowerCase().includes(q);
+          const matchHighlights = cp.highlights.some(h => h.toLowerCase().includes(q));
+          if (!matchTag && !matchTitle && !matchCommit && !matchHighlights) return false;
+        }
+
+        return true;
+      });
+
+      if (!filtered.length) {
+        timelineStream.innerHTML = `
+          <div style="background:#1e293b; border:1px solid #334155; padding:40px; border-radius:18px; text-align:center;">
+            <p style="font-size:1.1rem; color:#94a3b8; margin-bottom:12px;">No checkpoints matched your search.</p>
+            <button class="btn btn-portal" onclick="clearFilters()">Clear Filters</button>
+          </div>
+        `;
+        return;
+      }
+
+      timelineStream.innerHTML = filtered.map((cp, idx) => {
+        const checkoutCmd = `git checkout ${cp.tag}`;
+        const branchCmd = `git checkout -b checkpoint-${cp.tag} ${cp.tag}`;
+        const revertCmd = `git reset --hard ${cp.tag}`;
+
+        return `
+          <article class="checkpoint-node ${cp.is_latest ? 'is-latest' : ''}">
+            <div class="node-pin" title="${cp.is_latest ? 'Current Latest Checkpoint' : 'Milestone Pin'}">
+              ${cp.is_latest ? '⭐' : (sorted.length - idx)}
+            </div>
+
+            <div class="card">
+              <div class="card-top-row">
+                <div class="tag-title-wrap">
+                  <span class="tag-badge">🏷️ ${cp.tag}</span>
+                  ${cp.is_latest ? '<span class="latest-pill">Current Active</span>' : ''}
+                  <span class="category-badge" style="border-left: 3px solid ${cp.badge_color || '#38bdf8'}">${cp.category}</span>
+                </div>
+
+                <div class="card-meta-right">
+                  <span>📅 ${cp.date}</span>
+                  <button class="commit-hash-btn" title="Copy commit hash" onclick="copyCommand('${cp.commit}', 'Commit hash ${cp.commit} copied!')">
+                    #${cp.commit}
+                  </button>
+                </div>
+              </div>
+
+              <h2 class="card-title">${cp.title}</h2>
+
+              <ul class="card-highlights">
+                ${cp.highlights.map(h => `<li>${h}</li>`).join('')}
+              </ul>
+
+              <!-- Terminal Action Bar -->
+              <div class="terminal-actions-bar">
+                <div class="terminal-preview-cmd" title="Click to copy terminal command" onclick="copyCommand('${checkoutCmd}', 'Copied: ${checkoutCmd}')" style="cursor:pointer;">
+                  <span class="prompt">$</span>
+                  <span>${checkoutCmd}</span>
+                </div>
+
+                <div class="action-btn-group">
+                  <button class="btn-action btn-checkout" onclick="copyCommand('${checkoutCmd}', 'Copied: ${checkoutCmd} (Run in terminal to travel back)')" title="Switch your working files to this milestone">
+                    <span>🧭</span> Jump to Version
+                  </button>
+                  <button class="btn-action btn-branch" onclick="copyCommand('${branchCmd}', 'Copied: ${branchCmd}')" title="Create a new branch from this milestone">
+                    <span>🌿</span> Branch Here
+                  </button>
+                  <button class="btn-action btn-revert" onclick="confirmRevert('${cp.tag}')" title="Hard revert current branch to this tag">
+                    <span>⏪</span> Rollback
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    window.confirmRevert = function(tag) {
+      const confirmAction = confirm(`⚠️ CAUTION: Are you sure you want to hard reset to tag "${tag}"?\n\nThis will copy 'git reset --hard ${tag}' to your clipboard.`);
+      if (confirmAction) {
+        copyCommand(`git reset --hard ${tag}`, `Copied: git reset --hard ${tag}`);
+      }
+    };
+
+    window.clearFilters = function() {
+      searchInput.value = '';
+      currentSearch = '';
+      currentFilter = 'all';
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      document.querySelector('.filter-chip[data-filter="all"]').classList.add('active');
+      renderTimeline();
+    };
+
+    // Event Listeners
+    searchInput.addEventListener('input', (e) => {
+      currentSearch = e.target.value.trim();
+      renderTimeline();
+    });
+
+    filterPills.addEventListener('click', (e) => {
+      const chip = e.target.closest('.filter-chip');
+      if (!chip) return;
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentFilter = chip.dataset.filter;
+      renderTimeline();
+    });
+
+    btnReturnMainTop.addEventListener('click', () => {
+      copyCommand('git checkout main', 'Copied: git checkout main! Run in terminal to return to latest main.');
+    });
+
+    btnOpenHelp.addEventListener('click', () => {
+      helpModal.classList.add('open');
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+      helpModal.classList.remove('open');
+    });
+
+    helpModal.addEventListener('click', (e) => {
+      if (e.target === helpModal) helpModal.classList.remove('open');
+    });
+
+    // Initial render
+    renderTimeline();
+  </script>
+</body>
+</html>
