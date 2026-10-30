@@ -271,13 +271,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('storyDossierCard');
     if (!story || !container) return;
 
-    const svgImg = `assets/images_v2/${countryId === 'uk' ? 'gwen_uk' : (countryId === 'ukraine' ? 'sasha_ukraine' : (countryId === 'albania' ? 'christina_albania' : 'georgi_georgia'))}.svg`;
+    const dossierImg = story.image || `assets/images_v2/${countryId === 'uk' ? 'gwen_uk' : (countryId === 'ukraine' ? 'sasha_ukraine' : (countryId === 'albania' ? 'christina_albania' : 'georgi_georgia'))}.svg`;
+    const dossierAlt = story.image_alt || story.country;
     const storyAudioSrc = `assets/audio_v2/stories/${countryId}_full_story.mp3`;
 
     container.innerHTML = `
       <div class="dossier-hero-row">
         <div class="dossier-visual-box">
-          <img src="${svgImg}" alt="${story.country}">
+          <img src="${dossierImg}" alt="${dossierAlt}">
+          ${story.image_credit ? `<div class="dossier-photo-credit">?? ${story.image_credit}</div>` : ''}
         </div>
         <div class="dossier-title-area">
           <span class="dossier-kicker">Newcomer Profile • Lesson 1</span>
@@ -422,7 +424,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // A3. Student Lab Stations (Authentic Tasks & Computer Verbs)
     if (labContainer && v2Data.grammar_lab.school_lab_actions) {
-      labContainer.innerHTML = v2Data.grammar_lab.school_lab_actions.map(st => `
+      const labSceneImg = (v2Data.grammar_lab.school_lab_listening && v2Data.grammar_lab.school_lab_listening.scene_image)
+        ? `<div class="graphic-novel-scene-frame" style="grid-column: 1 / -1; margin-bottom: 14px; border: 2.5px solid #0F172A; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 0 0 #0F172A; background: #FFF8E8;">
+             <img src="${v2Data.grammar_lab.school_lab_listening.scene_image}" alt="${v2Data.grammar_lab.school_lab_listening.scene_alt || 'School Computer Lab'}" style="width: 100%; max-height: 360px; object-fit: cover; display: block;">
+             <div style="padding: 8px 14px; background: #0F172A; color: #FFFFFF; font-size: 0.78rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+               <span>?? Graphic Novel Scene: Maria (Music), Markos (Geography), Anne & Sophia (Science Molecules)</span>
+               <span style="color: #FFC800; font-family: monospace;">Graphic novel illustration generated for this coursebook</span>
+             </div>
+           </div>`
+        : '';
+      labContainer.innerHTML = labSceneImg + v2Data.grammar_lab.school_lab_actions.map(st => `
         <div class="lab-station-row">
           <div class="student-avatar">${st.student[0]}</div>
           <div class="station-content">
@@ -510,7 +521,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // B. Mr Badluck Comic
     if (badluckContainer) {
-      badluckContainer.innerHTML = v2Data.grammar_lab.mr_badluck_comic.map(m => `
+      const badluckImg = v2Data.grammar_lab.badluck_comic_image
+        ? `<div class="graphic-novel-comic-frame" style="margin-bottom: 14px; border: 2.5px solid #0F172A; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 0 0 #0F172A; background: #FFF8E8;">
+             <img src="${v2Data.grammar_lab.badluck_comic_image}" alt="${v2Data.grammar_lab.badluck_comic_alt || 'Mr. Badluck Comic'}" style="width: 100%; display: block;">
+             <div style="padding: 6px 12px; background: #0F172A; color: #FFC800; font-size: 0.74rem; font-weight: 700; text-align: center;">
+               ? Graphic Novel Strip: Routine Sunny Morning (Present Simple) vs. Today's Rainy Disaster (Present Continuous)
+             </div>
+           </div>`
+        : '';
+      badluckContainer.innerHTML = badluckImg + v2Data.grammar_lab.mr_badluck_comic.map(m => `
         <div class="badluck-moment">
           <div class="moment-time-row">
             <span>⏰ ${m.time}</span>

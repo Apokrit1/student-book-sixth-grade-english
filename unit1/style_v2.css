@@ -2661,3 +2661,48 @@ body {
   background: #f0fff4;
   color: #276749;
 }
+
+
+/* =========================================================
+   TWO-TRACK VISUAL SYSTEM: REAL COUNTRY PHOTOS & GRAPHIC NOVEL SCENES
+   ========================================================= */
+.dossier-hero-row {
+  grid-template-columns: 320px 1fr;
+  align-items: start;
+}
+
+.dossier-visual-box {
+  background: #ffffff;
+  border: 2.5px solid #0f172a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 0 0 #0f172a;
+  display: flex;
+  flex-direction: column;
+}
+
+.dossier-visual-box img.dossier-real-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #0f172a;
+  box-shadow: none;
+  display: block;
+}
+
+.dossier-photo-credit {
+  background: #fff8e8;
+  color: #0f172a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 6px 10px;
+}
+
+@media (max-width: 768px) {
+  .dossier-hero-row {
+    grid-template-columns: 1fr;
+  }
+}

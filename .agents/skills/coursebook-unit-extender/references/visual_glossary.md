@@ -1,4 +1,4 @@
-# Visual glosses: generated pictures as a third gloss channel
+# Visual glosses & scene art: Open-Source Realia + Middle-Grade Graphic Novel
 
 Reference for `SKILL.md` Step 8, item 5. Applies to every unit.
 
@@ -13,36 +13,36 @@ definition -> Greek**. The picture comes before the definition for concrete noun
 pupil links form to meaning directly; the definition is the backup and the Greek is the
 last resort, not the first move.
 
-## Generate, do not search
+## The Two-Track Visual Rule: Open-Source Realia vs. Graphic Novel Scenes
 
 Searching the web gives a copyrighted photograph. Showing one on the classroom projector
 is inside Law 2121/1993 art. 21; **embedding it in an app that is distributed to classes
 and other teachers is not**, and no attribution cures that (see
 `defining_vocabulary.md`, "Consulting published learner dictionaries", for the same
-distinction applied to text). Generated images avoid the problem entirely and give
-something a photo set cannot: one consistent visual language across ten units.
+distinction applied to text).
 
-## The accuracy line
+To make the platform genuinely appealing to 10–12 year old 6th-grade students while maintaining
+100% factual and legal integrity, all visuals follow a strict **Two-Track System**:
 
-**Never generate a picture of a specific real thing.** Not a named landmark, not a named
-machine, not a real person, not a historical event, not a particular place. An image model
-produces something plausible, and plausible is exactly the failure this whole project
-exists to correct: the printed book captions a photograph of an MD-11 as a Boeing 747 and
-tells pupils supersonic aircraft fly at five times the speed of sound. Do not add a second
-generation of that error in better resolution.
+1. **Track 1 — Real Places, Countries, Landmarks & Real-World Objects (Open-Source Realia)**:
+   - **Never generate a picture of a specific real thing.** Not a real country, not a named landmark, not a named machine, not a real person, not a historical event. An image model produces something plausible, and plausible is exactly the failure this whole project exists to correct (the printed book captions a photograph of an MD-11 as a Boeing 747 and tells pupils supersonic aircraft fly at five times the speed of sound).
+   - For real countries (e.g., *Ukraine, Albania, Georgia, United Kingdom*), named landmarks, and real-world geography/objects, **always fetch real, freely licensed photographs from Wikimedia Commons** (`scripts/fetch_commons_images.js`) with a pupil-visible CC0 / PD / CC BY / CC BY-SA credit.
+
+2. **Track 2 — Classroom Scenes, Dialogues, Character Stories & Generic Actions (Middle-Grade Graphic Novel Style)**:
+   - For fictional classroom scenes, listening dialogues (e.g., *At the School Computer Lab*), comic vignettes (e.g., *Mr. Badluck's Day*), and generic actions, **use the `image-generator` subagent with the Middle-Grade Graphic Novel design language**:
+     > *"Middle-grade graphic novel style illustration ... 10-11 year old students in cool casual clothes (hoodies, t-shirts, sneakers) ... Expressive inked line art, cel-shaded color palette, dynamic perspective, teen comic book aesthetic, no toddler tropes, no text."*
 
 | item type | treatment |
 |---|---|
-| generic concrete noun (*citrus fruit, oil well, coal mine, plain, peninsula*) | generate |
-| generic action or scene (*printing a page, searching, a flooded street*) | generate |
-| abstract quality (*brave, outgoing, multicultural*) | generate only as a situation a pupil can read, or leave with no image |
-| a named landmark, city, building or monument | **no generated image.** Use a public-domain or CC-licensed photograph with its licence and author recorded in `BUILD_NOTES.md`, or no image |
-| a named machine, aircraft, ship or vehicle type | **no image.** Accuracy cannot be verified and the book's own error is the warning |
-| a real person, living or dead | **no image** (see Rights in SKILL.md) |
+| real countries, named landmarks, cities, rivers, mountains, coastlines (*Ukraine Carpathians, Albania Ionian Coast, Tbilisi Georgia, River Thames London, Mount Olympus*) | **no generated image.** Use a public-domain or CC-licensed photograph from Wikimedia Commons (`scripts/fetch_commons_images.js`) with its licence and author shown in a pupil-visible credit and recorded in `BUILD_NOTES.md` |
+| classroom scenes, dialogues, character stories & situational vignettes (*elementary classroom, school computer lab, Mr. Badluck's day*) | **generate with `image-generator` in the Middle-Grade Graphic Novel style** (expressive inked line art, cel-shaded color palette, dynamic perspective, 10–11 year old students in cool casual hoodies/t-shirts/sneakers, teen comic book aesthetic, no toddler tropes, no text) |
+| generic concrete noun (*citrus fruit, oil well, coal mine, plain, peninsula*) | prefer Wikimedia Commons real photography where clear; otherwise generate in graphic novel / clean vector style |
+| a named machine, aircraft, ship or vehicle type | **real Wikimedia Commons photograph only** (or no image if accuracy cannot be verified; the book's own error is the warning) |
+| a real person, living or dead | **real Wikimedia Commons photograph/portrait only, or no image** (never generate a real person; see Rights in SKILL.md) |
 | a branded character, logo or product | **no image** (see Rights) |
 | anything where being wrong would teach something false | no image; say so in `BUILD_NOTES.md` |
 
-*Golden fleece* and other myth items are fine: they depict a story, not a fact.
+*Golden fleece* and other myth items are fine: they depict a story, not a fact (use classical Wikimedia Commons artwork or graphic novel illustration).
 
 ## Credits are pupil-visible, and they teach something
 
@@ -52,24 +52,19 @@ reasons. It is the licence condition. And it puts a worked example of licensing 
 of eleven-year-olds every time they meet one of these pictures, which is worth a few
 minutes of a lesson: why this photograph may be reused and a picture off a web search may
 not, and what "BY", "SA" and "NC" ask of the person reusing it. Generated images carry
-"illustration generated for this coursebook" in the same slot, so the pupil sees the
+"Graphic novel illustration generated for this coursebook" in the same slot, so the pupil sees the
 distinction between a photograph someone took and licensed, and a picture a machine made.
 
-## Style contract
+## Style contract (Generated Graphic Novel Scenes)
 
-One visual language for all ten units, or the coursebook looks like a scrapbook.
+One visual language for all ten units, tailored to 10–12 year old 6th-grade students:
 
-- Flat vector-style illustration, clean shapes, minimal detail, no photorealism.
-- Plain white or very light single-colour background. No scenery behind the subject unless
-  the scenery *is* the subject.
-- One subject per image, centred, filling most of the frame.
-- Square, 1:1. Delivered at 768x768, stored as `.webp`, target under 90 KB each.
-- A warm, saturated palette consistent across units. Record the exact palette in the
-  project's design notes on the first unit that generates images, and reuse it.
+- **Middle-grade graphic novel style**: expressive inked line art, cel-shaded color palette, dynamic perspective, teen comic book aesthetic.
+- **Age-authentic characters**: 10–11 year old students in cool casual clothes (hoodies, t-shirts, sneakers) sitting at wooden desks or collaborating in labs, with stylish, engaging teachers. **Strictly no toddler tropes** (no kindergarten "ABC 123" chalkboards, no babyish clip-art, no single-emoji placeholder boxes).
+- **Bio-Warm 2026 palette harmony**: warm coral (`#FF6B47`), gold (`#FFC800`), lime (`#B6E528`), teal, and deep ink (`#0F172A`) outlines matching `vocabulary-st-modern`.
+- Delivered as `.webp` (or `.jpg` for hero banners), target under 90 KB each for unit assets.
 - **No text anywhere in the image.** Image models garble letters, the card already carries
   the word, and text would need translating.
-- No people's faces where a hand or a silhouette will do. Where people are needed, keep
-  them diverse and generic; this is a unit about a multicultural class.
 - Age-appropriate throughout: nothing frightening. Natural disasters are shown by their
   aftermath on objects (a flooded street, a cracked road), never with people in danger.
 
@@ -80,7 +75,7 @@ machine short of toner. This constrains the style more than the screen does:
 
 - The subject must stay legible with colour removed: test each image converted to
   grayscale.
-- High contrast between subject and background, distinct outlines.
+- High contrast between subject and background, distinct inked outlines.
 - No dark full-bleed backgrounds: they print muddy and drink toner.
 - Print size is small, around 35 mm square on the worksheet, so detail that only reads at
   768 px is wasted.

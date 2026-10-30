@@ -352,8 +352,10 @@ Where the project is a performance (Units 3 and 9), the workshop scaffolds the s
    An `.mp3` **without** a sidecar is re-voiced by default, because nobody knows what it says. Only pass `--adopt-existing` after a person has listened and confirmed the recordings match the current text; the flag then writes sidecars instead of re-voicing.
 3. **Voice Timbre Note**:
    Microsoft Edge TTS provides British voices: `en-GB-SoniaNeural`, `en-GB-RyanNeural`, `en-GB-MaisieNeural` (girl), `en-GB-LibbyNeural` (girl), and `en-GB-ThomasNeural` (male). Currently Edge TTS offers no British boy child voice; male pupils (e.g. Markos) use `ThomasNeural`, which has a more mature timbre than female child peers. This is an accepted platform limitation.
-4. **SVG Visuals**:
-   Provide lightweight, accessible SVGs for characters and scenes in `assets/images_v2/`.
+4. **Two-Track Visual Architecture (Graphic Novel Scenes + Real Open-Source Photos)**:
+   Every unit follows the Two-Track Visual Rule documented in `references/visual_glossary.md`:
+   - **Track A ? Real Countries, Landmarks & Places (Wikimedia Commons Realia)**: NEVER generate synthetic AI images for real countries, rivers, mountains, or monuments. Fetch real open-licensed photographs (`CC0`, `PD`, `CC BY`, `CC BY-SA`) via `scripts/fetch_commons_images.js`, convert to `< 90 KB` `.webp` in `assets/images_v2/`, and include `image_alt` and pupil-visible `image_credit` in `unit<N>_v2_data.json`.
+   - **Track B ? Classroom Dialogues, School Labs & Comic Vignettes (Middle-Grade Graphic Novel Style)**: Use `image-generator` with the Middle-Grade Graphic Novel prompt archetype (*"Middle-grade graphic novel style illustration... 10-11 year old students in cool casual clothes (hoodies, t-shirts, sneakers)... Expressive inked line art, cel-shaded color palette, dynamic perspective, teen comic book aesthetic, no toddler tropes. No text, letters, or speech bubbles"*), convert to `< 100 KB` `.webp` in `assets/images_v2/`, and wire into `scene_image` / `badluck_comic_image`.
 5. **Visual glosses for vocabulary** (teacher-selected, two routes):
    For concrete items a picture is a better gloss than any definition. Read
    `references/visual_glossary.md` first. **The teacher chooses the items**; the agent never

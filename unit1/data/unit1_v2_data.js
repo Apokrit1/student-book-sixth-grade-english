@@ -61,7 +61,10 @@ window.UNIT1_V2_DATA = {
       "book_check": {
         "title": "Coursebook Names & Contemporary Geography",
         "note": "The printed coursebook uses 'Moldavia' and 'River Dnipo'. In contemporary standard English, these are written as Moldova and the River Dnipro."
-      }
+      },
+      "image": "assets/images_v2/ukraine_real.webp",
+      "image_alt": "Carpathian Mountains in Synevyr National Nature Park, Ukraine",
+      "image_credit": "Photo: Rbrechko ? Synevyr National Nature Park, Carpathians, Ukraine ? Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
       "id": "albania",
@@ -115,7 +118,10 @@ window.UNIT1_V2_DATA = {
         19,
         21,
         33
-      ]
+      ],
+      "image": "assets/images_v2/albania_real.webp",
+      "image_alt": "Ionian Sea coast and beach at Ksamil, Albania",
+      "image_credit": "Photo: Marcin Szala (Pudelek) ? Ksamil Beach, Ionian Coast, Albania ? Wikimedia Commons (CC BY-SA 3.0)"
     },
     {
       "id": "georgia",
@@ -174,7 +180,10 @@ window.UNIT1_V2_DATA = {
       "book_check": {
         "title": "Capital City Romanization",
         "note": "The printed coursebook writes 'T’blisi'. Modern standard English Romanization is Tbilisi."
-      }
+      },
+      "image": "assets/images_v2/georgia_real.webp",
+      "image_alt": "Panoramic view of Tbilisi and the Mtkvari River, Georgia",
+      "image_credit": "Photo: EvgenyGenkin ? Mtkvari (Kura) River in central Tbilisi, Georgia ? Wikimedia Commons (CC BY 2.5)"
     },
     {
       "id": "uk",
@@ -233,7 +242,10 @@ window.UNIT1_V2_DATA = {
       "book_check": {
         "title": "Sociocultural Language Note",
         "note": "The printed coursebook uses the phrasing 'different countries and races'. In modern English, we describe multicultural societies as welcoming people from diverse cultures, heritages, and backgrounds."
-      }
+      },
+      "image": "assets/images_v2/uk_real.webp",
+      "image_alt": "The River Thames and Palace of Westminster in London, United Kingdom",
+      "image_credit": "Photo: Diliff ? River Thames & Palace of Westminster, London ? Wikimedia Commons (CC BY-SA 2.5)"
     }
   ],
   "grammar_lab": {
@@ -412,7 +424,9 @@ window.UNIT1_V2_DATA = {
           "student": "Markos",
           "action": "Markos can paste the photo into his geography document"
         }
-      ]
+      ],
+      "scene_image": "assets/images_v2/school_computer_lab.webp",
+      "scene_alt": "Middle-grade graphic novel illustration of Maria, Markos, Anne, and Sophia working on projects in the school computer lab"
     },
     "school_lab_actions": [
       {
@@ -498,7 +512,9 @@ window.UNIT1_V2_DATA = {
           "negative": "No, I'm not!"
         }
       ]
-    }
+    },
+    "badluck_comic_image": "assets/images_v2/mr_badluck_comic.webp",
+    "badluck_comic_alt": "Graphic novel split-panel comic of Mr. Badluck walking on a sunny morning versus running late in pouring rain with an inside-out umbrella"
   },
   "collocations": [
     {
@@ -883,4 +899,5 @@ window.UNIT1_V2_DATA = {
       "note": "The pupils already know the other sense of the word, a running race; the book uses it once, in 'coming from different countries and races' (SB p.1)."
     }
   ]
-};
+}
+;

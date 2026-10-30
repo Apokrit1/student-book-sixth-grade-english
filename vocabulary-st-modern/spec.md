@@ -128,3 +128,26 @@ Same content as rev 3, but:
 - **rev 2**: User clarified v1/v2 duality — v1 = legacy coursebook, v2 = vocabulary companion.
 - **rev 3**: User clarified the site **is** the modernized coursebook. Companion = vocabulary layer where Greek is allowed.
 - **rev 4 (current)**: User asked for a **bold modern** palette. Picked **Bio-Warm 2026** (chartreuse → gold → coral) + **Bricolage Grotesque** for modern display sans headlines.
+
+
+---
+
+## rev 5 — Two-Track Visual Architecture (Graphic Novel Scenes + Real Open-Source Photos)
+
+To appeal directly to **10–12 year old 6th-grade students (ΣΤ΄ Δημοτικού)** without toddler tropes or fake AI geography:
+
+1. **Track A — Middle-Grade Graphic Novel Style for Scenes, Dialogues & School Labs (`image-generator`)**:
+   - **Visual Archetype**: *"Middle-grade graphic novel style illustration of an elementary school classroom, viewed from the back looking forward toward the chalkboard. 10-11 year old students in cool casual clothes (hoodies, t-shirts, sneakers) sitting at wooden desks facing forward toward the board, looking attentive. At the front, a stylish teacher writes on the chalkboard. Expressive inked line art, cel-shaded color palette, dynamic perspective, teen comic book aesthetic, no toddler tropes."*
+   - Used for:
+     - Hero classroom panel (`imgs/hero_illustration.jpg`)
+     - Unit 1 multicultural classmates around the globe (`imgs/unit1_featured.jpg`)
+     - *At the School Computer Lab* dialogue scene (`imgs/teacher_illus.jpg` / `unit1/assets/images_v2/school_computer_lab.webp`)
+     - *Mr. Badluck's Day* grammar comic strip (`unit1/assets/images_v2/mr_badluck_comic.webp`)
+
+2. **Track B — Real Open-Source Photography for Real Places & Countries (Wikimedia Commons)**:
+   - Never generate synthetic AI scenery for real countries, rivers, mountains, or monuments.
+   - Fetch verified open-licensed (`CC0`, `PD`, `CC BY`, `CC BY-SA`) real photographs from Wikimedia Commons with pupil-visible attribution:
+     - **Ukraine**: Carpathian Mountains & Synevyr National Nature Park (`imgs/ukraine_real.webp`, CC BY-SA 4.0, Rbrechko)
+     - **Albania**: Ionian Sea Coast at Ksamil (`imgs/albania_real.webp`, CC BY-SA 3.0, Marcin Szala / Pudelek)
+     - **Georgia**: Mtkvari (Kura) River & Old Tbilisi (`imgs/georgia_real.webp`, CC BY 2.5, EvgenyGenkin)
+     - **United Kingdom**: River Thames & Westminster, London (`imgs/uk_real.webp`, CC BY-SA 2.5, Diliff)

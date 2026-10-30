@@ -1,17 +1,17 @@
 /**
- * The Modernized Coursebook — Preview (rev 3)
- * Image swap · Staggered scroll-in · Filter logic · Hero parallax
+ * The Modernized Coursebook — Bio-Warm 2026 & Graphic Novel Edition (rev 5)
+ * Image check · Staggered scroll-in · Filter logic · Hero parallax
  */
 
 (function () {
   'use strict';
 
-  // ----- Image swap when ready (if generated illustration exists) -----
+  // ----- Ensure featuredArt fallback is hidden when image loads -----
   const featuredArt = document.getElementById('featuredArt');
-  if (featuredArt) {
+  if (featuredArt && !featuredArt.querySelector('img')) {
     const img = new Image();
     img.src = './imgs/unit1_featured.jpg';
-    img.alt = 'Hand-drawn illustration of three 6th graders waving flags of Greece, Ukraine, and Albania';
+    img.alt = 'Middle-grade graphic novel illustration of four 11-year-old classmates gathered around a classroom globe and wall map of Europe';
     img.loading = 'eager';
     img.onload = () => {
       const fallback = featuredArt.querySelector('.v1-cover-fallback');
@@ -31,11 +31,11 @@
           const i = cards.indexOf(el);
           setTimeout(() => {
             el.classList.add('visible');
-          }, Math.max(0, i) * 90);
+          }, Math.max(0, i) * 70);
           io.unobserve(el);
         }
       });
-    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
     cards.forEach(c => io.observe(c));
   } else {
     cards.forEach(c => c.classList.add('visible'));
@@ -46,13 +46,7 @@
   if (chips.length) {
     chips.forEach(chip => {
       chip.addEventListener('click', () => {
-        const colorClass = ['sage', 'mustard'].find(c => chip.classList.contains(c)) || 'default';
-        chips.forEach(c => {
-          if ((colorClass === 'default' && !c.classList.contains('sage') && !c.classList.contains('mustard')) ||
-              (colorClass !== 'default' && c.classList.contains(colorClass))) {
-            c.classList.remove('active');
-          }
-        });
+        chips.forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
 
         const filter = chip.dataset.filter;
@@ -74,7 +68,7 @@
         visibleCards.forEach((c, i) => {
           c.classList.remove('visible');
           void c.offsetWidth;
-          setTimeout(() => c.classList.add('visible'), i * 70);
+          setTimeout(() => c.classList.add('visible'), i * 60);
         });
       });
     });
@@ -87,7 +81,7 @@
     window.addEventListener('scroll', () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          const y = Math.min(120, window.scrollY * 0.08);
+          const y = Math.min(90, window.scrollY * 0.06);
           heroArt.style.transform = `translateY(${y}px)`;
           ticking = false;
         });
