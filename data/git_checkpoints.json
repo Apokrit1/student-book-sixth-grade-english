@@ -1,9 +1,9 @@
 {
   "repository": "student-book-sixth-grade-english",
   "current_branch": "main",
-  "current_head": "6104274",
-  "last_updated": "2026-11-02 11:39:19",
-  "total_checkpoints": 7,
+  "current_head": "31cef38",
+  "last_updated": "2026-11-02 11:39:48",
+  "total_checkpoints": 8,
   "checkpoints": [
     {
       "tag": "v1.0-units1-3",
@@ -121,6 +121,20 @@
         "Enforced strict 4-rule ELT validation standard and regex word-boundary heuristics",
         "Lightweight review bundle (~1.09 MB) and single-file export (argon_review.txt)",
         "Unit 1 audio sequence playback queue with Web Speech fallback"
+      ],
+      "is_latest": false
+    },
+    {
+      "tag": "v2.2-modern-unit2",
+      "commit": "31cef38",
+      "date": "2026-11-02",
+      "title": "Milestone: Unit 2 Retro Comic & Bio-Warm 2026 Parallel Tree Modernization",
+      "category": "Git Checkpoint",
+      "badge_color": "#6366f1",
+      "message": "Milestone: Unit 2 Retro Comic & Bio-Warm 2026 Parallel Tree Modernization",
+      "body": "",
+      "highlights": [
+        "Milestone: Unit 2 Retro Comic & Bio-Warm 2026 Parallel Tree Modernization"
       ],
       "is_latest": true
     }
