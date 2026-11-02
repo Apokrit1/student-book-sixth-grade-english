@@ -131,8 +131,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     audioTimer = null;
     audioQueue = [];
     if (currentAudio) {
+      currentAudio.onended = null;
+      currentAudio.onerror = null;
       currentAudio.pause();
-      currentAudio.src = '';
       currentAudio = null;
     }
     if (activePlayButton) activePlayButton.classList.remove('playing');

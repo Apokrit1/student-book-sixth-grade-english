@@ -297,9 +297,10 @@ document.addEventListener('DOMContentLoaded', () => {
     isPlayAllActive = false;
 
     if (currentAudio) {
+      currentAudio.onended = null;
+      currentAudio.onerror = null;
       currentAudio.pause();
       currentAudio.currentTime = 0;
-      currentAudio.src = '';
       currentAudio = null;
     }
 
@@ -376,17 +377,29 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       currentAudio.onended = () => {
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
         advance();
       };
 
       currentAudio.onerror = (e) => {
-        console.warn('Audio file play error, using speech synthesis fallback:', entry.src, e);
-        speakFallback(entry.fallbackText || entry.title || entry.type, advance);
+        console.warn('Audio file play error:', entry.src, e);
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
+        advance();
       };
 
       currentAudio.play().catch(err => {
-        console.warn('Audio play() error, using speech synthesis fallback:', err);
-        speakFallback(entry.fallbackText || entry.title || entry.type, advance);
+        console.warn('Audio play() error:', err);
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
+        advance();
       });
     };
 

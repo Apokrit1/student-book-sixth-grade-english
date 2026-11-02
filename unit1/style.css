@@ -186,14 +186,12 @@ body {
 
 /* Header */
 .main-header {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.94) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.96) 100%);
   border-bottom: 1px solid var(--border-table);
-  padding: 16px 0 16px;
+  padding: 10px 0 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: relative;
+  z-index: 10;
 }
 
 .header-top-row {
