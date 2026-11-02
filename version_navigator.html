@@ -153,6 +153,19 @@
       transition: var(--transition);
     }
 
+    .btn-pages {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      color: #ffffff;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+    }
+
+    .btn-pages:hover {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+    }
+
     .btn-portal {
       background: #1e293b;
       color: #38bdf8;
@@ -768,6 +781,9 @@
         </div>
       </a>
       <div class="top-actions">
+        <a href="https://apokrit1.github.io/student-book-sixth-grade-english/" target="_blank" rel="noopener noreferrer" class="btn btn-pages" title="Open live production website on GitHub Pages">
+          <span>🌐</span> Live GitHub Pages
+        </a>
         <a href="portal.html" class="btn btn-portal">
           <span>🏠</span> Coursebook Portal
         </a>
@@ -821,6 +837,18 @@
         <div class="status-meta">
           <div class="label">Total Checkpoints</div>
           <div class="val" id="statTotalTags">7 Milestones</div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <div class="status-icon">🌐</div>
+        <div class="status-meta">
+          <div class="label">Live GitHub Pages URL</div>
+          <div class="val">
+            <a href="https://apokrit1.github.io/student-book-sixth-grade-english/" target="_blank" rel="noopener noreferrer" style="color:#10b981; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:0.9rem;" title="Open live production build">
+              <span>apokrit1.github.io/...</span> ↗
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1185,6 +1213,18 @@
     helpModal.addEventListener('click', (e) => {
       if (e.target === helpModal) helpModal.classList.remove('open');
     });
+
+    // Update live status indicators if dynamic data is present
+    if (window.GIT_CHECKPOINTS) {
+      const headEl = document.getElementById('statHeadCommit');
+      if (headEl && window.GIT_CHECKPOINTS.current_head) {
+        headEl.textContent = window.GIT_CHECKPOINTS.current_head;
+      }
+      const countEl = document.getElementById('statTotalTags');
+      if (countEl && window.GIT_CHECKPOINTS.total_checkpoints) {
+        countEl.textContent = `${window.GIT_CHECKPOINTS.total_checkpoints} Milestones`;
+      }
+    }
 
     // Initial render
     renderTimeline();

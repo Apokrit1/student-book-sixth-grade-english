@@ -2,8 +2,8 @@
 window.GIT_CHECKPOINTS = {
   "repository": "student-book-sixth-grade-english",
   "current_branch": "main",
-  "current_head": "a789a67",
-  "last_updated": "2026-10-14 22:19:46",
+  "current_head": "a0d0e3e",
+  "last_updated": "2026-11-02 09:48:10",
   "total_checkpoints": 7,
   "checkpoints": [
     {
@@ -110,7 +110,7 @@ window.GIT_CHECKPOINTS = {
     },
     {
       "tag": "v2.0-consensus-review",
-      "commit": "a789a67",
+      "commit": "c952192",
       "date": "2026-10-14",
       "title": "Consensus Action Plan & Argon Review Bundle",
       "category": "QA & Model Review",

@@ -10,7 +10,7 @@
   "type": "commonjs",
   "dependencies": {
     "google-tts-api": "^2.0.2",
-    "node-edge-tts": "^1.2.10",
+    "node-edge-tts": "^1.2.12",
     "pdf-parse": "^2.4.5"
   }
 }
