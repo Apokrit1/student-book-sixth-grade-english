@@ -2,8 +2,8 @@
 window.GIT_CHECKPOINTS = {
   "repository": "student-book-sixth-grade-english",
   "current_branch": "main",
-  "current_head": "a0d0e3e",
-  "last_updated": "2026-11-02 09:48:10",
+  "current_head": "6104274",
+  "last_updated": "2026-11-02 11:39:19",
   "total_checkpoints": 7,
   "checkpoints": [
     {
