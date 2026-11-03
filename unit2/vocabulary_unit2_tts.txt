@@ -210,9 +210,9 @@ Greek Meaning:  βιολογικά προϊόντα
 English Def:    food made by farmers who follow special farming rules
 Example:        The shop sells organic products.
 
-=== ITEM 27: PAIR OF SNICKERS ===
+=== ITEM 27: PAIR OF SNEAKERS ===
 Part of Speech: (n)
-IPA Phonetics:  [peər əv ˈsnɪkəz]
+IPA Phonetics:  [peər əv ˈsniːkəz]
 Derivatives:    Der: pair (n)
 Greek Meaning:  αθλητικά παπούτσια, σνίκερς
 English Def:    shoes for sport, one for each foot

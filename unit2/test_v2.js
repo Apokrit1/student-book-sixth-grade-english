@@ -47,7 +47,7 @@ requiredFiles.forEach(file => assert(exists(file), `Required file exists: ${file
 
 assert(v2.unit_id === 2 && v2.unit_title === 'Going Shopping', 'Unit identity is Going Shopping');
 assert(vocab.length === 48, 'Vocabulary dataset contains 48 official entries');
-const expectedWords = ['baggy', 'bakery', 'beef', 'budget', 'catwalk', 'cotton', 'cute', 'dairy', 'delicious', 'denim', 'department store', 'dessert', 'elegant', 'fashion model', 'flavour', 'flyer', 'fruit flans', 'item', 'lamb ribs', 'leather', 'loose', 'match', 'menu', 'mince', 'muffins', 'organic products', 'pair of snickers', 'pastry', 'pork chops', 'poultry', 'quantity', 'receipt', 'selection', 'silk', 'skirt', 'smart', 'space shuttle', 'subtotal', 'suit', 'sweater', 'tempting', 'tight', 'total', 'track suit', 'treat', 'turkey', 'unit pice', 'woolen'];
+const expectedWords = ['baggy', 'bakery', 'beef', 'budget', 'catwalk', 'cotton', 'cute', 'dairy', 'delicious', 'denim', 'department store', 'dessert', 'elegant', 'fashion model', 'flavour', 'flyer', 'fruit flans', 'item', 'lamb ribs', 'leather', 'loose', 'match', 'menu', 'mince', 'muffins', 'organic products', 'pair of sneakers', 'pastry', 'pork chops', 'poultry', 'quantity', 'receipt', 'selection', 'silk', 'skirt', 'smart', 'space shuttle', 'subtotal', 'suit', 'sweater', 'tempting', 'tight', 'total', 'track suit', 'treat', 'turkey', 'unit pice', 'woolen'];
 expectedWords.forEach((word, index) => assert(vocab[index].word === word, `Vocabulary ${index + 1} is ${word}`));
 assert(vocab[26].pending_errata === 'E1' && vocab[46].pending_errata === 'E2' && vocab[47].pending_errata === 'E3', 'Three printed CHECK entries remain visibly pending');
 assert(vocab.every(item => item.definition_en && item.example && item.ipa && item.meaning_gr), 'Every vocabulary item has IPA, Greek meaning, definition, and example');
@@ -135,7 +135,7 @@ for (const [audio, scriptFile] of dialogueAudio) {
   const script = readJson(scriptFile).dialogue_script;
   const expectedText = script.map(turn => `${turn.speaker}: ${turn.text}`).join('\n');
   assert(exists(sidecar), `Dialogue sidecar exists: ${sidecar}`);
-  if (exists(sidecar)) assert(fs.readFileSync(sidecar, 'utf8').trim() === expectedText.trim(), `${sidecar} matches recording script`);
+  if (exists(sidecar)) assert(fs.readFileSync(sidecar, 'utf8').replace(/\r\n/g, '\n').trim() === expectedText.replace(/\r\n/g, '\n').trim(), `${sidecar} matches recording script`);
 }
 
 assert(workbook.total_activities === 18 && workbook.activities.length === 18, 'Workbook has all 18 authored activities');

@@ -314,8 +314,8 @@ window.VOCABULARY_DATA = [
   },
   {
     "id": 27,
-    "word": "pair of snickers",
-    "ipa": "[peər əv ˈsnɪkəz]",
+    "word": "pair of sneakers",
+    "ipa": "[peər əv ˈsniːkəz]",
     "pos": "(n)",
     "der": "Der: pair (n)",
     "emoji": "👟",
@@ -580,4 +580,3 @@ window.VOCABULARY_DATA = [
     "pending_errata": "E3"
   }
 ]
-;
