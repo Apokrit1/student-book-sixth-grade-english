@@ -1,0 +1,387 @@
+# ENGLISH 6TH GRADE (ΣΤ' ΔΗΜΟΤΙΚΟΥ) - UNIT 2: GOING SHOPPING
+# VOCABULARY AUDIO & PRONUNCIATION SCRIPT (48 LEXICAL ITEMS)
+# PRE-RENDERED IN TWO OFFLINE VOICES: SONIA (NEURAL AI) & CLASSIC GOOGLE TTS
+
+=== ITEM 01: BAGGY ===
+Part of Speech: (adj)
+IPA Phonetics:  [ˈbæɡi]
+Derivatives:    Der: bagginess (n)
+Greek Meaning:  χαλαρός, φαρδύς
+English Def:    larger than the body and easy to wear
+Example:        This baggy skirt is comfortable.
+
+=== ITEM 02: BAKERY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈbeɪkəri]
+Derivatives:    Der: bake (v), baked (adj)
+Greek Meaning:  φούρνος, αρτοποιείο
+English Def:    a shop where bread and cakes are made or sold
+Example:        The bakery sells bread every morning.
+
+=== ITEM 03: BEEF ===
+Part of Speech: (n)
+IPA Phonetics:  [biːf]
+Derivatives:    Der: beefy (adj)
+Greek Meaning:  βόειο κρέας
+English Def:    meat from a cow
+Example:        The beef is in the sandwich.
+
+=== ITEM 04: BUDGET ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈbʌdʒɪt]
+Derivatives:    Der: budget (v), budgeting (n)
+Greek Meaning:  προϋπολογισμός
+English Def:    the money available to spend
+Example:        We have a budget for the party.
+
+=== ITEM 05: CATWALK ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈkætwɔːk]
+Derivatives:    Der: walk (v)
+Greek Meaning:  πασαρέλα
+English Def:    a raised path where people show clothes
+Example:        The models walk on the catwalk.
+
+=== ITEM 06: COTTON ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈkɒtn]
+Derivatives:    Der: cotton (adj)
+Greek Meaning:  βαμβάκι
+English Def:    a soft material used for clothes
+Example:        This shirt is made of cotton.
+
+=== ITEM 07: CUTE ===
+Part of Speech: (adj)
+IPA Phonetics:  [kjuːt]
+Derivatives:    Der: cutely (adv)
+Greek Meaning:  χαριτωμένος, γλυκός
+English Def:    attractive in a sweet way
+Example:        The little dog is very cute.
+
+=== ITEM 08: DAIRY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈdeəri]
+Derivatives:    Der: dairy (adj)
+Greek Meaning:  γαλακτοκομικά προϊόντα, γαλακτοπωλείο
+English Def:    milk, cheese, butter and similar foods
+Example:        We buy milk at the dairy.
+
+=== ITEM 09: DELICIOUS ===
+Part of Speech: (adj)
+IPA Phonetics:  [dɪˈlɪʃəs]
+Derivatives:    Der: deliciously (adv)
+Greek Meaning:  νόστιμος
+English Def:    tasting very good
+Example:        The cake tastes very good.
+
+=== ITEM 10: DENIM ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈdenɪm]
+Derivatives:    Der: denims (n pl)
+Greek Meaning:  τζιν, ύφασμα τζιν
+English Def:    a strong material used for jeans
+Example:        These jeans are made of denim.
+
+=== ITEM 11: DEPARTMENT STORE ===
+Part of Speech: (n)
+IPA Phonetics:  [dɪˈpɑːtmənt stɔː]
+Derivatives:    Der: department (n)
+Greek Meaning:  πολυκατάστημα
+English Def:    a large shop that sells clothes, food and other goods
+Example:        The department store sells many things.
+
+=== ITEM 12: DESSERT ===
+Part of Speech: (n)
+IPA Phonetics:  [dɪˈzɜːt]
+Derivatives:    Der: dessert (adj)
+Greek Meaning:  γλυκό, επιδόρπιο
+English Def:    sweet food served after a meal
+Example:        We have dessert after lunch.
+
+=== ITEM 13: ELEGANT ===
+Part of Speech: (adj)
+IPA Phonetics:  [ˈelɪɡənt]
+Derivatives:    Der: elegance (n)
+Greek Meaning:  κομψός
+English Def:    attractive in a formal way
+Example:        She looks elegant in a black suit.
+
+=== ITEM 14: FASHION MODEL ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈfæʃn mɒdl]
+Derivatives:    Der: model (v)
+Greek Meaning:  μοντέλο μόδας
+English Def:    a person who shows clothes to customers
+Example:        The fashion model is wearing a sweater.
+
+=== ITEM 15: FLAVOUR ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈfleɪvə]
+Derivatives:    Der: flavour (v), flavoured (adj)
+Greek Meaning:  γεύση
+English Def:    the taste of a food or drink
+Example:        The soup has a strong flavour.
+
+=== ITEM 16: FLYER ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈflaɪə]
+Derivatives:    Der: fly (v)
+Greek Meaning:  διαφημιστικό φυλλάδιο
+English Def:    a printed sheet with pictures and prices for shops
+Example:        Read the flyer before you shop.
+
+=== ITEM 17: FRUIT FLANS ===
+Part of Speech: (n pl)
+IPA Phonetics:  [fruːt flænz]
+Derivatives:    Der: fruit (n), flan (n)
+Greek Meaning:  τάρτα φρούτων
+English Def:    sweet cakes with a soft fruit filling
+Example:        The bakery sells a sweet dessert with fruit.
+
+=== ITEM 18: ITEM ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈaɪtəm]
+Derivatives:    Der: itemize (v)
+Greek Meaning:  είδος, αντικείμενο
+English Def:    one thing that a shop sells
+Example:        This item is on special offer.
+
+=== ITEM 19: LAMB RIBS ===
+Part of Speech: (n pl)
+IPA Phonetics:  [læm rɪbz]
+Derivatives:    Der: lamb (n), rib (n)
+Greek Meaning:  αρνίσια παϊδάκια
+English Def:    small pieces of meat from a lamb's ribs
+Example:        The lamb ribs are in the meat section.
+
+=== ITEM 20: LEATHER ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈleðə]
+Derivatives:    Der: leathery (adj)
+Greek Meaning:  δέρμα
+English Def:    a strong material made from animal skin
+Example:        This belt is made from animal skin.
+
+=== ITEM 21: LOOSE ===
+Part of Speech: (adj)
+IPA Phonetics:  [luːs]
+Derivatives:    Der: loosely (adv), loosen (v)
+Greek Meaning:  χαλαρός, μη σφιχτός
+English Def:    not close to the body and easy to move in
+Example:        The loose shirt is comfortable.
+
+=== ITEM 22: MATCH ===
+Part of Speech: (v)
+IPA Phonetics:  [mætʃ]
+Derivatives:    Der: matching (adj), match (n)
+Greek Meaning:  ταιριάζει, συνδυάζεται
+English Def:    to look right with something else
+Example:        These shoes match her skirt.
+
+=== ITEM 23: MENU ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈmenjuː]
+Derivatives:    Der: menus (n pl)
+Greek Meaning:  μενού, κατάλογος φαγητού
+English Def:    a list of food and prices in a shop or restaurant
+Example:        The menu lists today's prices.
+
+=== ITEM 24: MINCE ===
+Part of Speech: (n)
+IPA Phonetics:  [mɪns]
+Derivatives:    Der: minced (adj)
+Greek Meaning:  κιμάς
+English Def:    meat cut into very small pieces
+Example:        The butcher sells mince.
+
+=== ITEM 25: MUFFINS ===
+Part of Speech: (n pl)
+IPA Phonetics:  [ˈmʌfɪnz]
+Derivatives:    Der: muffin (n)
+Greek Meaning:  μάφιν
+English Def:    small baked cakes with a rounded top
+Example:        We buy small cakes for breakfast.
+
+=== ITEM 26: ORGANIC PRODUCTS ===
+Part of Speech: (n pl)
+IPA Phonetics:  [ɔːˈɡænɪk ˈprɒdʌkts]
+Derivatives:    Der: organically (adv)
+Greek Meaning:  βιολογικά προϊόντα
+English Def:    food made by farmers who follow special farming rules
+Example:        The shop sells organic products.
+
+=== ITEM 27: PAIR OF SNICKERS ===
+Part of Speech: (n)
+IPA Phonetics:  [peər əv ˈsnɪkəz]
+Derivatives:    Der: pair (n)
+Greek Meaning:  αθλητικά παπούτσια, σνίκερς
+English Def:    shoes for sport, one for each foot
+Example:        The new shoes are comfortable.
+
+=== ITEM 28: PASTRY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈpeɪstri]
+Derivatives:    Der: pastries (n pl)
+Greek Meaning:  ζύμη, γλυκό
+English Def:    a small baked food, often sweet
+Example:        The pastry is warm.
+
+=== ITEM 29: PORK CHOPS ===
+Part of Speech: (n pl)
+IPA Phonetics:  [pɔːk tʃɒps]
+Derivatives:    Der: pork (n), chop (n)
+Greek Meaning:  χοιρινές μπριζόλες
+English Def:    pieces of meat from a pig
+Example:        The meat from a pig is fresh.
+
+=== ITEM 30: POULTRY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈpəʊltri]
+Derivatives:    Der: poultry (adj)
+Greek Meaning:  πουλερικά
+English Def:    birds that we keep for eggs or meat
+Example:        Poultry is in the meat section.
+
+=== ITEM 31: QUANTITY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈkwɒntəti]
+Derivatives:    Der: quantitative (adj)
+Greek Meaning:  ποσότητα
+English Def:    an amount of something
+Example:        We need a large quantity of fruit.
+
+=== ITEM 32: RECEIPT ===
+Part of Speech: (n)
+IPA Phonetics:  [rɪˈsiːt]
+Derivatives:    Der: receive (v)
+Greek Meaning:  απόδειξη
+English Def:    a paper that shows what you pay
+Example:        Keep the receipt after you pay.
+
+=== ITEM 33: SELECTION ===
+Part of Speech: (n)
+IPA Phonetics:  [sɪˈlekʃn]
+Derivatives:    Der: select (v), selective (adj)
+Greek Meaning:  επιλογή
+English Def:    a range of things to choose from
+Example:        The shop has a good selection of goods.
+
+=== ITEM 34: SILK ===
+Part of Speech: (n)
+IPA Phonetics:  [sɪlk]
+Derivatives:    Der: silky (adj)
+Greek Meaning:  μετάξι
+English Def:    a very light material used for clothes
+Example:        This dress is made of silk.
+
+=== ITEM 35: SKIRT ===
+Part of Speech: (n)
+IPA Phonetics:  [skɜːt]
+Derivatives:    Der: skirt (v)
+Greek Meaning:  φούστα
+English Def:    a woman's clothes for the lower body
+Example:        She is wearing a short skirt.
+
+=== ITEM 36: SMART ===
+Part of Speech: (adj)
+IPA Phonetics:  [smɑːt]
+Derivatives:    Der: smartly (adv), smartness (n)
+Greek Meaning:  κομψός, καλοντυμένος
+English Def:    wearing clothes that look good
+Example:        He looks smart in a suit.
+
+=== ITEM 37: SPACE SHUTTLE ===
+Part of Speech: (n)
+IPA Phonetics:  [speɪs ˈʃʌtl]
+Derivatives:    Der: shuttle (n)
+Greek Meaning:  διαστημικό σκάφος
+English Def:    a vehicle that travels into space and back
+Example:        The toy space shuttle has small wings.
+
+=== ITEM 38: SUBTOTAL ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈsʌbtəʊtəl]
+Derivatives:    Der: sub- (prefix), total (n)
+Greek Meaning:  υποσύνολο
+English Def:    the cost of one line before the final amount
+Example:        The subtotal is less than the total.
+
+=== ITEM 39: SUIT ===
+Part of Speech: (v)
+IPA Phonetics:  [suːt]
+Derivatives:    Der: suit (v), suitable (adj)
+Greek Meaning:  ταιριάζει
+English Def:    to look right for someone
+Example:        This colour suits you.
+
+=== ITEM 40: SWEATER ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈswetə]
+Derivatives:    Der: sweaters (n pl)
+Greek Meaning:  πουλόβερ
+English Def:    a warm top for cold weather
+Example:        I wear a warm sweater in winter.
+
+=== ITEM 41: TEMPTING ===
+Part of Speech: (adj)
+IPA Phonetics:  [ˈtemptɪŋ]
+Derivatives:    Der: tempt (v), temptingly (adv)
+Greek Meaning:  δελεαστικός, ελκυστικός
+English Def:    making someone want it very much
+Example:        The cake looks very good.
+
+=== ITEM 42: TIGHT ===
+Part of Speech: (adj)
+IPA Phonetics:  [taɪt]
+Derivatives:    Der: tightly (adv), tighten (v)
+Greek Meaning:  σφιχτός, στενός
+English Def:    close-fitting and not easy to move in
+Example:        These trousers are too tight.
+
+=== ITEM 43: TOTAL ===
+Part of Speech: (n, adj)
+IPA Phonetics:  [ˈtəʊtl]
+Derivatives:    Der: totally (adv)
+Greek Meaning:  σύνολο, συνολικός
+English Def:    the final amount to pay
+Example:        The total is ten euros.
+
+=== ITEM 44: TRACK SUIT ===
+Part of Speech: (n)
+IPA Phonetics:  [træk suːt]
+Derivatives:    Der: tracksuit (n)
+Greek Meaning:  αθλητική φόρμα
+English Def:    a matching top and trousers for sport
+Example:        He wears a blue track suit.
+
+=== ITEM 45: TREAT ===
+Part of Speech: (n, v)
+IPA Phonetics:  [triːt]
+Derivatives:    Der: treatment (n)
+Greek Meaning:  κέρασμα, λιχουδιά
+English Def:    a special food you enjoy
+Example:        The chocolate is a special treat.
+
+=== ITEM 46: TURKEY ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈtɜːki]
+Derivatives:    Der: turkeys (n pl)
+Greek Meaning:  γαλοπούλα
+English Def:    a large bird that we eat for a special meal
+Example:        We eat a large bird for dinner.
+
+=== ITEM 47: UNIT PICE ===
+Part of Speech: (n)
+IPA Phonetics:  [ˈjuːnɪt paɪs]
+Derivatives:    Der: unit (n), price (n)
+Greek Meaning:  τιμή μονάδας
+English Def:    the price of one thing in a shop
+Example:        The form shows the price for one item.
+
+=== ITEM 48: WOOLEN ===
+Part of Speech: (adj)
+IPA Phonetics:  [ˈwʊlən]
+Derivatives:    Der: wool (n), woollen (adj)
+Greek Meaning:  μάλλινος
+English Def:    made from the hair of sheep
+Example:        This woolen hat keeps my head warm.

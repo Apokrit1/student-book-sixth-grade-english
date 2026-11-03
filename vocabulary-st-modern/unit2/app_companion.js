@@ -1,6 +1,12 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const body = document.body;
-  // Asset Path Resolver: maps relative assets/* from classic data to ../../unit2/assets/*
+/**
+ * UNIT 2: GOING SHOPPING - VOCABULARY COMPANION
+ * Client Application Logic
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const vocabList = window.VOCABULARY_DATA || [];
+
+  // Asset Path Resolver: maps relative assets/* from classic vocabulary_data to ../../unit2/assets/*
   function resolveAsset(p) {
     if (!p) return p;
     if (typeof p === 'string' && p.startsWith('assets/')) {
@@ -8,521 +14,1034 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     return p;
   }
-
-  const unitNum = body.dataset.unit || '';
-  const vocabList = Array.isArray(window.VOCABULARY_DATA) ? window.VOCABULARY_DATA : [];
-  let unitData = {};
+  
+  // State
   let currentFilteredList = [...vocabList];
   let activeCategory = 'all';
   let searchTerm = '';
-  let playbackRate = 1;
-  let selectedVoice = 'neural';
+  let playbackRate = 1.0;
+  let selectedVoice = 'neural'; // 'neural' (Sonia Natural AI) or 'standard' (Google TTS)
+  
+  // Audio state
+  let currentAudio = null;
+  let currentPlayingBtn = null;
+  let currentPlayingRow = null;
+  let playAllQueue = [];
+  let isPlayAllActive = false;
+  
+  // Flashcard state
   let currentCardIdx = 0;
   let isCardFlipped = false;
+  
+  // Quiz state (Greek translation matching)
   let quizQuestion = null;
   let quizScore = 0;
   let quizStreak = 0;
   let quizTotal = 0;
+
+  // Definition Quiz state (English definition matching)
   let defQuizQuestion = null;
   let defQuizScore = 0;
   let defQuizStreak = 0;
   let defQuizTotal = 0;
-  let currentAudio = null;
-  let audioQueue = [];
-  let audioTimer = null;
-  let activeAudioButton = null;
-  let activeAudioRow = null;
 
-  const byId = id => document.getElementById(id);
-  const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
-  const normalise = value => String(value ?? '').trim().toLowerCase().replace(/\s+/g, ' ');
-  const padId = value => String(value).padStart(2, '0');
-  const filePart = value => String(value ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+  // DOM Elements
+  const tableBody = document.getElementById('vocabTableBody');
+  const searchInput = document.getElementById('searchInput');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const categoryPillsContainer = document.getElementById('categoryPills');
+  const speedSelect = document.getElementById('speedSelect');
+  const voiceSelect = document.getElementById('voiceSelect');
+  
+  // HUD Elements
+  const audioHud = document.getElementById('audioHud');
+  const hudAudioType = document.getElementById('hudAudioType');
+  const hudAudioTitle = document.getElementById('hudAudioTitle');
+  const hudPauseBtn = document.getElementById('hudPauseBtn');
+  const hudStopBtn = document.getElementById('hudStopBtn');
 
-  const tableBody = byId('vocabTableBody');
-  const searchInput = byId('searchInput');
-  const clearSearchBtn = byId('clearSearchBtn');
-  const categoryPills = byId('categoryPills');
-  const speedSelect = byId('speedSelect');
-  const voiceSelect = byId('voiceSelect');
-  const audioHud = byId('audioHud');
-  const hudAudioType = byId('hudAudioType');
-  const hudAudioTitle = byId('hudAudioTitle');
-  const hudPauseBtn = byId('hudPauseBtn');
-  const hudStopBtn = byId('hudStopBtn');
-  const activeFlashcard = byId('activeFlashcard');
-  const currentCardIndex = byId('currentCardIndex');
-  const totalCardsCount = byId('totalCardsCount');
-  const cardCategory = byId('cardCategory');
-  const cardVisual = byId('cardVisual');
-  const cardWord = byId('cardWord');
-  const cardIpa = byId('cardIpa');
-  const cardPos = byId('cardPos');
-  const cardMeaningGr = byId('cardMeaningGr');
-  const cardDefEn = byId('cardDefEn');
-  const cardExample = byId('cardExample');
-  const cardPlayWordBtn = byId('cardPlayWordBtn');
-  const cardPlayDefBtn = byId('cardPlayDefBtn');
-  const cardPlayExBtn = byId('cardPlayExBtn');
-  const prevCardBtn = byId('prevCardBtn');
-  const nextCardBtn = byId('nextCardBtn');
-  const shuffleCardsBtn = byId('shuffleCardsBtn');
-  const quizScoreEl = byId('quizScore');
-  const quizTotalEl = byId('quizTotal');
-  const quizStreakEl = byId('quizStreak');
-  const quizPlayPromptBtn = byId('quizPlayPromptBtn');
-  const quizClue = byId('quizClue');
-  const quizOptionsGrid = byId('quizOptionsGrid');
-  const quizFeedback = byId('quizFeedback');
-  const feedbackIcon = byId('feedbackIcon');
-  const feedbackText = byId('feedbackText');
-  const nextQuestionBtn = byId('nextQuestionBtn');
-  const restartQuizBtn = byId('restartQuizBtn');
-  const defQuizScoreEl = byId('defQuizScore');
-  const defQuizTotalEl = byId('defQuizTotal');
-  const defQuizStreakEl = byId('defQuizStreak');
-  const defQuizPlayPromptBtn = byId('defQuizPlayPromptBtn');
-  const defQuizClue = byId('defQuizClue');
-  const defQuizOptionsGrid = byId('defQuizOptionsGrid');
-  const defQuizFeedback = byId('defQuizFeedback');
-  const defFeedbackIcon = byId('defFeedbackIcon');
-  const defFeedbackText = byId('defFeedbackText');
-  const defNextQuestionBtn = byId('defNextQuestionBtn');
-  const restartDefQuizBtn = byId('restartDefQuizBtn');
-  const printPageBtn = byId('printPageBtn');
-  const printableWordsList = byId('printableWordsList');
-  const ttsScriptPreview = byId('ttsScriptPreview');
-  const copyTtsBtn = byId('copyTtsBtn');
-  const downloadTtsBtn = byId('downloadTtsBtn');
-  const downloadJsonBtn = byId('downloadJsonBtn');
-  const wordModal = byId('wordModal');
-  const modalBody = byId('modalBody');
-  const closeModalBtn = byId('closeModalBtn');
-  const modeButtons = [...document.querySelectorAll('.mode-btn')];
-  const panels = {
-    table: byId('viewTable'),
-    cards: byId('viewCards'),
-    quiz: byId('viewQuiz'),
-    defQuiz: byId('viewDefQuiz'),
-    printable: byId('viewPrintable'),
-    tts: byId('viewTTS')
+  // Helper function for dynamic audio paths based on selected voice
+  function getAudioPath(type, padId) {
+    const base = selectedVoice === 'neural' ? '../../unit2/assets/audio_neural' : '../../unit2/assets/audio';
+    switch (type) {
+      case 'word': return `${base}/words/${padId}_word.mp3`;
+      case 'def': return `${base}/defs/${padId}_definition.mp3`;
+      case 'example': return `${base}/examples/${padId}_example.mp3`;
+      default: return `${base}/words/${padId}_word.mp3`;
+    }
+  }
+
+  // Mode View Panels & Buttons
+  const modeButtons = document.querySelectorAll('.mode-btn');
+  const viewPanels = {
+    table: document.getElementById('viewTable'),
+    cards: document.getElementById('viewCards'),
+    quiz: document.getElementById('viewQuiz'),
+    defQuiz: document.getElementById('viewDefQuiz'),
+    printable: document.getElementById('viewPrintable'),
+    tts: document.getElementById('viewTTS')
   };
 
-  function loadScript(src) {
-    return new Promise(resolve => {
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => resolve(true);
-      script.onerror = () => resolve(false);
-      document.head.appendChild(script);
-    });
+  // Flashcard Elements
+  const activeFlashcard = document.getElementById('activeFlashcard');
+  const currentCardIndexEl = document.getElementById('currentCardIndex');
+  const totalCardsCountEl = document.getElementById('totalCardsCount');
+  const cardCategoryEl = document.getElementById('cardCategory');
+  const cardVisualEl = document.getElementById('cardVisual');
+  const cardWordEl = document.getElementById('cardWord');
+  const cardIpaEl = document.getElementById('cardIpa');
+  const cardPosEl = document.getElementById('cardPos');
+  const cardMeaningGrEl = document.getElementById('cardMeaningGr');
+  const cardDefEnEl = document.getElementById('cardDefEn');
+  const cardExampleEl = document.getElementById('cardExample');
+  const cardPlayWordBtn = document.getElementById('cardPlayWordBtn');
+  const cardPlayDefBtn = document.getElementById('cardPlayDefBtn');
+  const cardPlayExBtn = document.getElementById('cardPlayExBtn');
+  const prevCardBtn = document.getElementById('prevCardBtn');
+  const nextCardBtn = document.getElementById('nextCardBtn');
+  const shuffleCardsBtn = document.getElementById('shuffleCardsBtn');
+
+  // Greek Listening Quiz Elements
+  const quizScoreEl = document.getElementById('quizScore');
+  const quizTotalEl = document.getElementById('quizTotal');
+  const quizStreakEl = document.getElementById('quizStreak');
+  const quizPlayPromptBtn = document.getElementById('quizPlayPromptBtn');
+  const quizClueEl = document.getElementById('quizClue');
+  const quizOptionsGrid = document.getElementById('quizOptionsGrid');
+  const quizFeedback = document.getElementById('quizFeedback');
+  const feedbackIcon = document.getElementById('feedbackIcon');
+  const feedbackText = document.getElementById('feedbackText');
+  const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+  const restartQuizBtn = document.getElementById('restartQuizBtn');
+
+  // Definition Challenge Elements
+  const defQuizScoreEl = document.getElementById('defQuizScore');
+  const defQuizTotalEl = document.getElementById('defQuizTotal');
+  const defQuizStreakEl = document.getElementById('defQuizStreak');
+  const defQuizPlayPromptBtn = document.getElementById('defQuizPlayPromptBtn');
+  const defQuizClueEl = document.getElementById('defQuizClue');
+  const defQuizOptionsGrid = document.getElementById('defQuizOptionsGrid');
+  const defQuizFeedback = document.getElementById('defQuizFeedback');
+  const defFeedbackIcon = document.getElementById('defFeedbackIcon');
+  const defFeedbackText = document.getElementById('defFeedbackText');
+  const defNextQuestionBtn = document.getElementById('defNextQuestionBtn');
+  const restartDefQuizBtn = document.getElementById('restartDefQuizBtn');
+
+  // Printable Study Sheet Elements
+  const printPageBtn = document.getElementById('printPageBtn');
+  const printableWordsList = document.getElementById('printableWordsList');
+
+  // TTS Export Elements
+  const ttsScriptPreview = document.getElementById('ttsScriptPreview');
+  const copyTtsBtn = document.getElementById('copyTtsBtn');
+  const downloadJsonBtn = document.getElementById('downloadJsonBtn');
+
+  // Modal Elements
+  const wordModal = document.getElementById('wordModal');
+  const modalBody = document.getElementById('modalBody');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  // ==========================================
+  // 1. INITIALIZATION & DATA RENDERING
+  // ==========================================
+
+  function init() {
+    setupCategories();
+    renderTable();
+    setupEventListeners();
+    loadTtsScript();
+    initFlashcards();
+    initQuiz();
+    initDefQuiz();
+    initPrintableSheet();
   }
 
-  async function loadUnitData() {
-    if (!/^\d+$/.test(unitNum)) return {};
-    const key = `UNIT${unitNum}_V2_DATA`;
-    if (window[key]) return window[key];
-    const loaded = await loadScript(`data/unit${unitNum}_v2_data.js`);
-    if (loaded && window[key]) return window[key];
-    try {
-      const response = await fetch(`data/unit${unitNum}_v2_data.json`);
-      if (response.ok) return await response.json();
-    } catch (error) {
-      return {};
-    }
-    return {};
-  }
-
-  function getUnitTitle() {
-    return unitData.unit_title || (unitNum ? `Unit ${unitNum}` : 'Coursebook Unit');
-  }
-
-  function getUnitLabel() {
-    return unitNum ? `Unit ${unitNum}: ${getUnitTitle()}` : getUnitTitle();
-  }
-
-  function applyIdentity() {
-    const unitLabel = getUnitLabel();
-    document.title = `${unitLabel} | 6th Grade English Vocabulary Companion`;
-    document.querySelectorAll('.shell-unit-label').forEach(el => { el.textContent = unitNum ? `Unit ${unitNum}` : 'Coursebook Unit'; });
-    document.querySelectorAll('.shell-unit-title').forEach(el => { el.textContent = getUnitTitle(); });
-    document.querySelectorAll('.shell-footer-title').forEach(el => { el.textContent = `6th Grade English Curriculum • ${unitLabel}`; });
-    document.querySelectorAll('.shell-source-label').forEach(el => { el.textContent = `Coursebook • ${unitNum ? `Unit ${unitNum}` : 'Vocabulary Companion'}`; });
-    document.querySelectorAll('.shell-print-kicker').forEach(el => { el.textContent = `English 6th Grade • ${unitLabel}`; });
-    document.querySelectorAll('.shell-print-title').forEach(el => { el.textContent = `${getUnitTitle()} — Vocabulary Study Guide`; });
-    document.querySelectorAll('.shell-print-footer').forEach(el => { el.textContent = `${unitLabel} • Printable Vocabulary Reference`; });
-    byId('cefrBadge').textContent = `CEFR ${unitData.cefr_level || 'A2'}`;
-    byId('totalWordsCount').textContent = vocabList.length;
-    byId('audioCount').textContent = vocabList.length * 6;
-  }
-
-  function getAudioPath(type, id) {
-    const base = selectedVoice === 'neural' ? '../../unit2/assets/audio_neural' : '../../unit2/assets/audio';
-    const idText = padId(id);
-    if (type === 'def') return `${base}/defs/${idText}_definition.mp3`;
-    if (type === 'example') return `${base}/examples/${idText}_example.mp3`;
-    return `${base}/words/${idText}_word.mp3`;
-  }
-
-  function clearAudioVisuals() {
-    if (activeAudioButton) activeAudioButton.classList.remove('playing');
-    if (activeAudioRow) activeAudioRow.classList.remove('is-playing');
-    activeAudioButton = null;
-    activeAudioRow = null;
-  }
-
-  function stopAudio() {
-    if (audioTimer) clearTimeout(audioTimer);
-    audioTimer = null;
-    audioQueue = [];
-    if (currentAudio) {
-      currentAudio.onended = null;
-      currentAudio.onerror = null;
-      currentAudio.pause();
-      currentAudio.src = '';
-      currentAudio = null;
-    }
-    clearAudioVisuals();
-    audioHud.style.display = 'none';
-    hudPauseBtn.textContent = '⏸';
-  }
-
-  function playSequence(entries, triggerButton = null, targetRow = null) {
-    stopAudio();
-    const queue = (Array.isArray(entries) ? entries : [entries]).filter(entry => entry && entry.src);
-    if (!queue.length) return;
-    audioQueue = queue.slice();
-    if (triggerButton) {
-      activeAudioButton = triggerButton;
-      triggerButton.classList.add('playing');
-    }
-    if (targetRow) {
-      activeAudioRow = targetRow;
-      targetRow.classList.add('is-playing');
-    }
-    const playNext = () => {
-      if (!audioQueue.length) {
-        stopAudio();
-        return;
-      }
-      const entry = audioQueue.shift();
-      currentAudio = new Audio(entry.src);
-      currentAudio.playbackRate = playbackRate;
-      currentAudio.onended = () => {
-        if (audioQueue.length) audioTimer = setTimeout(playNext, 350);
-        else stopAudio();
-      };
-      currentAudio.onerror = stopAudio;
-      hudAudioType.textContent = entry.type || 'Audio';
-      hudAudioTitle.textContent = entry.title || 'Playback';
-      audioHud.style.display = 'block';
-      hudPauseBtn.textContent = '⏸';
-      currentAudio.play().catch(stopAudio);
-    };
-    playNext();
-  }
-
-  function playItem(item, type, triggerButton = null, row = null) {
-    const labels = { word: 'Pronunciation', def: 'Definition', example: 'Example' };
-    playSequence({ src: getAudioPath(type, item.id), type: labels[type] || 'Audio', title: item.word }, triggerButton, row);
-  }
-
-  function playFullItem(item, triggerButton = null, row = null) {
-    const idText = padId(item.id);
-    playSequence([
-      { src: getAudioPath('word', idText), type: 'Complete Entry', title: item.word },
-      { src: getAudioPath('def', idText), type: 'Complete Entry', title: item.word },
-      { src: getAudioPath('example', idText), type: 'Complete Entry', title: item.word }
-    ], triggerButton, row);
-  }
-
+  // Populate category filter buttons with word counts
   function setupCategories() {
-    const counts = new Map();
-    vocabList.forEach(item => counts.set(item.category || 'General', (counts.get(item.category || 'General') || 0) + 1));
-    const categories = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-    categoryPills.innerHTML = `<button class="pill-btn active" data-category="all">All Words (${vocabList.length})</button>${categories.map(([name, count]) => `<button class="pill-btn" data-category="${escapeHtml(name)}">${escapeHtml(name)} (${count})</button>`).join('')}`;
-    categoryPills.querySelectorAll('.pill-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        categoryPills.querySelectorAll('.pill-btn').forEach(item => item.classList.remove('active'));
-        button.classList.add('active');
-        activeCategory = button.dataset.category;
+    const counts = { all: vocabList.length };
+    vocabList.forEach(item => {
+      counts[item.category] = (counts[item.category] || 0) + 1;
+    });
+
+    let html = `<button class="pill-btn active" data-category="all">All Words (${vocabList.length})</button>`;
+    Object.keys(counts).forEach(cat => {
+      if (cat !== 'all') {
+        html += `<button class="pill-btn" data-category="${cat}">${cat} (${counts[cat]})</button>`;
+      }
+    });
+    categoryPillsContainer.innerHTML = html;
+
+    // Attach click events
+    categoryPillsContainer.querySelectorAll('.pill-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryPillsContainer.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.dataset.category;
         filterVocabulary();
       });
     });
   }
 
+  // Highlight target word in example sentence
   function highlightExample(sentence, word) {
-    const first = String(word || '').split(/\s+/)[0].replace(/[^a-zA-Z]/g, '');
-    if (!sentence || !first) return escapeHtml(sentence);
-    const pattern = new RegExp(`(\\b${first}[a-z]*\\b)`, 'gi');
-    return escapeHtml(sentence).replace(pattern, '<span class="example-target-word">$1</span>');
+    if (!sentence || !word) return sentence;
+    const cleanWord = word.split(' ')[0].replace(/[^a-zA-Z]/g, '');
+    const regex = new RegExp(`(\\b${cleanWord}[a-z]*\\b)`, 'gi');
+    return sentence.replace(regex, '<span class="example-target-word">$1</span>');
   }
 
+  // Render the textbook companion table
   function renderTable() {
     tableBody.innerHTML = '';
-    if (!currentFilteredList.length) {
-      tableBody.innerHTML = '<tr><td colspan="4" style="text-align:center;padding:40px;color:var(--text-light);"><strong>No matching vocabulary items found</strong><p style="font-size:0.88rem;margin-top:4px;">Try another search or reset the filters.</p></td></tr>';
+
+    if (currentFilteredList.length === 0) {
+      tableBody.innerHTML = `
+        <tr>
+          <td colspan="4" style="text-align: center; padding: 40px; color: var(--text-light);">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🔍</div>
+            <strong>No matching vocabulary items found</strong>
+            <p style="font-size: 0.88rem; margin-top: 4px;">Try searching for another word or reset filters.</p>
+          </td>
+        </tr>`;
       return;
     }
-    currentFilteredList.forEach(item => {
-      const row = document.createElement('tr');
-      row.id = `row-${item.id}`;
-      row.dataset.id = item.id;
-      const visual = resolveAsset(item.image)
-        ? `<img src="${escapeHtml(resolveAsset(item.image))}" alt="${escapeHtml(resolveAsset(item.image)_alt || item.word)}" style="width:38px;height:38px;object-fit:cover;border-radius:6px;display:block;">`
-        : escapeHtml(item.emoji || '•');
-      row.innerHTML = `
-        <td class="col-word"><div class="word-cell"><span class="row-index">${escapeHtml(item.id)}</span><div class="word-main-wrap"><div class="word-line"><span class="word-headword" data-action="modal" data-id="${escapeHtml(item.id)}">${escapeHtml(item.word)}</span><span class="word-ipa">${escapeHtml(item.ipa)}</span><span class="word-pos">${escapeHtml(item.pos)}</span><button class="audio-btn" data-audio-type="word" data-id="${escapeHtml(item.id)}" title="Listen to pronunciation" aria-label="Listen to ${escapeHtml(item.word)}">🔊</button></div><div class="word-derivatives">${escapeHtml(item.der)}</div></div><div class="word-visual-badge" data-action="modal" data-id="${escapeHtml(item.id)}" title="${escapeHtml(item.word)}">${visual}</div></div></td>
-        <td class="col-meaning"><div class="meaning-cell"><span class="meaning-greek">${escapeHtml(item.meaning_gr)}</span><span class="meaning-en">${escapeHtml(item.definition_en)}</span><button class="audio-btn" data-audio-type="def" data-id="${escapeHtml(item.id)}" title="Listen to definition" aria-label="Listen to definition of ${escapeHtml(item.word)}">🔊</button></div></td>
-        <td class="col-example"><div class="example-cell">${highlightExample(item.example, item.word)}<button class="audio-btn" data-audio-type="example" data-id="${escapeHtml(item.id)}" title="Listen to example" aria-label="Listen to example for ${escapeHtml(item.word)}">🔊</button></div></td>
-        <td class="col-actions"><button class="play-all-btn" data-full-id="${escapeHtml(item.id)}" title="Play word, definition, and example">▶ Play All</button></td>`;
-      tableBody.appendChild(row);
+
+    currentFilteredList.forEach((item, index) => {
+      const padId = String(item.id).padStart(2, '0');
+      const safeName = item.word.toLowerCase().replace(/[^a-z0-9]/g, '_');
+      const svgPath = `../../unit2/assets/images/${padId}_${safeName}.svg`;
+      const wordMp3 = getAudioPath('word', padId);
+      const defMp3 = getAudioPath('def', padId);
+      const exMp3 = getAudioPath('example', padId);
+
+      const tr = document.createElement('tr');
+      tr.id = `row-${item.id}`;
+      tr.dataset.id = item.id;
+
+      tr.innerHTML = `
+        <!-- Column 1: Word -->
+        <td class="col-word">
+          <div class="word-cell">
+            <span class="row-index">${item.id}</span>
+            <div class="word-main-wrap">
+              <div class="word-line">
+                <span class="word-headword" title="Click for details" data-action="modal" data-id="${item.id}">${item.word}</span>
+                <span class="word-ipa">${item.ipa}</span>
+                <span class="word-pos">${item.pos}</span>
+                <button class="audio-btn" data-audio="${wordMp3}" data-type="Word" data-title="${item.word}" title="Listen to pronunciation">🔊</button>
+              </div>
+              <div class="word-derivatives">${item.der}</div>
+            </div>
+            <div class="word-visual-badge" data-action="modal" data-id="${item.id}" title="${item.word}">
+              ${item.image ? `<img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" style="width: 38px; height: 38px; object-fit: cover; border-radius: 6px; display: block;" />` : item.emoji}
+            </div>
+          </div>
+        </td>
+
+        <!-- Column 2: Meaning -->
+        <td class="col-meaning">
+          <div class="meaning-cell">
+            <span class="meaning-greek">${item.meaning_gr}</span>
+            <span class="meaning-en">${item.definition_en}</span>
+            <button class="audio-btn" data-audio="${defMp3}" data-type="Definition" data-title="${item.word} (Definition)" title="Listen to English definition">🔊</button>
+          </div>
+        </td>
+
+        <!-- Column 3: Example -->
+        <td class="col-example">
+          <div class="example-cell">
+            ${highlightExample(item.example, item.word)}
+            <button class="audio-btn" data-audio="${exMp3}" data-type="Example" data-title="${item.word} (Example)" title="Listen to example sentence">🔊</button>
+          </div>
+        </td>
+
+        <!-- Column 4: Play All -->
+        <td class="col-actions">
+          <button class="play-all-btn" data-id="${item.id}" data-title="${item.word} (Complete Entry)" title="Play Word, Definition, and Example">
+            ▶ Play All
+          </button>
+        </td>
+      `;
+
+      tableBody.appendChild(tr);
     });
-    tableBody.querySelectorAll('.audio-btn').forEach(button => button.addEventListener('click', event => {
-      event.stopPropagation();
-      const item = vocabList.find(entry => String(entry.id) === button.dataset.id);
-      if (item) playItem(item, button.dataset.audioType, button, button.closest('tr'));
-    }));
-    tableBody.querySelectorAll('[data-full-id]').forEach(button => button.addEventListener('click', event => {
-      event.stopPropagation();
-      const item = vocabList.find(entry => String(entry.id) === button.dataset.fullId);
-      if (item) playFullItem(item, button, button.closest('tr'));
-    }));
-    tableBody.querySelectorAll('[data-action="modal"]').forEach(element => element.addEventListener('click', () => openWordModal(element.dataset.id)));
+
+    attachTableActionEvents();
   }
 
+  // Filter Vocabulary list by Search & Category
   function filterVocabulary() {
-    const query = normalise(searchTerm);
     currentFilteredList = vocabList.filter(item => {
-      const categoryMatch = activeCategory === 'all' || item.category === activeCategory;
-      const haystack = normalise([item.word, item.meaning_gr, item.definition_en, item.example, item.der].join(' '));
-      return categoryMatch && (!query || haystack.includes(query));
+      const matchesCategory = (activeCategory === 'all') || (item.category === activeCategory);
+      const query = searchTerm.toLowerCase().trim();
+      const matchesSearch = !query || 
+        item.word.toLowerCase().includes(query) ||
+        item.meaning_gr.toLowerCase().includes(query) ||
+        item.definition_en.toLowerCase().includes(query) ||
+        item.example.toLowerCase().includes(query) ||
+        item.der.toLowerCase().includes(query);
+
+      return matchesCategory && matchesSearch;
     });
-    currentCardIdx = 0;
-    isCardFlipped = false;
-    activeFlashcard.classList.remove('flipped');
+
     renderTable();
-    updateFlashcard();
+    if (viewPanels.cards.classList.contains('active')) {
+      currentCardIdx = 0;
+      updateFlashcardView();
+    }
   }
 
-  function resetCard() {
-    isCardFlipped = false;
-    activeFlashcard.classList.remove('flipped');
-    updateFlashcard();
+  let audioTimer = null;
+
+  // ==========================================
+  // 2. AUDIO ENGINE & PLAYBACK
+  // ==========================================
+
+  function stopCurrentAudio() {
+    if (audioTimer) {
+      clearTimeout(audioTimer);
+      audioTimer = null;
+    }
+    playAllQueue = [];
+    isPlayAllActive = false;
+
+    if (currentAudio) {
+      currentAudio.onended = null;
+      currentAudio.onerror = null;
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      currentAudio = null;
+    }
+
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+
+    clearPlayingVisuals();
+    if (audioHud) audioHud.style.display = 'none';
+    if (hudPauseBtn) hudPauseBtn.textContent = '⏸';
   }
 
-  function updateFlashcard() {
-    totalCardsCount.textContent = currentFilteredList.length;
-    currentCardIndex.textContent = currentFilteredList.length ? currentCardIdx + 1 : 0;
-    const item = currentFilteredList[currentCardIdx];
-    if (!item) {
-      cardCategory.textContent = 'No item';
-      cardVisual.textContent = '—';
-      cardWord.textContent = 'No matching item';
-      cardIpa.textContent = '';
-      cardPos.textContent = '';
-      cardMeaningGr.textContent = '';
-      cardDefEn.textContent = '';
-      cardExample.textContent = '';
+  function clearPlayingVisuals() {
+    if (currentPlayingBtn) {
+      currentPlayingBtn.classList.remove('playing');
+      currentPlayingBtn = null;
+    }
+    if (currentPlayingRow) {
+      currentPlayingRow.classList.remove('is-playing');
+      currentPlayingRow = null;
+    }
+  }
+
+  function playSequence(entries, triggerBtn, targetRow, onComplete) {
+    // If clicking the button that is already playing, stop it (toggle behavior)
+    if (triggerBtn && triggerBtn.classList.contains('playing')) {
+      stopCurrentAudio();
       return;
     }
-    cardCategory.textContent = item.category || 'General';
-    if (resolveAsset(item.image)) {
-      cardVisual.innerHTML = `<img src="${escapeHtml(resolveAsset(item.image))}" alt="${escapeHtml(resolveAsset(item.image)_alt || item.word)}" style="max-width:220px;max-height:180px;border-radius:12px;object-fit:cover;display:block;margin:0 auto;box-shadow:0 4px 12px rgba(0,0,0,0.12);"><div style="font-size:0.72rem;color:#718096;margin-top:6px;text-align:center;font-weight:500;">📷 ${escapeHtml(resolveAsset(item.image)_credit || resolveAsset(item.image)_source || '')}</div>`;
+
+    stopCurrentAudio();
+
+    const queue = (Array.isArray(entries) ? entries : [entries]).filter(e => e && (e.src || e.fallbackText));
+    if (!queue.length) return;
+
+    playAllQueue = queue.slice();
+    isPlayAllActive = playAllQueue.length > 1;
+
+    // Mark active button & row
+    if (triggerBtn) {
+      currentPlayingBtn = triggerBtn;
+      currentPlayingBtn.classList.add('playing');
+    }
+    if (targetRow) {
+      currentPlayingRow = targetRow;
+      currentPlayingRow.classList.add('is-playing');
+    }
+
+    const playNext = () => {
+      if (!playAllQueue.length) {
+        stopCurrentAudio();
+        if (onComplete) onComplete();
+        return;
+      }
+
+      const entry = playAllQueue.shift();
+
+      // Show and update Audio HUD
+      if (audioHud) audioHud.style.display = 'block';
+      if (hudAudioType) hudAudioType.textContent = entry.type || 'Audio';
+      if (hudAudioTitle) hudAudioTitle.textContent = entry.title || 'Playback';
+      if (hudPauseBtn) hudPauseBtn.textContent = '⏸';
+
+      currentAudio = new Audio(entry.src);
+      currentAudio.playbackRate = playbackRate;
+
+      const advance = () => {
+        if (playAllQueue.length) {
+          audioTimer = setTimeout(playNext, 350);
+        } else {
+          stopCurrentAudio();
+          if (onComplete) onComplete();
+        }
+      };
+
+      currentAudio.onended = () => {
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
+        advance();
+      };
+
+      currentAudio.onerror = (e) => {
+        console.warn('Audio file play error:', entry.src, e);
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
+        advance();
+      };
+
+      currentAudio.play().catch(err => {
+        console.warn('Audio play() error:', err);
+        if (currentAudio) {
+          currentAudio.onended = null;
+          currentAudio.onerror = null;
+        }
+        advance();
+      });
+    };
+
+    playNext();
+  }
+
+  function playAudioFile(audioSrc, typeLabel, titleLabel, triggerBtn, targetRow, onComplete) {
+    playSequence([{
+      src: audioSrc,
+      type: typeLabel,
+      title: titleLabel,
+      fallbackText: titleLabel
+    }], triggerBtn, targetRow, onComplete);
+  }
+
+  // Speech synthesis fallback for extreme edge cases
+  function speakFallback(text, onComplete) {
+    if (!window.speechSynthesis) {
+      if (onComplete) onComplete();
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const cleanText = (text || '').replace(/\(.*\)/g, '').trim();
+    const utter = new SpeechSynthesisUtterance(cleanText);
+    utter.rate = playbackRate;
+    utter.lang = 'en-US';
+    utter.onend = () => {
+      if (onComplete) onComplete();
+    };
+    utter.onerror = () => {
+      if (onComplete) onComplete();
+    };
+    window.speechSynthesis.speak(utter);
+  }
+
+  // Play All: Sequentially reads Word -> Definition -> Example
+  function playAllSequence(item, rowEl, btnEl) {
+    const padId = String(item.id).padStart(2, '0');
+    playSequence([
+      {
+        src: getAudioPath('word', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.word
+      },
+      {
+        src: getAudioPath('def', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.definition_en
+      },
+      {
+        src: getAudioPath('example', padId),
+        type: 'Complete Entry',
+        title: item.word,
+        fallbackText: item.example
+      }
+    ], btnEl, rowEl);
+  }
+
+  // Attach table button events
+  function attachTableActionEvents() {
+    // Single audio buttons
+    tableBody.querySelectorAll('.audio-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const src = btn.dataset.audio;
+        const type = btn.dataset.type;
+        const title = btn.dataset.title;
+        const row = btn.closest('tr');
+        playAudioFile(src, type, title, btn, row);
+      });
+    });
+
+    // Play All buttons
+    tableBody.querySelectorAll('.play-all-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = parseInt(btn.dataset.id, 10);
+        const item = vocabList.find(v => v.id === id);
+        const row = btn.closest('tr');
+        if (item) {
+          playAllSequence(item, row, btn);
+        }
+      });
+    });
+
+    // Modal click triggers
+    tableBody.querySelectorAll('[data-action="modal"]').forEach(el => {
+      el.addEventListener('click', () => {
+        const id = parseInt(el.dataset.id, 10);
+        openWordModal(id);
+      });
+    });
+  }
+
+  // ==========================================
+  // 3. FLASHCARDS ENGINE
+  // ==========================================
+
+  function initFlashcards() {
+    totalCardsCountEl.textContent = vocabList.length;
+    updateFlashcardView();
+
+    activeFlashcard.addEventListener('click', () => {
+      isCardFlipped = !isCardFlipped;
+      activeFlashcard.classList.toggle('flipped', isCardFlipped);
+    });
+
+    prevCardBtn.addEventListener('click', () => {
+      if (currentFilteredList.length === 0) return;
+      currentCardIdx = (currentCardIdx - 1 + currentFilteredList.length) % currentFilteredList.length;
+      resetAndShowCard();
+    });
+
+    nextCardBtn.addEventListener('click', () => {
+      if (currentFilteredList.length === 0) return;
+      currentCardIdx = (currentCardIdx + 1) % currentFilteredList.length;
+      resetAndShowCard();
+    });
+
+    shuffleCardsBtn.addEventListener('click', () => {
+      currentFilteredList.sort(() => Math.random() - 0.5);
+      currentCardIdx = 0;
+      resetAndShowCard();
+    });
+
+    // Flashcard Audio buttons
+    cardPlayWordBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentFilteredList[currentCardIdx];
+      if (!item) return;
+      const padId = String(item.id).padStart(2, '0');
+      playAudioFile(getAudioPath('word', padId), 'Word Pronunciation', item.word, cardPlayWordBtn);
+    });
+
+    cardPlayDefBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentFilteredList[currentCardIdx];
+      if (!item) return;
+      const padId = String(item.id).padStart(2, '0');
+      playAudioFile(getAudioPath('def', padId), 'Definition', `${item.word} (Definition)`, cardPlayDefBtn);
+    });
+
+    cardPlayExBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const item = currentFilteredList[currentCardIdx];
+      if (!item) return;
+      const padId = String(item.id).padStart(2, '0');
+      playAudioFile(getAudioPath('example', padId), 'Example', `${item.word} (Example)`, cardPlayExBtn);
+    });
+
+    // Keyboard support for flashcards
+    document.addEventListener('keydown', (e) => {
+      if (!viewPanels.cards.classList.contains('active')) return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        isCardFlipped = !isCardFlipped;
+        activeFlashcard.classList.toggle('flipped', isCardFlipped);
+      } else if (e.code === 'ArrowRight') {
+        nextCardBtn.click();
+      } else if (e.code === 'ArrowLeft') {
+        prevCardBtn.click();
+      }
+    });
+  }
+
+  function resetAndShowCard() {
+    isCardFlipped = false;
+    activeFlashcard.classList.remove('flipped');
+    updateFlashcardView();
+  }
+
+  function updateFlashcardView() {
+    if (currentFilteredList.length === 0) return;
+    const item = currentFilteredList[currentCardIdx];
+    currentCardIndexEl.textContent = currentCardIdx + 1;
+    totalCardsCountEl.textContent = currentFilteredList.length;
+
+    cardCategoryEl.textContent = item.category;
+    if (item.image) {
+      cardVisualEl.innerHTML = `
+        <img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" style="max-width: 220px; max-height: 180px; border-radius: 12px; object-fit: cover; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+        <div style="font-size: 0.72rem; color: #718096; margin-top: 6px; text-align: center; font-weight: 500;">
+          📷 ${item.image_credit || ''}
+        </div>
+      `;
     } else {
-      cardVisual.textContent = item.emoji || '•';
+      cardVisualEl.textContent = item.emoji;
     }
-    cardWord.textContent = item.word;
-    cardIpa.textContent = item.ipa || '';
-    cardPos.textContent = [item.pos, item.der].filter(Boolean).join(' • ');
-    cardMeaningGr.textContent = item.meaning_gr || '';
-    cardDefEn.textContent = item.definition_en || '';
-    cardExample.textContent = item.example ? `"${item.example}"` : '';
+    cardWordEl.textContent = item.word;
+    cardIpaEl.textContent = item.ipa;
+    cardPosEl.textContent = `${item.pos} • ${item.der}`;
+    cardMeaningGrEl.textContent = item.meaning_gr;
+    cardDefEnEl.textContent = item.definition_en;
+    cardExampleEl.textContent = `"${item.example}"`;
   }
 
-  function chooseQuestion(pool) {
-    if (!pool.length) return null;
-    const target = pool[Math.floor(Math.random() * pool.length)];
-    const others = pool.filter(item => item.id !== target.id);
-    const count = Math.min(4, pool.length);
-    const distractors = [];
-    while (distractors.length < count - 1 && others.length) {
-      const candidate = others.splice(Math.floor(Math.random() * others.length), 1)[0];
-      if (!distractors.some(item => item.id === candidate.id)) distractors.push(candidate);
-    }
-    return { target, options: [target, ...distractors].sort(() => Math.random() - 0.5) };
+  // ==========================================
+  // 4. LISTENING CHALLENGE QUIZ ENGINE
+  // ==========================================
+
+  function initQuiz() {
+    restartQuizBtn.addEventListener('click', startQuiz);
+    nextQuestionBtn.addEventListener('click', loadQuizQuestion);
+    quizPlayPromptBtn.addEventListener('click', playQuizPrompt);
+    startQuiz();
   }
 
-  function updateQuizHud() {
+  function startQuiz() {
+    quizScore = 0;
+    quizStreak = 0;
+    quizTotal = 0;
+    updateQuizHUD();
+    loadQuizQuestion();
+  }
+
+  function updateQuizHUD() {
     quizScoreEl.textContent = quizScore;
     quizTotalEl.textContent = quizTotal;
-    quizStreakEl.textContent = quizStreak;
+    quizStreakEl.textContent = quizStreak > 0 ? `🔥 ${quizStreak}` : `0`;
   }
 
   function loadQuizQuestion() {
-    const question = chooseQuestion(vocabList);
-    if (!question) {
-      quizOptionsGrid.innerHTML = '<p>Add more vocabulary items to play this challenge.</p>';
-      return;
-    }
-    quizQuestion = { ...question, answered: false };
     quizFeedback.style.display = 'none';
     quizOptionsGrid.innerHTML = '';
-    const letters = ['A', 'B', 'C', 'D'];
-    quizQuestion.options.forEach((item, index) => {
-      const button = document.createElement('button');
-      button.className = 'quiz-option-btn';
-      button.dataset.id = item.id;
-      button.innerHTML = `<span class="quiz-option-letter">${letters[index] || ''}</span><div class="quiz-option-content"><div class="quiz-option-greek">${escapeHtml(item.meaning_gr)}</div></div>`;
-      button.addEventListener('click', () => answerQuiz(item, button));
-      quizOptionsGrid.appendChild(button);
+
+    // Pick random target word
+    const targetIdx = Math.floor(Math.random() * vocabList.length);
+    const target = vocabList[targetIdx];
+
+    // Pick 3 distractors
+    const distractors = [];
+    while (distractors.length < 3) {
+      const rand = vocabList[Math.floor(Math.random() * vocabList.length)];
+      if (rand.id !== target.id && !distractors.some(d => d.id === rand.id)) {
+        distractors.push(rand);
+      }
+    }
+
+    const options = [target, ...distractors].sort(() => Math.random() - 0.5);
+
+    // Spoken prompt mode: pronounce the English word
+    const mode = 'word';
+    quizQuestion = { target, options, mode, answered: false };
+
+    quizClueEl.textContent = 'Mode: Spoken English Word (Listen carefully)';
+
+    const optionLetters = ['A', 'B', 'C', 'D'];
+
+    // Render options - ONLY Greek translation, no English text or giveaway emojis
+    options.forEach((opt, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'quiz-option-btn';
+      btn.dataset.id = opt.id;
+      btn.innerHTML = `
+        <span class="quiz-option-letter">${optionLetters[idx]}</span>
+        <div class="quiz-option-content">
+          <div class="quiz-option-greek">${opt.meaning_gr}</div>
+        </div>
+      `;
+      btn.addEventListener('click', () => handleQuizAnswer(opt, btn));
+      quizOptionsGrid.appendChild(btn);
     });
-    setTimeout(playQuizPrompt, 250);
   }
 
   function playQuizPrompt() {
     if (!quizQuestion) return;
-    playItem(quizQuestion.target, 'word', quizPlayPromptBtn);
+    const padId = String(quizQuestion.target.id).padStart(2, '0');
+    const audioSrc = getAudioPath(quizQuestion.mode, padId);
+
+    playAudioFile(audioSrc, 'Quiz Prompt', 'Listen to English word', quizPlayPromptBtn);
   }
 
-  function answerQuiz(selected, button) {
-    if (!quizQuestion || quizQuestion.answered) return;
+  function handleQuizAnswer(selectedOption, clickedBtn) {
+    if (quizQuestion.answered) return;
     quizQuestion.answered = true;
-    quizTotal += 1;
-    const correct = selected.id === quizQuestion.target.id;
-    quizOptionsGrid.querySelectorAll('.quiz-option-btn').forEach(item => {
-      item.disabled = true;
-      if (Number(item.dataset.id) === Number(quizQuestion.target.id)) item.classList.add('correct');
+    quizTotal++;
+
+    const isCorrect = selectedOption.id === quizQuestion.target.id;
+    const allOptionBtns = quizOptionsGrid.querySelectorAll('.quiz-option-btn');
+
+    allOptionBtns.forEach(btn => {
+      btn.disabled = true;
+      if (btn.dataset.id === String(quizQuestion.target.id)) {
+        btn.classList.add('correct');
+        // Reveal the English word on the correct card for educational reinforcement
+        const content = btn.querySelector('.quiz-option-content');
+        if (content && !content.querySelector('.quiz-option-revealed-word')) {
+          const revealBadge = document.createElement('div');
+          revealBadge.className = 'quiz-option-revealed-word';
+          revealBadge.innerHTML = `<span>🇬🇧 ${quizQuestion.target.word}</span> <small>${quizQuestion.target.ipa}</small>`;
+          content.appendChild(revealBadge);
+        }
+      }
     });
-    if (correct) {
-      quizScore += 1;
-      quizStreak += 1;
-      button.classList.add('correct');
+
+    if (isCorrect) {
+      clickedBtn.classList.add('correct');
+      quizScore++;
+      quizStreak++;
       feedbackIcon.textContent = '🌟';
-      feedbackText.innerHTML = `<div class="feedback-main"><strong>Correct!</strong> ${escapeHtml(quizQuestion.target.word)} = ${escapeHtml(quizQuestion.target.meaning_gr)}</div>`;
+      feedbackText.innerHTML = `
+        <div class="feedback-main"><strong>Correct!</strong> Well done!</div>
+        <div class="feedback-sub"><strong>${quizQuestion.target.word}</strong> (${quizQuestion.target.ipa}) = ${quizQuestion.target.meaning_gr}</div>
+      `;
     } else {
+      clickedBtn.classList.add('wrong');
       quizStreak = 0;
-      button.classList.add('wrong');
       feedbackIcon.textContent = '❌';
-      feedbackText.innerHTML = `<div class="feedback-main"><strong>Not quite!</strong> The word was <strong>${escapeHtml(quizQuestion.target.word)}</strong>.</div><div class="feedback-sub">${escapeHtml(quizQuestion.target.meaning_gr)}</div>`;
+      feedbackText.innerHTML = `
+        <div class="feedback-main"><strong>Not quite!</strong> The spoken word was <strong>"${quizQuestion.target.word}"</strong>.</div>
+        <div class="feedback-sub">Correct translation: <strong>${quizQuestion.target.meaning_gr}</strong></div>
+      `;
     }
-    updateQuizHud();
+
+    updateQuizHUD();
     quizFeedback.style.display = 'flex';
   }
 
-  function updateDefQuizHud() {
+  // ==========================================
+  // 4B. DEFINITION CHALLENGE (HEAR WORD -> CHOOSE ENGLISH DEFINITION)
+  // ==========================================
+
+  function initDefQuiz() {
+    if (!restartDefQuizBtn || !defNextQuestionBtn || !defQuizPlayPromptBtn) return;
+    restartDefQuizBtn.addEventListener('click', startDefQuiz);
+    defNextQuestionBtn.addEventListener('click', loadDefQuizQuestion);
+    defQuizPlayPromptBtn.addEventListener('click', playDefQuizPrompt);
+  }
+
+  function startDefQuiz() {
+    defQuizScore = 0;
+    defQuizStreak = 0;
+    defQuizTotal = 0;
+    updateDefQuizHUD();
+    loadDefQuizQuestion();
+  }
+
+  function updateDefQuizHUD() {
     defQuizScoreEl.textContent = defQuizScore;
     defQuizTotalEl.textContent = defQuizTotal;
-    defQuizStreakEl.textContent = defQuizStreak;
+    defQuizStreakEl.textContent = defQuizStreak > 0 ? `🔥 ${defQuizStreak}` : `0`;
   }
 
   function loadDefQuizQuestion() {
-    const question = chooseQuestion(vocabList);
-    if (!question) {
-      defQuizOptionsGrid.innerHTML = '<p>Add more vocabulary items to play this challenge.</p>';
-      return;
-    }
-    defQuizQuestion = { ...question, answered: false };
     defQuizFeedback.style.display = 'none';
     defQuizOptionsGrid.innerHTML = '';
-    const letters = ['A', 'B', 'C', 'D'];
-    defQuizQuestion.options.forEach((item, index) => {
-      const button = document.createElement('button');
-      button.className = 'def-quiz-option-btn';
-      button.dataset.id = item.id;
-      button.innerHTML = `<span class="quiz-option-letter">${letters[index] || ''}</span><div class="quiz-option-content"><div class="def-quiz-option-text">${escapeHtml(item.definition_en)}</div></div>`;
-      button.addEventListener('click', () => answerDefQuiz(item, button));
-      defQuizOptionsGrid.appendChild(button);
+
+    // Pick random target word
+    const targetIdx = Math.floor(Math.random() * vocabList.length);
+    const target = vocabList[targetIdx];
+
+    // Pick 3 distractors
+    const distractors = [];
+    while (distractors.length < 3) {
+      const rand = vocabList[Math.floor(Math.random() * vocabList.length)];
+      if (rand.id !== target.id && !distractors.some(d => d.id === rand.id)) {
+        distractors.push(rand);
+      }
+    }
+
+    const options = [target, ...distractors].sort(() => Math.random() - 0.5);
+    defQuizQuestion = { target, options, answered: false };
+
+    defQuizClueEl.textContent = 'Mode: Spoken English Word (Listen carefully)';
+
+    const optionLetters = ['A', 'B', 'C', 'D'];
+
+    // Render options - ONLY English definitions
+    options.forEach((opt, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'def-quiz-option-btn';
+      btn.dataset.id = opt.id;
+      btn.innerHTML = `
+        <span class="quiz-option-letter">${optionLetters[idx]}</span>
+        <div class="quiz-option-content">
+          <div class="def-quiz-option-text">${opt.definition_en}</div>
+        </div>
+      `;
+      btn.addEventListener('click', () => handleDefQuizAnswer(opt, btn));
+      defQuizOptionsGrid.appendChild(btn);
     });
-    setTimeout(playDefQuizPrompt, 250);
   }
 
   function playDefQuizPrompt() {
     if (!defQuizQuestion) return;
-    playItem(defQuizQuestion.target, 'word', defQuizPlayPromptBtn);
+    const padId = String(defQuizQuestion.target.id).padStart(2, '0');
+    const audioSrc = getAudioPath('word', padId);
+
+    playAudioFile(audioSrc, 'Definition Challenge Prompt', `Listen to: "${defQuizQuestion.target.word}"`, defQuizPlayPromptBtn);
   }
 
-  function answerDefQuiz(selected, button) {
-    if (!defQuizQuestion || defQuizQuestion.answered) return;
+  function handleDefQuizAnswer(selectedOption, clickedBtn) {
+    if (defQuizQuestion.answered) return;
     defQuizQuestion.answered = true;
-    defQuizTotal += 1;
-    const correct = selected.id === defQuizQuestion.target.id;
-    defQuizOptionsGrid.querySelectorAll('.def-quiz-option-btn').forEach(item => {
-      item.disabled = true;
-      if (Number(item.dataset.id) === Number(defQuizQuestion.target.id)) item.classList.add('correct');
+    defQuizTotal++;
+
+    const isCorrect = selectedOption.id === defQuizQuestion.target.id;
+    const allOptionBtns = defQuizOptionsGrid.querySelectorAll('.def-quiz-option-btn');
+
+    allOptionBtns.forEach(btn => {
+      btn.disabled = true;
+      if (btn.dataset.id === String(defQuizQuestion.target.id)) {
+        btn.classList.add('correct');
+        // Reveal the English word and Greek meaning on the correct definition card
+        const content = btn.querySelector('.quiz-option-content');
+        if (content && !content.querySelector('.quiz-option-revealed-word')) {
+          const revealBadge = document.createElement('div');
+          revealBadge.className = 'quiz-option-revealed-word';
+          revealBadge.innerHTML = `<span>🇬🇧 ${defQuizQuestion.target.word}</span> <small>${defQuizQuestion.target.pos} • ${defQuizQuestion.target.meaning_gr}</small>`;
+          content.appendChild(revealBadge);
+        }
+      }
     });
-    if (correct) {
-      defQuizScore += 1;
-      defQuizStreak += 1;
-      button.classList.add('correct');
+
+    if (isCorrect) {
+      clickedBtn.classList.add('correct');
+      defQuizScore++;
+      defQuizStreak++;
       defFeedbackIcon.textContent = '🌟';
-      defFeedbackText.innerHTML = `<div class="feedback-main"><strong>Correct!</strong> ${escapeHtml(defQuizQuestion.target.definition_en)}</div>`;
+      defFeedbackText.innerHTML = `
+        <div class="feedback-main"><strong>Correct!</strong> The spoken word was <strong>"${defQuizQuestion.target.word}"</strong>.</div>
+        <div class="feedback-sub"><strong>Definition:</strong> <em>"${defQuizQuestion.target.definition_en}"</em> (${defQuizQuestion.target.meaning_gr})</div>
+      `;
     } else {
+      clickedBtn.classList.add('wrong');
       defQuizStreak = 0;
-      button.classList.add('wrong');
       defFeedbackIcon.textContent = '❌';
-      defFeedbackText.innerHTML = `<div class="feedback-main"><strong>Not quite!</strong> ${escapeHtml(defQuizQuestion.target.definition_en)}</div>`;
+      defFeedbackText.innerHTML = `
+        <div class="feedback-main"><strong>Not quite!</strong> The spoken word was <strong>"${defQuizQuestion.target.word}"</strong>.</div>
+        <div class="feedback-sub"><strong>Correct Definition:</strong> <em>"${defQuizQuestion.target.definition_en}"</em> (${defQuizQuestion.target.meaning_gr})</div>
+      `;
     }
-    updateDefQuizHud();
+
+    updateDefQuizHUD();
     defQuizFeedback.style.display = 'flex';
   }
 
+  // ==========================================
+  // 4C. PRINTABLE STUDY SHEET (WORD, DEFINITION & EXAMPLE)
+  // ==========================================
+
+  function initPrintableSheet() {
+    if (!printPageBtn) return;
+    printPageBtn.addEventListener('click', () => {
+      window.print();
+    });
+    renderPrintableSheet();
+  }
+
+  function renderPrintableSheet() {
+    if (!printableWordsList) return;
+    printableWordsList.innerHTML = vocabList.map((item, idx) => `
+      <div class="printable-word-card">
+        <div class="pword-header">
+          <span class="pword-num">${idx + 1}.</span>
+          <span class="pword-title">${item.word}</span>
+          <span class="pword-pos">${item.pos}</span>
+          <span class="pword-ipa">${item.ipa}</span>
+          <span class="pword-gr">(${item.meaning_gr})</span>
+        </div>
+        <div class="pword-def-row">
+          <strong class="pword-label">Definition:</strong>
+          <span class="pword-def">${item.definition_en}</span>
+        </div>
+        <div class="pword-example-row">
+          <strong class="pword-label">Example:</strong>
+          <span class="pword-example">${item.example}</span>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ==========================================
+  // 5. WORD DETAIL MODAL
+  // ==========================================
+
   function openWordModal(id) {
-    const item = vocabList.find(entry => String(entry.id) === String(id));
+    const item = vocabList.find(v => v.id === id);
     if (!item) return;
-    const visual = resolveAsset(item.image)
-      ? `<img src="${escapeHtml(resolveAsset(item.image))}" alt="${escapeHtml(resolveAsset(item.image)_alt || item.word)}" style="max-width:220px;width:100%;border-radius:12px;box-shadow:var(--shadow-sm);"><div style="font-size:0.72rem;color:#718096;margin-top:6px;text-align:center;">📷 ${escapeHtml(resolveAsset(item.image)_credit || resolveAsset(item.image)_source || '')}</div>`
-      : `<div style="font-size:5rem;">${escapeHtml(item.emoji || '•')}</div>`;
+
+    const padId = String(item.id).padStart(2, '0');
+    const safeName = item.word.toLowerCase().replace(/[^a-z0-9]/g, '_');
+    const svgPath = `../../unit2/assets/images/${padId}_${safeName}.svg`;
+    const wordMp3 = getAudioPath('word', padId);
+    const defMp3 = getAudioPath('def', padId);
+    const exMp3 = getAudioPath('example', padId);
+
     modalBody.innerHTML = `
-      <div style="text-align:center;margin-bottom:20px;">${visual}<div style="margin-top:14px;"><span class="badge unit-badge">${escapeHtml(item.category || 'General')}</span></div><h2 style="font-family:'Outfit',sans-serif;font-size:2rem;font-weight:800;margin-top:6px;color:#1a202c;">${escapeHtml(item.word)}</h2><div style="color:var(--text-medium);font-size:1.05rem;margin-top:2px;">${escapeHtml(item.ipa)} • <strong style="color:var(--primary-color);">${escapeHtml(item.pos)}</strong></div><div style="font-size:0.9rem;color:var(--secondary-color);margin-top:4px;">${escapeHtml(item.der)}</div></div>
-      <div style="background:var(--bg-subtle);padding:16px;border-radius:10px;margin-bottom:14px;"><div style="font-size:0.78rem;font-weight:700;color:var(--text-light);text-transform:uppercase;">Greek Meaning</div><div style="font-size:1.25rem;font-weight:700;color:#2d3748;margin-top:2px;">${escapeHtml(item.meaning_gr)}</div></div>
-      <div style="margin-bottom:14px;"><div style="display:flex;justify-content:space-between;align-items:center;"><strong>English Definition</strong><button class="mini-audio-btn" id="modalDefAudioBtn" aria-label="Hear definition">🔊</button></div><p>${escapeHtml(item.definition_en)}</p></div>
-      <div style="margin-bottom:20px;"><div style="display:flex;justify-content:space-between;align-items:center;"><strong>Contextual Example</strong><button class="mini-audio-btn" id="modalExAudioBtn" aria-label="Hear example">🔊</button></div><p style="font-style:italic;color:#4a5568;">${highlightExample(item.example, item.word)}</p></div>
-      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;"><button class="play-all-btn" id="modalWordAudioBtn">🔊 Pronounce Word</button><button class="play-all-btn primary" id="modalFullAudioBtn" style="background:var(--primary-color);color:#fff;border-color:var(--primary-color);">▶ Play Full Reading</button></div>`;
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="${svgPath}" alt="${item.word}" style="max-width: 220px; width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm);" onerror="this.style.display='none'">
+        <div style="margin-top: 14px;">
+          <span class="badge unit-badge">${item.category}</span>
+        </div>
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; margin-top: 6px; color: #1a202c;">
+          ${item.word}
+        </h2>
+        <div style="color: var(--text-medium); font-size: 1.05rem; margin-top: 2px;">
+          ${item.ipa} • <strong style="color: var(--primary-color);">${item.pos}</strong>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--secondary-color); margin-top: 4px;">
+          ${item.der}
+        </div>
+      </div>
+
+      <div style="background: var(--bg-subtle); padding: 16px; border-radius: 10px; margin-bottom: 14px;">
+        <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Greek Translation:</div>
+        <div style="font-size: 1.25rem; font-weight: 700; color: #2d3748; margin-top: 2px;">${item.meaning_gr}</div>
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="font-size: 0.88rem; color: var(--text-medium);">English Definition:</strong>
+          <button class="mini-audio-btn" id="modalDefAudioBtn" title="Hear definition">🔊</button>
+        </div>
+        <p style="font-size: 0.95rem; color: #2d3748; margin-top: 4px;">${item.definition_en}</p>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <strong style="font-size: 0.88rem; color: var(--text-medium);">Contextual Example:</strong>
+          <button class="mini-audio-btn" id="modalExAudioBtn" title="Hear example">🔊</button>
+        </div>
+        <p style="font-size: 0.95rem; font-style: italic; color: #4a5568; margin-top: 4px;">${highlightExample(item.example, item.word)}</p>
+      </div>
+
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <button class="play-all-btn" id="modalWordAudioBtn" style="padding: 10px 18px; font-size: 0.9rem;">
+          🔊 Pronounce Word
+        </button>
+        <button class="play-all-btn primary" id="modalFullAudioBtn" style="background: var(--primary-color); color: #fff; border-color: var(--primary-color); padding: 10px 18px; font-size: 0.9rem;">
+          ▶ Play Full Reading
+        </button>
+      </div>
+    `;
+
     wordModal.style.display = 'flex';
-    byId('modalWordAudioBtn').addEventListener('click', event => playItem(item, 'word', event.currentTarget));
-    byId('modalDefAudioBtn').addEventListener('click', event => playItem(item, 'def', event.currentTarget));
-    byId('modalExAudioBtn').addEventListener('click', event => playItem(item, 'example', event.currentTarget));
-    byId('modalFullAudioBtn').addEventListener('click', event => playFullItem(item, event.currentTarget));
+
+    // Audio handlers in modal
+    document.getElementById('modalWordAudioBtn').addEventListener('click', (e) => {
+      playAudioFile(wordMp3, 'Word Pronunciation', item.word, e.target);
+    });
+    document.getElementById('modalDefAudioBtn').addEventListener('click', (e) => {
+      playAudioFile(defMp3, 'Definition', `${item.word} (Definition)`, e.target);
+    });
+    document.getElementById('modalExAudioBtn').addEventListener('click', (e) => {
+      playAudioFile(exMp3, 'Example', `${item.word} (Example)`, e.target);
+    });
+    document.getElementById('modalFullAudioBtn').addEventListener('click', (e) => {
+      playAllSequence(item, null, e.target);
+    });
   }
 
-  function buildTextScript() {
-    return vocabList.map(item => `${item.word}\n${item.ipa} ${item.pos}\n${item.meaning_gr}\n${item.definition_en}\n${item.example}`).join('\n\n');
-  }
+  closeModalBtn.addEventListener('click', () => {
+    wordModal.style.display = 'none';
+  });
 
-  function renderPrintable() {
-    printableWordsList.innerHTML = vocabList.map((item, index) => `<div class="printable-word-card"><div class="pword-header"><span class="pword-num">${index + 1}.</span><span class="pword-title">${escapeHtml(item.word)}</span><span class="pword-pos">${escapeHtml(item.pos)}</span><span class="pword-ipa">${escapeHtml(item.ipa)}</span><span class="pword-gr">${escapeHtml(item.meaning_gr)}</span></div><div class="pword-def-row"><strong class="pword-label">Definition:</strong><span class="pword-def">${escapeHtml(item.definition_en)}</span></div><div class="pword-example-row"><strong class="pword-label">Example:</strong><span class="pword-example">${escapeHtml(item.example)}</span></div></div>`).join('');
-  }
+  wordModal.addEventListener('click', (e) => {
+    if (e.target === wordModal) {
+      wordModal.style.display = 'none';
+    }
+  });
 
-  function downloadText(filename, text, type) {
-    const blob = new Blob([text], { type });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    URL.revokeObjectURL(url);
-  }
+  // ==========================================
+  // 6. TTS SCRIPT PREVIEW & EXPORT
+  // ==========================================
 
-  function setupEvents() {
-    modeButtons.forEach(button => button.addEventListener('click', () => {
-      const mode = button.dataset.mode;
-      modeButtons.forEach(item => {
-        const active = item === button;
-        item.classList.toggle('active', active);
-        item.setAttribute('aria-selected', active ? 'true' : 'false');
+  function loadTtsScript() {
+    fetch('vocabulary_unit2_tts.txt')
+      .then(res => res.text())
+      .then(txt => {
+        ttsScriptPreview.textContent = txt;
+      })
+      .catch(() => {
+        ttsScriptPreview.textContent = 'Loaded offline vocabulary dataset for 48 items.';
       });
-      Object.entries(panels).forEach(([key, panel]) => panel.classList.toggle('active', key === mode));
-      if (mode === 'cards') updateFlashcard();
-      if (mode === 'printable') renderPrintable();
-    }));
-    searchInput.addEventListener('input', event => {
-      searchTerm = event.target.value;
-      clearSearchBtn.classList.toggle('visible', Boolean(searchTerm));
+  }
+
+  copyTtsBtn.addEventListener('click', () => {
+    const txt = ttsScriptPreview.textContent;
+    navigator.clipboard.writeText(txt).then(() => {
+      const origText = copyTtsBtn.innerHTML;
+      copyTtsBtn.innerHTML = '✅ Copied to Clipboard!';
+      setTimeout(() => { copyTtsBtn.innerHTML = origText; }, 2000);
+    });
+  });
+
+  downloadJsonBtn.addEventListener('click', () => {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(vocabList, null, 2));
+    const dlAnchor = document.createElement('a');
+    dlAnchor.setAttribute("href", dataStr);
+    dlAnchor.setAttribute("download", "vocabulary_unit1_data.json");
+    document.body.appendChild(dlAnchor);
+    dlAnchor.click();
+    dlAnchor.remove();
+  });
+
+  // ==========================================
+  // 7. GENERAL CONTROLS & LISTENERS
+  // ==========================================
+
+  function setupEventListeners() {
+    // Mode Switcher Tabs
+    modeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modeButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const mode = btn.dataset.mode;
+        Object.keys(viewPanels).forEach(key => {
+          viewPanels[key].classList.toggle('active', key === mode);
+        });
+
+        // Trigger mode specific refresh
+        if (mode === 'cards') updateFlashcardView();
+        if (mode === 'quiz' && !quizQuestion) startQuiz();
+        if (mode === 'defQuiz' && !defQuizQuestion) startDefQuiz();
+        if (mode === 'printable') renderPrintableSheet();
+      });
+    });
+
+    // Search Input
+    searchInput.addEventListener('input', (e) => {
+      searchTerm = e.target.value;
+      clearSearchBtn.classList.toggle('visible', !!searchTerm);
       filterVocabulary();
     });
+
     clearSearchBtn.addEventListener('click', () => {
       searchInput.value = '';
       searchTerm = '';
@@ -530,15 +1049,28 @@ document.addEventListener('DOMContentLoaded', async () => {
       filterVocabulary();
       searchInput.focus();
     });
-    voiceSelect.addEventListener('change', event => {
-      selectedVoice = event.target.value;
-      stopAudio();
-      renderTable();
+
+    // Voice Engine Selection
+    if (voiceSelect) {
+      voiceSelect.addEventListener('change', (e) => {
+        selectedVoice = e.target.value;
+        stopCurrentAudio();
+        renderTable();
+        if (viewPanels.cards.classList.contains('active')) {
+          updateFlashcardView();
+        }
+      });
+    }
+
+    // Playback Speed
+    speedSelect.addEventListener('change', (e) => {
+      playbackRate = parseFloat(e.target.value);
+      if (currentAudio) {
+        currentAudio.playbackRate = playbackRate;
+      }
     });
-    speedSelect.addEventListener('change', event => {
-      playbackRate = Number(event.target.value) || 1;
-      if (currentAudio) currentAudio.playbackRate = playbackRate;
-    });
+
+    // HUD Audio Controls
     hudPauseBtn.addEventListener('click', () => {
       if (!currentAudio) return;
       if (currentAudio.paused) {
@@ -549,102 +1081,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         hudPauseBtn.textContent = '▶';
       }
     });
-    hudStopBtn.addEventListener('click', stopAudio);
-    activeFlashcard.addEventListener('click', event => {
-      if (event.target.closest('button')) return;
-      isCardFlipped = !isCardFlipped;
-      activeFlashcard.classList.toggle('flipped', isCardFlipped);
-    });
-    activeFlashcard.addEventListener('keydown', event => {
-      if (event.code === 'Space') {
-        event.preventDefault();
-        activeFlashcard.click();
-      }
-    });
-    prevCardBtn.addEventListener('click', () => {
-      if (!currentFilteredList.length) return;
-      currentCardIdx = (currentCardIdx - 1 + currentFilteredList.length) % currentFilteredList.length;
-      resetCard();
-    });
-    nextCardBtn.addEventListener('click', () => {
-      if (!currentFilteredList.length) return;
-      currentCardIdx = (currentCardIdx + 1) % currentFilteredList.length;
-      resetCard();
-    });
-    shuffleCardsBtn.addEventListener('click', () => {
-      currentFilteredList.sort(() => Math.random() - 0.5);
-      currentCardIdx = 0;
-      resetCard();
-    });
-    cardPlayWordBtn.addEventListener('click', event => {
-      const item = currentFilteredList[currentCardIdx];
-      if (item) playItem(item, 'word', event.currentTarget);
-    });
-    cardPlayDefBtn.addEventListener('click', event => {
-      const item = currentFilteredList[currentCardIdx];
-      if (item) playItem(item, 'def', event.currentTarget);
-    });
-    cardPlayExBtn.addEventListener('click', event => {
-      const item = currentFilteredList[currentCardIdx];
-      if (item) playItem(item, 'example', event.currentTarget);
-    });
-    restartQuizBtn.addEventListener('click', () => {
-      quizScore = 0;
-      quizStreak = 0;
-      quizTotal = 0;
-      updateQuizHud();
-      loadQuizQuestion();
-    });
-    nextQuestionBtn.addEventListener('click', loadQuizQuestion);
-    quizPlayPromptBtn.addEventListener('click', playQuizPrompt);
-    restartDefQuizBtn.addEventListener('click', () => {
-      defQuizScore = 0;
-      defQuizStreak = 0;
-      defQuizTotal = 0;
-      updateDefQuizHud();
-      loadDefQuizQuestion();
-    });
-    defNextQuestionBtn.addEventListener('click', loadDefQuizQuestion);
-    defQuizPlayPromptBtn.addEventListener('click', playDefQuizPrompt);
-    printPageBtn.addEventListener('click', () => window.print());
-    copyTtsBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(ttsScriptPreview.textContent);
-        const original = copyTtsBtn.textContent;
-        copyTtsBtn.textContent = 'Copied';
-        setTimeout(() => { copyTtsBtn.textContent = original; }, 1500);
-      } catch (error) {
-        copyTtsBtn.textContent = 'Copy unavailable';
-      }
-    });
-    downloadTtsBtn.addEventListener('click', () => downloadText(`vocabulary_unit${unitNum || 'N'}_tts.txt`, ttsScriptPreview.textContent, 'text/plain;charset=utf-8'));
-    downloadJsonBtn.addEventListener('click', () => downloadText(`vocabulary_unit${unitNum || 'N'}_data.json`, JSON.stringify(vocabList, null, 2), 'application/json;charset=utf-8'));
-    closeModalBtn.addEventListener('click', () => { wordModal.style.display = 'none'; });
-    wordModal.addEventListener('click', event => {
-      if (event.target === wordModal) wordModal.style.display = 'none';
-    });
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') wordModal.style.display = 'none';
-      if (!panels.cards.classList.contains('active')) return;
-      if (event.code === 'ArrowRight') nextCardBtn.click();
-      if (event.code === 'ArrowLeft') prevCardBtn.click();
-    });
+
+    hudStopBtn.addEventListener('click', stopCurrentAudio);
   }
 
-  function init() {
-    applyIdentity();
-    setupCategories();
-    renderTable();
-    updateFlashcard();
-    updateQuizHud();
-    updateDefQuizHud();
-    loadQuizQuestion();
-    loadDefQuizQuestion();
-    renderPrintable();
-    ttsScriptPreview.textContent = buildTextScript();
-    setupEvents();
-  }
-
-  unitData = await loadUnitData();
+  // Run initialization
   init();
 });
