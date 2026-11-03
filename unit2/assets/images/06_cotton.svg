@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <pattern id="dots_06" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#DDD6FE" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Bio-Warm Comic Card Frame -->
+  <rect x="2" y="2" width="316" height="196" rx="18" fill="#EDE9FE" stroke="#0F172A" stroke-width="4"/>
+  <rect x="6" y="6" width="308" height="188" rx="14" fill="url(#dots_06)"/>
+
+  <!-- Hard Ink Offset Shadow + White Stage Panel -->
+  <rect x="22" y="22" width="280" height="160" rx="12" fill="#0F172A"/>
+  <rect x="18" y="18" width="280" height="160" rx="12" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+
+  <!-- Top-Left Issue Number Pill -->
+  <rect x="28" y="28" width="42" height="22" rx="6" fill="#0F172A"/>
+  <text x="49" y="43" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="#A3E635" text-anchor="middle">#06</text>
+
+  <!-- Top-Right Category Tag -->
+  <rect x="196" y="28" width="92" height="22" rx="11" fill="#C4B5FD" stroke="#0F172A" stroke-width="2.5"/>
+  <text x="242" y="43" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#0F172A" text-anchor="middle">MATERIALS</text>
+
+  <!-- Custom Vector Comic Illustration -->
+  <g>
+    
+        <circle cx="145" cy="95" r="22" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+        <circle cx="175" cy="95" r="22" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+        <circle cx="160" cy="78" r="20" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+        <path d="M135 115 L160 132 L185 115" fill="#65A30D" stroke="#0F172A" stroke-width="3.5" stroke-linejoin="round"/>
+        <line x1="160" y1="132" x2="160" y2="158" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+      
+  </g>
+
+  <!-- Floating Emoji Dual-Coding Sticker -->
+  <circle cx="52" cy="138" r="18" fill="#FEFCE8" stroke="#0F172A" stroke-width="2.5"/>
+  <text x="52" y="144" font-size="18" text-anchor="middle">🧵</text>
+
+  <!-- Bottom Visual Cue Banner -->
+  <rect x="78" y="152" width="208" height="18" rx="5" fill="#0F172A"/>
+  <text x="182" y="164" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#FEFCE8" letter-spacing="0.6" text-anchor="middle">SOFT NATURAL FIBRE</text>
+</svg>

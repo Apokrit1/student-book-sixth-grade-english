@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <pattern id="dots_47" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#7DD3FC" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Bio-Warm Comic Card Frame -->
+  <rect x="2" y="2" width="316" height="196" rx="18" fill="#E0F2FE" stroke="#0F172A" stroke-width="4"/>
+  <rect x="6" y="6" width="308" height="188" rx="14" fill="url(#dots_47)"/>
+
+  <!-- Hard Ink Offset Shadow + White Stage Panel -->
+  <rect x="22" y="22" width="280" height="160" rx="12" fill="#0F172A"/>
+  <rect x="18" y="18" width="280" height="160" rx="12" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+
+  <!-- Top-Left Issue Number Pill -->
+  <rect x="28" y="28" width="42" height="22" rx="6" fill="#0F172A"/>
+  <text x="49" y="43" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="#A3E635" text-anchor="middle">#47</text>
+
+  <!-- Top-Right Category Tag -->
+  <rect x="196" y="28" width="92" height="22" rx="11" fill="#38BDF8" stroke="#0F172A" stroke-width="2.5"/>
+  <text x="242" y="43" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#0F172A" text-anchor="middle">SHOPPING</text>
+
+  <!-- Custom Vector Comic Illustration -->
+  <g>
+    
+        <rect x="105" y="68" width="110" height="72" rx="10" fill="#A3E635" stroke="#0F172A" stroke-width="3.5"/>
+        <rect x="118" y="80" width="84" height="48" rx="6" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5"/>
+        <text x="160" y="102" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#FF5A36" text-anchor="middle">1 ITEM =</text>
+        <text x="160" y="120" font-family="'Bricolage Grotesque', sans-serif" font-size="16" font-weight="800" fill="#0F172A" text-anchor="middle">€2.50</text>
+      
+  </g>
+
+  <!-- Floating Emoji Dual-Coding Sticker -->
+  <circle cx="52" cy="138" r="18" fill="#FEFCE8" stroke="#0F172A" stroke-width="2.5"/>
+  <text x="52" y="144" font-size="18" text-anchor="middle">🏷️</text>
+
+  <!-- Bottom Visual Cue Banner -->
+  <rect x="78" y="152" width="208" height="18" rx="5" fill="#0F172A"/>
+  <text x="182" y="164" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800" fill="#FEFCE8" letter-spacing="0.6" text-anchor="middle">PRICE FOR ONE ITEM</text>
+</svg>

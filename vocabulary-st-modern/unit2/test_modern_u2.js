@@ -133,6 +133,40 @@ assert(fs.existsSync(testNeuralMp3) && fs.statSync(testNeuralMp3).size > 0, 'Neu
 const testStoryMp3 = path.resolve(MODERN_U2, '../../unit2/assets/audio_v2/stories/ffm_flyer_full_story.mp3');
 assert(fs.existsSync(testStoryMp3) && fs.statSync(testStoryMp3).size > 0, 'Story full narration MP3 resolves correctly from modern unit2');
 
+// 10. All 48 Visual Card SVGs & Bio-Warm 2026 CSS Coverage
+const vocabData = JSON.parse(fs.readFileSync(path.join(CLASSIC_U2, 'data', 'vocabulary_data.json'), 'utf8'));
+assert(vocabData.length === 48, 'Unit 2 vocabulary_data.json contains 48 items');
+let svgCount = 0;
+vocabData.forEach(item => {
+  const padId = String(item.id).padStart(2, '0');
+  const safeName = item.word.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const svgFile = path.join(CLASSIC_U2, 'assets', 'images', `${padId}_${safeName}.svg`);
+  if (fs.existsSync(svgFile) && fs.statSync(svgFile).size > 200) svgCount++;
+});
+assert(svgCount === 48, `All 48 Bio-Warm Retro Comic SVG visual cards exist in unit2/assets/images/ (${svgCount}/48)`);
+
+const comicCss = fs.readFileSync(path.join(MODERN_U2, 'unit2_comic.css'), 'utf8');
+[
+  '.table-card',
+  '.word-visual-badge',
+  '.flashcard-container',
+  '.card-front',
+  '.card-back',
+  '.flashcard-visual-img',
+  '.quiz-card',
+  '.def-quiz-option-btn',
+  '.printable-sheet-container',
+  '.export-card',
+  '.modal-card',
+  '.dossier-hero-row',
+  '.dossier-visual-box'
+].forEach(selector => {
+  assert(comicCss.includes(selector), `unit2_comic.css styles ${selector} in Bio-Warm 2026 aesthetic`);
+});
+
+assert(appComp.includes('flashcard-visual-img'), 'app_companion.js renders illustrated visual cards in #viewCards');
+assert(appComp.includes('badge-thumb-img'), 'app_companion.js renders visual card thumbnails in #viewTable');
+
 console.log('========================================');
 console.log(`MODERN UNIT 2 TEST SUMMARY: ${passed} passed, ${failed} failed.`);
 console.log('========================================');

@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="word-derivatives">${item.der}</div>
             </div>
             <div class="word-visual-badge" data-action="modal" data-id="${item.id}" title="${item.word}">
-              ${item.image ? `<img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" style="width: 38px; height: 38px; object-fit: cover; border-radius: 6px; display: block;" />` : item.emoji}
+              ${item.image ? `<img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" class="badge-thumb-img" />` : `<img src="${svgPath}" alt="${item.word}" class="badge-thumb-img" onerror="this.replaceWith(document.createTextNode('${item.emoji}'))" />`}
             </div>
           </div>
         </td>
@@ -588,16 +588,20 @@ document.addEventListener('DOMContentLoaded', () => {
     currentCardIndexEl.textContent = currentCardIdx + 1;
     totalCardsCountEl.textContent = currentFilteredList.length;
 
+    const padId = String(item.id).padStart(2, '0');
+    const safeName = item.word.toLowerCase().replace(/[^a-z0-9]/g, '_');
+    const svgPath = `../../unit2/assets/images/${padId}_${safeName}.svg`;
+
     cardCategoryEl.textContent = item.category;
     if (item.image) {
       cardVisualEl.innerHTML = `
-        <img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" style="max-width: 220px; max-height: 180px; border-radius: 12px; object-fit: cover; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
-        <div style="font-size: 0.72rem; color: #718096; margin-top: 6px; text-align: center; font-weight: 500;">
-          📷 ${item.image_credit || ''}
-        </div>
+        <img src="${resolveAsset(item.image)}" alt="${item.image_alt || item.word}" class="flashcard-visual-img" />
+        ${item.image_credit ? `<div class="flashcard-visual-credit">📷 ${item.image_credit}</div>` : ''}
       `;
     } else {
-      cardVisualEl.textContent = item.emoji;
+      cardVisualEl.innerHTML = `
+        <img src="${svgPath}" alt="${item.word}" class="flashcard-visual-img flashcard-svg-img" onerror="this.parentElement.textContent='${item.emoji}'" />
+      `;
     }
     cardWordEl.textContent = item.word;
     cardIpaEl.textContent = item.ipa;
@@ -893,54 +897,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const padId = String(item.id).padStart(2, '0');
     const safeName = item.word.toLowerCase().replace(/[^a-z0-9]/g, '_');
-    const svgPath = `../../unit2/assets/images/${padId}_${safeName}.svg`;
+    const svgPath = item.image ? resolveAsset(item.image) : `../../unit2/assets/images/${padId}_${safeName}.svg`;
     const wordMp3 = getAudioPath('word', padId);
     const defMp3 = getAudioPath('def', padId);
     const exMp3 = getAudioPath('example', padId);
 
     modalBody.innerHTML = `
-      <div style="text-align: center; margin-bottom: 20px;">
-        <img src="${svgPath}" alt="${item.word}" style="max-width: 220px; width: 100%; border-radius: 12px; box-shadow: var(--shadow-sm);" onerror="this.style.display='none'">
-        <div style="margin-top: 14px;">
+      <div class="modal-hero-center">
+        <img src="${svgPath}" alt="${item.word}" class="modal-visual-img" onerror="this.style.display='none'">
+        <div class="modal-badge-row">
           <span class="badge unit-badge">${item.category}</span>
         </div>
-        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; margin-top: 6px; color: #1a202c;">
+        <h2 class="modal-word-title">
           ${item.word}
         </h2>
-        <div style="color: var(--text-medium); font-size: 1.05rem; margin-top: 2px;">
-          ${item.ipa} • <strong style="color: var(--primary-color);">${item.pos}</strong>
+        <div class="modal-word-meta">
+          <span class="modal-ipa">${item.ipa}</span> • <strong class="modal-pos">${item.pos}</strong>
         </div>
-        <div style="font-size: 0.9rem; color: var(--secondary-color); margin-top: 4px;">
+        <div class="modal-word-der">
           ${item.der}
         </div>
       </div>
 
-      <div style="background: var(--bg-subtle); padding: 16px; border-radius: 10px; margin-bottom: 14px;">
-        <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">Greek Translation:</div>
-        <div style="font-size: 1.25rem; font-weight: 700; color: #2d3748; margin-top: 2px;">${item.meaning_gr}</div>
+      <div class="modal-gr-box">
+        <div class="modal-box-kicker">Greek Translation</div>
+        <div class="modal-gr-text">${item.meaning_gr}</div>
       </div>
 
-      <div style="margin-bottom: 14px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <strong style="font-size: 0.88rem; color: var(--text-medium);">English Definition:</strong>
+      <div class="modal-section-box">
+        <div class="modal-section-header">
+          <strong>English Definition:</strong>
           <button class="mini-audio-btn" id="modalDefAudioBtn" title="Hear definition">🔊</button>
         </div>
-        <p style="font-size: 0.95rem; color: #2d3748; margin-top: 4px;">${item.definition_en}</p>
+        <p class="modal-def-text">${item.definition_en}</p>
       </div>
 
-      <div style="margin-bottom: 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-          <strong style="font-size: 0.88rem; color: var(--text-medium);">Contextual Example:</strong>
+      <div class="modal-section-box">
+        <div class="modal-section-header">
+          <strong>Contextual Example:</strong>
           <button class="mini-audio-btn" id="modalExAudioBtn" title="Hear example">🔊</button>
         </div>
-        <p style="font-size: 0.95rem; font-style: italic; color: #4a5568; margin-top: 4px;">${highlightExample(item.example, item.word)}</p>
+        <p class="modal-ex-text">${highlightExample(item.example, item.word)}</p>
       </div>
 
-      <div style="display: flex; gap: 10px; justify-content: center;">
-        <button class="play-all-btn" id="modalWordAudioBtn" style="padding: 10px 18px; font-size: 0.9rem;">
+      <div class="modal-actions-row">
+        <button class="play-all-btn" id="modalWordAudioBtn">
           🔊 Pronounce Word
         </button>
-        <button class="play-all-btn primary" id="modalFullAudioBtn" style="background: var(--primary-color); color: #fff; border-color: var(--primary-color); padding: 10px 18px; font-size: 0.9rem;">
+        <button class="play-all-btn primary" id="modalFullAudioBtn">
           ▶ Play Full Reading
         </button>
       </div>
@@ -1001,7 +1005,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(vocabList, null, 2));
     const dlAnchor = document.createElement('a');
     dlAnchor.setAttribute("href", dataStr);
-    dlAnchor.setAttribute("download", "vocabulary_unit1_data.json");
+    dlAnchor.setAttribute("download", "vocabulary_unit2_data.json");
     document.body.appendChild(dlAnchor);
     dlAnchor.click();
     dlAnchor.remove();
