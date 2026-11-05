@@ -104,7 +104,7 @@ window.VOCABULARY_DATA = [
     "emoji": "😋",
     "meaning_gr": "νόστιμος",
     "definition_en": "tasting very good",
-    "example": "The cake tastes very good.",
+    "example": "The chocolate cake is delicious.",
     "category": "Describing"
   },
   {
@@ -200,7 +200,7 @@ window.VOCABULARY_DATA = [
     "emoji": "🥧",
     "meaning_gr": "τάρτα φρούτων",
     "definition_en": "sweet cakes with a soft fruit filling",
-    "example": "The bakery sells a sweet dessert with fruit.",
+    "example": "The bakery sells fresh fruit flans.",
     "category": "Food",
     "image_prompt": "one slice of fruit flan on a plain white background, flat vector illustration, no text"
   },
@@ -237,7 +237,7 @@ window.VOCABULARY_DATA = [
     "emoji": "👜",
     "meaning_gr": "δέρμα",
     "definition_en": "a strong material made from animal skin",
-    "example": "This belt is made from animal skin.",
+    "example": "This belt is made from leather.",
     "category": "Materials"
   },
   {
@@ -297,7 +297,7 @@ window.VOCABULARY_DATA = [
     "emoji": "🧁",
     "meaning_gr": "μάφιν",
     "definition_en": "small baked cakes with a rounded top",
-    "example": "We buy small cakes for breakfast.",
+    "example": "We buy muffins for breakfast.",
     "category": "Food"
   },
   {
@@ -321,7 +321,7 @@ window.VOCABULARY_DATA = [
     "emoji": "👟",
     "meaning_gr": "αθλητικά παπούτσια, σνίκερς",
     "definition_en": "shoes for sport, one for each foot",
-    "example": "The new shoes are comfortable.",
+    "example": "My new pair of sneakers is very comfortable.",
     "category": "Clothes",
     "pending_errata": "E1"
   },
@@ -346,7 +346,7 @@ window.VOCABULARY_DATA = [
     "emoji": "🥓",
     "meaning_gr": "χοιρινές μπριζόλες",
     "definition_en": "pieces of meat from a pig",
-    "example": "The meat from a pig is fresh.",
+    "example": "We have pork chops for dinner.",
     "category": "Food"
   },
   {
@@ -490,7 +490,7 @@ window.VOCABULARY_DATA = [
     "emoji": "🍰",
     "meaning_gr": "δελεαστικός, ελκυστικός",
     "definition_en": "making someone want it very much",
-    "example": "The cake looks very good.",
+    "example": "The chocolate cake looks very tempting.",
     "category": "Describing"
   },
   {
@@ -550,19 +550,19 @@ window.VOCABULARY_DATA = [
     "emoji": "🦃",
     "meaning_gr": "γαλοπούλα",
     "definition_en": "a large bird that we eat for a special meal",
-    "example": "We eat a large bird for dinner.",
+    "example": "We eat turkey at Christmas.",
     "category": "Food"
   },
   {
     "id": 47,
-    "word": "unit pice",
+    "word": "unit price",
     "ipa": "[ˈjuːnɪt paɪs]",
     "pos": "(n)",
     "der": "Der: unit (n), price (n)",
     "emoji": "🏷️",
     "meaning_gr": "τιμή μονάδας",
     "definition_en": "the price of one thing in a shop",
-    "example": "The form shows the price for one item.",
+    "example": "The unit price of the apples is one euro.",
     "category": "Shopping",
     "pending_errata": "E2"
   },
