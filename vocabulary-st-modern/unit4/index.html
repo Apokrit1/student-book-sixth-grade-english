@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 4: The History of the Aeroplane · Coursebook</title>
+  <meta name="description" content="Digital coursebook for Unit 4: The History of the Aeroplane. Reading dossiers, dialogue labs, grammar tasks, and workbook activities.">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../unit4/style_v2.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../shared/comic.css">
+  <link rel="stylesheet" href="../shared/a11y.css">
+</head>
+<body data-unit="4" data-workbook="unit4_workbook_data.js">
+
+  <!-- Background decorative ambient orbs -->
+  <div class="bg-decoration" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Audio Player Floating HUD -->
+  <div class="audio-hud" id="audioHud" style="display: none;" role="region" aria-label="Audio Playback Controller">
+    <div class="hud-content">
+      <div class="hud-info">
+        <span class="hud-label" id="hudAudioType">Narration</span>
+        <strong class="hud-title" id="hudAudioTitle">Playback</strong>
+      </div>
+      <div class="hud-controls">
+        <button class="hud-btn" id="hudPauseBtn" title="Pause / Resume" aria-label="Pause audio">⏸️</button>
+        <button class="hud-btn" id="hudStopBtn" title="Stop" aria-label="Stop audio">⏹️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="app-header no-print">
+    <div class="header-container">
+      
+      <div class="top-nav-row">
+        <div class="nav-breadcrumbs">
+          <a href="../index.html" class="hub-link">
+            <span>📚</span> All Units
+          </a>
+          <span class="separator">/</span>
+          <span class="current-unit shell-unit-label">Unit 4: The History of the Aeroplane</span>
+          <span class="badge v2-badge">Student's Book &amp; Workbook</span>
+        </div>
+
+        <div class="nav-actions">
+          <button class="v1-switch-btn" id="a11yBtn" type="button" title="Display &amp; Accessibility Settings">
+            <span>⚙️</span> Display &amp; A11y
+          </button>
+          <a href="companion.html" class="v1-switch-btn" title="Open Vocabulary Companion">
+            <span>📖</span> Vocabulary Companion
+          </a>
+          <button class="print-pack-top-btn" id="topPrintPackBtn" type="button" title="Print Full Worksheet Pack" hidden>
+            <span>🖨️</span> Print Worksheets Pack
+          </button>
+        </div>
+      </div>
+
+      <div class="header-hero">
+        <div class="hero-text-wrap">
+          <h1 class="main-title shell-unit-title">The History of the Aeroplane</h1>
+          <p class="sub-title shell-unit-subtitle">Pioneers of flight, aviation science, in-flight adventures, and the myth of Icarus</p>
+        </div>
+
+        <div class="audio-settings-bar">
+          <div class="setting-item">
+            <label for="v2VoiceSelect">Voice:</label>
+            <select id="v2VoiceSelect" class="v2-select" aria-label="Audio voice selection">
+              <option value="neural" selected>Natural Voice</option>
+              <option value="standard">Standard Voice</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label for="v2SpeedSelect">Speed:</label>
+            <select id="v2SpeedSelect" class="v2-select" aria-label="Playback speed">
+              <option value="0.8">0.8x (Slow)</option>
+              <option value="1.0" selected>1.0x (Normal)</option>
+              <option value="1.2">1.2x (Fast)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Module Navigation Tabs -->
+      <nav class="v2-nav-tabs" id="moduleTabs" role="tablist" aria-label="Learning modules"></nav>
+
+    </div>
+  </header>
+
+  <!-- Main Content Panels -->
+  <main class="main-content">
+    <div class="content-container" id="v2Panels"></div>
+  </main>
+
+  <div id="workbookPrintArea" class="workbook-print-area no-screen" style="display:none;"></div>
+
+  <footer class="app-footer no-print">
+    <div class="footer-container">
+      <div class="shell-footer-title">Unit 4: The History of the Aeroplane · Coursebook</div>
+      <div class="footer-sub">English 6th Grade · Primary School (ΣΤ΄ Δημοτικού)</div>
+    </div>
+  </footer>
+
+  <script src="../shared/learner_store.js"></script>
+  <script src="../../unit4/data/vocabulary_data.js"></script>
+  <script src="../../unit4/data/unit4_v2_data.js"></script>
+  <script src="../../unit4/data/unit4_workbook_data.js"></script>
+  <script src="../shared/app_coursebook.js"></script>
+</body>
+</html>

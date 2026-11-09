@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 2: Going Shopping · Retro Comic Coursebook (Bio-Warm 2026)</title>
-  <meta name="description" content="Modernized interactive comic coursebook companion for Unit 2 (Going Shopping) of English 6th Grade. Shopping reading dossiers, supermarket lexis, grammar lab (much/many/some/any), dialogue roleplays, and 18 interactive workbook exercises.">
+  <title>Unit 2: Going Shopping · Coursebook</title>
+  <meta name="description" content="Digital coursebook for Unit 2: Going Shopping. Reading dossiers, dialogue labs, grammar tasks, and workbook activities.">
   <link rel="stylesheet" href="../../assets/fonts/fonts.css">
   <link rel="stylesheet" href="../../unit2/style_v2.css">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="unit2_comic.css">
+  <link rel="stylesheet" href="../shared/comic.css">
+  <link rel="stylesheet" href="../shared/a11y.css">
 </head>
 <body data-unit="2" data-workbook="unit2_workbook_data.js">
 
@@ -23,7 +24,7 @@
   <div class="audio-hud" id="audioHud" style="display: none;" role="region" aria-label="Audio Playback Controller">
     <div class="hud-content">
       <div class="hud-info">
-        <span class="hud-label" id="hudAudioType">Story Narration</span>
+        <span class="hud-label" id="hudAudioType">Narration</span>
         <strong class="hud-title" id="hudAudioTitle">Playback</strong>
       </div>
       <div class="hud-controls">
@@ -33,28 +34,25 @@
     </div>
   </div>
 
-  <!-- Top Navigation & Application Bar -->
+  <!-- Top Navigation Bar -->
   <header class="app-header no-print">
     <div class="header-container">
       
       <div class="top-nav-row">
         <div class="nav-breadcrumbs">
-          <a href="../../portal.html" class="hub-link">
-            <span>🏠</span> Coursebook Portal
+          <a href="../index.html" class="hub-link">
+            <span>📚</span> All Units
           </a>
-          <span class="separator">/</span>
-          <a href="../index.html" class="hub-link hub-comic-crumb"><span>🎨</span> Graphic Novel Hub</a>
           <span class="separator">/</span>
           <span class="current-unit shell-unit-label">Unit 2: Going Shopping</span>
           <span class="badge v2-badge">Student's Book &amp; Workbook</span>
         </div>
 
         <div class="nav-actions">
-          <a href="../../unit2/v2.html" class="edition-switch-btn classic" title="Switch to Conventional / Classic Edition"><span>🏛️</span> Classic Edition</a>
-          <button class="v1-switch-btn" id="topTeacherNotesBtn" type="button" title="Teacher Pedagogical Notes &amp; Fact-Checks" hidden>
-            <span>🧑‍🏫</span> Teacher Notes
+          <button class="v1-switch-btn" id="a11yBtn" type="button" title="Display &amp; Accessibility Settings">
+            <span>⚙️</span> Display &amp; A11y
           </button>
-          <a href="companion.html" class="v1-switch-btn" title="Open Vocabulary Companion (Comic Edition)">
+          <a href="companion.html" class="v1-switch-btn" title="Open Vocabulary Companion">
             <span>📖</span> Vocabulary Companion
           </a>
           <button class="print-pack-top-btn" id="topPrintPackBtn" type="button" title="Print Full Worksheet Pack" hidden>
@@ -66,20 +64,20 @@
       <div class="header-hero">
         <div class="hero-text-wrap">
           <h1 class="main-title shell-unit-title">Going Shopping</h1>
-          <p class="sub-title shell-unit-subtitle">Consumer Literacy, Dialogue Quests, Grammar Lab &amp; Portfolio Writing</p>
+          <p class="sub-title shell-unit-subtitle">Supermarket quantities, fashion choices, sensory descriptions, and safe online ordering</p>
         </div>
 
         <div class="audio-settings-bar">
           <div class="setting-item">
-            <label for="v2VoiceSelect">AI Voice:</label>
-            <select id="v2VoiceSelect" class="v2-select">
-              <option value="neural" selected>✨ Sonia (Natural Neural AI)</option>
-              <option value="standard">🔊 Classic Google TTS</option>
+            <label for="v2VoiceSelect">Voice:</label>
+            <select id="v2VoiceSelect" class="v2-select" aria-label="Audio voice selection">
+              <option value="neural" selected>Natural Voice</option>
+              <option value="standard">Standard Voice</option>
             </select>
           </div>
           <div class="setting-item">
             <label for="v2SpeedSelect">Speed:</label>
-            <select id="v2SpeedSelect" class="v2-select">
+            <select id="v2SpeedSelect" class="v2-select" aria-label="Playback speed">
               <option value="0.8">0.8x (Slow)</option>
               <option value="1.0" selected>1.0x (Normal)</option>
               <option value="1.2">1.2x (Fast)</option>
@@ -103,14 +101,15 @@
 
   <footer class="app-footer no-print">
     <div class="footer-container">
-      <div class="shell-footer-title">Unit 2: Going Shopping · Retro Comic Coursebook</div>
-      <div class="footer-sub">Interactive coursebook content runs 100% locally with zero pupil-data tracking.</div>
+      <div class="shell-footer-title">Unit 2: Going Shopping · Coursebook</div>
+      <div class="footer-sub">English 6th Grade · Primary School (ΣΤ΄ Δημοτικού)</div>
     </div>
   </footer>
 
+  <script src="../shared/learner_store.js"></script>
   <script src="../../unit2/data/vocabulary_data.js"></script>
   <script src="../../unit2/data/unit2_v2_data.js"></script>
   <script src="../../unit2/data/unit2_workbook_data.js"></script>
-  <script src="app_v2.js"></script>
+  <script src="../shared/app_coursebook.js"></script>
 </body>
 </html>

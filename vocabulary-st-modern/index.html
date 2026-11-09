@@ -3,883 +3,940 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Coursebook · English 6th Grade · Graphic Novel &amp; Real-World Edition</title>
-  <meta name="description" content="Digital companion and interactive coursebook for English 6th Grade (ΣΤ΄ Δημοτικού), featuring structured classroom units, authentic country photographic dossiers, and bilingual vocabulary reference.">
+  <title>English 6th Grade · Digital Coursebook Companion (ΣΤ΄ Δημοτικού)</title>
+  <meta name="description" content="Official interactive digital coursebook and vocabulary companion for 6th Grade English (ΣΤ΄ Δημοτικού). Reading dossiers, dialogue labs, grammar exercises, and spaced repetition practice.">
   <link rel="stylesheet" href="../assets/fonts/fonts.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shared/comic.css">
+  <link rel="stylesheet" href="shared/a11y.css">
 </head>
 <body>
 
-  <!-- SVG defs (reused hand-drawn marks) -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <symbol id="arrow-squiggle" viewBox="0 0 64 24">
-        <path d="M2 12 Q 12 2, 22 12 T 42 12 T 56 12" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <path d="M50 6 L58 12 L50 18" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-      <symbol id="asterisk" viewBox="0 0 32 32">
-        <path d="M16 2 L16 30 M4 8 L28 24 M4 24 L28 8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-      </symbol>
-      <symbol id="sparkle" viewBox="0 0 24 24">
-        <path d="M12 1 L13.5 9 L21 10.5 L13.5 12 L12 23 L10.5 12 L3 10.5 L10.5 9 Z" fill="currentColor"/>
-      </symbol>
-      <symbol id="underline-squiggle" viewBox="0 0 200 12" preserveAspectRatio="none">
-        <path d="M2 6 Q 18 0, 34 6 T 66 6 T 98 6 T 130 6 T 162 6 T 194 6" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
-      </symbol>
-      <symbol id="check" viewBox="0 0 24 24">
-        <path d="M3 12 L10 19 L21 5" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-      <symbol id="book-open" viewBox="0 0 64 64">
-        <path d="M4 12 Q 4 8, 8 8 L 30 8 Q 32 8, 32 10 L 32 56 Q 32 58, 30 58 L 8 58 Q 4 58, 4 54 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-        <path d="M60 12 Q 60 8, 56 8 L 34 8 Q 32 8, 32 10 L 32 56 Q 32 58, 34 58 L 56 58 Q 60 58, 60 54 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-        <line x1="32" y1="10" x2="32" y2="56" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3"/>
-      </symbol>
-      <symbol id="translate" viewBox="0 0 24 24">
-        <path d="M3 5 H15 M9 3 V5 M11 5 Q 8 12, 4 14 M12 9 Q 9 13, 5 14 M11 13 L9 16" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M14 14 H21 M17 12 V20 M14 17 Q 18 17, 21 20 M19 14 Q 17 18, 14 20" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-    </defs>
-  </svg>
-
-  <!-- Floating background glyphs -->
+  <!-- Background decorative glyphs -->
   <div class="bg-glyphs" aria-hidden="true">
-    <svg class="glyph g1"><use href="#asterisk"/></svg>
-    <svg class="glyph g2"><use href="#sparkle"/></svg>
-    <svg class="glyph g3"><use href="#asterisk"/></svg>
-    <svg class="glyph g4"><use href="#sparkle"/></svg>
-    <svg class="glyph g5"><use href="#asterisk"/></svg>
-    <svg class="glyph g6"><use href="#sparkle"/></svg>
-    <svg class="loop l1" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 8" fill="none"/>
-    </svg>
-    <svg class="loop l2" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="2" stroke-dasharray="2 8" fill="none"/>
-    </svg>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
   </div>
 
-  <!-- ============================ TOP BAR ============================ -->
+  <!-- Top Bar -->
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="../portal.html">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <path d="M8 22 Q 8 8, 20 8 Q 32 8, 32 22 L 32 32 Q 32 36, 28 36 L 12 36 Q 8 36, 8 32 Z"/>
-          <circle cx="14" cy="20" r="2.5"/>
-          <circle cx="26" cy="20" r="2.5"/>
-          <path d="M14 26 Q 20 30, 26 26" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-        </svg>
+      <a class="brand" href="index.html">
         <span class="brand-text">
-          <span class="brand-name">Photodentro<em>·</em>English</span>
-          <span class="brand-meta">ΣΤ΄ Δημοτικού · 6th Grade</span>
+          <span class="brand-name">English 6th Grade</span>
+          <span class="brand-meta">Αγγλικά ΣΤ΄ Δημοτικού · Primary School</span>
         </span>
       </a>
 
-      <div class="brand-sub">
-        <span class="brand-sub-prefix">The</span>
-        <span class="brand-sub-name">Coursebook</span>
-        <span class="brand-sub-mod">· graphic novel edition</span>
-      </div>
-
-      <nav class="topnav">
-        <a href="#explainer">Curriculum Structure</a>
-        <a href="#visual-system">Visual system</a>
+      <nav class="topnav" aria-label="Curriculum Navigation">
         <a href="#units">10 Units</a>
-        <a href="#teacher">Pedagogical Notes</a>
+        <a href="#term-1" class="chip-nav" data-filter="term-1">Term 1 (Units 1–3)</a>
+        <a href="#term-2" class="chip-nav" data-filter="term-2">Term 2 (Units 4–7)</a>
+        <a href="#term-3" class="chip-nav" data-filter="term-3">Term 3 (Units 8–10)</a>
       </nav>
 
       <div class="topbar-actions" style="display: flex; align-items: center; gap: 10px;">
-        <a class="edition-switch-btn classic" href="../portal.html" title="Switch to Conventional / Classic Portal" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border: 2.5px solid var(--ink); border-radius: var(--radius-full); font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; font-weight: 700; background: var(--snow); color: var(--ink); box-shadow: 0 4px 0 0 var(--ink); text-decoration: none;">
-          <span>🏛️</span> Classic Portal
-        </a>
-        <a class="topbar-cta" href="#units">
-          Open the coursebook
-          <svg class="arrow"><use href="#arrow-squiggle"/></svg>
-        </a>
+        <button id="spacedReviewHubBtn" type="button" class="a11y-toggle-btn" style="background: var(--gold-tint); border: 2px solid var(--ink); border-radius: var(--radius-full); padding: 8px 16px; font-weight: 800; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+          <span>⏰</span> Spaced Review <span id="hubDueCountBadge" class="badge" style="background: var(--coral); color: #fff; padding: 2px 7px; border-radius: 999px; font-size: 0.75rem; display: none;">0</span>
+        </button>
+        <button id="a11yBtn" type="button" class="a11y-toggle-btn" style="background: var(--snow); border: 2px solid var(--ink); border-radius: var(--radius-full); padding: 8px 16px; font-weight: 800; font-size: 0.88rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+          <span>⚙️</span> Display &amp; A11y
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- ============================ HERO ============================ -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <div class="kicker">
-          <svg class="kicker-mark"><use href="#book-open"/></svg>
-          <span>English 6th Grade · Graphic Novel + Open-Source Realia</span>
-        </div>
-
-        <h1 class="hero-title">
-          <span class="line">The coursebook.</span>
-          <span class="line">
-            <span class="hl">Modernized.</span>
-            <svg class="hl-underline" viewBox="0 0 600 14" preserveAspectRatio="none">
-              <path d="M4 8 Q 40 2, 80 8 T 160 8 T 240 8 T 320 8 T 400 8 T 480 8 T 580 8" />
-            </svg>
-          </span>
-        </h1>
-
-        <p class="hero-lede">
-          Structured digital coursebook companion for the official 6th Grade curriculum — featuring
-          <strong>rich visual scenarios</strong> for classroom dialogues and school computer labs,
-          alongside <strong>authentic documentary photography</strong> for geographical units and country studies. Includes the
-          <strong>Vocabulary Companion</strong>: a dedicated bilingual reference for lexical acquisition.
-        </p>
-
-        <div class="hero-ctas">
-          <a class="cta primary" href="unit1/index.html">
-            <span>Launch Unit 1 Coursebook</span>
-            <svg class="arrow"><use href="#arrow-squiggle"/></svg>
-          </a>
-          <a class="cta ghost" href="unit1/companion.html">
-            <span>Open Vocabulary Companion</span>
-          </a>
-          <a class="cta ghost" href="#units">
-            <span>Browse all 10 units</span>
-          </a>
-        </div>
-
-        <div class="hero-meta">
-          <span class="meta-pill sage"><strong>10</strong> Complete Units</span>
-          <span class="meta-pill clay"><strong>Graphic Novel</strong> Classroom &amp; Lab Scenes</span>
-          <span class="meta-pill mustard"><strong>Real Photos</strong> for Real Countries (CC)</span>
-          <span class="meta-pill blush"><strong>Companion</strong> Vocabulary Reference</span>
-        </div>
+  <!-- Hero Section (Functional Learning Portal) -->
+  <section class="hero" style="padding: 48px 0 32px;">
+    <div class="hero-inner" style="display: block; max-width: 900px; margin: 0 auto; text-align: center;">
+      <div class="kicker" style="justify-content: center; margin-bottom: 12px;">
+        <span>Curriculum Companion · Υπουργείο Παιδείας &amp; ΙΕΠ</span>
       </div>
 
-      <div class="hero-art">
-        <div class="comic-hero-panel">
-          <div class="comic-caption-bar">
-            <span class="comic-badge">SCENE 01 · CLASSROOM 6B</span>
-            <span class="comic-style-tag">INK &amp; CEL-SHADED</span>
-          </div>
-          <div class="comic-hero-img-wrap">
-            <img src="imgs/hero_illustration.jpg"
-                 alt="Middle-grade graphic novel style illustration of a 6th grade classroom viewed from the back looking forward toward the chalkboard, with 10-11 year old students in hoodies, t-shirts, and sneakers."
-                 loading="eager">
-          </div>
-          <div class="comic-dual-strip">
-            <a href="unit1/index.html" class="comic-dual-pill v1-pill">
-              <span class="pill-tag">COURSEBOOK MODULE</span>
-              <strong>100% English Immersion</strong>
-              <span class="pill-sub">Reading · Grammar Lab · Listening · CLIL</span>
-            </a>
-            <a href="unit1/companion.html" class="comic-dual-pill v2-pill">
-              <span class="pill-tag">VOCABULARY COMPANION</span>
-              <strong>Bilingual Lexical Reference (Λεξιλόγιο)</strong>
-              <span class="pill-sub">country ↔ χώρα · classmate ↔ συμμαθητής</span>
-            </a>
-          </div>
-        </div>
-        <svg class="art-sparkle s1"><use href="#sparkle"/></svg>
-        <svg class="art-sparkle s2"><use href="#sparkle"/></svg>
-        <svg class="art-asterisk a1"><use href="#asterisk"/></svg>
-      </div>
-    </div>
-  </section>
+      <h1 class="hero-title" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 16px;">
+        English 6th Grade <span style="color: var(--coral);">Coursebook Hub</span>
+      </h1>
 
-  <!-- ============================ TWO-TRACK VISUAL SYSTEM ============================ -->
-  <section class="visual-system-section" id="visual-system">
-    <div class="section-inner">
-      <div class="visual-system-banner">
-        <div class="vs-card graphic-track">
-          <div class="vs-track-header">
-            <span class="thing-tag">TRACK A · GRAPHIC NOVEL SCENES</span>
-            <span class="vs-age-badge">Target: Upper Primary (Ages 10–12)</span>
-          </div>
-          <h3>Expressive Inked Line Art for Scenes &amp; Labs</h3>
-          <p>
-            Classroom dialogues, computer lab sessions (<em>At the School Computer Lab</em>), and grammar comic strips
-            (<em>Mr. Badluck's Day</em>) use a dynamic middle-grade graphic novel aesthetic — 10–11 year old students in
-            hoodies, t-shirts, and sneakers with cel-shaded Bio-Warm colors.
-          </p>
-          <div class="vs-sample-row">
-            <figure class="vs-mini-fig">
-              <img src="imgs/unit1_featured.jpg" alt="Four 11-year-old students gathered around a classroom globe and wall map of Europe" loading="lazy">
-              <figcaption>Classroom Globe &amp; Map</figcaption>
-            </figure>
-            <figure class="vs-mini-fig">
-              <img src="imgs/teacher_illus.jpg" alt="Four 11-year-old students in a school computer lab working on Geography, Music, and Science projects" loading="lazy">
-              <figcaption>School Computer Lab</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="vs-card realia-track">
-          <div class="vs-track-header">
-            <span class="thing-tag clay">TRACK B · REAL OPEN-SOURCE PHOTOS</span>
-            <span class="vs-age-badge">Wikimedia Commons · CC BY / CC BY-SA</span>
-          </div>
-          <h3>Authentic Real-World Photography for Real Places</h3>
-          <p>
-            Whenever a unit explores real countries, rivers, mountains, or historical landmarks, we never use synthetic
-            AI scenery. Students inspect real, freely licensed documentary photographs with full author attribution.
-          </p>
-          <div class="vs-country-grid">
-            <figure class="vs-country-card">
-              <img src="imgs/ukraine_real.webp" alt="Carpathian Mountains and Lake Synevyr in Ukraine" loading="lazy">
-              <figcaption>
-                <strong>🇺🇦 Ukraine</strong>
-                <span>Carpathian Mts · CC BY-SA 4.0</span>
-              </figcaption>
-            </figure>
-            <figure class="vs-country-card">
-              <img src="imgs/albania_real.webp" alt="Ionian Sea coastline at Ksamil in Albania" loading="lazy">
-              <figcaption>
-                <strong>🇦🇱 Albania</strong>
-                <span>Ionian Coast · CC BY-SA 3.0</span>
-              </figcaption>
-            </figure>
-            <figure class="vs-country-card">
-              <img src="imgs/georgia_real.webp" alt="Mtkvari River and Old Tbilisi in Georgia" loading="lazy">
-              <figcaption>
-                <strong>🇬🇪 Georgia</strong>
-                <span>Mtkvari River · CC BY 2.5</span>
-              </figcaption>
-            </figure>
-            <figure class="vs-country-card">
-              <img src="imgs/uk_real.webp" alt="River Thames and Westminster in London, United Kingdom" loading="lazy">
-              <figcaption>
-                <strong>🇬🇧 United Kingdom</strong>
-                <span>River Thames · CC BY-SA 2.5</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ CURRICULUM STRUCTURE ============================ -->
-  <section class="explainer" id="explainer">
-    <div class="section-inner narrow">
-      <header class="section-head centered">
-        <div class="kicker centered">
-          <svg class="kicker-mark"><use href="#book-open"/></svg>
-          <span>Curriculum Structure</span>
-        </div>
-        <h2 class="section-title">
-          Integrated Coursebook. <em>Bilingual Lexical Companion.</em><br>
-          Clear separation of immersive practice and vocabulary reference.
-        </h2>
-      </header>
-
-      <div class="two-things">
-        <article class="thing-card coursebook">
-          <div class="thing-tag">Interactive Coursebook</div>
-          <h3 class="thing-title">The Coursebook</h3>
-          <p class="thing-desc">
-            The full English 6th Grade syllabus — every lesson, every unit, every reading,
-            every listening task, every inductive grammar lab, every cultural and cross-curricular
-            thread. Taught in the browser. Taught in English. Always.
-          </p>
-          <ul class="thing-list">
-            <li><svg class="bullet"><use href="#check"/></svg> Every lesson from the official 2006 syllabus</li>
-            <li><svg class="bullet"><use href="#check"/></svg> Graphic novel scenes + real Wikimedia country photos</li>
-            <li><svg class="bullet"><use href="#check"/></svg> Printable A4 worksheet packs &amp; self-check</li>
-            <li><svg class="bullet"><use href="#check"/></svg> Offline neural audio &amp; interactive transcripts</li>
-            <li><svg class="bullet"><use href="#check"/></svg> 100% in English — for full classroom immersion</li>
-          </ul>
-          <a href="#units" class="thing-cta paper">
-            <span>Browse the 10 units</span>
-            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-          </a>
-        </article>
-
-        <div class="thing-plus" aria-hidden="true">
-          <svg viewBox="0 0 40 40">
-            <circle cx="20" cy="20" r="18" fill="var(--cream)" stroke="var(--ink)" stroke-width="2" stroke-dasharray="2 4"/>
-            <text x="20" y="27" text-anchor="middle" font-family="Bricolage Grotesque" font-size="22" font-weight="800" fill="var(--coral)">+</text>
-          </svg>
-        </div>
-
-        <article class="thing-card companion">
-          <div class="thing-tag clay">Vocabulary Companion</div>
-          <h3 class="thing-title">The Companion</h3>
-          <p class="thing-desc">
-            A targeted lexical support module paired with each unit. Provides interactive flashcards, audio pronunciation, and vocabulary
-            reinforcement activities — creating a direct bilingual bridge between target English terminology and Greek lexical equivalents.
-          </p>
-          <ul class="thing-list">
-            <li><svg class="bullet clay"><use href="#check"/></svg> Vocabulary flashcards &amp; lexical-pairing drills</li>
-            <li><svg class="bullet clay"><use href="#check"/></svg> Greek translations, example sentences &amp; audio</li>
-            <li><svg class="bullet clay"><use href="#check"/></svg> Per-unit Companion in all 10 units</li>
-            <li><svg class="bullet clay"><use href="#check"/></svg> Structured bilingual lexical reference</li>
-          </ul>
-          <a href="#units" class="thing-cta clay">
-            <span>See the Companion per unit</span>
-            <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-          </a>
-        </article>
-      </div>
-
-      <p class="two-things-foot">
-        Complementary tools. One syllabus. <em>English immersion in the coursebook; structured bilingual reference in the Companion.</em>
+      <p class="hero-lede" style="margin: 0 auto 28px; max-width: 760px; font-size: 1.1rem; color: var(--ink-soft);">
+        Interactive reading dossiers, dialogue labs, grammar exercises, and spaced repetition vocabulary practice for all 10 curriculum units.
       </p>
+
+      <!-- Search Input Box -->
+      <div style="max-width: 600px; margin: 0 auto 24px; position: relative;">
+        <input type="text" id="hubSearchInput" placeholder="Search by topic, unit name, or grammar (e.g. Past Simple, Shopping)..." style="width: 100%; padding: 14px 20px; font-size: 1rem; border: 2.5px solid var(--ink); border-radius: var(--radius-full); background: var(--snow); box-shadow: 0 4px 0 0 var(--ink); outline: none;" />
+      </div>
+
+      <!-- Quick Summary Stats -->
+      <div class="hero-meta" style="justify-content: center; gap: 12px;">
+        <span class="meta-pill sage"><strong>10</strong> Curriculum Units</span>
+        <span class="meta-pill mustard"><strong>512</strong> Vocabulary Items</span>
+        <span class="meta-pill clay"><strong>100%</strong> Offline Ready</span>
+      </div>
     </div>
   </section>
 
-  <!-- ============================ FILTER + UNITS ============================ -->
-  <section class="units-section" id="units">
+  <!-- Units Section -->
+  <main class="units-section" id="units" style="padding: 30px 0 80px;">
     <div class="section-inner">
-      <header class="section-head">
-        <div class="kicker">
-          <svg class="kicker-mark"><use href="#asterisk"/></svg>
-          <span>10 units · the full year</span>
-        </div>
-        <h2 class="section-title">
-          Every unit. <em>Every lesson.</em><br>
-          With its Companion.
-        </h2>
-        <p class="section-lede">
-          Each unit card pairs the <strong>Coursebook lesson</strong> on the left with its corresponding
-          <strong>Vocabulary Companion</strong> on the right, providing clear Greek definitions and audio pronunciation. Filter by term or jump straight into a unit.
-        </p>
-      </header>
-
-      <div class="filter-row" role="tablist" aria-label="Filter units">
-        <button class="chip active" data-filter="all">All <span class="chip-count">10</span></button>
-        <button class="chip" data-filter="term-1">Term 1 · Autumn <span class="chip-count">3</span></button>
-        <button class="chip" data-filter="term-2">Term 2 · Winter <span class="chip-count">4</span></button>
-        <button class="chip" data-filter="term-3">Term 3 · Spring <span class="chip-count">3</span></button>
+      
+      <!-- Term Filter Chips Bar -->
+      <div class="filter-chips-bar" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px;">
+        <button class="chip active" data-filter="all">All Units (10)</button>
         <span class="chip-sep"></span>
-        <button class="chip sage" data-filter="ready">All 10 Ready</button>
-        <button class="chip mustard" data-filter="featured">Flagship Unit 1</button>
+        <button class="chip sage" data-filter="term-1">Term 1 (Units 1–3)</button>
+        <button class="chip mustard" data-filter="term-2">Term 2 (Units 4–7)</button>
+        <button class="chip" data-filter="term-3">Term 3 (Units 8–10)</button>
       </div>
 
+      <!-- 10 Units Grid -->
       <div class="units-grid" id="unitsGrid">
-
-        <!-- ============================ UNIT 1 — FEATURED ============================ -->
-        <article class="unit-split featured visible"
-                 data-terms="term-1"
-                 data-flags="ready featured">
-          <!-- Coursebook side -->
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Unit 01 · Interactive Lesson</span>
-            </div>
-            <div class="v1-cover" id="featuredArt">
-              <img src="imgs/unit1_featured.jpg"
-                   alt="Middle-grade graphic novel illustration of four 11-year-old classmates gathered around a classroom globe and wall map of Europe."
-                   loading="eager">
-            </div>
-            <div class="unit1-real-strip" aria-label="Real open-source country photographs in Unit 1">
-              <div class="real-strip-label">REAL COUNTRY DOSSIERS (WIKIMEDIA COMMONS · CC)</div>
-              <div class="real-strip-thumbs">
-                <span class="real-thumb" title="Ukraine — Carpathian Mountains (CC BY-SA 4.0)">
-                  <img src="imgs/ukraine_real.webp" alt="Ukraine Carpathian Mountains" loading="lazy">
-                  <small>🇺🇦 Ukraine</small>
-                </span>
-                <span class="real-thumb" title="Albania — Ksamil Ionian Coast (CC BY-SA 3.0)">
-                  <img src="imgs/albania_real.webp" alt="Albania Ionian Coast" loading="lazy">
-                  <small>🇦🇱 Albania</small>
-                </span>
-                <span class="real-thumb" title="Georgia — Old Tbilisi &amp; Mtkvari River (CC BY 2.5)">
-                  <img src="imgs/georgia_real.webp" alt="Georgia Old Tbilisi" loading="lazy">
-                  <small>🇬🇪 Georgia</small>
-                </span>
-                <span class="real-thumb" title="United Kingdom — River Thames, London (CC BY-SA 2.5)">
-                  <img src="imgs/uk_real.webp" alt="United Kingdom River Thames" loading="lazy">
-                  <small>🇬🇧 UK</small>
-                </span>
-              </div>
-            </div>
-            <div class="v1-meta">
-              <div class="v1-title">Our Multicultural Class</div>
-              <div class="v1-theme">Present Simple vs. Continuous · School Computer Lab · 4 Country Dossiers</div>
-              <div class="v1-btn-row">
-                <a class="v1-link" href="unit1/index.html">
-                  Open Comic Coursebook
-                  <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-                </a>
-                <a class="v1-link secondary" href="../unit1/v2.html" title="Switch to Classic Conventional Edition">
-                  Classic Edition 🏛️
-                </a>
-                <a class="v1-link secondary" href="../unit1/photodentro/index.html">
-                  Photodentro OER
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Divider with fold -->
-          <div class="unit-fold" aria-hidden="true">
-            <span class="fold-mark"></span>
-          </div>
-
-          <!-- Companion side -->
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">Vocabulary Layer <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="v2-number-badge">
-              <span class="big-num">01</span>
-              <span class="term-pill">Term 1 · Flagship</span>
-            </div>
-            <h3 class="v2-title">Vocabulary you'll meet.</h3>
-            <p class="v2-tagline">
-              Key unit vocabulary paired with Greek definitions and pronunciation support to reinforce comprehension.
-            </p>
-
-            <div class="vocab-table">
-              <div class="vocab-row"><span class="en">border</span><span class="arrow-mark">↔</span><span class="el">σύνορο</span></div>
-              <div class="vocab-row"><span class="en">peninsula</span><span class="arrow-mark">↔</span><span class="el">χερσόνησος</span></div>
-              <div class="vocab-row"><span class="en">mountainous</span><span class="arrow-mark">↔</span><span class="el">ορεινός</span></div>
-              <div class="vocab-row"><span class="en">plain</span><span class="arrow-mark">↔</span><span class="el">πεδιάδα</span></div>
-              <div class="vocab-row"><span class="en">custom</span><span class="arrow-mark">↔</span><span class="el">έθιμο</span></div>
-              <div class="vocab-row"><span class="en">coal</span><span class="arrow-mark">↔</span><span class="el">άνθρακας, κάρβουνο</span></div>
-            </div>
-
-            <div class="v2-actions">
-              <a href="unit1/companion.html" class="cta primary small">
-                <span>Open Vocabulary Companion</span>
-                <svg class="arrow"><use href="#arrow-squiggle"/></svg>
-              </a>
-              <a href="../unit1/index.html" class="cta ghost small" title="Switch to Classic Companion">Classic Companion 🏛️</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 2 — MODERN RETRO COMIC ============================ -->
-        <article class="unit-split featured visible"
-                 data-terms="term-1"
-                 data-flags="ready featured">
-          <!-- Coursebook side -->
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Unit 02 · Interactive Lesson</span>
-            </div>
-            <div class="v1-cover">
-              <img src="imgs/unit2_featured.jpg"
-                   alt="Middle-grade graphic novel illustration of two students shopping in a modern supermarket produce aisle."
-                   loading="lazy">
-            </div>
-            <div class="unit1-real-strip" aria-label="Reading dossier story scenes in Unit 2">
-              <div class="real-strip-label">STORY SCENES (GRAPHIC NOVEL EDITIONS)</div>
-              <div class="real-strip-thumbs">
-                <span class="real-thumb" title="Lesson 1: Fresh Food Market Flyer">
-                  <img src="imgs/ffm_flyer.webp" alt="Fresh Food Market flyer scene" loading="lazy">
-                  <small>🛒 Market</small>
-                </span>
-                <span class="real-thumb" title="Lesson 2: Choosing Clothes at the Mall">
-                  <img src="imgs/mall_choice.webp" alt="Department store shopping scene" loading="lazy">
-                  <small>🏬 Mall</small>
-                </span>
-                <span class="real-thumb" title="Lesson 3: Ordering Toys Online">
-                  <img src="imgs/online_order.webp" alt="Online toy shopping scene" loading="lazy">
-                  <small>💻 Online</small>
-                </span>
-              </div>
-            </div>
-            <div class="v1-meta">
-              <div class="v1-title">Going Shopping</div>
-              <div class="v1-theme">Countable vs Uncountable · How much/many · Supermarket &amp; Mall Roleplay · 18 Workbook Tasks</div>
-              <div class="v1-btn-row">
-                <a class="v1-link" href="unit2/index.html">
-                  Open Comic Coursebook
-                  <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-                </a>
-                <a class="v1-link secondary" href="../unit2/v2.html" title="Switch to Classic Conventional Edition">
-                  Classic Edition 🏛️
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Divider with fold -->
-          <div class="unit-fold" aria-hidden="true">
-            <span class="fold-mark"></span>
-          </div>
-
-          <!-- Companion side -->
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">Vocabulary Layer <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="v2-number-badge">
-              <span class="big-num">02</span>
-              <span class="term-pill">Term 1 · Consumer Literacy</span>
-            </div>
-            <h3 class="v2-title">Vocabulary you'll meet.</h3>
-            <p class="v2-tagline">
-              Key shopping &amp; consumer vocabulary paired with Greek definitions, IPA phonetics, and offline audio pronunciation.
-            </p>
-
-            <div class="vocab-table">
-              <div class="vocab-row"><span class="en">department store</span><span class="arrow-mark">↔</span><span class="el">πολυκατάστημα</span></div>
-              <div class="vocab-row"><span class="en">receipt</span><span class="arrow-mark">↔</span><span class="el">απόδειξη</span></div>
-              <div class="vocab-row"><span class="en">bargain</span><span class="arrow-mark">↔</span><span class="el">ευκαιρία (αγορά)</span></div>
-              <div class="vocab-row"><span class="en">budget</span><span class="arrow-mark">↔</span><span class="el">προϋπολογισμός</span></div>
-              <div class="vocab-row"><span class="en">cotton</span><span class="arrow-mark">↔</span><span class="el">βαμβακερός</span></div>
-              <div class="vocab-row"><span class="en">bakery</span><span class="arrow-mark">↔</span><span class="el">φούρνος, αρτοποιείο</span></div>
-            </div>
-
-            <div class="v2-actions">
-              <a href="unit2/companion.html" class="cta primary small">
-                <span>Open Vocabulary Companion</span>
-                <svg class="arrow"><use href="#arrow-squiggle"/></svg>
-              </a>
-              <a href="../unit2/index.html" class="cta ghost small" title="Switch to Classic Companion">Classic Companion 🏛️</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 3 ============================ -->
-        <article class="unit-split" data-terms="term-1" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 1 · Autumn</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 03 · 🐉</span>
-              <h4 class="v1-mini-title">Imaginary Creatures</h4>
-              <span class="v1-pages">Comparisons · Opposites with Prefixes · Shakespeare CLIL</span>
-            </div>
-            <a class="v1-link mini" href="../unit3/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">fierce</span><span class="arrow-mark">↔</span><span class="el">άγριος, μανιασμένος</span></div>
-              <div class="vocab-row"><span class="en">one-eyed</span><span class="arrow-mark">↔</span><span class="el">μονόφθαλμος</span></div>
-              <div class="vocab-row"><span class="en">vicious</span><span class="arrow-mark">↔</span><span class="el">κακός, μοχθηρός</span></div>
-              <div class="vocab-row"><span class="en">unpredictable</span><span class="arrow-mark">↔</span><span class="el">απρόβλεπτος</span></div>
-            </div>
-            <a href="../unit3/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 4 ============================ -->
-        <article class="unit-split" data-terms="term-2" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 2 · Winter</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 04 · ✈️</span>
-              <h4 class="v1-mini-title">The History of the Aeroplane</h4>
-              <span class="v1-pages">Past Simple vs. Continuous · Time Linkers · Forces of Flight</span>
-            </div>
-            <a class="v1-link mini" href="../unit4/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">flight</span><span class="arrow-mark">↔</span><span class="el">πτήση</span></div>
-              <div class="vocab-row"><span class="en">gravity</span><span class="arrow-mark">↔</span><span class="el">βαρύτητα</span></div>
-              <div class="vocab-row"><span class="en">glider</span><span class="arrow-mark">↔</span><span class="el">ανεμόπτερο</span></div>
-              <div class="vocab-row"><span class="en">wax</span><span class="arrow-mark">↔</span><span class="el">κερί</span></div>
-            </div>
-            <a href="../unit4/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 5 ============================ -->
-        <article class="unit-split" data-terms="term-2" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 2 · Winter</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 05 · ⏳</span>
-              <h4 class="v1-mini-title">Travelling Through Time</h4>
-              <span class="v1-pages">Used to (Past Habits) · Giving Directions · Transport Museum</span>
-            </div>
-            <a class="v1-link mini" href="../unit5/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">steam train</span><span class="arrow-mark">↔</span><span class="el">ατμομηχανή</span></div>
-              <div class="vocab-row"><span class="en">conductor</span><span class="arrow-mark">↔</span><span class="el">εισιτηριοθέτης</span></div>
-              <div class="vocab-row"><span class="en">pedestrian</span><span class="arrow-mark">↔</span><span class="el">πεζός</span></div>
-              <div class="vocab-row"><span class="en">crossroads</span><span class="arrow-mark">↔</span><span class="el">σταυροδρόμι</span></div>
-            </div>
-            <a href="../unit5/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 6 ============================ -->
-        <article class="unit-split" data-terms="term-2" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 2 · Winter</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 06 · 💼</span>
-              <h4 class="v1-mini-title">Me, Myself and My Future Job</h4>
-              <span class="v1-pages">Future (will / going to) · Modals (can, may, should) · Careers</span>
-            </div>
-            <a class="v1-link mini" href="../unit6/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">vet</span><span class="arrow-mark">↔</span><span class="el">κτηνίατρος</span></div>
-              <div class="vocab-row"><span class="en">marine biologist</span><span class="arrow-mark">↔</span><span class="el">θαλάσσιος βιολόγος</span></div>
-              <div class="vocab-row"><span class="en">patient</span><span class="arrow-mark">↔</span><span class="el">υπομονετικός</span></div>
-              <div class="vocab-row"><span class="en">life jacket</span><span class="arrow-mark">↔</span><span class="el">σωσίβιο</span></div>
-            </div>
-            <a href="../unit6/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 7 ============================ -->
-        <article class="unit-split" data-terms="term-2" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 2 · Winter</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 07 · 🏅</span>
-              <h4 class="v1-mini-title">Share Your Experiences</h4>
-              <span class="v1-pages">Present Perfect Simple &amp; Continuous · For &amp; Since · Paralympics</span>
-            </div>
-            <a class="v1-link mini" href="../unit7/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">achievement</span><span class="arrow-mark">↔</span><span class="el">επίτευγμα</span></div>
-              <div class="vocab-row"><span class="en">champion</span><span class="arrow-mark">↔</span><span class="el">πρωταθλητής</span></div>
-              <div class="vocab-row"><span class="en">freestyle</span><span class="arrow-mark">↔</span><span class="el">ελεύθερο (κολύμβηση)</span></div>
-              <div class="vocab-row"><span class="en">compete</span><span class="arrow-mark">↔</span><span class="el">συναγωνίζομαι</span></div>
-            </div>
-            <a href="../unit7/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 8 ============================ -->
-        <article class="unit-split" data-terms="term-3" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 3 · Spring</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 08 · 🎺</span>
-              <h4 class="v1-mini-title">Blow Your Own Trumpet</h4>
-              <span class="v1-pages">Modals of Obligation, Advice &amp; Prohibition · Music &amp; Budgeting</span>
-            </div>
-            <a class="v1-link mini" href="../unit8/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">trumpet</span><span class="arrow-mark">↔</span><span class="el">τρομπέτα</span></div>
-              <div class="vocab-row"><span class="en">allowance</span><span class="arrow-mark">↔</span><span class="el">χαρτζιλίκι</span></div>
-              <div class="vocab-row"><span class="en">melody</span><span class="arrow-mark">↔</span><span class="el">μελωδία</span></div>
-              <div class="vocab-row"><span class="en">afford</span><span class="arrow-mark">↔</span><span class="el">έχω την οικονομική δυνατότητα</span></div>
-            </div>
-            <a href="../unit8/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 9 ============================ -->
-        <article class="unit-split" data-terms="term-3" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 3 · Spring</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 09 · 🌱</span>
-              <h4 class="v1-mini-title">Earth Day Everyday</h4>
-              <span class="v1-pages">Past Perfect Simple · Clauses of Reason &amp; Result · Ecology</span>
-            </div>
-            <a class="v1-link mini" href="../unit9/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">endangered</span><span class="arrow-mark">↔</span><span class="el">υπό εξαφάνιση</span></div>
-              <div class="vocab-row"><span class="en">pollution</span><span class="arrow-mark">↔</span><span class="el">ρύπανση, μόλυνση</span></div>
-              <div class="vocab-row"><span class="en">habitat</span><span class="arrow-mark">↔</span><span class="el">βιότοπος</span></div>
-              <div class="vocab-row"><span class="en">recycle</span><span class="arrow-mark">↔</span><span class="el">ανακυκλώνω</span></div>
-            </div>
-            <a href="../unit9/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <!-- ============================ UNIT 10 ============================ -->
-        <article class="unit-split" data-terms="term-3" data-flags="ready">
-          <div class="unit-side v1-side">
-            <div class="side-label">
-              <span class="side-tag v1">Coursebook</span>
-              <span class="side-name">Term 3 · Spring</span>
-            </div>
-            <div class="v1-mini">
-              <span class="v1-num">UNIT 10 · 🎬</span>
-              <h4 class="v1-mini-title">Time for Fun</h4>
-              <span class="v1-pages">Present Simple Passive · -ed / -ing Adjectives · Film Reviews</span>
-            </div>
-            <a class="v1-link mini" href="../unit10/v2.html">
-              Open Coursebook Lesson
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-          <div class="unit-fold" aria-hidden="true"><span class="fold-mark"></span></div>
-          <div class="unit-side v2-side">
-            <div class="side-label">
-              <span class="side-tag v2">Companion</span>
-              <span class="side-name">The Companion <span class="el-tag">λεξιλόγιο</span></span>
-            </div>
-            <div class="vocab-table compact">
-              <div class="vocab-row"><span class="en">director</span><span class="arrow-mark">↔</span><span class="el">σκηνοθέτης</span></div>
-              <div class="vocab-row"><span class="en">plot</span><span class="arrow-mark">↔</span><span class="el">πλοκή, υπόθεση</span></div>
-              <div class="vocab-row"><span class="en">soundtrack</span><span class="arrow-mark">↔</span><span class="el">μουσική ταινίας</span></div>
-              <div class="vocab-row"><span class="en">thrilling</span><span class="arrow-mark">↔</span><span class="el">συναρπαστικός</span></div>
-            </div>
-            <a href="../unit10/index.html" class="v2-mini-link">
-              Open Vocabulary Companion
-              <svg class="arrow-sm"><use href="#arrow-squiggle"/></svg>
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ METHODOLOGY & TEACHER NOTES ============================ -->
-  <section class="teacher-section" id="teacher">
-    <div class="section-inner narrow">
-      <div class="teacher-card">
-        <div class="kicker centered">
-          <svg class="kicker-mark"><use href="#asterisk"/></svg>
-          <span>Curricular Design · Classroom &amp; Lab Ready</span>
+        
+    <!-- Unit 1: Our Multicultural Class -->
+    <article class="unit-split visible" id="unit-card-1" data-unit="1" data-terms="term-1" data-theme="school & global community" data-grammar="present simple & continuous, nationalities & adjectives">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 1</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 1</span>
         </div>
-        <h2 class="section-title centered">
-          Pedagogical Scope &amp; Methodology<br>
-          <em>Age-Appropriate Design for Grade 6 (Ages 10–12)</em>
-        </h2>
-        <p class="teacher-lede">
-          The Coursebook delivers an immersive English learning experience with high-interest narrative dialogue, communicative tasks,
-          and authentic country photography. The accompanying Vocabulary Companion supports lexical acquisition through systematic bilingual reference.
-        </p>
 
-        <figure class="teacher-lab-banner">
-          <img src="imgs/teacher_illus.jpg"
-               alt="Middle-grade graphic novel style illustration of four 11-year-old students in a school computer lab working on Music, Geography (Taj Mahal), and Science projects while their teacher points at the screen."
-               loading="lazy">
-          <figcaption>
-            <strong>SCENE · AT THE SCHOOL COMPUTER LAB (UNIT 1, LESSON 2)</strong>
-            <span>Graphic novel scene matching the coursebook dialogue: Andrew, Nick, Betty &amp; Sophia working on Music, Geography, and Science projects.</span>
-          </figcaption>
-        </figure>
+        <div class="v1-meta">
+          <h2 class="v1-title">Our Multicultural Class</h2>
+          <p class="v1-theme">School, nationalities, multicultural identities, and introductions</p>
 
-        <div class="teacher-grid">
-          <div class="teacher-pillar">
-            <div class="pillar-mark">
-              <svg viewBox="0 0 40 40"><use href="#asterisk"/></svg>
-            </div>
-            <h4>Coursebook · every lesson</h4>
-            <p>Grammar, reading, listening, culture, CLIL, printable A4 worksheets. In English. Always.</p>
-          </div>
-          <div class="teacher-pillar">
-            <div class="pillar-mark sage">
-              <svg viewBox="0 0 24 24"><use href="#translate"/></svg>
-            </div>
-            <h4>Companion · Lexical Reference</h4>
-            <p>Vocabulary flashcards &amp; lexical-pair drills providing clear Greek-English terminology mapping.</p>
-          </div>
-          <div class="teacher-pillar">
-            <div class="pillar-mark mustard">
-              <svg viewBox="0 0 24 24"><use href="#check"/></svg>
-            </div>
-            <h4>Two-Track Visual Pedagogy</h4>
-            <p>Real open-source photos (CC BY / CC BY-SA) for real places; inked graphic novel art for classroom scenes.</p>
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> School & Global Community</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Present Simple & Continuous, Nationalities & Adjectives</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 7–16</div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================ FOOTER ============================ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">Photodentro &amp; Ministry of Education — English 6th Grade Coursebook Digital Companion</div>
-      <div class="footer-meta">Curriculum Companion for Primary School Grade 6 (ΣΤ΄ Δημοτικού) · Authentic Country Photos via Wikimedia Commons (CC BY / CC BY-SA)</div>
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit1/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">35 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A1+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">ancient <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">αρχαίος, πανάρχαιος</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">border <small style="color: var(--ink-muted); font-size: 0.75rem;">(n, v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">σύνορο, μεθόριος / συνορεύω</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">brave <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">γενναίος, θαρραλέος</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">citrus fruit <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">εσπεριδοειδή (πορτοκάλια, λεμόνια κλπ)</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit1/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 2: Going Shopping -->
+    <article class="unit-split visible" id="unit-card-2" data-unit="2" data-terms="term-1" data-theme="shopping, food & consumer literacy" data-grammar="quantifiers (much / many / some / any / a lot of), order of adjectives">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 2</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 1</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Going Shopping</h2>
+          <p class="v1-theme">Supermarket quantities, fashion choices, sensory descriptions, and safe online ordering</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Shopping, Food & Consumer Literacy</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Quantifiers (much / many / some / any / a lot of), Order of Adjectives</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 17–28</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit2/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">48 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">baggy <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">χαλαρός, φαρδύς</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">bakery <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">φούρνος, αρτοποιείο</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">beef <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">βόειο κρέας</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">budget <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">προϋπολογισμός</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit2/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 3: Imaginary Creatures -->
+    <article class="unit-split visible" id="unit-card-3" data-unit="3" data-terms="term-1" data-theme="myths, legends & literature" data-grammar="past simple (regular & irregular), story sequencing adverbs">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 3</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 1</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Imaginary Creatures</h2>
+          <p class="v1-theme">Mythical beasts, fairy tales, ghost legends, and classroom theatre</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Myths, Legends & Literature</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Past Simple (regular & irregular), Story sequencing adverbs</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 29–42</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit3/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">54 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">active <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">δραστήριος, ενεργητικός</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">anxious <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ανήσυχος, αγχωμένος</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">argue <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">μαλώνω, διαφωνώ</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">attractive <small style="color: var(--ink-muted); font-size: 0.75rem;">(adj)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ελκυστικός, όμορφος</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit3/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 4: The History of the Aeroplane -->
+    <article class="unit-split visible" id="unit-card-4" data-unit="4" data-terms="term-2" data-theme="aviation, inventions & greek mythology" data-grammar="past continuous vs past simple, time clauses (when / while)">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 4</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 2</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">The History of the Aeroplane</h2>
+          <p class="v1-theme">Pioneers of flight, aviation science, in-flight adventures, and the myth of Icarus</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Aviation, Inventions & Greek Mythology</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Past Continuous vs Past Simple, Time clauses (when / while)</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 43–56</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit4/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">41 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">accident <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ατύχημα</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">admire <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">θαυμάζω</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">airhostess <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">αεροσυνοδός</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">attached files <small style="color: var(--ink-muted); font-size: 0.75rem;">(n pl)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">συνημμένα αρχεία</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit4/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 5: Travelling Through Time -->
+    <article class="unit-split visible" id="unit-card-5" data-unit="5" data-terms="term-2" data-theme="history, memory & transport" data-grammar="used to for past habits and states, contrasting past and present">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 5</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 2</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Travelling Through Time</h2>
+          <p class="v1-theme">Past habits with used to, sixties memories, Victorian omnibuses & transport museums</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> History, Memory & Transport</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Used to for past habits and states, Contrasting Past and Present</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 57–70</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit5/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">56 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2 / A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">accompany <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">συνοδεύω</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">admission <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">είσοδος, αντίτιμο εισόδου</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">adult <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ενήλικας</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">alight <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">αποβιβάζομαι, κατεβαίνω από όχημα</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit5/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 6: Me, Myself and My Future Job -->
+    <article class="unit-split visible" id="unit-card-6" data-unit="6" data-terms="term-2" data-theme="careers, professions & future aspirations" data-grammar="modals of ability, permission & advice; future forms (will / going to)">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 6</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 2</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Me, Myself and My Future Job</h2>
+          <p class="v1-theme">Talking about jobs and careers, modals (can, may, should), future forms, and workplace safety</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Careers, Professions & Future Aspirations</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Modals of ability, permission & advice; Future forms (will / going to)</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 71–82</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit6/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">69 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2 / A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">ability <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ικανότητα</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">air traffic controller <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ελεγκτής εναέριας κυκλοφορίας</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">aisles <small style="color: var(--ink-muted); font-size: 0.75rem;">(n pl)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">διάδρομοι (μεταξύ ραφιών ή καθισμάτων)</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">area <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">περιοχή, χώρος</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit6/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 7: Share Your Experiences -->
+    <article class="unit-split visible" id="unit-card-7" data-unit="7" data-terms="term-2" data-theme="sports, records & theatre" data-grammar="present perfect simple (experiences, ever / never, just / already / yet)">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 7</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 2</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Share Your Experiences</h2>
+          <p class="v1-theme">Sports, Olympic & Paralympic champions, records, experiences, and stage performances</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Sports, Records & Theatre</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Present Perfect Simple (experiences, ever / never, just / already / yet)</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 83–96</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit7/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">52 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">accomplishment <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">επίτευγμα, κατόρθωμα</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">achievement <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">επίτευγμα</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">among <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ανάμεσα σε</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">antiquity <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">αρχαιότητα</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit7/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 8: Blow Your Own Trumpet -->
+    <article class="unit-split visible" id="unit-card-8" data-unit="8" data-terms="term-3" data-theme="music, culture & financial literacy" data-grammar="conditionals type 1, relative pronouns (who / which / where / whose)">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 8</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 3</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Blow Your Own Trumpet</h2>
+          <p class="v1-theme">Traditional and modern musical instruments, rock bands, pocket money budgeting, and advice</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Music, Culture & Financial Literacy</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Conditionals Type 1, Relative Pronouns (who / which / where / whose)</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 97–110</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit8/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">66 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">adaptation <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">διασκευή (έργου / ιστορίας)</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">allowance <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">χαρτζιλίκι, επίδομα</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">approximately <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">περίπου</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">artist <small style="color: var(--ink-muted); font-size: 0.75rem;"></small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">καλλιτέχνης</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit8/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 9: Earth Day Everyday -->
+    <article class="unit-split visible" id="unit-card-9" data-unit="9" data-terms="term-3" data-theme="ecology, nature & endangered species" data-grammar="passive voice (present & past simple), modals of obligation (must / mustn't)">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 9</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 3</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Earth Day Everyday</h2>
+          <p class="v1-theme">Environmental protection, endangered species, pollutants, and green action projects</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Ecology, Nature & Endangered Species</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Passive Voice (Present & Past Simple), Modals of obligation (must / mustn't)</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 111–124</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit9/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">48 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">acid rain <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">όξινη βροχή</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">become extinct <small style="color: var(--ink-muted); font-size: 0.75rem;">(v phr)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">εξαφανίζομαι, εκλείπω (για είδος)</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">bend <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">λυγίζω, σκύβω</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">breath <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">αναπνοή, ανάσα</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit9/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+
+    <!-- Unit 10: Time for Fun -->
+    <article class="unit-split visible" id="unit-card-10" data-unit="10" data-terms="term-3" data-theme="entertainment, arts & media literacy" data-grammar="review of tenses, reported speech, writing structured reviews">
+      <!-- Left Side: Coursebook -->
+      <section class="unit-side v1-side">
+        <div class="side-label">
+          <span class="side-tag">Unit 10</span>
+          <span class="side-name">Coursebook</span>
+          <span class="term-pill" style="margin-left: auto;">Term 3</span>
+        </div>
+
+        <div class="v1-meta">
+          <h2 class="v1-title">Time for Fun</h2>
+          <p class="v1-theme">Cinema, literature, cultural media, leisure, and critical film reviews</p>
+
+          <div style="margin: 12px 0; font-size: 0.88rem; color: var(--ink-soft);">
+            <div><strong>Theme:</strong> Entertainment, Arts & Media Literacy</div>
+            <div style="margin-top: 4px;"><strong>Grammar Lab:</strong> Review of Tenses, Reported Speech, Writing structured reviews</div>
+            <div style="margin-top: 4px;"><strong>Pupil's Book:</strong> pp. 125–138</div>
+          </div>
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto; padding-top: 14px;">
+          <a href="unit10/index.html" class="thing-cta paper" style="background: var(--lime); color: var(--ink); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>📖</span> Open Coursebook ➔
+          </a>
+        </div>
+      </section>
+
+      <!-- Center Fold Line -->
+      <div class="unit-fold" aria-hidden="true"></div>
+
+      <!-- Right Side: Vocabulary Companion -->
+      <section class="unit-side v2-side">
+        <div class="side-label">
+          <span class="side-tag v2">Vocabulary Companion</span>
+          <span class="side-name">43 Items</span>
+          <span class="side-tag" style="background: var(--snow); margin-left: auto;">CEFR A2+</span>
+        </div>
+
+        <div class="vocab-table compact">
+          
+            <div class="vocab-row">
+              <span class="en">acne <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ακμή, σπυράκια</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">actor <small style="color: var(--ink-muted); font-size: 0.75rem;">(n)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">ηθοποιός</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">allow <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">επιτρέπω</span>
+            </div>
+          
+            <div class="vocab-row">
+              <span class="en">approve <small style="color: var(--ink-muted); font-size: 0.75rem;">(v)</small></span>
+              <span class="arrow-mark">➔</span>
+              <span class="el" lang="el">εγκρίνω, επικροτώ</span>
+            </div>
+          
+        </div>
+
+        <div class="v2-actions" style="margin-top: auto;">
+          <a href="unit10/companion.html" class="thing-cta" style="background: var(--coral); color: var(--snow); border: 2.5px solid var(--ink); font-weight: 800;">
+            <span>🗂️</span> Practice &amp; Quizzes ➔
+          </a>
+        </div>
+      </section>
+    </article>
+  
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: var(--snow); border-top: 2.5px solid var(--ink); padding: 40px 20px; text-align: center; margin-top: 40px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--ink); margin-bottom: 6px;">English 6th Grade · Αγγλικά ΣΤ΄ Δημοτικού</h3>
+      <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 12px;">Greek Elementary School Curriculum Material · 100% Client-Side &amp; Privacy-Preserving</p>
+      <div style="font-size: 0.8rem; color: var(--ink-muted);">All audio, text, and exercise assets run directly offline without remote tracking.</div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="shared/learner_store.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Spaced Review Badge Count
+      function updateDueBadge() {
+        if (typeof LearnerStore === 'undefined') return;
+        const dueCount = LearnerStore.getDueCount();
+        const badge = document.getElementById('hubDueCountBadge');
+        if (badge) {
+          if (dueCount > 0) {
+            badge.textContent = dueCount;
+            badge.style.display = 'inline-block';
+          } else {
+            badge.style.display = 'none';
+          }
+        }
+      }
+      updateDueBadge();
+
+      // 2. Spaced Review Button Trigger
+      const reviewBtn = document.getElementById('spacedReviewHubBtn');
+      if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+          const due = (typeof LearnerStore !== 'undefined') ? LearnerStore.getDueReviews() : [];
+          if (due.length > 0) {
+            const firstUnit = due[0].unit || 1;
+            window.location.href = 'unit' + firstUnit + '/companion.html';
+          } else {
+            alert('Great job! No spaced repetition reviews are due today.');
+          }
+        });
+      }
+
+      // 3. A11y Settings Trigger
+      const a11yBtn = document.getElementById('a11yBtn');
+      if (a11yBtn && typeof LearnerStore !== 'undefined') {
+        a11yBtn.addEventListener('click', () => LearnerStore.openA11yModal());
+      }
+
+      // 4. Term Filters
+      const cards = Array.from(document.querySelectorAll('.unit-split'));
+      const chips = document.querySelectorAll('.chip');
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+
+          const filter = chip.dataset.filter;
+          cards.forEach(card => {
+            if (filter === 'all') {
+              card.classList.remove('hidden');
+            } else {
+              const terms = card.dataset.terms || '';
+              card.classList.toggle('hidden', terms !== filter);
+            }
+          });
+        });
+      });
+
+      // 5. Search Filter
+      const searchInput = document.getElementById('hubSearchInput');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            const matches = !query || text.includes(query);
+            card.classList.toggle('hidden', !matches);
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
